@@ -1,14 +1,14 @@
-# whisper-g2p
+# g2p-rs
 
 Zero-dependency grapheme-to-phoneme for the **100 Whisper languages**, with a
 Rust core exposed to Python.
 
 ```bash
-pip install whisper-g2p
+pip install g2p-rs
 ```
 
 ```python
-from whisper_g2p import Model
+from g2p_rs import Model
 
 m = Model.load("fr.g2p")
 print(m.phonemize("bonjour"))            # bɔ̃ʒuʁ
