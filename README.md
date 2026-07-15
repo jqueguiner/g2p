@@ -1,6 +1,5 @@
 # g2p
 
-<!-- Replace jqueguiner/g2p with your GitHub org/repo once pushed. -->
 [![CI](https://github.com/jqueguiner/g2p/actions/workflows/ci.yml/badge.svg)](https://github.com/jqueguiner/g2p/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/jqueguiner/g2p/branch/main/graph/badge.svg)](https://codecov.io/gh/jqueguiner/g2p)
 [![Release](https://img.shields.io/github/v/release/jqueguiner/g2p?sort=semver)](https://github.com/jqueguiner/g2p/releases)
