@@ -1,0 +1,7 @@
+/target
+lcov.info
+
+# Generated model blobs (large) — rebuilt via `xtask build-all`
+/data/*.g2p
+# Downloaded WikiPron TSVs — refetched via `xtask fetch-all`
+/data/wikipron/

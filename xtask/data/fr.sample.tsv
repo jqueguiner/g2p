@@ -1,0 +1,32 @@
+# tiny French sample (word <TAB> space-separated IPA). Replace with a real
+# WikiPron dump: data/scrape/tsv/fra_latn_broad.tsv from CUNY-CL/wikipron.
+bonjour	b ɔ̃ ʒ u ʁ
+chat	ʃ a
+chien	ʃ j ɛ̃
+maison	m ɛ z ɔ̃
+eau	o
+oiseau	w a z o
+français	f ʁ ɑ̃ s ɛ
+merci	m ɛ ʁ s i
+pain	p ɛ̃
+vin	v ɛ̃
+temps	t ɑ̃
+femme	f a m
+homme	ɔ m
+avec	a v ɛ k
+pour	p u ʁ
+dans	d ɑ̃
+petit	p ə t i
+grand	ɡ ʁ ɑ̃
+beau	b o
+livre	l i v ʁ
+chose	ʃ o z
+chaud	ʃ o
+jour	ʒ u ʁ
+nuit	n ɥ i
+matin	m a t ɛ̃
+bon	b ɔ̃
+mauvais	m o v ɛ
+rouge	ʁ u ʒ
+vert	v ɛ ʁ
+bleu	b l ø
