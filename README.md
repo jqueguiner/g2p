@@ -1,9 +1,9 @@
 # g2p
 
-<!-- Replace OWNER/g2p with your GitHub org/repo once pushed. -->
-[![CI](https://github.com/OWNER/g2p/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/g2p/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/OWNER/g2p/branch/main/graph/badge.svg)](https://codecov.io/gh/OWNER/g2p)
-[![Release](https://img.shields.io/github/v/release/OWNER/g2p?sort=semver)](https://github.com/OWNER/g2p/releases)
+<!-- Replace jqueguiner/g2p with your GitHub org/repo once pushed. -->
+[![CI](https://github.com/jqueguiner/g2p/actions/workflows/ci.yml/badge.svg)](https://github.com/jqueguiner/g2p/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/jqueguiner/g2p/branch/main/graph/badge.svg)](https://codecov.io/gh/jqueguiner/g2p)
+[![Release](https://img.shields.io/github/v/release/jqueguiner/g2p?sort=semver)](https://github.com/jqueguiner/g2p/releases)
 ![Rust](https://img.shields.io/badge/rust-stable-orange?logo=rust)
 ![License](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)
 
