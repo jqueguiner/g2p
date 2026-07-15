@@ -1,3 +1,6 @@
 [workspace]
 members = ["g2p", "xtask"]
+# The Python binding pulls in pyo3; keep it out of the workspace so plain
+# `cargo build/test --workspace` and the zero-dep runtime stay clean.
+exclude = ["bindings/python"]
 resolver = "2"

@@ -5,3 +5,9 @@ lcov.info
 /data/*.g2p
 # Downloaded WikiPron TSVs — refetched via `xtask fetch-all`
 /data/wikipron/
+
+# Python build artifacts
+bindings/python/target/
+bindings/python/dist/
+*.egg-info/
+__pycache__/

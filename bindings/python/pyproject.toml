@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "whisper-g2p"
+version = "0.1.0"
+description = "Zero-dependency grapheme-to-phoneme for the 100 Whisper languages (Rust core)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT OR Apache-2.0" }
+authors = [{ name = "jqueguiner" }]
+keywords = ["g2p", "grapheme-to-phoneme", "phonemizer", "ipa", "whisper", "phonetics"]
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: 3",
+  "Topic :: Text Processing :: Linguistic",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Repository = "https://github.com/jqueguiner/g2p"
+
+[tool.maturin]
+manifest-path = "Cargo.toml"
+module-name = "whisper_g2p"
+features = ["pyo3/extension-module"]
