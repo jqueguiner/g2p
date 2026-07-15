@@ -1,7 +1,7 @@
 //! Python bindings for the `g2p` engine (PyO3 + maturin, abi3).
 //!
 //! ```python
-//! from g2p_rs import Model
+//! from g2p2 import Model
 //! m = Model.load("fr.g2p")
 //! m.phonemize("bonjour")          # 'bɔ̃ʒuʁ'
 //! m.phonemize_many(["a", "b"])    # ['...', '...']
@@ -46,12 +46,12 @@ impl Model {
     }
 
     fn __repr__(&self) -> String {
-        format!("<g2p_rs.Model {} tokens>", self.inner.tokens.len())
+        format!("<g2p2.Model {} tokens>", self.inner.tokens.len())
     }
 }
 
 #[pymodule]
-fn g2p_rs(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn g2p2(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
     m.add_class::<Model>()?;
     Ok(())

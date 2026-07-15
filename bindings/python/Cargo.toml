@@ -1,12 +1,12 @@
 [package]
-name = "g2p-rs"
+name = "g2p2"
 version = "0.1.0"
 edition = "2021"
 description = "Python bindings for g2p — zero-dependency grapheme-to-phoneme for the 100 Whisper languages"
 license = "MIT OR Apache-2.0"
 
 [lib]
-name = "g2p_rs"
+name = "g2p2"
 crate-type = ["cdylib"]
 
 [dependencies]
