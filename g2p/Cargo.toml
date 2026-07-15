@@ -1,6 +1,6 @@
 [package]
 name = "g2p"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Zero-dependency grapheme-to-phoneme for the 101 Whisper languages"
 

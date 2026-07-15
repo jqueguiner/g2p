@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "g2p2"
-version = "0.1.0"
+version = "0.1.1"
 description = "Zero-dependency grapheme-to-phoneme for the 100 Whisper languages (Rust core)"
 readme = "README.md"
 requires-python = ">=3.8"
