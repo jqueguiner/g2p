@@ -299,19 +299,31 @@ fn is_drop(c: char) -> bool {
 
 /// Rides with the preceding base rather than standing alone.
 fn is_attach(c: char) -> bool {
-    matches!(c as u32, 0x0300..=0x036F)
+    matches!(c as u32, 0x0300..=0x035B | 0x035D..=0x036F)
         || matches!(
             c,
-            'ː' | 'ˑ' | 'ʰ' | 'ʷ' | 'ʲ' | 'ˠ' | 'ˤ' | '\u{0329}' | '\u{032F}' | '\u{0361}'
+            'ː' | 'ˑ' | 'ʰ' | 'ʷ' | 'ʲ' | 'ˠ' | 'ˤ' | '\u{0329}' | '\u{032F}'
         )
+}
+
+/// Ties the char before it AND the char after it into one unit -- the affricate
+/// / double-articulation bars (t͡s, d͡ʒ, k͡p). Excluded from `is_attach` so the
+/// following base is pulled in rather than left as its own phoneme.
+fn is_tie(c: char) -> bool {
+    matches!(c, '\u{0361}' | '\u{035C}')
 }
 
 /// Split a continuous IPA reading into phoneme units.
 ///
-/// The liaison tie stands alone, matching how WikiPron segments it, so that a
-/// merged corpus stays consistent.
+/// The liaison tie `‿` stands alone, matching how WikiPron segments it, so that
+/// a merged corpus stays consistent. The affricate tie bar `͡`, by contrast,
+/// binds its two flanking symbols into one phoneme: `t͡s` is one token, not
+/// `t͡` + `s`.
 pub fn segment(ipa: &str) -> Vec<String> {
     let mut out: Vec<String> = Vec::new();
+    // Set when the previous char was an affricate tie bar: the next base joins
+    // the same token as the second half of the affricate.
+    let mut tie_pending = false;
     for c in ipa.chars() {
         // Some editions write length as an ASCII colon; fold it to the IPA mark
         // so it attaches to its vowel like any other length.
@@ -319,8 +331,14 @@ pub fn segment(ipa: &str) -> Vec<String> {
         if is_drop(c) {
             continue;
         }
-        if c == '‿' {
+        if tie_pending && out.last().is_some() {
+            out.last_mut().unwrap().push(c);
+            tie_pending = false;
+        } else if c == '‿' {
             out.push(c.to_string());
+        } else if is_tie(c) && out.last().is_some_and(|l| l != "‿") {
+            out.last_mut().unwrap().push(c);
+            tie_pending = true;
         } else if is_attach(c) && out.last().is_some_and(|l| l != "‿") {
             out.last_mut().unwrap().push(c);
         } else {
@@ -475,6 +493,17 @@ mod tests {
         // ASCII ':' folds to ː and attaches; ASCII apostrophe stress is dropped.
         assert_eq!(segment("m a : v i"), ["m", "aː", "v", "i"]);
         assert_eq!(segment("' s a l t u"), ["s", "a", "l", "t", "u"]);
+    }
+
+    #[test]
+    fn segment_keeps_affricate_tie_as_one_token() {
+        // U+0361 binds both sides: t͡s is one phoneme, not t͡ + s.
+        assert_eq!(segment("t\u{0361}sar"), ["t\u{0361}s", "a", "r"]);
+        assert_eq!(segment("d\u{0361}ʒun"), ["d\u{0361}ʒ", "u", "n"]);
+        // below-bar U+035C too
+        assert_eq!(segment("t\u{035C}s"), ["t\u{035C}s"]);
+        // a tie bar plus a following length mark still binds the base pair
+        assert_eq!(segment("k\u{0361}p"), ["k\u{0361}p"]);
     }
 
     #[test]
