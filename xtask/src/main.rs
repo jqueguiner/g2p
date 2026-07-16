@@ -10,6 +10,7 @@ mod fetch;
 mod silver;
 mod train;
 
+use std::collections::HashMap;
 use std::env;
 use std::fs;
 
@@ -138,6 +139,38 @@ fn build(lang: &str, gold_tsv: &str) {
             println!("{lang}: +{added} supplement entries");
         }
         println!("{lang}: lexicon {} entries", model.lexicon.len());
+    } else {
+        // Alphabetic languages: EM is capped at MAX_PAIRS, so on a large gold set
+        // the n-gram never sees most of it -- French keeps 40k of 97k pairs, and
+        // the dropped words are decoded by rule. That is fine for regular
+        // spellings and wrong for irregular ones: "saint" -> "zɛ̃", not "sɛ̃".
+        //
+        // The lexicon tier already runs before the n-gram (decode::phonemize) and
+        // is already serialised, so fill it from the *full* gold set with only
+        // the words the n-gram gets wrong. Regular words stay out, so the blob
+        // grows by the irregulars alone.
+        let mut variants: HashMap<String, Vec<String>> = HashMap::new();
+        for (w, p) in load_tsv(gold_tsv) {
+            let ipa: String = p.split_whitespace().collect();
+            variants.entry(w.to_lowercase()).or_default().push(ipa);
+        }
+        let total = variants.len();
+        let mut added = 0;
+        for (w, ipas) in &variants {
+            // WikiPron lists pronunciation variants; any of them is a correct
+            // decode, so only words matching none need an entry.
+            if !ipas.iter().any(|i| *i == phonemize(&model, w)) {
+                model
+                    .lexicon
+                    .insert(w.as_str().into(), ipas[0].as_str().into());
+                added += 1;
+            }
+        }
+        let exact = total - added;
+        println!(
+            "{lang}: n-gram exact on {exact}/{total} ({:.1}%); +{added} residual lexicon entries",
+            100.0 * exact as f64 / total.max(1) as f64
+        );
     }
 
     let bytes = model.to_bytes();
