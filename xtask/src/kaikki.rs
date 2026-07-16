@@ -262,9 +262,27 @@ pub fn phonemic(ipas: &[String]) -> Vec<&str> {
     if !broad.is_empty() {
         return broad;
     }
-    ipas.iter()
+    let narrow: Vec<&str> = ipas
+        .iter()
         .filter_map(|s| unwrap_delim(s.trim(), '[', ']'))
         .filter(|s| looks_like_ipa(s))
+        .collect();
+    if !narrow.is_empty() {
+        return narrow;
+    }
+    // Some editions write the reading bare, no delimiters at all -- el has
+    // `ˈle.ksi` (790k of its 797k entries carried nothing else). Last resort,
+    // same junk guard, and it must contain a real letter to be a reading --
+    // stress/length marks are Unicode Lm "letters" (ˈ, ː), so is_alphabetic
+    // alone would accept a string of bare marks.
+    ipas.iter()
+        .map(|s| s.trim())
+        .filter(|s| {
+            !s.is_empty()
+                && s.chars()
+                    .any(|c| c.is_alphabetic() && !matches!(c as u32, 0x02B0..=0x02FF))
+                && looks_like_ipa(s)
+        })
         .collect()
 }
 
@@ -466,6 +484,19 @@ mod tests {
         // the whole edition.
         let de = vec!["[haˈloː]".to_string()];
         assert_eq!(phonemic(&de), vec!["haˈloː"]);
+    }
+
+    #[test]
+    fn phonemic_falls_back_to_bare_readings() {
+        // Greek writes readings with no delimiters at all.
+        let el = vec!["ˈle.ksi".to_string()];
+        assert_eq!(phonemic(&el), vec!["ˈle.ksi"]);
+        // bare junk is still rejected; empty/no-letter strings too
+        assert!(phonemic(&["e b o 4".to_string()]).is_empty());
+        assert!(phonemic(&["ˈ.".to_string()]).is_empty());
+        // a delimited reading still wins over a bare one
+        let mixed = vec!["ˈle.ksi".to_string(), "/ˈleksi/".to_string()];
+        assert_eq!(phonemic(&mixed), vec!["ˈleksi"]);
     }
 
     #[test]
