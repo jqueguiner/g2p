@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "g2p2"
-version = "0.1.2"
+version = "0.2.0"
 description = "Zero-dependency grapheme-to-phoneme for the 100 Whisper languages (Rust core)"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -17,6 +17,12 @@ classifiers = [
   "Topic :: Text Processing :: Linguistic",
   "License :: OSI Approved :: MIT License",
 ]
+
+[project.optional-dependencies]
+# `pip install g2p2[all]` ships every language model for fully offline use.
+# g2p2-models is a meta-package fanning out to xz-compressed chunk packages,
+# each under PyPI's per-file limit.
+all = ["g2p2-models==0.2.0"]
 
 [project.urls]
 Repository = "https://github.com/jqueguiner/g2p2"

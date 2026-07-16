@@ -31,7 +31,7 @@ from ._native import similarity as _similarity
 
 _MODELS_URL = os.environ.get(
     "G2P2_MODELS_URL",
-    "https://github.com/jqueguiner/g2p2/releases/download/models-v1",
+    "https://github.com/jqueguiner/g2p2/releases/download/models-v2",
 )
 
 __all__ = [
@@ -59,9 +59,36 @@ def _cache_dir() -> Path:
     return Path(base) / "g2p2"
 
 
+def _installed_pack(language: str) -> Path | None:
+    """Model from the optional offline pack (``pip install g2p2[all]``).
+
+    The pack ships xz-compressed blobs across chunk packages named
+    ``g2p2_models_part*``; the first hit is decompressed once into the cache.
+    """
+    import importlib.util
+    import lzma
+
+    for i in range(1, 10):
+        spec = importlib.util.find_spec(f"g2p2_models_part{i}")
+        if spec is None or not spec.submodule_search_locations:
+            continue
+        src = Path(spec.submodule_search_locations[0]) / f"{language}.g2p.xz"
+        if not src.exists():
+            continue
+        out = _cache_dir() / f"{language}.g2p"
+        if not out.exists():
+            out.parent.mkdir(parents=True, exist_ok=True)
+            tmp = out.with_suffix(".g2p.part")
+            tmp.write_bytes(lzma.decompress(src.read_bytes()))
+            tmp.replace(out)
+        return out
+    return None
+
+
 def model_path(language: str) -> str:
     """Resolve `language`'s ``.g2p`` blob. Order: ``$G2P2_MODELS`` dir ->
-    models bundled in the wheel -> download+cache from the release."""
+    models bundled in the wheel -> the ``g2p2[all]`` offline pack ->
+    download+cache from the release."""
     # 1. explicit override directory
     override = os.environ.get("G2P2_MODELS")
     if override:
@@ -74,7 +101,11 @@ def model_path(language: str) -> str:
         p = bundled / f"{language}.g2p"
         if p.exists():
             return str(p)
-    # 3. download into the user cache, once
+    # 3. offline pack installed via `pip install g2p2[all]`
+    packed = _installed_pack(language)
+    if packed is not None:
+        return str(packed)
+    # 4. download into the user cache, once
     d = _cache_dir()
     p = d / f"{language}.g2p"
     if not p.exists():
