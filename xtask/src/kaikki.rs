@@ -274,15 +274,27 @@ fn unwrap_delim(s: &str, open: char, close: char) -> Option<&str> {
     (!inner.is_empty()).then_some(inner)
 }
 
-/// Reject ASCII-approximation junk some editions carry (e.g. pt `e."sEx.tu`).
-/// Real IPA has no ASCII capitals and no straight quotes; the stress mark is ˈ.
+/// Reject readings that are not IPA. Some editions carry X-SAMPA
+/// (`e b o 4 e ~ s i`, `@` for schwa), ASCII approximations (`e."sEx.tu`),
+/// bookkeeping placeholders (`…`, `*`), or two forms packed into one field with
+/// a `/` separator. Any of these poisons the whole reading, so drop it and let
+/// another `sounds` entry (or the n-gram) cover the word.
+///
+/// `:` and ASCII `'` are NOT rejected here -- they are fixable stand-ins for `ː`
+/// and stress, normalised in `segment`.
 fn looks_like_ipa(s: &str) -> bool {
-    !s.chars().any(|c| c.is_ascii_uppercase() || c == '"')
+    !s.chars().any(|c| {
+        c.is_ascii_uppercase()
+            || c.is_ascii_digit()
+            || matches!(c, '"' | '@' | '~' | '_' | '…' | '*' | ';' | '/')
+    })
 }
 
-/// Not phonemes: syllable breaks and stress.
+/// Not phonemes: syllable breaks and stress. ASCII `'` (U+0027) is a stress
+/// stand-in some editions use for `ˈ` -- dropped like the real mark. The IPA
+/// ejective `ʼ` (U+02BC) is a different character and is kept.
 fn is_drop(c: char) -> bool {
-    matches!(c, '.' | 'ˈ' | 'ˌ' | ' ' | '|' | '‖' | '(' | ')')
+    matches!(c, '.' | 'ˈ' | 'ˌ' | '\'' | ' ' | '|' | '‖' | '(' | ')')
 }
 
 /// Rides with the preceding base rather than standing alone.
@@ -301,6 +313,9 @@ fn is_attach(c: char) -> bool {
 pub fn segment(ipa: &str) -> Vec<String> {
     let mut out: Vec<String> = Vec::new();
     for c in ipa.chars() {
+        // Some editions write length as an ASCII colon; fold it to the IPA mark
+        // so it attaches to its vowel like any other length.
+        let c = if c == ':' { 'ː' } else { c };
         if is_drop(c) {
             continue;
         }
@@ -358,28 +373,31 @@ pub fn convert(lang: &str, path: &str, out_path: &str) {
             skipped_multi += 1;
             continue;
         }
-        let readings = phonemic(&e.ipas);
-        if readings.is_empty() {
+        // Take only the first phonemic reading. kaikki lists the citation form
+        // first and inflected or "incorrect"-tagged variants after -- "beyaz" is
+        // [/beˈjɑz/, /bejɑzˈlaɾ/], the second being the plural. Emitting every
+        // reading put those extra forms in the TSV under the wrong headword; the
+        // first is the one that belongs to the word.
+        let Some(r) = phonemic(&e.ipas).into_iter().next() else {
+            no_pron += 1;
+            continue;
+        };
+        let segs = segment(r);
+        if segs.is_empty() {
             no_pron += 1;
             continue;
         }
-        for r in readings {
-            let segs = segment(r);
-            if segs.is_empty() {
-                continue;
+        let joined = segs.join(" ");
+        match index.get(&e.word) {
+            Some(&i) => {
+                let v: &mut Vec<String> = &mut words[i].1;
+                if !v.contains(&joined) {
+                    v.push(joined);
+                }
             }
-            let joined = segs.join(" ");
-            match index.get(&e.word) {
-                Some(&i) => {
-                    let v: &mut Vec<String> = &mut words[i].1;
-                    if !v.contains(&joined) {
-                        v.push(joined);
-                    }
-                }
-                None => {
-                    index.insert(e.word.clone(), words.len());
-                    words.push((e.word.clone(), vec![joined]));
-                }
+            None => {
+                index.insert(e.word.clone(), words.len());
+                words.push((e.word.clone(), vec![joined]));
             }
         }
     }
@@ -437,6 +455,26 @@ mod tests {
         // pt carries junk like /e."sEx.tu/ next to real IPA; keep only the real.
         let pt = vec!["/e.\"sEx.tu/".to_string(), "/esˈeʁtu/".to_string()];
         assert_eq!(phonemic(&pt), vec!["esˈeʁtu"]);
+    }
+
+    #[test]
+    fn phonemic_rejects_xsampa_placeholders_and_merged_forms() {
+        // X-SAMPA (digit tap, @ schwa, bare ~), a `…`/`*` placeholder, and a
+        // two-form field with an inner `/` are all rejected.
+        assert!(phonemic(&["/e b o 4 e ~ s i/".to_string()]).is_empty());
+        assert!(phonemic(&["\\ptit@\\".to_string()]).is_empty());
+        assert!(phonemic(&["[…]".to_string()]).is_empty());
+        assert!(phonemic(&["/a t e/ , /a t/".to_string()]).is_empty());
+        // a clean form alongside junk still comes through
+        let mixed = vec!["/e b o 4/".to_string(), "[a ɡ o]".to_string()];
+        assert_eq!(phonemic(&mixed), vec!["a ɡ o"]);
+    }
+
+    #[test]
+    fn segment_normalises_ascii_length_and_stress() {
+        // ASCII ':' folds to ː and attaches; ASCII apostrophe stress is dropped.
+        assert_eq!(segment("m a : v i"), ["m", "aː", "v", "i"]);
+        assert_eq!(segment("' s a l t u"), ["s", "a", "l", "t", "u"]);
     }
 
     #[test]
