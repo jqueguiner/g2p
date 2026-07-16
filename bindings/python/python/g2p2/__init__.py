@@ -31,7 +31,7 @@ from ._native import similarity as _similarity
 
 _MODELS_URL = os.environ.get(
     "G2P2_MODELS_URL",
-    "https://github.com/jqueguiner/g2p2/releases/download/models-v1",
+    "https://github.com/jqueguiner/g2p2/releases/download/models-v2",
 )
 
 __all__ = [

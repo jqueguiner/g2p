@@ -23,16 +23,11 @@ jobs:
           - { os: windows-latest, target: x64 }
     steps:
       - uses: actions/checkout@v4
-      # Bundle all language models into the wheel (default install ships offline).
-      - name: bundle models
-        shell: bash
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p bindings/python/python/g2p2/models
-          gh release download models-v1 --repo "$GITHUB_REPOSITORY" \
-            --dir bindings/python/python/g2p2/models --pattern '*.g2p' --clobber
-          echo "bundled $(ls bindings/python/python/g2p2/models | wc -l) models"
+      # Models are NOT bundled since models-v2: the full-lexicon models total
+      # several hundred MB, past PyPI's per-file limit. The wheel is lean; the
+      # runtime downloads a language's model from the models-v2 release on
+      # first use and caches it (see g2p2.__init__ resolution order). Offline
+      # installs: download the .g2p files once and point $G2P2_MODELS at them.
       - uses: PyO3/maturin-action@v1
         with:
           working-directory: bindings/python

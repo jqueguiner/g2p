@@ -42,9 +42,11 @@ pip install g2p2
 
 ### Quickstart — just pick a language
 
-`pip install g2p2` **bundles all 100 language models** (~81 MB wheel) — works
-fully offline, no files to manage. (A language missing from the wheel is
-downloaded + cached on first use as a fallback.)
+The wheel is lean; a language's model is **downloaded and cached on first
+use** (from the `models-v2` GitHub release). Since v0.2.0 the models carry the
+full attested lexicon — French alone is 1.6M words — which put the complete set
+past what a PyPI wheel can bundle. For fully offline installs, download the
+`.g2p` files once from the release and point `$G2P2_MODELS` at the directory.
 
 ```python
 import g2p2
