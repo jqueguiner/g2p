@@ -23,16 +23,11 @@ jobs:
           - { os: windows-latest, target: x64 }
     steps:
       - uses: actions/checkout@v4
-      # Bundle all language models into the wheel (default install ships offline).
-      - name: bundle models
-        shell: bash
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mkdir -p bindings/python/python/g2p2/models
-          gh release download models-v1 --repo "$GITHUB_REPOSITORY" \
-            --dir bindings/python/python/g2p2/models --pattern '*.g2p' --clobber
-          echo "bundled $(ls bindings/python/python/g2p2/models | wc -l) models"
+      # Models are NOT bundled since models-v2: the full-lexicon models total
+      # several hundred MB, past PyPI's per-file limit. The wheel is lean; the
+      # runtime downloads a language's model from the models-v2 release on
+      # first use and caches it (see g2p2.__init__ resolution order). Offline
+      # installs: download the .g2p files once and point $G2P2_MODELS at them.
       - uses: PyO3/maturin-action@v1
         with:
           working-directory: bindings/python
@@ -58,9 +53,37 @@ jobs:
           name: sdist
           path: bindings/python/dist
 
+  # Offline pack for `pip install g2p2[all]`: xz-compressed model data split
+  # into chunk packages under PyPI's file cap, plus the g2p2-models meta.
+  # NOTE: trusted publishing is per project name — PyPI needs pending
+  # publishers registered for g2p2-models and g2p2-models-part1..3 (same
+  # workflow file, environment `pypi`) before the first publish succeeds.
+  model-packs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: fetch models
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p models
+          gh release download models-v2 --repo "$GITHUB_REPOSITORY" \
+            --dir models --pattern '*.g2p' --clobber
+          echo "fetched $(ls models | wc -l) models"
+      - name: build packs
+        run: |
+          VERSION=$(grep -m1 '^version' bindings/python/pyproject.toml | cut -d'"' -f2)
+          python scripts/pack_models.py models packs "$VERSION"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-packs
+          path: packs/dist
+
   publish:
     name: publish to PyPI
-    needs: [wheels, sdist]
+    needs: [wheels, sdist, model-packs]
     runs-on: ubuntu-latest
     environment: pypi           # matches the PyPI pending-publisher form
     permissions:
@@ -71,7 +94,21 @@ jobs:
         with:
           path: dist
           merge-multiple: true
-      - uses: pypa/gh-action-pypi-publish@release/v1
+      # Split so a missing pending publisher for the pack names cannot block
+      # the g2p2 wheels themselves.
+      - name: sort artifacts
+        run: |
+          mkdir -p dist-core dist-packs
+          mv dist/g2p2_models* dist-packs/ 2>/dev/null || true
+          mv dist/* dist-core/ 2>/dev/null || true
+      - name: publish g2p2
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          packages-dir: dist
+          packages-dir: dist-core
+          skip-existing: true
+      - name: publish model packs (needs pending publishers for g2p2-models*)
+        continue-on-error: true
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist-packs
           skip-existing: true
