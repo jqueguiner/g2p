@@ -163,30 +163,27 @@ fn build(lang: &str, gold_tsv: &str) {
         }
         let total = variants.len();
 
-        // Decide every entry against the bare n-gram, then insert. Deciding and
-        // inserting in one loop would make each decision depend on which words
-        // happened to be inserted before it, and HashMap order is not stable --
-        // the same input would not build the same model twice.
-        let mut pending: Vec<(String, String)> = Vec::new();
-        let mut proper = 0;
+        // Store every gold word, not just the ones the n-gram misses.
+        //
+        // Skipping the words it already gets right looks like a free saving, but
+        // it silently picks the wrong reading whenever a word has variants. The
+        // sources list the citation form first and regional or contextual forms
+        // after -- "sept" is [sɛt, sɛpt], "huit" is [ɥit, wit, ɥɪt]. A decode
+        // matching *any* of them passed the old test, so "sept" kept the n-gram's
+        // sɛpt: attested, but not the form you want out of a dictionary.
+        //
+        // It also broke case. A word with no entry of its own resolves through
+        // decode's lowercase retry, so "Jean" (no entry, the n-gram was right)
+        // came back as lexicon["jean"] -- dʒin, the fabric.
+        //
+        // Both disappear once every word has its own key holding the first
+        // reading. The n-gram then does the one job it is good at: words the
+        // dictionary has never seen.
+        let mut pending: Vec<(String, String)> = Vec::with_capacity(total);
+        let mut ngram_agrees = 0;
         for (w, ipas) in &variants {
-            // A capitalised entry is a proper noun, and a proper noun is
-            // irregular by nature: no rule derives "Bayeux" -> bajø. When the
-            // n-gram happens to land one it is luck, not competence, so store
-            // them all rather than betting on it.
-            //
-            // This is also what keeps the lowercase retry in decode::phonemize
-            // honest. A word with no entry of its own falls back to its
-            // lowercase sibling's, and the siblings can be different words:
-            // "Jean" is ʒɑ̃, "jean" is dʒin, the fabric. Giving every proper
-            // noun its own key means the retry can never answer for it.
-            let is_proper = w.chars().next().is_some_and(char::is_uppercase);
-            // WikiPron lists pronunciation variants; any of them is a correct
-            // decode, so a lowercase word matching none is the only other case.
-            if is_proper {
-                proper += 1;
-            } else if ipas.iter().any(|i| *i == phonemize(&model, w)) {
-                continue;
+            if ipas[0] == phonemize(&model, w) {
+                ngram_agrees += 1;
             }
             pending.push((w.clone(), ipas[0].clone()));
         }
@@ -196,8 +193,8 @@ fn build(lang: &str, gold_tsv: &str) {
         }
 
         println!(
-            "{lang}: {total} gold words -> +{added} lexicon entries ({proper} proper nouns, {} n-gram misses)",
-            added - proper
+            "{lang}: {total} gold words -> {added} lexicon entries (n-gram alone agreed on {ngram_agrees}, {:.1}%)",
+            100.0 * ngram_agrees as f64 / total.max(1) as f64
         );
     }
 
