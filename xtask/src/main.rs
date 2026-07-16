@@ -149,10 +149,16 @@ fn build(lang: &str, gold_tsv: &str) {
         // is already serialised, so fill it from the *full* gold set with only
         // the words the n-gram gets wrong. Regular words stay out, so the blob
         // grows by the irregulars alone.
+        // Key on the surface form, not the lowercased one: case carries meaning.
+        // WikiPron has both `Jean` (ʒɑ̃, the name) and `jean` (dʒin, the fabric),
+        // and 160 more French pairs like it -- Aimé/aimé, Anglais/anglais. Folding
+        // them together would let whichever sorts first define the other.
+        // decode::phonemize tries the exact key before the lowercased one, so
+        // storing both surface forms resolves each correctly.
         let mut variants: HashMap<String, Vec<String>> = HashMap::new();
         for (w, p) in load_tsv(gold_tsv) {
             let ipa: String = p.split_whitespace().collect();
-            variants.entry(w.to_lowercase()).or_default().push(ipa);
+            variants.entry(w).or_default().push(ipa);
         }
         let total = variants.len();
         let mut added = 0;
