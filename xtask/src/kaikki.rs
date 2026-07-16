@@ -10,10 +10,13 @@
 //!
 //! Two properties of the source drive the code below.
 //!
-//! Notation: kaikki carries both `\a.kœj\` (phonemic -- the citation form) and
-//! `[ɛ̃.n‿a.kœj]` (phonetic -- as realised in context; that one is "un accueil",
-//! article and liaison included). Only the backslash form is a property of the
-//! word on its own, so the bracket form is dropped.
+//! Notation: editions disagree. fr.wiktionary writes the phonemic form as
+//! `\a.kœj\` and a phonetic one as `[ɛ̃.n‿a.kœj]`; most other editions use
+//! `/.../` for phonemic and `[...]` for phonetic. The phonemic form is a
+//! property of the word on its own -- the phonetic one is a contextual
+//! realisation (that fr example is "un accueil", article and liaison included).
+//! So the broad form (`\...\` or `/.../`) is preferred and the narrow `[...]`
+//! is taken only when a word has nothing else. See `phonemic`.
 //!
 //! Segmentation: kaikki writes a syllabified string, the builder wants
 //! phonemes. Dots and stress marks are not phonemes, and a combining mark
@@ -244,40 +247,98 @@ pub fn parse_line(line: &str) -> Option<Entry> {
 
 /// Keep the phonemic (`\...\`) readings and drop the phonetic (`[...]`) ones.
 pub fn phonemic(ipas: &[String]) -> Vec<&str> {
+    // Broad first, narrow only as a fallback. Editions disagree on notation:
+    // fr.wiktionary writes phonemic as `\...\`, most others use `/.../` (broad)
+    // and `[...]` (narrow, allophonic). Slashes and backslashes are both the
+    // citation form we want; brackets carry contextual detail and are taken only
+    // when a word has nothing else.
+    let broad: Vec<&str> = ipas
+        .iter()
+        .filter_map(|s| {
+            unwrap_delim(s.trim(), '\\', '\\').or_else(|| unwrap_delim(s.trim(), '/', '/'))
+        })
+        .filter(|s| looks_like_ipa(s))
+        .collect();
+    if !broad.is_empty() {
+        return broad;
+    }
     ipas.iter()
-        .map(|s| s.trim())
-        .filter(|s| s.len() > 2 && s.starts_with('\\') && s.ends_with('\\'))
-        .map(|s| s[1..s.len() - 1].trim())
-        .filter(|s| !s.is_empty())
+        .filter_map(|s| unwrap_delim(s.trim(), '[', ']'))
+        .filter(|s| looks_like_ipa(s))
         .collect()
 }
 
-/// Not phonemes: syllable breaks and stress.
+/// Content between matching single-char delimiters, or None.
+fn unwrap_delim(s: &str, open: char, close: char) -> Option<&str> {
+    let inner = s.strip_prefix(open)?.strip_suffix(close)?.trim();
+    (!inner.is_empty()).then_some(inner)
+}
+
+/// Reject readings that are not IPA. Some editions carry X-SAMPA
+/// (`e b o 4 e ~ s i`, `@` for schwa), ASCII approximations (`e."sEx.tu`),
+/// bookkeeping placeholders (`…`, `*`), or two forms packed into one field with
+/// a `/` separator. Any of these poisons the whole reading, so drop it and let
+/// another `sounds` entry (or the n-gram) cover the word.
+///
+/// `:` and ASCII `'` are NOT rejected here -- they are fixable stand-ins for `ː`
+/// and stress, normalised in `segment`.
+fn looks_like_ipa(s: &str) -> bool {
+    !s.chars().any(|c| {
+        c.is_ascii_uppercase()
+            || c.is_ascii_digit()
+            || matches!(c, '"' | '@' | '~' | '_' | '…' | '*' | ';' | '/')
+    })
+}
+
+/// Not phonemes: syllable breaks and stress. ASCII `'` (U+0027) is a stress
+/// stand-in some editions use for `ˈ` -- dropped like the real mark. The IPA
+/// ejective `ʼ` (U+02BC) is a different character and is kept.
 fn is_drop(c: char) -> bool {
-    matches!(c, '.' | 'ˈ' | 'ˌ' | ' ' | '|' | '‖' | '(' | ')')
+    matches!(c, '.' | 'ˈ' | 'ˌ' | '\'' | ' ' | '|' | '‖' | '(' | ')')
 }
 
 /// Rides with the preceding base rather than standing alone.
 fn is_attach(c: char) -> bool {
-    matches!(c as u32, 0x0300..=0x036F)
+    matches!(c as u32, 0x0300..=0x035B | 0x035D..=0x036F)
         || matches!(
             c,
-            'ː' | 'ˑ' | 'ʰ' | 'ʷ' | 'ʲ' | 'ˠ' | 'ˤ' | '\u{0329}' | '\u{032F}' | '\u{0361}'
+            'ː' | 'ˑ' | 'ʰ' | 'ʷ' | 'ʲ' | 'ˠ' | 'ˤ' | '\u{0329}' | '\u{032F}'
         )
+}
+
+/// Ties the char before it AND the char after it into one unit -- the affricate
+/// / double-articulation bars (t͡s, d͡ʒ, k͡p). Excluded from `is_attach` so the
+/// following base is pulled in rather than left as its own phoneme.
+fn is_tie(c: char) -> bool {
+    matches!(c, '\u{0361}' | '\u{035C}')
 }
 
 /// Split a continuous IPA reading into phoneme units.
 ///
-/// The liaison tie stands alone, matching how WikiPron segments it, so that a
-/// merged corpus stays consistent.
+/// The liaison tie `‿` stands alone, matching how WikiPron segments it, so that
+/// a merged corpus stays consistent. The affricate tie bar `͡`, by contrast,
+/// binds its two flanking symbols into one phoneme: `t͡s` is one token, not
+/// `t͡` + `s`.
 pub fn segment(ipa: &str) -> Vec<String> {
     let mut out: Vec<String> = Vec::new();
+    // Set when the previous char was an affricate tie bar: the next base joins
+    // the same token as the second half of the affricate.
+    let mut tie_pending = false;
     for c in ipa.chars() {
+        // Some editions write length as an ASCII colon; fold it to the IPA mark
+        // so it attaches to its vowel like any other length.
+        let c = if c == ':' { 'ː' } else { c };
         if is_drop(c) {
             continue;
         }
-        if c == '‿' {
+        if tie_pending && out.last().is_some() {
+            out.last_mut().unwrap().push(c);
+            tie_pending = false;
+        } else if c == '‿' {
             out.push(c.to_string());
+        } else if is_tie(c) && out.last().is_some_and(|l| l != "‿") {
+            out.last_mut().unwrap().push(c);
+            tie_pending = true;
         } else if is_attach(c) && out.last().is_some_and(|l| l != "‿") {
             out.last_mut().unwrap().push(c);
         } else {
@@ -330,28 +391,31 @@ pub fn convert(lang: &str, path: &str, out_path: &str) {
             skipped_multi += 1;
             continue;
         }
-        let readings = phonemic(&e.ipas);
-        if readings.is_empty() {
+        // Take only the first phonemic reading. kaikki lists the citation form
+        // first and inflected or "incorrect"-tagged variants after -- "beyaz" is
+        // [/beˈjɑz/, /bejɑzˈlaɾ/], the second being the plural. Emitting every
+        // reading put those extra forms in the TSV under the wrong headword; the
+        // first is the one that belongs to the word.
+        let Some(r) = phonemic(&e.ipas).into_iter().next() else {
+            no_pron += 1;
+            continue;
+        };
+        let segs = segment(r);
+        if segs.is_empty() {
             no_pron += 1;
             continue;
         }
-        for r in readings {
-            let segs = segment(r);
-            if segs.is_empty() {
-                continue;
+        let joined = segs.join(" ");
+        match index.get(&e.word) {
+            Some(&i) => {
+                let v: &mut Vec<String> = &mut words[i].1;
+                if !v.contains(&joined) {
+                    v.push(joined);
+                }
             }
-            let joined = segs.join(" ");
-            match index.get(&e.word) {
-                Some(&i) => {
-                    let v: &mut Vec<String> = &mut words[i].1;
-                    if !v.contains(&joined) {
-                        v.push(joined);
-                    }
-                }
-                None => {
-                    index.insert(e.word.clone(), words.len());
-                    words.push((e.word.clone(), vec![joined]));
-                }
+            None => {
+                index.insert(e.word.clone(), words.len());
+                words.push((e.word.clone(), vec![joined]));
             }
         }
     }
@@ -387,13 +451,59 @@ mod tests {
     }
 
     #[test]
-    fn phonemic_keeps_backslash_drops_brackets() {
-        let ipas = vec![
-            "\\a.kœj\\".to_string(),
-            "[ɛ̃.n‿a.kœj]".to_string(),
-            "\\\\".to_string(),
-        ];
-        assert_eq!(phonemic(&ipas), vec!["a.kœj"]);
+    fn phonemic_prefers_broad_over_narrow() {
+        // fr backslash + a narrow bracket: broad wins, bracket ignored.
+        let fr = vec!["\\a.kœj\\".to_string(), "[ɛ̃.n‿a.kœj]".to_string()];
+        assert_eq!(phonemic(&fr), vec!["a.kœj"]);
+        // slash editions (de/es/it): broad slash form is taken.
+        let it = vec!["/ˈkaza/".to_string(), "/ˈkasa/".to_string()];
+        assert_eq!(phonemic(&it), vec!["ˈkaza", "ˈkasa"]);
+    }
+
+    #[test]
+    fn phonemic_falls_back_to_bracket_when_no_broad() {
+        // German writes only narrow brackets; without a fallback we would drop
+        // the whole edition.
+        let de = vec!["[haˈloː]".to_string()];
+        assert_eq!(phonemic(&de), vec!["haˈloː"]);
+    }
+
+    #[test]
+    fn phonemic_rejects_ascii_approximations() {
+        // pt carries junk like /e."sEx.tu/ next to real IPA; keep only the real.
+        let pt = vec!["/e.\"sEx.tu/".to_string(), "/esˈeʁtu/".to_string()];
+        assert_eq!(phonemic(&pt), vec!["esˈeʁtu"]);
+    }
+
+    #[test]
+    fn phonemic_rejects_xsampa_placeholders_and_merged_forms() {
+        // X-SAMPA (digit tap, @ schwa, bare ~), a `…`/`*` placeholder, and a
+        // two-form field with an inner `/` are all rejected.
+        assert!(phonemic(&["/e b o 4 e ~ s i/".to_string()]).is_empty());
+        assert!(phonemic(&["\\ptit@\\".to_string()]).is_empty());
+        assert!(phonemic(&["[…]".to_string()]).is_empty());
+        assert!(phonemic(&["/a t e/ , /a t/".to_string()]).is_empty());
+        // a clean form alongside junk still comes through
+        let mixed = vec!["/e b o 4/".to_string(), "[a ɡ o]".to_string()];
+        assert_eq!(phonemic(&mixed), vec!["a ɡ o"]);
+    }
+
+    #[test]
+    fn segment_normalises_ascii_length_and_stress() {
+        // ASCII ':' folds to ː and attaches; ASCII apostrophe stress is dropped.
+        assert_eq!(segment("m a : v i"), ["m", "aː", "v", "i"]);
+        assert_eq!(segment("' s a l t u"), ["s", "a", "l", "t", "u"]);
+    }
+
+    #[test]
+    fn segment_keeps_affricate_tie_as_one_token() {
+        // U+0361 binds both sides: t͡s is one phoneme, not t͡ + s.
+        assert_eq!(segment("t\u{0361}sar"), ["t\u{0361}s", "a", "r"]);
+        assert_eq!(segment("d\u{0361}ʒun"), ["d\u{0361}ʒ", "u", "n"]);
+        // below-bar U+035C too
+        assert_eq!(segment("t\u{035C}s"), ["t\u{035C}s"]);
+        // a tie bar plus a following length mark still binds the base pair
+        assert_eq!(segment("k\u{0361}p"), ["k\u{0361}p"]);
     }
 
     #[test]
