@@ -7,6 +7,7 @@
 mod align;
 mod bench;
 mod fetch;
+mod kaikki;
 mod silver;
 mod train;
 
@@ -235,9 +236,22 @@ fn main() {
                 .unwrap_or_else(|| format!("data/wikipron/{}.tsv", a[1]));
             build(&a[1], &tsv);
         }
+        // kaikki.org wiktextract dump -> WikiPron-style TSV. Richer than the
+        // English-Wiktionary-derived WikiPron for most languages' own words.
+        Some("kaikki") if a.len() >= 3 => {
+            let out = a
+                .get(3)
+                .cloned()
+                .unwrap_or_else(|| format!("data/kaikki/{}.tsv", a[1]));
+            if let Some(dir) = std::path::Path::new(&out).parent() {
+                fs::create_dir_all(dir).ok();
+            }
+            kaikki::convert(&a[1], &a[2], &out);
+        }
         Some("say") if a.len() >= 3 => say(&a[1], &a[2]),
         _ => eprintln!(
             "usage:\n  xtask fetch <lang>\n  xtask fetch-all\n  \
+             xtask kaikki <lang> <jsonl[.gz]> [out.tsv]\n  \
              xtask build <lang> [tsv]\n  xtask say <lang> <word>"
         ),
     }
