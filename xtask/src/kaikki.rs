@@ -10,10 +10,13 @@
 //!
 //! Two properties of the source drive the code below.
 //!
-//! Notation: kaikki carries both `\a.kœj\` (phonemic -- the citation form) and
-//! `[ɛ̃.n‿a.kœj]` (phonetic -- as realised in context; that one is "un accueil",
-//! article and liaison included). Only the backslash form is a property of the
-//! word on its own, so the bracket form is dropped.
+//! Notation: editions disagree. fr.wiktionary writes the phonemic form as
+//! `\a.kœj\` and a phonetic one as `[ɛ̃.n‿a.kœj]`; most other editions use
+//! `/.../` for phonemic and `[...]` for phonetic. The phonemic form is a
+//! property of the word on its own -- the phonetic one is a contextual
+//! realisation (that fr example is "un accueil", article and liaison included).
+//! So the broad form (`\...\` or `/.../`) is preferred and the narrow `[...]`
+//! is taken only when a word has nothing else. See `phonemic`.
 //!
 //! Segmentation: kaikki writes a syllabified string, the builder wants
 //! phonemes. Dots and stress marks are not phonemes, and a combining mark
@@ -244,12 +247,37 @@ pub fn parse_line(line: &str) -> Option<Entry> {
 
 /// Keep the phonemic (`\...\`) readings and drop the phonetic (`[...]`) ones.
 pub fn phonemic(ipas: &[String]) -> Vec<&str> {
+    // Broad first, narrow only as a fallback. Editions disagree on notation:
+    // fr.wiktionary writes phonemic as `\...\`, most others use `/.../` (broad)
+    // and `[...]` (narrow, allophonic). Slashes and backslashes are both the
+    // citation form we want; brackets carry contextual detail and are taken only
+    // when a word has nothing else.
+    let broad: Vec<&str> = ipas
+        .iter()
+        .filter_map(|s| {
+            unwrap_delim(s.trim(), '\\', '\\').or_else(|| unwrap_delim(s.trim(), '/', '/'))
+        })
+        .filter(|s| looks_like_ipa(s))
+        .collect();
+    if !broad.is_empty() {
+        return broad;
+    }
     ipas.iter()
-        .map(|s| s.trim())
-        .filter(|s| s.len() > 2 && s.starts_with('\\') && s.ends_with('\\'))
-        .map(|s| s[1..s.len() - 1].trim())
-        .filter(|s| !s.is_empty())
+        .filter_map(|s| unwrap_delim(s.trim(), '[', ']'))
+        .filter(|s| looks_like_ipa(s))
         .collect()
+}
+
+/// Content between matching single-char delimiters, or None.
+fn unwrap_delim(s: &str, open: char, close: char) -> Option<&str> {
+    let inner = s.strip_prefix(open)?.strip_suffix(close)?.trim();
+    (!inner.is_empty()).then_some(inner)
+}
+
+/// Reject ASCII-approximation junk some editions carry (e.g. pt `e."sEx.tu`).
+/// Real IPA has no ASCII capitals and no straight quotes; the stress mark is ˈ.
+fn looks_like_ipa(s: &str) -> bool {
+    !s.chars().any(|c| c.is_ascii_uppercase() || c == '"')
 }
 
 /// Not phonemes: syllable breaks and stress.
@@ -387,13 +415,28 @@ mod tests {
     }
 
     #[test]
-    fn phonemic_keeps_backslash_drops_brackets() {
-        let ipas = vec![
-            "\\a.kœj\\".to_string(),
-            "[ɛ̃.n‿a.kœj]".to_string(),
-            "\\\\".to_string(),
-        ];
-        assert_eq!(phonemic(&ipas), vec!["a.kœj"]);
+    fn phonemic_prefers_broad_over_narrow() {
+        // fr backslash + a narrow bracket: broad wins, bracket ignored.
+        let fr = vec!["\\a.kœj\\".to_string(), "[ɛ̃.n‿a.kœj]".to_string()];
+        assert_eq!(phonemic(&fr), vec!["a.kœj"]);
+        // slash editions (de/es/it): broad slash form is taken.
+        let it = vec!["/ˈkaza/".to_string(), "/ˈkasa/".to_string()];
+        assert_eq!(phonemic(&it), vec!["ˈkaza", "ˈkasa"]);
+    }
+
+    #[test]
+    fn phonemic_falls_back_to_bracket_when_no_broad() {
+        // German writes only narrow brackets; without a fallback we would drop
+        // the whole edition.
+        let de = vec!["[haˈloː]".to_string()];
+        assert_eq!(phonemic(&de), vec!["haˈloː"]);
+    }
+
+    #[test]
+    fn phonemic_rejects_ascii_approximations() {
+        // pt carries junk like /e."sEx.tu/ next to real IPA; keep only the real.
+        let pt = vec!["/e.\"sEx.tu/".to_string(), "/esˈeʁtu/".to_string()];
+        assert_eq!(phonemic(&pt), vec!["esˈeʁtu"]);
     }
 
     #[test]
