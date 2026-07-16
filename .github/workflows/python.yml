@@ -94,7 +94,21 @@ jobs:
         with:
           path: dist
           merge-multiple: true
-      - uses: pypa/gh-action-pypi-publish@release/v1
+      # Split so a missing pending publisher for the pack names cannot block
+      # the g2p2 wheels themselves.
+      - name: sort artifacts
+        run: |
+          mkdir -p dist-core dist-packs
+          mv dist/g2p2_models* dist-packs/ 2>/dev/null || true
+          mv dist/* dist-core/ 2>/dev/null || true
+      - name: publish g2p2
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          packages-dir: dist
+          packages-dir: dist-core
+          skip-existing: true
+      - name: publish model packs (needs pending publishers for g2p2-models*)
+        continue-on-error: true
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist-packs
           skip-existing: true
