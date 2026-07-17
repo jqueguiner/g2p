@@ -47,11 +47,19 @@ first use** (from the `models-v2` GitHub release). Since v0.2.0 the models
 carry the full attested lexicon — French alone is 1.6M words — which put the
 complete set past what a single PyPI wheel can bundle.
 
-For a fully offline install, ship every model at install time instead:
+For a fully offline install, ship the models at install time instead. Pull
+everything, one language family, or a single language (aliased to its family):
 
 ```bash
-pip install "g2p2[all]"
+pip install "g2p2[all]"        # every model
+pip install "g2p2[romance]"    # a whole family (fr, es, pt, it, ro, …)
+pip install "g2p2[fr]"         # convenience alias -> installs the romance family
 ```
+
+The models live in ~14 `g2p2-group-<family>` data packages (romance, germanic,
+slavic, indic, iranian, turkic, semitic, cjk, sea, celtic, other-euro, african,
+pacific, other); `g2p2[all]` is a meta that depends on them all. A per-language
+extra like `g2p2[fr]` is just an alias for its family package.
 
 (`$G2P2_MODELS` pointing at a directory of `.g2p` files still overrides
 everything, for air-gapped or custom-model setups.)
