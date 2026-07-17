@@ -59,17 +59,27 @@ def _cache_dir() -> Path:
     return Path(base) / "g2p2"
 
 
-def _installed_pack(language: str) -> Path | None:
-    """Model from an installed per-language package.
+# Whisper language code -> family group (matches scripts/groups.json). Each
+# `pip install g2p2[<group>]` installs the g2p2-group-<group> data package.
+_LANG_GROUP = {"af": "germanic", "am": "semitic", "ar": "semitic", "as": "indic", "az": "turkic", "ba": "turkic", "be": "slavic", "bg": "slavic", "bn": "indic", "bo": "other", "br": "celtic", "bs": "slavic", "ca": "romance", "cs": "slavic", "cy": "celtic", "da": "germanic", "de": "germanic", "el": "other-euro", "en": "germanic", "es": "romance", "et": "other-euro", "eu": "other-euro", "fa": "iranian", "fi": "other-euro", "fo": "germanic", "fr": "romance", "gl": "romance", "gu": "indic", "ha": "african", "haw": "pacific", "he": "semitic", "hi": "indic", "hr": "slavic", "ht": "romance", "hu": "other-euro", "hy": "other-euro", "id": "sea", "is": "germanic", "it": "romance", "ja": "cjk", "jw": "sea", "ka": "other-euro", "kk": "turkic", "km": "sea", "kn": "indic", "ko": "cjk", "la": "romance", "lb": "germanic", "ln": "african", "lo": "sea", "lt": "other-euro", "lv": "other-euro", "mg": "african", "mi": "pacific", "mk": "slavic", "ml": "indic", "mn": "other", "mr": "indic", "ms": "sea", "mt": "semitic", "my": "sea", "ne": "indic", "nl": "germanic", "nn": "germanic", "no": "germanic", "oc": "romance", "pa": "indic", "pl": "slavic", "ps": "iranian", "pt": "romance", "ro": "romance", "ru": "slavic", "sa": "indic", "sd": "indic", "si": "indic", "sk": "slavic", "sl": "slavic", "sn": "african", "so": "african", "sq": "other-euro", "sr": "slavic", "su": "sea", "sv": "germanic", "sw": "african", "ta": "indic", "te": "indic", "tg": "iranian", "th": "sea", "tk": "turkic", "tl": "sea", "tr": "turkic", "tt": "turkic", "uk": "slavic", "ur": "indic", "uz": "turkic", "vi": "sea", "yi": "germanic", "yo": "african", "yue": "cjk", "zh": "cjk"}
 
-    ``pip install g2p2[fr]`` installs ``g2p2-lang-fr`` (module ``g2p2_lang_fr``)
-    carrying ``fr.g2p.xz``; ``g2p2[all]`` installs them all via the g2p2-models
-    meta. The blob is decompressed once into the cache.
+
+def _installed_pack(language: str) -> Path | None:
+    """Model from an installed language-family package.
+
+    ``pip install g2p2[romance]`` installs ``g2p2-group-romance`` (module
+    ``g2p2_group_romance``) carrying ``fr.g2p.xz``, ``es.g2p.xz``, …; ``g2p2[all]``
+    installs every group via the g2p2-models meta. The blob is decompressed once
+    into the cache.
     """
     import importlib.util
     import lzma
 
-    spec = importlib.util.find_spec(f"g2p2_lang_{language}")
+    group = _LANG_GROUP.get(language)
+    if group is None:
+        return None
+    module = f"g2p2_group_{group}".replace("-", "_")
+    spec = importlib.util.find_spec(module)
     if spec is None or not spec.submodule_search_locations:
         return None
     src = Path(spec.submodule_search_locations[0]) / f"{language}.g2p.xz"

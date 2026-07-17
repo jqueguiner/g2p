@@ -53,11 +53,11 @@ jobs:
           name: sdist
           path: bindings/python/dist
 
-  # Offline pack for `pip install g2p2[all]`: xz-compressed model data split
-  # into chunk packages under PyPI's file cap, plus the g2p2-models meta.
-  # NOTE: trusted publishing is per project name — PyPI needs pending
-  # publishers registered for g2p2-models and g2p2-models-part1..3 (same
-  # workflow file, environment `pypi`) before the first publish succeeds.
+  # Offline packs for `pip install g2p2[all]` / `g2p2[<family>]`: xz-compressed
+  # model data grouped by language family (~14 g2p2-group-* wheels, each under
+  # PyPI's file cap) plus the g2p2-models meta that depends on them all. These
+  # publish with a PyPI API token (see the publish job), so no pending trusted
+  # publishers are needed for the pack project names.
   model-packs:
     runs-on: ubuntu-latest
     steps:
@@ -75,7 +75,7 @@ jobs:
       - name: build packs
         run: |
           VERSION=$(grep -m1 '^version' bindings/python/pyproject.toml | cut -d'"' -f2)
-          python scripts/pack_models.py models packs "$VERSION"
+          python scripts/pack_models.py models packs "$VERSION" scripts/groups.json
       - uses: actions/upload-artifact@v4
         with:
           name: model-packs
@@ -99,17 +99,18 @@ jobs:
       - name: sort artifacts
         run: |
           mkdir -p dist-core dist-packs
-          mv dist/g2p2_models* dist/g2p2_lang_* dist-packs/ 2>/dev/null || true
+          mv dist/g2p2_models* dist/g2p2_group_* dist-packs/ 2>/dev/null || true
           mv dist/* dist-core/ 2>/dev/null || true
       - name: publish g2p2
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: dist-core
           skip-existing: true
-      # Model data packages are published with a PyPI API token, not OIDC:
-      # a *pending* trusted publisher must be unique per (owner, repo, workflow,
-      # environment), so multiple data packages can't share one pending
-      # publisher. A token creates all of them in one shot and sidesteps that.
+      # Data packages (~14 g2p2-group-* families + the g2p2-models meta) go up
+      # with a PyPI API token, not OIDC: a *pending* trusted publisher must be
+      # unique per (owner, repo, workflow, environment), so multiple data
+      # packages can't share one pending publisher — a token creates them all
+      # in one shot. 15 projects is well under PyPI's new-project rate limit.
       - name: publish model packs
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
