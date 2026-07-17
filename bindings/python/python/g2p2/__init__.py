@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import functools
 import os
+import re
 import urllib.request
 from pathlib import Path
 
@@ -38,6 +39,7 @@ __all__ = [
     "Model",
     "phonemize",
     "phonemize_many",
+    "expand_numbers",
     "word_similarity",
     "similarity",
     "distance",
@@ -45,6 +47,51 @@ __all__ = [
     "model_path",
     "__version__",
 ]
+
+# num2words2's language key matches the Whisper code for 99/100 languages; only
+# Cantonese (yue) is absent there -> read its numerals as Mandarin.
+_N2W_LANG = {"yue": "zh"}
+_HAS_DIGIT = re.compile(r"\d")
+
+
+@functools.lru_cache(maxsize=1)
+def _num2words_sentence():
+    """num2words2's in-context number expander, or None if the optional
+    ``num2words2`` dependency (``pip install "g2p2[numbers]"``) isn't installed."""
+    try:
+        from num2words2 import num2words_sentence
+    except Exception:  # noqa: BLE001 — missing extra or import failure -> disabled
+        return None
+    return num2words_sentence
+
+
+def _expand_numbers(text: str, language: str, *, required: bool):
+    """Spell digit runs in `text` as words in `language`. If num2words2 is
+    unavailable: raise (required) or return `text` unchanged (best-effort)."""
+    fn = _num2words_sentence()
+    if fn is None:
+        if required:
+            raise ImportError(
+                'number expansion needs num2words2: pip install "g2p2[numbers]"'
+            )
+        return text
+    key = _N2W_LANG.get(language, language)
+    try:
+        return fn(text, lang=key)
+    except NotImplementedError:  # num2words2 lacks this language -> leave as-is
+        return text
+
+
+def expand_numbers(text: str, language: str) -> str:
+    """Spell out digits in `text` as words in `language` so they can be
+    phonemized — e.g. ``expand_numbers("12 rue", "fr") == "douze rue"``.
+
+    Requires the optional ``num2words2`` dependency (``pip install
+    "g2p2[numbers]"``; 120+ languages). Ordinals ("1er" -> "premier") and
+    decimals are handled by num2words2. Languages num2words2 doesn't cover are
+    returned unchanged.
+    """
+    return _expand_numbers(text, language, required=True)
 
 
 def _bundled_dir() -> Path | None:
@@ -141,14 +188,36 @@ def get_model(language: str) -> Model:
     return Model.load(model_path(language))
 
 
-def phonemize(word: str, language: str) -> str:
-    """IPA for `word` in `language`."""
-    return get_model(language).phonemize(word)
+def _phonemize_expanded(model: Model, text: str) -> str:
+    """Phonemize `text` that may hold several words after number expansion,
+    tokenizing on whitespace and hyphens (fr 'vingt-trois' -> two tokens)."""
+    toks = [t for t in re.split(r"[\s\-]+", text) if t]
+    return " ".join(model.phonemize(t) for t in toks)
 
 
-def phonemize_many(words, language: str):
-    """IPA for many `words` in `language`."""
-    return get_model(language).phonemize_many(list(words))
+def phonemize(word: str, language: str, expand_numbers: bool = True) -> str:
+    """IPA for `word` in `language`.
+
+    If `expand_numbers` (default) and `word` holds digits, it is first spelled
+    out in `language` via num2words2 — '12' -> 'douze' -> 'duz'. The spelled
+    form may be several words; each is phonemized and space-joined. Number
+    expansion is a no-op unless the ``num2words2`` extra is installed
+    (``pip install "g2p2[numbers]"``).
+    """
+    model = get_model(language)
+    if expand_numbers and _HAS_DIGIT.search(word):
+        spelled = _expand_numbers(word, language, required=False)
+        if spelled != word:
+            return _phonemize_expanded(model, spelled)
+    return model.phonemize(word)
+
+
+def phonemize_many(words, language: str, expand_numbers: bool = True):
+    """IPA for many `words` in `language`. See `phonemize` for `expand_numbers`."""
+    words = list(words)
+    if expand_numbers and any(_HAS_DIGIT.search(w) for w in words):
+        return [phonemize(w, language, expand_numbers=True) for w in words]
+    return get_model(language).phonemize_many(words)
 
 
 def word_similarity(a: str, b: str, language: str, method: str = "weighted") -> float:

@@ -25,6 +25,10 @@ classifiers = [
 #   pip install "g2p2[fr]"        -> convenience alias -> its family (romance)
 # Data lives in ~14 g2p2-group-* packages (one per family), not 100 projects.
 all = ["g2p2-models==0.2.1"]
+# Numeral normalization: spell digits as words before G2P ("12" -> "douze"),
+# 120+ languages, via num2words2. Enables g2p2.expand_numbers + auto-expansion
+# in phonemize. Orthogonal to the model extras above.
+numbers = ["num2words2>=1.0.18"]
 romance = ["g2p2-group-romance==0.2.1"]
 germanic = ["g2p2-group-germanic==0.2.1"]
 slavic = ["g2p2-group-slavic==0.2.1"]

@@ -75,6 +75,32 @@ g2p2.phonemize_many(["chat", "eau"], language="fr")   # ['ʃa', 'o']
 
 Language codes are the 100 Whisper codes (`en`, `fr`, `zh`, `de`, `ja`, …).
 
+### Numbers
+
+Digits are spelled out in-language before G2P (so `"12"` phonemizes like
+`"douze"`), via [num2words2](https://pypi.org/project/num2words2/) — 120+
+languages, ordinals and decimals included. Install the extra:
+
+```bash
+pip install "g2p2[numbers]"
+```
+
+```python
+import g2p2
+
+g2p2.phonemize("12", language="fr")                   # 'duz'   (== "douze")
+g2p2.phonemize("2026", language="fr")                 # 'dø mil vɛ̃ sis'
+g2p2.expand_numbers("12 rue de la Paix", "fr")        # 'douze rue de la Paix'
+g2p2.expand_numbers("1er étage", "fr")                # 'premier étage'
+
+g2p2.phonemize("42", language="en", expand_numbers=False)  # raw digits, no spelling
+```
+
+Expansion is **on by default** and a no-op unless `g2p2[numbers]` is installed —
+the lean install is unaffected. A spelled form of several words (fr
+`vingt-trois`) is phonemized token-by-token and space-joined. Cantonese (`yue`)
+numerals fall back to Mandarin (`zh`).
+
 ### Sound-alike similarity
 
 ```python
@@ -112,6 +138,7 @@ Build blobs yourself: `cargo run --release -p xtask -- build fr` → `data/fr.g2
 |------|---------|-------|
 | `g2p2.phonemize(word, language)` | `str` | auto-loads the language model |
 | `g2p2.phonemize_many(words, language)` | `list[str]` | batch |
+| `g2p2.expand_numbers(text, language)` | `str` | spell digits as words (needs `g2p2[numbers]`) |
 | `g2p2.word_similarity(a, b, language, method="weighted")` | `float` | phonemize both, compare |
 | `g2p2.similarity(ipa_a, ipa_b, method="weighted")` | `float` | 0..1, 1=identical |
 | `g2p2.distance(ipa_a, ipa_b, method="weighted")` | `float` | 0..1, 0=identical |
