@@ -60,29 +60,28 @@ def _cache_dir() -> Path:
 
 
 def _installed_pack(language: str) -> Path | None:
-    """Model from the optional offline pack (``pip install g2p2[all]``).
+    """Model from an installed per-language package.
 
-    The pack ships xz-compressed blobs across chunk packages named
-    ``g2p2_models_part*``; the first hit is decompressed once into the cache.
+    ``pip install g2p2[fr]`` installs ``g2p2-lang-fr`` (module ``g2p2_lang_fr``)
+    carrying ``fr.g2p.xz``; ``g2p2[all]`` installs them all via the g2p2-models
+    meta. The blob is decompressed once into the cache.
     """
     import importlib.util
     import lzma
 
-    for i in range(1, 10):
-        spec = importlib.util.find_spec(f"g2p2_models_part{i}")
-        if spec is None or not spec.submodule_search_locations:
-            continue
-        src = Path(spec.submodule_search_locations[0]) / f"{language}.g2p.xz"
-        if not src.exists():
-            continue
-        out = _cache_dir() / f"{language}.g2p"
-        if not out.exists():
-            out.parent.mkdir(parents=True, exist_ok=True)
-            tmp = out.with_suffix(".g2p.part")
-            tmp.write_bytes(lzma.decompress(src.read_bytes()))
-            tmp.replace(out)
-        return out
-    return None
+    spec = importlib.util.find_spec(f"g2p2_lang_{language}")
+    if spec is None or not spec.submodule_search_locations:
+        return None
+    src = Path(spec.submodule_search_locations[0]) / f"{language}.g2p.xz"
+    if not src.exists():
+        return None
+    out = _cache_dir() / f"{language}.g2p"
+    if not out.exists():
+        out.parent.mkdir(parents=True, exist_ok=True)
+        tmp = out.with_suffix(".g2p.part")
+        tmp.write_bytes(lzma.decompress(src.read_bytes()))
+        tmp.replace(out)
+    return out
 
 
 def model_path(language: str) -> str:
