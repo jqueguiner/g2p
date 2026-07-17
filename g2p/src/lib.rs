@@ -9,8 +9,13 @@ pub mod lang;
 pub mod lexicon;
 pub mod model;
 pub mod normalize;
+#[cfg(feature = "numbers")]
+pub mod numbers;
 pub mod similarity;
 
 pub use decode::phonemize;
 pub use model::Model;
 pub use similarity::{similarity, Method};
+
+#[cfg(feature = "numbers")]
+pub use numbers::{expand_numbers, spell_cardinal};

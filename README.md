@@ -77,13 +77,10 @@ Language codes are the 100 Whisper codes (`en`, `fr`, `zh`, `de`, `ja`, …).
 
 ### Numbers
 
-Digits are spelled out in-language before G2P (so `"12"` phonemizes like
-`"douze"`), via [num2words2](https://pypi.org/project/num2words2/) — 120+
-languages, ordinals and decimals included. Install the extra:
-
-```bash
-pip install "g2p2[numbers]"
-```
+Digits are spelled out in-language before G2P, so `"12"` phonemizes like
+`"douze"`. This is **built into the wheel** (the Rust core compiles in
+[num2words2-core](https://crates.io/crates/num2words2-core), 120+ languages) —
+no extra install, on by default:
 
 ```python
 import g2p2
@@ -91,15 +88,33 @@ import g2p2
 g2p2.phonemize("12", language="fr")                   # 'duz'   (== "douze")
 g2p2.phonemize("2026", language="fr")                 # 'dø mil vɛ̃ sis'
 g2p2.expand_numbers("12 rue de la Paix", "fr")        # 'douze rue de la Paix'
-g2p2.expand_numbers("1er étage", "fr")                # 'premier étage'
 
 g2p2.phonemize("42", language="en", expand_numbers=False)  # raw digits, no spelling
 ```
 
-Expansion is **on by default** and a no-op unless `g2p2[numbers]` is installed —
-the lean install is unaffected. A spelled form of several words (fr
-`vingt-trois`) is phonemized token-by-token and space-joined. Cantonese (`yue`)
-numerals fall back to Mandarin (`zh`).
+The built-in engine handles integer **cardinals**. For **ordinals and decimals**
+(`"1er"` → `"premier"`, `"3.14"` → `"three point one four"`), install the richer
+[num2words2](https://pypi.org/project/num2words2/) Python engine, which then
+takes precedence automatically:
+
+```bash
+pip install "g2p2[numbers]"
+```
+
+```python
+g2p2.expand_numbers("1er étage", "fr")                # 'premier étage'  (with the extra)
+```
+
+A spelled form of several words (fr `vingt-trois`) is phonemized token-by-token
+and space-joined. Cantonese (`yue`) numerals fall back to Mandarin (`zh`).
+
+Numbers also work in the Rust crate (feature-gated) and the CLI:
+
+```rust
+// Cargo.toml: g2p2-core = { version = "0.2", features = ["numbers"] }
+g2p::expand_numbers("12 rue", "fr");   // "douze rue"
+g2p::spell_cardinal("42", "en");       // Some("forty-two")
+```
 
 ### Sound-alike similarity
 

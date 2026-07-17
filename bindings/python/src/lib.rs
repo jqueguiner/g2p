@@ -80,6 +80,22 @@ fn distance(a: &str, b: &str, method: &str) -> f32 {
     g2p::similarity::distance(a, b, method_of(method))
 }
 
+/// Spell digit tokens in `text` as words in `lang` before G2P
+/// ("12 rue" -> "douze rue"). Non-numeric tokens pass through unchanged.
+#[cfg(feature = "numbers")]
+#[pyfunction]
+fn expand_numbers(text: &str, lang: &str) -> String {
+    g2p::expand_numbers(text, lang)
+}
+
+/// Spell one integer numeral as cardinal words in `lang` ("12","fr" ->
+/// "douze"), or None if it isn't a bare integer / the language is unsupported.
+#[cfg(feature = "numbers")]
+#[pyfunction]
+fn spell_cardinal(token: &str, lang: &str) -> Option<String> {
+    g2p::spell_cardinal(token, lang)
+}
+
 /// Low-level native extension. The user-facing API lives in the `g2p2` Python
 /// package (which adds language-based auto-loading on top of this).
 #[pymodule]
@@ -88,5 +104,10 @@ fn _native(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<Model>()?;
     m.add_function(wrap_pyfunction!(similarity, m)?)?;
     m.add_function(wrap_pyfunction!(distance, m)?)?;
+    #[cfg(feature = "numbers")]
+    {
+        m.add_function(wrap_pyfunction!(expand_numbers, m)?)?;
+        m.add_function(wrap_pyfunction!(spell_cardinal, m)?)?;
+    }
     Ok(())
 }

@@ -36,9 +36,9 @@ jobs:
       - uses: taiki-e/install-action@cargo-llvm-cov
       - uses: Swatinem/rust-cache@v2
       - name: generate lcov
-        run: cargo llvm-cov -p g2p --ignore-filename-regex 'src/bin/' --lcov --output-path lcov.info
+        run: cargo llvm-cov -p g2p2-core --ignore-filename-regex 'src/bin/' --lcov --output-path lcov.info
       - name: enforce >95% line coverage
-        run: cargo llvm-cov -p g2p --ignore-filename-regex 'src/bin/' --summary-only --fail-under-lines 95
+        run: cargo llvm-cov -p g2p2-core --ignore-filename-regex 'src/bin/' --summary-only --fail-under-lines 95
       - name: upload to Codecov
         uses: codecov/codecov-action@v4
         with:

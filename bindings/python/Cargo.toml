@@ -9,6 +9,12 @@ license = "MIT OR Apache-2.0"
 name = "_native"
 crate-type = ["cdylib"]
 
+[features]
+# Numeral normalization is ON by default: the wheel ships with it, so numbers
+# work out of the box with no optional Python dependency.
+default = ["numbers"]
+numbers = ["g2p/numbers"]
+
 [dependencies]
-g2p = { path = "../../g2p" }
+g2p = { path = "../../g2p", package = "g2p2-core" }
 pyo3 = { version = "0.22", features = ["extension-module", "abi3-py38"] }

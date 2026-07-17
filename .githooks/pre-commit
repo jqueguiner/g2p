@@ -14,7 +14,7 @@ cargo test --workspace --quiet
 
 echo "pre-commit: coverage (g2p, >95% lines)…"
 if command -v cargo-llvm-cov >/dev/null 2>&1; then
-  cargo llvm-cov -p g2p --ignore-filename-regex 'src/bin/' \
+  cargo llvm-cov -p g2p2-core --ignore-filename-regex 'src/bin/' \
     --summary-only --fail-under-lines 95
 else
   echo "  ERROR: cargo-llvm-cov not installed — cannot verify coverage." >&2

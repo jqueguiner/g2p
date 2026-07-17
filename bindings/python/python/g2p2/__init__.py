@@ -30,6 +30,11 @@ from ._native import Model, __version__
 from ._native import distance as _distance
 from ._native import similarity as _similarity
 
+try:  # built into the wheel (Rust `numbers` feature); integer cardinals, no deps
+    from ._native import expand_numbers as _native_expand
+except ImportError:  # wheel built without the feature
+    _native_expand = None
+
 _MODELS_URL = os.environ.get(
     "G2P2_MODELS_URL",
     "https://github.com/jqueguiner/g2p2/releases/download/models-v2",
@@ -56,8 +61,9 @@ _HAS_DIGIT = re.compile(r"\d")
 
 @functools.lru_cache(maxsize=1)
 def _num2words_sentence():
-    """num2words2's in-context number expander, or None if the optional
-    ``num2words2`` dependency (``pip install "g2p2[numbers]"``) isn't installed."""
+    """num2words2's richer in-context expander (ordinals, decimals,
+    sentence-smart), or None if the optional ``num2words2`` dependency
+    (``pip install "g2p2[numbers]"``) isn't installed."""
     try:
         from num2words2 import num2words_sentence
     except Exception:  # noqa: BLE001 — missing extra or import failure -> disabled
@@ -66,20 +72,30 @@ def _num2words_sentence():
 
 
 def _expand_numbers(text: str, language: str, *, required: bool):
-    """Spell digit runs in `text` as words in `language`. If num2words2 is
-    unavailable: raise (required) or return `text` unchanged (best-effort)."""
+    """Spell digit runs in `text` as words in `language`.
+
+    Prefers the richer ``num2words2`` engine when the ``[numbers]`` extra is
+    installed (ordinals "1er"->"premier", decimals); otherwise uses the wheel's
+    built-in native engine (integer cardinals, no dependency). If neither is
+    available: raise (required) or return `text` unchanged (best-effort)."""
+    # 1. richer optional engine
     fn = _num2words_sentence()
-    if fn is None:
-        if required:
-            raise ImportError(
-                'number expansion needs num2words2: pip install "g2p2[numbers]"'
-            )
-        return text
-    key = _N2W_LANG.get(language, language)
-    try:
-        return fn(text, lang=key)
-    except NotImplementedError:  # num2words2 lacks this language -> leave as-is
-        return text
+    if fn is not None:
+        key = _N2W_LANG.get(language, language)
+        try:
+            return fn(text, lang=key)
+        except NotImplementedError:  # unsupported language -> leave as-is
+            return text
+    # 2. built-in native engine (maps yue->zh internally)
+    if _native_expand is not None:
+        return _native_expand(text, language)
+    # 3. nothing available
+    if required:
+        raise ImportError(
+            'number expansion needs the native build or num2words2: '
+            'pip install "g2p2[numbers]"'
+        )
+    return text
 
 
 def expand_numbers(text: str, language: str) -> str:

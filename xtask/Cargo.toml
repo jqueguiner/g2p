@@ -5,4 +5,4 @@ edition = "2021"
 description = "Build tool: fetch -> silver -> align -> train -> compile .g2p blobs"
 
 [dependencies]
-g2p = { path = "../g2p" }
+g2p = { path = "../g2p", package = "g2p2-core" }
