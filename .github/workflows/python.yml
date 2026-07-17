@@ -99,7 +99,7 @@ jobs:
       - name: sort artifacts
         run: |
           mkdir -p dist-core dist-packs
-          mv dist/g2p2_models* dist-packs/ 2>/dev/null || true
+          mv dist/g2p2_models* dist/g2p2_lang_* dist-packs/ 2>/dev/null || true
           mv dist/* dist-core/ 2>/dev/null || true
       - name: publish g2p2
         uses: pypa/gh-action-pypi-publish@release/v1
