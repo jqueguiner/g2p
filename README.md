@@ -138,25 +138,36 @@ The `xtask` build tool fetches data and compiles blobs (build-time only — its
 deps never enter the runtime crate).
 
 ```bash
-cargo run -p xtask -- fetch-all      # download WikiPron TSVs (curl)
-cargo run -p xtask -- build-all      # align (EM) -> train (Witten-Bell) -> .g2p
-cargo run -p xtask -- say fr bonjour # phonemize from a compiled blob
+# from a kaikki.org Wiktionary dump (the v2 models' primary source)
+cargo run -p xtask -- kaikki fr fr.jsonl.gz data/fr.tsv
+cargo run -p xtask -- build  fr data/fr.tsv   # align (EM) -> train n-gram + lexicon -> .g2p
+
+# or from WikiPron (English-Wiktionary scrape), still supported
+cargo run -p xtask -- fetch-all
+cargo run -p xtask -- build-all
+cargo run -p xtask -- say fr bonjour           # phonemize from a compiled blob
 ```
 
 ## How coverage is achieved (100/100 languages)
 
+Since **models-v2** the primary source is [kaikki.org](https://kaikki.org)
+wiktextract dumps — each language's *own* Wiktionary edition, far richer than
+the English-Wiktionary scrape WikiPron uses. Every attested word is stored in
+the lexicon (French alone is 1.6M), so the n-gram only decodes out-of-vocabulary
+words.
+
 | tier | languages | source |
 |------|-----------|--------|
-| WikiPron gold | 92 | scraped Wiktionary pronunciations |
-| epitran silver | sn, so | epitran rule maps + Wikipedia wordlists |
-| LLM silver | tt, ln, su | Sonnet-generated word→IPA (phonemic orthographies) |
+| kaikki native edition | 19 | a language's own Wiktionary (de 836k words, es 829k, ru 379k, zh 207k, en 94k, …) |
+| kaikki cross-edition merge | 65 | the same language pooled across up to 14 editions, deduped; LLM-validated (0 wrong-language) |
+| WikiPron + silver | 16 | English-Wiktionary scrape, plus epitran/LLM silver for the few languages with no dump |
 | hani lexicon | zh, ja, yue | word→IPA exact match (+ OpenCC simplified fold, kanji supplement) |
 
 ## Pipeline
 
 ```
-fetch → (silver) → align (many-to-many EM) → train (weighted Witten-Bell n-gram)
-      → compile .g2p → load → phonemize
+kaikki|fetch → (silver) → align (many-to-many EM) → train (weighted Witten-Bell n-gram)
+             → full-lexicon fill → compile .g2p → load → phonemize
 ```
 
 - **Alignment**: forward-backward EM, Viterbi to joint tokens, parallelized with `std::thread`.
