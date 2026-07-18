@@ -13,6 +13,19 @@ decoding plus a **lexicon tier** for logographic languages. Models are compiled
 offline into compact `.g2p` blobs. No neural net, no linear algebra, no external
 crates at runtime.
 
+## Install
+
+The Rust crate is published on crates.io as [`g2p2-core`](https://crates.io/crates/g2p2-core):
+
+```bash
+# CLI (installs the `g2p` binary)
+cargo install g2p2-core
+
+# library
+cargo add g2p2-core
+cargo add g2p2-core --features numbers   # + spoken-number expansion
+```
+
 ## Quick start
 
 ```bash
