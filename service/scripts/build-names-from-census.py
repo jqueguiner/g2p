@@ -120,13 +120,23 @@ SUPPLEMENT = {
 }
 
 
+VOWELS = set("aeiouyàáâãäåèéêëìíîïòóôõöøùúûüýÿœæ")
+ASCII_LOWER = set("abcdefghijklmnopqrstuvwxyz")
+
+
 def is_namelike(name):
     if name.lower() in STOPWORDS:
         return False
     n = name.replace("-", "").replace("'", "").replace(" ", "").replace(".", "")
     if len(n) < 2 or len(name) > 24:
         return False
-    return any(c.isalpha() for c in n)
+    if not any(c.isalpha() for c in n):
+        return False
+    # ASCII-only tokens must contain a vowel — drops initials like "Jl", "Kc".
+    nl = n.lower()
+    if all(c in ASCII_LOWER for c in nl) and not any(c in VOWELS for c in nl):
+        return False
+    return True
 
 
 def in_ranges(cp, ranges):
@@ -214,27 +224,33 @@ def main():
 
     # global: name_ascii -> {display spelling: [summed freq, {country codes}]}
     variants = defaultdict(lambda: defaultdict(lambda: [0, set()]))
-    # per language: name_ascii -> {"m":freq,"f":freq,"uni":bool}
-    agg = defaultdict(lambda: defaultdict(lambda: {"m": 0, "f": 0, "uni": False}))
+    # per language: name_ascii -> {"m":freq,"f":freq,"uni":bool,"off":bool}
+    agg = defaultdict(lambda: defaultdict(lambda: {"m": 0, "f": 0, "uni": False, "off": False}))
+    has_official = set()  # languages that carry any official=t names
 
     with open(src, encoding="utf-8", errors="replace") as f:
         for line in f:
             col = line.rstrip("\n").split("\t")
             if len(col) < 11:
                 continue
-            name, ascii_key, cc, gender, unisex = col[1], col[2].lower(), col[3], col[7], col[8]
+            name, ascii_key, cc, official, gender, unisex = (
+                col[1], col[2].lower(), col[3], col[6], col[7], col[8]
+            )
             try:
                 freq = int(col[10])
             except ValueError:
                 freq = 0
             if not name or name == "\\N" or not ascii_key or not is_namelike(name):
                 continue
+            is_off = official == "t"
             v = variants[ascii_key][name]
             v[0] += max(freq, 1)
             v[1].add(cc)
             lang = COUNTRY_LANG.get(cc)
             if not lang:
                 continue
+            if is_off:
+                has_official.add(lang)
             e = agg[lang][ascii_key]
             if gender == "m":
                 e["m"] += freq
@@ -242,12 +258,19 @@ def main():
                 e["f"] += freq
             if unisex == "t":
                 e["uni"] = True
+            e["off"] = e["off"] or is_off
 
     total_written = 0
     summary = []
     for lang, names in sorted(agg.items()):
+        official_lang = lang in has_official
         rows = []
         for ascii_key, e in names.items():
+            # In languages that have official names, keep only official ones
+            # (drops nicknames/junk). Languages with no official census data keep
+            # all name-like entries.
+            if official_lang and not e["off"]:
+                continue
             tot = e["m"] + e["f"]
             if tot < min_freq:
                 continue

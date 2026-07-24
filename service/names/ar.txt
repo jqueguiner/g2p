@@ -737,7 +737,6 @@ Mhmoud	m	40
 Wagdy	m	40
 Farhan	m	40
 Bent	m	40
-Sh	u	40
 Emma	f	40
 Kevin	m	40
 Eric	m	40

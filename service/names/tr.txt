@@ -108,7 +108,6 @@ Derya	f	1563
 Pınar	f	1552
 Anıl	u	1546
 Cansu	f	1543
-Mehmet-Ali	m	1533
 Beyza	f	1515
 Selin	f	1515
 Ceren	f	1503
@@ -121,7 +120,6 @@ Ilker	m	1466
 Zafer	m	1460
 Duygu	f	1443
 Musa	m	1420
-Ömer-Faruk	m	1416
 Ezgi	f	1410
 Berk	m	1397
 Melike	f	1395
@@ -140,7 +138,6 @@ Zehra	f	1300
 Melih	m	1298
 Sinem	f	1280
 Erdal	m	1271
-Yunus-Emre	m	1270
 Ece	f	1255
 Bayram	m	1255
 Nur	f	1245
@@ -226,7 +223,6 @@ Neslihan	f	813
 Talha	m	812
 Pelin	f	806
 Filiz	f	801
-Halil-Ibrahim	m	800
 Hande	f	792
 Cüneyt	m	792
 Sevda	f	790
@@ -307,7 +303,6 @@ Ayça	f	581
 Ünal	m	579
 Şule	f	573
 Sultan	f	571
-Mehmet-Emin	m	568
 Kazım	m	565
 Selma	f	564
 Serpil	f	563
@@ -402,7 +397,6 @@ Esin	f	405
 Fevzi	m	403
 Tahsin	m	401
 Şafak	u	400
-Mehmet-Akif	m	399
 Rukiye	f	398
 Kara	u	396
 Alparslan	m	396
@@ -426,7 +420,6 @@ Salim	m	369
 Nisa	f	369
 Müge	f	367
 Erdi	m	366
-Ali-Rıza	m	366
 Tuna	u	366
 Deli	u	356
 Aytaç	u	355
@@ -446,7 +439,6 @@ Nilüfer	f	334
 Cahit	m	333
 Naz	f	332
 Çağdaş	m	332
-Mehmet-Can	m	332
 Zuhal	f	331
 Esat	m	329
 Orkun	m	328
@@ -486,8 +478,6 @@ Tekin	m	298
 Miray	f	298
 Niyazi	m	298
 Tufan	m	297
-Ali-Osman	m	297
-Hasan-Hüseyin	m	296
 Ela	f	295
 Özer	m	294
 Hayrettin	m	293
@@ -519,7 +509,6 @@ Durmuş	m	275
 Cevdet	m	274
 Fahrettin	m	274
 Ekin	u	274
-Muhammed-Ali	m	273
 Ayten	f	272
 Eylem	f	271
 Ensar	m	270
@@ -543,9 +532,7 @@ Günay	u	260
 Nazan	f	258
 Yıldırım	m	258
 Gökmen	m	257
-By	m	256
 Aysu	f	256
-Ali-Ihsan	m	255
 Elvan	u	254
 Istanbul	u	254
 Asya	f	253
@@ -559,7 +546,6 @@ Ayfer	f	247
 Kaya	u	247
 Vildan	f	247
 Güler	f	246
-Muhammet-Ali	m	246
 Asım	m	246
 Nalan	f	246
 Aşkın	u	245
@@ -665,7 +651,6 @@ Arslan	m	200
 Celil	m	199
 Ethem	m	199
 Toprak	u	199
-Ahmet-Can	m	198
 Serdal	m	198
 Birkan	m	197
 Necip	m	197
@@ -677,8 +662,6 @@ Nevin	f	195
 Belgin	f	195
 Yıldıray	m	195
 Faik	m	194
-Fatma-Nur	f	194
-Ali-Can	m	194
 Asuman	f	194
 Lütfi	m	193
 Dinçer	m	193
@@ -704,7 +687,6 @@ Rüzgar	u	185
 Sarı	u	185
 Gülnur	f	185
 Esmer	f	185
-Tc	m	185
 Timur	m	185
 Züleyha	f	185
 Medine	f	184
@@ -715,12 +697,10 @@ Suzan	f	183
 Nehir	u	182
 Nursel	f	182
 Cebrail	m	182
-Ankara	f	182
 Alpay	m	181
 Fethi	m	181
 Reşat	m	181
 Said	m	181
-Yavuz-Selim	m	180
 Tanju	m	180
 Kuzey	m	179
 Naim	m	179
@@ -762,7 +742,6 @@ Mohamed	m	167
 Çılgın	u	165
 Elmas	f	165
 Alim	m	165
-Muhammed-Emin	m	164
 Melda	f	164
 Refik	m	164
 Kezban	f	163
@@ -784,7 +763,6 @@ Feyyaz	m	158
 Armağan	u	158
 Beyaz	f	157
 Kudret	u	157
-Emre-Can	m	157
 Ercüment	m	157
 Vahit	m	157
 Güngör	u	156
@@ -808,7 +786,6 @@ Cesur	m	152
 Idil	f	152
 Güray	m	152
 Sarp	m	152
-Ali-Kemal	m	152
 Huriye	f	150
 Aygül	f	150
 Zerrin	f	150
@@ -854,7 +831,6 @@ Turhan	m	139
 Göksu	u	139
 Münevver	f	138
 Sanem	f	137
-Beyza-Nur	f	137
 Hüsamettin	m	137
 Gülizar	f	137
 Fidan	f	137
@@ -907,14 +883,12 @@ Mersin	u	124
 Öner	m	124
 Ferhan	u	123
 Jale	f	123
-Hasan-Ali	m	123
 Malik	m	122
 Kadri	m	122
 Zülal	f	122
 Güner	u	122
 Şevki	m	122
 Ersoy	m	121
-Umut-Can	m	121
 Gizli	u	120
 Gülsen	f	120
 Feray	f	120
@@ -977,7 +951,6 @@ Müzeyyen	f	107
 Müjde	f	107
 Hediye	f	106
 Avni	m	106
-Antalya	f	106
 Rahman	m	106
 Çisem	f	105
 Behcet	m	105
@@ -1004,7 +977,6 @@ Yeşil	u	101
 Vehbi	m	101
 Binnur	f	100
 Yesim	f	99
-Elif-Nur	f	99
 Fatima	f	99
 Ecrin	u	99
 Naciye	f	98
@@ -1028,7 +1000,6 @@ Bilgin	u	95
 Nejla	f	95
 Mira	u	95
 Melissa	f	95
-Eda-Nur	f	94
 Melahat	f	94
 Pervin	f	94
 Özdemir	m	93
@@ -1057,7 +1028,6 @@ Doğancan	m	89
 Ataberk	m	89
 Tunay	u	89
 Tatlı	u	88
-Yusuf-Can	m	88
 Ezel	u	88
 Çiçek	f	88
 Hamdullah	m	88
@@ -1090,7 +1060,6 @@ Raziye	f	84
 Süha	m	83
 Sidar	u	83
 Bartu	m	83
-Ali-Haydar	m	83
 Aybike	f	83
 Nigar	f	83
 Mizgin	u	83
@@ -1122,7 +1091,6 @@ Hazan	f	80
 Şefik	m	80
 Bade	f	80
 Alişan	m	79
-Burak-Can	m	79
 Erkam	m	79
 Ejder	m	79
 Şemsettin	m	79
@@ -1135,7 +1103,6 @@ Kayra	u	78
 Adana	f	78
 Asude	f	78
 Berra	f	78
-Mustafa-Can	m	78
 Petek	f	78
 Sebnem	f	78
 Sıtkı	m	77
@@ -1170,7 +1137,6 @@ Mumtaz	m	74
 Musab	m	74
 Dilber	f	74
 Nezir	m	74
-Red	u	74
 Raif	m	74
 Tacettin	m	74
 Abdulaziz	m	74
@@ -1244,7 +1210,6 @@ Zekai	m	67
 Havvanur	f	67
 Gökdeniz	u	66
 Murtaza	m	66
-Muhammed-Enes	m	66
 Mühendis	m	66
 Munir	m	66
 Tugva	f	66
@@ -1254,7 +1219,6 @@ Sonay	f	66
 Seydi	m	66
 Sıddık	m	65
 Çelik	m	65
-Kübra-Nur	f	65
 Neşet	m	65
 Yaser	m	65
 Yadigar	u	65
@@ -1270,7 +1234,6 @@ Behiye	f	63
 Kadircan	m	63
 Kerime	f	63
 Ferat	m	63
-Sema-Nur	f	63
 Hüda	u	63
 Gulsah	f	63
 Memduh	m	63
@@ -1301,7 +1264,6 @@ Hazel	f	60
 Dudu	f	60
 Dilaver	m	60
 Çağlayan	u	60
-Onur-Can	m	60
 Özen	u	60
 Siraç	m	60
 Bedrettin	m	59
@@ -1310,7 +1272,6 @@ Imdat	m	59
 Husniye	f	59
 Erva	f	59
 Dünya	f	59
-Ahmet-Turan	m	59
 Ömercan	m	59
 Nurhayat	f	59
 Reha	m	59
@@ -1325,7 +1286,6 @@ Sare	f	58
 Battal	m	58
 Bestami	m	58
 Aybars	m	58
-Alanya	f	58
 Nurbanu	f	58
 Onat	m	58
 Ramiz	m	57
@@ -1337,7 +1297,6 @@ Asaf	m	57
 Muhterem	u	56
 Ferruh	m	56
 Nevra	f	56
-Blue	u	56
 Ülvi	m	56
 Jiyan	u	56
 Gulsun	f	56
@@ -1372,7 +1331,6 @@ Keziban	f	53
 Ebu	m	53
 Doktor	m	53
 Abdulselam	m	53
-Ali-Emre	m	53
 Nilsu	f	53
 Nezahat	f	53
 Nese	f	53
@@ -1385,14 +1343,11 @@ Burakcan	m	52
 Büşranur	f	52
 Bercem	f	52
 Güzin	f	52
-Irem-Nur	f	52
 Medeni	m	52
 Anadolu	u	52
 Agah	m	52
-Ali-Eren	m	52
 Nefise	f	52
 Rengin	f	52
-Ömer-Can	m	51
 Özgen	u	51
 Kiraz	f	51
 Ülkücü	f	51
@@ -1403,16 +1358,13 @@ Fesih	m	51
 Abdulvahap	m	51
 Amir	m	51
 Ilkin	u	51
-Ibrahim-Ethem	m	51
 Ikram	u	51
 Muttalip	m	51
-Esra-Nur	f	50
 Osama	m	50
 Narin	f	50
 Yusra	f	50
 Zana	u	50
 Zümrüt	f	50
-Ulan	m	50
 James	m	50
 Hasancan	m	50
 Rojhat	u	50
@@ -1433,7 +1385,6 @@ Fener	f	49
 Nafiz	m	49
 Uçan	u	49
 Güçlü	m	49
-Havva-Nur	f	49
 Hassan	u	49
 Ikra	u	49
 Işılay	f	48
@@ -1468,7 +1419,6 @@ Mukadder	f	47
 Mumine	f	47
 Ummugulsum	f	47
 Varol	m	46
-Free	u	46
 Gazete	f	46
 Gercek	u	46
 Erbil	m	46
@@ -1495,7 +1445,6 @@ Zühre	f	45
 Yusufcan	m	45
 Zahit	m	45
 Esad	m	45
-Emir-Can	m	45
 Fettah	m	45
 Diren	u	45
 Serhad	m	45
@@ -1515,7 +1464,6 @@ Feyzanur	f	44
 Kumru	f	44
 Rezzan	f	44
 Nurşah	f	44
-Nisa-Nur	f	44
 Bizim	f	44
 Behzat	m	44
 Berhan	u	44
@@ -1565,7 +1513,6 @@ Zülfiye	f	42
 Tugcenur	f	42
 Türkay	u	42
 Onurhan	m	42
-Nour	u	42
 Robin	u	42
 Sevgili	f	42
 Sina	u	42
@@ -1589,13 +1536,10 @@ Zeyneb	f	40
 Zülfü	u	40
 Fethullah	m	40
 Erim	m	40
-Esma-Nur	f	40
-Don	m	40
 Kelebek	u	40
 Sayın	u	40
 Sarper	m	40
 Beyda	f	40
-Borsa	m	40
 Besim	m	40
 Gök	u	40
 Ilkim	u	40

@@ -85,7 +85,6 @@ Karol	m	86
 Nina	f	86
 Miloš	m	82
 Radoslav	m	82
-Miro	m	81
 Diana	f	77
 Oliver	m	75
 Gabriel	m	73
@@ -102,7 +101,6 @@ Katka	f	62
 Gabriela	f	61
 Anton	m	60
 Mirka	f	58
-Vlado	m	57
 Miroslava	f	54
 Kamil	m	53
 Sebastián	m	52
@@ -119,9 +117,7 @@ Viliam	m	44
 Linda	f	43
 Tímea	f	43
 Julius	m	42
-Brano	m	42
 Norbert	m	42
 Sofía	f	41
 Tereza	f	41
-Zuzka	f	41
 Nika	f	40

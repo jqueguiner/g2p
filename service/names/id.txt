@@ -750,7 +750,6 @@ Cahya	f	61
 Lenny	m	61
 Jose	u	61
 Melly	f	61
-Mhd	u	61
 Elly	f	61
 Selvi	f	61
 Zulfikar	m	61
