@@ -66,9 +66,11 @@ fn fixture() -> (tempfile::TempDir, Router) {
     std::fs::create_dir_all(&calib).unwrap();
 
     std::fs::write(models.join("xx.g2p"), toy_model_bytes()).unwrap();
+    // name<TAB>gender<TAB>frequency — Bob is a low-similarity but very common
+    // name, used to exercise the popularity prior.
     std::fs::write(
         names.join("xx.txt"),
-        "Ana\tf\nAnna\tf\nNana\tf\nBob\tm\nTom\tm\n",
+        "Ana\tf\t50\nAnna\tf\t10\nNana\tf\t20\nBob\tm\t100000\nTom\tm\t5\n",
     )
     .unwrap();
     std::fs::write(calib.join("default.json"), DEFAULT_CALIB).unwrap();
@@ -261,4 +263,111 @@ async fn calibration_profiles_endpoint() {
     assert_eq!(status, StatusCode::OK);
     assert!(body["default"].is_object());
     assert_eq!(body["default"]["blend"], 0.4);
+}
+
+#[tokio::test]
+async fn similar_names_returns_frequency() {
+    let (_d, app) = fixture();
+    let (_s, body) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=3")).await;
+    assert!(body["results"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .all(|r| r["frequency"].is_number()));
+}
+
+#[tokio::test]
+async fn popularity_reranks_by_frequency() {
+    let (_d, app) = fixture();
+    // pop=0: pure phonetic — the common-but-distant "Bob" is NOT top
+    let (_s, p0) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=5&popularity=0")).await;
+    assert_ne!(p0["results"][0]["name"], "Bob");
+    // pop=1: the very frequent "Bob" is lifted to the top
+    let (_s, p1) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=5&popularity=1")).await;
+    assert_eq!(p1["results"][0]["name"], "Bob");
+}
+
+#[tokio::test]
+async fn similar_names_top_k_caps() {
+    let (_d, app) = fixture();
+    let (_s, body) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=1")).await;
+    assert_eq!(body["results"].as_array().unwrap().len(), 1);
+}
+
+#[tokio::test]
+async fn similar_names_method_query_param() {
+    let (_d, app) = fixture();
+    let (_s, body) = call(&app, get("/similar-names?name=Ana&lang=xx&method=levenshtein")).await;
+    assert_eq!(body["method"], "levenshtein");
+}
+
+#[tokio::test]
+async fn similar_names_exclude_exact_false_includes_self() {
+    let (_d, app) = fixture();
+    let (_s, body) = call(
+        &app,
+        post("/similar-names", json!({"name":"Ana","lang":"xx","exclude_exact":false,"top_k":10})),
+    )
+    .await;
+    let has_self = body["results"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .any(|r| r["name"] == "Ana");
+    assert!(has_self, "self should be present when exclude_exact=false");
+}
+
+#[tokio::test]
+async fn similar_names_min_similarity_filters() {
+    let (_d, app) = fixture();
+    let (_s, body) = call(
+        &app,
+        post("/similar-names", json!({"name":"Ana","lang":"xx","min_similarity":0.99,"top_k":10})),
+    )
+    .await;
+    assert!(body["results"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .all(|r| r["similarity"].as_f64().unwrap() >= 0.99));
+}
+
+#[tokio::test]
+async fn similar_names_unknown_lang_is_404() {
+    let (_d, app) = fixture();
+    let (status, _) = call(&app, get("/similar-names?name=Ana&lang=zz")).await;
+    assert_eq!(status, StatusCode::NOT_FOUND);
+}
+
+#[tokio::test]
+async fn alternatives_empty_candidates_is_400() {
+    let (_d, app) = fixture();
+    let (status, _) = call(
+        &app,
+        post("/alternatives", json!({"query":"ana","candidates":[],"lang":"xx"})),
+    )
+    .await;
+    assert_eq!(status, StatusCode::BAD_REQUEST);
+}
+
+#[tokio::test]
+async fn similarity_calibration_override_changes_score() {
+    let (_d, app) = fixture();
+    // blend=0 (pure exact) vs blend=1 (pure feature) must differ for a near pair
+    let (_s, exact) = call(
+        &app,
+        post("/similarity", json!({"a":"pa","b":"ba","phonemize":false,
+              "calibration":{"blend":0.0,"onset_penalty":0.0}})),
+    )
+    .await;
+    let (_s, feat) = call(
+        &app,
+        post("/similarity", json!({"a":"pa","b":"ba","phonemize":false,
+              "calibration":{"blend":1.0,"onset_penalty":0.0}})),
+    )
+    .await;
+    assert!(
+        feat["similarity"].as_f64().unwrap() > exact["similarity"].as_f64().unwrap(),
+        "feature blend should rate p~b closer than exact blend"
+    );
 }

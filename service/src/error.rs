@@ -73,3 +73,19 @@ mod tests {
         assert_eq!(resp.status(), StatusCode::BAD_REQUEST);
     }
 }
+
+#[cfg(test)]
+mod more_tests {
+    use super::*;
+    use std::collections::BTreeSet;
+
+    #[test]
+    fn no_model_carries_available_hint() {
+        let mut set = BTreeSet::new();
+        set.insert("fr".to_string());
+        set.insert("en".to_string());
+        let e = ApiError::no_model("zz", &set);
+        let hint = e.hint.expect("hint present");
+        assert!(hint.contains(&"fr".to_string()));
+    }
+}

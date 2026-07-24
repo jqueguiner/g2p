@@ -561,4 +561,48 @@ mod tests {
         assert_eq!(merged.blend, 1.0);
         assert_eq!(merged.gap, base.gap); // untouched
     }
+
+    #[test]
+    fn override_clamps_out_of_range() {
+        let ov = CalibrationOverride {
+            blend: Some(5.0),
+            gap: Some(-1.0),
+            ..Default::default()
+        };
+        let m = Calibration::default().merged(&ov);
+        assert!((0.0..=1.0).contains(&m.blend), "blend clamped: {}", m.blend);
+        assert!(m.gap >= 0.0, "gap clamped: {}", m.gap);
+    }
+
+    #[test]
+    fn length_mark_penalized() {
+        let c = Calibration {
+            length_penalty: 0.5,
+            onset_penalty: 0.0,
+            length_ratio_penalty: 0.0,
+            syllable_penalty: 0.0,
+            ..Default::default()
+        };
+        // aː vs a: same base vowel, only length differs -> non-zero distance
+        assert!(distance("aː", "a", &c) > 0.0);
+    }
+
+    #[test]
+    fn non_syllabic_glide_is_not_a_nucleus() {
+        // aɪ̯ (ɪ carries U+032F) is one nucleus; ai (two full vowels) is two
+        assert_eq!(analyze("aɪ̯", &[]).syllables, 1);
+        assert_eq!(analyze("ai", &[]).syllables, 2);
+    }
+
+    #[test]
+    fn analyzed_and_str_paths_agree() {
+        let c = Calibration::default();
+        let s_str = similarity("aba", "abo", &c);
+        let s_an = similarity_of(
+            &analyze("aba", &c.diphthongs),
+            &analyze("abo", &c.diphthongs),
+            &c,
+        );
+        assert!((s_str - s_an).abs() < 1e-6);
+    }
 }

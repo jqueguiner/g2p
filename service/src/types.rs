@@ -225,3 +225,16 @@ mod tests {
         assert!(r.calibration.is_none());
     }
 }
+
+#[cfg(test)]
+mod more_tests {
+    use crate::calib::CalibrationOverride;
+
+    #[test]
+    fn calibration_override_is_partial() {
+        let o: CalibrationOverride = serde_json::from_str(r#"{"blend":0.7}"#).unwrap();
+        assert_eq!(o.blend, Some(0.7));
+        assert!(o.gap.is_none());
+        assert!(o.syllable_penalty.is_none());
+    }
+}

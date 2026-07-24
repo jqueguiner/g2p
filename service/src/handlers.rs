@@ -429,3 +429,20 @@ mod tests {
         assert!(score("aba", "opo", MethodArg::Calibrated, &c) < 1.0);
     }
 }
+
+#[cfg(test)]
+mod more_tests {
+    use super::*;
+    use crate::calib::{analyze, Calibration};
+
+    #[test]
+    fn score_analyzed_agrees_with_score() {
+        let c = Calibration::default();
+        let (a, b) = (analyze("aba", &c.diphthongs), analyze("abo", &c.diphthongs));
+        for m in [MethodArg::Levenshtein, MethodArg::Weighted, MethodArg::Calibrated] {
+            let s1 = score_analyzed(&a, &b, m, &c);
+            let s2 = score("aba", "abo", m, &c);
+            assert!((s1 - s2).abs() < 1e-6, "mismatch for {m:?}: {s1} vs {s2}");
+        }
+    }
+}
