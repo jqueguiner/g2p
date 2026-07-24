@@ -2,6 +2,7 @@
   "lang": "yue",
   "blend": 0.42,
   "gap": 1.0,
+  "schwa_gap": 0.3,
   "nasal_penalty": 0.12,
   "tone_penalty": 0.9,
   "length_penalty": 0.1,
@@ -22,5 +23,8 @@
     "ou",
     "ui",
     "ɔi"
+  ],
+  "reducible_vowels": [
+    "ə"
   ]
 }

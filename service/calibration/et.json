@@ -2,6 +2,7 @@
   "lang": "et",
   "blend": 0.42,
   "gap": 1.0,
+  "schwa_gap": 0.3,
   "nasal_penalty": 0.12,
   "tone_penalty": 0.0,
   "length_penalty": 0.25,
@@ -22,5 +23,8 @@
     "eu",
     "ou",
     "æu"
+  ],
+  "reducible_vowels": [
+    "ə"
   ]
 }

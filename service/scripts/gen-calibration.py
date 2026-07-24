@@ -203,10 +203,30 @@ def profile(code):
 
     length = 0.25 if code in VOWEL_LENGTH else 0.1
 
+    # Reducible ("schwa"-like) vowels: inserting/deleting one is cheap and it is
+    # excluded from the syllable-count penalty, so a name typed without the
+    # droppable vowel still matches (French "keguiner" ~ Quéguiner /keɡine/,
+    # Portuguese "Preira" ~ Pereira /pɨɾɐjɾɐ/). Most languages surface their
+    # reduced vowel as ə already (English, German, Dutch…), so the default set is
+    # just the schwa. Two kinds of exception:
+    #   * a droppable vowel written as a FULL symbol — French e-muet /e/,
+    #     European-Portuguese unstressed /e/→/ɨ/ — needs that symbol added;
+    #   * a language where /ə/ is a STABLE phoneme, not a reduction — Romanian ă
+    #     /ə/ + â,î /ɨ/, Bulgarian ъ — must NOT treat it as droppable, so its set
+    #     is empty.
+    REDUCIBLE = {
+        "fr": ["ə", "e"],
+        "pt": ["ə", "ɨ"],
+        "ro": [],
+        "bg": [],
+    }
+    reducible = REDUCIBLE.get(code, ["ə"])
+
     return {
         "lang": code,
         "blend": round(blend, 3),
         "gap": 1.0,
+        "schwa_gap": 0.3,
         "nasal_penalty": nasal,
         "tone_penalty": tone,
         "length_penalty": length,
@@ -217,6 +237,7 @@ def profile(code):
         "length_ratio_penalty": length_ratio,
         "syllable_penalty": syllable,
         "diphthongs": DIPH.get(code, []),
+        "reducible_vowels": reducible,
     }
 
 

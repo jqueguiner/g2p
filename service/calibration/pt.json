@@ -2,6 +2,7 @@
   "lang": "pt",
   "blend": 0.4,
   "gap": 1.0,
+  "schwa_gap": 0.3,
   "nasal_penalty": 0.2,
   "tone_penalty": 0.0,
   "length_penalty": 0.1,
@@ -24,5 +25,9 @@
     "ɛu",
     "ou",
     "iu"
+  ],
+  "reducible_vowels": [
+    "ə",
+    "ɨ"
   ]
 }
