@@ -177,6 +177,17 @@ pub struct Analyzed {
     onset: Option<char>,
 }
 
+impl Analyzed {
+    /// Base char of the first segment (the onset), if any.
+    pub fn onset(&self) -> Option<char> {
+        self.onset
+    }
+    /// Number of phoneme segments.
+    pub fn nsegs(&self) -> usize {
+        self.segs.len()
+    }
+}
+
 /// Precompute the phonetic structure of an IPA string. `diphthongs` are the
 /// language's single-nucleus vowel sequences (see [`Calibration::diphthongs`]);
 /// they make the syllable count language-correct.

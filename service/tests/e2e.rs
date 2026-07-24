@@ -72,7 +72,7 @@ fn fixture() -> (tempfile::TempDir, Router) {
     // name, used to exercise the popularity prior.
     std::fs::write(
         names.join("xx.txt"),
-        "Ana\tf\t50\nAnna\tf\t10\nNana\tf\t20\nBob\tm\t100000\nTom\tm\t5\n",
+        "Ana\tf\t50\nAnna\tf\t10\nNana\tf\t20\nAro\tm\t100000\nTom\tm\t5\n",
     )
     .unwrap();
     // surnames carry no gender (stored unisex)
@@ -285,10 +285,10 @@ async fn popularity_reranks_by_frequency() {
     let (_d, app) = fixture();
     // pop=0: pure phonetic — the common-but-distant "Bob" is NOT top
     let (_s, p0) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=5&popularity=0")).await;
-    assert_ne!(p0["results"][0]["name"], "Bob");
+    assert_ne!(p0["results"][0]["name"], "Aro");
     // pop=1: the very frequent "Bob" is lifted to the top
     let (_s, p1) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=5&popularity=1")).await;
-    assert_eq!(p1["results"][0]["name"], "Bob");
+    assert_eq!(p1["results"][0]["name"], "Aro");
 }
 
 #[tokio::test]

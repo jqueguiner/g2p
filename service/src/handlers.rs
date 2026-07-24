@@ -37,6 +37,16 @@ fn score_analyzed(q: &Analyzed, cand: &Analyzed, method: MethodArg, calib: &Cali
     }
 }
 
+/// Cheap blocking prefilter run before the expensive Needleman-Wunsch scoring:
+/// a candidate must share the query's onset (first phoneme) and be within a few
+/// segments in length. Different-onset / very-different-length names score low
+/// anyway (onset + length penalties), so this cuts a 150k corpus to a few
+/// hundred candidates without changing the top results.
+const SEG_WINDOW: isize = 3;
+fn prematch(q: &Analyzed, c: &Analyzed) -> bool {
+    q.onset() == c.onset() && (q.nsegs() as isize - c.nsegs() as isize).abs() <= SEG_WINDOW
+}
+
 /// Resolve the calibration to use: the language profile (or default), with any
 /// per-request override merged on top.
 fn resolve_calib(
@@ -374,6 +384,7 @@ fn similar_names_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<Alt
         .iter()
         .filter(|e| !(req.exclude_exact && e.name.to_lowercase() == qnorm))
         .filter(|e| gender_filter.map_or(true, |g| e.gender.passes(g)))
+        .filter(|e| prematch(&query, &e.phon))
         .map(|e| {
             let similarity = score_analyzed(&query, &e.phon, method, &calib);
             (
@@ -461,6 +472,7 @@ fn similar_surnames_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<
     let scored: Vec<(Alternative, u32)> = index
         .iter()
         .filter(|e| !(req.exclude_exact && e.name.to_lowercase() == qnorm))
+        .filter(|e| prematch(&query, &e.phon))
         .map(|e| {
             let similarity = score_analyzed(&query, &e.phon, method, &calib);
             (
