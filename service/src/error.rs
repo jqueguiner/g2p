@@ -50,3 +50,26 @@ impl IntoResponse for ApiError {
         (self.status, Json(body)).into_response()
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use axum::response::IntoResponse;
+    use std::collections::BTreeSet;
+
+    #[test]
+    fn status_codes() {
+        assert_eq!(ApiError::bad_request("x").status, StatusCode::BAD_REQUEST);
+        assert_eq!(ApiError::internal("x").status, StatusCode::INTERNAL_SERVER_ERROR);
+        assert_eq!(
+            ApiError::no_model("zz", &BTreeSet::new()).status,
+            StatusCode::NOT_FOUND
+        );
+    }
+
+    #[test]
+    fn into_response_keeps_status() {
+        let resp = ApiError::bad_request("nope").into_response();
+        assert_eq!(resp.status(), StatusCode::BAD_REQUEST);
+    }
+}

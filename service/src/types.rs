@@ -2,22 +2,26 @@
 
 use serde::{Deserialize, Serialize};
 
+use crate::calib::CalibrationOverride;
 use crate::lang_detect::Detection;
 
-/// Phonetic distance method selector, parsed case-insensitively from the wire.
-#[derive(Deserialize, Default, Clone, Copy, Debug)]
+/// Similarity method. `calibrated` (default) is the per-language blend defined in
+/// `calib`; `weighted`/`levenshtein` fall through to the fixed core metrics.
+#[derive(Deserialize, Default, Clone, Copy, Debug, PartialEq, Eq)]
 #[serde(rename_all = "lowercase")]
 pub enum MethodArg {
     Levenshtein,
-    #[default]
     Weighted,
+    #[default]
+    Calibrated,
 }
 
-impl From<MethodArg> for g2p::Method {
-    fn from(m: MethodArg) -> Self {
-        match m {
-            MethodArg::Levenshtein => g2p::Method::Levenshtein,
-            MethodArg::Weighted => g2p::Method::Weighted,
+impl MethodArg {
+    pub fn as_str(self) -> &'static str {
+        match self {
+            MethodArg::Levenshtein => "levenshtein",
+            MethodArg::Weighted => "weighted",
+            MethodArg::Calibrated => "calibrated",
         }
     }
 }
@@ -87,6 +91,9 @@ pub struct SimilarityRequest {
     pub lang: Option<String>,
     #[serde(default)]
     pub method: MethodArg,
+    /// Per-request calibration override (only used by `method: calibrated`).
+    #[serde(default)]
+    pub calibration: Option<CalibrationOverride>,
 }
 
 #[derive(Serialize)]
@@ -119,6 +126,9 @@ pub struct AlternativesRequest {
     /// Drop candidates below this similarity (`0.0..=1.0`).
     #[serde(default)]
     pub min_similarity: f32,
+    /// Per-request calibration override (only used by `method: calibrated`).
+    #[serde(default)]
+    pub calibration: Option<CalibrationOverride>,
 }
 
 #[derive(Serialize)]
@@ -126,6 +136,13 @@ pub struct Alternative {
     pub name: String,
     pub ipa: String,
     pub similarity: f32,
+    /// Gender of the matched name (`m`/`f`/`u`); present for corpus-based
+    /// endpoints (`/similar-names`), absent for caller-supplied candidates.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub gender: Option<String>,
+    /// Census frequency of the matched name (corpus endpoints only).
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub frequency: Option<u32>,
 }
 
 #[derive(Serialize)]
@@ -137,6 +154,42 @@ pub struct AlternativesResponse {
     pub results: Vec<Alternative>,
 }
 
+// ---- /similar-names ----
+
+#[derive(Deserialize)]
+pub struct SimilarNamesRequest {
+    /// The first name to find phonetic neighbours for.
+    pub name: String,
+    /// Language whose name corpus + phonemizer to use. Omit to auto-detect.
+    #[serde(default)]
+    pub lang: Option<String>,
+    /// Similarity method. Defaults to `calibrated` (per-language blend).
+    #[serde(default)]
+    pub method: MethodArg,
+    /// Keep only the top-K matches. `0`/omitted defaults to 10.
+    #[serde(default)]
+    pub top_k: usize,
+    /// Drop matches below this similarity (`0.0..=1.0`).
+    #[serde(default)]
+    pub min_similarity: f32,
+    /// Exclude the query name itself (case-insensitive) from results.
+    #[serde(default = "default_true")]
+    pub exclude_exact: bool,
+    /// Restrict results to a gender: `"m"` or `"f"` (unisex names always pass).
+    /// Omit for no filter. Pass the query's own gender to get same-gender
+    /// alternatives.
+    #[serde(default)]
+    pub gender: Option<String>,
+    /// Weight (0..1) of a name-popularity prior added to the phonetic score for
+    /// ranking. `0` (default) = pure phonetic, frequency only breaks ties;
+    /// higher nudges common names up.
+    #[serde(default)]
+    pub popularity: f32,
+    /// Per-request calibration override (only used by `method: calibrated`).
+    #[serde(default)]
+    pub calibration: Option<CalibrationOverride>,
+}
+
 // ---- /languages ----
 
 #[derive(Serialize)]
@@ -146,4 +199,29 @@ pub struct LanguageInfo {
     pub logographic: bool,
     pub model_available: bool,
     pub loaded: bool,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn method_arg_parse_and_default() {
+        let p = |s: &str| serde_json::from_str::<MethodArg>(s).unwrap();
+        assert_eq!(p("\"levenshtein\""), MethodArg::Levenshtein);
+        assert_eq!(p("\"weighted\""), MethodArg::Weighted);
+        assert_eq!(p("\"calibrated\""), MethodArg::Calibrated);
+        assert_eq!(MethodArg::default(), MethodArg::Calibrated);
+        assert_eq!(MethodArg::Weighted.as_str(), "weighted");
+    }
+
+    #[test]
+    fn similar_names_request_defaults() {
+        let r: SimilarNamesRequest = serde_json::from_str(r#"{"name":"Ana"}"#).unwrap();
+        assert_eq!(r.method, MethodArg::Calibrated);
+        assert!(r.exclude_exact);
+        assert_eq!(r.top_k, 0);
+        assert!(r.gender.is_none());
+        assert!(r.calibration.is_none());
+    }
 }

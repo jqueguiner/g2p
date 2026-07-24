@@ -1,0 +1,18 @@
+# hy first names from the first_names census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Ani	f	114
+Anna	f	108
+Lilit	f	83
+Armen	m	78
+Mariam	f	75
+Narek	m	66
+Anahit	f	62
+Arman	m	61
+Karen	u	61
+Tigran	m	61
+David	m	59
+Hayk	m	56
+Artur	m	56
+Lusine	f	53
+Aram	m	51
+Gevorg	m	46
+Davit	m	46
