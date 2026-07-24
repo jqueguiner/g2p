@@ -222,7 +222,7 @@ async fn alternatives_ranks_candidates() {
 #[tokio::test]
 async fn similar_names_from_corpus() {
     let (_d, app) = fixture();
-    let (status, body) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=3")).await;
+    let (status, body) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=3")).await;
     assert_eq!(status, StatusCode::OK);
     let res = body["results"].as_array().unwrap();
     assert!(!res.is_empty());
@@ -239,18 +239,18 @@ async fn similar_names_gender_filter() {
     let (_d, app) = fixture();
 
     // force female -> only female names
-    let (_s, f) = call(&app, get("/similar-names?name=Ana&lang=xx&gender=f&top_k=10")).await;
+    let (_s, f) = call(&app, get("/similar-first-names?name=Ana&lang=xx&gender=f&top_k=10")).await;
     let fr = f["results"].as_array().unwrap();
     assert!(!fr.is_empty());
     assert!(fr.iter().all(|r| r["gender"] == "f"), "expected only f: {fr:?}");
 
     // force male -> only male names
-    let (_s, m) = call(&app, get("/similar-names?name=Ana&lang=xx&gender=m&top_k=10")).await;
+    let (_s, m) = call(&app, get("/similar-first-names?name=Ana&lang=xx&gender=m&top_k=10")).await;
     let mr = m["results"].as_array().unwrap();
     assert!(mr.iter().all(|r| r["gender"] == "m"));
 
     // neutral (omitted) -> both genders present
-    let (_s, n) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=10")).await;
+    let (_s, n) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=10")).await;
     let genders: Vec<&str> = n["results"]
         .as_array()
         .unwrap()
@@ -272,7 +272,7 @@ async fn calibration_profiles_endpoint() {
 #[tokio::test]
 async fn similar_names_returns_frequency() {
     let (_d, app) = fixture();
-    let (_s, body) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=3")).await;
+    let (_s, body) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=3")).await;
     assert!(body["results"]
         .as_array()
         .unwrap()
@@ -284,24 +284,24 @@ async fn similar_names_returns_frequency() {
 async fn popularity_reranks_by_frequency() {
     let (_d, app) = fixture();
     // pop=0: pure phonetic — the common-but-distant "Bob" is NOT top
-    let (_s, p0) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=5&popularity=0")).await;
+    let (_s, p0) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=5&popularity=0")).await;
     assert_ne!(p0["results"][0]["name"], "Bob");
     // pop=1: the very frequent "Bob" is lifted to the top
-    let (_s, p1) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=5&popularity=1")).await;
+    let (_s, p1) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=5&popularity=1")).await;
     assert_eq!(p1["results"][0]["name"], "Bob");
 }
 
 #[tokio::test]
 async fn similar_names_top_k_caps() {
     let (_d, app) = fixture();
-    let (_s, body) = call(&app, get("/similar-names?name=Ana&lang=xx&top_k=1")).await;
+    let (_s, body) = call(&app, get("/similar-first-names?name=Ana&lang=xx&top_k=1")).await;
     assert_eq!(body["results"].as_array().unwrap().len(), 1);
 }
 
 #[tokio::test]
 async fn similar_names_method_query_param() {
     let (_d, app) = fixture();
-    let (_s, body) = call(&app, get("/similar-names?name=Ana&lang=xx&method=levenshtein")).await;
+    let (_s, body) = call(&app, get("/similar-first-names?name=Ana&lang=xx&method=levenshtein")).await;
     assert_eq!(body["method"], "levenshtein");
 }
 
@@ -310,7 +310,7 @@ async fn similar_names_exclude_exact_false_includes_self() {
     let (_d, app) = fixture();
     let (_s, body) = call(
         &app,
-        post("/similar-names", json!({"name":"Ana","lang":"xx","exclude_exact":false,"top_k":10})),
+        post("/similar-first-names", json!({"name":"Ana","lang":"xx","exclude_exact":false,"top_k":10})),
     )
     .await;
     let has_self = body["results"]
@@ -326,7 +326,7 @@ async fn similar_names_min_similarity_filters() {
     let (_d, app) = fixture();
     let (_s, body) = call(
         &app,
-        post("/similar-names", json!({"name":"Ana","lang":"xx","min_similarity":0.99,"top_k":10})),
+        post("/similar-first-names", json!({"name":"Ana","lang":"xx","min_similarity":0.99,"top_k":10})),
     )
     .await;
     assert!(body["results"]
@@ -339,7 +339,7 @@ async fn similar_names_min_similarity_filters() {
 #[tokio::test]
 async fn similar_names_unknown_lang_is_404() {
     let (_d, app) = fixture();
-    let (status, _) = call(&app, get("/similar-names?name=Ana&lang=zz")).await;
+    let (status, _) = call(&app, get("/similar-first-names?name=Ana&lang=zz")).await;
     assert_eq!(status, StatusCode::NOT_FOUND);
 }
 
