@@ -56,6 +56,22 @@ pub struct NameEntry {
     pub phon: Analyzed,
 }
 
+/// A language's name corpus, bucketed by onset (first phoneme) so a query only
+/// scans candidates sharing its onset instead of the whole corpus.
+pub struct NameIndex {
+    pub by_onset: HashMap<Option<char>, Vec<NameEntry>>,
+}
+
+impl NameIndex {
+    /// Candidates sharing `onset` (empty slice if none).
+    pub fn bucket(&self, onset: Option<char>) -> &[NameEntry] {
+        self.by_onset.get(&onset).map(Vec::as_slice).unwrap_or(&[])
+    }
+    pub fn is_empty(&self) -> bool {
+        self.by_onset.values().all(Vec::is_empty)
+    }
+}
+
 /// Process-wide state, shared behind an `Arc` across all requests.
 pub struct AppState {
     /// Directory holding `<whisper>.g2p` model blobs.
@@ -72,11 +88,11 @@ pub struct AppState {
     /// Per-language name index, built on first use. Each entry's phonetic
     /// structure (segments, syllable count, onset) is precomputed once here,
     /// not per comparison.
-    name_index: RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
+    name_index: RwLock<HashMap<String, Arc<NameIndex>>>,
     /// Surname corpus + lazily-built index (mirrors `names`/`name_index`;
     /// surnames carry no gender, stored as unisex).
     surnames: HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>>,
-    surname_index: RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
+    surname_index: RwLock<HashMap<String, Arc<NameIndex>>>,
     /// Per-language similarity calibration, loaded from `<lang>.json`.
     calibrations: HashMap<String, Arc<Calibration>>,
     /// Fallback calibration (`default.json`, else built-in defaults).
@@ -164,10 +180,10 @@ impl AppState {
     fn build_index(
         &self,
         corpus: &HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>>,
-        cache: &RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
+        cache: &RwLock<HashMap<String, Arc<NameIndex>>>,
         lang: &str,
         model: &Model,
-    ) -> Arc<Vec<NameEntry>> {
+    ) -> Arc<NameIndex> {
         if let Some(v) = cache.read().unwrap().get(lang) {
             return v.clone();
         }
@@ -191,18 +207,23 @@ impl AppState {
                 }
             })
             .collect();
-        let arc = Arc::new(index);
+        // Bucket by onset so queries scan only their onset group.
+        let mut by_onset: HashMap<Option<char>, Vec<NameEntry>> = HashMap::new();
+        for e in index {
+            by_onset.entry(e.phon.onset()).or_default().push(e);
+        }
+        let arc = Arc::new(NameIndex { by_onset });
         cache.write().unwrap().insert(lang.to_string(), arc.clone());
         arc
     }
 
     /// First-name index for `lang`, built with `model` and cached.
-    pub fn name_index(&self, lang: &str, model: &Model) -> Arc<Vec<NameEntry>> {
+    pub fn name_index(&self, lang: &str, model: &Model) -> Arc<NameIndex> {
         self.build_index(&self.names, &self.name_index, lang, model)
     }
 
     /// Surname index for `lang`, built with `model` and cached.
-    pub fn surname_index(&self, lang: &str, model: &Model) -> Arc<Vec<NameEntry>> {
+    pub fn surname_index(&self, lang: &str, model: &Model) -> Arc<NameIndex> {
         self.build_index(&self.surnames, &self.surname_index, lang, model)
     }
 

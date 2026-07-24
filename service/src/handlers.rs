@@ -13,6 +13,7 @@ use crate::calib::{self, Analyzed, Calibration, CalibrationOverride};
 use crate::error::ApiError;
 use crate::lang_detect::{self, Detection};
 use crate::state::{AppState, Gender};
+use rayon::prelude::*;
 use crate::types::*;
 
 type St = State<Arc<AppState>>;
@@ -381,7 +382,8 @@ fn similar_names_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<Alt
 
     // Candidates surviving the gender filter, scored phonetically + frequency.
     let scored: Vec<(Alternative, u32)> = index
-        .iter()
+        .bucket(query.onset())
+        .par_iter()
         .filter(|e| !(req.exclude_exact && e.name.to_lowercase() == qnorm))
         .filter(|e| gender_filter.map_or(true, |g| e.gender.passes(g)))
         .filter(|e| prematch(&query, &e.phon))
@@ -470,7 +472,8 @@ fn similar_surnames_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<
 
     // Surnames have no gender: no gender filter, gender omitted from results.
     let scored: Vec<(Alternative, u32)> = index
-        .iter()
+        .bucket(query.onset())
+        .par_iter()
         .filter(|e| !(req.exclude_exact && e.name.to_lowercase() == qnorm))
         .filter(|e| prematch(&query, &e.phon))
         .map(|e| {
