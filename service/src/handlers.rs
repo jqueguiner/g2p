@@ -415,6 +415,87 @@ fn similar_names_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<Alt
     }))
 }
 
+// ---- /similar-surnames ----
+
+/// `GET /similar-surnames?name=Martin&lang=fr&top_k=5` — surnames have no gender.
+pub async fn similar_surnames_get(State(st): St, Query(q): Query<SimilarNamesQuery>) -> Result<Json<AlternativesResponse>, ApiError> {
+    let req = SimilarNamesRequest {
+        name: q.name,
+        lang: q.lang,
+        method: q.method.unwrap_or_default(),
+        top_k: q.top_k.unwrap_or(0),
+        min_similarity: q.min_similarity.unwrap_or(0.0),
+        exclude_exact: true,
+        gender: None,
+        popularity: q.popularity.unwrap_or(0.0),
+        calibration: None,
+    };
+    similar_surnames_run(&st, req)
+}
+
+/// `POST /similar-surnames` — closest-sounding surnames from the census corpus.
+pub async fn similar_surnames_post(State(st): St, Json(req): Json<SimilarNamesRequest>) -> Result<Json<AlternativesResponse>, ApiError> {
+    similar_surnames_run(&st, req)
+}
+
+fn similar_surnames_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<AlternativesResponse>, ApiError> {
+    if req.name.trim().is_empty() {
+        return Err(ApiError::bad_request("`name` is empty"));
+    }
+    let method = req.method;
+    let (lang, _, _) = resolve_lang(st, &req.lang, &req.name)?;
+    let model = st.model(&lang)?;
+    let calib = resolve_calib(st, Some(&lang), &req.calibration);
+
+    let index = st.surname_index(&lang, &model);
+    if index.is_empty() {
+        return Err(ApiError::bad_request(format!(
+            "no surname corpus for '{lang}' — add {lang}.txt to the surnames dir"
+        )));
+    }
+
+    let query = calib::analyze(&phonemize_name(&model, &req.name), &calib.diphthongs);
+    let qnorm = req.name.to_lowercase();
+
+    // Surnames have no gender: no gender filter, gender omitted from results.
+    let scored: Vec<(Alternative, u32)> = index
+        .iter()
+        .filter(|e| !(req.exclude_exact && e.name.to_lowercase() == qnorm))
+        .map(|e| {
+            let similarity = score_analyzed(&query, &e.phon, method, &calib);
+            (
+                Alternative {
+                    name: e.name.clone(),
+                    ipa: e.phon.ipa.clone(),
+                    similarity,
+                    gender: None,
+                    frequency: Some(e.freq),
+                },
+                e.freq,
+            )
+        })
+        .filter(|(a, _)| a.similarity >= req.min_similarity)
+        .collect();
+
+    let max_freq = scored.iter().map(|(_, f)| *f).max().unwrap_or(0).max(1) as f32;
+    let pop = req.popularity.clamp(0.0, 1.0);
+    let rank_key = |a: &Alternative, f: u32| a.similarity + pop * (f as f32 / max_freq);
+
+    let mut scored = scored;
+    scored.sort_by(|(a, fa), (b, fb)| rank_key(b, *fb).total_cmp(&rank_key(a, *fa)).then(fb.cmp(fa)));
+
+    let k = if req.top_k == 0 { 10 } else { req.top_k };
+    let results: Vec<Alternative> = scored.into_iter().take(k).map(|(a, _)| a).collect();
+
+    Ok(Json(AlternativesResponse {
+        query: req.name,
+        query_ipa: query.ipa.clone(),
+        lang,
+        method: method.as_str().to_string(),
+        results,
+    }))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -1,0 +1,17 @@
+# sk surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Kovač	u	98
+Tóth	u	86
+Varga	u	82
+Nagy	u	77
+Horváth	u	70
+Szabó	u	58
+Baláž	u	56
+Novák	u	56
+Lukač	u	52
+Kováčová	u	47
+Molnár	u	47
+Horváthová	u	45
+Kollár	u	43
+Farkas	u	42
+Polák	u	41
+Vargová	u	41

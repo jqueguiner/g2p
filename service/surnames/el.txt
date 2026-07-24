@@ -1,0 +1,5 @@
+# el surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+παπαδοπουλοσ	u	203
+παπαδοπουλου	u	139
+παππασ	u	87
+παππα	u	46

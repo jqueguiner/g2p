@@ -1,0 +1,19 @@
+# hy surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Sargsyan	u	137
+Grigoryan	u	133
+Harutyunyan	u	122
+Hovhannisyan	u	114
+Khachatryan	u	106
+Hakobyan	u	102
+Gevorgyan	u	78
+Vardanyan	u	78
+Karapetyan	u	77
+Petrosyan	u	76
+Avetisyan	u	60
+Sahakyan	u	60
+Mkrtchyan	u	58
+Martirosyan	u	55
+Ghazaryan	u	53
+Poghosyan	u	48
+Hayrapetyan	u	42
+Manukyan	u	41

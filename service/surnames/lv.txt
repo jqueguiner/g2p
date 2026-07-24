@@ -1,0 +1,6 @@
+# lv surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Jansons	u	54
+Ozola	u	51
+Ozols	u	46
+Balodis	u	43
+Jansone	u	40

@@ -1,0 +1,20 @@
+# sq surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Hoxha	u	219
+Shehu	u	109
+Cela	u	85
+Dervishi	u	53
+Lleshi	u	53
+Gjoka	u	52
+Albania	u	50
+Kurti	u	50
+Kola	u	49
+Gjoni	u	48
+Balla	u	47
+Lika	u	44
+Rama	u	44
+Marku	u	43
+Spahiu	u	43
+Muca	u	42
+Gashi	u	41
+Koçi	u	41
+Leka	u	41

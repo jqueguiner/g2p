@@ -1,0 +1,20 @@
+# th surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Lee	u	100
+Man	u	82
+Boy	u	76
+Smith	u	75
+Chan	u	63
+Thai	u	63
+Wong	u	55
+Za	u	54
+Girl	u	52
+Tan	u	51
+Wee	u	51
+Wang	u	47
+Me	u	46
+Singh	u	46
+Bee	u	45
+Lim	u	43
+Kim	u	41
+Jones	u	40
+Kung	u	40

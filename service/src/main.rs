@@ -39,6 +39,8 @@ async fn main() {
         PathBuf::from(std::env::var("G2P_MODELS_DIR").unwrap_or_else(|_| "models".into()));
     let names_dir =
         PathBuf::from(std::env::var("G2P_NAMES_DIR").unwrap_or_else(|_| "names".into()));
+    let surnames_dir =
+        PathBuf::from(std::env::var("G2P_SURNAMES_DIR").unwrap_or_else(|_| "surnames".into()));
     let calib_dir =
         PathBuf::from(std::env::var("G2P_CALIBRATION_DIR").unwrap_or_else(|_| "calibration".into()));
     let default_lang = std::env::var("G2P_DEFAULT_LANG").unwrap_or_else(|_| "en".into());
@@ -47,9 +49,15 @@ async fn main() {
     let state = Arc::new(AppState::new(
         models_dir.clone(),
         names_dir.clone(),
+        surnames_dir.clone(),
         calib_dir.clone(),
         default_lang,
     ));
+    tracing::info!(
+        dir = %surnames_dir.display(),
+        langs = state.surname_langs().len(),
+        "surname corpora loaded"
+    );
 
     tracing::info!(
         dir = %calib_dir.display(),
