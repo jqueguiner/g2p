@@ -1,0 +1,12 @@
+# is surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Jönsson	u	104
+ólafsson	u	93
+Gunnarsson	u	62
+Jónsdóttir	u	62
+Magnusson	u	48
+Einarsson	u	46
+Bjarnason	u	43
+Már	u	43
+Björk	u	42
+örn	u	41
+Johannsson	u	40

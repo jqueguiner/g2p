@@ -149,6 +149,17 @@ phonemized once with the language model and cached. The shipped corpora
 gender + frequency aggregated per language. Add or edit any `<lang>.txt` and
 restart (`G2P_NAMES_DIR`, default `./names`).
 
+### `POST /similar-surnames` (or `GET /similar-surnames?name=...&lang=...`)
+Same as `/similar-names` but over a **surname** corpus and with **no gender**
+(surnames aren't gendered — results omit `gender`). Supports `method`, `top_k`,
+`min_similarity`, `popularity`, `calibration`.
+```bash
+curl -s "localhost:8080/similar-surnames?name=Smith&lang=en&top_k=3"   # Smythe, Small, Still…
+```
+Corpus in `surnames/<lang>.txt` (`Name<TAB>u<TAB>frequency`), built from the
+surname census by `scripts/build-names-from-census.py <surnames.tsv> --surname
+--out surnames`. Env `G2P_SURNAMES_DIR` (default `./surnames`).
+
 ## Similarity calibration
 
 Every similarity endpoint (`/similar-names`, `/similarity`, `/alternatives`)

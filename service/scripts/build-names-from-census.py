@@ -217,9 +217,12 @@ def main():
     args = sys.argv[2:]
     min_freq = int(args[args.index("--min") + 1]) if "--min" in args else MIN_FREQ
     cap = int(args[args.index("--cap") + 1]) if "--cap" in args else CAP
+    # Surnames have no gender: aggregate a single frequency and emit gender `u`.
+    surname = "--surname" in args
+    out_name = args[args.index("--out") + 1] if "--out" in args else "names"
 
     here = os.path.dirname(os.path.abspath(__file__))
-    out_dir = os.path.normpath(os.path.join(here, "..", "names"))
+    out_dir = os.path.normpath(os.path.join(here, "..", out_name))
     os.makedirs(out_dir, exist_ok=True)
 
     # global: name_ascii -> {display spelling: [summed freq, {country codes}]}
@@ -252,7 +255,9 @@ def main():
             if is_off:
                 has_official.add(lang)
             e = agg[lang][ascii_key]
-            if gender == "m":
+            if surname:
+                e["m"] += freq  # single total bucket; gender is emitted as `u`
+            elif gender == "m":
                 e["m"] += freq
             elif gender == "f":
                 e["f"] += freq
@@ -274,13 +279,16 @@ def main():
             tot = e["m"] + e["f"]
             if tot < min_freq:
                 continue
-            minor = min(e["m"], e["f"])
-            if e["uni"] or (tot > 0 and minor / tot >= UNISEX_SHARE):
+            if surname:
                 g = "u"
-            elif e["m"] >= e["f"]:
-                g = "m"
             else:
-                g = "f"
+                minor = min(e["m"], e["f"])
+                if e["uni"] or (tot > 0 and minor / tot >= UNISEX_SHARE):
+                    g = "u"
+                elif e["m"] >= e["f"]:
+                    g = "m"
+                else:
+                    g = "f"
             disp = best_display(ascii_key, lang, variants[ascii_key])
             rows.append((tot, disp, g))
         rows.sort(key=lambda r: -r[0])
@@ -288,9 +296,10 @@ def main():
         if not rows:
             continue
         path = os.path.join(out_dir, f"{lang}.txt")
+        kind = "surnames" if surname else "first names"
         with open(path, "w", encoding="utf-8") as fo:
-            fo.write(f"# {lang} first names from the first_names census, re-accentuated "
-                     f"per language (name<TAB>gender<TAB>frequency; freq-sorted; "
+            fo.write(f"# {lang} {kind} from the census, re-accentuated per language "
+                     f"(name<TAB>gender<TAB>frequency; freq-sorted; "
                      f"min={min_freq}, cap={cap}).\n")
             for tot, disp, g in rows:
                 fo.write(f"{disp}\t{g}\t{tot}\n")

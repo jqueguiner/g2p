@@ -1,0 +1,5 @@
+# sl surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Novak	u	101
+Horvat	u	59
+Kos	u	45
+Krajnc	u	40

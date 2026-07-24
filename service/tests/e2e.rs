@@ -60,9 +60,11 @@ fn fixture() -> (tempfile::TempDir, Router) {
     let root = dir.path();
     let models = root.join("models");
     let names = root.join("names");
+    let surnames = root.join("surnames");
     let calib = root.join("calibration");
     std::fs::create_dir_all(&models).unwrap();
     std::fs::create_dir_all(&names).unwrap();
+    std::fs::create_dir_all(&surnames).unwrap();
     std::fs::create_dir_all(&calib).unwrap();
 
     std::fs::write(models.join("xx.g2p"), toy_model_bytes()).unwrap();
@@ -73,9 +75,11 @@ fn fixture() -> (tempfile::TempDir, Router) {
         "Ana\tf\t50\nAnna\tf\t10\nNana\tf\t20\nBob\tm\t100000\nTom\tm\t5\n",
     )
     .unwrap();
+    // surnames carry no gender (stored unisex)
+    std::fs::write(surnames.join("xx.txt"), "Ana\tu\t30\nAnna\tu\t20\nDido\tu\t5\n").unwrap();
     std::fs::write(calib.join("default.json"), DEFAULT_CALIB).unwrap();
 
-    let state = Arc::new(AppState::new(models, names, calib, "xx".into()));
+    let state = Arc::new(AppState::new(models, names, surnames, calib, "xx".into()));
     (dir, g2p2_server::build_router(state))
 }
 
@@ -370,4 +374,26 @@ async fn similarity_calibration_override_changes_score() {
         feat["similarity"].as_f64().unwrap() > exact["similarity"].as_f64().unwrap(),
         "feature blend should rate p~b closer than exact blend"
     );
+}
+
+#[tokio::test]
+async fn similar_surnames_from_corpus() {
+    let (_d, app) = fixture();
+    let (status, body) = call(&app, get("/similar-surnames?name=Ana&lang=xx&top_k=3")).await;
+    assert_eq!(status, StatusCode::OK);
+    let res = body["results"].as_array().unwrap();
+    assert!(!res.is_empty());
+    assert_ne!(res[0]["name"], "Ana"); // query excluded
+    // surnames carry no gender
+    assert!(res.iter().all(|r| r["gender"].is_null()));
+    assert!(res.iter().all(|r| r["frequency"].is_number()));
+    // "Anna" (shares structure) ranks above the distant "Dido"
+    assert_eq!(res[0]["name"], "Anna");
+}
+
+#[tokio::test]
+async fn similar_surnames_unknown_lang_404() {
+    let (_d, app) = fixture();
+    let (status, _) = call(&app, get("/similar-surnames?name=Ana&lang=zz")).await;
+    assert_eq!(status, StatusCode::NOT_FOUND);
 }

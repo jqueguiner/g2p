@@ -1,0 +1,17 @@
+# he surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Cohen	u	465
+Levy	u	162
+Levi	u	126
+Israel	u	89
+Katz	u	81
+Golan	u	63
+Tal	u	61
+Bar	u	55
+Friedman	u	55
+Levin	u	50
+Mor	u	46
+Dahan	u	45
+Raz	u	41
+Schwartz	u	41
+Alon	u	40
+Segal	u	40

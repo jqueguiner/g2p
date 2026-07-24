@@ -73,6 +73,10 @@ pub struct AppState {
     /// structure (segments, syllable count, onset) is precomputed once here,
     /// not per comparison.
     name_index: RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
+    /// Surname corpus + lazily-built index (mirrors `names`/`name_index`;
+    /// surnames carry no gender, stored as unisex).
+    surnames: HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+    surname_index: RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
     /// Per-language similarity calibration, loaded from `<lang>.json`.
     calibrations: HashMap<String, Arc<Calibration>>,
     /// Fallback calibration (`default.json`, else built-in defaults).
@@ -85,11 +89,13 @@ impl AppState {
     pub fn new(
         models_dir: PathBuf,
         names_dir: PathBuf,
+        surnames_dir: PathBuf,
         calib_dir: PathBuf,
         default_lang: String,
     ) -> Self {
         let available = scan_models(&models_dir);
         let names = scan_names(&names_dir);
+        let surnames = scan_names(&surnames_dir);
         let (calibrations, default_calibration) = scan_calibrations(&calib_dir);
         Self {
             models_dir,
@@ -98,6 +104,8 @@ impl AppState {
             default_lang,
             names,
             name_index: RwLock::new(HashMap::new()),
+            surnames,
+            surname_index: RwLock::new(HashMap::new()),
             calibrations,
             default_calibration,
         }
@@ -131,30 +139,42 @@ impl AppState {
         self.names.keys().cloned().collect()
     }
 
-    /// Name list (with gender) for `lang`; falls back to the union of all lists
+    /// Languages that have a surname corpus loaded.
+    pub fn surname_langs(&self) -> BTreeSet<String> {
+        self.surnames.keys().cloned().collect()
+    }
+
+    /// Entry list for `lang` from `corpus`; falls back to the union of all lists
     /// when the language has no dedicated file.
-    fn names_for(&self, lang: &str) -> Vec<(String, Gender, u32)> {
-        if let Some(v) = self.names.get(lang) {
+    fn entries_for(
+        corpus: &HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+        lang: &str,
+    ) -> Vec<(String, Gender, u32)> {
+        if let Some(v) = corpus.get(lang) {
             return v.as_ref().clone();
         }
         let mut all: Vec<(String, Gender, u32)> =
-            self.names.values().flat_map(|v| v.iter().cloned()).collect();
+            corpus.values().flat_map(|v| v.iter().cloned()).collect();
         all.sort_by(|a, b| a.0.cmp(&b.0));
         all.dedup_by(|a, b| a.0 == b.0);
         all
     }
 
-    /// Name index for `lang`, built with `model` and cached. Each entry carries
-    /// the name, its gender, and its precomputed phonetic structure.
-    pub fn name_index(&self, lang: &str, model: &Model) -> Arc<Vec<NameEntry>> {
-        if let Some(v) = self.name_index.read().unwrap().get(lang) {
+    /// Phonemize + analyze a corpus into a cached index, keyed by `lang`.
+    fn build_index(
+        &self,
+        corpus: &HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+        cache: &RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
+        lang: &str,
+        model: &Model,
+    ) -> Arc<Vec<NameEntry>> {
+        if let Some(v) = cache.read().unwrap().get(lang) {
             return v.clone();
         }
         // Diphthong set is a language property → use the language's base profile
         // when precomputing syllable counts for the corpus.
         let diph = self.calibration(lang);
-        let index: Vec<NameEntry> = self
-            .names_for(lang)
+        let index: Vec<NameEntry> = Self::entries_for(corpus, lang)
             .into_iter()
             .map(|(name, gender, freq)| {
                 let ipa = name
@@ -170,11 +190,18 @@ impl AppState {
             })
             .collect();
         let arc = Arc::new(index);
-        self.name_index
-            .write()
-            .unwrap()
-            .insert(lang.to_string(), arc.clone());
+        cache.write().unwrap().insert(lang.to_string(), arc.clone());
         arc
+    }
+
+    /// First-name index for `lang`, built with `model` and cached.
+    pub fn name_index(&self, lang: &str, model: &Model) -> Arc<Vec<NameEntry>> {
+        self.build_index(&self.names, &self.name_index, lang, model)
+    }
+
+    /// Surname index for `lang`, built with `model` and cached.
+    pub fn surname_index(&self, lang: &str, model: &Model) -> Arc<Vec<NameEntry>> {
+        self.build_index(&self.surnames, &self.surname_index, lang, model)
     }
 
     /// `true` if a model blob for this Whisper code is present on disk.

@@ -33,6 +33,10 @@ pub fn build_router(state: Arc<AppState>) -> Router {
             "/similar-names",
             get(handlers::similar_names_get).post(handlers::similar_names_post),
         )
+        .route(
+            "/similar-surnames",
+            get(handlers::similar_surnames_get).post(handlers::similar_surnames_post),
+        )
         .route("/calibration", get(handlers::calibration))
         .layer(TraceLayer::new_for_http())
         .layer(CorsLayer::permissive())
