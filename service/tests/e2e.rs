@@ -377,6 +377,33 @@ async fn similarity_calibration_override_changes_score() {
 }
 
 #[tokio::test]
+async fn reducible_vowel_override_raises_schwa_drop_score() {
+    // "keguiner" /kɡine/ vs Quéguiner /keɡine/ differ only by a mute-e. With the
+    // default reducible set (just ə) the /e/ insertion is a full gap + syllable
+    // penalty; declaring `e` reducible (French e-muet) must lift the score.
+    let (_d, app) = fixture();
+    let (_s, base) = call(
+        &app,
+        post("/similarity", json!({"a":"kɡine","b":"keɡine","phonemize":false,
+              "method":"calibrated"})),
+    )
+    .await;
+    let (_s, red) = call(
+        &app,
+        post("/similarity", json!({"a":"kɡine","b":"keɡine","phonemize":false,
+              "method":"calibrated",
+              "calibration":{"schwa_gap":0.3,"reducible_vowels":["ə","e"]}})),
+    )
+    .await;
+    let (b, r) = (
+        base["similarity"].as_f64().unwrap(),
+        red["similarity"].as_f64().unwrap(),
+    );
+    assert!(r > b, "reducible-e override should raise score: {r} !> {b}");
+    assert!(r > 0.85, "with e-muet reducible the pair should be near-identical: {r}");
+}
+
+#[tokio::test]
 async fn similar_surnames_from_corpus() {
     let (_d, app) = fixture();
     let (status, body) = call(&app, get("/similar-surnames?name=Ana&lang=xx&top_k=3")).await;

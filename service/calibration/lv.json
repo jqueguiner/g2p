@@ -2,6 +2,7 @@
   "lang": "lv",
   "blend": 0.4,
   "gap": 1.0,
+  "schwa_gap": 0.3,
   "nasal_penalty": 0.12,
   "tone_penalty": 0.3,
   "length_penalty": 0.25,
@@ -19,5 +20,8 @@
     "uo",
     "oi",
     "ui"
+  ],
+  "reducible_vowels": [
+    "ə"
   ]
 }

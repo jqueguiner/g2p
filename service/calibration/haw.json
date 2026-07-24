@@ -2,6 +2,7 @@
   "lang": "haw",
   "blend": 0.4,
   "gap": 1.0,
+  "schwa_gap": 0.3,
   "nasal_penalty": 0.12,
   "tone_penalty": 0.0,
   "length_penalty": 0.25,
@@ -21,5 +22,8 @@
     "iu",
     "oi",
     "ou"
+  ],
+  "reducible_vowels": [
+    "ə"
   ]
 }

@@ -32,6 +32,12 @@ pub struct Calibration {
     pub blend: f32,
     /// Insertion / deletion cost (0..1).
     pub gap: f32,
+    /// Insertion / deletion cost for a **reducible** vowel (schwa / e-muet).
+    /// French deletes these freely — "keguiner" is just Quéguiner /keɡine/ with
+    /// the mute-e dropped, and countless `-ue-` spellings hide a `-ué-`. Much
+    /// lower than `gap` so a name typed without the schwa still matches. See
+    /// [`Calibration::reducible_vowels`].
+    pub schwa_gap: f32,
     /// Extra cost when exactly one segment is nasalized (`~`, or a nasal base).
     pub nasal_penalty: f32,
     /// Extra cost when the tone marks differ (matters for tonal languages).
@@ -60,6 +66,19 @@ pub struct Calibration {
     /// syllables). This makes vowel-nucleus counting language-correct.
     #[serde(default)]
     pub diphthongs: Vec<String>,
+    /// Vowel bases treated as **reducible** (schwa / e-muet): inserting or
+    /// deleting one costs [`Calibration::schwa_gap`] instead of `gap`, and such
+    /// a vowel does not count toward the syllable-count penalty. Default `["ə"]`;
+    /// French adds `"e"` (Quéguiner /keɡine/ ~ "keguiner" /kɡine/), so the two
+    /// differ only by a free schwa, not by real syllable structure — while a
+    /// full vowel like /a/ (Michel /miʃɛl/ vs Mickaël /mikaɛl/) stays penalized.
+    #[serde(default = "default_reducible")]
+    pub reducible_vowels: Vec<String>,
+}
+
+/// Default reducible-vowel set: the schwa. French overrides to add e-muet.
+fn default_reducible() -> Vec<String> {
+    vec!["ə".to_string()]
 }
 
 impl Default for Calibration {
@@ -68,6 +87,7 @@ impl Default for Calibration {
             lang: "default".into(),
             blend: 0.4,
             gap: 1.0,
+            schwa_gap: 0.35,
             nasal_penalty: 0.5,
             tone_penalty: 0.6,
             length_penalty: 0.15,
@@ -78,6 +98,7 @@ impl Default for Calibration {
             length_ratio_penalty: 0.2,
             syllable_penalty: 0.5,
             diphthongs: Vec::new(),
+            reducible_vowels: default_reducible(),
         }
     }
 }
@@ -88,6 +109,7 @@ impl Calibration {
     pub fn sanitize(mut self) -> Self {
         self.blend = self.blend.clamp(0.0, 1.0);
         self.gap = self.gap.clamp(0.0, 1.0);
+        self.schwa_gap = self.schwa_gap.clamp(0.0, 1.0);
         self.nasal_penalty = self.nasal_penalty.clamp(0.0, 2.0);
         self.tone_penalty = self.tone_penalty.clamp(0.0, 2.0);
         self.length_penalty = self.length_penalty.clamp(0.0, 2.0);
@@ -108,6 +130,9 @@ impl Calibration {
         }
         if let Some(v) = ov.gap {
             c.gap = v;
+        }
+        if let Some(v) = ov.schwa_gap {
+            c.schwa_gap = v;
         }
         if let Some(v) = ov.nasal_penalty {
             c.nasal_penalty = v;
@@ -139,6 +164,9 @@ impl Calibration {
         if let Some(v) = &ov.diphthongs {
             c.diphthongs = v.clone();
         }
+        if let Some(v) = &ov.reducible_vowels {
+            c.reducible_vowels = v.clone();
+        }
         c.sanitize()
     }
 }
@@ -149,6 +177,7 @@ impl Calibration {
 pub struct CalibrationOverride {
     pub blend: Option<f32>,
     pub gap: Option<f32>,
+    pub schwa_gap: Option<f32>,
     pub nasal_penalty: Option<f32>,
     pub tone_penalty: Option<f32>,
     pub length_penalty: Option<f32>,
@@ -159,6 +188,7 @@ pub struct CalibrationOverride {
     pub length_ratio_penalty: Option<f32>,
     pub syllable_penalty: Option<f32>,
     pub diphthongs: Option<Vec<String>>,
+    pub reducible_vowels: Option<Vec<String>>,
 }
 
 /// An IPA string with its phonetic structure computed **once, up front** — the
@@ -171,8 +201,6 @@ pub struct Analyzed {
     pub ipa: String,
     /// Phoneme segments (base + diacritics).
     segs: Vec<Box<str>>,
-    /// Syllable nuclei ≈ number of vowel segments.
-    syllables: usize,
     /// Base char of the first segment (the onset), if any.
     onset: Option<char>,
 }
@@ -191,28 +219,42 @@ impl Analyzed {
 /// Precompute the phonetic structure of an IPA string. `diphthongs` are the
 /// language's single-nucleus vowel sequences (see [`Calibration::diphthongs`]);
 /// they make the syllable count language-correct.
-pub fn analyze(ipa: &str, diphthongs: &[String]) -> Analyzed {
+pub fn analyze(ipa: &str, _diphthongs: &[String]) -> Analyzed {
     let segs = segments(ipa);
-    let syllables = count_nuclei(&segs, diphthongs);
     let onset = segs.first().and_then(|s| s.chars().next());
     Analyzed {
         ipa: ipa.to_string(),
         segs,
-        syllables,
         onset,
     }
 }
 
-/// Count syllable nuclei. A vowel starts a new nucleus unless it is marked
-/// non-syllabic (`◌̯`, the diphthong glide) or, together with the immediately
-/// preceding vowel, forms a language diphthong. A consonant breaks the run.
-fn count_nuclei(segs: &[Box<str>], diphthongs: &[String]) -> usize {
+/// True if `seg` is a reducible vowel (its base is in the calibration's
+/// `reducible_vowels`) — a schwa / e-muet that French drops freely.
+fn is_reducible(seg: &str, reducible: &[String]) -> bool {
+    match base_char(seg) {
+        Some(b) => reducible.iter().any(|r| r.starts_with(b)),
+        None => false,
+    }
+}
+
+/// Gap (insertion / deletion) cost for skipping `seg`: the cheap `schwa_gap`
+/// when it is a reducible vowel, otherwise the normal `gap`.
+fn gap_cost(seg: &str, c: &Calibration) -> f32 {
+    if is_reducible(seg, &c.reducible_vowels) {
+        c.schwa_gap
+    } else {
+        c.gap
+    }
+}
+
+/// Like [`count_nuclei`] but reducible vowels (schwa / e-muet) do not open a
+/// nucleus — the "core" syllable skeleton used by the syllable-count penalty.
+fn count_core_nuclei(segs: &[Box<str>], diphthongs: &[String], reducible: &[String]) -> usize {
     let mut nuclei = 0usize;
-    let mut had_vowel = false;
     let mut prev_vowel_base: Option<char> = None;
     for seg in segs {
         if is_vowel(seg) {
-            had_vowel = true;
             let base = seg.chars().next().unwrap();
             let non_syllabic = seg.chars().any(|c| c == '\u{032F}');
             let forms_diphthong = match prev_vowel_base {
@@ -222,20 +264,15 @@ fn count_nuclei(segs: &[Box<str>], diphthongs: &[String]) -> usize {
                 }
                 None => false,
             };
-            if !non_syllabic && !forms_diphthong {
+            if !non_syllabic && !forms_diphthong && !is_reducible(seg, reducible) {
                 nuclei += 1;
             }
             prev_vowel_base = Some(base);
         } else {
-            prev_vowel_base = None; // consonant ends the current vowel run
+            prev_vowel_base = None;
         }
     }
-    // A word with vowels has at least one nucleus even if the first is a glide.
-    if had_vowel {
-        nuclei.max(1)
-    } else {
-        nuclei
-    }
+    nuclei
 }
 
 /// Calibrated similarity between two raw IPA strings (analyzes both on the fly
@@ -265,17 +302,18 @@ pub fn distance_of(a: &Analyzed, b: &Analyzed, c: &Calibration) -> f32 {
     }
     let (n, m) = (sa.len(), sb.len());
     let mut d = vec![vec![0f32; m + 1]; n + 1];
-    for i in 0..=n {
-        d[i][0] = i as f32 * c.gap;
+    // Border paths are all-gaps; a reducible (schwa) vowel costs `schwa_gap`.
+    for i in 1..=n {
+        d[i][0] = d[i - 1][0] + gap_cost(&sa[i - 1], c);
     }
-    for j in 0..=m {
-        d[0][j] = j as f32 * c.gap;
+    for j in 1..=m {
+        d[0][j] = d[0][j - 1] + gap_cost(&sb[j - 1], c);
     }
     for i in 1..=n {
         for j in 1..=m {
             let sub = d[i - 1][j - 1] + sub_cost(&sa[i - 1], &sb[j - 1], c);
-            let del = d[i - 1][j] + c.gap;
-            let ins = d[i][j - 1] + c.gap;
+            let del = d[i - 1][j] + gap_cost(&sa[i - 1], c);
+            let ins = d[i][j - 1] + gap_cost(&sb[j - 1], c);
             d[i][j] = sub.min(del).min(ins);
         }
     }
@@ -291,9 +329,17 @@ pub fn distance_of(a: &Analyzed, b: &Analyzed, c: &Calibration) -> f32 {
         dist += c.onset_penalty;
     }
     dist += c.length_ratio_penalty * (n.abs_diff(m) as f32 / denom);
-    if a.syllables != b.syllables {
-        let sd = a.syllables.abs_diff(b.syllables) as f32;
-        dist += c.syllable_penalty * (sd / a.syllables.max(b.syllables).max(1) as f32);
+    // Syllable-count penalty on the *core* nuclei — reducible vowels (schwa /
+    // e-muet) are excluded, so a dropped mute-e ("keguiner" 2 syll ~ Quéguiner
+    // 3 syll, both 1 core nucleus) is not treated as a structural difference,
+    // while a full extra vowel (Michel 2 ~ Mickaël 3, cores 2 vs 3) still is.
+    let (ca, cb) = (
+        count_core_nuclei(sa, &c.diphthongs, &c.reducible_vowels),
+        count_core_nuclei(sb, &c.diphthongs, &c.reducible_vowels),
+    );
+    if ca != cb {
+        let sd = ca.abs_diff(cb) as f32;
+        dist += c.syllable_penalty * (sd / ca.max(cb).max(1) as f32);
     }
 
     dist.min(1.0)
@@ -510,13 +556,14 @@ mod tests {
         // English merges aɪ/eɪ into one nucleus; French keeps a-ɛ as a hiatus.
         let en = vec!["aɪ".to_string(), "eɪ".to_string()];
         let fr_none: Vec<String> = vec![];
+        let syl = |ipa: &str, d: &[String]| count_core_nuclei(&analyze(ipa, d).segs, d, &[]);
         // Michael /maɪkəl/ → EN: 2 nuclei (aɪ + ə)
-        assert_eq!(analyze("maɪkəl", &en).syllables, 2);
+        assert_eq!(syl("maɪkəl", &en), 2);
         // Mickaël /mikaɛl/ → FR: 3 nuclei (i, a, ɛ — no diphthongs)
-        assert_eq!(analyze("mikaɛl", &fr_none).syllables, 3);
+        assert_eq!(syl("mikaɛl", &fr_none), 3);
         // same string, EN diphthong set would fold a+ɛ only if listed; it isn't,
         // so aɛ stays 2 nuclei there too — the point is the set is per language.
-        assert_eq!(analyze("keɪtlaɪn", &en).syllables, 2); // Caitlin: eɪ + aɪ
+        assert_eq!(syl("keɪtlaɪn", &en), 2); // Caitlin: eɪ + aɪ
     }
 
     #[test]
@@ -529,6 +576,42 @@ mod tests {
         assert!(michele > mickael);
         // and the 3-syllable form is pushed down by the syllable penalty
         assert!(mickael < 0.7, "Mickaël should be penalized, got {mickael}");
+    }
+
+    #[test]
+    fn reducible_vowel_insertion_is_cheap() {
+        // French e-muet: "keguiner" /kɡine/ is Quéguiner /keɡine/ with the mute-e
+        // dropped. With `e` reducible they must be near-identical, and must beat a
+        // real consonant swap like Criner /kʁine/ (same 2 syllables, so it used to
+        // win only because it kept the syllable count).
+        let mut c = fr();
+        c.schwa_gap = 0.3;
+        c.reducible_vowels = vec!["ə".into(), "e".into()];
+        let queguiner = similarity("kɡine", "keɡine", &c);
+        let criner = similarity("kɡine", "kʁine", &c);
+        assert!(
+            queguiner > 0.85,
+            "keguiner~Quéguiner should be high, got {queguiner}"
+        );
+        assert!(
+            queguiner > criner,
+            "Quéguiner ({queguiner}) must beat Criner ({criner})"
+        );
+    }
+
+    #[test]
+    fn full_vowel_insertion_stays_penalized() {
+        // The reducible-vowel discount must NOT rescue a full extra vowel: Mickaël
+        // /mikaɛl/ inserts an /a/ (not reducible) vs Michel /miʃɛl/, so it stays
+        // clearly apart even though French has e-muet.
+        let mut c = fr();
+        c.schwa_gap = 0.3;
+        c.reducible_vowels = vec!["ə".into(), "e".into()];
+        let mickael = similarity("miʃɛl", "mikaɛl", &c);
+        assert!(
+            mickael < 0.7,
+            "Mickaël should stay penalized, got {mickael}"
+        );
     }
 
     #[test]
@@ -601,8 +684,8 @@ mod tests {
     #[test]
     fn non_syllabic_glide_is_not_a_nucleus() {
         // aɪ̯ (ɪ carries U+032F) is one nucleus; ai (two full vowels) is two
-        assert_eq!(analyze("aɪ̯", &[]).syllables, 1);
-        assert_eq!(analyze("ai", &[]).syllables, 2);
+        assert_eq!(count_core_nuclei(&analyze("aɪ̯", &[]).segs, &[], &[]), 1);
+        assert_eq!(count_core_nuclei(&analyze("ai", &[]).segs, &[], &[]), 2);
     }
 
     #[test]

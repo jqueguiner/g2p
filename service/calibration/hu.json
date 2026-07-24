@@ -2,6 +2,7 @@
   "lang": "hu",
   "blend": 0.42,
   "gap": 1.0,
+  "schwa_gap": 0.3,
   "nasal_penalty": 0.12,
   "tone_penalty": 0.0,
   "length_penalty": 0.25,
@@ -11,5 +12,8 @@
   "onset_penalty": 0.4,
   "length_ratio_penalty": 0.15,
   "syllable_penalty": 0.55,
-  "diphthongs": []
+  "diphthongs": [],
+  "reducible_vowels": [
+    "ə"
+  ]
 }
