@@ -23,6 +23,12 @@ tower-http = { version = "0.5", features = ["cors", "trace"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
+[dev-dependencies]
+# g2p2-core (lib name `g2p`) so tests can build a toy `.g2p` model in-memory.
+g2p2-core = { path = "../g2p", features = ["numbers"] }
+tower = { version = "0.5", features = ["util"] }   # ServiceExt::oneshot for e2e
+tempfile = "3"
+
 [profile.release]
 opt-level = 3
 lto = "thin"

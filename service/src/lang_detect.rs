@@ -72,3 +72,21 @@ fn whisper_from(iso: &str, script: whatlang::Script) -> Option<String> {
     };
     Some(by_script.to_string())
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn detects_language_fields() {
+        let d = detect("bonjour tout le monde comment allez vous aujourd hui").unwrap();
+        assert!(!d.iso.is_empty());
+        assert!((0.0..=1.0).contains(&d.confidence));
+        assert!(!d.script.is_empty());
+    }
+
+    #[test]
+    fn empty_is_none() {
+        assert!(detect("").is_none());
+    }
+}

@@ -9,12 +9,55 @@ use g2p::Model;
 use serde::Deserialize;
 use serde_json::{json, Value};
 
+use crate::calib::{self, Analyzed, Calibration, CalibrationOverride};
 use crate::error::ApiError;
 use crate::lang_detect::{self, Detection};
-use crate::state::AppState;
+use crate::state::{AppState, Gender};
 use crate::types::*;
 
 type St = State<Arc<AppState>>;
+
+/// Score two IPA strings in `0..1` under the chosen method. `calibrated` uses
+/// the resolved per-language calibration; the others fall through to core.
+fn score(a: &str, b: &str, method: MethodArg, calib: &Calibration) -> f32 {
+    match method {
+        MethodArg::Levenshtein => g2p::similarity(a, b, g2p::Method::Levenshtein),
+        MethodArg::Weighted => g2p::similarity(a, b, g2p::Method::Weighted),
+        MethodArg::Calibrated => calib::similarity(a, b, calib),
+    }
+}
+
+/// Like [`score`] but reusing precomputed [`Analyzed`] structure on both sides,
+/// so a query scored against a whole corpus segments/counts each name only once.
+fn score_analyzed(q: &Analyzed, cand: &Analyzed, method: MethodArg, calib: &Calibration) -> f32 {
+    match method {
+        MethodArg::Levenshtein => g2p::similarity(&q.ipa, &cand.ipa, g2p::Method::Levenshtein),
+        MethodArg::Weighted => g2p::similarity(&q.ipa, &cand.ipa, g2p::Method::Weighted),
+        MethodArg::Calibrated => calib::similarity_of(q, cand, calib),
+    }
+}
+
+/// Resolve the calibration to use: the language profile (or default), with any
+/// per-request override merged on top.
+fn resolve_calib(
+    st: &AppState,
+    lang: Option<&str>,
+    ov: &Option<CalibrationOverride>,
+) -> Calibration {
+    let base = match lang {
+        Some(l) => st.calibration(l),
+        None => st.calibration_default(),
+    };
+    match ov {
+        Some(o) => base.merged(o),
+        None => (*base).clone(),
+    }
+}
+
+/// `GET /` — the single-page web UI (served from the same origin as the API).
+pub async fn ui() -> axum::response::Html<&'static str> {
+    axum::response::Html(include_str!("../static/index.html"))
+}
 
 /// `GET /health`
 pub async fn health(State(st): St) -> Json<Value> {
@@ -40,6 +83,11 @@ pub async fn languages(State(st): St) -> Json<Vec<LanguageInfo>> {
         })
         .collect();
     Json(list)
+}
+
+/// `GET /calibration` — all similarity calibration profiles (default + per-lang).
+pub async fn calibration(State(st): St) -> Json<std::collections::BTreeMap<String, Calibration>> {
+    Json(st.all_calibrations())
 }
 
 // ---- language resolution ----
@@ -175,8 +223,7 @@ fn detect_run(text: &str) -> Result<Json<Detection>, ApiError> {
 
 /// `POST /similarity` — phonetic similarity between two strings.
 pub async fn similarity(State(st): St, Json(req): Json<SimilarityRequest>) -> Result<Json<SimilarityResponse>, ApiError> {
-    let method: g2p::Method = req.method.into();
-    let method_name = format!("{method:?}").to_lowercase();
+    let method = req.method;
 
     let (a_ipa, b_ipa, lang) = if req.phonemize {
         let (lang, _, _) = resolve_lang(&st, &req.lang, &req.a)?;
@@ -187,14 +234,17 @@ pub async fn similarity(State(st): St, Json(req): Json<SimilarityRequest>) -> Re
             Some(lang),
         )
     } else {
-        (req.a.clone(), req.b.clone(), None)
+        // Raw IPA: no phonemization, but a requested `lang` still selects the
+        // calibration profile (tone/nasal weights differ by language).
+        (req.a.clone(), req.b.clone(), req.lang.clone())
     };
 
-    let sim = g2p::similarity(&a_ipa, &b_ipa, method);
+    let calib = resolve_calib(&st, lang.as_deref(), &req.calibration);
+    let sim = score(&a_ipa, &b_ipa, method, &calib);
     Ok(Json(SimilarityResponse {
         a_ipa,
         b_ipa,
-        method: method_name,
+        method: method.as_str().to_string(),
         lang,
         similarity: sim,
         distance: 1.0 - sim,
@@ -211,11 +261,11 @@ pub async fn alternatives(State(st): St, Json(req): Json<AlternativesRequest>) -
     if req.candidates.is_empty() {
         return Err(ApiError::bad_request("`candidates` is empty"));
     }
-    let method: g2p::Method = req.method.into();
-    let method_name = format!("{method:?}").to_lowercase();
+    let method = req.method;
 
     let (lang, _, _) = resolve_lang(&st, &req.lang, &req.query)?;
     let model = st.model(&lang)?;
+    let calib = resolve_calib(&st, Some(&lang), &req.calibration);
 
     let query_ipa = phonemize_name(&model, &req.query);
 
@@ -224,11 +274,13 @@ pub async fn alternatives(State(st): St, Json(req): Json<AlternativesRequest>) -
         .iter()
         .map(|name| {
             let ipa = phonemize_name(&model, name);
-            let similarity = g2p::similarity(&query_ipa, &ipa, method);
+            let similarity = score(&query_ipa, &ipa, method, &calib);
             Alternative {
                 name: name.clone(),
                 ipa,
                 similarity,
+                gender: None,
+                frequency: None,
             }
         })
         .filter(|a| a.similarity >= req.min_similarity)
@@ -243,7 +295,154 @@ pub async fn alternatives(State(st): St, Json(req): Json<AlternativesRequest>) -
         query: req.query,
         query_ipa,
         lang,
-        method: method_name,
+        method: method.as_str().to_string(),
         results,
     }))
+}
+
+// ---- /similar-names ----
+
+#[derive(Deserialize)]
+pub struct SimilarNamesQuery {
+    name: String,
+    lang: Option<String>,
+    method: Option<MethodArg>,
+    top_k: Option<usize>,
+    min_similarity: Option<f32>,
+    gender: Option<String>,
+    popularity: Option<f32>,
+}
+
+/// `GET /similar-names?name=Caitlin&lang=en&top_k=5&gender=f`
+pub async fn similar_names_get(State(st): St, Query(q): Query<SimilarNamesQuery>) -> Result<Json<AlternativesResponse>, ApiError> {
+    let req = SimilarNamesRequest {
+        name: q.name,
+        lang: q.lang,
+        method: q.method.unwrap_or_default(),
+        top_k: q.top_k.unwrap_or(0),
+        min_similarity: q.min_similarity.unwrap_or(0.0),
+        exclude_exact: true,
+        gender: q.gender,
+        popularity: q.popularity.unwrap_or(0.0),
+        calibration: None,
+    };
+    similar_names_run(&st, req)
+}
+
+/// `POST /similar-names` — given ONE first name, return the phonetically closest
+/// first names from the server's built-in corpus (no candidate list needed).
+pub async fn similar_names_post(State(st): St, Json(req): Json<SimilarNamesRequest>) -> Result<Json<AlternativesResponse>, ApiError> {
+    similar_names_run(&st, req)
+}
+
+fn similar_names_run(st: &AppState, req: SimilarNamesRequest) -> Result<Json<AlternativesResponse>, ApiError> {
+    if req.name.trim().is_empty() {
+        return Err(ApiError::bad_request("`name` is empty"));
+    }
+    // Default method is `calibrated` (per-language blend); see `calib`.
+    let method = req.method;
+
+    let (lang, _, _) = resolve_lang(st, &req.lang, &req.name)?;
+    let model = st.model(&lang)?;
+    let calib = resolve_calib(st, Some(&lang), &req.calibration);
+
+    let index = st.name_index(&lang, &model);
+    if index.is_empty() {
+        return Err(ApiError::bad_request(format!(
+            "no name corpus for '{lang}' — add {lang}.txt to the names dir"
+        )));
+    }
+
+    // Analyze the query once (same diphthong set as the cached corpus); every
+    // corpus entry is already analyzed.
+    let query = calib::analyze(&phonemize_name(&model, &req.name), &calib.diphthongs);
+    let qnorm = req.name.to_lowercase();
+    // Force a gender with `m`/`f`; anything else (omitted, `u`, `any`, `neutral`)
+    // leaves it neutral = no filter (returns all genders).
+    let gender_filter = match req.gender.as_deref().map(str::trim) {
+        Some(s) if s.eq_ignore_ascii_case("m") || s.eq_ignore_ascii_case("male") => {
+            Some(Gender::Male)
+        }
+        Some(s) if s.eq_ignore_ascii_case("f") || s.eq_ignore_ascii_case("female") => {
+            Some(Gender::Female)
+        }
+        _ => None,
+    };
+
+    // Candidates surviving the gender filter, scored phonetically + frequency.
+    let scored: Vec<(Alternative, u32)> = index
+        .iter()
+        .filter(|e| !(req.exclude_exact && e.name.to_lowercase() == qnorm))
+        .filter(|e| gender_filter.map_or(true, |g| e.gender.passes(g)))
+        .map(|e| {
+            let similarity = score_analyzed(&query, &e.phon, method, &calib);
+            (
+                Alternative {
+                    name: e.name.clone(),
+                    ipa: e.phon.ipa.clone(),
+                    similarity,
+                    gender: Some(e.gender.code().to_string()),
+                    frequency: Some(e.freq),
+                },
+                e.freq,
+            )
+        })
+        .filter(|(a, _)| a.similarity >= req.min_similarity)
+        .collect();
+
+    // Rank by phonetic score plus an optional popularity prior; ties break on
+    // raw frequency so the more common name wins.
+    let max_freq = scored.iter().map(|(_, f)| *f).max().unwrap_or(0).max(1) as f32;
+    let pop = req.popularity.clamp(0.0, 1.0);
+    let rank_key = |a: &Alternative, f: u32| a.similarity + pop * (f as f32 / max_freq);
+
+    let mut scored = scored;
+    scored.sort_by(|(a, fa), (b, fb)| {
+        rank_key(b, *fb)
+            .total_cmp(&rank_key(a, *fa))
+            .then(fb.cmp(fa))
+    });
+
+    let k = if req.top_k == 0 { 10 } else { req.top_k };
+    let results: Vec<Alternative> = scored.into_iter().take(k).map(|(a, _)| a).collect();
+
+    Ok(Json(AlternativesResponse {
+        query: req.name,
+        query_ipa: query.ipa.clone(),
+        lang,
+        method: method.as_str().to_string(),
+        results,
+    }))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::calib::Calibration;
+
+    #[test]
+    fn score_dispatch_all_methods() {
+        let c = Calibration::default();
+        for m in [MethodArg::Levenshtein, MethodArg::Weighted, MethodArg::Calibrated] {
+            assert_eq!(score("aba", "aba", m, &c), 1.0, "identical must be 1.0 for {m:?}");
+        }
+        assert!(score("aba", "opo", MethodArg::Calibrated, &c) < 1.0);
+    }
+}
+
+#[cfg(test)]
+mod more_tests {
+    use super::*;
+    use crate::calib::{analyze, Calibration};
+
+    #[test]
+    fn score_analyzed_agrees_with_score() {
+        let c = Calibration::default();
+        let (a, b) = (analyze("aba", &c.diphthongs), analyze("abo", &c.diphthongs));
+        for m in [MethodArg::Levenshtein, MethodArg::Weighted, MethodArg::Calibrated] {
+            let s1 = score_analyzed(&a, &b, m, &c);
+            let s2 = score("aba", "abo", m, &c);
+            assert!((s1 - s2).abs() < 1e-6, "mismatch for {m:?}: {s1} vs {s2}");
+        }
+    }
 }

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>g2p2 · phonetic playground</title>
+<style>
+  :root{
+    --bg:#0e1116; --panel:#151a22; --panel2:#1b2230; --line:#252d3a;
+    --fg:#e7ecf3; --muted:#8b97a8; --accent:#6ea8fe; --accent2:#7ee3c7;
+    --male:#5b9dff; --female:#ff7eb6; --uni:#b39dff;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f4f6fa; --panel:#ffffff; --panel2:#f0f3f8; --line:#e2e7ef;
+           --fg:#141a22; --muted:#5c6675; --accent:#2f6fed; --accent2:#12a67f; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+  header{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+  h1{font-size:26px;margin:0;letter-spacing:-.5px}
+  h1 .ipa{color:var(--accent2);font-family:"Charis SIL","Doulos SIL",serif}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:22px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+  .tab{padding:8px 14px;border-radius:999px;border:1px solid var(--line);
+    background:var(--panel);color:var(--muted);cursor:pointer;font-size:13.5px;font-weight:600}
+  .tab.active{background:var(--accent);border-color:var(--accent);color:#06101f}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin-bottom:12px}
+  .field{display:flex;flex-direction:column;gap:5px;flex:1;min-width:120px}
+  label{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+  input,select{background:var(--panel2);border:1px solid var(--line);color:var(--fg);
+    border-radius:10px;padding:10px 12px;font-size:15px;width:100%;font-family:inherit}
+  input:focus,select:focus{outline:none;border-color:var(--accent)}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);
+    color:var(--muted);cursor:pointer;font-size:12.5px;font-weight:600}
+  .chip.on{color:var(--fg);border-color:var(--accent);background:color-mix(in srgb,var(--accent) 18%,transparent)}
+  button.go{background:var(--accent);color:#06101f;border:none;border-radius:10px;
+    padding:11px 20px;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap}
+  button.go:active{transform:translateY(1px)}
+  .toggle{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--fg)}
+  .out{margin-top:16px}
+  .ipa{font-family:"Charis SIL","Doulos SIL","Gentium Plus",serif}
+  .qhead{font-size:13px;color:var(--muted);margin-bottom:10px}
+  .qhead b{color:var(--fg)} .qhead .ipa{color:var(--accent2)}
+  .item{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;
+    padding:11px 4px;border-bottom:1px solid var(--line)}
+  .item:last-child{border-bottom:none}
+  .rank{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px;text-align:right}
+  .nm{font-size:17px;font-weight:650;display:flex;align-items:center;gap:8px}
+  .nm .g{font-size:11px;font-weight:800;padding:2px 6px;border-radius:6px;letter-spacing:.3px}
+  .g.m{background:color-mix(in srgb,var(--male) 22%,transparent);color:var(--male)}
+  .g.f{background:color-mix(in srgb,var(--female) 22%,transparent);color:var(--female)}
+  .g.u{background:color-mix(in srgb,var(--uni) 22%,transparent);color:var(--uni)}
+  .nm .pi{font-size:13px;color:var(--muted);font-weight:400}
+  .scorewrap{display:flex;align-items:center;gap:10px;width:150px}
+  .barbg{flex:1;height:7px;border-radius:99px;background:var(--panel2);overflow:hidden}
+  .barfg{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+  .pct{font-variant-numeric:tabular-nums;font-size:13px;color:var(--fg);width:42px;text-align:right}
+  .big{font-size:30px;font-weight:700}
+  .kv{color:var(--muted);font-size:14px} .kv b{color:var(--fg)}
+  .err{color:#ff8b8b;font-size:14px;margin-top:12px}
+  .hint{color:var(--muted);font-size:12px;margin-top:10px}
+  footer{color:var(--muted);font-size:12px;margin-top:26px;text-align:center}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>g2p2 <span class="ipa">/dʒiː.tuː.piː.tuː/</span></h1>
+  </header>
+  <div class="sub">Grapheme→phoneme + phonetic name similarity for the 100 Whisper languages.</div>
+
+  <div class="tabs" id="tabs">
+    <div class="tab active" data-t="sim">Similar names</div>
+    <div class="tab" data-t="g2p">Phonemize</div>
+    <div class="tab" data-t="detect">Detect</div>
+    <div class="tab" data-t="pair">Compare two</div>
+  </div>
+
+  <!-- SIMILAR NAMES -->
+  <section class="panel" id="p-sim">
+    <div class="row">
+      <div class="field" style="flex:2"><label>First name</label>
+        <input id="s-name" placeholder="Jean" value="Jean" autocomplete="off"></div>
+      <div class="field"><label>Top</label>
+        <input id="s-k" type="number" min="1" max="30" value="8"></div>
+      <button class="go" onclick="runSim()">Find</button>
+    </div>
+    <div class="row">
+      <div class="field"><label>Language</label><div class="chips" id="s-lang"></div></div>
+      <div class="field"><label>Gender</label><div class="chips" id="s-gender"></div></div>
+      <div class="field"><label>Popularity <span id="s-popv" class="kv">0.0</span></label>
+        <input id="s-pop" type="range" min="0" max="1" step="0.1" value="0"
+          oninput="document.getElementById('s-popv').textContent=(+this.value).toFixed(1);runSim()"></div>
+    </div>
+    <div class="out" id="s-out"></div>
+    <div class="hint">Gender: <b>Neutral</b> = all · <b>♂/♀</b> force one (unisex names always pass).</div>
+  </section>
+
+  <!-- PHONEMIZE -->
+  <section class="panel" id="p-g2p" hidden>
+    <div class="row">
+      <div class="field" style="flex:2"><label>Text (word or sequence)</label>
+        <input id="g-text" placeholder="bonjour le monde 12" value="bonjour le monde 12"></div>
+      <button class="go" onclick="runG2p()">Phonemize</button>
+    </div>
+    <div class="row">
+      <div class="field"><label>Language</label><div class="chips" id="g-lang"></div></div>
+      <div class="field" style="flex:0"><label>Numbers</label>
+        <span class="toggle"><input type="checkbox" id="g-num" checked> spell digits</span></div>
+    </div>
+    <div class="out" id="g-out"></div>
+  </section>
+
+  <!-- DETECT -->
+  <section class="panel" id="p-detect" hidden>
+    <div class="row">
+      <div class="field" style="flex:2"><label>Text</label>
+        <input id="d-text" placeholder="ich bin ein Berliner" value="ich bin ein Berliner"></div>
+      <button class="go" onclick="runDetect()">Detect</button>
+    </div>
+    <div class="out" id="d-out"></div>
+  </section>
+
+  <!-- COMPARE TWO -->
+  <section class="panel" id="p-pair" hidden>
+    <div class="row">
+      <div class="field"><label>Name A</label><input id="c-a" value="Caitlin"></div>
+      <div class="field"><label>Name B</label><input id="c-b" value="Katelyn"></div>
+      <button class="go" onclick="runPair()">Compare</button>
+    </div>
+    <div class="row">
+      <div class="field"><label>Language</label><div class="chips" id="c-lang"></div></div>
+      <div class="field"><label>Method</label>
+        <select id="c-method">
+          <option value="calibrated">calibrated (per-language)</option>
+          <option value="weighted">weighted (features)</option>
+          <option value="levenshtein">levenshtein (exact)</option>
+        </select></div>
+    </div>
+    <div class="out" id="c-out"></div>
+  </section>
+
+  <footer>Served by <b>g2p2-server</b> · <a href="/calibration">/calibration</a> · <a href="/languages">/languages</a></footer>
+</div>
+
+<script>
+const LANGS = ["fr","en","es","zh"];
+const state = { simLang:"fr", g2pLang:"fr", pairLang:"en", gender:"" };
+
+// build chip groups
+function chips(el, values, sel, onpick){
+  el.innerHTML = "";
+  values.forEach(v=>{
+    const c=document.createElement("div"); c.className="chip"+(v.val===sel?" on":"");
+    c.textContent=v.label; c.onclick=()=>{ onpick(v.val);
+      [...el.children].forEach(x=>x.classList.remove("on")); c.classList.add("on"); };
+    el.appendChild(c);
+  });
+}
+const langOpts = LANGS.map(l=>({val:l,label:l}));
+const langAuto = [{val:"",label:"auto"}].concat(langOpts);
+chips(document.getElementById("s-lang"), langOpts, "fr", v=>state.simLang=v);
+chips(document.getElementById("g-lang"), langAuto, "fr", v=>state.g2pLang=v);
+chips(document.getElementById("c-lang"), langOpts, "en", v=>state.pairLang=v);
+chips(document.getElementById("s-gender"),
+  [{val:"",label:"Neutral"},{val:"m",label:"♂ Male"},{val:"f",label:"♀ Female"}], "", v=>state.gender=v);
+
+// tabs
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+  t.classList.add("active");
+  ["sim","g2p","detect","pair"].forEach(n=>
+    document.getElementById("p-"+n).hidden = (n!==t.dataset.t));
+});
+
+async function api(path){
+  const r = await fetch(path);
+  const j = await r.json();
+  if(!r.ok) throw new Error(j.error || ("HTTP "+r.status));
+  return j;
+}
+const q = s => encodeURIComponent(s);
+const gbadge = g => `<span class="g ${g}">${g==='m'?'♂':g==='f'?'♀':'⚥'}</span>`;
+
+async function runSim(){
+  const out=document.getElementById("s-out"); out.innerHTML="…";
+  const name=document.getElementById("s-name").value.trim();
+  const k=document.getElementById("s-k").value||8;
+  if(!name){out.innerHTML="";return;}
+  const pop=document.getElementById("s-pop").value||0;
+  let url=`/similar-names?name=${q(name)}&lang=${state.simLang}&top_k=${k}&popularity=${pop}`;
+  if(state.gender) url+=`&gender=${state.gender}`;
+  try{
+    const d=await api(url);
+    let h=`<div class="qhead"><b>${name}</b> → <span class="ipa">/${d.query_ipa}/</span> · ${d.lang} · ${d.method}</div>`;
+    if(!d.results.length) h+=`<div class="hint">No matches.</div>`;
+    d.results.forEach((r,i)=>{
+      const pc=Math.round(r.similarity*100);
+      h+=`<div class="item"><div class="rank">${i+1}</div>
+        <div class="nm">${r.name} ${gbadge(r.gender||'u')}<span class="pi ipa">/${r.ipa}/</span>${r.frequency?`<span class="pi">· ${r.frequency.toLocaleString()}</span>`:''}</div>
+        <div class="scorewrap"><div class="barbg"><div class="barfg" style="width:${pc}%"></div></div>
+        <span class="pct">${pc}%</span></div></div>`;
+    });
+    out.innerHTML=h;
+  }catch(e){ out.innerHTML=`<div class="err">${e.message}</div>`; }
+}
+
+async function runG2p(){
+  const out=document.getElementById("g-out"); out.innerHTML="…";
+  const text=document.getElementById("g-text").value.trim();
+  const num=document.getElementById("g-num").checked;
+  let url=`/g2p?text=${q(text)}&numbers=${num}`;
+  if(state.g2pLang) url+=`&lang=${state.g2pLang}`;
+  try{
+    const d=await api(url);
+    let h=`<div class="big ipa">${d.ipa}</div>
+      <div class="kv" style="margin-top:8px">lang <b>${d.lang}</b>${d.detected?" (auto)":""}${d.numbers_expanded?` · <span class="ipa">${d.text}</span>`:""}</div>
+      <div class="out">`;
+    d.words.forEach(w=> h+=`<div class="item"><div class="rank"></div>
+      <div class="nm">${w.word}<span class="pi ipa">→ /${w.phonemes}/</span></div><div></div></div>`);
+    out.innerHTML=h+"</div>";
+  }catch(e){ out.innerHTML=`<div class="err">${e.message}</div>`; }
+}
+
+async function runDetect(){
+  const out=document.getElementById("d-out"); out.innerHTML="…";
+  const text=document.getElementById("d-text").value.trim();
+  try{
+    const d=await api(`/detect?text=${q(text)}`);
+    out.innerHTML=`<div class="big">${d.lang||"—"} <span class="kv">/ ${d.iso}</span></div>
+      <div class="kv" style="margin-top:6px">script <b>${d.script}</b> · confidence <b>${(d.confidence*100).toFixed(0)}%</b> · ${d.reliable?"reliable":"low confidence"}</div>`;
+  }catch(e){ out.innerHTML=`<div class="err">${e.message}</div>`; }
+}
+
+async function runPair(){
+  const out=document.getElementById("c-out"); out.innerHTML="…";
+  const a=document.getElementById("c-a").value.trim(), b=document.getElementById("c-b").value.trim();
+  const method=document.getElementById("c-method").value;
+  try{
+    const r=await fetch("/similarity",{method:"POST",headers:{"content-type":"application/json"},
+      body:JSON.stringify({a,b,lang:state.pairLang,method})});
+    const d=await r.json(); if(!r.ok) throw new Error(d.error||"error");
+    const pc=Math.round(d.similarity*100);
+    out.innerHTML=`<div class="big">${pc}%</div>
+      <div class="scorewrap" style="width:100%;margin:10px 0"><div class="barbg">
+        <div class="barfg" style="width:${pc}%"></div></div></div>
+      <div class="kv"><span class="ipa">${a} → /${d.a_ipa}/</span> · <span class="ipa">${b} → /${d.b_ipa}/</span> · ${d.method}</div>`;
+  }catch(e){ out.innerHTML=`<div class="err">${e.message}</div>`; }
+}
+
+// enter-to-run + initial
+document.getElementById("s-name").addEventListener("keydown",e=>{if(e.key==="Enter")runSim();});
+document.getElementById("g-text").addEventListener("keydown",e=>{if(e.key==="Enter")runG2p();});
+document.getElementById("d-text").addEventListener("keydown",e=>{if(e.key==="Enter")runDetect();});
+runSim();
+</script>
+</body>
+</html>

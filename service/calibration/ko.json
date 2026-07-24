@@ -1,0 +1,15 @@
+{
+  "lang": "ko",
+  "blend": 0.4,
+  "gap": 1.0,
+  "nasal_penalty": 0.12,
+  "tone_penalty": 0.0,
+  "length_penalty": 0.1,
+  "vowel_consonant_penalty": 0.8,
+  "vowel_scale": 1.15,
+  "consonant_scale": 1.0,
+  "onset_penalty": 0.3,
+  "length_ratio_penalty": 0.15,
+  "syllable_penalty": 0.55,
+  "diphthongs": []
+}

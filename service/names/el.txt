@@ -1,0 +1,13 @@
+# el first names from the first_names census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Αννα	f	257
+Ανδρεασ	m	237
+Ελενα	f	224
+Αλεξανδροσ	m	201
+Πετροσ	m	158
+Στελλα	f	120
+Στεφανοσ	m	100
+Αλεξανδρα	f	97
+Αποστολοσ	m	91
+Μαρια	f	91
+Ολγα	f	87
+Αγγελοσ	m	60

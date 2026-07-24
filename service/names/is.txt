@@ -1,0 +1,13 @@
+# is first names from the first_names census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
+Ólafur	m	65
+Gunnar	m	62
+Jon	m	57
+Stefan	m	54
+Einar	m	52
+Magnus	m	52
+Anna	f	50
+Kristjan	m	49
+Guðmundur	m	49
+Johann	m	47
+Daniel	m	46
+Sigurður	m	43
