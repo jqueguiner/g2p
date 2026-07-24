@@ -1,1722 +1,8158 @@
-# nl first names from the first_names census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
-Peter	m	5977
-Jan	m	5623
-Jeroen	m	4285
-Hans	m	4254
-Rob	m	3490
-Mark	m	3389
-Paul	m	3208
-Henk	m	3006
-Frank	m	2983
-Marcel	m	2920
-Erik	m	2907
-Martijn	m	2802
-Bart	m	2595
-René	m	2585
-John	m	2508
-Bas	m	2505
-Ahmed	m	2462
-Dennis	m	2451
-Patrick	m	2410
-Robert	m	2372
-Marco	m	2326
-Richard	m	2276
-Johan	m	2273
-Sander	m	2245
-Martín	m	2242
-Wim	m	1996
-Mohamed	m	1994
-Ronald	m	1978
-Tom	m	1972
-Tim	m	1922
-Maarten	m	1892
-Marc	m	1866
-Bert	m	1814
-Niels	m	1741
-Monique	f	1725
-Joost	m	1718
-Pieter	m	1693
-Eric	m	1677
-Willem	m	1653
-Edwin	m	1642
-Michael	m	1639
-Michel	m	1625
-Wouter	m	1619
-Linda	f	1583
-Jos	m	1561
-Esther	f	1552
-André	m	1530
-Arjan	m	1512
-Rick	m	1509
-Thomas	m	1495
-Kees	m	1480
-Robin	u	1473
-Karin	f	1447
-Sandra	f	1437
-Gérard	m	1425
-Chris	m	1422
-Stefan	m	1402
-Ruud	m	1365
-Anne	f	1359
-Ron	m	1329
-Frans	m	1326
-Kim	f	1304
-Daniel	m	1270
-Nick	m	1268
-Michiel	m	1263
-David	m	1263
-Marieke	f	1252
-Jaap	m	1250
-Erwin	m	1240
-Petra	f	1230
-Alex	m	1227
-Kevin	m	1226
-Laura	f	1213
-Roy	m	1202
-Jasper	m	1181
-Vincent	m	1180
-Ton	m	1167
-Bram	m	1153
-Mike	m	1144
-Yvonne	f	1143
-Remco	m	1137
-Björn	m	1128
-Théo	m	1117
-Ingrid	f	1097
-Ellen	f	1095
-Ben	m	1091
-Daan	m	1078
-Danny	m	1034
-Sanne	f	1018
-Alí	m	1013
-Koen	m	1007
-Thijs	m	1000
-Harry	m	994
-León	m	992
-Saskia	f	968
-Roel	m	952
-Jolanda	f	949
-Nicole	f	928
-Judith	f	916
-Wendy	f	914
-Rubén	m	892
-Dirk	m	885
-Danielle	f	882
-Mahmoud	m	878
-Dick	m	875
-Anita	f	863
-Herman	m	860
-Inge	f	843
-Mehmet	m	838
-Maurice	m	818
-Albert	m	817
-Jelle	m	807
-Lars	m	806
-Nico	m	805
-Fred	m	800
-Chantal	f	795
-Lisa	f	790
-Mirjam	f	786
-Astrid	f	780
-Léo	m	778
-Bianca	f	775
-Joris	m	775
-Bob	m	771
-Gerrit	m	769
-Mustafa	m	766
-Marjolein	f	762
-Simone	f	758
-Rik	m	756
-Gert	m	752
-Iris	f	743
-Eva	f	736
-Geert	m	736
-Max	m	730
-Piet	m	728
-Maaike	f	727
-Klaas	m	726
-Suzanne	f	724
-Simón	m	722
-Steven	m	718
-Miranda	f	716
-Patrícia	f	712
-Marianne	f	709
-Jeffrey	m	704
-Joyce	f	703
-Pascal	m	695
-Raymond	m	694
-Sjoerd	m	689
-Arjen	m	687
-Pim	m	686
-Ahmet	m	685
-Anna	f	677
-Cees	m	672
-Diana	f	672
-Jacqueline	f	670
-Gijs	m	669
-Matthijs	m	651
-Alexander	m	650
-Anja	f	641
-Cláudia	f	631
-Dave	m	612
-Arno	m	598
-Ilse	f	598
-Jéssica	f	593
-Jack	m	592
-Menno	m	591
-Ed	m	590
-Manon	f	590
-Stephan	m	589
-Cor	m	588
-Murat	m	583
-Anneke	f	567
-Anouk	f	564
-Sven	m	563
-Femke	f	559
-José	u	556
-Ad	m	552
-Ibrahim	m	552
-Marleen	f	552
-Mariska	f	551
-Niek	m	547
-Wilma	f	545
-María	f	542
-Caroline	f	542
-Michelle	f	541
-Annemarie	f	539
-Martine	f	536
-Arie	m	536
-Irène	f	533
-Marijke	f	533
-Marloes	f	527
-Bárbara	f	526
-Guido	m	520
-Nienke	f	517
-Joop	m	516
-Tessa	f	512
-Joke	f	511
-Anton	m	509
-Christian	m	507
-Eline	f	506
-Janneke	f	505
-Angélique	f	504
-Carla	f	501
-Luuk	m	496
-Nathalie	f	495
-Jessé	m	492
-Jan-Willem	m	491
-Hanneke	f	487
-Ivo	m	486
-Harm	m	484
-Sylvia	f	483
-Tamara	f	479
-Gerben	m	478
-Wesley	m	475
-Charlotte	f	475
-Marion	f	474
-Angéla	f	474
-Lotte	f	468
-Luc	m	465
-Léonie	f	463
-Els	f	463
-Jordy	m	461
-Rianne	f	458
-Laurens	m	457
-Ineke	f	454
-Mieke	f	453
-Liesbeth	f	452
-Jacob	m	447
-Robbert	m	446
-Rogier	m	445
-Marije	f	444
-Roland	m	444
-Frits	m	441
-Sabine	f	440
-Rutger	m	438
-Sebastiaan	m	438
-Coen	m	432
-Ria	f	432
-Arthur	m	429
-Sam	u	428
-Marjan	f	426
-Marielle	f	426
-Andrea	f	424
-Ramón	m	424
-Loes	f	420
-Brian	m	420
-Stijn	m	419
-Han	m	419
-Hugo	m	418
-Sára	f	418
-Arnold	m	416
-Cindy	f	416
-William	m	416
-Sophie	f	416
-Mostafa	m	414
-Sarah	f	412
-Marián	f	411
-Jürgen	m	408
-Joey	m	407
-Sonja	f	407
-Tineke	f	406
-Gert-Jan	m	405
-Lisette	f	405
-Daphné	f	402
-Stéphanie	f	397
-Floris	m	396
-Joep	m	395
-Denise	f	393
-Marja	f	391
-Vera	f	391
-Marlies	f	390
-Mário	m	388
-Mélanie	f	386
-Justin	m	385
-Karen	f	384
-Walter	m	380
-Henri	m	380
-Marijn	u	380
-Ralph	m	380
-Wilco	m	377
-Evelien	f	375
-Roos	f	374
-Nancy	f	374
-Mandy	f	373
-Freek	m	370
-Annelies	f	368
-Kirsten	f	366
-Lucas	m	365
-Annemieke	f	364
-Melissa	f	363
-Víctor	m	361
-Heleen	f	358
-Emma	f	357
-Renate	f	356
-Barry	m	354
-Evert	m	354
-Jochem	m	352
-Casper	m	352
-Kelly	f	351
-Susan	f	351
-Jacco	m	350
-Sharon	f	349
-Hakan	m	348
-Paula	f	348
-Omar	m	347
-Roger	m	345
-Maartje	f	343
-Merel	f	343
-Fatih	m	343
-Henry	m	342
-Nina	f	339
-Júlia	f	339
-Annemiek	f	338
-Hasan	m	338
-Ricardo	m	337
-Rolf	m	336
-Brenda	f	335
-Ilona	f	332
-Christiaan	m	332
-Floor	f	331
-Tanja	f	329
-Gerda	f	329
-Job	m	328
-Jennifer	f	328
-Guus	m	327
-Harold	m	325
-Renée	f	324
-Miriam	f	324
-Mohammed	m	324
-Natasja	f	323
-Maikel	m	323
-Teun	m	322
-Jim	m	317
-Hüseyin	m	317
-Henny	u	317
-Annette	f	316
-Bastiaan	m	315
-Stan	m	314
-Stef	m	310
-Lex	m	310
-Anke	f	308
-Emre	m	306
-Lieke	f	305
-Roelof	m	305
-Susanne	f	304
-Óscar	m	304
-Rens	m	304
-Lisanne	f	302
-Philip	m	301
-Naomi	f	299
-Ferry	m	299
-Louis	m	297
-Eddy	m	294
-Koos	m	293
-Timo	m	292
-Emiel	m	292
-Ömer	m	291
-Pauline	f	291
-Eveline	f	291
-Ger	m	290
-Annet	f	289
-Fleur	f	288
-George	m	287
-Carlo	m	286
-Janine	f	286
-Berry	m	285
-Edward	m	285
-Huub	m	284
-Karel	m	284
-Elise	f	281
-Margriet	f	280
-Twan	m	279
-Désirée	f	279
-Jenny	f	279
-Irma	f	278
-Amr	m	278
-Gertjan	m	276
-Hendrik	m	276
-Willy	u	275
-Yvette	f	275
-Julián	m	274
-Hennie	u	271
-Ismaïl	m	271
-Olaf	m	270
-Yusuf	m	270
-Mathijs	m	269
-Eelco	m	267
-Jonathan	m	267
-Abdullah	m	263
-Dylan	m	263
-Elly	f	262
-Melvin	m	261
-Margreet	f	258
-Sjaak	m	258
-Reinier	m	257
-Jesper	m	257
-Corné	m	256
-Maurits	m	253
-Ráchel	f	253
-Harrie	m	252
-Jordi	m	251
-Benjamín	m	250
-Mart	m	247
-Arnoud	m	245
-Thea	f	244
-James	m	244
-Onno	m	243
-Amber	f	243
-Jerry	m	243
-Jelmer	m	243
-Carmen	f	242
-Johnny	m	241
-Cynthia	f	241
-Hein	m	240
-Agnès	f	240
-Marit	f	239
-Lianne	f	238
-Carolien	f	237
-Esmée	f	236
-Khaled	m	236
-Jacques	m	236
-Andy	m	236
-Aad	m	236
-Samantha	f	233
-Sílvia	f	233
-Thom	m	232
-Andrew	m	230
-Charles	m	229
-Ernst	m	229
-Marina	f	228
-Louise	f	227
-Joël	m	227
-Maud	f	226
-Alice	f	226
-Brigitte	f	225
-Ina	f	225
-Renske	f	224
-Wilfred	m	224
-Hilde	f	223
-Alfred	m	222
-Adriaan	m	222
-Sjors	m	221
-Jeannette	f	221
-Natascha	f	221
-Toon	m	220
-Johannes	m	219
-Fabián	m	219
-António	m	219
-Marjon	f	217
-Burak	m	216
-Christine	f	215
-Luca	u	214
-Fatma	f	213
-Dominique	u	213
-Serkan	m	213
-Remko	m	212
-Corine	f	211
-Hester	f	210
-Ans	f	210
-Wout	m	210
-Aya	f	209
-Rudy	m	208
-Henriette	f	207
-Margot	f	207
-Mert	m	206
-Rebecca	f	206
-Christel	f	205
-Gea	f	205
-Douwe	m	205
-Nynke	f	205
-Aart	m	204
-Debbie	f	204
-Mónica	f	204
-Ana	f	203
-Tobías	m	203
-Christa	f	201
-Edith	f	201
-Amanda	f	201
-Nicky	u	200
-Claire	f	200
-Heidi	f	200
-Rita	f	200
-Marten	m	199
-Dion	m	199
-Deniz	u	199
-Pepijn	m	199
-Bernard	m	198
-Tony	m	198
-Jorrit	m	197
-Jarno	m	197
-Adam	m	197
-Youri	m	197
-Ralf	m	196
-Nikki	f	196
-Osman	m	195
-Kitty	f	195
-Erna	f	195
-Dorien	f	195
-Ryan	m	195
-Alexandra	f	195
-Émile	m	193
-Wessel	m	193
-Gökhan	m	192
-Hannah	f	192
-Don	m	192
-Marnix	m	192
-Ahmad	m	190
-Janny	f	189
-Merve	f	188
-Carola	f	188
-Romy	f	188
-Alaa	f	187
-Lennart	m	187
-Janet	f	187
-Jaco	m	186
-Conny	f	186
-Pierre	m	186
-Rien	m	186
-Amy	f	185
-Lydia	f	185
-Érica	f	184
-Britt	f	183
-Sem	m	183
-Lilian	f	182
-Jens	m	182
-Anne-Marie	f	182
-Andreas	m	182
-Cas	m	181
-Marga	f	181
-Egbert	m	180
-Andries	m	180
-Wilbert	m	178
-Jörn	m	178
-Suzan	f	178
-Bo	u	178
-Glenn	m	178
-Jimmy	m	178
-Nadine	f	178
-Rémy	m	177
-Hassan	m	177
-Muhammed	m	177
-Mary	f	176
-Werner	m	176
-Stefanie	f	176
-Bryan	m	175
-Marvin	m	175
-Jo	u	175
-Helen	f	175
-Jason	m	174
-Joeri	m	174
-Kadir	m	174
-Déborah	f	174
-Mariette	f	174
-Tjeerd	m	174
-Eduard	m	173
-Hetty	f	172
-Auke	m	172
-Debby	f	171
-Kasper	m	171
-Diederik	m	171
-Francesco	m	170
-Harmen	m	170
-Sebastián	m	170
-Anthony	m	170
-Steve	m	169
-Nathan	m	167
-Ramazan	m	167
-Myrthe	f	167
-Milán	m	167
-Ronnie	m	166
-Ruth	f	166
-Arend	m	166
-Rein	m	165
-Joshua	m	165
-Lonneke	f	165
-Ugur	m	165
-Jannie	f	165
-Milou	f	164
-Gerwin	m	164
-Yasin	m	164
-Mireille	f	163
-Olga	f	163
-Nils	m	163
-Ingeborg	f	162
-Dirk-Jan	m	162
-Sabrina	f	161
-Giovanni	m	161
-Corrie	f	160
-Berend	m	159
-Katja	f	159
-Willemijn	f	159
-Nada	f	158
-Roberto	m	158
-Alwin	m	158
-Boudewijn	m	157
-Marius	m	157
-Priscilla	f	157
-Otto	m	157
-Jet	f	156
-Jurjen	m	156
-Jules	m	156
-Daisy	f	156
-Olivier	m	156
-Freddy	m	154
-Shirley	f	154
-Maureen	f	154
-Corina	f	153
-Vanessa	f	153
-Rosa	f	153
-Jeremy	m	153
-Karlijn	f	152
-Paulien	f	152
-Henk-Jan	m	152
-Karim	m	151
-Frederik	m	151
-Onur	m	151
-Tonny	u	151
-Trudy	f	151
-Willeke	f	150
-Edgar	m	149
-Gaby	f	149
-Adem	m	149
-Adrie	u	149
-Wiebe	m	148
-Zeynep	f	148
-Emily	f	148
-Adri	m	148
-Ted	m	147
-Jeff	m	147
-Hossam	m	147
-Moniek	f	147
-Raoul	m	146
-Halil	m	146
-Can	m	145
-Giuseppe	m	145
-Harald	m	144
-Elif	f	144
-Demi	f	144
-Metin	m	144
-Nadia	f	144
-Yannick	m	144
-Remon	m	144
-Lía	f	143
-Gerrie	f	143
-Toine	m	142
-Esraa	f	142
-Lara	f	142
-Merijn	m	142
-Kemal	m	141
-Jonás	m	141
-Antoine	m	141
-Ian	m	141
-Marjolijn	f	140
-Jamie	u	140
-Jeanette	f	140
-Marjo	f	139
-Félix	m	139
-Jakob	m	138
-Boris	m	138
-Carlos	m	138
-Colin	m	138
-Christina	f	138
-Xander	m	138
-Serdar	m	137
-Loek	m	137
-Fons	m	137
-Annie	f	137
-Nelleke	f	137
-Hidde	m	136
-Nicolette	f	135
-Tommy	m	135
-Esra	f	135
-Roeland	m	135
-Angelo	m	135
-Martien	m	135
-Manuel	m	135
-Erkan	m	134
-Kenneth	m	134
-Rico	m	134
-Céline	f	134
-Iván	m	134
-Rinus	m	134
-Arne	m	133
-Bennie	m	133
-Carin	f	133
-Julie	f	133
-Francis	u	133
-Dimitri	m	133
-Özgür	m	133
-Perry	m	133
-Enes	m	132
-Ashley	f	132
-Randy	m	132
-Serge	m	132
-Rudi	m	131
-Robert-Jan	m	131
-Betty	f	131
-Hélène	f	131
-Elke	f	131
-Taco	m	130
-Erika	f	130
-Leendert	m	130
-Isa	f	130
-Margo	f	130
-Jolien	f	129
-Mischa	u	128
-Furkan	m	128
-Gérald	m	128
-Joan	u	128
-Norbert	m	128
-Huib	m	128
-Chiel	m	127
-Kimberley	f	127
-Leen	m	127
-Mitchell	m	127
-Madelon	f	127
-Matt	m	127
-Ray	m	127
-Sinan	m	127
-Tristan	m	127
-Isabelle	f	126
-Helma	f	126
-Tina	f	126
-Ronny	m	125
-Sacha	u	125
-Iwan	m	125
-Ester	f	125
-Mo	u	125
-Vivian	f	125
-Youssef	m	124
-Yolanda	f	124
-Valérie	f	124
-Eman	f	124
-Jean	m	124
-Mariam	f	124
-Natalie	f	124
-Carina	f	123
-Carl	m	123
-Larissa	f	123
-Diane	f	123
-Matthew	m	123
-Mick	m	122
-Kris	u	122
-Noah	u	122
-Cora	f	122
-Jane	f	122
-Ewout	m	121
-Sandy	f	121
-Jean-Paul	m	121
-Jeanine	f	121
-Bea	f	120
-Luke	m	120
-Osama	m	120
-Hanna	f	119
-Derk	m	119
-Nanda	f	119
-Herbert	m	118
-Jay	m	118
-Michèle	u	118
-Johanna	f	117
-Kimberly	f	117
-Kay	m	117
-Vincenzo	m	117
-Ferhat	m	117
-Salih	m	117
-Mesut	m	117
-Rosanne	f	116
-Süleyman	m	116
-Aaron	m	115
-Boy	m	115
-Regina	f	115
-Sascha	u	115
-Samuel	m	115
-Elisa	f	114
-Dina	f	114
-Florian	m	114
-Asmaa	f	114
-Bilal	m	114
-Lucía	f	114
-Tijmen	m	114
-Selma	f	113
-Joe	m	113
-Gino	m	113
-Dianne	f	113
-Marko	m	113
-Wijnand	m	112
-Elisabeth	f	112
-Edo	m	112
-Geert-Jan	m	112
-Lorenzo	m	112
-Dan	m	112
-Recep	m	112
-Orhan	m	112
-Patty	f	112
-Juliette	f	111
-Eddie	m	111
-Ard	m	111
-Marcus	m	111
-Mathieu	m	111
-Marlon	u	111
-Muhammet	m	110
-Birgit	f	110
-Davy	m	110
-Guy	m	110
-Michal	u	110
-Antoinette	f	109
-Allard	m	109
-Lukas	m	109
-Geertje	f	109
-Isabel	f	108
-Emil	m	108
-Ellis	f	108
-Jon	m	108
-Alessandro	m	108
-Bruno	m	108
-Danique	f	108
-Mahmut	m	108
-Meike	f	108
-Umut	m	108
-Zoé	f	108
-Sofie	f	108
-Rosalie	f	107
-Damián	m	107
-Cem	m	107
-Kristel	f	107
-Jill	f	107
-Gerry	u	107
-Ferdi	m	106
-Gerhard	m	106
-Daniela	f	106
-Micha	m	106
-Alie	f	106
-Tjerk	m	105
-Amir	m	105
-Amira	f	105
-Hilda	f	105
-Jasmijn	f	105
-Martina	f	105
-Liza	f	104
-Ramona	f	104
-Islam	m	104
-Robbin	u	104
-Sigrid	f	104
-Áron	m	103
-Bertus	m	103
-Bauke	m	103
-Noortje	f	103
-Ivar	m	103
-Igor	m	103
-Elles	f	102
-Emrah	m	102
-Maxime	u	102
-Lynn	f	102
-Sérgio	m	102
-Kristián	m	101
-Friso	m	101
-Peggy	f	101
-Yilmaz	m	101
-Véronique	f	101
-Willem-Jan	m	101
-Eugène	m	100
-Fiona	f	100
-Joanne	f	100
-Kenan	m	100
-Saïd	m	100
-Carlijn	f	100
-Anders	m	100
-Alain	m	100
-Nóra	f	100
-Nour	u	99
-Jurriaan	m	99
-Yunus	m	99
-Erik-Jan	m	99
-Elena	f	99
-Seán	m	99
-Rudolf	m	99
-Arnout	m	99
-Ilja	u	99
-Maik	m	98
-Matthias	m	98
-Morten	m	98
-Eefje	f	98
-Emmy	f	98
-Rian	u	98
-Carel	m	98
-Ine	f	98
-Roderick	m	98
-Serhat	m	98
-Sayed	m	98
-Stephen	m	98
-Ayman	m	98
-Adrián	m	98
-Bülent	m	97
-Marinus	m	97
-Scott	m	97
-Samet	m	97
-Hessel	m	97
-Harun	m	96
-Hamza	m	96
-Dolf	m	96
-Luigi	m	96
-Marie	f	96
-Mascha	f	96
-Rowan	u	96
-Jörg	m	95
-Ella	f	95
-Tonnie	m	95
-Timothy	m	95
-Tarik	m	94
-Gerjan	m	94
-Diego	m	94
-Lesley	u	94
-Sjef	m	94
-Mónika	f	94
-Ashraf	m	94
-Connie	f	93
-Krista	f	93
-Kübra	f	93
-Wietse	m	93
-Evelyn	f	93
-Ercan	m	93
-Ankie	f	93
-Elvira	f	92
-Jop	m	92
-Noor	f	92
-Babette	f	92
-Aukje	f	92
-Abdallah	m	91
-Dana	f	91
-Karina	f	91
-Lévi	m	91
-Kiki	f	91
-Mona	f	91
-Marike	f	91
-Ebru	f	91
-Folkert	m	91
-Jeanet	f	90
-Ida	f	90
-Gideon	m	90
-Hatice	f	90
-Étienne	m	90
-Alper	m	90
-Ada	f	90
-Belinda	f	90
-Dani	u	90
-Mats	m	90
-Machiel	m	90
-Tiny	f	90
-Pablo	m	90
-Benno	m	89
-Kaan	m	89
-Pedro	m	89
-Lucy	f	89
-Tomás	m	89
-Robbie	m	88
-Salma	f	88
-Barend	m	88
-Christopher	m	88
-Gina	f	88
-Melle	m	88
-Annika	f	88
-Reinder	m	87
-Cécile	f	87
-Julien	m	87
-Ward	m	87
-Yasemin	f	87
-Elizabeth	f	87
-Axel	m	87
-Mathilde	f	87
-Mohammad	m	87
-Emir	m	86
-Juan	m	86
-Kai	m	86
-Wietske	f	86
-Tamer	m	86
-Greetje	f	86
-Corinne	f	85
-Cornelis	m	85
-Lennard	m	85
-Marlou	f	85
-Martha	f	85
-Mina	f	85
-Engin	m	85
-Francesca	f	85
-Gabrielle	f	85
-Ümit	m	85
-Volkan	m	85
-Tijn	m	85
-Thierry	m	85
-Heba	f	85
-Jessie	u	84
-Gabriel	m	84
-Kareem	m	84
-Caspar	m	84
-Mitchel	m	84
-Pien	f	84
-Herma	f	83
-Abdelrahman	m	83
-Mohamad	m	83
-Megan	f	83
-Veerle	f	83
-Ties	m	83
-Tolga	m	82
-Terry	u	82
-Tarek	m	82
-Ferdinand	m	82
-Kate	f	82
-Kenny	m	82
-Joseph	m	82
-Chiara	f	82
-Bouke	m	82
-Helga	f	82
-Giel	m	82
-Alan	m	82
-Adél	m	82
-Oliver	m	82
-Victória	f	81
-Tijs	m	81
-Yara	f	81
-Truus	f	81
-Faruk	m	81
-Emad	m	81
-Asli	f	81
-Lucien	m	81
-Marcella	f	81
-Enrico	m	80
-Fabienne	f	80
-Denis	m	80
-Jurre	m	80
-Rafael	m	80
-Rasmus	m	80
-Bernadette	f	80
-Brandon	m	80
-Cristina	f	80
-Wilfried	m	80
-Yuri	m	80
-Hannie	f	80
-Selim	m	80
-Ayhan	m	79
-Benny	m	79
-Mirella	f	79
-Mads	m	79
-Marissa	f	79
-Emine	f	79
-Nelly	f	79
-Sietske	f	79
-Jelte	m	79
-Eren	m	78
-Dorine	f	78
-Eef	u	78
-Jöran	m	78
-Jorien	f	78
-Dagmar	f	78
-Marlous	f	78
-Muhammad	m	78
-Okan	m	78
-Nicola	u	78
-Natasha	f	78
-Rodney	m	77
-Sedat	m	77
-Lies	f	77
-Josh	m	77
-Jantine	f	77
-Elsbeth	f	77
-Gemma	f	77
-Quinten	m	77
-Manuela	f	77
-Mara	f	77
-Luís	m	77
-Marwa	f	77
-Léna	f	76
-Stanley	m	76
-Sherif	m	76
-Sietse	m	76
-Sjoukje	f	76
-Harriet	f	76
-Ingmar	m	76
-Jan-Jaap	m	76
-Ludo	m	76
-Oguzhan	m	76
-Bernd	m	75
-Léonard	m	75
-Lily	f	75
-Joy	f	75
-Joëlle	f	75
-Wanda	f	75
-Francois	m	75
-Ewoud	m	75
-Stella	f	75
-Jip	u	75
-Miguel	m	75
-Mitch	m	74
-Mia	f	74
-Geke	f	74
-Donald	m	74
-Emin	m	74
-Ricky	m	74
-Inez	f	74
-Helena	f	74
-Jaimy	u	74
-Jacky	u	74
-Selcuk	m	74
-Abel	m	74
-Armand	m	74
-Anneloes	f	74
-Adnan	m	73
-Lauren	f	73
-Malou	f	73
-Mees	m	73
-Erhan	m	73
-Gamze	f	73
-Fernando	m	73
-Nino	m	73
-Roxanne	f	73
-Tycho	m	73
-Zafer	m	73
-Willie	u	73
-Jeanne	f	73
-Jannes	m	73
-Harm-Jan	m	72
-Jouke	m	72
-Jolande	f	72
-Lian	f	72
-Magda	f	72
-Manfred	m	72
-Tess	f	72
-Rana	f	72
-Salvatore	m	72
-Sören	m	71
-Cengiz	m	71
-Bert-Jan	m	71
-Derya	f	71
-Dominic	m	71
-Dries	m	71
-Aydin	m	71
-Anniek	f	71
-Paolo	m	71
-Nicolás	m	71
-Mathias	m	71
-Marie-José	f	71
-Walid	m	71
-Wilko	m	70
-Erdem	m	70
-Kyra	f	70
-Levent	m	70
-Jörgen	m	70
-Kelvin	m	70
-Collin	m	70
-Charlie	u	70
-Coby	f	70
-Gijsbert	m	70
-Gizem	f	70
-Machteld	f	70
-Nigel	m	70
-Rémi	m	69
-Cihan	m	69
-Jordan	u	69
-Yousef	m	69
-Tara	f	69
-Eelke	u	69
-Esmeralda	f	69
-Gerrit-Jan	m	69
-Froukje	f	69
-Sabina	f	69
-Gwen	f	69
-Gerco	m	68
-Kamil	m	68
-Josephine	f	68
-Ciska	f	68
-Camiel	m	68
-Ivonne	f	68
-Grietje	f	68
-Gilbert	m	68
-Sophia	f	68
-Rina	f	68
-Arianne	f	68
-Alberto	m	67
-Aniek	f	67
-Bayram	m	67
-Léontine	f	67
-Jur	m	67
-Marta	f	67
-Donna	f	67
-Erol	m	67
-Oguz	m	67
-Özlem	f	67
-Silke	f	67
-Semih	m	67
-Samir	m	67
-Yorick	m	67
-Jan-Peter	m	67
-Henrik	m	66
-Hanny	f	66
-Erdal	m	66
-Enzo	m	66
-Gerdien	f	66
-Fábio	m	66
-Fokke	m	66
-Klaas-Jan	m	66
-Adriana	f	66
-Arda	m	66
-Audrey	f	66
-Clemens	m	66
-Christien	f	66
-Bregje	f	66
-Maya	f	66
-Xavier	m	66
-Noël	u	66
-Natália	f	66
-Stefano	m	65
-Davide	m	65
-Dean	m	65
-Léa	f	65
-Kerem	m	65
-Grace	f	65
-Duncan	m	65
-Evert-Jan	m	65
-Puck	f	65
-Pía	f	65
-Taha	m	65
-Yvo	m	65
-Tjitske	f	65
-Yasser	m	65
-Yakup	m	65
-Wolter	m	64
-Waël	m	64
-Timon	m	64
-Fenna	f	64
-Joanna	f	64
-Jorge	m	64
-Jody	u	64
-Cecília	f	64
-Bekir	m	64
-Hubert	m	64
-Anil	m	64
-Ramy	m	63
-Davey	m	63
-Kamal	m	63
-Kaylee	f	63
-Kyle	m	63
-Verónica	f	63
-Dik	m	63
-Frédérique	f	63
-Siebe	m	63
-Jari	m	63
-Hussein	m	63
-Hylke	m	63
-Myriam	f	63
-Musa	m	62
-Menna	f	62
-Mari	u	62
-Matthieu	m	62
-Maike	f	62
-Floortje	f	62
-Derek	m	62
-Elwin	m	62
-Else	f	62
-Khalid	m	62
-Lammert	m	62
-Juul	u	62
-Oktay	m	62
-Thijmen	m	62
-Sami	m	62
-Aafke	f	61
-Beau	u	61
-Ko	m	61
-Márcia	f	61
-Marlène	f	61
-Pamela	f	61
-Quincy	u	61
-Reinoud	m	61
-Sofía	f	61
-Titia	f	61
-Jitske	f	61
-Joachim	m	61
-Jake	m	61
-Jan-Pieter	m	61
-Ilker	m	60
-Isabella	f	60
-Fátima	f	60
-Erick	m	60
-Leyla	f	60
-Lindsay	f	60
-Aziz	m	60
-Aline	f	60
-Carol	f	60
-Muriel	f	60
-Minke	f	60
-Maï	f	60
-Olav	m	60
-Nicoline	f	60
-Soraya	f	59
-Sheila	f	59
-Sibel	f	59
-Roald	m	59
-Cemal	m	59
-Lenie	f	59
-Leslie	u	59
-Ken	m	59
-Julius	m	59
-Hielke	m	59
-Ilonka	f	59
-Janna	f	59
-Finn	m	59
-Firat	m	59
-Francien	f	59
-Denny	m	59
-Elske	f	59
-Aletta	f	59
-Alfons	m	59
-Ángel	u	59
-Ozan	m	59
-Mette	f	59
-Merlijn	u	59
-Meindert	m	59
-Zehra	f	59
-Viktor	m	58
-Josien	f	58
-Robby	m	58
-Siem	m	58
-Corien	f	58
-Débora	f	58
-Cláudio	m	58
-Andrés	m	58
-Riet	f	58
-Reina	f	58
-Paola	f	58
-Renata	f	57
-Pieter-Jan	m	57
-Daniella	f	57
-Vedat	m	57
-Émilie	f	57
-Ellie	f	57
-Rose	f	57
-Rinske	f	57
-Ruby	f	57
-Sidney	u	57
-Alina	f	57
-Antoon	m	57
-Imke	f	57
-Hülya	f	57
-Madeleine	f	56
-Dewi	f	56
-Dineke	f	56
-Kara	f	56
-Kaj	m	56
-Renzo	m	56
-Bobby	u	56
-Batuhan	m	56
-Berber	f	56
-Willemien	f	56
-Thérèse	f	56
-Taner	m	56
-Yasmin	f	56
-Tuncay	m	56
-Hanne	f	56
-Salah	m	56
-Sonny	m	56
-Steef	m	56
-Albert-Jan	m	56
-Bibi	f	55
-Katie	f	55
-Kars	m	55
-Jolijn	f	55
-Mirte	f	55
-Marty	m	55
-Flip	m	55
-Farah	f	55
-Ersin	m	55
-Özge	f	55
-Noud	m	55
-Noa	f	55
-Valentijn	m	55
-Valentina	f	55
-Vince	m	55
-Wietze	m	55
-Yvon	f	55
-Jessy	u	54
-Harro	m	54
-Filip	m	54
-Katinka	f	54
-Lizzy	f	54
-Jort	m	54
-Alicia	f	54
-Berkay	m	54
-Camilla	f	54
-Mariet	f	54
-Melek	f	54
-Mayke	f	54
-Ufuk	m	54
-Tine	f	54
-Nikita	f	54
-Peter-Paul	m	54
-Raphaël	m	54
-Raymon	m	54
-Sándor	m	54
-Rody	m	53
-Román	m	53
-Baukje	f	53
-Clara	f	53
-Laurie	f	53
-Karl	m	53
-Josine	f	53
-Lambert	m	53
-Krijn	m	53
-Loïs	f	53
-Gonnie	f	53
-Gül	f	53
-Elías	m	53
-Dogan	m	53
-Arco	m	53
-Art	m	53
-Alida	f	53
-Nihat	m	53
-Pascale	f	53
-Raimond	m	53
-Maxim	m	53
-Marien	m	53
-Maja	f	53
-Meryem	f	53
-Wieger	m	53
-Úrsula	f	52
-Veysel	m	52
-Tamar	f	52
-Francisca	f	52
-Franklin	m	52
-Dilek	f	52
-Ekrem	m	52
-Elma	f	52
-Donny	m	52
-Liz	f	52
-Lodewijk	m	52
-Sally	f	52
-Ruurd	m	52
-Ciro	m	52
-Bettina	f	52
-Carolina	f	52
-Lucie	f	52
-Arif	m	52
-Aly	f	52
-Piotr	m	52
-Reem	f	52
-Riccardo	m	52
-Nicolai	m	51
-Özcan	m	51
-Pascalle	f	51
-Bente	f	51
-Bart-Jan	m	51
-Josje	f	51
-Leny	f	51
-Yavuz	m	51
-Ewald	m	51
-Elmar	m	51
-Elmer	m	51
-Fokko	m	51
-Sietze	m	51
-Jan-Paul	m	51
-Inés	f	51
-Markus	m	51
-Myra	f	50
-Dennie	m	50
-Emy	f	50
-Eduardo	m	50
-Lobke	f	50
-Lenny	u	50
-Buse	f	50
-Berk	m	50
-Teus	m	50
-Jana	f	50
-Hendrik-Jan	m	50
-Seda	f	50
-Steffen	m	50
-Sten	m	50
-Sterre	f	50
-Alma	f	50
-Arzu	f	50
-Anjo	u	50
-Antje	f	49
-Babs	f	49
-Armando	m	49
-Beyza	f	49
-Catherine	f	49
-Canan	f	49
-Burcu	f	49
-Carine	f	49
-Baran	m	49
-Lenneke	f	49
-Joram	m	49
-Ebrahim	m	49
-Noëlle	f	49
-Nur	u	49
-Pinar	f	49
-Shady	m	49
-Selin	f	49
-Grégory	m	49
-Irem	f	48
-Jackie	u	48
-Jeannet	f	48
-Hellen	f	48
-Efe	m	48
-Geoffrey	m	48
-Lise	f	48
-Linde	f	48
-Arian	m	48
-Alejandro	m	48
-An	f	48
-Bertine	f	48
-Betül	f	48
-Cathy	f	48
-Carsten	m	48
-Brent	m	48
-Caner	m	48
-Colinda	f	48
-Mika	m	48
-Mattijs	m	48
-Teresa	f	48
-Tanya	f	48
-Philippe	m	48
-Roderik	m	48
-Suat	m	47
-Rijk	m	47
-Cheryl	f	47
-Catharina	f	47
-Brigit	f	47
-Leander	m	47
-Karsten	m	47
-Kurt	m	47
-Liam	m	47
-Hilal	f	47
-Irina	f	47
-Janne	f	47
-Gary	m	47
-Gabriela	f	47
-Diny	f	47
-Ernst-Jan	m	47
-Eugénie	f	47
-Aimée	f	47
-Alp	m	47
-Nicolien	f	47
-Adil	m	47
-Neil	m	47
-Odette	f	47
-Margaret	f	47
-Mariel	f	47
-Matteo	m	47
-Tugba	f	47
-Tugce	f	47
-Vicky	f	47
-Zeki	m	47
-Viola	f	46
-Tinus	m	46
-Yoeri	m	46
-Yagmur	f	46
-Egon	m	46
-Eda	f	46
-Leanne	f	46
-Kristina	f	46
-Koert	m	46
-Lola	f	46
-Lindy	f	46
-Shannon	f	46
-Shawn	m	46
-Samira	f	46
-Colette	f	46
-Corry	f	46
-Hande	f	46
-Jef	m	46
-Margret	f	46
-Manouk	f	46
-Manar	f	46
-Meta	f	46
-Merle	f	46
-Al	m	46
-Angélica	f	46
-Ayse	f	46
-Allan	m	46
-Olivia	f	46
-Pasquale	u	46
-Per	m	45
-Pam	f	45
-Ridvan	m	45
-Reinout	m	45
-Chloé	f	45
-Camille	u	45
-Charissa	f	45
-Lindsey	f	45
-Len	m	45
-Lee	u	45
-Sybren	m	45
-Toby	m	45
-Tiemen	m	45
-Felicia	f	45
-Fanny	f	45
-Dilara	f	45
-Duco	m	45
-Saad	m	45
-Sercan	m	45
-Serena	f	45
-Arnaud	m	45
-Aldo	m	45
-Giulia	f	45
-Irfan	m	45
-Jade	f	45
-Marsha	f	45
-Durk	m	44
-Ertugrul	m	44
-Judy	f	44
-Leonardo	m	44
-Lana	f	44
-Réda	m	44
-Rania	f	44
-Rahma	f	44
-Niki	u	44
-Phil	m	44
-Calvin	m	44
-Davut	m	44
-Tyler	m	44
-Wieke	f	44
-Wies	f	44
-Javier	m	44
-Jerome	m	44
-Rinke	u	44
-Roberta	f	44
-Sammy	u	44
-Sipke	m	44
-Sevgi	f	44
-Ann	f	44
-Anoek	f	44
-Cenk	m	43
-Caro	f	43
-Danièle	m	43
-Craig	m	43
-Cansu	f	43
-Lineke	f	43
-Jurrien	m	43
-Kees-Jan	m	43
-Maryam	f	43
-Muharrem	m	43
-Lourens	m	43
-Lucky	f	43
-Duygu	f	43
-Norman	m	43
-Pelin	f	43
-Rodrigo	m	43
-Roelf	m	43
-Tino	m	43
-Toni	m	43
-Greg	m	43
-Jean-Pierre	m	42
-Ilhan	u	42
-Hager	f	42
-Elsa	f	42
-Dionne	f	42
-Gabriella	f	42
-Federico	m	42
-Liselotte	f	42
-Lida	f	42
-Jonne	u	42
-Jorik	m	42
-Ayla	f	42
-Aléssia	f	42
-Cédric	m	42
-Celal	m	42
-Marjanne	f	42
-Massimo	m	42
-Yahya	m	42
-Yalcin	m	42
-Turgay	m	42
-Rienk	m	42
-Rixt	f	42
-Sasha	u	42
-Simona	f	42
-Rudie	m	41
-Sonia	f	41
-Baris	m	41
-Berna	f	41
-Bernhard	m	41
-Bill	m	41
-Damien	m	41
-Cyril	m	41
-Delano	m	41
-Kerim	m	41
-Katrien	f	41
-Lina	f	41
-Ilyas	m	41
-Hedwig	f	41
-Francine	f	41
-Didier	m	41
-Diederick	m	41
-Esma	f	41
-Anique	f	41
-Bahar	f	41
-Aylin	f	41
-Özkan	m	41
-Manja	f	41
-Tahir	m	41
-Yves	m	41
-Yigit	m	41
-Elbert	m	40
-Eray	m	40
-Eyüp	m	40
-Laurent	m	40
-Joao	m	40
-Roan	m	40
-Bella	f	40
-Cemil	m	40
-Burhan	m	40
-Heather	f	40
-Jaime	u	40
-Ihsan	m	40
-Luna	f	40
-Marie-Louise	f	40
-Moustafa	m	40
-Mücahit	m	40
-Nader	m	40
-Mira	f	40
-Melike	f	40
-Afke	f	40
-Ammar	m	40
-Nicholas	m	40
-Owen	m	40
-Rabia	f	40
+# nl first names from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=1, cap=10000000).
+Peter	m	5977	petər
+Jan	m	5623	jɑn
+Jeroen	m	4285	jərun
+Hans	m	4254	hɑns
+Rob	m	3490	rɔp
+Mark	m	3389	mɑrk
+Paul	m	3208	pɑul
+Henk	m	3006	hɛŋk
+Frank	m	2983	frɑŋk
+Marcel	m	2920	mɑrsɛl
+Erik	m	2907	ərɪk
+Martijn	m	2802	mɑrtɛin
+Bart	m	2595	bɑrt
+René	m	2585	rəne
+John	m	2508	jɔhn
+Bas	m	2505	bɑs
+Ahmed	m	2462	ahmɛt
+Dennis	m	2451	dɛnɪs
+Patrick	m	2410	patrisk
+Robert	m	2372	robert
+Marco	m	2326	mɑrko
+Richard	m	2276	rɪxard
+Johan	m	2273	jɔhɑn
+Sander	m	2245	sɑndər
+Martín	m	2242	mɑrətn
+Wim	m	1996	wɪm
+Mohamed	m	1994	mohamed
+Ronald	m	1978	ronalt
+Tom	m	1972	tɔm
+Tim	m	1922	tɪm
+Maarten	m	1892	martən
+Marc	m	1866	mar
+Bert	m	1814	bɛrt
+Niels	m	1741	nils
+Monique	f	1725	monik
+Joost	m	1718	jost
+Pieter	m	1693	pitər
+Eric	m	1677	erik
+Willem	m	1653	ʋɪləm
+Edwin	m	1642	ədwɪn
+Michael	m	1639	mixaəl
+Michel	m	1625	mixəl
+Wouter	m	1619	wɑutər
+Linda	f	1583	lɪnda
+Jos	m	1561	jɔs
+Esther	f	1552	ɛster
+André	m	1530	ɑntre
+Arjan	m	1512	arjan
+Rick	m	1509	rɪk
+Thomas	m	1495	tomɑs
+Kees	m	1480	kes
+Robin	u	1473	robin
+Karin	f	1447	kɑrin
+Sandra	f	1437	sɑndra
+Gérard	m	1425	xerart
+Chris	m	1422	xrɪs
+Stefan	m	1402	stəfɑn
+Ruud	m	1365	ryt
+Anne	f	1359	ɑnə
+Ron	m	1329	rɔn
+Frans	m	1326	frɑns
+Kim	f	1304	kɪm
+Daniel	m	1270	danil
+Nick	m	1268	nɪk
+Michiel	m	1263	mixil
+David	m	1263	davɪt
+Marieke	f	1252	mɑrikə
+Jaap	m	1250	jap
+Erwin	m	1240	ərwɪn
+Petra	f	1230	petra
+Alex	m	1227	alɛks
+Kevin	m	1226	kɛvɪn
+Laura	f	1213	lɑura
+Roy	m	1202	rɔj
+Jasper	m	1181	dʒɑspɛr
+Vincent	m	1180	vɪnsɛnt
+Ton	m	1167	tɔn
+Bram	m	1153	brɑm
+Mike	m	1144	majk
+Yvonne	f	1143	ivɔnə
+Remco	m	1137	rəmko
+Björn	m	1128	bdʒɔrn
+Théo	m	1117	theo
+Ingrid	f	1097	ɪŋræt
+Ellen	f	1095	ɛlən
+Ben	m	1091	bɛn
+Daan	m	1078	dan
+Danny	m	1034	dɑni
+Sanne	f	1018	sɑnə
+Alí	m	1013	al
+Koen	m	1007	kun
+Thijs	m	1000	tɛis
+Harry	m	994	hɑri
+León	m	992	leɪ̯n
+Saskia	f	968	sɑskia
+Roel	m	952	rul
+Jolanda	f	949	jɔlɑnda
+Nicole	f	928	nikolə
+Judith	f	916	jydɪth
+Wendy	f	914	wɛndi
+Rubén	m	892	ryben
+Dirk	m	885	dɪrᵊk
+Danielle	f	882	danijɛlə
+Mahmoud	m	878	mahmɑut
+Dick	m	875	dɪk
+Anita	f	863	anita
+Herman	m	860	ɦɛrmɑn
+Inge	f	843	ɪŋə
+Mehmet	m	838	mɛmɛt
+Maurice	m	818	mʌʊ̯risə
+Albert	m	817	ɑlbərt
+Jelle	m	807	jɛlə
+Lars	m	806	lɑrs
+Nico	m	805	niko
+Fred	m	800	frɛt
+Chantal	f	795	xantɑl
+Lisa	f	790	lɪsa
+Mirjam	f	786	mijrjam
+Astrid	f	780	ɑstrid
+Léo	m	778	leo
+Bianca	f	775	bijanka
+Joris	m	775	jɔrɪs
+Bob	m	771	bɔp
+Gerrit	m	769	ɣərrɪt
+Mustafa	m	766	mʏstafa
+Marjolein	f	762	mɑrʒulɛin
+Simone	f	758	zimonə
+Rik	m	756	rɪk
+Gert	m	752	ɣərt
+Iris	f	743	irɪs
+Eva	f	736	eva
+Geert	m	736	ɣert
+Max	m	730	mɑks
+Piet	m	728	pit
+Maaike	f	727	majkə
+Klaas	m	726	klas
+Suzanne	f	724	syzɑnə
+Simón	m	722	sɪmn
+Steven	m	718	steːvən
+Miranda	f	716	mirɑnda
+Patrícia	f	712	pɑtrsija
+Marianne	f	709	marijannə
+Jeffrey	m	704	dʒɛfreji
+Joyce	f	703	jɔise
+Pascal	m	695	pɑskɑl
+Raymond	m	694	remont
+Sjoerd	m	689	ʃurt
+Arjen	m	687	ɑrjən
+Pim	m	686	pim
+Ahmet	m	685	ahmɛt
+Anna	f	677	ɑna
+Cees	m	672	kes
+Diana	f	672	dijana
+Jacqueline	f	670	rtəxfrklɑjn
+Gijs	m	669	ɣɛis
+Matthijs	m	651	matthɛis
+Alexander	m	650	alɛksɑndər
+Anja	f	641	ɑnja
+Cláudia	f	631	klydija
+Dave	m	612	dɑvə
+Arno	m	598	arno
+Ilse	f	598	ilsə
+Jéssica	f	593	dʒessɪkɑ
+Jack	m	592	dʒɛk
+Menno	m	591	mɛno
+Ed	m	590	ed
+Manon	f	590	mɑnɔn
+Stephan	m	589	stɛphɑn
+Cor	m	588	kɔr
+Murat	m	583	mʏrat
+Anneke	f	567	ɑnəkə
+Anouk	f	564	ɑnɑuk
+Sven	m	563	sfən
+Femke	f	559	femkə
+José	u	556	dʒose
+Ad	m	552	ɑt
+Ibrahim	m	552	jbrɑhɑjm
+Marleen	f	552	mɑrlen
+Mariska	f	551	marɪskɑ
+Niek	m	547	nik
+Wilma	f	545	wɪlma
+María	f	542	mɑrəa
+Caroline	f	542	karɔlɑjn
+Michelle	f	541	miʃɛlə
+Annemarie	f	539	ɑnəmɑri
+Martine	f	536	mɑrtinə
+Arie	m	536	ari
+Irène	f	533	irjɛnə
+Marijke	f	533	marɛikə
+Marloes	f	527	mɑrlus
+Bárbara	f	526	beɛrbeara
+Guido	m	520	xœyto
+Nienke	f	517	nijɛŋkə
+Joop	m	516	jop
+Tessa	f	512	tɛsa
+Joke	f	511	dʒok
+Anton	m	509	ɑntɔn
+Christian	m	507	xrɪstijɑn
+Eline	f	506	əlɪnə
+Janneke	f	505	jɑnəkə
+Angélique	f	504	anɣelɑjk
+Carla	f	501	kɑrlɑ
+Luuk	m	496	lyk
+Nathalie	f	495	nɑthɑli
+Jessé	m	492	dʒɛse
+Jan-Willem	m	491	jɑɱwɪləm
+Hanneke	f	487	hɑnəkə
+Ivo	m	486	ɪvɔ
+Harm	m	484	hɑrm
+Sylvia	f	483	sɪlvija
+Tamara	f	479	tamara
+Gerben	m	478	ɣərbən
+Wesley	m	475	wəsli
+Charlotte	f	475	xarlɔtə
+Marion	f	474	marijɔn
+Angéla	f	474	anɣela­
+Lotte	f	468	lɔtə
+Luc	m	465	lyk
+Léonie	f	463	leoni
+Els	f	463	ɛls
+Jordy	m	461	dʒɔrdi
+Rianne	f	458	rijɑnə
+Laurens	m	457	lɑurəns
+Ineke	f	454	inəkə
+Mieke	f	453	mikə
+Liesbeth	f	452	lisbɛt
+Jacob	m	447	rtəxfrɔp
+Robbert	m	446	rɔbərt
+Rogier	m	445	roɡir
+Marije	f	444	marɛijə
+Roland	m	444	rolɑnt
+Frits	m	441	frits
+Sabine	f	440	sabinə
+Rutger	m	438	rytɣər
+Sebastiaan	m	438	sənbɑstijan
+Coen	m	432	koən
+Ria	f	432	rija
+Arthur	m	429	ɑrthyr
+Sam	u	428	sɑm
+Marjan	f	426	mɑrjan
+Marielle	f	426	marijɛlə
+Andrea	f	424	ɑntrija
+Ramón	m	424	ramn
+Loes	f	420	lus
+Brian	m	420	brijɑn
+Stijn	m	419	stɛin
+Han	m	419	hɑn
+Hugo	m	418	huwɣo
+Sára	f	418	sra
+Arnold	m	416	ɑrᵊnolt
+Cindy	f	416	sindi
+William	m	416	wɪliʔɑm
+Sophie	f	416	sɔphi
+Mostafa	m	414	mɔstafa
+Sarah	f	412	sɑrah
+Marián	f	411	mɑrijn
+Jürgen	m	408	dʒwʏrɣən
+Joey	m	407	jui
+Sonja	f	407	sɔŋa
+Tineke	f	406	tinəkə
+Gert-Jan	m	405	ɣərtjɑn
+Lisette	f	405	lɑjsətə
+Daphné	f	402	dɑfne
+Stéphanie	f	397	sephɑni
+Floris	m	396	floris
+Joep	m	395	jup
+Denise	f	393	dənɪsə
+Marja	f	391	mɑrja
+Vera	f	391	vəra
+Marlies	f	390	mɑrlis
+Mário	m	388	mrijo
+Mélanie	f	386	melɑni
+Justin	m	385	jʏstin
+Karen	f	384	kaːrən
+Walter	m	380	wɑltər
+Henri	m	380	hɛnrɪ
+Marijn	u	380	marɛin
+Ralph	m	380	rɑlph
+Wilco	m	377	wɪlko
+Evelien	f	375	evəlin
+Roos	f	374	roːs
+Nancy	f	374	nansi
+Mandy	f	373	mɑndi
+Freek	m	370	frek
+Annelies	f	368	ɑnəlis
+Kirsten	f	366	kirstən
+Lucas	m	365	lykɑs
+Annemieke	f	364	ɑnemikə
+Melissa	f	363	məlɪsa
+Víctor	m	361	vktɔr
+Heleen	f	358	hɛlen
+Emma	f	357	ɛma
+Renate	f	356	renatə
+Barry	m	354	bɑri
+Evert	m	354	evərt
+Jochem	m	352	dʒoxem
+Casper	m	352	kaspər
+Kelly	f	351	kəli
+Susan	f	351	zʏsɑn
+Jacco	m	350	dʒɛkɔ
+Sharon	f	349	shɑrɔn
+Hakan	m	348	hakan
+Paula	f	348	pɑula
+Omar	m	347	omɑːr
+Roger	m	345	rɔʒər
+Maartje	f	343	marcə
+Merel	f	343	mɪːrɔɫ
+Fatih	m	343	fatih
+Henry	m	342	hɛnrɑj
+Nina	f	339	nina
+Júlia	f	339	dʒlija
+Annemiek	f	338	ɑnemik
+Hasan	m	338	hɑsan
+Ricardo	m	337	rijkɑrdɔ
+Rolf	m	336	rɔlᵊf
+Brenda	f	335	brɛnda
+Ilona	f	332	ɑjləna
+Christiaan	m	332	xrɪstijan
+Floor	f	331	flɔːr
+Tanja	f	329	tɑnja
+Gerda	f	329	ɣərdɑ
+Job	m	328	jɔb
+Jennifer	f	328	dʒɛnɪfər
+Guus	m	327	xys
+Harold	m	325	hɑrolt
+Renée	f	324	rəneə
+Miriam	f	324	mirijam
+Mohammed	m	324	mohɑmɛt
+Natasja	f	323	natɑʃa
+Maikel	m	323	mɑjkəl
+Teun	m	322	tøn
+Jim	m	317	jim
+Hüseyin	m	317	hwʏseijɪn
+Henny	u	317	hɛni
+Annette	f	316	ɑnətə
+Bastiaan	m	315	bɑstijan
+Stan	m	314	stɑn
+Stef	m	310	stɛf
+Lex	m	310	lɛks
+Anke	f	308	ɑŋkə
+Emre	m	306	ɛmrə
+Lieke	f	305	likə
+Roelof	m	305	rulɔf
+Susanne	f	304	sʏsɑnə
+Óscar	m	304	skɑr
+Rens	m	304	rəns
+Lisanne	f	302	lɪsɑnə
+Philip	m	301	filip
+Naomi	f	299	naomɪ
+Ferry	m	299	fəri
+Louis	m	297	loœys
+Eddy	m	294	əddi
+Koos	m	293	kos
+Timo	m	292	tɑjmo
+Emiel	m	292	əmil
+Ömer	m	291	ømər
+Pauline	f	291	pɑulɑjn
+Eveline	f	291	əvɛlɑjn
+Ger	m	290	ɣɛr
+Annet	f	289	ɑnɛt
+Fleur	f	288	flør
+George	m	287	ɣəɔrɣə
+Carlo	m	286	kɑrlo
+Janine	f	286	əxjaninə
+Berry	m	285	bəri
+Edward	m	285	ɛtwɑrd
+Huub	m	284	hyp
+Karel	m	284	kɑrəl
+Elise	f	281	əlɪsə
+Margriet	f	280	mɑrɣrit
+Twan	m	279	twɑn
+Désirée	f	279	dəʔsɪre
+Jenny	f	279	dʒɛni
+Irma	f	278	irmɑ
+Amr	m	278	amr
+Gertjan	m	276	ɣərtjɑn
+Hendrik	m	276	hɛndrɪk
+Willy	u	275	wɪli
+Yvette	f	275	ivətə
+Julián	m	274	jylɛin
+Hennie	u	271	hɛnijə
+Ismaïl	m	271	ɪsmail
+Olaf	m	270	olaf
+Yusuf	m	270	jusywf
+Mathijs	m	269	mathɛis
+Eelco	m	267	elkɔ
+Jonathan	m	267	jonatɑn
+Abdullah	m	263	ɑbdulɑ
+Dylan	m	263	dilɑn
+Elly	f	262	ɛli
+Melvin	m	261	mɛlvɪn
+Margreet	f	258	mɑrᵊxret
+Sjaak	m	258	ʃak
+Reinier	m	257	rɛinir
+Jesper	m	257	jəspər
+Corné	m	256	kɔrne
+Maurits	m	253	mʌʊ̯rits
+Ráchel	f	253	rxəl
+Harrie	m	252	hɑri
+Jordi	m	251	jɔrdɪ
+Benjamín	m	250	bejnjamn
+Mart	m	247	mɑrt
+Arnoud	m	245	ɑrᵊnɑut
+Thea	f	244	theja
+James	m	244	əxjamɛs
+Onno	m	243	ɔno
+Amber	f	243	ɑmber
+Jerry	m	243	dʒɛri
+Jelmer	m	243	jəlmər
+Carmen	f	242	kɑrmən
+Johnny	m	241	dʒɔhni
+Cynthia	f	241	sintsija
+Hein	m	240	hɛin
+Agnès	f	240	ɑɲjɛs
+Marit	f	239	marɪt
+Lianne	f	238	lijɑnə
+Carolien	f	237	kɑrolin
+Esmée	f	236	eɛsɛme
+Khaled	m	236	khɑled
+Jacques	m	236	rtəxfrks
+Andy	m	236	andi
+Aad	m	236	at
+Samantha	f	233	samɑntha
+Sílvia	f	233	slvija
+Thom	m	232	tom
+Andrew	m	230	ɑntrəw
+Charles	m	229	ʃɑrləs
+Ernst	m	229	ɛrᵊnst
+Marina	f	228	marina
+Louise	f	227	luwisə
+Joël	m	227	joʔel
+Maud	f	226	mʌʊ̯t
+Alice	f	226	alɪs
+Brigitte	f	225	brixɪtə
+Ina	f	225	ina
+Renske	f	224	rənskə
+Wilfred	m	224	wɪlfred
+Hilde	f	223	hildə
+Alfred	m	222	ɑlfred
+Adriaan	m	222	adrijan
+Sjors	m	221	ʃɔrs
+Jeannette	f	221	dʒinətə
+Natascha	f	221	natasxa
+Toon	m	220	ton
+Johannes	m	219	johɑnəs
+Fabián	m	219	fɑbɑjn
+António	m	219	antnijo
+Marjon	f	217	mɑrʒun
+Burak	m	216	bʏrɑk
+Christine	f	215	xrɪstinə
+Luca	u	214	lʏka
+Fatma	f	213	fɑtmɑ
+Dominique	u	213	dominik
+Serkan	m	213	sɛrkɑn
+Remko	m	212	rɛmkow
+Corine	f	211	kɔrinə
+Hester	f	210	hɛstər
+Ans	f	210	ɑns
+Wout	m	210	wɑut
+Aya	f	209	aja
+Rudy	m	208	ruwdi
+Henriette	f	207	hɛnritə
+Margot	f	207	mɑrɣo
+Mert	m	206	mʏːrt
+Rebecca	f	206	rəbɛkka
+Christel	f	205	xrɪstəl
+Gea	f	205	ɣəʔa
+Douwe	m	205	dɔuwə
+Nynke	f	205	najŋkə
+Aart	m	204	art
+Debbie	f	204	dɛbi
+Mónica	f	204	mnika
+Ana	f	203	ana
+Tobías	m	203	tjobaz
+Christa	f	201	xrɪsta
+Edith	f	201	ɛdɪth
+Amanda	f	201	amɑnda
+Nicky	u	200	nɪki
+Claire	f	200	klɛːrə
+Heidi	f	200	hɛidij
+Rita	f	200	ritɑ
+Marten	m	199	mɑrtən
+Dion	m	199	dijɔn
+Deniz	u	199	dənits
+Pepijn	m	199	pɛpɛin
+Bernard	m	198	bɛrnɑrt
+Tony	m	198	tɔni
+Jorrit	m	197	jɔrrɪt
+Jarno	m	197	əxjarno
+Adam	m	197	adɑm
+Youri	m	197	juri
+Ralf	m	196	rɑlᵊf
+Nikki	f	196	nɪki
+Osman	m	195	osmɑn
+Kitty	f	195	kittɑj
+Erna	f	195	ɛrna
+Dorien	f	195	dorin
+Ryan	m	195	rɑjɑn
+Alexandra	f	195	alɛksɑntrɑ
+Émile	m	193	emilə
+Wessel	m	193	wɛsəl
+Gökhan	m	192	xwokhɑn
+Hannah	f	192	hɑna
+Don	m	192	dɔn
+Marnix	m	192	mɑrnɪks
+Ahmad	m	190	ahmɑt
+Janny	f	189	jɑni
+Merve	f	188	mʏːrᵊv
+Carola	f	188	kɑrola
+Romy	f	188	romi
+Alaa	f	187	ɑla
+Lennart	m	187	lənnɑrt
+Janet	f	187	ʒanɛt
+Jaco	m	186	jakɔ
+Conny	f	186	kɔni
+Pierre	m	186	pijɛːr
+Rien	m	186	riən
+Amy	f	185	amij
+Lydia	f	185	lidija
+Érica	f	184	erika
+Britt	f	183	brɪt
+Sem	m	183	səm
+Lilian	f	182	lɑjlijɑn
+Jens	m	182	jəns
+Anne-Marie	f	182	ɑnəʔmɑri
+Andreas	m	182	ɑntrijas
+Cas	m	181	kɑs
+Marga	f	181	mɑrɣa
+Egbert	m	180	eɣbərt
+Andries	m	180	ɑndris
+Wilbert	m	178	wɪlbɛr
+Jörn	m	178	dʒɔrn
+Suzan	f	178	syzɑn
+Bo	u	178	bo
+Glenn	m	178	xlənn
+Jimmy	m	178	dʒɪmi
+Nadine	f	178	nadinə
+Rémy	m	177	remij
+Hassan	m	177	hɑsɑn
+Muhammed	m	177	mʏhɑmɛt
+Mary	f	176	mɑrɑj
+Werner	m	176	wɛrᵊnər
+Stefanie	f	176	stefani
+Bryan	m	175	brijɑn
+Marvin	m	175	mɑrvɪn
+Jo	u	175	jo
+Helen	f	175	ɦelən
+Jason	m	174	jasɔn
+Joeri	m	174	jurɪ
+Kadir	m	174	kadijr
+Déborah	f	174	dəʔbɔrah
+Mariette	f	174	mɑritə
+Tjeerd	m	174	cert
+Eduard	m	173	ədywart
+Hetty	f	172	hettɑj
+Auke	m	172	ɑukə
+Debby	f	171	dɛbi
+Kasper	m	171	kɑspər
+Diederik	m	171	didərɪk
+Francesco	m	170	frɑnsəsko
+Harmen	m	170	hɑrmən
+Sebastián	m	170	sebeʔastɑjn
+Anthony	m	170	ɑntonaj
+Steve	m	169	stevə
+Nathan	m	167	nɑthɑn
+Ramazan	m	167	ramazɑn
+Myrthe	f	167	mijrtej
+Milán	m	167	mɑjln
+Ronnie	m	166	rɔnni
+Ruth	f	166	rʏt
+Arend	m	166	arənt
+Rein	m	165	rɛin
+Joshua	m	165	jɔshuwa
+Lonneke	f	165	lɔnəkə
+Ugur	m	165	ywxyr
+Jannie	f	165	jɑnijə
+Milou	f	164	milɑu
+Gerwin	m	164	ɣərwɪn
+Yasin	m	164	jasɪn
+Mireille	f	163	mijrɛilə
+Olga	f	163	ɔlxa
+Nils	m	163	nils
+Ingeborg	f	162	ɪŋɣəbɔrx
+Dirk-Jan	m	162	dɪrᵊkjan
+Sabrina	f	161	saberina
+Giovanni	m	161	xijovɑni
+Corrie	f	160	kɔri
+Berend	m	159	berənt
+Katja	f	159	kɑca
+Willemijn	f	159	wɪləmɛin
+Nada	f	158	nada
+Roberto	m	158	roberto
+Alwin	m	158	ɑlwɪn
+Boudewijn	m	157	bʌʊdəʋɛɪn
+Marius	m	157	marijʏs
+Priscilla	f	157	prisila
+Otto	m	157	ɔto
+Jet	f	156	jɛt
+Jurjen	m	156	jʏrᵊjən
+Jules	m	156	jyləs
+Daisy	f	156	dezi
+Olivier	m	156	olivir
+Freddy	m	154	frəddi
+Shirley	f	154	ʃirləi
+Maureen	f	154	moren
+Corina	f	153	kɔrina
+Vanessa	f	153	vanəsa
+Rosa	f	153	rosa
+Jeremy	m	153	jerəmi
+Karlijn	f	152	kɑrlɛin
+Paulien	f	152	pɑuliən
+Henk-Jan	m	152	hənkjan
+Karim	m	151	karim
+Frederik	m	151	fredərɪk
+Onur	m	151	ɔnyr
+Tonny	u	151	tɔni
+Trudy	f	151	trywdi
+Willeke	f	150	wɪləkə
+Edgar	m	149	ədɣɑr
+Gaby	f	149	xabei
+Adem	m	149	adəm
+Adrie	u	149	ɑdri
+Wiebe	m	148	wibə
+Zeynep	f	148	zəinəp
+Emily	f	148	əmɪlɑj
+Adri	m	148	adri
+Ted	m	147	tət
+Jeff	m	147	dʒɛf
+Hossam	m	147	hɔsam
+Moniek	f	147	monik
+Raoul	m	146	raɑul
+Halil	m	146	hɑlɑjl
+Can	m	145	kɑn
+Giuseppe	m	145	xijʏsɛpə
+Harald	m	144	harɑlt
+Elif	f	144	əlɪf
+Demi	f	144	demi
+Metin	m	144	metɪn
+Nadia	f	144	nadija
+Yannick	m	144	jɑnɪk
+Remon	m	144	rəmɔn
+Lía	f	143	la
+Gerrie	f	143	ɣəri
+Toine	m	142	tojnɛ
+Esraa	f	142	əsra
+Lara	f	142	lara
+Merijn	m	142	mərɛin
+Kemal	m	141	kəmal
+Jonás	m	141	dʒɔns
+Antoine	m	141	ɑntʋɑnə
+Ian	m	141	ijɑn
+Marjolijn	f	140	mɑrʒulɛin
+Jamie	u	140	jami
+Jeanette	f	140	dʒinɛtə
+Marjo	f	139	mɑrʒu
+Félix	m	139	felɑjks
+Jakob	m	138	jakɔb
+Boris	m	138	borɪs
+Carlos	m	138	kɑrlos
+Colin	m	138	kɔlin
+Christina	f	138	xrɪstina
+Xander	m	138	ksɑndər
+Serdar	m	137	sərdɑr
+Loek	m	137	luk
+Fons	m	137	fɔns
+Annie	f	137	ɑnni
+Nelleke	f	137	nɛləkə
+Hidde	m	136	hɪdə
+Nicolette	f	135	nikolɛtə
+Tommy	m	135	tɔmi
+Esra	f	135	əsrɑ
+Roeland	m	135	rulɑnt
+Angelo	m	135	ɑŋɣelo
+Martien	m	135	mɑrtin
+Manuel	m	135	manyəl
+Erkan	m	134	ərkan
+Kenneth	m	134	kənɛth
+Rico	m	134	riko
+Céline	f	134	selinə
+Iván	m	134	ɪvn
+Rinus	m	134	rɪnʏs
+Arne	m	133	ɑrnə
+Bennie	m	133	bənni
+Carin	f	133	karɪn
+Julie	f	133	jyli
+Francis	u	133	frɑnsijs
+Dimitri	m	133	dimitri
+Özgür	m	133	wozxwʏr
+Perry	m	133	pɛri
+Enes	m	132	ənəs
+Ashley	f	132	ɑshli
+Randy	m	132	rɛndi
+Serge	m	132	sɛrʒə
+Rudi	m	131	rʏdɪ
+Robert-Jan	m	131	robertjan
+Betty	f	131	bəttɑj
+Hélène	f	131	heljɛnə
+Elke	f	131	ɛlkə
+Taco	m	130	takɔ
+Erika	f	130	ərɪka
+Leendert	m	130	lendɛrt
+Isa	f	130	ɪsɑ
+Margo	f	130	mɑrɣo
+Jolien	f	129	joliən
+Mischa	u	128	mɪsxa
+Furkan	m	128	fʏrkan
+Gérald	m	128	xeralt
+Joan	u	128	jɔɑn
+Norbert	m	128	nɔrbɛrt
+Huib	m	128	hœyb
+Chiel	m	127	xil
+Kimberley	f	127	kɑjmbɛrli
+Leen	m	127	len
+Mitchell	m	127	mitʃɛl
+Madelon	f	127	madəlɔn
+Matt	m	127	mɑt
+Ray	m	127	re
+Sinan	m	127	sinan
+Tristan	m	127	tristan
+Isabelle	f	126	ɪsabeələ
+Helma	f	126	hɛlma
+Tina	f	126	tina
+Ronny	m	125	rɔni
+Sacha	u	125	satʃa
+Iwan	m	125	ɪwɑn
+Ester	f	125	ɛster
+Mo	u	125	mo
+Vivian	f	125	vievieɑn
+Youssef	m	124	jusəf
+Yolanda	f	124	ijolɑnda
+Valérie	f	124	vɑleri
+Eman	f	124	əmɑn
+Jean	m	124	dʒin
+Mariam	f	124	marijam
+Natalie	f	124	natali
+Carina	f	123	kɑrina
+Carl	m	123	kɑrl
+Larissa	f	123	larɪsa
+Diane	f	123	dijanə
+Matthew	m	123	mɑtejw
+Mick	m	122	mɪk
+Kris	u	122	krɪs
+Noah	u	122	ɛnowa
+Cora	f	122	korɑ
+Jane	f	122	janə
+Ewout	m	121	əwɑut
+Sandy	f	121	sandi
+Jean-Paul	m	121	jəɑnpɑul
+Jeanine	f	121	dʒininə
+Bea	f	120	bəʔa
+Luke	m	120	lʏkə
+Osama	m	120	osama
+Hanna	f	119	hɑna
+Derk	m	119	dərk
+Nanda	f	119	nɑnda
+Herbert	m	118	hɛrbərt
+Jay	m	118	dʒe
+Michèle	u	118	mɑjk­ɛlə
+Johanna	f	117	jɔhɑna
+Kimberly	f	117	kɪmbɛrlɑj
+Kay	m	117	ke
+Vincenzo	m	117	vijnsɛnzo
+Ferhat	m	117	fərhɑt
+Salih	m	117	salih
+Mesut	m	117	mɛsywt
+Rosanne	f	116	rosɑnə
+Süleyman	m	116	swʏləimən
+Aaron	m	115	arɔn
+Boy	m	115	bɔj
+Regina	f	115	reɣina
+Sascha	u	115	sɑʃa
+Samuel	m	115	samywɛl
+Elisa	f	114	əlɪsa
+Dina	f	114	dina
+Florian	m	114	floriɑn
+Asmaa	f	114	ɑsma
+Bilal	m	114	bɪla­l
+Lucía	f	114	lywseʔa
+Tijmen	m	114	tɛimən
+Selma	f	113	səlma
+Joe	m	113	ju
+Gino	m	113	dʒəno
+Dianne	f	113	dijənnə
+Marko	m	113	mɑrkɔ
+Wijnand	m	112	wɛinɑnt
+Elisabeth	f	112	əlɪsabeth
+Edo	m	112	edo
+Geert-Jan	m	112	ɣertjɑn
+Lorenzo	m	112	lorɛnzɔ
+Dan	m	112	dɑn
+Recep	m	112	rəsɛp
+Orhan	m	112	ɔrhɑn
+Patty	f	112	pattɑj
+Juliette	f	111	jylɛiətə
+Eddie	m	111	ɛdi
+Ard	m	111	ɑrt
+Marcus	m	111	mɑrkʏs
+Mathieu	m	111	mathijø
+Marlon	u	111	mɑrlɔn
+Muhammet	m	110	mʏhɑmət
+Birgit	f	110	bɪrxɪt
+Davy	m	110	davi
+Guy	m	110	ɣy­i
+Michal	u	110	mixal
+Antoinette	f	109	ɑntʋɑnɛttə
+Allard	m	109	ɑlɑrt
+Lukas	m	109	lykɑs
+Geertje	f	109	ɣercə
+Isabel	f	108	ɪsabel
+Emil	m	108	əmɪl
+Ellis	f	108	ɛlis
+Jon	m	108	jɔn
+Alessandro	m	108	aləsɑndro
+Bruno	m	108	brʏno
+Danique	f	108	danijk
+Mahmut	m	108	mahmjuːt
+Meike	f	108	mɛikə
+Umut	m	108	ʏmjut
+Zoé	f	108	zowe
+Sofie	f	108	sofi
+Rosalie	f	107	rosali
+Damián	m	107	damin
+Cem	m	107	sɛm
+Kristel	f	107	krɪstəl
+Jill	f	107	dʒɪl
+Gerry	u	107	ɣəri
+Ferdi	m	106	fərdɪ
+Gerhard	m	106	xərhɑrt
+Daniela	f	106	danijəla
+Micha	m	106	mixa
+Alie	f	106	ali
+Tjerk	m	105	cɛrᵊk
+Amir	m	105	amir
+Amira	f	105	amira
+Hilda	f	105	hɑjlda
+Jasmijn	f	105	jasmɛɪn
+Martina	f	105	mɑrtina
+Liza	f	104	litsa
+Ramona	f	104	ramona
+Islam	m	104	ɪslɑm
+Robbin	u	104	rɔbin
+Sigrid	f	104	sɪxrɪd
+Áron	m	103	rɔn
+Bertus	m	103	bərtʏs
+Bauke	m	103	bɔukə
+Noortje	f	103	norcə
+Ivar	m	103	ivaːr
+Igor	m	103	ɪχɔr
+Elles	f	102	ɛləs
+Emrah	m	102	eɛmɛrah
+Maxime	u	102	mɑksim
+Lynn	f	102	lɪŋn
+Sérgio	m	102	serɣɪjo
+Kristián	m	101	krijstɑjn
+Friso	m	101	frizo
+Peggy	f	101	peʔeɣeɣei
+Yilmaz	m	101	ijɪlᵊmaz
+Véronique	f	101	veronik
+Willem-Jan	m	101	wɪləmjan
+Eugène	m	100	øxjɛnə
+Fiona	f	100	fijona
+Joanne	f	100	jɔɑnə
+Kenan	m	100	kənɑn
+Saïd	m	100	sɑjɪt
+Carlijn	f	100	kɑrlɛin
+Anders	m	100	ɑndərs
+Alain	m	100	alaɪn
+Nóra	f	100	nra
+Nour	u	99	nur
+Jurriaan	m	99	jyrijan
+Yunus	m	99	junʏs
+Erik-Jan	m	99	ərɪkjan
+Elena	f	99	eləna
+Seán	m	99	sen
+Rudolf	m	99	ruwdɔlf
+Arnout	m	99	arnut
+Ilja	u	99	ɪljɑ
+Maik	m	98	mɑjk
+Matthias	m	98	mattsijas
+Morten	m	98	mɔrtən
+Eefje	f	98	efjə
+Emmy	f	98	ɛmi
+Rian	u	98	rijɑn
+Carel	m	98	kɑrəl
+Ine	f	98	inə
+Roderick	m	98	rodərɪk
+Serhat	m	98	sərhɑt
+Sayed	m	98	sajed
+Stephen	m	98	stepehaən
+Ayman	m	98	emɑn
+Adrián	m	98	aderijn
+Bülent	m	97	bwʏlənt
+Marinus	m	97	marinʏs
+Scott	m	97	skɔt
+Samet	m	97	samet
+Hessel	m	97	hezsəl
+Harun	m	96	hɑrun
+Hamza	m	96	hɑmzɑ
+Dolf	m	96	dɔlf
+Luigi	m	96	lœʏ̯χɪ
+Marie	f	96	mɑri
+Mascha	f	96	mɑsxa
+Rowan	u	96	rowɑn
+Jörg	m	95	dʒɔrx
+Ella	f	95	ɛla
+Tonnie	m	95	tɔnni
+Timothy	m	95	tɑjmoʊ̯ti
+Tarik	m	94	tarɪk
+Gerjan	m	94	xərjɑn
+Diego	m	94	dixo
+Lesley	u	94	ləsli
+Sjef	m	94	ʃɛf
+Mónika	f	94	mnɪka
+Ashraf	m	94	ɑʃrɑf
+Connie	f	93	kɔ̃ni
+Krista	f	93	krista
+Kübra	f	93	kybra
+Wietse	m	93	witsə
+Evelyn	f	93	əvɛlɪŋ
+Ercan	m	93	ərkɑn
+Ankie	f	93	ɑŋki
+Elvira	f	92	əlvira
+Jop	m	92	jop
+Noor	f	92	no̝ːr
+Babette	f	92	bɑpətə
+Aukje	f	92	ɑukjə
+Abdallah	m	91	ɑbdɑla
+Dana	f	91	dɛna
+Karina	f	91	kɑrina
+Lévi	m	91	levɪ
+Kiki	f	91	kɑjkɪ
+Mona	f	91	mona
+Marike	f	91	marikə
+Ebru	f	91	əbru
+Folkert	m	91	fɔlkərt
+Jeanet	f	90	ʒanɛt
+Ida	f	90	ida
+Gideon	m	90	dʒideɔn
+Hatice	f	90	hatikə
+Étienne	m	90	etinnə
+Alper	m	90	ɑlpər
+Ada	f	90	ada
+Belinda	f	90	bəlɑjnda
+Dani	u	90	danij
+Mats	m	90	mɑts
+Machiel	m	90	mɑʃil
+Tiny	f	90	tini
+Pablo	m	90	pɑblo
+Benno	m	89	bɛno
+Kaan	m	89	kan
+Pedro	m	89	pɛdrɔ
+Lucy	f	89	lywsi
+Tomás	m	89	tjoms
+Robbie	m	88	rɔbi
+Salma	f	88	sɑlma
+Barend	m	88	barənt
+Christopher	m	88	xrɪstɔphɛr
+Gina	f	88	ɣina
+Melle	m	88	mɛlə
+Annika	f	88	ɑnɪka
+Reinder	m	87	rɛindər
+Cécile	f	87	sesilə
+Julien	m	87	jylijən
+Ward	m	87	wɑrt
+Yasemin	f	87	jasəmɪn
+Elizabeth	f	87	elizabɛt
+Axel	m	87	ɑksəl
+Mathilde	f	87	mathildə
+Mohammad	m	87	mohɑmad
+Emir	m	86	emir
+Juan	m	86	jyɑn
+Kai	m	86	kɑj
+Wietske	f	86	witskə
+Tamer	m	86	tamər
+Greetje	f	86	ɣrecə
+Corinne	f	85	korijnə
+Cornelis	m	85	kɔrnəlɪs
+Lennard	m	85	lənɑrt
+Marlou	f	85	mɑrlɑu
+Martha	f	85	mɑrthɑ
+Mina	f	85	mina
+Engin	m	85	ɛndʒɪn
+Francesca	f	85	frɑnsəska
+Gabrielle	f	85	xabeɛriɛlə
+Ümit	m	85	wʏmɪt
+Volkan	m	85	vɔlkɑn
+Tijn	m	85	tɛin
+Thierry	m	85	thirrɑj
+Heba	f	85	hɛbɑ
+Jessie	u	84	dʒɛsi
+Gabriel	m	84	xabril
+Kareem	m	84	kɑrem
+Caspar	m	84	kaspɑr
+Mitchel	m	84	mitʃl
+Pien	f	84	piən
+Herma	f	83	hɛrma
+Abdelrahman	m	83	ɑbdeɪ̯lrɑhmən
+Mohamad	m	83	mohamɑt
+Megan	f	83	meɣan
+Veerle	f	83	verlə
+Ties	m	83	tsis
+Tolga	m	82	tɔlxa
+Terry	u	82	təri
+Tarek	m	82	tarɛk
+Ferdinand	m	82	fərtɪnɑnt
+Kate	f	82	katə
+Kenny	m	82	kɛni
+Joseph	m	82	dʒoɛsepeha
+Chiara	f	82	xijara
+Bouke	m	82	bukə
+Helga	f	82	hɛlxa
+Giel	m	82	ɣil
+Alan	m	82	alɑn
+Adél	m	82	ɑdəʔl
+Oliver	m	82	olivər
+Victória	f	81	viktrija
+Tijs	m	81	tɛis
+Yara	f	81	ijara
+Truus	f	81	trys
+Faruk	m	81	faruwk
+Emad	m	81	əmɑt
+Asli	f	81	ɑsli
+Lucien	m	81	lysiən
+Marcella	f	81	mɑrsɛla
+Enrico	m	80	ənrijko
+Fabienne	f	80	fabinnə
+Denis	m	80	dənɪs
+Jurre	m	80	jyrə
+Rafael	m	80	rafɑəl
+Rasmus	m	80	rasmʏs
+Bernadette	f	80	bərnadətə
+Brandon	m	80	brɑndon
+Cristina	f	80	krɪstina
+Wilfried	m	80	wɪlfrit
+Yuri	m	80	juri
+Hannie	f	80	hɑnijə
+Selim	m	80	selim
+Ayhan	m	79	ehɑn
+Benny	m	79	bɛni
+Mirella	f	79	mirəla
+Mads	m	79	mads
+Marissa	f	79	marɪsa
+Emine	f	79	eminə
+Nelly	f	79	nəli
+Sietske	f	79	sitskə
+Jelte	m	79	jəltə
+Eren	m	78	erən
+Dorine	f	78	dɔrinə
+Eef	u	78	ef
+Jöran	m	78	dʒworɑn
+Jorien	f	78	jɔrin
+Dagmar	f	78	dɑxmɑr
+Marlous	f	78	mɑrlɑus
+Muhammad	m	78	mjuːhɑmade
+Okan	m	78	jokan
+Nicola	u	78	nikola
+Natasha	f	78	natashɑ
+Rodney	m	77	roʊ̯tni
+Sedat	m	77	sedat
+Lies	f	77	lis
+Josh	m	77	jɔsh
+Jantine	f	77	jɑntinə
+Elsbeth	f	77	əlzbəth
+Gemma	f	77	ɣɛma
+Quinten	m	77	kɛ̃tən
+Manuela	f	77	mɑnywela
+Mara	f	77	mara
+Luís	m	77	lyws
+Marwa	f	77	mɑrwa
+Léna	f	76	lena
+Stanley	m	76	stanləi
+Sherif	m	76	ʃərɪf
+Sietse	m	76	sitsə
+Sjoukje	f	76	ʃɑukjə
+Harriet	f	76	hɑrit
+Ingmar	m	76	ɪŋmɑr
+Jan-Jaap	m	76	jɑɱjap
+Ludo	m	76	lywdo
+Oguzhan	m	76	joɣy­zhɑn
+Bernd	m	75	bɛrᵊnd
+Léonard	m	75	leonɑrd
+Lily	f	75	lɑjlɑj
+Joy	f	75	jɔi
+Joëlle	f	75	jowɛlə
+Wanda	f	75	wɑnda
+Francois	m	75	frɑŋkoɪs
+Ewoud	m	75	əwɑut
+Stella	f	75	stɛla
+Jip	u	75	jɪp
+Miguel	m	75	mijɣywɛl
+Mitch	m	74	mitʃ
+Mia	f	74	mija
+Geke	f	74	ɣəkə
+Donald	m	74	donɑld
+Emin	m	74	əmɪn
+Ricky	m	74	rɪki
+Inez	f	74	inəz
+Helena	f	74	hɛləna
+Jaimy	u	74	dʒemij
+Jacky	u	74	dʒɛkij
+Selcuk	m	74	zəlkyk
+Abel	m	74	abəl
+Armand	m	74	ɑrmant
+Anneloes	f	74	ɑnəlus
+Adnan	m	73	adejɛnan
+Lauren	f	73	lɑurən
+Malou	f	73	malɑu
+Mees	m	73	mes
+Erhan	m	73	ərhɑn
+Gamze	f	73	ɣɑmze
+Fernando	m	73	fərnɑndo
+Nino	m	73	nino
+Roxanne	f	73	rɔksɑnə
+Tycho	m	73	tixo
+Zafer	m	73	zɑfər
+Willie	u	73	wɪli
+Jeanne	f	73	dʒinə
+Jannes	m	73	jɑnəs
+Harm-Jan	m	72	hɑrmjan
+Jouke	m	72	jɑukə
+Jolande	f	72	jɔlɑndə
+Lian	f	72	lijɑn
+Magda	f	72	mɑxda
+Manfred	m	72	mɑnfred
+Tess	f	72	tɛs
+Rana	f	72	rana
+Salvatore	m	72	sɑlvaːtɔrə
+Sören	m	71	sɔrən
+Cengiz	m	71	sɛndʒits
+Bert-Jan	m	71	bɛrtjan
+Derya	f	71	dɛrija
+Dominic	m	71	dominik
+Dries	m	71	dris
+Aydin	m	71	edɪn
+Anniek	f	71	ɑnnik
+Paolo	m	71	pɑolo
+Nicolás	m	71	nijkɔls
+Mathias	m	71	matsijas
+Marie-José	f	71	marijɛntinose
+Walid	m	71	wɑlɪt
+Wilko	m	70	wɪlkɔ
+Erdem	m	70	ərdəm
+Kyra	f	70	kirɑ
+Levent	m	70	levənt
+Jörgen	m	70	dʒɔrɣən
+Kelvin	m	70	kɛlvɪn
+Collin	m	70	kɔlɪn
+Charlie	u	70	tʃɑrli
+Coby	f	70	kobɑj
+Gijsbert	m	70	xɛɪzbɛrt
+Gizem	f	70	xjzem
+Machteld	f	70	mɑxtəlt
+Nigel	m	70	niɡəl
+Rémi	m	69	remi
+Cihan	m	69	sihɑn
+Jordan	u	69	jɔrdɑn
+Yousef	m	69	iɑusf
+Tara	f	69	tara
+Eelke	u	69	elkə
+Esmeralda	f	69	əsməraldɑ
+Gerrit-Jan	m	69	xərɪjan
+Froukje	f	69	frukjə
+Sabina	f	69	sabinaʔ
+Gwen	f	69	xwən
+Gerco	m	68	ɣərko
+Kamil	m	68	kamɑjl
+Josephine	f	68	dʒoɛsepehainə
+Ciska	f	68	siska
+Camiel	m	68	kɑmil
+Ivonne	f	68	ivɔnə
+Grietje	f	68	ɣricə
+Gilbert	m	68	ɣɪlbɛr
+Sophia	f	68	sɔphija
+Rina	f	68	rina
+Arianne	f	68	arijɑnɛ
+Alberto	m	67	albɛro
+Aniek	f	67	anik
+Bayram	m	67	bajrɑm
+Léontine	f	67	leɔntinə
+Jur	m	67	ʒyr
+Marta	f	67	mɑrta
+Donna	f	67	dɔna
+Erol	m	67	ərol
+Oguz	m	67	joɣy­z
+Özlem	f	67	wozlɛm
+Silke	f	67	zilkə
+Semih	m	67	semi
+Samir	m	67	samir
+Yorick	m	67	ijorɪk
+Jan-Peter	m	67	jɑɱpetər
+Henrik	m	66	hɛnrɪk
+Hanny	f	66	hɑni
+Erdal	m	66	ərdɑl
+Enzo	m	66	ənzow
+Gerdien	f	66	ɣərdin
+Fábio	m	66	fbijo
+Fokke	m	66	fɔkə
+Klaas-Jan	m	66	klasjan
+Adriana	f	66	adrijana
+Arda	m	66	ardɑ
+Audrey	f	66	ɑutrəi
+Clemens	m	66	klemɛns
+Christien	f	66	xrɪstin
+Bregje	f	66	brɛxjə
+Maya	f	66	maja
+Xavier	m	66	ksavir
+Noël	u	66	ɛnowəl
+Natália	f	66	nɑtlija
+Stefano	m	65	stəfɑno
+Davide	m	65	davɪtnə
+Dean	m	65	dəʔɑn
+Léa	f	65	lea
+Kerem	m	65	kerəm
+Grace	f	65	xresə
+Duncan	m	65	tunkɑn
+Evert-Jan	m	65	əvərcɑn
+Puck	f	65	pʏk
+Pía	f	65	pea
+Taha	m	65	taha
+Yvo	m	65	ivɔ
+Tjitske	f	65	cɪtskə
+Yasser	m	65	iɑsər
+Yakup	m	65	ijakup
+Wolter	m	64	wɔltər
+Waël	m	64	wael
+Timon	m	64	timɔn
+Fenna	f	64	fəna
+Joanna	f	64	jɔɑna
+Jorge	m	64	jɔrɣə
+Jody	u	64	dʒodɪ
+Cecília	f	64	kətʃlija
+Bekir	m	64	bəkɪr
+Hubert	m	64	hʏpərt
+Anil	m	64	anil
+Ramy	m	63	ramij
+Davey	m	63	dɑveɪ̯i
+Kamal	m	63	kamɑl
+Kaylee	f	63	kajle
+Kyle	m	63	kilə
+Verónica	f	63	veɪ̯rnika
+Dik	m	63	dɪk
+Frédérique	f	63	fredəʔrijk
+Siebe	m	63	sibə
+Jari	m	63	jarɛ
+Hussein	m	63	huwsɛin
+Hylke	m	63	ilkə
+Myriam	f	63	mɪrijam
+Musa	m	62	mʏsa
+Menna	f	62	mɛna
+Mari	u	62	mari
+Matthieu	m	62	matthijø
+Maike	f	62	mɑjkə
+Floortje	f	62	flɔːrcə
+Derek	m	62	dərɛk
+Elwin	m	62	əlwɪn
+Else	f	62	əlsə
+Khalid	m	62	khɑlɪt
+Lammert	m	62	lɑmʏːrt
+Juul	u	62	dʒyl
+Oktay	m	62	jokta­i
+Thijmen	m	62	tɛimən
+Sami	m	62	sami
+Aafke	f	61	afkə
+Beau	u	61	bo
+Ko	m	61	keʔo
+Márcia	f	61	mrsija
+Marlène	f	61	marljɛnə
+Pamela	f	61	pɑməla
+Quincy	u	61	kinsi
+Reinoud	m	61	rɛɪ̯nɑut
+Sofía	f	61	sɔfa
+Titia	f	61	titija
+Jitske	f	61	dʒitskə
+Joachim	m	61	jɔɑxɪm
+Jake	m	61	jakə
+Jan-Pieter	m	61	jɑɱpitər
+Ilker	m	60	ilkər
+Isabella	f	60	ɪsabeəla
+Fátima	f	60	ftima
+Erick	m	60	ərɪk
+Leyla	f	60	lila
+Lindsay	f	60	lɑjndɪsai
+Aziz	m	60	azits
+Aline	f	60	alinə
+Carol	f	60	karɔl
+Muriel	f	60	mʏril
+Minke	f	60	mɪŋkə
+Maï	f	60	majɪ
+Olav	m	60	olɑv
+Nicoline	f	60	nikolinə
+Soraya	f	59	soraja
+Sheila	f	59	shɛila
+Sibel	f	59	zibəl
+Roald	m	59	rowalt
+Cemal	m	59	sɛmɑɫ
+Lenie	f	59	lɛni
+Leslie	u	59	lsli
+Ken	m	59	kɛn
+Julius	m	59	jylijʏs
+Hielke	m	59	hilkə
+Ilonka	f	59	ɪlɔnkɑ
+Janna	f	59	jɑna
+Finn	m	59	fɪn
+Firat	m	59	fɪrat
+Francien	f	59	frɑnsin
+Denny	m	59	dɛni
+Elske	f	59	əlskə
+Aletta	f	59	alɛta
+Alfons	m	59	ɑlfɔns
+Ángel	u	59	ŋəl
+Ozan	m	59	jozɑn
+Mette	f	59	mɛtə
+Merlijn	u	59	mərlɛɪn
+Meindert	m	59	mɛɪndɛrt
+Zehra	f	59	zəhra
+Viktor	m	58	vɪktɔr
+Josien	f	58	jɔsin
+Robby	m	58	rɔbi
+Siem	m	58	sim
+Corien	f	58	korijən
+Débora	f	58	dəʔborɑ
+Cláudio	m	58	klydijo
+Andrés	m	58	ɑntres
+Riet	f	58	rit
+Reina	f	58	rɛina
+Paola	f	58	pɑola
+Renata	f	57	renata
+Pieter-Jan	m	57	pitɛrjan
+Daniella	f	57	danijɛla
+Vedat	m	57	vedat
+Émilie	f	57	emili
+Ellie	f	57	ɛli
+Rose	f	57	rɔːzə
+Rinske	f	57	rɪnskə
+Ruby	f	57	rybi
+Sidney	u	57	sɪtnəi
+Alina	f	57	alina
+Antoon	m	57	ɑnton
+Imke	f	57	imkə
+Hülya	f	57	hwʏlija
+Madeleine	f	56	madəlɛinə
+Dewi	f	56	dəwid
+Dineke	f	56	dinəkə
+Kara	f	56	kara
+Kaj	m	56	kaj
+Renzo	m	56	renzo
+Bobby	u	56	bɔbi
+Batuhan	m	56	batywhɑn
+Berber	f	56	bɛrbər
+Willemien	f	56	wɪləmjən
+Thérèse	f	56	therɛə
+Taner	m	56	tanər
+Yasmin	f	56	ijasmɪn
+Tuncay	m	56	tywnkai
+Hanne	f	56	hɑnə
+Salah	m	56	sala
+Sonny	m	56	sɔni
+Steef	m	56	stef
+Albert-Jan	m	56	albərtbɑjɑn
+Bibi	f	55	bɑjbiɑj
+Katie	f	55	katsi
+Kars	m	55	kɑrs
+Jolijn	f	55	jɔlɛin
+Mirte	f	55	mɪrtə
+Marty	m	55	mɑrti
+Flip	m	55	flɪp
+Farah	f	55	farah
+Ersin	m	55	ərsɪn
+Özge	f	55	wozɣə
+Noud	m	55	nɑut
+Noa	f	55	noa
+Valentijn	m	55	valəntɛin
+Valentina	f	55	valəntina
+Vince	m	55	vɪnsə
+Wietze	m	55	witse
+Yvon	f	55	ivɔn
+Jessy	u	54	jəsi
+Harro	m	54	hɑro
+Filip	m	54	filɪp
+Katinka	f	54	katɪŋka
+Lizzy	f	54	lɪzi
+Jort	m	54	jɔrt
+Alicia	f	54	alisija
+Berkay	m	54	bɛrᵊke
+Camilla	f	54	kɑmɪla
+Mariet	f	54	mɑrit
+Melek	f	54	mɛlɛk
+Mayke	f	54	mekə
+Ufuk	m	54	ywfjuːk
+Tine	f	54	tinə
+Nikita	f	54	nɪkita
+Peter-Paul	m	54	pətɛrpeʏl
+Raphaël	m	54	rɑpehaael
+Raymon	m	54	remon
+Sándor	m	54	sndɔr
+Rody	m	53	rodi
+Román	m	53	roʊ̯mn
+Baukje	f	53	bɔukjə
+Clara	f	53	klara
+Laurie	f	53	lɑuri
+Karl	m	53	kɑrl
+Josine	f	53	dʒozinə
+Lambert	m	53	lɑmbɛrt
+Krijn	m	53	krɛin
+Loïs	f	53	lowis
+Gonnie	f	53	xɔnni
+Gül	f	53	xwʏl
+Elías	m	53	əlaz
+Dogan	m	53	doɡɑn
+Arco	m	53	ɑrko
+Art	m	53	ɑrt
+Alida	f	53	alidɑ
+Nihat	m	53	nihɛ
+Pascale	f	53	pɑskɑlə
+Raimond	m	53	remɔnt
+Maxim	m	53	mɑksim
+Marien	m	53	mariən
+Maja	f	53	maʒa
+Meryem	f	53	mɛrijɛm
+Wieger	m	53	wiɣər
+Úrsula	f	52	rzʏla
+Veysel	m	52	veɪ̯isəl
+Tamar	f	52	tamar
+Francisca	f	52	frɑnsijska
+Franklin	m	52	frɑŋklin
+Dilek	f	52	dilɛk
+Ekrem	m	52	əkrəm
+Elma	f	52	əlma
+Donny	m	52	dɔni
+Liz	f	52	liz
+Lodewijk	m	52	lodəwɛɪk
+Sally	f	52	sɑli
+Ruurd	m	52	ryrt
+Ciro	m	52	siro
+Bettina	f	52	bəttina
+Carolina	f	52	karɔlina
+Lucie	f	52	lysiə
+Arif	m	52	arɪf
+Aly	f	52	ɑli
+Piotr	m	52	pijotr
+Reem	f	52	rem
+Riccardo	m	52	riskɑrdɔ
+Nicolai	m	51	nikolɑj
+Özcan	m	51	wozkɑn
+Pascalle	f	51	pɑskɑlə
+Bente	f	51	bɛntə
+Bart-Jan	m	51	bɑrtjɑn
+Josje	f	51	jɔʃə
+Leny	f	51	lɛnaj
+Yavuz	m	51	ijaveʔyz
+Ewald	m	51	əwɑlt
+Elmar	m	51	əlmɑr
+Elmer	m	51	əlmər
+Fokko	m	51	fɔkɔ
+Sietze	m	51	sitse
+Jan-Paul	m	51	jɑɱpɑul
+Inés	f	51	ɪnes
+Markus	m	51	mɑrkʏs
+Myra	f	50	mira
+Dennie	m	50	tɛnni
+Emy	f	50	əmi
+Eduardo	m	50	ədywardɔ
+Lobke	f	50	lɔpkə
+Lenny	u	50	ləni
+Buse	f	50	bʏsə
+Berk	m	50	bɛrk
+Teus	m	50	tøs
+Jana	f	50	janaʔ
+Hendrik-Jan	m	50	hɛndrikjan
+Seda	f	50	səda
+Steffen	m	50	stɛfən
+Sten	m	50	stən
+Sterre	f	50	stɛrə
+Alma	f	50	ɑlma
+Arzu	f	50	arzʏ
+Anjo	u	50	ɑɲo
+Antje	f	49	ɑncə
+Babs	f	49	bɑps
+Armando	m	49	ɑrmando
+Beyza	f	49	bijza
+Catherine	f	49	kathɛrinə
+Canan	f	49	kɑnɑn
+Burcu	f	49	bʏrky
+Carine	f	49	kɑrinə
+Baran	m	49	bɑrɑn
+Lenneke	f	49	lənəkə
+Joram	m	49	jorɑm
+Ebrahim	m	49	əbraɪm
+Noëlle	f	49	ɛnowələ
+Nur	u	49	nʏr
+Pinar	f	49	pinar
+Shady	m	49	ʃdi
+Selin	f	49	səlɪn
+Grégory	m	49	xreɣo­rɑj
+Irem	f	48	irɛm
+Jackie	u	48	dʒɛkɪə
+Jeannet	f	48	jəɑnɛt
+Hellen	f	48	ɦɛlən
+Efe	m	48	əfə
+Geoffrey	m	48	ɣəɔfreji
+Lise	f	48	lɪsə
+Linde	f	48	lɪndə
+Arian	m	48	arijɑn
+Alejandro	m	48	aləjandrɔ
+An	f	48	ɑn
+Bertine	f	48	bərtinə
+Betül	f	48	bətwʏl
+Cathy	f	48	kati
+Carsten	m	48	kɑrstən
+Brent	m	48	brɛnt
+Caner	m	48	kanər
+Colinda	f	48	kolijnda
+Mika	m	48	mjka
+Mattijs	m	48	mɑtɛɪs
+Teresa	f	48	tərɛsa
+Tanya	f	48	tɑnja
+Philippe	m	48	filɪpə
+Roderik	m	48	rodərɪk
+Suat	m	47	sywat
+Rijk	m	47	rɛik
+Cheryl	f	47	xɛril
+Catharina	f	47	katarina
+Brigit	f	47	briɣjt
+Leander	m	47	lejɑndər
+Karsten	m	47	kɑrstən
+Kurt	m	47	kyrt
+Liam	m	47	lijam
+Hilal	f	47	hilal
+Irina	f	47	irina
+Janne	f	47	jɑnə
+Gary	m	47	ɣɑrij
+Gabriela	f	47	xabeɛriəla
+Diny	f	47	dinaj
+Ernst-Jan	m	47	ərnstjan
+Eugénie	f	47	øxeni
+Aimée	f	47	aɪme
+Alp	m	47	ɑlp
+Nicolien	f	47	nikolin
+Adil	m	47	adijl
+Neil	m	47	nɛil
+Odette	f	47	jodɛtə
+Margaret	f	47	mɑrɣarɛt
+Mariel	f	47	mɑril
+Matteo	m	47	mɑtejoʔ
+Tugba	f	47	tywɣbɑ
+Tugce	f	47	tywxsə
+Vicky	f	47	vɪki
+Zeki	m	47	zəki
+Viola	f	46	vijola
+Tinus	m	46	tinʏs
+Yoeri	m	46	iurɪ
+Yagmur	f	46	jɛkmjuːr
+Egon	m	46	əɣon
+Eda	f	46	əda
+Leanne	f	46	lejɑnə
+Kristina	f	46	krijstina
+Koert	m	46	kurt
+Lola	f	46	lolɑ
+Lindy	f	46	lɑjndi
+Shannon	f	46	ʃɑnon
+Shawn	m	46	ʃawen
+Samira	f	46	samira
+Colette	f	46	kɔlətə
+Corry	f	46	kɔri
+Hande	f	46	hɑndə
+Jef	m	46	jəf
+Margret	f	46	mɑrxrɛt
+Manouk	f	46	mɑnuk
+Manar	f	46	mɑnɑr
+Meta	f	46	meta
+Merle	f	46	mɛrlɛ
+Al	m	46	ɑl
+Angélica	f	46	anɣelɑjka
+Ayse	f	46	esə
+Allan	m	46	ɑlɑn
+Olivia	f	46	olivija
+Pasquale	u	46	pɑskwalə
+Per	m	45	pɛr
+Pam	f	45	pɑm
+Ridvan	m	45	ridvɑn
+Reinout	m	45	rɛɪ̯nɑut
+Chloé	f	45	xloʊ̯e
+Camille	u	45	kɑmijə
+Charissa	f	45	xarɪsa
+Lindsey	f	45	lɑjntsi
+Len	m	45	lən
+Lee	u	45	le
+Sybren	m	45	sibrən
+Toby	m	45	tobɑj
+Tiemen	m	45	timən
+Felicia	f	45	fəlɪʃa
+Fanny	f	45	fɑni
+Dilara	f	45	dijlara
+Duco	m	45	dyko
+Saad	m	45	sat
+Sercan	m	45	sərkɑn
+Serena	f	45	serəna
+Arnaud	m	45	ɑrᵊnɑut
+Aldo	m	45	ɑldo
+Giulia	f	45	dʒiywlija
+Irfan	m	45	irfɑn
+Jade	f	45	jadə
+Marsha	f	45	mɑːʃə
+Durk	m	44	dʏrᵊk
+Ertugrul	m	44	ərtywxrʏl
+Judy	f	44	jydi
+Leonardo	m	44	lejonɑrdɔ
+Lana	f	44	lənɑ
+Réda	m	44	redɑ
+Rania	f	44	ranija
+Rahma	f	44	rahma
+Niki	u	44	nɪkij
+Phil	m	44	fil
+Calvin	m	44	kɛlvɪn
+Davut	m	44	davywt
+Tyler	m	44	tilər
+Wieke	f	44	wikə
+Wies	f	44	ʋis
+Javier	m	44	javir
+Jerome	m	44	jeromə
+Rinke	u	44	rɪŋkə
+Roberta	f	44	robərta
+Sammy	u	44	sɑmi
+Sipke	m	44	zipkə
+Sevgi	f	44	səvxi
+Ann	f	44	ɑnn
+Anoek	f	44	anuk
+Cenk	m	43	sɛnk
+Caro	f	43	karo
+Danièle	m	43	danijɛlə
+Craig	m	43	krɛəx
+Cansu	f	43	kɑnzy
+Lineke	f	43	linəkə
+Jurrien	m	43	jyrin
+Kees-Jan	m	43	kesrtəxn
+Maryam	f	43	mɑrijam
+Muharrem	m	43	mjuːhɑrəm
+Lourens	m	43	lurəns
+Lucky	f	43	lywki
+Duygu	f	43	dywiɣy­
+Norman	m	43	nɔrmɑn
+Pelin	f	43	pəlɪn
+Rodrigo	m	43	roʊ̯driɣo
+Roelf	m	43	rulᵊf
+Tino	m	43	tino
+Toni	m	43	toni
+Greg	m	43	xreɣ
+Jean-Pierre	m	42	jəɑnpirə
+Ilhan	u	42	jhɑn
+Hager	f	42	haɣər
+Elsa	f	42	əlsa
+Dionne	f	42	dijɔnə
+Gabriella	f	42	xabeɛriɛla
+Federico	m	42	fedərjko
+Liselotte	f	42	lɑjslɔtə
+Lida	f	42	lɑjdɑ
+Jonne	u	42	jɔnə
+Jorik	m	42	jɔrɪk
+Ayla	f	42	elɑ
+Aléssia	f	42	alessija
+Cédric	m	42	setrik
+Celal	m	42	sɛlɑl
+Marjanne	f	42	mɑrjanə
+Massimo	m	42	mɑsimo
+Yahya	m	42	ijahija
+Yalcin	m	42	jalsin
+Turgay	m	42	tywrxai
+Rienk	m	42	riənk
+Rixt	f	42	rɪkst
+Sasha	u	42	sɑʃa
+Simona	f	42	sɪmɔna
+Rudie	m	41	rydi
+Sonia	f	41	sonija
+Baris	m	41	bɑrɪz
+Berna	f	41	bɛrnɑ
+Bernhard	m	41	bərnhɑrt
+Bill	m	41	bɪl
+Damien	m	41	dɑmin
+Cyril	m	41	sirɪl
+Delano	m	41	dəlano
+Kerim	m	41	kərɪm
+Katrien	f	41	katrijən
+Lina	f	41	lina
+Ilyas	m	41	ɪlijas
+Hedwig	f	41	hɛitwəx
+Francine	f	41	frɑnsinə
+Didier	m	41	didir
+Diederick	m	41	didərɪk
+Esma	f	41	ɛsma
+Anique	f	41	anik
+Bahar	f	41	bahɑr
+Aylin	f	41	elin
+Özkan	m	41	wozkɑn
+Manja	f	41	mɑnja
+Tahir	m	41	tahɑjr
+Yves	m	41	ivəs
+Yigit	m	41	ijɪdʒit
+Elbert	m	40	əlbɛrt
+Eray	m	40	əre
+Eyüp	m	40	əiʏp
+Laurent	m	40	lɑurənt
+Joao	m	40	dʒɔjaʔo
+Roan	m	40	roɑn
+Bella	f	40	bɛla
+Cemil	m	40	sɛmɑjl
+Burhan	m	40	bʏrhɑn
+Heather	f	40	ejater
+Jaime	u	40	dʒemə
+Ihsan	m	40	ɪhsan
+Luna	f	40	lyna
+Marie-Louise	f	40	mɑriluwisə
+Moustafa	m	40	mustɑfa
+Mücahit	m	40	mykajt
+Nader	m	40	naːdər
+Mira	f	40	mira
+Melike	f	40	mɛlɑjk
+Afke	f	40	ɑfkə
+Ammar	m	40	ɑmɑr
+Nicholas	m	40	nɪxolɑs
+Owen	m	40	oən
+Rabia	f	40	rabija
+Nuri	m	39	nyrij
+Olé	m	39	ɔle
+Nanette	f	39	naʔɛɱətə
+Reza	u	39	rejzɑ
+Damla	f	39	dɑmlɑ
+Leontien	f	39	lejɔntin
+Lidy	f	39	lɑjdi
+Lot	f	39	lɔt
+Tayfun	m	39	ta­ifʏŋ
+Yoran	m	39	jɔrɑn
+Evi	f	39	əvi
+Ferdy	m	39	fərdi
+Elize	f	39	əljze
+Steffie	f	39	stɛfi
+Rosita	f	39	rozita
+Shahd	f	39	shɑht
+Abdurrahman	m	39	ɑbdywrahmɑn
+Andrei	m	39	ɑntrɛi
+Anastasia	f	39	anastazija
+Hilbert	m	39	hɪlbərt
+Jiska	f	39	jiska
+Jans	u	39	jɑns
+Jantien	f	39	jɑntin
+Gianluca	m	39	dʒiɑnlywka
+Marrit	f	39	mɑrit
+Myrna	f	39	mɪrna
+Marita	f	39	marita
+Melisa	f	39	mɛlɑjsa
+Michaela	f	39	mixaəla
+Marthijn	m	38	mɑrthɛin
+Mylène	f	38	mijljɛnə
+Milo	m	38	milɔ
+Mirko	m	38	mijrkɔ
+Mariana	f	38	marijana
+Magdalena	f	38	mɑxdaləⁿa
+Gennaro	m	38	xənaro
+Freddie	m	38	frɛdi
+Frederike	f	38	fredərɪkə
+Francisco	m	38	frɑnsijsko
+Dré	m	38	tre
+Liset	f	38	lɑjst
+Justine	f	38	jʏstinə
+Rachid	m	38	rɑxid
+Ceren	f	38	serən
+Cassandra	f	38	kɑsɑndra
+Boukje	f	38	bukjə
+Veli	m	38	vəlɪ
+Toos	f	38	tos
+Tiffany	f	38	tɪfanaj
+Talitha	f	38	talitha
+Sylvana	f	38	sɪlvɑnɑ
+Guillaume	m	38	xœyllɑume
+Inger	f	38	ɪŋər
+Halit	m	38	halɪt
+Sinem	f	38	sinəm
+Sadik	m	38	sdɪk
+Sebas	m	38	sənbɑs
+Selina	f	38	selina
+Sema	f	38	sema
+Adrienne	f	38	adrijɛnə
+Aleyna	f	38	alina
+Annabel	f	38	ɑnabəl
+Aykut	m	37	ekyt
+Atilla	m	37	atilja
+Abe	m	37	abə
+Ank	f	37	ɑŋk
+Aldert	m	37	ɑldərt
+Alies	f	37	alis
+Cris	m	37	krɪs
+Bonnie	f	37	bɔ̃ni
+Berrie	m	37	bɛri
+Lieneke	f	37	linəkə
+Lizette	f	37	lɑjzɛtə
+Leïla	f	37	lejila
+Larry	m	37	lɑri
+Karla	f	37	kɑrlɑ
+Karst	m	37	kɑrst
+Lucienne	f	37	lysiɛnə
+Marjet	f	37	mɑrjət
+Mariella	f	37	marijɛla
+Marisa	f	37	marɪsa
+Ezgi	f	37	əzɡi
+Ernest	m	37	ərnɛst
+Erin	u	37	ɛrɪn
+Geurt	m	37	ɣørt
+Elroy	m	37	əlrɔj
+Filiz	f	37	filiz
+Raúl	m	37	ral
+Rachelle	f	37	rɑxɛlə
+Raquel	f	37	rakəl
+Nazli	f	37	natslɪ
+Nana	u	37	nanɑ
+Pleun	f	37	pløn
+Paulo	m	37	pɑulo
+Roelie	f	37	ruli
+Stacey	f	37	staseəi
+Soner	m	37	sonər
+Senna	u	37	səna
+Turan	m	37	tyrɑn
+Wytze	m	37	wajtsə
+Vladimír	m	37	vlɑdijmr
+Ziad	m	37	zijat
+Janita	f	37	janita
+Gonny	f	37	ɣɔni
+Hinke	f	37	hɪŋkə
+Haci	m	37	hɑsi
+Hanno	m	37	hɑno
+Isaac	m	36	ɪsaase
+Hermien	f	36	hɛrmin
+Herwin	m	36	hɛrwɪn
+Jenneke	f	36	dʒɛnəkə
+Jennie	f	36	jənni
+Ece	f	36	ɛkə
+Frances	f	36	frɑnsəs
+Florence	f	36	flɔrəns
+Géraldine	f	36	xerɑldɑjn
+Gerbrand	m	36	ɣərbrɑnt
+Emel	f	36	eməl
+Jorick	m	36	jɔrɪk
+Alinda	f	36	alɪnda
+Austin	m	36	ɑustijn
+Ariane	f	36	arijanə
+Arwin	m	36	ɑrʋin
+Arjo	m	36	arʒu
+Age	m	36	aʒə
+Cristián	m	36	kristɑjn
+Caglar	m	36	kaɣlɑr
+Caitlin	f	36	kɛlin
+Bertil	m	36	bɛrtɪl
+Bertjan	m	36	bərtjɑn
+Cliff	m	36	klɪf
+Billy	u	36	bɪli
+Mijke	f	36	məkə
+Mila	f	36	mila
+Mickey	u	36	mɪki
+Marthe	f	36	mɑrtej
+Luciano	m	36	lysijano
+Margit	f	36	mɑrʒit
+Marij	f	36	marɛi
+Marcello	m	36	mɑrsɛlo
+Teunis	m	36	tønɪs
+Taylor	u	36	ta­ilɔr
+Tania	f	36	tanija
+Paulína	f	36	pɑuwlna
+Pietro	m	36	pitro
+Rinze	m	36	rɪnzə
+Susanna	f	36	zʏsɑna
+Sil	m	35	sɪl
+Sharona	f	35	ʃarona
+Robbert-Jan	m	35	rɔbərcɑn
+Rozemarijn	f	35	rozəmarɛin
+Rowena	f	35	rowəna
+Suus	f	35	sys
+Steffan	m	35	stɛfɑn
+Dália	f	35	tlija
+Jozef	m	35	jozəf
+Laila	f	35	lɑjlɑ
+Lou	u	35	lɑu
+Lieuwe	m	35	ljøwɛ
+Josette	f	35	dʒosətə
+Jetty	f	35	jɛttɑj
+Jannet	f	35	jɑnət
+Ismet	m	35	ɪsmət
+Heiko	m	35	ɦɛjkɔ
+Idris	m	35	itris
+Hank	m	35	hɑŋk
+Harma	f	35	hɑrma
+Dustin	m	35	dywstin
+Gerlof	m	35	ɣərlɔf
+Evy	f	35	əvi
+Ezra	u	35	ɛsra
+Anno	m	35	ɑno
+Alperen	m	35	ɑlperən
+Alessandra	f	35	aləsɑndra
+Alexis	u	35	alɛksɪs
+Akif	m	35	akif
+Melih	m	35	mɛlɑjh
+Sytze	m	35	sitsɛ
+Titus	m	34	titʏs
+Tilly	f	34	tili
+Winston	m	34	wɪnstɔn
+Xandra	f	34	ksɑndra
+Franca	f	34	frɑŋka
+Frieda	f	34	frida
+Elle	f	34	ɛlə
+Evan	m	34	əvan
+Esmé	f	34	eɛsɛme
+Keith	m	34	kɛith
+Kayleigh	f	34	kajlɛɪxh
+Linsey	f	34	lɑjnsi
+Seth	m	34	set
+Sena	f	34	səna
+Samar	f	34	samar
+Boyd	m	34	bɔjt
+Cüneyt	m	34	kjynəit
+Darío	m	34	daroʊ̯
+Claus	m	34	klɔus
+Cigdem	f	34	siɣdəm
+Hanan	u	34	hɑnɑn
+Giorgio	m	34	xijorᵊxijo
+Govert	m	34	xovɛrt
+Gregor	m	34	xrəɡɔr
+Gréta	f	34	xreta
+Muzaffer	m	34	myzɑfər
+Marlijn	f	34	mɑrlɛin
+Marcin	m	34	mɑrsin
+Abdulkadir	m	34	ɑbdʏlkadijr
+Amal	f	34	amɑl
+Pjotr	m	34	pjɔtr
+Nanne	u	34	nɑnə
+Ries	m	34	ris
+Resul	m	34	rezʏl
+Nurullah	m	34	nurulɑ
+Nando	m	33	nɑndo
+Paulus	m	33	pɑulʏs
+Bernice	f	33	bərnikə
+Chelsea	f	33	xəlsəʔɑ
+Connor	m	33	kɔnɔr
+Karien	f	33	kɑrin
+Kjeld	m	33	kjəlt
+Joren	m	33	jɔrən
+Yüksel	m	33	iwʏksəl
+Tomasz	m	33	tomɑs
+Fer	m	33	fər
+Ertan	m	33	ərtɑn
+Doris	f	33	dɔriz
+Fedde	m	33	fɛdə
+Sefa	u	33	səfɑ
+Salim	m	33	salim
+Sasja	f	33	sɑʃa
+Rory	m	33	rorɑj
+Annick	f	33	ɑnɪk
+Arlette	f	33	ɑrlətə
+Anette	f	33	anətə
+Amin	m	33	amin
+Ate	m	33	atə
+Gosse	m	33	ɣɔsə
+Huibert	m	33	hœybərt
+Imre	u	33	imrə
+Marjorie	f	33	mɑrʒuri
+Miquel	m	33	mikəl
+Mazen	m	32	mazən
+Misha	u	32	mɪshɑ
+Mehdi	m	32	mɛdi
+Fady	m	32	fadi
+Franka	f	32	frɑŋka
+Emmanuel	m	32	ɛmanywɛl
+Lennert	m	32	lənərt
+Lasse	m	32	lɑsə
+Kazim	m	32	kazim
+Önder	m	32	wondər
+Nic	m	32	nik
+Nik	m	32	nɪk
+Neeltje	f	32	nelcə
+Britta	f	32	brɪta
+Carlien	f	32	kɑrlin
+Christy	f	32	xrɪstɑj
+Winnie	f	32	wɪni
+Terence	m	32	tərɛnsə
+Yücel	m	32	iwʏsɛl
+Indy	u	32	jndi
+Habiba	f	32	habɑjba
+Henrike	f	32	hɛnrɪkə
+Hisham	m	32	hɪshɑm
+Hilly	f	32	hɪli
+Janwillem	m	32	janwɪləm
+Sahar	f	32	sahɑr
+Sjon	m	32	ʃɔn
+Selena	f	32	seləna
+Abby	f	32	ɑbi
+Abdalla	m	32	ɑbdɑla
+Aslan	m	32	ɑslɑn
+Angie	f	32	ɑ̃ʒɪə
+Anouschka	f	32	anusxka
+Alyssa	f	32	alizsa
+Arien	m	31	arijən
+Bruce	m	31	brʏsɛ
+Birgitte	f	31	bijrxɪtə
+Lídia	f	31	ldija
+Johann	m	31	jɔhɑn
+Klaske	f	31	klɑskə
+Kathy	f	31	kɑti
+Melinda	f	31	məlɪnda
+Melis	u	31	melɪs
+Marte	f	31	mɑrtə
+May	f	31	me
+Morgan	u	31	mɔrɣan
+Milena	f	31	milənɑ
+Maggie	f	31	mɑɣiə
+Mahir	m	31	mahɑjr
+Erdinc	m	31	ərdɪntʃ
+Fuat	m	31	fʏɑt
+Felipe	m	31	fəlɪpə
+Fouad	m	31	fɔuad
+Fieke	f	31	fikə
+Dirkjan	m	31	dɪrᵊkjɑn
+Didi	f	31	dɑjdɪ
+Dinand	m	31	dinɑnt
+Eelko	m	31	elkɔ
+Neslihan	f	31	neɪ̯slɑjhɑn
+Nellie	f	31	nəli
+Pelle	m	31	pɛlə
+Peter-Jan	m	31	petɛrjan
+Oskar	m	31	oskɑr
+Sarina	f	31	sarina
+Sabri	m	31	sabri
+Suze	f	31	syzə
+Sicco	m	31	siskɔ
+Tosca	f	31	toska
+Thirza	f	31	tsirzɑ
+Theresa	f	31	therɛsa
+Tommie	m	31	tomi
+Wieteke	f	31	witekə
+Yasmine	f	31	iɑsmɑjn
+Heidy	f	31	hɛiti
+Hilco	m	31	hilko
+Janice	f	31	əxjanikə
+Hella	f	30	hɛla
+Hendri	m	30	hɛndri
+Guusje	f	30	xyʃə
+Dwayne	m	30	dwajnə
+Gerbert	m	30	ɣərbərt
+Ghislaine	f	30	xhɪslɑjnɛ
+Eileen	f	30	ɛilen
+Eliza	u	30	eliza
+Franck	m	30	frɑŋkk
+Justus	m	30	jʏstʏs
+Lion	m	30	lijɔn
+Aysel	f	30	esəl
+Aisha	f	30	eshɑ
+Annelie	f	30	ɑnəli
+Antonie	m	30	ɑntoni
+Carien	f	30	karijən
+Maher	m	30	mahɛr
+Magnus	m	30	mɑxnʏs
+Marly	f	30	mɑrlɑj
+Mercedes	f	30	meɪ̯rsədɛs
+Margje	f	30	mɑrxjə
+Verena	f	30	verəa
+Trevor	m	30	trevɔr
+Tjalling	m	30	cɑlɪŋ
+Tatiana	f	30	tatijana
+Rebekka	f	30	rəbɛka
+Nelson	m	30	nəlsɔn
+Nicolle	f	30	nɪkɔlə
+Rocco	m	30	rɔko
+Sandro	m	30	sɑndro
+Sevda	f	29	sevda
+Rika	f	29	rika
+Saeed	m	29	saet
+Songül	f	29	sɔnɣwʏl
+Siebren	m	29	sibren
+Cathelijne	f	29	kathɛlɛinə
+Darren	m	29	dɑrən
+Carly	f	29	kɑrliː
+Christophe	m	29	xrɪstɔphɛ
+Brechtje	f	29	brɛxtjə
+Brendan	m	29	brɛndɑn
+Boaz	m	29	bɔːz
+Jori	u	29	dʒori
+Layla	f	29	lela
+Kathleen	f	29	katlen
+Gordon	m	29	ɣɔrdɔn
+Gretha	f	29	xrətha
+Hana	f	29	hana
+Henrieke	f	29	hɛnrikə
+Hoda	f	29	ɦoʊ̯dɑ
+Jess	u	29	jəss
+Jetske	f	29	jətskə
+Dmitri	m	29	tmɪtri
+Dursun	m	29	dyrzʏn
+Falco	m	29	fɑlko
+Evelyne	f	29	əvɛlɪŋə
+Frenk	m	29	frɛŋk
+Alphons	m	29	ɑlphoʊ̯ns
+Amina	f	29	amina
+Anas	m	29	ɑnɑs
+Armin	m	29	ɑrmɪn
+Peer	m	29	per
+Ravi	m	29	ravɪ
+Nona	f	29	nona
+Nurettin	m	29	nywrətin
+Noha	f	29	noha
+Nol	m	29	nɔl
+Mete	m	29	metə
+Mehtap	f	29	mɛtɑp
+Malak	f	29	malɑk
+Maurício	m	29	mɑuwrsio
+Masja	f	29	mɑʃa
+Nadja	f	29	nadʒɑ
+Morris	m	29	mɔris
+Muhsin	m	29	myhasɪn
+Lukasz	m	29	lʏkɑs
+Mariken	f	29	marɪkən
+Yordi	m	29	ijordi
+Vivianne	f	29	vievieɑnə
+Valéria	f	29	vɑlerija
+Tiago	m	29	tsijaxo
+Yeliz	f	28	jɛlɑjz
+Wiljan	m	28	wɪljɑn
+Thimo	m	28	thɑjmo
+Virgil	m	28	vɑjrχɪl
+Sytse	m	28	sitsə
+Eefke	f	28	efkə
+Elaine	f	28	əlɛːn
+Eli	m	28	əlj
+Désiré	f	28	dəʔsɪre
+Dieter	m	28	ditər
+Dieuwke	f	28	diwkə
+Devin	m	28	dəvin
+Eric-Jan	m	28	eriɡjɑn
+Gastón	m	28	xasn
+Feike	u	28	fɛi̯kə
+Felice	f	28	fəlɪs
+Frédéric	m	28	fredəʔrik
+Fenny	f	28	fəni
+Liane	f	28	lijanə
+Jord	m	28	jɔrd
+Kelsey	f	28	kəlsi
+Sjouke	m	28	ʃɑukə
+Ross	m	28	rɔs
+Sude	f	28	sydə
+Sultan	u	28	sʏltan
+Sümeyye	f	28	swʏmeɪ̯iiə
+Celeste	f	28	selɛstə
+Christ	m	28	krɪst
+Cagri	m	28	kaɡrɪ
+Bastian	m	28	bɑstijɑn
+Jenna	f	28	dʒɛna
+Jasmine	f	28	əxjasmɪnə
+Goos	m	28	ɣos
+Hilko	m	28	hɑjlkɔ
+Hamit	m	28	hamit
+Margareth	f	28	mɑrɣarət
+Mimi	f	28	mimi
+Mauro	m	28	mɑuro
+Annemijn	f	28	ɑnəmɛɪn
+Antónia	f	28	antnija
+Aysun	f	28	esyn
+Alessio	m	28	alɛsijo
+Arvid	m	28	arvɪtn
+Arja	f	28	arja
+Renato	m	28	renato
+Pernille	f	28	pɛrnilə
+Pavel	m	27	pɑvəl
+Necati	m	27	nəkɑtɑj
+Remzi	m	27	rɛmzɪ
+Renze	m	27	rənzɛ
+Radboud	m	27	rədbɑut
+Banu	f	27	bɑnu
+Barbera	f	27	bɑrbera
+Berke	m	27	bɛrkə
+Bernie	m	27	bərni
+Brigitta	f	27	brixɪta
+Kas	m	27	kɑs
+Joppe	m	27	jɔpə
+Louisa	f	27	loœysa
+Laurence	u	27	lɑurəns
+Sylvie	f	27	sɪlvi
+Yolande	f	27	ijolɑndə
+Vivienne	f	27	vievieɛnə
+Tibor	m	27	tjbɔr
+Fikret	m	27	fikrət
+Freerk	m	27	friːrᵊk
+Dini	f	27	dinij
+Eleonora	f	27	elejonora
+Dorothé	f	27	dɔroʊ̯the
+Dorus	m	27	dɔruws
+Douglas	m	27	duɣlɑs
+Farid	m	27	farid
+Ernesto	m	27	ərnɛstɔ
+Gabi	f	27	ɣabɪ
+Giacomo	m	27	xijaseomo
+Gera	f	27	ɡera
+Stéphane	m	27	sephɑnə
+Selahattin	m	27	selɑhɛtɪn
+Serpil	f	27	sɛrpɪl
+Sieger	m	27	siɣər
+Shane	m	27	shɑnə
+Romano	m	27	romɑ̃o
+Samy	m	27	samij
+Saleh	m	27	saləh
+Sissy	f	27	zɪsi
+Silvana	f	27	silvɑnɑ
+Alev	f	27	alev
+Almar	m	27	ɑlmɑr
+Álvaro	m	27	lvarɔ
+Angelina	f	27	ɑŋɛlina
+Atakan	m	27	atakan
+Abdel	m	27	abdəl
+Amar	m	27	amar
+Gürkan	m	27	xwʏrkan
+Hamed	m	27	hamet
+Jacko	m	27	dʒɛkɔ
+Jente	u	27	jənt
+Jasmin	u	27	əxjasmɪn
+Ido	m	27	idɔ
+Gitte	f	27	xɪtə
+Gözde	f	27	xwozdə
+Giovanna	f	27	xijovɑna
+Gido	m	27	dʒidɔ
+Henriet	f	27	hɛnrit
+Hiske	f	27	hɪskə
+Müslüm	m	27	mwʏslwʏm
+Mirthe	f	27	mɪrtej
+Marin	u	27	marin
+Marcelle	f	27	mɑrsɛlə
+Lysanne	f	26	lisɑnə
+Marilyn	f	26	marɪlɪŋ
+Marinka	f	26	marɪŋka
+Marianna	f	26	marijanna
+Mano	m	26	mɛ­n
+Marwan	m	26	mɑrwan
+Mateusz	m	26	matøsz
+Elina	f	26	əlina
+Franco	m	26	frɑŋko
+Dicky	u	26	dɪki
+Dieuwertje	f	26	diwərcə
+Dino	m	26	dino
+Enver	m	26	ənvər
+Dóra	f	26	dra
+Domenico	m	26	dɔməniko
+Lisan	f	26	lizɑn
+Jurian	m	26	ʒyrijɑn
+Jurrian	m	26	jʏrᵊrijɑn
+Pier	m	26	piːr
+Rense	m	26	rɛnsə
+Okke	m	26	ɔkə
+Cléo	f	26	kleo
+Cihat	m	26	sihɑt
+Talha	m	26	tɑlhɑ
+Tatjana	f	26	tatjanaʔ
+Tabitha	f	26	tabithɑ
+Welmoed	f	26	ʋɛɫmut
+Virgínia	f	26	vɑjrᵊxnija
+Jesús	m	26	dʒɛss
+Hagar	f	26	haɡɑr
+Hakki	m	26	hɑki
+Harvey	m	26	hɑrveɪ̯i
+Hannes	m	26	hɑnəs
+Jacquelien	f	26	rtəxfrkəlin
+Gülay	f	26	xwʏle
+Gisela	f	26	ɣɪsəlɑ
+Janke	f	26	jankə
+Jantje	f	26	jɑɲcə
+Jamal	m	26	jamal
+Ilknur	f	26	ɪlknʏːr
+Suzanna	f	26	syzɑna
+Suzy	f	26	sywzi
+Sunny	u	26	sywni
+Sébastien	m	26	zebɑstin
+Selami	m	26	səlami
+Serap	f	26	serap
+Savasj	m	26	savɑʃ
+Sari	f	26	sarɪ
+Rosan	f	26	rozɑn
+Ritchie	m	26	ritʃi
+Angeline	f	26	ɑŋɛlɑjn
+Anko	m	26	ɑŋkɔ
+Antal	m	26	ɑntɑl
+Annemie	f	26	ɑnemi
+Annerieke	f	26	ɑnərikə
+Anika	f	26	anikɑ
+Ariana	f	26	arijana
+Alfonso	m	26	ɑlfɔnzɔ
+Alec	m	26	alɛk
+Ayca	f	26	eke
+Adham	m	26	adehaɑm
+Akin	m	25	akɪn
+Annelieke	f	25	ɑnəlikə
+Annelien	f	25	ɑnəlin
+Aynur	f	25	enywr
+Bernardo	m	25	bɛrnɑrto
+Belal	m	25	bəlɑl
+Brad	m	25	brad
+Bora	m	25	bora
+Jorine	f	25	jɔrinə
+Johanneke	f	25	jɔhɑnəkə
+Kasim	m	25	kɑsɪm
+Kristin	f	25	krɪstɪn
+Lidewij	f	25	lɑjtwɛi
+Lidwien	f	25	lɪtwin
+Lili	f	25	lili
+Lilly	f	25	lɪli
+Nabil	m	25	nabɪl
+Luka	u	25	lʏka
+Meltem	f	25	məltɛm
+Meral	f	25	məral
+Fahri	m	25	fari
+Flora	f	25	florɑ
+Gaetano	m	25	xaətano
+Georgette	f	25	χejɔrχətə
+Dyon	m	25	diɔn
+Donia	f	25	donija
+Donovan	m	25	dɔnovan
+Enno	m	25	əno
+Emília	f	25	əmlija
+Emilio	m	25	əmilijo
+Ergün	m	25	ɛrᵊɣjyn
+Orlando	m	25	ɔrlɑndo
+Rawan	f	25	rawɑn
+Quinty	f	25	kinti
+Safa	u	25	sɑfa
+Rineke	f	25	rinəkə
+Servet	m	25	sɛrvɛt
+Sezgin	m	25	səzɡin
+Yildiz	f	25	ijɪldɑjz
+Winny	f	25	wɪni
+Hakim	m	25	hɑkim
+Haydar	m	25	haidar
+Jeffry	m	25	dʒɛfrɑj
+Jelly	f	25	dʒɛli
+Jeppe	m	25	jəpə
+Jannick	m	25	jɑnɪk
+Jantina	f	25	jɑntina
+Ismael	m	25	ɪsmɑəl
+Ivana	f	25	ivana
+Jaap-Jan	m	25	rtinjaprtəxn
+Gilles	m	25	xɪləs
+Gillian	u	25	xɪliən
+Gio	m	24	ɣɪjo
+Gianni	m	24	dʒiɑni
+Imán	u	24	ɪmn
+Jikke	u	24	dʒɪkə
+Jakub	m	24	jakʏp
+Gavin	m	24	χavin
+Geertjan	m	24	ɣercɑn
+Gerko	m	24	ɣərkɔ
+Famke	f	24	famkə
+Derk-Jan	m	24	dərkjan
+Dési	f	24	desɪ
+Desmond	m	24	dɛsmɔnt
+Eliane	f	24	elijanə
+Eltjo	m	24	əlcɔ
+Dwight	m	24	twɪxht
+Leandro	m	24	lɛɑntro
+Jojanneke	f	24	dʒɔjɑnəkə
+Kick	m	24	kɪk
+Konrád	m	24	keʔonrt
+Kristen	f	24	krɪstən
+Kaya	u	24	kaja
+Katherine	f	24	katerinə
+Abdulrahman	m	24	ɑbdywlrɑhmɑn
+Alfredo	m	24	alfrədo
+Aurora	f	24	ɑurora
+Bahadir	m	24	bahadir
+Cameron	u	24	kamərɔn
+Basma	f	24	bɑsma
+Béatrice	f	24	beatrisə
+Berat	m	24	bərɑt
+Belle	f	24	bɛlə
+Bradley	m	24	bratləi
+Mel	u	24	məl
+Mevlüt	m	24	meɪ̯vlwʏt
+Martje	f	24	mɑrcə
+Misja	u	24	miʃa
+Mikail	m	24	mjkajl
+Marlieke	f	24	mɑrlikə
+Majid	m	24	maʒɪt
+Wander	m	24	wɑndər
+Yaren	f	24	jarən
+Norma	f	24	nɔrma
+Sanna	f	24	sɑna
+Sahin	m	24	sahin
+Saar	f	24	sar
+Shelley	f	24	ʃɛli
+Rikke	f	24	rɪkə
+Riza	m	23	ɛritsa
+Robyn	f	23	robɑjn
+Romee	f	23	rome
+Sake	m	23	sake
+Sjaban	m	23	ʃabɑn
+Silvie	f	23	silvi
+Stefanía	f	23	səfaɛna
+Seher	f	23	sehaər
+Semra	f	23	seɛmrɑ
+Bünyamin	m	23	bjynajamin
+Christianne	f	23	xrɪstijɑnə
+Cheyenne	f	23	ʃajɛn
+Bilge	f	23	bɪltʃ
+César	m	23	sesɑr
+Kader	u	23	kadər
+Jurrie	m	23	jyri
+Jóna	u	23	jna
+Lieve	f	23	livə
+Lawrence	m	23	lɔːrɛnsə
+Leah	f	23	liːh
+Laurien	f	23	lɑurin
+Lennaert	m	23	lənɑərt
+Kjell	m	23	kjəl
+Klaus	m	23	klɑus
+Koray	m	23	kore
+Janette	f	23	əxjanətə
+Holly	f	23	hɔli
+Jildou	f	23	jɪldu
+Güven	m	23	xwʏvən
+Hala	f	23	halɑ
+Jacolien	f	23	jakɔlin
+Ingo	m	23	ɪŋɡo
+Dogukan	m	23	dɔɣy­kɑn
+Dominik	m	23	dominik
+Fedor	m	23	fədɔr
+Erno	m	23	ərnɔ
+Frida	f	23	frida
+Floyd	m	23	flwɑt
+Francoise	f	23	frɑŋkoizə
+Diede	u	23	didə
+August	m	23	ɔuɣʏst
+Ayten	f	23	etən
+Agnieszka	f	23	ɑɲiszka
+Akram	m	23	akrɑm
+April	f	23	ɑprɪl
+Aranka	f	23	araŋka
+Annabelle	f	23	ɑnabɛlə
+Alison	f	23	alɪsɔn
+Aleksandra	f	23	aləksɑntrɑ
+Rieks	m	23	riks
+Riemer	m	23	rimər
+Rasha	f	23	rashɑ
+Manal	f	23	mɛnəl
+Louk	m	23	lɑuk
+Mabel	f	23	mabəl
+Marck	m	23	mark
+Marika	f	23	marika
+Muhamed	m	23	mjuːhamed
+Mikel	m	23	mɪkəl
+Trijnie	f	23	trɛɪ̯ni
+Udo	m	23	ywdoʊ̯
+Vittorio	m	23	viettorijo
+Wytske	f	23	wajtskə
+Sylvester	m	23	sɪlvəstər
+Ype	m	23	ipə
+Wafaa	f	22	wafa
+Winfried	m	22	wɪnfrit
+Whitney	f	22	wehaitni
+Valerio	m	22	vɑlərijo
+Turgut	m	22	tʏrᵊɣy­t
+Tirza	f	22	tirzɑ
+Sybrand	m	22	sibrɑnt
+Dian	f	22	dijən
+Emrullah	m	22	eɛmɛrywlah
+Emirhan	m	22	emirhɑn
+Faisal	m	22	fɛsɑl
+Evren	m	22	əvrən
+Frederieke	f	22	fredərikə
+Geesje	f	22	ɣeʃə
+Geeske	f	22	ɣeskə
+Gábor	m	22	ɣbr
+Ehsan	m	22	ehaʔɛɑn
+Ela	f	22	əla
+Elza	f	22	əlzɑ
+Klaasjan	m	22	klaʃan
+Laëtitia	f	22	la­jetɪtija
+Lionel	m	22	lijonɛl
+Lorena	f	22	lorɛna
+Lloyd	m	22	llwɑt
+Joske	f	22	jɔskə
+Juliet	f	22	jylit
+Joery	m	22	jurɑj
+Jorieke	f	22	jɔrikə
+Kerstin	f	22	kɛrstin
+Leoni	f	22	lejoni
+Karolína	f	22	kaʔroʊ̯lna
+Selman	m	22	səlmɑn
+Santiago	m	22	sɑntiʔɑxo
+Sanneke	f	22	sɑnəkə
+Rikkert	m	22	rɪkərt
+Riley	u	22	rijli
+Romke	m	22	rɔmkə
+Ryanne	f	22	riɑnə
+Silvan	m	22	silvɑn
+Sijmen	m	22	sɛimən
+Betsy	f	22	bətsi
+Christoph	m	22	xrɪstɔph
+Glória	f	22	xlrija
+Gladys	f	22	ɣlɑtis
+Jaron	m	22	njarɔn
+Imran	u	22	imran
+Ike	u	22	ɑjk
+Ilayda	f	22	ɪledɑ
+Gustavo	m	22	ɣʏstavɔ
+Halim	m	22	halɪm
+Hajo	m	22	hajɔ
+Hayat	f	22	hajat
+Hedy	f	22	hɛiti
+Hicham	m	22	haiʃɑm
+Hillie	f	22	hɪli
+Jilles	m	22	dʒiləs
+Jelke	u	22	jəlkə
+Jeske	f	22	jəskə
+Molly	f	22	mɔli
+Micky	u	22	mɪki
+Melody	f	22	mɛloʊ̯di
+Maha	f	22	maha
+Mattia	m	22	mɑtɑje
+Mattie	f	22	mɑti
+Masha	f	22	maʃɑ
+Nadir	m	22	nadɪr
+Myron	u	22	mɪrɔn
+Lucinda	f	22	lysinda
+Ludwig	m	22	lʏwəx
+Marcos	m	22	mɑrkos
+Abigail	f	22	abiɣaɪl
+Arend-Jan	m	22	arenjɑn
+Asma	f	22	ɑsma
+Quirijn	m	22	kirɛin
+Richelle	f	22	rɪxɛlə
+Nuno	m	22	nʏno
+Nuray	f	22	nywre
+Nurcan	f	22	nʏːrkɑn
+Philipp	m	22	filɪp
+Niklas	m	22	nɪklɑs
+Niko	m	22	nikɔ
+Noemí	f	22	num
+Nanna	f	22	nɑna
+Nasser	m	22	nɑsər
+Nedim	m	21	nedim
+Reint	m	21	rɛɪnt
+Remo	m	21	rəmo
+Quentin	m	21	kwɛnsin
+Quint	m	21	kɛ̃t
+Nermin	u	21	nɛrmin
+Nikkie	f	21	nɪki
+Nikolai	m	21	nikɔlɛː
+Nikolaj	m	21	nɪkolɑj
+Bonny	f	21	bɔni
+Brett	m	21	brɛt
+Dafne	f	21	tɑfne
+Carole	f	21	karɔlə
+Danilo	m	21	danijlo
+Dawn	f	21	dɑwn
+Clément	m	21	klemɛnt
+Katharina	f	21	kɑthɑrina
+Kamiel	m	21	kɑmil
+Kursjat	m	21	kyrʃɑt
+Klaartje	f	21	klarcə
+Lori	f	21	lori
+Lize	f	21	lɑjs
+Logan	m	21	loɣɑn
+Lone	f	21	lonə
+Jochen	m	21	dʒɔʃən
+Jonny	m	21	dʒɔni
+Jonna	f	21	jɔna
+Jordie	m	21	jɔrdi
+Kilián	m	21	kaʔilɑjn
+Kirsty	f	21	kaʔirstɑj
+Yassin	m	21	iɑsin
+Wicher	m	21	wɪxər
+Wilhelm	m	21	wɪlhɛlᵊm
+Wayne	m	21	wajnə
+Wes	m	21	wɛs
+Verónika	f	21	veɪ̯rnɪka
+Víc	m	21	vse
+Tea	f	21	tiː
+Elco	m	21	əlko
+Dorothy	f	21	dɔroʊ̯ti
+Edmond	m	21	edmɔnt
+Dinie	f	21	dini
+Ditte	f	21	dɪtə
+Demy	u	21	dəmi
+Ethan	m	21	etɑn
+Eppo	m	21	epepeʔo
+Georg	m	21	χejɔrχ
+Frouke	f	21	frukə
+Gabe	m	21	ɣɑbə
+Fares	m	21	farəs
+Fenne	f	21	fɛnə
+Shanna	f	21	ʃɑna
+Rosário	m	21	rosrijo
+Selda	f	21	sɛlda
+Samer	m	21	samər
+Rune	m	21	rynə
+Rowin	m	21	rowɪn
+Sue	f	21	sʏə
+Stein	m	21	stɛin
+Aram	m	21	arɑm
+Allison	f	21	ɑlisɔn
+Aileen	f	21	elen
+Adinda	f	21	adɪnda
+Aaltje	f	21	alcə
+Aschwin	m	21	ɑsxwɪn
+Jetze	m	21	jɛtse
+Jan-Joost	m	21	jɑɱjost
+Jared	m	21	jarəd
+Jacobien	f	21	əxjakobin
+Gökce	f	21	xwoksə
+Glen	m	21	xlən
+Hayrettin	m	21	hairəttin
+Henrie	m	21	hɛnri
+Hermen	m	21	hɛrmən
+Indra	u	21	ɪndra
+Marie-Claire	f	21	mɑriklɛːrə
+Manu	u	21	many
+Mine	f	21	minə
+Mirna	f	21	mirna
+Memet	m	21	miːmt
+Metehan	m	21	metejhɑn
+Luísa	f	21	lywsa
+Lyanne	f	21	liɑnə
+Matty	u	21	mattɑj
+Mutlu	m	21	mjuːtlʏ
+Myrte	f	21	mɪrtə
+Moon	f	20	mon
+Marjoleine	f	20	mɑrʒulɛinə
+Mies	f	20	mis
+Ferdie	m	20	fərdi
+Ferit	m	20	fərɪt
+Demir	m	20	demir
+Elleke	f	20	ɛləkə
+Farida	f	20	farida
+Georgina	f	20	xəɔrɣina
+Gerdine	f	20	ɣərdinə
+Katy	f	20	kɑtɑj
+Katerina	f	20	kɑtərina
+Karima	f	20	kaːrima
+Keimpe	m	20	kɛɪmpə
+Juliana	f	20	jylijana
+Júlio	m	20	dʒlijo
+Juanita	f	20	jyanita
+Jocelyn	f	20	dʒosɛlɪŋ
+Pietje	f	20	picə
+Phillip	m	20	pehailɪp
+Polat	m	20	polɑt
+Riekelt	m	20	rikəlt
+Rex	m	20	rɛks
+Reyhan	f	20	rejihɑn
+Noura	f	20	nura
+Orkun	m	20	ɔrkʌn
+Quirine	f	20	kirinə
+Niall	m	20	nijɑl
+Nicolaas	m	20	nikolas
+Nikola	u	20	nɪkola
+Ceylan	u	20	sɛɪlɑn
+Chad	m	20	xad
+Charlène	f	20	xarljɛnə
+Cemre	f	20	sɛmrə
+Celina	f	20	sɛlina
+Bouwe	m	20	bɔuə
+Daniek	f	20	danik
+Crystal	f	20	kristɑl
+Courtney	f	20	kurtni
+Caleb	m	20	kalɛb
+Bruna	f	20	brʏna
+Bugra	m	20	buɣra
+Clint	m	20	klɪnt
+Cody	m	20	sejodi
+Ziya	m	20	tsija
+Trix	f	20	trɪks
+Trijntje	f	20	trɛiɲcə
+Yoni	u	20	ijoni
+Warner	m	20	ʋɑrnər
+Theun	m	20	thøn
+Tessel	f	20	tɛsəl
+Harmke	f	20	hɑrmkə
+Hadi	m	20	hadi
+Irmgard	f	20	irmxart
+Jeen	m	20	jen
+Jelena	f	20	jələna
+Jamila	f	20	əxjamila
+Jannette	f	20	jɑnətə
+Inci	f	20	ɪnsi
+Görkem	m	20	xworkɛm
+Hermine	f	20	hɛrmɑjn
+Henrico	m	20	hɛnrijko
+Hilbrand	m	20	hilbrɑnt
+Hjalmar	m	20	hjalᵊmɑr
+Sjule	f	20	sjylə
+Siep	m	20	sip
+Rishi	m	20	rɪshɑj
+Roosmarijn	f	20	roːsmarɛin
+Roelien	f	20	roəlin
+Rudolph	m	20	ruwdɔlph
+Rowdy	m	20	roʊ̯wdi
+Artur	m	20	ɑrtyr
+Arent	m	20	arənt
+Alexandre	m	20	alɛksɑntrə
+Alisa	f	20	alɪsɑ
+Allé	m	20	ɑle
+Alejandra	f	20	aləjandra
+Alieke	f	20	alikə
+Alien	f	20	elijən
+Antwan	m	20	ɑntwɑn
+Baki	m	20	bɑkɑj
+Anand	m	20	ɑnɑnt
+Amer	m	20	amər
+Andrej	m	20	ɑntrejj
+Aïda	f	20	aidɑ
+Alba	f	20	ɑlba
+Asha	f	19	ɑʃa
+Ari	m	19	arɪ
+Arina	f	19	arina
+Aris	m	19	arɪs
+Alparslan	m	19	ɑlpɑrslɑn
+Alé	m	19	ale
+Anderson	m	19	ɑndərson
+Aart-Jan	m	19	artbɑjɑn
+Coert	m	19	koərt
+Claartje	f	19	klarcə
+Clarissa	f	19	klarɪsa
+Christie	f	19	xrɪsti
+Brecht	u	19	brɛxt
+Bernadet	f	19	bɛrnɑdət
+Carry	f	19	kɛri
+Charly	u	19	ʃɑrlɑj
+Chanel	f	19	xanəl
+Conrad	m	19	kɔnrɑt
+Cristel	f	19	kriztəl
+Cafer	m	19	kɑfər
+Karine	f	19	kɑrinə
+Kirstin	f	19	kaʔirstin
+Kristiaan	m	19	krɪstijan
+Klára	f	19	klra
+Liselore	f	19	lɑjsələrə
+Lin	u	19	lin
+Line	f	19	lɑjn
+Lotje	f	19	lɔcə
+Jorinde	f	19	dʒorində
+Josefien	f	19	jɔsəfin
+Joni	u	19	jɔnij
+Maddy	f	19	madedei
+Madelief	f	19	madəlief
+Maciej	m	19	masij
+Marcha	f	19	mɑrʃa
+Marek	m	19	marɛk
+Muammer	m	19	mʏɑmər
+Mounir	m	19	munir
+Mirac	m	19	mires
+Melina	f	19	mɛlina
+Micheal	m	19	miʃəʔɑl
+Miel	m	19	mil
+Germaine	u	19	ɣərmɑjnɛ
+Eleanor	f	19	eləʔɑnɔr
+Fernanda	f	19	fərnɑnda
+Dirkje	f	19	dɪrᵊkjə
+Dita	f	19	djta
+Dieke	f	19	dikə
+Devon	u	19	devon
+Estelle	f	19	əstɛlə
+Doortje	f	19	dorcə
+Ewa	f	19	əwa
+Feiko	m	19	fɛi̯kow
+Nesrin	f	19	neɪ̯srɪn
+Neal	m	19	nejal
+Rieke	f	19	rikə
+Riette	f	19	ritə
+Olof	m	19	ɔlɔf
+Siska	f	19	zɪskɑ
+Suzette	f	19	sywzɛtə
+Seyit	m	19	siit
+Sezer	m	19	səzər
+Rohan	m	19	rohɑn
+Rinse	m	19	rɪnsə
+Rosemarie	f	19	rosəmɑri
+Rümeysa	f	19	rwʏmeɪ̯isa
+Teddy	u	19	tɛdi
+Yaser	m	19	jasər
+Youp	m	19	jup
+Zekeriya	m	19	zəkerija
+Ünal	m	19	jynɑl
+Tugrul	m	19	tʏkrʏl
+Tülay	f	19	twʏle
+Troy	m	19	trɔj
+Valentín	m	19	valəntn
+Vildan	f	19	vɪldɛn
+Thecla	f	19	tejkla
+Hikmet	m	19	hɪkmɛt
+Hilmi	m	19	hɪlmij
+Jette	f	19	jɛtə
+Jellie	f	19	dʒɛli
+Gigi	f	19	xɪdʒi
+Gonda	f	19	ɣɔnda
+Hüda	f	19	hwʏda
+Ijsbrand	m	19	ɛizbrɑnt
+Humphrey	m	18	hʏmphreji
+Hamdi	u	18	hɑmdi
+Hilke	f	18	hɪlkə
+Jeannine	f	18	dʒinninə
+Jhon	m	18	jehaɔn
+Jitse	m	18	dʒitsə
+Jair	m	18	dʒer
+Godfried	m	18	ɣɔtfrit
+Gönül	f	18	xwonwʏl
+Fabiana	f	18	fabijana
+Fabrizio	m	18	fabrizijo
+Evie	f	18	əvi
+Femmy	f	18	fɛmi
+Fien	f	18	fiən
+Foppe	m	18	fɔpə
+Gaia	f	18	xaija
+Elianne	f	18	əliɑnə
+Emanuel	m	18	əmanyəl
+Eke	f	18	əkə
+Elja	f	18	əlja
+Denice	f	18	tɛnikə
+Django	m	18	djanxo
+Dinant	m	18	dinɑnt
+Eser	m	18	əsər
+Errol	m	18	ərrol
+Jorden	m	18	jɔrdən
+Katarína	f	18	kɑtɑɛrɛna
+Kayla	f	18	kajla
+Karolien	f	18	kɑrolin
+Kristine	f	18	krijstinə
+Lokman	m	18	lɔkmæn
+Abd	m	18	abt
+Abraham	m	18	abrahɑm
+Asiye	f	18	ɑsɪiə
+Aswin	m	18	ɑswɪn
+Arwa	f	18	arwa
+Ashwin	m	18	ɑshwɪn
+Angèle	f	18	anɣɛlə
+Anne-Mieke	f	18	ɑnəʔmikə
+Babet	f	18	bept
+Azra	f	18	azra
+Ayfer	f	18	efər
+Aleid	f	18	alɛɪt
+Amélia	f	18	amelija
+Anco	m	18	ɑnkɔ
+Buket	f	18	bʏkət
+Brittany	f	18	brɪttɑnaj
+Berdien	f	18	bərdin
+Bertha	f	18	bərthɑ
+Bertram	m	18	bɛrtrɑm
+Christiane	f	18	xrɪstijanə
+Cristiano	m	18	krɪstijano
+Damir	m	18	damɪr
+Cyriel	m	18	siril
+Cyrille	u	18	sirijə
+Daantje	f	18	dancə
+Ceyda	f	18	kəida
+Dawid	m	18	dɑwid
+Dejan	m	18	deʒɑn
+Mason	m	18	mason
+Mayra	f	18	mera
+Mark-Jan	m	18	mɑrkjan
+Mariano	m	18	marijanɔ
+Marguerite	f	18	mɑrᵊɣyweritə
+Minne	u	18	mɪnə
+Thera	f	18	tera
+Thessa	f	18	tesaː
+Tjebbe	m	18	cebə
+Tjeu	m	18	tjø
+Zeinab	f	18	zɛinab
+Taeke	m	18	taəkə
+Sybe	m	18	sibə
+Wytse	m	18	wajtsə
+Tracy	f	18	trasi
+Tuba	f	18	tyba
+Torben	m	18	tɔrbən
+Vita	f	18	vjta
+Vito	m	18	vijto
+Nova	f	18	nova
+Pieter-Bas	m	18	pitɛrbɑs
+Nazim	m	18	nazim
+Paulette	f	18	pɑulɛtə
+Patrice	u	18	patrisə
+Raf	m	18	rɑf
+Rami	m	18	rami
+Russell	m	18	rʏsəll
+Storm	m	18	stɔrᵊm
+Stuart	m	18	stywart
+Swen	m	18	swən
+Sina	u	18	sina
+Sita	f	18	sita
+Siemen	m	18	simən
+Sila	f	18	sɪlɑ
+Rolien	f	18	rolin
+Rilana	f	18	rijlɑnaʔ
+Sevim	f	18	sevɪm
+Sana	f	18	sana
+Savannah	f	18	savɑna
+Silvester	m	17	sɑjlvəstər
+Roza	f	17	rozɑ
+Sümeyra	f	17	swʏmeɪ̯ira
+Stevie	u	17	stevi
+Su	f	17	sʏ
+Roemer	m	17	rumər
+Roméo	m	17	romeo
+Rino	m	17	rino
+Rocky	m	17	rɔki
+Rosanna	f	17	rosɑna
+Rosie	f	17	rozi
+Demet	f	17	dəmɛt
+Demian	m	17	demijɑn
+Ceciel	f	17	kəsiəl
+Carolyn	f	17	karolin
+Cosjkun	m	17	koʃkʌn
+Lizet	f	17	lɑjst
+Jorne	m	17	jɔrnə
+Jonah	m	17	dʒɔŋah
+Joline	f	17	jɔlɑjn
+Kristy	f	17	krɪstij
+Karlien	f	17	kɑrlin
+Karam	m	17	karɑm
+Kathryn	f	17	katrijn
+Katia	f	17	katsija
+Katarzyna	f	17	kɑtɑrzina
+Giny	f	17	ɣɪnaj
+Hayo	m	17	haijo
+Hazal	f	17	hazɑɫ
+Gwendolyn	f	17	xʋɛndolijn
+Hacer	f	17	hɑsɛr
+Hamid	m	17	hɑmɪt
+Haico	m	17	hɑjko
+Ira	f	17	ira
+Jackson	m	17	dʒɛksɔn
+Jenne	m	17	dʒɛnə
+Jermaine	m	17	jermɑjnɛ
+Jayden	m	17	dʒedən
+Emmie	f	17	ɛmi
+Gerke	m	17	ɣərkə
+Gerlinde	f	17	xərlɪndə
+Funda	f	17	fʏnda
+Franz	m	17	frɑnz
+Florien	f	17	floriən
+Fennie	f	17	fənni
+Fransje	f	17	frɑnʃə
+Fevzi	m	17	fəvzɪ
+Didem	f	17	didəm
+Elham	f	17	əlhɑm
+Elien	f	17	əlin
+Doede	m	17	dudə
+Doeke	m	17	dukə
+Doha	f	17	dohɑ
+Dorothée	f	17	dɔroʊ̯theə
+Doreen	f	17	dɔren
+Amarins	f	17	amarɪns
+Aernout	m	17	aərnɑut
+Abbas	m	17	ɑbɑs
+Arienne	f	17	arijɛnə
+Alican	m	17	alikan
+Alvin	m	17	ɑlvɪn
+Annemarieke	f	17	ɑnəmɑrikə
+Badr	m	17	bɑtr
+Atze	m	17	ɑtsə
+Rakesh	m	17	rakɛsh
+Rahul	m	17	rahʏl
+Nena	f	17	nəna
+Nikos	m	17	nikɔs
+Nicki	f	17	nɪkj
+Omid	m	17	jomɪt
+Olcay	m	17	ɔlkai
+Nout	m	17	nɑut
+Paco	m	17	pɑkɔ
+Nan	f	17	nɑn
+Rembrandt	m	17	rɛmbrɑnt
+Renaldo	m	17	rejnɑldo
+Reginald	m	17	reʒinalt
+Mechteld	f	17	məxtəlt
+Melchior	m	17	məlxiɔr
+Meriam	f	17	mɛrijam
+Madison	f	17	madisɔn
+Marry	f	17	mɑri
+Milton	m	17	miltɔn
+Margarita	f	17	mɑrɡarita
+Marciano	m	17	mɑrsijano
+Marija	f	17	marɛijɑ
+Maris	m	17	marɪs
+Marisca	f	17	marɪska
+Marjoke	f	17	mɑrdʒokə
+Marlie	f	17	mɑrli
+Mans	m	17	mɑns
+Tahsin	m	17	tahsɪn
+Sydney	u	17	sitnəi
+Zakaria	m	17	zɑkaːria
+Yoram	m	17	ijorɑm
+Yme	m	17	ɑjm
+Travis	m	17	travɪs
+Tülin	f	17	twʏlin
+Wybren	m	17	wajbrən
+Wendel	u	16	wɛndəl
+Walther	m	16	wɑlthɛr
+Wilmar	m	16	wɪlmɑr
+Wolf	m	16	wɔlᵊf
+Tevfik	m	16	tevfɑjk
+Terra	f	16	tɛra
+Sytske	f	16	sitskə
+Valesca	f	16	valɛska
+Yaël	u	16	ijael
+Tygo	m	16	tixo
+Dunja	f	16	dʏnja
+Enis	m	16	ənɪs
+Geerten	m	16	ɣəərtən
+Figen	f	16	fiχən
+Freya	f	16	frəja
+Flávia	f	16	flvija
+Frankie	m	16	frɑŋki
+Franke	m	16	frɑŋkə
+Fokje	f	16	fɔkjə
+Dimitry	m	16	dimitrɑj
+Dilan	u	16	dijlɑn
+Desley	u	16	dɛsli
+Jolie	f	16	jɔli
+Jochum	m	16	dʒɔxʏm
+Lorraine	f	16	lɔrrenə
+Lizanne	f	16	lizɑnɛ
+Loet	m	16	luːt
+Liliane	f	16	lɑjlijanə
+Lei	m	16	lɛi
+Kaspar	m	16	kɑspɑr
+Katrin	f	16	kɑtrin
+Khalil	m	16	khalɪl
+Kubilay	m	16	kʏbɑjle
+Kylie	f	16	kili
+Lale	f	16	lalə
+Rosalinde	f	16	rosalɪndə
+Roelant	m	16	rulɑnt
+Rinaldo	m	16	rinɑldo
+Rui	m	16	rœy
+Safaa	f	16	sɑfa
+Sanja	f	16	sɑnja
+Sanny	f	16	sɑɲ
+Salwa	f	16	sɑlwa
+Silvio	m	16	silvijo
+Shanice	f	16	shɑnikə
+Shari	f	16	ʃɑri
+Steffanie	f	16	stɛfɑni
+Steffi	f	16	stɛfi
+Sedef	f	16	sədef
+Seb	m	16	sebe
+Cornel	m	16	kɔrnɛl
+Constant	m	16	kɔnstɑnt
+Candy	f	16	kɛndi
+Caren	f	16	kɑrən
+Defne	f	16	defnɛ
+Deirdre	f	16	derdrə
+Darryl	m	16	dɑril
+Branko	m	16	brɑŋkɔ
+Birol	m	16	bɪrol
+Benoit	m	16	bənɔjt
+Bettie	f	16	bɛti
+Chantalle	f	16	xantɑlə
+Jazz	u	16	dʒɛːs
+Janko	m	16	dʒɑŋkɔ
+Janno	m	16	jɑno
+Janou	f	16	janu
+Jarmo	m	16	əxjarmo
+Inga	f	16	ɪŋga
+Guillermo	m	16	xœyjərmo
+Heike	f	16	hɛikə
+Héctor	m	16	ejktɔr
+Helmi	f	16	hɛlmi
+Havva	f	16	havvɑ
+Hiltje	f	16	hɪlcə
+Jefta	m	16	jəftɑ
+Jeltje	f	16	jəlcə
+Jimi	m	16	dʒimi
+Jiri	m	16	dʒiri
+Hannelore	f	16	hɑnələrə
+Habib	m	16	habib
+Harmjan	m	16	hɑrᵊmjɑn
+Isis	f	16	izɪs
+Ivette	f	16	jvɛtə
+Malik	m	16	malɪk
+Mahdi	m	16	mahdj
+Maura	f	16	mʌʊ̯ra
+Massimiliano	m	16	mɑsimilijano
+Maykel	m	16	mekəl
+Maximilian	m	16	mɑksimilijɑn
+Merlin	u	16	mərlin
+Meine	m	16	mɛinə
+Lynda	f	16	lɑjnda
+Mariem	f	16	mɑrim
+Marino	m	16	marino
+Murad	m	16	mʏrad
+Nadieh	f	16	nadih
+Mirelle	f	16	mirələ
+Attila	m	16	ɑtɪlɑ
+Ava	f	16	ava
+Aalt	m	16	alt
+Albertine	f	16	albərtinə
+Anoeska	f	16	anuskɑ
+Antony	m	16	ɑntoni
+Angelien	f	16	ɑŋɣelin
+Anouck	f	16	anusk
+Ary	m	16	arɑj
+Arianna	f	16	arijɑna
+Alexa	f	16	alɛksa
+Richie	m	16	rɪxi
+Rieneke	f	16	rinəkə
+Rients	m	16	rints
+Resi	f	16	rezi
+Régine	f	16	reɣɪnə
+Numan	m	16	nymɑn
+Nisa	f	16	nɪsa
+Nikky	u	16	nɪkkij
+Nevzat	m	16	nevzat
+Nicolet	f	16	nikolɛt
+Nieke	f	16	nikə
+Niké	f	16	nɪke
+Naz	f	16	nats
+Naïm	m	16	naim
+Pepe	m	16	pɛpə
+Petrus	m	16	petrʏs
+Paddy	m	16	pɑdi
+Patryk	m	16	patrɑjk
+Raísa	f	15	rɑsa
+Remke	f	15	rɛmkə
+Remmelt	m	15	rɛməlt
+Rifat	m	15	rɪfat
+Reno	m	15	rənɔ
+Nordin	m	15	nɔrdin
+Petar	m	15	pətɑr
+Penny	f	15	pɛni
+Nihal	f	15	nihɑɫ
+Nilay	f	15	nijle
+Necmettin	m	15	nətʃmɛtin
+Charlot	f	15	xarlɔt
+Chayenne	f	15	xajɛnə
+Cato	f	15	kato
+Deejay	m	15	dejai
+Conchita	f	15	kɔŋxita
+Constantijn	m	15	kɔnstɑntɛin
+Burcin	f	15	bʏrsin
+Bartjan	m	15	bɑːrdʒɑn
+Benthe	f	15	bɛnte
+Krishna	m	15	krijshna
+Liliana	f	15	lɑjlijana
+Liselot	f	15	lɑjsəlɔt
+Joos	m	15	jos
+Johnnie	m	15	jɔhnni
+Jorian	m	15	jɔrijɑn
+Kira	f	15	kirɑ
+Lean	u	15	liːn
+Lewis	m	15	luwɪs
+Ulrich	m	15	ʏlrɪx
+Tuna	m	15	tyna
+Valéry	f	15	vɑlerɑj
+Tjarda	u	15	tjɑrtɑ
+Thamar	f	15	thamɑr
+Timur	m	15	timyr
+Thor	m	15	thor
+Waldo	m	15	wɑldɔ
+Willian	m	15	wɪliən
+Wilson	m	15	wɪlsɔn
+Wiebren	m	15	wibrən
+Wieneke	f	15	winəkə
+Tammo	m	15	tɑmɔ
+Xénia	f	15	ksenija
+Zara	f	15	zara
+Yvet	f	15	ivət
+Dimitris	m	15	dimitris
+Enrique	m	15	ənrijk
+Door	f	15	doːr
+Evita	f	15	evita
+Franky	m	15	frɑŋki
+Gareth	m	15	ɣɑrɛth
+Gerardo	m	15	ɣərardɔ
+Gerdi	f	15	ɣərdij
+Germa	f	15	ɣɛrma
+Elvis	m	15	əlvɪs
+Eloy	m	15	əlwɑ
+Elsje	f	15	ɛlʃə
+Scarlett	f	15	skɑrlɛt
+Seval	f	15	səval
+Romana	f	15	romana
+Romina	f	15	romina
+Rochelle	f	15	roʃɛlə
+Roxana	f	15	rɔksana
+Shelly	f	15	shɛlɪ
+Shanti	f	15	shɑnti
+Alissa	f	15	alɪsa
+Aytac	m	15	etɑk
+Babak	m	15	babak
+Abdelaziz	m	15	ɑbdəlazits
+Arman	m	15	ɑrman
+Asya	f	15	asɪa
+Aike	u	15	ɑjkə
+Anthon	m	15	ɑntɔn
+Anne-Jan	m	15	ɑnəʔjan
+Anna-Maria	f	15	ɑnamarija
+Jacoba	f	15	əxjakobɑ
+Ipek	f	15	ɑjpk
+Ireen	f	15	iren
+Gineke	f	15	ɣɪnəkə
+Goof	m	15	ɣof
+Howard	m	15	ɦoʊ̯wɑrt
+Ids	m	15	ɪts
+Ieke	f	15	ikə
+Harriette	f	15	hɑrittə
+Hale	f	15	halə
+Hendrika	f	15	hɛndrika
+Hayri	m	15	hairi
+Holger	m	15	hɔlɣər
+Hille	m	15	hɪlə
+Jethro	m	15	jɛthro
+Milos	m	15	milɔs
+Mirjan	f	15	mirjan
+Midas	m	15	midɑs
+Mignon	f	15	mɪɲɔn
+Mellanie	f	15	məllɑni
+Melany	f	15	melɑŋi
+Majorie	f	15	majori
+Martinus	m	15	mɑrtinʏs
+Matías	m	15	mɑtɑs
+Mattias	m	15	mɑtɑjəs
+Maurizio	m	15	mʌʊ̯rizijo
+Maxine	f	15	mɑksinə
+Marlot	f	15	mɑrlɔt
+Nadya	f	15	nadeja
+Moritz	m	15	morijtz
+Müge	f	15	myɣə
+Luit	m	15	lœyt
+Maas	m	15	mas
+Mac	m	15	mas
+Luuc	m	15	lywywse
+Marilou	f	15	marɪlɑu
+Maren	f	15	mɑrən
+Marlien	f	14	mɑrlin
+Marise	f	14	marɪsə
+Marchien	f	14	mɑrxin
+Malika	f	14	malikɑ
+Malú	f	14	mal
+Mansour	m	14	mɑnsɑur
+Mik	m	14	mɪk
+Maron	u	14	mɑrɔn
+Maudy	f	14	mʌʊ̯di
+Marwin	m	14	mɑrwɪn
+Mathé	m	14	mathe
+Donja	f	14	dɔŋa
+Dolly	f	14	dɔli
+Edu	m	14	ədʏ
+Derrick	m	14	dɛrɪk
+Detlef	m	14	dətləf
+Dimphy	f	14	dɪmphɑj
+Dico	m	14	dijko
+Devrim	m	14	dəvrɪm
+Erman	m	14	ərmɑn
+Gertrude	f	14	ɣərtrywdə
+Gezinus	m	14	ɣəzɪnʏs
+Geneviève	f	14	ɣənəvijjɛvə
+Funs	m	14	fʏns
+Faysal	m	14	faisal
+Eve	f	14	evə
+Fabien	u	14	fabin
+Frederick	m	14	fredərɪk
+Feride	f	14	feridə
+June	f	14	jynə
+Juri	m	14	jyri
+Juriaan	m	14	ʒyrijan
+Ka	u	14	ka
+Kristi	f	14	krɪstɪ
+Konstantin	m	14	kɔnstɑntin
+Kornelis	m	14	kɔrnəlɪs
+Klaasje	f	14	klaʃə
+Liv	f	14	liv
+Loraine	f	14	lorɛːn
+Levy	m	14	ləvi
+László	m	14	lszl
+Leonieke	f	14	lejonikə
+Leonore	f	14	lejonorə
+Kiran	u	14	kirɑn
+Kian	m	14	kijɑn
+Nanny	f	14	nɛni
+Natacha	f	14	natɑxa
+Naïma	f	14	naima
+Rhea	f	14	rheja
+Reijer	m	14	rɛidʒər
+Rashid	m	14	rɑʃit
+Pearl	f	14	piːrl
+Quinn	m	14	kɛ̃n
+Quintin	m	14	kɛ̃tin
+Randa	f	14	rɑnda
+Ragna	f	14	rɑxna
+Nicol	f	14	nikol
+Nita	f	14	nita
+Nima	u	14	nima
+Niyazi	m	14	nijazɪ
+Ömür	m	14	womwʏr
+Pol	m	14	pɔl
+Percy	m	14	pɛrsi
+Bonne	u	14	bɔnə
+Brianna	f	14	brijɑna
+Bjarne	m	14	bjarnə
+Bogdan	m	14	boxdan
+Beytullah	m	14	bijtʏlah
+Cuma	m	14	kyma
+Cornelie	f	14	kɔrnɛli
+Cemile	f	14	sɛmɑjl
+Charel	u	14	ʃarəl
+Catelijne	f	14	katələnə
+Danté	u	14	dɑ̃e
+Daria	f	14	darija
+Claudette	f	14	klɔudətə
+Chuck	m	14	ʃyk
+Cis	m	14	sɪs
+Camilo	m	14	kɑmɑjlə
+Warren	m	14	ʋɑrən
+Wisse	m	14	wɪsə
+Wybe	m	14	wajbə
+Volkert	m	14	vɔlkərt
+Wichard	m	14	wɪtʃɑːrd
+Wichert	m	14	wɪxərt
+Wenda	f	14	wɛnda
+Virginie	f	14	vɑjrʒini
+Tonia	f	14	tonija
+Tiziana	f	14	tizijana
+Tjipke	m	14	tjɪpkə
+Thalía	f	14	thɑla
+Tako	m	14	tako
+Sylvain	m	14	sɪlvaɪn
+Yasir	m	14	ijazir
+Yassine	m	14	iɑsinə
+Younes	m	14	junəs
+Yentl	f	14	jɛntl
+Jitze	m	14	jɪtsɛ
+Jo-Ann	f	14	jɔɛŋn
+Jelmar	m	14	jəlmɑr
+Janco	m	14	jankɔ
+Jaro	m	14	jaro
+Jacoline	f	14	əxjakolɑjn
+Ivy	f	14	ɪvi
+Israa	f	14	ɪsra
+Göran	m	14	xworɑn
+Graham	m	14	xrahɑm
+Ginger	f	14	ɣɪŋər
+Ginny	f	14	ɣɪni
+Giancarlo	m	14	dʒiɑnkɑːrlo
+Godelieve	f	14	ɣɔdəlivə
+Giulio	m	14	dʒiywlijo
+Hieke	f	14	hikə
+Hélder	m	14	ejldər
+Hero	m	14	hero
+Hope	f	14	hɔpə
+Ietje	f	14	icə
+Haiko	m	14	hɑjkɔ
+Hansje	f	14	hɑnʃə
+Gulsjah	f	14	xʏlʃah
+Gustav	m	14	ɣʏstɑv
+Hani	u	14	hani
+Shaun	m	14	shɑun
+Siegfried	m	14	sixfrit
+Romain	m	14	romɑjn
+Romany	f	14	romɑnaj
+Rombout	m	14	rɔmbɑut
+Sevil	f	14	səvil
+Seyhan	u	14	sihɑn
+Sait	m	14	sɑjt
+Rukiye	f	14	ruwkijiə
+Sjukran	f	14	sjykrɑn
+Susana	f	14	zʏsana
+Anne-Fleur	f	14	ɑnəʔflør
+Annechien	f	14	ɑnəxin
+Annique	f	14	annijk
+Anwar	m	14	ɑnwɑr
+Anje	f	14	ɑɲə
+Aysegül	f	14	aisexwʏl
+Amit	m	14	amit
+Afra	f	14	ɑfrɑ
+Abdul	m	14	ɑpdul
+Aafje	f	14	afjə
+Aagje	f	14	axjə
+Abdi	m	14	ɑbdj
+Arslan	m	14	ɑrslɑn
+Arash	m	14	arash
+Arjanne	f	14	ardʒɑnə
+Asim	m	13	azim
+Aloys	m	13	alwɑs
+Alpha	m	13	ɑlfa
+Altan	m	13	ɑltɑn
+Anneleen	f	13	ɑnəlen
+Annelot	f	13	ɑnəlɔt
+Anny	f	13	ɑni
+Anya	f	13	anja
+Bahattin	m	13	bahatin
+Azad	m	13	azat
+Aziza	f	13	azitsa
+Atie	f	13	atsi
+Andra	f	13	ɑndra
+Aidan	m	13	etɑn
+Bettine	f	13	bəttinə
+Begüm	f	13	bejxwʏm
+Berit	f	13	bərɪt
+Bartosz	m	13	bɑrtɔsz
+Charmaine	f	13	ʃɑrmɑjnɛ
+Carolijn	f	13	karɔlɛin
+Charley	u	13	xarləi
+Célia	f	13	selija
+Bionda	f	13	bijɔnda
+Bobbie	u	13	bɔbi
+Constance	f	13	kɔnstɛns
+Cagla	f	13	kaɣla
+Deepak	m	13	dəəpɑk
+Christoffer	m	13	xrɪstɔfər
+Christos	m	13	xrɪstɔs
+Claudine	f	13	klɔudinə
+Koop	m	13	kop
+Krzysztof	m	13	kr­zi­stɔf
+Joukje	f	13	jɑukjə
+Josef	m	13	jɔsəf
+Joana	f	13	jɔana
+Joanneke	f	13	jɔɑnəkə
+Liana	f	13	lijana
+Lene	f	13	lənə
+Latif	m	13	lɑtif
+Leona	f	13	lejonɑ
+Moreno	m	13	morənɔ
+Mourad	m	13	murɑt
+Mikey	m	13	mɑjki
+Milko	m	13	milkɔ
+Marie-Anne	f	13	mɑriɑnə
+Marinda	f	13	marɪnda
+Manita	f	13	manita
+Manou	f	13	mɑnu
+Maïté	f	13	majɪte
+Maxwell	m	13	mɛkswɛl
+Maryse	f	13	mɑrizə
+Mathijn	m	13	mathɛin
+Mels	m	13	məls
+Mendel	m	13	məndəl
+Lulú	f	13	lywl
+Maayke	f	13	majkə
+Madeline	f	13	madəlɑjn
+Ferenc	m	13	fərɛnse
+Flemming	m	13	flɛmɪŋ
+Dex	m	13	dɛks
+Dieneke	f	13	dinəkə
+Elián	u	13	əlɑjn
+Elze	f	13	ɛlzə
+Emanuela	f	13	əmɑnywela
+Dragan	m	13	draɣɑn
+Dorian	u	13	dɔrijɑn
+Ecem	f	13	əsɛm
+Dyonne	f	13	diɔnə
+Ernestine	f	13	ərnəstinə
+Gerson	m	13	ɣərson
+Geralda	f	13	ɣərɑldɑ
+Pieternel	f	13	pitərnɛl
+Pleuni	f	13	pløni
+Patric	m	13	patris
+Nazan	f	13	nazan
+Nanno	m	13	nɑno
+Remie	m	13	remi
+Reggy	m	13	rəɡxi
+Rasjit	m	13	rɑʃiʔt
+Raven	u	13	ravən
+Rayan	m	13	reɑn
+Rachida	f	13	rɑxida
+Rainier	m	13	renɪər
+Nevin	u	13	nəvɪn
+Nemo	m	13	nəmo
+Suzie	f	13	syzi
+Svetlana	f	13	svɛtlɑna
+Suna	f	13	suna
+Sevilay	f	13	səvile
+Sharita	f	13	ʃɑrita
+Shereen	f	13	shɛren
+Silas	m	13	sɪlɑs
+Roma	f	13	roma
+Sjafak	m	13	ʃafak
+Saida	f	13	saɪda
+Saif	m	13	sɑjf
+Samah	f	13	sama
+Solange	f	13	sɔlɑŋə
+Yan	u	13	ɑjɑn
+Ymke	f	13	ɪmkə
+Yasar	m	13	ijasar
+Torsten	m	13	tɔrstən
+Tugay	m	13	tywxai
+Ülkü	f	13	wʏlᵊkwʏ
+Wopke	m	13	wɔpkə
+Wendela	f	13	wɛndəla
+Wendelien	f	13	wɛndəlin
+Wilke	f	13	wɪlkə
+Vinnie	m	13	fɪnijə
+Vijay	m	13	vɛijɑi
+Valentine	f	13	valɛntinə
+Valentino	m	13	valəntino
+Thiago	m	13	tsijaxo
+Thieu	m	13	tijø
+Teuntje	f	13	tøncə
+Zeger	m	13	zeɣər
+Zoran	m	13	zɔrɑn
+Zahra	f	13	tsahra
+Gülsüm	f	13	xwʏlswʏm
+Ivor	m	13	ivɔr
+Izaak	m	13	izak
+Jacobus	m	13	əxjakobʏs
+Izzet	m	13	itszɛt
+Jacinta	f	13	əxjasɪnta
+Jillian	f	13	dʒiliʔɑn
+Jelco	m	13	jəlko
+Jérémie	m	13	dʒeremi
+Jaleesa	f	13	jalesa
+Jaqueline	f	13	dʒɑklɑjn
+Iain	m	13	ijen
+Ilias	m	13	ilijɑs
+Ilze	f	13	ɪlzɛ
+Imelda	f	13	ɪməlda
+Giorgia	f	13	xijorᵊxija
+Hendry	m	13	hɛndrɑj
+Hasret	f	13	hasrɛt
+Hind	f	12	hɪnd
+Hindrik	m	12	hɪndrik
+Herjan	m	12	hɛrjan
+Herm	m	12	hɛrm
+Hayati	m	12	hajati
+Helmer	m	12	ɦɛlmər
+Jildau	f	12	dʒɪltɑu
+Jo-Anne	f	12	jɔɛŋnə
+Jessika	f	12	jəssɪka
+Halbe	m	12	hɑlbə
+Halime	f	12	hɑlɑjm
+Gustaaf	m	12	ɣʏstaf
+Isolde	f	12	izo­ldə
+Irena	f	12	irena
+Ivon	f	12	ivɔn
+Gitta	f	12	xɪta
+Gjalt	m	12	xjalt
+Gülden	f	12	xwʏldən
+Grada	f	12	ɣrada
+Jaimie	u	12	dʒemi
+Ilke	f	12	ilkə
+Huig	m	12	ɦʌʏ̯χ
+Hussain	m	12	huwssajn
+Gerie	f	12	ɣəri
+Gerjanne	f	12	xərjɑnə
+Gerritjan	m	12	ɣərrɪtjan
+Gazi	m	12	ɣazij
+Georgia	f	12	χejɔrχija
+Elvin	m	12	ɛlvɪn
+Emely	f	12	əmɛlɑj
+Eliana	f	12	elijana
+Elin	f	12	əlɪn
+Elio	m	12	elijo
+Egemen	m	12	əɣɛmən
+Eldert	m	12	əldɛrt
+Eleni	f	12	elənɪ
+Frederika	f	12	fredərɪkaʔ
+Feyza	f	12	fɛijza
+Fernand	m	12	fərnɑnt
+Esperanza	f	12	ɛsperɑnza
+Erdi	m	12	ərdɪ
+Ender	m	12	əndər
+Ebubekir	m	12	əbybəkijr
+Edanur	f	12	edanywr
+Eylem	f	12	ilɛm
+Faris	m	12	faris
+Faye	f	12	faiə
+Lauran	m	12	lɑurɑn
+Lavínia	f	12	lavenija
+Katrina	f	12	kɑtrina
+Kendra	f	12	kəndra
+Kristien	f	12	krɪstin
+Lillian	f	12	liliən
+Jory	u	12	jɔrɑj
+Joakim	m	12	dʒoʔakim
+Josefine	f	12	dʒosəfinə
+Joëlla	f	12	joʔela
+Joffrey	m	12	dʒɔfreji
+Ahlam	f	12	ahlɑm
+Akke	f	12	ɑkə
+Aïcha	f	12	aixa
+Anouska	f	12	anuskɑ
+Anne-Sophie	f	12	ɑnəʔsɔphi
+Ani	f	12	ani
+Aslihan	f	12	ɑslɑjhɑn
+Alet	f	12	alɛt
+Alette	f	12	alɛtə
+Amro	m	12	amro
+Amália	f	12	amlija
+Ayoub	m	12	eɑub
+Adela	f	12	adəla
+Adi	m	12	adij
+Achraf	m	12	ɑxrɑf
+Aaldert	m	12	aldərt
+Christof	m	12	xrɪstɔf
+Cilia	f	12	silija
+Brahim	m	12	braɪm
+Beate	f	12	bejatə
+Beatrijs	f	12	biːtrɛis
+Beatriz	f	12	biːtriz
+Bedirhan	m	12	bədijrhɑn
+Bent	m	12	bɛnt
+Bertina	f	12	bɛrtina
+Barrie	m	12	bɑri
+Basjak	f	12	bɑʃak
+Berend-Jan	m	12	berənjɑn
+Berjan	m	12	bərjɑn
+Cennet	f	12	sɛnət
+Casey	u	12	seʔasi
+Ceyhun	m	12	kəihuwn
+Charl	m	12	ʃɑrl
+Debra	f	12	dəbra
+Dany	m	12	dɑnaj
+Cornelia	f	12	kɔrnɛlija
+Corrine	f	12	kɔrinə
+Danae	f	12	dɑnaʔə
+Camila	f	12	seʔamijlɑ
+Carli	f	12	kɑrlɪ
+Britte	f	12	brɪtə
+Marietta	f	12	marijəta
+Marisol	f	12	marɪsɔl
+Marith	f	12	marijt
+Moussa	m	12	musa
+Mustapha	m	12	mʏstapha
+Moos	m	12	mos
+Mijntje	f	12	mɛiɲcə
+Mikael	m	12	mjkɑəl
+Milly	f	12	mɪli
+Meint	m	12	mɛɪnt
+Michela	f	12	mixəlɑ
+Mertcan	m	12	mərtkɑn
+Mickaël	m	12	mɪkɑel
+Mendy	f	12	meɪ̯ndi
+Majella	f	12	maʒəla
+Maickel	m	12	mɑɪ̯kkəl
+Más	m	12	ms
+Zeno	m	12	zəno
+Zaid	m	12	zɑɪd
+Ulrike	f	12	ʏlrɪkə
+Tunahan	m	12	tynahɑn
+Ulasj	m	12	ʏlɑʃ
+Tufan	m	12	tʏfɑn
+Yahia	m	12	jɑija
+Wiesje	f	12	wiʃə
+Wilhelmina	f	12	wɪlhɛlmijna
+Willemieke	f	12	wɪləmikə
+Toke	f	12	tokə
+Tinka	f	12	tɪŋka
+Tjitte	m	12	cɪtə
+Tobi	m	12	tobɪ
+Theodoor	m	12	tejodor
+Thies	m	12	tis
+Tariq	m	12	tʔɑrijju
+Tansu	f	12	tɑnsyw
+Nika	f	12	njka
+Nine	f	12	ninə
+Nitin	m	12	nitʃn
+Nathália	f	12	nɑthlija
+Nathaniel	m	12	nɑthɑnil
+Nathasja	f	12	nɑthɑʃa
+Raffaella	f	12	rɑfaəla
+Puk	u	12	pʏk
+Ramsés	m	12	rɑmses
+Renger	m	12	rɛŋər
+Redouan	m	12	rəduwan
+Reggie	m	12	rəɡɣi
+Reinald	m	12	rɛɪ̯nalt
+Reindert	m	12	rɛindərt
+Riekje	f	12	rikjə
+Nurten	f	12	nʏːrtən
+Onne	m	12	ɔnə
+Odile	f	12	odɪlə
+Oene	m	12	unə
+Sjirk	m	12	ʃɪrᵊk
+Siméon	m	12	sɪmeɔn
+Shirin	f	12	ʃirɪn
+Sieds	m	12	sits
+Siham	f	12	sɪhɑm
+Servaas	m	12	sɛrvas
+Shadi	m	12	ʃdɪ
+Saliha	f	12	salihɑ
+Sandeep	m	12	sɑndep
+Rudmer	m	12	rʏtmər
+Saadet	f	12	satet
+Roxy	f	12	rɔksi
+Rubin	m	11	rybɪn
+Saber	m	11	sabər
+Sabien	f	11	sabin
+Sabrine	f	11	sɑbrɪŋə
+Steff	m	11	stɛf
+Summer	f	11	sywmər
+Silver	u	11	zilvər
+Sid	m	11	sɪt
+Siemon	m	11	simɔn
+Sikko	m	11	sɪkɔ
+Sharda	f	11	shɑrda
+Sharif	m	11	ʃɑrif
+Rodi	m	11	rodi
+Rink	m	11	rɪŋk
+Ronan	m	11	ronan
+Roosje	f	11	roʃə
+Serdal	m	11	sərdɑl
+Sergei	m	11	sɛrʒj
+Sergej	m	11	sərɣədʒ
+Sertac	m	11	sɛrtɑk
+Sameer	m	11	samer
+Samia	f	11	samija
+Büsra	f	11	bʏsrɑ
+Carline	f	11	kɑrlinə
+Berkan	m	11	bɛrkan
+Beer	m	11	bɪːr
+Cihangir	m	11	sihɑŋir
+Clare	f	11	klarə
+Clyde	m	11	klɑjdə
+Chrissy	f	11	xrɪsi
+Cherry	f	11	xɛri
+Bodine	f	11	bodɑjn
+Catalina	f	11	katalina
+Cecil	f	11	sɛsil
+Delphine	f	11	dəlphinə
+Johny	m	11	jɔhnaj
+Jonneke	f	11	jɔnəkə
+Joes	m	11	jɔəs
+Leonora	f	11	lejonora
+Latisha	f	11	latsishɑ
+Laurette	f	11	lɑurɛtə
+Lesly	u	11	lslɑj
+Letícia	f	11	lətsija
+Li	u	11	li
+Leida	f	11	lɛida
+Keanu	m	11	kəany
+Katelijne	f	11	katələnə
+Joska	f	11	jɔskɑ
+Jun	m	11	jyni
+Kaat	f	11	kat
+Jurn	m	11	jʏrᵊn
+Jutta	f	11	jʏta
+Kit	f	11	kɪt
+Lambertus	m	11	lɑmbɛrtəs
+Lien	f	11	lin
+Loeki	f	11	luki
+Lisenka	f	11	lɑjsənkɑ
+Ilana	f	11	ɪlɑna
+Ilka	f	11	ɪlᵊka
+Imad	m	11	jmɑt
+India	f	11	ɪndija
+Indira	f	11	ɪndijra
+Hanifi	m	11	hanifi
+Hanke	f	11	hɑŋkə
+Harke	m	11	hɑrkə
+Haris	m	11	harɪs
+Gülsen	f	11	xwʏlsən
+Gunnar	m	11	ɣʏnar
+Jelger	m	11	jəlɣər
+Jelske	f	11	jəlskə
+Jeanny	f	11	dʒini
+Jiske	f	11	jiskə
+Janina	f	11	əxjanina
+Jakko	m	11	jɑkɔ
+Jawad	m	11	əxjawɑt
+Ischa	u	11	ɪsxa
+Ismay	f	11	ɪsme
+Jacobine	f	11	əxjakobɑjn
+Jacomijn	f	11	əxjakomɛɪn
+Jael	u	11	jaəl
+Jacintha	f	11	əxjasɪnta
+Gökay	m	11	xwoke
+Gilian	m	11	dʒilijan
+Gülcan	f	11	xwʏlkɛn
+Giselle	f	11	ɣɪsɛlə
+Fadi	m	11	fadij
+Eugénia	f	11	øxenija
+Evelina	f	11	əvɛlina
+Fay	f	11	fai
+Feline	f	11	fɛlinə
+Fahrettin	m	11	farɛtin
+Faith	f	11	fɛt
+Fenneke	f	11	fənəkə
+Flávio	m	11	flvijo
+Franciska	f	11	frɑnsijska
+Ferrie	m	11	fəri
+Feyzullah	m	11	fɛijzʏlɑ
+Frido	m	11	ɛfɛridɔ
+Gene	m	11	ɣenə
+Elijah	m	11	əlɛijɑh
+Elliot	m	11	ɛliɔt
+Elsemiek	f	11	əlsɛmik
+Dusan	m	11	dyzan
+Dylano	m	11	dilano
+Duke	m	11	dʏkə
+Dorette	f	11	dɔrətə
+Doron	m	11	dɔrɔn
+Denzel	m	11	tɛnzɛl
+Dinesh	m	11	dɑjnʃ
+Dio	m	11	dijo
+Dim	m	11	dim
+Esin	f	11	əsɑjn
+Emircan	m	11	emirkan
+Ersan	m	11	ərsɑn
+Ergin	m	11	ərɣɪn
+Acelya	f	11	asɛlija
+Adeline	f	11	adəlɑjn
+Arjun	m	11	ardʒʏŋ
+Ashish	m	11	ɑʃiʃ
+Asia	f	11	azija
+Arie-Jan	m	11	arijan
+Adriano	m	11	adrijano
+Agatha	f	11	aɣathɑ
+Anissa	f	11	anɪsa
+Anka	f	11	ɑŋka
+Anthonie	m	11	ɑntɔni
+Antoinet	f	11	ɑntʋɑnɛt
+Antoni	m	11	ɑntonij
+Anne-Marieke	f	11	ɑnəʔmɑrikə
+Anne-Wil	f	11	ɑnəʔwɪl
+Annegien	f	11	ɑneɣin
+Annerie	f	11	ɑnəri
+Aurélie	f	11	ɑuwreli
+Avinash	m	11	avinash
+Alja	f	11	ɑlja
+Alexia	f	11	alɛksija
+Alpay	m	11	alpai
+Amel	u	11	amɛl
+Amélie	f	11	ameli
+Andor	m	11	ɑndor
+Aman	m	11	amɑn
+Amine	u	11	aminə
+Oleg	m	11	jolɛx
+Pip	u	11	pɪp
+Priya	f	11	prija
+Nimet	f	11	nimɛt
+Nini	f	11	nini
+Nasr	m	11	nasr
+Nanja	f	11	nɑnja
+Nathanaël	m	11	nɑthɑnaʔjəl
+Rasim	m	11	rasɪm
+Renko	m	11	rənko
+Rianda	f	11	rijɑnda
+Patrik	m	11	patrɪk
+Rainer	m	11	renər
+Martino	m	11	mɑrtino
+Martyn	m	11	mɑrtin
+Mathilda	f	11	mathɑjlda
+Murielle	f	11	mʏrillə
+Nabila	f	11	nabɪla
+Lysette	f	11	lisətə
+Maarten-Jan	m	11	martənjɑn
+Lucille	f	11	lysilə
+Loulou	f	11	lɑulɑu
+Louwe	m	11	lɑuwə
+Maé	f	11	mae
+Mare	f	11	marə
+Marlena	f	11	mɑrləna
+Marlin	u	11	mɑrlin
+Mikhail	m	11	mɑjkhɑjl
+Mindy	f	11	mindi
+Minka	f	11	mɪŋka
+Minou	f	11	minu
+Miles	m	11	miləs
+Meredith	f	11	merədɪth
+Taylan	m	11	ta­ilɑ̃
+Yanick	m	11	ɑjɑnɪk
+Yann	m	11	ɑjɑnn
+Ya	f	11	ja
+Zain	m	11	zɑjn
+Zeliha	f	11	zɛlɑjha
+Zina	f	11	ziːna
+Zita	f	11	zita
+Zachary	m	11	zɑxarɑj
+Tori	f	11	tori
+Vasco	m	11	vɑsko
+Vienna	f	11	vijɛna
+Violet	f	11	vijolɛt
+Wendie	f	11	wɛndi
+Terri	f	11	təri
+Tieme	m	11	timə
+Theresia	f	11	thɛrəzija
+Thijn	m	11	tɛin
+Tjarko	m	11	tjarkɔ
+Tjitze	m	10	tjɪtse
+Terrence	m	10	tərəns
+Thys	m	10	tis
+Yu	u	10	ju
+Ziggy	u	10	ziɣxi
+Yannic	m	10	ɑjɑnnik
+Yari	m	10	jɑri
+Yori	u	10	ijori
+Yke	u	10	ikə
+Teije	m	10	tɛijə
+Take	m	10	takə
+Tammy	f	10	tɑmi
+Symen	m	10	sɪmən
+Viviane	f	10	vievieanə
+Wiep	f	10	wip
+Wolfgang	m	10	wɔlfxɑŋ
+Vural	m	10	vyral
+Tracey	f	10	tresi
+Vanity	f	10	vanɪti
+Vanja	f	10	vɑnja
+Esteban	m	10	əstebɑn
+Engel	m	10	ɛŋəl
+Ensar	m	10	ənsɑr
+Ethem	m	10	əthem
+Geeke	f	10	ɣəəkə
+Geraldo	m	10	ɣərɑldo
+Gail	f	10	xɑj
+Gian	m	10	dʒiən
+Georges	m	10	χejɔrχəs
+Fabíola	f	10	fabejolɑ
+Feikje	f	10	fɛi̯kjə
+Franziska	f	10	frɑnziska
+Frederiek	f	10	fredərik
+Flor	f	10	flɔr
+Florine	f	10	florinə
+Florus	m	10	floruws
+Filipe	m	10	filipə
+Fikri	m	10	fikrij
+Djurre	m	10	tjʏrə
+Diogo	m	10	dijoxo
+Elzo	m	10	əlzɔ
+Elia	u	10	elija
+Eise	m	10	ɛisə
+Ekaterina	f	10	əkɑtərɪnʔɑ
+Edson	m	10	edsɔn
+Ebu	m	10	əby
+Lincy	f	10	lɪnsi
+Lode	m	10	lodə
+Loran	u	10	loran
+Lívia	f	10	lvija
+Loretta	f	10	lorəta
+Leandra	f	10	lejɑndra
+Laure	f	10	lɑurə
+Leonne	f	10	lɛɔnə
+Leonoor	f	10	lejonor
+Lennie	f	10	lənni
+Letitia	f	10	lətitija
+Jornt	m	10	jɔrᵊɲ
+Jonatan	m	10	jɔnatɑn
+Jony	f	10	jɔnaj
+Joas	m	10	jɔɑs
+Jodi	f	10	jodɪ
+Kiara	f	10	kiara
+Kieran	m	10	kirɑn
+Kylian	m	10	kijlijɑn
+Lamia	f	10	lamija
+Lammie	f	10	lɑmi
+Klaudia	f	10	klɑudiʲa
+Kristie	f	10	krɪsti
+Karola	f	10	kɑrola
+Karoline	f	10	kɑrolinə
+Kaz	m	10	kaz
+Karan	m	10	karan
+Kané	m	10	kɑne
+Kathelijn	f	10	katelɛin
+Jossé	u	10	dʒɔse
+Jurjan	m	10	ʒyrjan
+Sandrine	f	10	sɑntrinə
+Sanjay	m	10	sɑɲai
+Sammie	u	10	sɑmi
+Salem	m	10	salɛm
+Saúl	m	10	sal
+Souad	u	10	suad
+Sjuul	u	10	ʃyl
+Skip	m	10	skɪp
+Spencer	m	10	spɛnsər
+Roswitha	f	10	roswɪthɑ
+Roxane	f	10	rɔksɑnə
+Steyn	m	10	stejin
+Svenja	f	10	svənja
+Stacy	f	10	stasei
+Secil	f	10	səsil
+Senem	f	10	senəm
+Sep	m	10	sɛptɛmbər
+Shanon	f	10	shɑnɔn
+Siebrand	m	10	sibrɑnt
+Sierd	m	10	sjərt
+Sifra	f	10	zifrɑ
+Sijbren	m	10	sɛibrən
+Sibren	m	10	sɑjbirən
+Rohit	m	10	rohɪt
+River	m	10	rivər
+Riham	f	10	rijhɑm
+Rindert	m	10	rɪndərt
+Ringo	m	10	rɪŋɡo
+Robine	f	10	robinə
+Danijel	m	10	dɑnɛijəl
+Dayenne	f	10	deɛnə
+Clarence	m	10	klɛrəns
+Coenraad	m	10	koənrat
+Chrisje	f	10	xrɪʃə
+Cara	f	10	kara
+Carmela	f	10	kɑrməla
+Bartel	m	10	bɑrtəl
+Berdine	f	10	bərdinə
+Channa	f	10	xɑna
+Catarina	f	10	katarina
+Ché	m	10	ʃe
+Bodhi	m	10	bɔthɪ
+Bodil	f	10	bɔdɪl
+Bojan	m	10	bɔjan
+Brechje	f	10	brɛxjə
+Brend	m	10	brənt
+Bonita	f	10	bonita
+Boyan	m	10	bɔjɑn
+Corinna	f	10	korijna
+Cornelius	m	10	kɔrnɛlijʏs
+Conor	m	10	kɔnɔr
+Coosje	f	10	koʃə
+Damon	m	10	dɑmɔn
+Crista	f	10	krɪsta
+Graziella	f	10	xrazijɛla
+Gradus	m	10	ɣradyws
+Helin	f	10	helin
+Herre	m	10	hɛrə
+Hayley	f	10	haɑjləi
+Ilya	u	10	ɪlija
+Ilan	m	10	ilɑn
+Immy	f	10	ɪmi
+Gus	m	10	ɣʏs
+Iva	f	10	iva
+Jin	u	10	jɪn
+Jermain	m	10	jermen
+Jerrel	m	10	dʒɛrəl
+Jetse	m	10	jətsə
+Jarco	m	10	jarkɔ
+Meinte	m	10	mɛɪntə
+Melánia	f	10	meɪ̯lnija
+Mervin	m	10	mʏːrvɪn
+Michell	m	10	miʃɛl
+Meric	m	10	mɛris
+Merit	f	10	merɪt
+Lutske	f	10	lʏtskə
+Louw	m	10	lɑu
+Lowie	m	10	loʋi
+Lubbert	m	10	lʏbərt
+Matheus	m	10	matejʏs
+Mazlum	m	10	mazlʏm
+Mary-Ann	f	10	mɑrijɛŋn
+Marnick	m	10	mɑrnɪk
+Marrie	f	10	mɑri
+Marscha	f	10	mɑrsxa
+Marshall	m	10	mɑːʃəl
+Morad	m	10	morat
+Milad	m	10	milat
+Milco	m	10	milkɔ
+Margaretha	f	10	mɑrɣarətha
+Marcelo	m	10	marəlɔ
+Marley	u	10	mɑrli
+Ane	m	10	anə
+Alberta	f	10	albɛra
+Aiden	m	10	etən
+Aiko	m	10	ɑjkow
+Abdulkerim	m	10	ɑbdʏlkərɪm
+Aditya	m	10	aditja
+Arun	m	10	arun
+Asena	f	10	ɑsəna
+Aleida	f	10	alɛida
+Alisha	f	10	alishɑ
+Alje	m	10	ɑljə
+Aleksandar	m	10	aləksɑndɑr
+Anne-Marije	f	10	ɑnəʔmarɛijə
+Annebeth	f	10	ɑnəbɛt
+Avalon	f	10	ɑvalɔn
+Atif	m	10	atif
+Randolph	m	10	rɑndolph
+Rahim	m	10	rahɑjm
+Raimon	m	10	remɔn
+Randall	m	10	rɑntɑl
+Nieske	f	10	niskə
+Orcun	m	10	ɔrkjuːn
+Oebele	m	10	ubələ
+Ogün	m	10	oʊ̯χjyn
+Oane	m	10	owanə
+Phyllis	f	10	filis
+Polly	f	10	pɔli
+Petri	f	10	petri
+Paloma	f	10	paloma
+Nash	m	10	nɑʃ
+Reshma	f	10	rejʃmɛ
+Rena	f	10	rəna
+Rhonda	f	9	rhɔnda
+Renier	m	9	rənir
+Relinde	f	9	rəlɪndə
+Oda	f	9	oda
+Odin	m	9	ɔdɪn
+Quin	m	9	kɛ̃
+Rabab	f	9	rabɑp
+Rachael	f	9	rɑxaəl
+Raj	m	9	raj
+Ramin	m	9	ramin
+Ninja	f	9	nɪɲa
+Nisha	f	9	nɪshɑ
+Nilgün	f	9	nijlᵊxjyn
+Nilüfer	f	9	nijlwʏfər
+Neriman	f	9	nerimɑn
+Nesje	f	9	nəʃə
+Noelia	f	9	nulija
+Nander	m	9	nandər
+Natali	f	9	natalij
+Nawal	f	9	nawɑl
+Phoebe	f	9	febə
+Precious	f	9	presiɑus
+Paige	f	9	pɑəxə
+Öznur	f	9	woznʏːr
+Daimy	u	9	demij
+Dámaris	f	9	tmɑrɪs
+Daaf	m	9	daf
+Damiano	m	9	dɑmijano
+Damy	u	9	damij
+Dane	u	9	dɑnə
+Broer	m	9	bruːr
+Caesar	m	9	sezɑr
+Darja	f	9	dɑrja
+Demelza	f	9	dəməlzɑ
+Darwin	m	9	dɑrwin
+Cihad	m	9	sihɑt
+Clark	m	9	klɑrᵊk
+Bouchra	f	9	buʃra
+Blanca	f	9	blɑnka
+Brand	m	9	brɑnt
+Binne	m	9	bɪnə
+Bircan	f	9	bɪrkan
+Birgitta	f	9	bijrxɪta
+Bridget	f	9	brɪtʃt
+Berfin	f	9	jbərfin
+Berthe	f	9	bərtej
+Barteld	m	9	bɑrtəlt
+Benita	f	9	benita
+Benito	m	9	benito
+Bethany	f	9	bəthɑnaj
+Bareld	m	9	bɑrəlt
+Charelle	f	9	xarɛlə
+Cebrail	m	9	səbrel
+Kalle	m	9	kɑlə
+Jozua	m	9	jozuwa
+Judit	f	9	jydɪt
+Jogchum	m	9	dʒɔxxym
+Jorin	m	9	jɔrɪn
+Jodie	f	9	jodi
+Jolyn	f	9	jɔlɪŋ
+Lotus	f	9	lotʏs
+Linus	m	9	linʏs
+Loesje	f	9	luʃə
+Latifa	f	9	la­tɑjfa
+Lester	m	9	lɛstər
+Katelijn	f	9	kɑtəlɛin
+Kari	f	9	kari
+Karianne	f	9	kɑrijɑnə
+Karlo	m	9	kɑrlo
+Katya	f	9	kɑtja
+Kristof	m	9	krɪstɔf
+Kobus	m	9	kowbʏs
+Koosje	f	9	koʃə
+Vishal	m	9	vɪshɑl
+Vikash	m	9	vjkɑʒ
+Viktoria	f	9	vɪktɔrija
+Vinay	m	9	vijnaʔi
+Syb	m	9	sib
+Tamira	f	9	tamira
+Tarkan	m	9	tɑrkɑn
+Zübeyde	f	9	zwʏbijdə
+Zainab	f	9	tsaɪnɑb
+Zico	m	9	zɪkɔ
+Tijl	m	9	tɛil
+Timmy	m	9	tɪmi
+Tico	m	9	tiko
+Xavi	m	9	ksavi
+Xaviera	f	9	ksɑvirɑ
+Xiomara	f	9	ksijomara
+Yoshi	u	9	jɔshij
+Yasmina	f	9	ijasmɪnɑ
+Ylona	f	9	ajlɔna
+Ynze	m	9	inzɛ
+Yesim	f	9	jɛsɪm
+Türkan	f	9	twʏrkan
+Züleyha	f	9	zwʏləihɑ
+Wilmer	m	9	wɪlmər
+Winand	m	9	wɪnɑnt
+Wouter-Jan	m	9	wɑutɛrjan
+Ebrar	f	9	ɛbrar
+Earl	m	9	iːrl
+Dominick	m	9	dominikk
+Donnie	m	9	dɔnni
+Dünya	f	9	djynaja
+Duran	m	9	dyran
+Febe	f	9	fɛbə
+Farhad	m	9	fɑrhɑt
+Farouk	m	9	faruk
+Ewan	m	9	əwɑn
+Fadime	f	9	fɑdɑjm
+Fahd	m	9	fat
+Faik	m	9	faɪk
+Ennio	m	9	ɛnijo
+Geerte	f	9	ɣertə
+Gepke	f	9	ɣəpkə
+Germ	m	9	ɣərm
+Germen	m	9	ɣərmən
+Giada	f	9	dʒiɑda
+Fulya	f	9	fulija
+Edzard	m	9	ɛtzard
+Eeuwe	m	9	ewə
+Elvan	f	9	əlvɑn
+Ema	f	9	əma
+Elliott	m	9	ɛliɔtt
+Eloïse	f	9	elowisə
+Eibert	m	9	ɛibərt
+Femmie	f	9	femmi
+Fredrik	m	9	frədrɪk
+Florens	m	9	florɛns
+Francina	f	9	frɑŋkina
+Foeke	m	9	fukə
+Dewy	f	9	dəwaj
+Dillon	m	9	diljon
+Djoeke	f	9	cukə
+Destiny	f	9	dɛstinaj
+Ronaldo	m	9	ronɑldo
+Rosalien	f	9	rosalin
+Romário	m	9	roʊ̯mrijo
+Rommert	m	9	rɔmərt
+Rikus	m	9	ɛrikus
+Rim	u	9	rɪm
+Rima	f	9	rima
+Sasa	m	9	sasa
+Salvador	m	9	sɑɫvador
+Samson	m	9	sɑmsɔn
+Sim	m	9	sɪm
+Simge	f	9	simɣə
+Sonya	f	9	sonija
+Sindy	f	9	sɑjndi
+Sjoert	m	9	ʃurt
+Sido	m	9	sidɔ
+Sien	f	9	sin
+Siert	m	9	sirt
+Shannen	f	9	shɑnən
+Stoffer	m	9	stɔfər
+Será	f	9	ser
+Selen	f	9	sələn
+Aycan	f	9	eken
+Aysu	f	9	esyw
+Adelina	f	9	adəlina
+Amarens	f	9	amarəns
+Andréia	f	9	ɑntreija
+Afaf	f	9	afaf
+Ágata	f	9	xata
+Aize	m	9	ajze
+Adrianus	m	9	adrijanyws
+Anne-Claire	f	9	ɑnəʔklɛːrə
+Annelotte	f	9	ɑnəlɔtə
+Annelou	f	9	ɑnəlu
+Annemarijn	f	9	ɑnəmarɛin
+Angelika	f	9	ɑŋɣelikaʔ
+Anky	f	9	ɑŋki
+Anna-Marie	f	9	ɑnamɑːri
+Arwen	f	9	ɑrʋən
+Armanda	f	9	ɑrmənda
+Almer	m	9	ɑlmər
+Alexandru	m	9	alɛksɑndrʏ
+Jayson	m	9	dʒesɔn
+Janique	f	9	əxjanijk
+Janske	f	9	jɑnskə
+Jascha	m	9	jasxa
+Ikram	f	9	ɪkrɑm
+Imara	f	9	jmɑra
+Iddo	m	9	ɪdo
+Indigo	u	9	ɪndiχo
+Gonneke	f	9	ɣɔnəkə
+Giedo	m	9	dʒiədo
+Gita	f	9	ɣita
+Gulcin	f	9	ɣʏlsin
+Güler	f	9	xwʏlər
+Gülizar	f	9	xwʏlɑjzɑr
+Hayriye	f	9	hairijiə
+Hazar	m	9	hazɑr
+Hedzer	m	9	hɛitzər
+Hilary	f	9	hailarij
+Jisca	f	9	jiska
+Jerre	m	9	dʒɛrə
+Hanife	f	9	hanifɛ
+Gwenda	f	9	xʋɛnda
+Habibe	f	9	habɑjbə
+Ivanka	f	9	ɑjvənkɑ
+Malte	m	9	mɑɫtə
+Mansur	m	9	mɑnzyr
+Masoud	m	9	mɑsɑut
+Marlinde	f	9	mɑrlɪndə
+Meggie	f	9	mɛɡi
+Melda	f	9	məldɑ
+Melik	m	9	məlɪk
+Meyke	f	9	meɪ̯ikə
+Mickel	m	9	mɪkəl
+Lynette	f	9	lɪnəttə
+Luciana	f	9	lysiana
+Marijne	f	9	marɛinə
+Muhittin	m	9	myhaitin
+Nadeem	m	9	nadem
+Mirela	f	9	mirəlɑ
+Mirja	f	9	mirja
+Miro	m	9	mirɔ
+Miryam	f	9	mirijam
+Ming	u	9	mɪŋ
+Mirco	m	9	mirkɔ
+Mihriban	f	9	mirijbɑn
+Mikki	f	9	mɪki
+Moira	f	9	mwara
+Mirza	u	8	mirzɑ
+Minh	m	8	minɦ
+Miray	f	8	mire
+Meg	f	8	mɛx
+Meghan	f	8	meɣhɑn
+Menne	m	8	mɛnə
+Micah	m	8	mikah
+Micheline	f	8	miʃlɑjn
+Maíra	f	8	mara
+Mahmud	m	8	mahmjuːt
+Marcela	f	8	mɑrslɑ
+Manish	m	8	manijʃ
+Man	u	8	mɛn
+Mathew	m	8	matejw
+Mattheus	m	8	mɑtejʏs
+Matti	m	8	mɑtɪ
+Marlo	m	8	mɑrlo
+Nadim	m	8	nadɪm
+Moshe	m	8	mɔshɛ
+Müzeyyen	f	8	mwʏzəiijən
+Monja	f	8	monja
+Luitzen	m	8	lœytsən
+Lute	m	8	lytə
+Mady	f	8	madei
+Lysbeth	f	8	lisbəth
+Mack	m	8	mɛk
+Ludovica	f	8	lywdovika
+Margaux	f	8	mɑrɡaywks
+Mareille	f	8	mɑrɛijə
+Marla	f	8	mɑrlɑ
+Dicle	f	8	dislə
+Dido	f	8	dijdɔ
+Dinah	f	8	dinah
+Dinja	f	8	dinja
+Dena	f	8	tɛnɑ
+Emmely	f	8	ɛməlɑj
+Engelbert	m	8	ənɣəlbɛr
+Enza	f	8	ənza
+Dorinda	f	8	dɔrɪnda
+Dorinde	f	8	dɔrɪndə
+Dorothea	f	8	doʊ̯rotea
+Dounia	f	8	dunija
+Dominiek	u	8	dominik
+Driek	m	8	drik
+Duane	m	8	dywɑ̃ə
+Dorieke	f	8	dorikə
+Farhan	m	8	fɑrhɑn
+Fatiha	f	8	fɑtɑjhɑ
+Fatmanur	f	8	fɑtmɑnʏːr
+Eveliene	f	8	əvelɪənə
+Frauke	f	8	frɑukə
+Feyyaz	m	8	fɛijjaz
+Flore	f	8	florə
+Galina	f	8	xalina
+Fulco	m	8	fulko
+Gerdina	f	8	ɣərdina
+Gerjon	m	8	ɣərʒun
+Elko	m	8	əlkɔ
+Eelkje	f	8	elkjə
+Elcke	f	8	əlkə
+Eléonore	f	8	əleonorə
+Elger	m	8	ɛlɣər
+Élodie	f	8	elodi
+Koenraad	m	8	kunrat
+Lance	m	8	lɑ̃sə
+Lando	m	8	lɑndo
+Lila	f	8	lila
+Liona	f	8	lijona
+Lorna	f	8	lɔrna
+Lolita	f	8	lolita
+Loren	f	8	lorən
+Libby	f	8	lɪbi
+Liedeke	f	8	lidəkə
+Lieske	f	8	liskə
+Lis	f	8	lɪs
+Jozien	f	8	jozin
+Juana	f	8	jyana
+Kaitlyn	f	8	kaɪtlɪŋ
+Kája	u	8	kja
+Josie	f	8	jɔsi
+Jouri	m	8	ʒurj
+Jovan	m	8	jovɑn
+Kaatje	f	8	kacə
+Kadriye	f	8	kadrijjɛ
+Joaquín	m	8	dʒɔakwn
+Khadija	f	8	khadɛɪa
+Kimo	m	8	kimo
+Leone	f	8	lejonə
+Laureen	f	8	lɑuren
+Lauri	f	8	lɑuri
+Lev	m	8	lev
+Karijn	f	8	kɑrɛin
+Kamran	m	8	kɑmran
+Ramiro	m	8	ramirɔ
+Ran	m	8	rɑn
+Rajiv	m	8	rɑjiv
+Reuben	m	8	røbən
+Redmar	m	8	rɛtmɑr
+Nurdan	f	8	nʏrdɑn
+Nurgül	f	8	nywrᵊxwʏl
+Ocean	m	8	joseɑn
+Ornella	f	8	ɔrnəla
+Olger	m	8	ɔlɣər
+Prisca	f	8	priska
+Penélope	f	8	pənelopə
+Perla	f	8	pərla
+Piter	m	8	pitər
+Nida	f	8	nida
+Nikolas	m	8	nɪkolɑs
+Nizar	m	8	nizar
+Noëlla	f	8	ɛnowəla
+Necip	m	8	nəsip
+Nathaly	f	8	nɑthɑlɑj
+Nanneke	f	8	nɑnəkə
+Natalja	f	8	natalja
+Nail	m	8	nɑj
+Najat	f	8	najat
+Cathelijn	f	8	kathɛlɛin
+Celil	m	8	selil
+Darko	m	8	dɑrkɔ
+Darius	m	8	darijʏs
+Deen	m	8	deɪ̯n
+Dale	m	8	daːlə
+Cornee	m	8	kɔrnɛə
+Corstiaan	m	8	kɔːrstijan
+Britney	f	8	beɛritni
+Candice	f	8	kɑndikə
+Cansel	f	8	kɛnsəl
+Berivan	f	8	bɛrivɑn
+Beryl	f	8	bɛril
+Beatrix	f	8	biːtrɪks
+Bennet	m	8	bɛnət
+Cher	f	8	ər
+Christi	f	8	xrɪstɪ
+Clifton	m	8	klɪftɔŋ
+Colleen	f	8	kɔlen
+Beyzanur	f	8	bijzanyr
+Bing	m	8	bɪŋ
+Birte	f	8	bɪrtə
+Wobbe	m	8	wɔbə
+Wencke	f	8	wənkə
+Willard	m	8	wɪlɑrd
+Willianne	f	8	wɪliʔɑnə
+Wesly	m	8	wɛslɑj
+Wiard	m	8	widɑrd
+Wijbe	m	8	wɛɪbə
+Wart	m	8	wɑrt
+Tjark	m	8	cɑrᵊk
+Thelma	f	8	thɛlma
+Timen	m	8	tɑjmən
+Thorsten	m	8	thɔrstən
+Thymen	m	8	timən
+Tan	m	8	tɑn
+Tahnee	f	8	tahne
+Talip	m	8	talɪp
+Vinny	m	8	fɪni
+Violette	f	8	vijolɛtə
+Verona	f	8	vərɔna
+Varun	m	8	varun
+Zaza	f	8	zaza
+Zeynel	m	8	zəinɛl
+Yordy	m	8	ijordi
+Yorrick	m	8	ijorɪk
+Yessica	f	8	ijɛsika
+Yfke	f	8	ifkə
+Yi	u	8	ji
+Yaron	m	8	jarɔn
+Ymkje	f	8	ɪmkjə
+Tymen	m	8	timən
+Trisha	f	8	trishɑ
+Usman	m	8	ywsmɑn
+Vahid	m	8	vaɪt
+Umar	m	8	umar
+Jackelien	f	8	dʒɛkəlin
+Issa	m	8	ɪsa
+Gini	f	8	ɣɪnij
+Glenda	f	8	xlɛndɑ
+Gidion	m	8	ɣɪdijɔn
+Jairo	m	8	əxjajro
+Jamilla	f	8	əxjamila
+Jamy	u	8	əxjamij
+Jaring	m	8	əxjarɪŋ
+Janick	m	8	əxjanɪk
+Jantsje	f	8	jantʃə
+Jalal	m	8	əxjalɑl
+Hossein	m	8	hɔsɛin
+Ihab	m	8	ɪhɑb
+Ilham	f	8	jhɑm
+Huriye	f	8	hyrijiə
+Hanane	f	8	hananə
+Handan	f	8	hɑntɑn
+Haley	f	8	hɑli
+Haije	m	8	hɑɛijə
+Hemmo	m	8	hɛmo
+Henna	f	8	hɛna
+Hasse	f	8	hɑsə
+Haye	m	8	haiə
+Hazel	f	8	hazəl
+Hedda	f	8	hɛitda
+Hermann	m	8	ɦɛrmɑn
+Hette	m	8	hətə
+Hira	f	8	haira
+Hillebrand	m	8	hɪləbrɑnt
+Jhonny	m	8	jehaɔni
+Jihad	u	8	dʒihɑt
+Jille	m	8	dʒɪlə
+Jillis	m	8	dʒilis
+Selwyn	m	8	səlwajn
+Senne	u	8	sənə
+Seren	f	8	serən
+Serina	f	8	serina
+Sertan	m	8	sɛrtɑn
+Sjevket	m	8	ʃəvkət
+Sezen	f	8	səzən
+Santosh	m	8	sɑntozh
+Sandrina	f	8	sɑntrina
+Sarita	f	8	sarita
+Sal	m	8	sɑl
+Salman	m	8	sɑlmɑn
+Salomón	m	8	saloʊ̯mn
+Rizwan	m	8	rizwan
+Rolinka	f	8	rolɪŋka
+Roline	f	8	rolinə
+Rommy	f	8	rɔmi
+Sadé	f	8	sɑdəʔ
+Rudo	m	8	ruwdo
+Suzana	f	8	syzana
+Süheyla	f	8	swʏhəilɑ
+Sunil	m	8	sjunɪl
+Steijn	m	8	steɛin
+Stevan	m	8	stəvan
+Stian	m	8	stijɑn
+Sjeng	m	8	ʃɛŋ
+Sky	u	8	ski
+Skye	u	8	skiə
+Sohail	m	8	sɔhɑjl
+Shima	f	8	ʃima
+Shivani	f	8	ʃivɑni
+Sheena	f	8	ʃiːne
+Sijtze	m	8	sɛitsɛ
+Sikke	m	8	sɪkə
+Sherida	f	8	shɛrijdɑ
+Sheryl	f	8	shɛril
+Alco	m	8	ɑlko
+Alise	f	8	alizə
+Alistair	m	8	alɪstaɪr
+Alihan	m	8	alihɑn
+Alrik	m	8	ɑlrɪk
+Avni	m	8	avnɪ
+Abbey	f	8	abebeəi
+Ashton	m	8	ɑʃtɔn
+Arielle	f	8	arijɛlə
+Aryan	m	8	arɑjɑn
+Aras	m	8	aras
+Asuman	f	8	ɑsywmɑn
+Ajay	m	8	ajai
+Adrianne	f	8	adrijɑnə
+Anouar	m	8	anuar
+Anoushka	f	8	anushkɑ
+Anne-Roos	f	8	ɑnəʔros
+Anne-Ruth	f	8	ɑnərʏt
+Annebel	f	8	ɑnəbɛl
+Annelise	f	8	ɑnəlɪsə
+Annalisa	f	8	ɑnalisa
+Annamária	f	8	ɑnamrija
+Angeliek	f	8	ɑŋɣelik
+Angelie	f	7	ɑŋɣeli
+Annefleur	f	7	ɑnəflør
+Annejet	f	7	ɑnəjet
+Annemarije	f	7	ɑnəmarɛijə
+Annetta	f	7	ɑnəta
+Annewil	f	7	ɑnəwɪl
+Annieke	f	7	ɑnnikə
+Antonius	m	7	ɑntonijʏs
+Angus	m	7	anɣʏs
+Annamarie	f	7	ɑnamari
+Aydan	u	7	edɛn
+Bahri	m	7	bɑxrɪ
+Allon	m	7	ɑlɔn
+Alen	m	7	alən
+Alia	f	7	alija
+Aliye	f	7	alɑjiə
+Amós	m	7	ams
+Akshay	m	7	akshɑi
+Abubakar	m	7	abubɑkar
+Aaldrik	m	7	aldrajk
+Arvind	m	7	arvɪnt
+Arya	m	7	arija
+Ariadne	f	7	arijadeɛnə
+Ariette	f	7	arittə
+Arris	m	7	ɑrijs
+Arti	f	7	ɑrti
+Arenda	f	7	arəndɑ
+Brady	m	7	bradi
+Brandy	f	7	bɹændi
+Boyke	m	7	bɔjkə
+Bobbi	f	7	bɔbɪ
+Birgül	f	7	bijrᵊxwʏl
+Dakota	f	7	dakota
+Conner	m	7	kɔnər
+Charon	f	7	xarɔn
+Chanine	f	7	xaninə
+Charity	f	7	xarɪtɑj
+Caterina	f	7	katərɪna
+Dax	m	7	dɑks
+Daryl	m	7	dɑril
+Delia	f	7	dəlija
+Delilah	f	7	dəlɑjla
+Danja	f	7	tɑnja
+Clifford	m	7	klɪfɔrt
+Chrissie	f	7	xrɪsi
+Chelsey	f	7	ʃlsəi
+Claudy	f	7	klɔudi
+Clémentine	f	7	klemɛntinə
+Cilla	f	7	sɪla
+Cissy	f	7	sisi
+Carianne	f	7	karijɑnə
+Brit	f	7	brɪt
+Bryce	m	7	brise
+Buck	m	7	bʏk
+Buddy	m	7	bɵdi
+Cagdasj	m	7	kaɣdɑʃ
+Callum	m	7	kɑlʏm
+Calum	m	7	kɑlʏm
+Benedict	m	7	benədɪkt
+Bénédicte	f	7	benedɪktə
+Beert	m	7	bert
+Basten	m	7	bɑstən
+Bastien	m	7	bɑstin
+Beverly	f	7	bəvərlɑj
+Kariem	m	7	kɑrim
+Kamila	f	7	kaʔɛmɪlɑ
+Jurien	m	7	jyriən
+Jule	f	7	jylə
+Kors	m	7	kors
+Kyara	f	7	kijara
+Lissa	f	7	lɪsa
+Lorette	f	7	lorətə
+Lília	f	7	llija
+Linette	f	7	lɑjntə
+Linn	f	7	lɪn
+Lody	m	7	ljodi
+Lolke	m	7	lɔlkə
+Long	m	7	lɔŋ
+Lorenz	m	7	lorɛnz
+Lorenza	f	7	lorɛnza
+Liesanne	f	7	lisɑnə
+Liesje	f	7	liʃə
+Lexi	f	7	lɛksi
+Leigh	f	7	lɛɪxh
+Laurel	f	7	lɑurəl
+Lejla	f	7	lədʒlɑ
+Lenard	m	7	leɪ̯nɑrt
+Leni	f	7	lenɪ
+Joannes	m	7	jɔɑnəs
+Johanne	f	7	jɔhɑnə
+Jorrin	m	7	jɔrrɪn
+Josha	u	7	jɔshɑ
+Kimm	f	7	kimm
+Kevser	f	7	kevsər
+Kent	m	7	kɛnt
+Kinga	f	7	kɪŋɑ
+Marinde	f	7	marɪndə
+Maiko	m	7	mɑjkɔ
+Malin	f	7	malin
+Malissa	f	7	malisa
+Marcelino	m	7	mɑrsɛlino
+Mindert	m	7	mɪndərt
+Miran	m	7	miran
+Mitra	f	7	mitra
+Meriem	f	7	mərim
+Mient	m	7	mjɛnt
+Medine	f	7	medinə
+Meggy	f	7	məɡxi
+Menko	m	7	mənko
+Louwrens	m	7	lɑurəns
+Luce	f	7	ljusə
+Madelene	f	7	madələnə
+Lynsey	f	7	lɑjnsi
+Macy	f	7	masi
+Lucián	m	7	lywkjn
+Mattanja	f	7	mɑtɑɲa
+Matthea	f	7	mɑteja
+Muna	f	7	mʏna
+Elsemieke	f	7	əlsɛmikə
+Efraim	m	7	əfrem
+Eddo	m	7	ɛdo
+Doenja	f	7	doənja
+Edin	m	7	ədɪn
+Edmée	f	7	ɛtme
+Edmund	m	7	ɛtmʏnt
+Dienke	f	7	dijɛŋkə
+Diyar	m	7	dijar
+Djordy	m	7	ddʒɔrdi
+Devi	u	7	devij
+Devran	m	7	dəvran
+Demis	m	7	demɪs
+Emi	f	7	əmj
+Emiliano	m	7	əmilijano
+Esmay	f	7	əsme
+Emmelie	f	7	ɛməli
+Engelien	f	7	ɛŋəlin
+Gezina	f	7	ɣəzina
+Garry	m	7	xɑri
+Gerbrich	f	7	ɣərbrɪx
+Gerlinda	f	7	ɣərlɪndɑ
+Gerrald	m	7	ɣərralt
+Everhard	m	7	evərhɑrt
+Evin	f	7	əvɪn
+Fée	f	7	feə
+Falko	m	7	fɑlᵊko
+Evalien	f	7	əvaliən
+Fraukje	f	7	frɑukjə
+Florencia	f	7	florɛnsija
+Florent	m	7	florɛnt
+Florentine	f	7	florɛntinə
+Floris-Jan	m	7	florisjan
+Nandi	f	7	nɑndi
+Nanouk	f	7	naʔɛɱuk
+Nard	m	7	nɑrt
+Nasir	m	7	nɑsir
+Redmer	m	7	redmər
+Rhode	f	7	rodə
+Reinhard	m	7	rɛɪ̯nhɑrt
+Patrique	m	7	patrijk
+Qasim	m	7	kɑsɪm
+Quinta	f	7	kinta
+Raja	u	7	raja
+Rahman	m	7	rahmən
+Nickey	u	7	nɪki
+Nieck	m	7	nik
+Niel	m	7	nil
+Noé	u	7	ɛnoe
+Nuran	f	7	nʏrɑn
+Nurhan	f	7	nʏːrhɑn
+Núria	f	7	nrija
+Orhun	m	7	ɔrhuwn
+Petronella	f	7	pətronɛla
+Pilar	f	7	pilar
+Shelby	f	7	shɛlbi
+Shiva	u	7	ʃɑjvə
+Sienna	f	7	sijɛna
+Sijbrand	m	7	sɛibrɑnt
+Roby	f	7	robɑj
+Rosalinda	f	7	rosalinda
+Rosaline	f	7	rosalinə
+Rosina	f	7	rozina
+Ritesh	m	7	rith
+Rolinda	f	7	rolɪnda
+Rona	f	7	rona
+Serra	f	7	səra
+Sevinc	f	7	səvɪns
+Sjevval	f	7	ʃəvvɑl
+Shan	f	7	ʃɑn
+Selvi	f	7	səlvɪ
+Semanur	f	7	səmanyr
+Seger	m	7	zəɣər
+Sepp	m	7	sɛpp
+Sergen	m	7	sərɣən
+Serhan	m	7	sərhɑn
+Shahin	m	7	shɑhin
+Saniye	f	7	sanijjɛ
+Saman	m	7	samɑn
+Samanta	f	7	samɑnta
+Samara	f	7	samara
+Saraí	f	7	sara
+Sohaila	f	7	ɛsohaɪlɑ
+Soufiane	m	7	sɑufijɑ̃ə
+Sinéad	f	7	sɪneade
+Siobhán	f	7	sijobehan
+Silvy	f	7	sɑjlvi
+Sima	f	7	sjmɑ
+Soma	f	7	soma
+Somaya	f	7	somaja
+Rüya	f	7	rwʏja
+Rowie	f	7	rowi
+Sagar	m	7	saɣar
+Stanislav	m	7	stanislaːv
+Stans	f	7	stɑns
+Stefanos	m	7	stəfɑnɔs
+Svea	f	7	svəʔɑ
+Sunita	f	7	synita
+Süreyya	f	7	swʏrejiija
+Stephany	f	7	stɛphɑnaj
+Tyas	m	7	tiɑs
+Tyson	m	7	tisɔn
+Ümran	f	7	wʏmran
+Trienke	f	7	trijɛŋkə
+Usama	m	7	ywsama
+Tía	f	7	ta
+Tiara	f	7	tsijara
+Tirsa	f	7	tirsa
+Tjibbe	m	7	cɪbə
+Timmo	m	7	tɪmo
+Tessie	f	7	tɛsi
+Tessy	f	7	təsi
+Teuni	f	7	tønɪ
+Teodora	f	7	tejoʔdora
+Wladimir	m	7	wladijmijr
+Wynand	m	7	wajnɑnt
+Vivien	f	7	vɪvin
+Wiecher	m	7	wiər
+Wendeline	f	7	wəndɛlɑjn
+Winanda	f	7	wɪnɑnda
+Syl	u	7	sɪl
+Sylke	f	7	sɪlkə
+Tanneke	f	7	tɑnəkə
+Yonne	f	7	ijonə
+Yang	m	7	jɑŋ
+Yosef	m	7	jɔsəf
+Yousif	m	7	juʒf
+Zoey	f	7	zui
+Zora	f	7	zɔra
+Yvanka	f	7	ivɑŋka
+Ysbrand	m	7	isbrɑnt
+Zahraa	f	7	zɑhra
+Zaki	m	7	tsaki
+Zuhal	f	7	zʏhɑl
+Jerzy	m	7	dʒərzi
+Jessi	f	7	dʒɛsi
+Jettie	f	7	jɛti
+Jewel	f	7	jəwɛl
+Jildert	m	7	jɪldərt
+Jilke	u	7	jɪlkə
+Jing	u	7	dʒɪŋ
+Jinke	f	7	dʒɪŋkə
+Jippe	m	7	dʒɪpə
+Jefferson	m	7	dʒɛfərsɔn
+Jauke	m	7	əxjaʏkə
+Jannik	m	7	jɑnɪk
+Jannis	m	7	jɑnɪs
+Janus	m	7	janʏs
+Jarne	m	7	jarnə
+Jasmína	f	7	əxjasmna
+Jaden	u	7	jadən
+Ishak	m	7	iʃak
+Isjil	f	7	ɪʃil
+Graciela	f	7	xrɑsɪəla
+Gudo	m	7	ɣy­do
+Giovanny	m	7	xijovɑni
+Gianna	f	7	dʒiɑna
+Gijsje	f	7	xɛɪʃə
+Gillis	m	7	xɪlis
+Gonca	f	7	ɣonka
+Hatim	m	7	hatɑjm
+Hoi	f	7	ɦɔi̯
+Heimen	m	7	hɛɪmən
+Hotze	m	7	hotsɛ
+Ilkay	u	7	ɪlᵊkai
+Imko	m	7	ɪmkɔ
+Hafsa	f	7	hɑfsa
+Hai	m	7	hɑj
+Hao	m	7	hɑɔ
+Gwenn	f	7	xwɛn
+Harrison	m	7	hɑrisɔn
+Gulten	f	6	xʏltən
+Hajar	f	6	hɑjar
+Hanin	f	6	hɑnin
+Guust	m	6	xyst
+Isaiah	m	6	ɪsaijah
+Isha	u	6	iʃa
+Iza	f	6	itsa
+Isaak	m	6	ɪsak
+Ino	m	6	ino
+Ioannis	m	6	ijoɑnɪs
+Issam	m	6	ɪsam
+Jian	m	6	dʒiən
+Jie	f	6	ji
+Jerom	m	6	jerɔm
+Jisse	u	6	dʒɪsə
+Jenske	f	6	jənskə
+Jeremiah	m	6	jerəmijah
+Janelle	f	6	janɛlə
+Janiek	u	6	janik
+Janie	f	6	jani
+Japke	f	6	japkə
+Idil	f	6	ɪdɪl
+Immanuel	m	6	ɪmanywɛl
+Imogen	f	6	ɪmoɣən
+Hümeyra	f	6	hwʏmeɪ̯ira
+Hong	u	6	hɔŋ
+Houda	f	6	hɔuda
+Hüsna	f	6	hʏsnaʔ
+Githa	f	6	dʒitha
+Giuliano	m	6	dʒiywlijano
+Gülbahar	f	6	xwʏlbɑɑr
+Gülhan	f	6	xwʏlhɑn
+Gracia	f	6	xrasija
+Graeme	m	6	xraəmə
+Gisella	f	6	ɣɪsəla
+Gilberto	m	6	dʒilbərto
+Hesther	f	6	hɛster
+Hendrikje	f	6	hɛndrɪkjə
+Hendrikus	m	6	həndrɪkʏs
+Hiba	f	6	haibɑ
+Hillegonda	f	6	hɪləɣonda
+Hasna	f	6	hasnaʔ
+Fjodor	m	6	fjodor
+Fransien	f	6	frɑnsin
+Fidan	f	6	fidɛn
+Femia	f	6	fəmija
+Ferhan	f	6	fərhɑn
+Frederica	f	6	frədərɪkɑ
+Freke	f	6	frəkə
+Frenky	m	6	frəŋki
+Flo	f	6	flo
+Floran	m	6	floran
+Dimitrios	m	6	dimitrijɔs
+Ditmar	m	6	ditmɑr
+Dilber	f	6	dɪlbər
+Dima	f	6	dijma
+Eimert	m	6	ɛimərt
+Eeke	f	6	ekə
+Elvera	f	6	ɛlvɛrɑ
+Donato	m	6	donato
+Ebony	f	6	əbɔnaj
+Dusty	m	6	dywsti
+Dyan	u	6	diɑn
+Dolores	f	6	dɔlɔrəs
+Edmar	m	6	ɛtmɑr
+Farshad	m	6	fɑrshɑt
+Evelijn	f	6	əvɛlɛin
+Eran	m	6	ərɑn
+Estella	f	6	əstɛla
+Engbert	m	6	ɛŋbərt
+Esen	f	6	əsən
+Eslem	f	6	əslɛm
+Fynn	m	6	fin
+Gertine	f	6	ɣərtinə
+Gaël	m	6	xael
+Gaye	f	6	xajɛ
+Geart	m	6	ɣəʔɑrt
+Kerwin	m	6	kərwɪn
+Kiek	f	6	kik
+Kik	m	6	kɪk
+Kika	f	6	kjkɑ
+Killian	m	6	killijɑn
+Keziban	f	6	kezijbɑn
+Kenzo	m	6	kənzɔ
+Korstiaan	m	6	kɔrstian
+Krissy	f	6	krisi
+Kristijan	m	6	krɪstɛijɑn
+Krystian	m	6	krijstijɑn
+Krystle	f	6	kriztlə
+Kursjad	m	6	kyrʃat
+Kavita	f	6	kavita
+Kawa	m	6	kawa
+Kathinka	f	6	katɪŋka
+Keano	m	6	kəano
+Juliane	f	6	jylijanə
+Judi	f	6	jydɪ
+Juli	f	6	jylɛi
+Jurrit	m	6	jʏrᵊrɪt
+Josianne	f	6	dʒosiɑnə
+Josja	u	6	jɔʃa
+Jouk	m	6	jɑuk
+Jytte	f	6	dʒitə
+Jocelyne	f	6	dʒosɛlɪŋə
+Johnathan	m	6	dʒɔhnɑtɑn
+Jolan	m	6	jɔlɑn
+Jolein	f	6	jɔlɛin
+Josca	f	6	dʒɔskɑ
+Joeke	u	6	jukə
+Jordin	m	6	jɔrdɪn
+Jorike	f	6	jɔrɑjk
+Jorit	m	6	jɔrɪt
+Jorrick	m	6	dʒɔrɪk
+Josanne	f	6	jɔsɑnə
+Lieselotte	f	6	lizəlɔtə
+Lilianne	f	6	lɑjlijɑnə
+Lottie	f	6	lɔti
+Loredana	f	6	lorədɑna
+Lino	m	6	lino
+Linsy	f	6	lɑjnsi
+Loïc	m	6	lowik
+Lein	m	6	lɛɪn
+Levon	m	6	levɔn
+Leony	f	6	lejonɪ
+Armen	m	6	ɑrmən
+Asmara	f	6	ɑsmɑra
+Aruna	f	6	arunaʔ
+Asad	m	6	asad
+Arij	m	6	arɛi
+Alena	f	6	aləna
+Alon	m	6	alɔn
+Aloysius	m	6	alwɑsijʏs
+Alycia	f	6	alisija
+Alysha	f	6	alizhɑ
+Alicja	f	6	alisja
+Anieke	f	6	anikə
+Aniel	m	6	anil
+Anis	m	6	anɪs
+Anne-Floor	f	6	ɑnəʔᵊflor
+Annegreet	f	6	ɑnəɣret
+Anneli	f	6	ɑnəli
+Anneroos	f	6	ɑnəros
+Bailey	m	6	beli
+Balder	m	6	bɑldər
+Ayesha	f	6	eəshɑ
+Aygül	f	6	aixwʏl
+Abdelhamid	m	6	abedəlhɑmɪt
+Adina	f	6	adina
+Aarnout	m	6	arnut
+Abram	m	6	abrɑm
+Amrita	f	6	amrijtɑ
+Akkelien	f	6	ɑkəlin
+Aiman	m	6	ɛːman
+Agnetha	f	6	ɑxnethɑ
+Akash	m	6	akaʃ
+Albertus	m	6	albərtəs
+Bette	f	6	bɛtə
+Benji	m	6	bɛɲj
+Belgin	f	6	bɛlɣin
+Berbel	f	6	bɛrbəl
+Bernadine	f	6	bərnadijnə
+Bartje	u	6	bɑrcə
+Cathalijne	f	6	kehɑlɛinə
+Catharinus	m	6	katharɪnʏs
+Charline	f	6	ʃɑrlɑjn
+Chaya	f	6	xaja
+Carst	m	6	kɑrst
+Chaim	m	6	xaɪm
+Chaja	f	6	xaja
+Celesta	f	6	selɛsta
+Billie	u	6	bɪli
+Birsen	f	6	bijrsən
+Boran	m	6	bɔrɑn
+Bibian	f	6	bɑjbijɑn
+Bjarn	m	6	bjarn
+Bloem	f	6	blum
+Boele	m	6	bulə
+Damion	m	6	dɑmijɔn
+Dania	f	6	danija
+Danial	m	6	danijal
+Cuno	m	6	kyno
+Dajo	m	6	dajo
+Corianne	f	6	korijɑnə
+Corwin	m	6	kɔːrwɪn
+Byron	m	6	birɔn
+Carleen	f	6	kɑrlen
+Carlotta	f	6	kɑrlɔta
+Davi	m	6	davɪ
+Davina	f	6	davina
+Darlene	f	6	tɑrlenə
+Darya	f	6	dɑrija
+Deanne	f	6	dəɑnə
+Clair	f	6	klɛːr
+Chester	m	6	xɛstər
+Chi	u	6	xi
+Chico	m	6	xiko
+Christan	m	6	xrɪstɑn
+Clayton	m	6	kletɔn
+Chiron	m	6	xiron
+Nadi	f	6	nadij
+Münevver	f	6	mynevvər
+Moses	m	6	mozəs
+Mijndert	m	6	mɛintərt
+Miki	f	6	mɑjkɪ
+Milano	m	6	milano
+Mohsin	m	6	mohsɪn
+Mink	m	6	mɪŋk
+Mirre	f	6	mɪrə
+Misty	f	6	mɪsi
+Marinke	f	6	marɪŋkə
+Marjory	f	6	mɑrdʒɔrɪ
+Marle	f	6	mɑrlə
+Márcio	m	6	mrsio
+Marel	f	6	mɑrəl
+Manisha	f	6	manɪshɑ
+Mannes	m	6	mɑnəs
+Magalí	f	6	mɑɣal
+Maico	m	6	mɑjko
+Maral	f	6	mɑrɑl
+Malon	f	6	malɔn
+Mavis	f	6	mavis
+Marlinda	f	6	mɑrlɪnda
+Mattijn	m	6	mɑtɛin
+Maryem	f	6	mɑrijɛm
+Matej	m	6	matejj
+Matin	m	6	matin
+Merwin	m	6	mərwɪn
+Micaela	f	6	mikaəla
+Mehran	m	6	mɛrɑn
+Meintje	f	6	mɛɪntjə
+Meliha	f	6	mɛlɑjhɑ
+Lucette	f	6	lʏsɛtə
+Louke	f	6	lɑukə
+Lubna	f	6	lʏpna
+Lucca	u	6	lytʃa
+Maan	f	6	man
+Mackenzie	f	6	mɛkənzi
+Madelein	f	6	madəlɛin
+Lyan	f	6	lɑjɑn
+Lycke	f	6	liskə
+Zuzanna	f	6	zʏzɑna
+Wing	u	6	wɪŋ
+Wubbo	m	6	wʏbo
+Wan	u	6	wɑn
+Wasim	m	6	wɑsɪm
+Viviana	f	6	vievieana
+Wibe	m	6	wɪbə
+Vin	m	6	vɪn
+Victorine	f	6	vɪktorinə
+Violeta	f	6	vijolɛa
+Vadim	m	6	vadɪm
+Touria	f	6	turija
+Tsjerk	m	6	tʃɛk
+Tuana	f	6	tywana
+Tes	f	6	tɛs
+Thuur	m	6	thyr
+Thieme	m	6	thimə
+Thim	m	6	tɪm
+Tetske	f	6	tɛtskə
+Thalita	f	6	thɑlɑjtɑ
+Tije	m	6	tɛijə
+Timme	m	6	tɪmə
+Tin	m	6	tɪn
+Zekiye	f	6	zəkijiə
+Zerrin	f	6	zərin
+Sylvano	m	6	sɪlvano
+Teake	m	6	tikə
+Teis	m	6	tɛis
+Yeter	f	6	jɛtər
+Yana	f	6	ijana
+Xin	u	6	ksin
+Youandi	f	6	juɑndɪ
+Yde	m	6	idə
+Yannis	m	6	ijanɪs
+Yaprak	f	6	japrɑk
+Pieta	f	6	pitɑ
+Pietsje	f	6	pitʃə
+Priyanka	f	6	priiɑŋka
+Philine	f	6	filinə
+Phuong	f	6	phuwoŋ
+Ossama	m	6	ɔsama
+Paris	f	6	parɪs
+Otmar	m	6	jotmɑr
+Oussama	m	6	usama
+Özhan	m	6	wozhɑn
+Najib	m	6	nɑjib
+Necla	f	6	nəkla
+Nanke	f	6	nɑŋkə
+Nataly	f	6	natalɑj
+Natalya	f	6	natalija
+Naut	m	6	nʌʊ̯t
+Naomie	f	6	naomi
+Rayna	f	6	rena
+Remmert	m	6	rɛmərt
+Rianka	f	6	rijɑŋka
+Ratna	f	6	ratna
+Raya	f	6	raja
+Renz	m	6	rənz
+Nusret	m	6	nʏsrɛt
+Nyncke	f	6	najŋkkə
+Norah	f	6	norah
+Noreen	f	6	nɔren
+Olle	m	6	ɔlə
+Nuh	m	6	nʏh
+Oeds	m	6	uts
+Orla	f	6	ɔrla
+Ramiz	m	6	ramiz
+Ramzy	m	6	rɑmzi
+Randi	f	6	rɑndi
+Quido	m	6	kidɔ
+Rajesh	m	6	rajəsh
+Radha	f	6	radhɑ
+Rafaella	f	6	rafɑəla
+Noam	m	6	noʔɑm
+Nihad	u	6	nijhɑt
+Nikhil	m	6	nɪkɦɪl
+Ninke	f	6	nɪŋkə
+Ninon	f	6	ninɔn
+Neline	f	6	nɛlinə
+Nelis	m	6	nəlɪs
+Neo	m	6	nejo
+Nergiz	f	6	nərxits
+Sverre	m	6	svɛrə
+Suraj	m	6	sʏrɑj
+Shai	m	6	shɑj
+Semiha	f	6	səmɪha
+Senay	f	6	senaʔi
+Serve	m	6	sʏːrᵊf
+Seyfullah	m	6	sifjuːlah
+Shakir	m	6	shakir
+Shakira	f	6	shakira
+Shalini	f	6	shɑlini
+Sef	m	6	sɛf
+Selcan	f	6	səlkɑn
+Scarlet	f	6	skɑrlɛt
+Sharmila	f	6	shɑrmɑjla
+Sierk	m	6	sirk
+Sieta	f	6	sɪəta
+Shania	f	6	shɑnija
+Shaquille	m	6	ʃɑkijə
+Rolando	m	6	rolɑndo
+Romi	f	6	romi
+Rosana	f	6	rosana
+Rosemarijn	f	6	rozəmarɛin
+Ronja	f	6	rɔɲa
+Rony	f	6	ronaj
+Roelina	f	6	rulina
+Rojda	f	6	rojdɑ
+Rokus	m	6	rokʏs
+Safia	f	6	safija
+Sabá	f	6	sabe
+Rufus	m	6	rʏfʏs
+Saira	f	6	sɛːra
+Rowen	u	6	rowən
+Roxanna	f	6	rɔksɑna
+Salomé	f	6	salome
+Samed	m	6	samɛt
+Sjonnie	m	6	ʃɔni
+Skylar	f	6	skilɑr
+Silva	f	6	sɑjlva
+Sjirin	f	5	ʃirɪn
+Sofyan	m	5	sofijɑn
+Sian	f	5	sijɑn
+Sharief	m	5	shɑrif
+Shauna	f	5	shɑuna
+Shayan	m	5	shajan
+Sheetal	f	5	ʃiːtɑl
+Sheldon	m	5	shɛldɔn
+Sidar	m	5	sidar
+Sieb	m	5	sip
+Sierra	f	5	sirra
+Siete	m	5	sitə
+Stefani	f	5	stəfɑni
+Stefany	f	5	stəfɑni
+Stephano	m	5	stepehaano
+Sükrü	m	5	swʏkrwʏ
+Sjuheda	f	5	sjyhɛita
+Surya	f	5	syria
+Selene	f	5	selənə
+Semmy	u	5	səmmij
+Sjebnem	f	5	ʃəbnem
+Sedanur	f	5	sedɑnyr
+Shana	f	5	ʃana
+Seray	f	5	sere
+Samra	f	5	samrɑ
+Sape	m	5	sapə
+Sare	f	5	sarə
+Sarie	f	5	sari
+Sarissa	f	5	sarɪsa
+Rodger	m	5	rodʒər
+Rohini	f	5	rohini
+Rolanda	f	5	rolɑnda
+Rio	m	5	rijo
+Roselie	f	5	rozeli
+Roseline	f	5	rozəlɑjn
+Rosemary	f	5	rosəmɑrɑj
+Roshan	m	5	roshɑn
+Ritske	m	5	rɪtskə
+Riva	f	5	riva
+Rivka	f	5	rivkɑ
+Rozanne	f	5	rozɑnə
+Sabah	f	5	sabɑ
+Sabiha	f	5	sɑbijhɑ
+Sabir	m	5	sabɪr
+Sadaf	f	5	satɑf
+Chimène	f	5	xɪmjɛnə
+Clarice	f	5	klarisə
+Clarisse	f	5	klarɪsə
+Chen	u	5	xən
+Cherelle	f	5	xɛrələ
+Ciara	f	5	ʃara
+Boet	m	5	but
+Bor	m	5	bɔr
+Bashir	m	5	bɛʃʏr
+Basil	m	5	bazil
+Beitske	f	5	bɛɪtskə
+Belma	f	5	bəlma
+Cengizhan	m	5	sɛndʒitshɑn
+Caroliene	f	5	kɑrolinə
+Caya	f	5	kaja
+Charis	f	5	xarɪs
+Danish	m	5	danijʃ
+Danitsja	f	5	dɑnitʃa
+Davine	f	5	davinə
+Darshan	m	5	dɑrʃn
+Dayna	f	5	dena
+Darcy	u	5	dɑrki
+Darian	m	5	darijɑn
+Corinda	f	5	korijnda
+Curtis	m	5	kʏrtis
+Damiaan	m	5	dɑmijan
+Danica	f	5	danijka
+Daley	m	5	dali
+Dalí	f	5	dal
+Brooklyn	u	5	broklɪŋ
+Bryant	m	5	brijɑnt
+Caressa	f	5	karɛsa
+Carlijne	f	5	kɑrlɛinə
+Brittney	f	5	beɛrittni
+Latife	f	5	lɑtifə
+Laurenz	m	5	lɑurənz
+Larisa	f	5	larisa
+Laurine	f	5	lɑurinə
+Leoniek	f	5	lejonik
+Katrijn	f	5	kɑtrɛɪ̯n
+Kashif	m	5	kaʃɪf
+Kassandra	f	5	kɑsɑndra
+Kingsley	m	5	kɪŋsli
+Kirstie	f	5	kirsti
+Kishan	m	5	kɪshɑn
+Kimmy	f	5	kɪmi
+Keri	f	5	kərɛi
+Kes	u	5	kəs
+Kendrick	m	5	kəndrɪk
+Lan	f	5	lɑn
+Kyran	m	5	kirɑn
+Kuno	m	5	kʌno
+Kyan	m	5	kijɑn
+Klasina	f	5	klɑsina
+Klazina	f	5	klɑzina
+Lizz	f	5	lɪz
+Lizzie	f	5	lɪzi
+Loekie	f	5	luki
+Lissy	f	5	lɪsi
+Liene	f	5	liənə
+Lieven	m	5	livən
+Linet	f	5	linɛt
+Ling	f	5	lɪŋ
+Lionne	f	5	lijɔnə
+Lotfi	m	5	lɔtfɑj
+Loubna	f	5	lɑubna
+Juno	u	5	jynio
+Jürg	m	5	dʒwʏrx
+Justa	f	5	jʏsta
+Juliano	m	5	jylijano
+Jülide	f	5	dʒwʏlɑjt
+Judie	f	5	jydi
+Kaitlin	f	5	kaɪtlin
+Josina	f	5	dʒosina
+Josta	f	5	jɔsta
+Joya	f	5	dʒɔja
+Jorijn	u	5	jɔrɛin
+Jorinda	f	5	dʒorinda
+Joann	f	5	jɔɑn
+Joany	f	5	jɔanaj
+Josefina	f	5	dʒosəfina
+Joerie	m	5	juri
+Jolene	f	5	dʒolənə
+Jolieke	f	5	jɔlikə
+Jolinde	f	5	jɔlɪndə
+Jolle	m	5	jɔlə
+Ho	u	5	ho
+Hoàng	u	5	ɦoʊ̯aŋ
+Hidayet	m	5	hɑjdeɛt
+Hillary	f	5	hɪljarɑj
+Hermina	f	5	hɛrmɪnɑ
+Henrietta	f	5	hɛnrita
+Heine	m	5	hɛinə
+Heinrich	m	5	hɛinrɪx
+Jenno	m	5	dʒɛno
+Jentje	f	5	jəncə
+Jered	m	5	jerət
+Jerney	f	5	dʒɛrᵊni
+Jessey	u	5	dʒɛsəi
+Jean-Michel	m	5	dʒinmixəl
+Jimme	m	5	dʒɪmə
+Jimmie	m	5	dʒɪmi
+Jeltsje	f	5	jəltʃə
+Jenifer	f	5	jənijfər
+Haider	m	5	hɑɪdər
+Guyon	m	5	ɣy­jon
+Hamsa	m	5	hɑmsa
+Itske	f	5	ɪtskə
+Irmak	f	5	irmɑk
+Ishan	m	5	iʃan
+Iskander	m	5	ɪskɑndər
+Inke	f	5	ɪŋkə
+Grytsje	f	5	xrijtʃə
+Gülistan	f	5	xwʏlɪstɑn
+Giordano	m	5	xijordɑno
+Janieke	f	5	janikə
+Janis	f	5	əxjanɪs
+Jansje	f	5	janʃə
+Jara	f	5	njarɑ
+Jard	m	5	jɑrt
+Jakoba	f	5	əxjakowbɑ
+Jale	f	5	jalə
+Jamie-Lee	f	5	əxjamile
+Jamil	m	5	əxjamil
+Jazzy	u	5	dʒɛːzi
+Jean-Luc	m	5	dʒinlywse
+Ilia	m	5	ilija
+Imane	f	5	jmɑnə
+Ide	m	5	idə
+Idriss	m	5	itriss
+Ingemar	m	5	ɪŋəmɑr
+Hylkje	f	5	ilkjə
+Ilco	m	5	ilkɔ
+Georgio	m	5	χejɔrχijo
+Georgios	m	5	χejɔrχijɔs
+Gerardus	m	5	ɣəraːrdyws
+Gerline	f	5	ɣərlinə
+Gerrianne	f	5	ɣərijɑnə
+Gesina	f	5	ɣəsina
+Ghita	f	5	xhita
+Gauke	m	5	xaʏkə
+Geanne	f	5	ɣəɑnə
+Geartsje	f	5	χejɑrtʃə
+Geerke	f	5	ɣəərkə
+Elvire	f	5	əlvɪrə
+Elon	m	5	əlɔn
+Elton	m	5	əltɔn
+Elisabet	f	5	əlɪsabet
+Eize	m	5	ɛizə
+Ellemieke	f	5	ɛləmikə
+Ellemijn	f	5	ɛləmjjn
+Fleurine	f	5	flørinə
+Floriaan	m	5	florijan
+Fiorella	f	5	fijorəla
+Firas	m	5	fɪrɑs
+Flynn	m	5	flain
+Foekje	f	5	fukjə
+Fouzia	f	5	fuzija
+Frederico	m	5	frədərɪko
+Djoni	f	5	djɔnj
+Denisa	f	5	dənɪsa
+Dide	f	5	didə
+Dimitra	f	5	dimitra
+Dingeman	m	5	dɪŋəmɑn
+Dione	f	5	dijonə
+Dexter	m	5	dɛkstər
+Esad	m	5	esɑt
+Esmiralda	f	5	əsmijrɑldɑ
+Emke	f	5	emkə
+Emmeke	f	5	ɛməkə
+Emmi	f	5	ɛmi
+Edine	f	5	ədinə
+Edita	f	5	edita
+Döndü	f	5	dwondɪwʏ
+Döne	f	5	dwonə
+Donné	m	5	dɔnne
+Dorith	f	5	dɔrijth
+Dorris	f	5	dɔris
+Doutzen	f	5	dutzən
+Dragana	f	5	draɣana
+Dominicus	m	5	dominikʏs
+Durmus	m	5	dyrmyz
+Fatema	f	5	fɑtəma
+Fathi	m	5	fɑtɪ
+Faiza	f	5	fɛzɑ
+Faizel	m	5	fɛzəl
+Fardau	f	5	fartɑuw
+Faber	m	5	fabɛr
+Fabrice	m	5	fabrisə
+Adolf	m	5	adɔlf
+Alana	f	5	alana
+Albertien	f	5	ɑlbərtin
+Albertje	f	5	ɑlbərcə
+Antsje	f	5	ɑntʃə
+Anuschka	f	5	anysxkɑ
+Annelijn	f	5	ɑnəlɛin
+Annelous	f	5	ɑnəlus
+Annetje	f	5	ɑnəcə
+Annigje	f	5	ɑnəxjə
+Arabella	f	5	arabɛla
+Aster	f	5	ɑstər
+Arlene	f	5	jarlənə
+Ashna	f	5	ɑshna
+Ariena	f	5	arijənɑ
+Arinda	f	5	arɪnda
+Arvin	m	5	arvɪn
+Aren	m	5	arən
+Alix	f	5	aliks
+Allert	m	5	ɑlərt
+Ancilla	f	5	ɑ̃sɪla
+Amrit	m	5	amrɪt
+Amara	f	5	amara
+Amely	f	5	amelɑj
+Amie	f	5	ami
+Aura	f	5	ʌrɑ
+Aurélia	f	5	ɑuwrelija
+Babiche	f	5	babixə
+Ayrton	m	5	ertɔn
+Ayda	f	5	edɑ
+Aymen	m	5	emən
+Abdellah	m	5	ɑbdɛlɑ
+Abdou	m	5	ɑbdu
+Aarnoud	m	5	arnɑut
+Aarti	f	5	arti
+Nelie	f	5	neli
+Nella	f	5	nɛla
+Nica	f	5	nika
+Nolan	m	5	nolan
+Narin	f	5	narɪn
+Nebahat	f	5	nəbɑhɑt
+Neda	f	5	nəda
+Nejla	f	5	nədʒlɑ
+Nele	f	5	nelə
+Naud	m	5	nɑut
+Navid	m	5	navijt
+Nanine	f	5	naʔɛɱinə
+Nanou	f	5	nanu
+Natasa	f	5	natasa
+Pooja	f	5	puja
+Prashant	m	5	prɑshɑnt
+Pieke	u	5	pikə
+Perihan	f	5	perijhɑn
+Patrycja	f	5	patrɑjkja
+Othman	m	5	otmɑn
+Otte	m	5	ɔtə
+Özgül	f	5	wozxwʏl
+Rafaela	f	5	rafɑəla
+Queenie	f	5	keni
+Quirien	f	5	kirin
+Raíssa	f	5	rɑsa
+Reyer	m	5	rejijər
+Regilio	m	5	reɣijlijo
+Rebeca	f	5	rəbɛka
+Reineke	f	5	rɛinəkə
+Reinie	f	5	rɛini
+Reitze	m	5	rɛitsɛ
+Remziye	f	5	rejmzijiə
+Richtje	f	5	rɪxtjə
+Rielle	f	5	rilə
+Riemke	f	5	rimkə
+Riana	f	5	rijana
+Ravin	m	5	ravɪn
+Oriana	f	5	orijana
+Nydia	f	5	najdija
+Obed	m	5	obed
+Noureddine	m	5	nurɛdinə
+Nouri	m	5	nuri
+Okko	m	5	ɔkɔ
+Lynne	f	5	linə
+Made	f	5	madə
+Luana	f	5	lywana
+Marcellus	m	5	mɑrsɛlʏs
+Marine	f	5	maːrinə
+Marischa	f	5	marisxa
+Maritza	f	5	marijtsa
+Maret	f	5	marɛt
+Marianka	f	5	marijankɑ
+Monir	m	5	monir
+Nady	f	5	nadei
+Mukaddes	f	5	mjuːkɑdəs
+Mükremin	m	5	mykrəmɪn
+Minouche	f	5	minuʃ
+Mikal	m	5	mɪkɑl
+Miko	m	5	mjkɔ
+Milana	f	5	milana
+Milica	f	5	milika
+Mille	f	5	mil
+Mimoun	m	5	mimun
+Mohamoud	m	5	mohamɑut
+Mírian	f	5	ɛmɛriən
+Mirjana	f	5	mirjanaʔ
+Miroslav	m	5	mirɔslaːv
+Michelangelo	m	5	mixəlɑŋɣelo
+Meryl	f	5	mɛril
+Menke	f	5	mənkə
+Manoah	m	5	mɛ­nah
+Maggy	f	5	mɑxxi
+Maick	m	5	maɪk
+Maran	f	5	maran
+Mea	f	5	meʔa
+Marlyn	f	5	mɑrlɪŋ
+Marre	f	5	mɑrə
+Marriët	f	5	mɑriət
+Maxx	m	5	mɑksks
+Mateo	m	5	matejoʔ
+Matilde	f	5	matildə
+Matthe	m	5	mɑtej
+Matthys	m	5	mattis
+Mauk	m	5	mʌʊ̯k
+Maurijn	m	5	mɑurɛin
+Marye	f	5	mɑrijə
+Ylva	f	5	ɑjlva
+Yonca	f	5	jɔnka
+Yente	f	5	jɛntə
+Yair	m	5	jaɪr
+Yasmijn	f	5	jasmɛɪn
+Yelda	f	5	ijɛlda
+Ximena	f	5	ksimna
+Yosra	f	5	ijosra
+Ümmü	f	5	wʏmmwʏ
+Urvin	m	5	ʏrvajn
+Tyrone	m	5	tironə
+Uilke	m	5	œylkə
+Tristen	m	5	trɪstən
+Tuan	m	5	tywɑn
+Wick	m	5	wɪk
+Wilhelmus	m	5	wɪlhɛlmʏs
+Warda	f	5	wɑrda
+Wen	u	5	wən
+Wendell	m	5	wɛndəl
+Zwaantje	f	5	zwancə
+Vikram	m	5	vɪkrɑm
+Vinod	m	5	vɪnod
+Violetta	f	5	vijolɛta
+Viona	f	5	vijona
+Veroniek	f	5	vəronik
+Taede	m	5	taədə
+Talisa	f	5	talɪsa
+Taoufik	m	5	taɑufɪk
+Tasha	f	5	taʃa
+Tabe	m	5	tabə
+Tamme	m	5	tɑmə
+Tanisha	f	5	tɑniʃa
+Tanita	f	5	tanita
+Tanju	m	5	tɑnjy
+Tesse	f	5	tɛsə
+Tjade	m	5	cadə
+Tjardo	m	5	tjardɔ
+Tjisse	m	5	cɪsə
+Thibault	m	5	thɑjbɔult
+Tex	m	5	tɛks
+Zino	m	5	zino
+Zelda	f	5	zɛldɑ
+Zena	f	5	zena
+Yvan	m	5	ivɑn
+Zahide	f	5	zɑhɑjt
+Zahid	m	4	zɑhid
+Zahir	m	4	zɑhɑjr
+Zef	m	4	zɛf
+Zefanja	u	4	zəfɑɲa
+Zelal	f	4	zəlɑl
+Zen	m	4	zən
+Ytsje	f	4	itʃə
+Zohair	m	4	zohɛːr
+Zülal	f	4	zwʏlɑl
+Tren	m	4	trən
+Ümmühan	f	4	wʏmmwʏhɑn
+Una	f	4	yna
+Trynke	f	4	trɑjŋkə
+Tseard	m	4	tsəʔɑrt
+Tonnis	m	4	tɔnɪs
+Tyrell	m	4	tirəl
+Tyron	m	4	tirɔn
+Ulbe	m	4	ʏlbə
+Ying	f	4	ijɪŋ
+Ylonka	f	4	ajlɔnkɑ
+Ylse	f	4	ilsə
+Ynske	f	4	ɪŋskə
+Xiao	u	4	ksijao
+Yanaika	f	4	ijanajka
+Yassir	m	4	iɑsir
+Wei	u	4	ʋɛɪ
+Wiepke	f	4	wipkə
+Wierd	m	4	wɪərt
+Wiert	m	4	wirt
+Walt	m	4	wɑlt
+Wang	m	4	wɑŋ
+Wahid	m	4	wɑhid
+Wissam	u	4	wɪsam
+Wyke	f	4	wajkə
+Teunie	f	4	tøni
+Thanh	u	4	tanh
+Teoman	m	4	tejomɑn
+Thuy	f	4	thuwi
+Thymo	m	4	timo
+Tian	m	4	tsijɑn
+Tibbe	m	4	tɪbə
+Tiddo	m	4	tɪdo
+Tiemo	m	4	tsimo
+Théodore	m	4	thejotɔrə
+Theunis	m	4	thønɪs
+Thiemo	m	4	thimo
+Thimon	m	4	tɪmɔn
+Tolgahan	m	4	tɔlxahɑn
+Tirzah	f	4	tɑjrzɑh
+Tjalle	m	4	cɑlə
+Tobie	m	4	tobi
+Vanya	f	4	vɑnija
+Veron	m	4	vərɔn
+Vesna	f	4	veɪ̯sna
+Vibeke	f	4	vijbəkə
+Tanne	f	4	tɑnə
+Talía	f	4	tʔɑla
+Tamarah	f	4	tamarah
+Synthia	f	4	sɪntija
+Faas	m	4	fas
+Fabiano	m	4	fabijano
+Fatime	f	4	fatime
+Fauve	f	4	fovə
+Eunice	f	4	ønikə
+Evander	m	4	evɑndər
+Felicity	f	4	fəlisɪti
+Fadil	m	4	fadijl
+Fahim	m	4	faɪm
+Faissal	m	4	fɛsɑl
+Faiz	m	4	fɛz
+Fallon	f	4	fɑlɔn
+Fannie	f	4	fɑnni
+Farha	f	4	fɑrhɑ
+Farrah	f	4	fɑrɑ͂ːʒh
+Fenno	m	4	fəno
+Fin	m	4	fɪn
+Flint	m	4	flɪnt
+Franciscus	m	4	frɑnsijskʏs
+Ferran	m	4	fərɑn
+Fianne	f	4	fijɑ̃nə
+Fuad	m	4	fjuːad
+Germain	m	4	ɣərmɑjn
+Gersom	m	4	xərsɔm
+Elfi	f	4	ɛlfij
+Elgin	m	4	əldʒɪn
+Elvi	f	4	əlvɪ
+Elyse	f	4	elizə
+Emelie	f	4	əmeli
+Elmas	f	4	əlmɑs
+Elmira	f	4	əlmijra
+Elizaveta	f	4	elizavəta
+Dymphna	f	4	dɪmfna
+Driss	m	4	drɪs
+Duc	m	4	dys
+Donya	f	4	dɔnija
+Doré	f	4	dɔre
+Edén	f	4	ədəʔn
+Dorina	f	4	dɔrina
+Dorrit	f	4	dɔrit
+Douwina	f	4	dɑuwɪŋa
+Domenique	u	4	dɔmənik
+Dennes	m	4	dɛnəs
+Deon	m	4	dəɔn
+Divine	f	4	divinə
+Djamila	f	4	tjɑmɪlɑ
+Djordi	m	4	djɔrdi
+Dimas	m	4	djmɑs
+Dinanda	f	4	dinɑndɑ
+Diandra	f	4	dijəndra
+Diantha	f	4	dijɑ̃hɑ
+Dieudonnée	f	4	dijødɔnneə
+Diewertje	f	4	diwərcə
+Emmelien	f	4	ɛməlin
+Engelina	f	4	ənɣəlina
+Enna	f	4	əna
+Enzio	m	4	ənzijo
+Esat	m	4	əsɑt
+Esli	u	4	əslɪ
+Esmanur	f	4	əsmɑnywr
+Espen	m	4	ɛspən
+Erva	f	4	ərva
+Ervin	m	4	ərvɪn
+Euan	m	4	øɑn
+Joshi	m	4	jɔshɑj
+Jor	m	4	jɔr
+Jorgo	m	4	jɔrɣo
+Jorie	f	4	jɔri
+Jorim	m	4	jɔrɪm
+Johnno	m	4	dʒɔhno
+Jolinda	f	4	jɔlɑjnda
+Jooske	f	4	joskə
+Joek	m	4	juk
+Kelley	f	4	kəli
+Kellie	f	4	kəli
+Kiona	f	4	kijona
+Kiri	f	4	kirij
+Kicky	f	4	kɪki
+Kiet	m	4	kit
+Kezban	f	4	kezbɑn
+Keshia	f	4	kəshija
+Kester	m	4	kɛstər
+Léopold	m	4	leopolt
+Lenka	f	4	lənkɑ
+Lenna	f	4	ləna
+Lenne	f	4	lɛnə
+Lenno	m	4	ləno
+Latoya	f	4	la­tɔja
+Laurens-Jan	m	4	lɑurənsntinn
+Levien	m	4	levin
+Laury	f	4	lɑurɑj
+Lard	m	4	lɑrt
+Leidy	f	4	ləɪdi
+Kaoutar	f	4	kaɑutɑr
+Kathelijne	f	4	katelɛinə
+Jovana	f	4	jovɑnɑ
+Jovanka	f	4	jovɑŋka
+July	f	4	jylɑj
+Jurie	m	4	ʒyri
+Justen	m	4	jʏstən
+Juup	m	4	dʒyp
+Juanito	m	4	jyanito
+Lahcen	m	4	lasən
+Lai	f	4	lɑj
+Lamar	m	4	lamɑr
+Komal	f	4	komal
+Konstantinos	m	4	kɔnstɑntinos
+Lok	u	4	lɔk
+Lora	f	4	lora
+Lidwine	f	4	lɪtʋɪnə
+Lienke	f	4	liənkə
+Lieselot	f	4	lisəlɔt
+Lieuwkje	f	4	liwkjə
+Loeke	f	4	lukə
+Lotti	f	4	lɔtɪ
+Lotty	f	4	lɔttɑj
+Lindsy	f	4	lɑjndɪsi
+Lior	m	4	liɔr
+Rowanne	f	4	rowɑnə
+Roxan	f	4	rɔksɑn
+Royce	m	4	rojsə
+Sahil	m	4	sahil
+Runa	f	4	runa
+Ruwan	m	4	rywɑn
+Saakje	f	4	sakjə
+Steffy	f	4	stɛfi
+Stijntje	f	4	stɛɪncə
+Stoffel	m	4	stɔfɔɫ
+Suleika	f	4	syləɪka
+Silvano	m	4	sɑjlvano
+Simen	m	4	sɑjmən
+Solomon	m	4	solomɔn
+Sona	f	4	sona
+Sippie	f	4	sɪpi
+Siri	f	4	sirij
+Sissi	f	4	zɪsɪ
+Sohrab	m	4	sɔrɑp
+Splinter	m	4	splɪntər
+Sieme	m	4	simə
+Siena	f	4	sijənɑ
+Sije	m	4	sɛijə
+Silje	f	4	siljə
+Shu	f	4	ʃu
+Sherien	f	4	shɛrin
+Sharine	f	4	shɑrinə
+Sharmaine	f	4	shɑrmɑjnɛ
+Sharony	f	4	shɑrɔni
+Shauni	f	4	shɑuni
+Shay	m	4	shɑi
+Shira	f	4	ʃira
+Shireen	f	4	ʃireən
+Rivelino	m	4	rɑjflino
+Roelfina	f	4	rulfina
+Roëlle	f	4	rowələ
+Roché	m	4	roʃe
+Rosalyn	f	4	rosalɪŋ
+Rosella	f	4	rozɛla
+Rimke	f	4	rɪmkə
+Rintje	m	4	rɪncə
+Roni	m	4	roni
+Ronin	m	4	ronin
+Seppe	m	4	sepə
+Sergi	m	4	sərɣɪ
+Shabnam	f	4	ʃabenɑm
+Sebahat	f	4	sənbɑhɑt
+Shaima	f	4	shɛːma
+Seline	f	4	zəlɑjn
+Semi	m	4	semi
+Seine	m	4	sɛinə
+Sela	f	4	sela
+Sanaa	f	4	sana
+Sanae	f	4	sanaə
+Sanaz	f	4	sanats
+Salina	f	4	salina
+Satish	m	4	satish
+Sanela	f	4	sanelɑ
+Sanjeev	m	4	sɑɲev
+Sannah	f	4	sɑna
+Caitlyn	f	4	kɛlɪŋ
+Caja	f	4	kaja
+Caecilia	f	4	kaəsilija
+Carmel	f	4	kɑrməl
+Carice	f	4	karisə
+Carlina	f	4	kɑrlina
+Berdan	m	4	bɛrdɑn
+Bessel	m	4	bɛsəl
+Bengt	m	4	bɛŋt
+Benne	m	4	bɛnə
+Baruch	m	4	barux
+Battal	m	4	bɑtal
+Chrystal	f	4	xriztɑl
+Ciarán	m	4	sijarn
+Cinderella	f	4	sindərɛla
+Cinthia	f	4	sintija
+Clinton	m	4	klɪntɔn
+Clay	m	4	kle
+Bieke	f	4	bikə
+Birthe	f	4	bɪrthɛ
+Branco	m	4	brɑnkɔ
+Brando	m	4	brɑndo
+Bonno	m	4	bɔno
+Bono	m	4	bono
+Bouwina	f	4	bɔuɪnʔɑ
+Bowie	m	4	boi
+Boye	m	4	bɔjə
+Bregtje	f	4	breχcə
+Blanche	f	4	blɑŋxə
+Consuela	f	4	kɔnzyəla
+Coralie	f	4	kɔrali
+Corbin	m	4	kɔrbin
+Corneel	m	4	kɔrnel
+Cornelieke	f	4	kɔrnɛlikə
+Cunera	f	4	kynərɑ
+Cyrus	m	4	sirʏs
+Channah	f	4	xɑna
+Chantall	f	4	xantɑl
+Chantelle	f	4	xantɛlə
+Charisma	f	4	xarɪsma
+Casimir	m	4	kazimɑjr
+Carolus	m	4	karolʏs
+Cars	m	4	kɑrs
+Chandra	f	4	xɑndra
+Darinka	f	4	darɪŋka
+Danika	f	4	danijkɑ
+Danila	f	4	danijla
+Declan	m	4	deklɑn
+Darrel	m	4	dɑrəl
+Darrell	m	4	dɑrɛl
+Daud	m	4	dɑut
+Iggy	m	4	ɪdʒxi
+Imme	u	4	ɪmə
+Imro	m	4	imro
+Indie	f	4	ɪndi
+Huy	m	4	huwi
+Ianthe	f	4	ijɑ̃
+Hamzah	m	4	hɑmzɑh
+Hanim	f	4	hɑnim
+Harmannus	m	4	hɑrmɑnnʏs
+Harmina	f	4	hɑrmɪnɑ
+Haroen	m	4	hɑrun
+Halima	f	4	hɑlɑjma
+Gydo	m	4	dʒido
+Hadassa	f	4	hadɑsaː
+Hedwich	f	4	hɛtwɪtʃ
+Helmich	m	4	ɦɛlmij
+Hobie	m	4	hɔbi
+Hildegard	f	4	hɑjldəɣɑrt
+Henderika	f	4	hɛndərɪka
+Hendrick	m	4	həndrɪk
+Henrick	m	4	hɛnrisk
+Hashim	m	4	hɛʃim
+Hatun	f	4	hatyn
+Jelani	m	4	jəlɑ̃ɪ
+Jelka	f	4	jəlkɑ
+Jeannot	m	4	jəɑnot
+Jent	m	4	dʒənt
+Jermo	m	4	jermo
+Jihane	f	4	dʒihɑnə
+Jarich	m	4	rtəxjarə
+Jarl	m	4	jarl
+Jary	m	4	jarij
+Janien	f	4	janin
+Jannine	f	4	jɑnɪnə
+Jante	f	4	jɑntə
+Jantinus	m	4	jɑntinyws
+Jai	m	4	dʒe
+Jaiden	m	4	jaɪdən
+Jamiro	m	4	əxjamirɔ
+Janey	f	4	əxjanəi
+Ioanna	f	4	ijoɑna
+Irving	m	4	irvɪŋ
+Jada	f	4	əxjada
+Ivano	m	4	ivano
+Gökan	m	4	xwokɑn
+Ginette	f	4	dʒɪnitə
+Gioya	f	4	xijoja
+Mayella	f	4	meɛla
+Mayk	m	4	mek
+Maysa	f	4	mesa
+Meagan	f	4	miːɡɑn
+Marloe	f	4	mɑrlɔə
+Maroeska	f	4	mɑruskɑ
+Marouane	m	4	mɑruɑnə
+Maudi	f	4	mɑudiʲ
+Maurik	m	4	mʌʊ̯rik
+Maruschka	f	4	mɑruwsxkaʔ
+Matijs	m	4	matɛis
+Matilda	f	4	matildɑ
+Myla	f	4	milɑ
+Mylan	m	4	milɑn
+Mylou	f	4	milɑu
+Mücahid	m	4	mykajt
+Naciye	f	4	naseɪiə
+Nadeche	f	4	nadəʃ
+Nadège	f	4	nadeɛːʒə
+Nadie	f	4	nadi
+Lysan	f	4	lisɑn
+Ludovic	m	4	lywdovis
+Lydie	f	4	lidi
+Lyn	f	4	lɪn
+Lyon	m	4	liɔn
+Lourdes	f	4	lurdəs
+Lune	f	4	lʏnə
+Madina	f	4	madina
+Maeve	f	4	maəve
+Marijana	f	4	marɛijɑna
+Marijtje	f	4	marɛicə
+Marik	m	4	marɪk
+Marilène	f	4	marijljɛnə
+Marell	f	4	mɑrəll
+Marjelle	f	4	mɑrdʒɛlə
+Marli	f	4	mɑrlɪ
+Mariah	f	4	marijah
+Marick	m	4	mɑrɪk
+Marah	f	4	marah
+Marceline	f	4	mɑrsɛlɑjn
+Marcellino	m	4	mɑrsɛllino
+Malcolm	m	4	mɑlkolᵊm
+Mallory	f	4	mɑlɔrɪ
+Mamadou	m	4	mɑmadu
+Mana	f	4	mana
+Maïa	f	4	majɪa
+Mahad	m	4	mahat
+Mahamed	m	4	mahamet
+Maks	m	4	mɑks
+Mirsad	m	4	mirsɑd
+Mikayla	f	4	mɑjkajla
+Mitzi	f	4	mitzɪ
+Moisés	m	4	mwazes
+Milene	f	4	milənə
+Milka	f	4	milkɑ
+Millie	f	4	mili
+Min	u	4	mɪn
+Melroy	m	4	məlrɔj
+Melvyn	m	4	məlvin
+Mervyn	m	4	mərvin
+Metje	f	4	məcə
+Michail	m	4	mixajl
+Michella	f	4	miʃɛla
+Menzo	m	4	mɛnzo
+Merdan	m	4	mərdɑn
+Mientje	f	4	miɲcə
+Medina	f	4	medina
+Meeuwis	m	4	mewɪs
+Aaltsje	f	4	altʃə
+Abdelkarim	m	4	ɑbdəlkɑrɪm
+Abdellatif	m	4	ɑbdɛlatif
+Abid	m	4	ɑbɪt
+Abdurahman	m	4	ɑbdywrahmən
+Adelheid	f	4	adəlhɛɪt
+Adilson	m	4	adijlsɔn
+Abdirahman	m	4	ɑbdijrahmən
+Arsen	m	4	ɑrsən
+Ashanti	f	4	ɑshɑnti
+Arieke	f	4	arikə
+Arife	f	4	arɪfə
+Aisa	f	4	esa
+Agnita	f	4	ɑxnita
+Albertha	f	4	albərthɑ
+Albertina	f	4	albərtina
+Anh	m	4	ɑnh
+Anica	f	4	anika
+Anine	f	4	aninə
+Anisa	f	4	anisa
+Angelos	m	4	ɑŋɣelos
+Aoife	f	4	jaʔoɪfə
+Apolonia	f	4	apolonija
+Aran	m	4	arɑn
+Arantxa	f	4	arɑntksɑ
+Anthea	f	4	ɑnthi
+Antonette	f	4	ɑntonətə
+Anne-Lotte	f	4	ɑnəʔlɔtə
+Anne-Marijn	f	4	ɑnəʔmarɛin
+Anneline	f	4	ɑnəlɑjn
+Annouk	f	4	ɑnoʏk
+Babeth	f	4	bepth
+Baer	m	4	bɑər
+Audry	f	4	ɑuwdrij
+Augusta	f	4	ɔuɣʏsta
+Aysjen	f	4	eʃən
+Aybike	f	4	ebɑjk
+Ayden	m	4	edən
+Alkan	m	4	ɑlkan
+Alexandros	m	4	alɛksɑntros
+Alianne	f	4	aliɑnə
+Alijda	f	4	alɛɪdɑ
+Almina	f	4	ɑlmɪnɑ
+Almira	f	4	almijrɑ
+Aleksander	m	4	aləksɑndər
+Anaïs	f	4	ɑnɑjɪs
+Anel	m	4	anəl
+Amani	f	4	amani
+Amaya	f	4	amaja
+Amke	f	4	amkə
+Obbe	m	4	ɔbə
+Orion	m	4	orijɔn
+Olmo	m	4	ɔlmoʊ̯
+Nourdine	m	4	nurdinə
+Nura	f	4	nura
+Pijke	m	4	pɛikə
+Pleunie	f	4	pløni
+Preston	m	4	prɛstɔn
+Petter	m	4	pɛtər
+Phaedra	f	4	phaədra
+Philippus	m	4	filippʏs
+Nikolaos	m	4	nɪkolaɔs
+Nomi	f	4	nomi
+Nemanja	m	4	nemɑnja
+Nenad	m	4	nənad
+Nerissa	f	4	nərɪssa
+Nicoletta	f	4	nikolɛta
+Niesje	f	4	niʃə
+Nikay	m	4	nɪke
+Neva	f	4	neva
+Neville	m	4	nəvil
+Nagihan	f	4	nədʒihɑn
+Nahid	f	4	nahid
+Najim	m	4	najim
+Naomy	f	4	naomij
+Naoual	f	4	naʔuɑl
+Nazmiye	f	4	naʔzmijiə
+Nandy	f	4	naʔndi
+Nanko	m	4	nɑŋkɔ
+Nannette	f	4	nɑnətə
+Nathalja	f	4	nɑthɑljɑ
+Navin	m	4	navin
+Rashmi	f	4	rɑʃmɑj
+Raynor	m	4	renɔr
+Renuka	f	4	renuka
+Resy	f	4	rejsi
+Regillio	m	4	rəɡɪlijo
+Rhys	m	4	rɪs
+Reinard	m	4	rɛɪ̯nɑrt
+Rida	m	4	rida
+Rienke	f	4	riənkə
+Oualid	m	4	ualɪt
+Patriek	m	4	patrik
+Parisa	f	4	pɑrijsa
+Parsa	m	4	pɑrza
+Ot	m	4	ɔt
+Payam	m	4	pajam
+Rajeev	m	4	rajɛəv
+Rafik	m	4	rafɪk
+Rahel	f	4	rahɛl
+Rahime	f	4	rahɑjm
+Pytsje	f	4	pitʃə
+Quintijn	m	4	kintɛin
+Quirina	f	4	kirina
+Rabie	m	4	rabi
+Rachella	f	4	rɑxɛla
+Randolf	m	4	rɑndolᵊf
+Ranya	f	4	rɑnja
+Raoel	m	4	raul
+Raouf	m	3	raɑuf
+Radhika	f	3	radehaika
+Rajko	m	3	rɑjkɔ
+Ragini	f	3	raɣini
+Ramzi	m	3	rɑmzɪ
+Purdey	f	3	puwrdəi
+Quintus	m	3	kintʏs
+Nesrine	f	3	neɪ̯srinə
+Nila	f	3	nilɑ
+Niloufar	f	3	nijlɑufɑr
+Noach	m	3	noɑx
+Noémie	f	3	ɛnoemi
+Nola	f	3	nola
+Nidal	m	3	nidɑl
+Niene	f	3	ninə
+Nikie	f	3	niki
+Nirvana	f	3	nirvɑnɑ
+Nisanur	f	3	nizanywr
+Omaima	f	3	jomɑjmɑ
+Oona	f	3	onɑ
+Odilia	f	3	jodilija
+Oege	m	3	uɣə
+Ogulcan	m	3	joxʏlkan
+Nourdin	m	3	nurdin
+Nuriye	f	3	nywrijiə
+Philippa	f	3	pehailɪpa
+Philippine	f	3	filɪpinə
+Polle	m	3	pɔlə
+Popke	m	3	pɔpkə
+Pieternella	f	3	pitərnɛla
+Pippa	f	3	pipa
+Petros	m	3	pətrɔs
+Pricilla	f	3	prisɪla
+Priscella	f	3	prissɛla
+Otis	m	3	otis
+Ouafae	f	3	uafaə
+Ouarda	f	3	uardɑ
+Ouassim	m	3	uɑsɪm
+Naveen	m	3	navɛən
+Naresh	m	3	narɛsh
+Nariman	f	3	narijmɑn
+Nasim	m	3	nasɪm
+Nasra	f	3	nasrɑ
+Najia	f	3	najija
+Neha	f	3	neha
+Nazanin	f	3	nazanin
+Nazar	f	3	nazar
+Nazife	f	3	nazifə
+Najwa	f	3	najwa
+Richel	m	3	rɪxəl
+Richella	f	3	rɪxɛla
+Rensje	f	3	rɛnʃə
+Renso	m	3	rɛnzo
+Resa	f	3	resa
+Rashied	m	3	rɑʃit
+Rauf	m	3	rɑuf
+Raymondo	m	3	remondo
+Raziye	f	3	razijjɛ
+Reimer	m	3	rɛimər
+Reinate	f	3	rɛinatə
+Redouane	m	3	rəduwanə
+Reece	m	3	riːs
+Reena	f	3	riːne
+Rhiannon	f	3	riɑnon
+Rianna	f	3	rijɑna
+Delal	f	3	dəlal
+Delicia	f	3	dəlisija
+Danni	f	3	dɛnnij
+Dano	m	3	dɛno
+Danyal	m	3	dɛnijɑl
+Danyel	m	3	dɑnajəl
+Dara	f	3	dara
+Darnell	m	3	dɑrnəl
+Daya	f	3	daja
+Clasina	f	3	klasina
+Chiem	m	3	xim
+Chinouk	f	3	xinuk
+Chun	m	3	xyn
+Cheng	m	3	xɛŋ
+Chenoa	f	3	xənoʔa
+Cherique	f	3	xɛrik
+Cherish	f	3	xɛriʃ
+Cherrelle	f	3	xɛrɛlə
+Cloé	f	3	kloʊ̯e
+Christoffel	m	3	xrɪstɔfɔɫ
+Caine	m	3	kɑjnɛ
+Callista	f	3	kɑlista
+Bushra	f	3	buʃrɛ
+Carlin	f	3	kɑrlin
+Bartele	m	3	bɑːrtelə
+Bastijn	m	3	bɑstɛin
+Beertje	f	3	bercə
+Catrinus	m	3	katrinʏs
+Celena	f	3	sɛləna
+Chanelva	f	3	xanəlva
+Chante	f	3	ʃɑ̃t
+Charell	f	3	xarel
+Charifa	f	3	xarɪfa
+Casandra	f	3	kɑsɑntra
+Catharine	f	3	katarinə
+Catherina	f	3	kathɛrina
+Cathleen	f	3	katlen
+Charmayne	f	3	xarmenə
+Ceylin	f	3	sɛɪlɪn
+Chabeli	f	3	xabeli
+Chafik	m	3	xafik
+Chaima	f	3	xaima
+Chaimae	f	3	xajmɑə
+Blessing	f	3	blɛsɪŋ
+Bink	m	3	bɪŋk
+Brain	m	3	bren
+D'angelo	m	3	dejɑŋɣelo
+Dalibor	m	3	dalipɔr
+Dalila	f	3	dalila
+Cong	m	3	kɔŋ
+Danice	f	3	dɑnikə
+Cristy	f	3	krɪstɑj
+Crispijn	m	3	krɪspɛin
+Lindomar	m	3	lɑjndomar
+Lobna	f	3	lɔpna
+Lolkje	f	3	lɔlkjə
+Lonne	f	3	lɔnə
+Lore	f	3	lorə
+Loreen	f	3	loren
+Lichelle	f	3	lɪxɛlə
+Lidian	f	3	lidijən
+Liedewij	f	3	lidəʋɛɪ
+Lisa-Marie	f	3	lɑjsamɑːri
+Loris	m	3	loris
+Lotta	f	3	lɔta
+Leann	f	3	lejɑ̃n
+Leendert-Jan	m	3	lendɛrtbɑjan
+Leentje	f	3	lencə
+Lauraine	f	3	lɑurɛːn
+Leonique	f	3	lejonik
+Lenn	m	3	lənn
+Lennon	m	3	lənnɔn
+Lauryn	f	3	lɑurɪŋ
+Johanan	m	3	jɔhɑnɑn
+Jordey	m	3	dʒɔrdəi
+Jorina	f	3	jɔrina
+Jorre	m	3	dʒɔrə
+Josephina	f	3	dʒoɛsepehaina
+Josia	m	3	dʒozija
+Joosje	f	3	joʃə
+Joleen	f	3	jɔlen
+Kishen	m	3	kaʔishɛn
+Kelsy	f	3	kəlsɪ
+Kiefer	m	3	kifər
+Kikki	f	3	kɪki
+Kimi	m	3	kimɪ
+Kwabena	m	3	kwɑbəna
+Kwame	m	3	kwɑmə
+Kyana	f	3	kijana
+Kyano	m	3	kijano
+Klaziena	f	3	klɑzina
+Krystel	f	3	krijstɛl
+Karlijne	f	3	kɑrlɛinə
+Karmen	f	3	kɑrmən
+Keely	f	3	kelɑj
+Keisha	f	3	kɛishɑ
+Kaylie	f	3	kajli
+Kato	f	3	kato
+Jozeph	m	3	jozəph
+Jyoti	f	3	dʒijoti
+Josua	m	3	jɔsywa
+Joury	m	3	ʒuri
+Jowi	m	3	jɔwɪ
+Joyca	f	3	jɔikɛ
+Julienne	f	3	jylijɛnə
+Julissa	f	3	jylɛisa
+Judah	m	3	jydɑh
+Jula	f	3	jyla
+Jurren	m	3	jyrən
+Justice	m	3	jʏstɪs
+Justina	f	3	jʏstina
+Juultje	f	3	dʒylcə
+Kailey	f	3	kɑjləi
+Kain	m	3	kɑjn
+Kalina	f	3	kalina
+Teatske	f	3	tiːtskə
+Tahmina	f	3	tahmɪnɑ
+Tanika	f	3	tanijkɑ
+Tanno	m	3	tɑno
+Taran	m	3	taran
+Talita	f	3	talita
+Sylvian	m	3	sɪlvijɑn
+Symon	m	3	sɪmɔn
+Yassmina	f	3	ijassmɪnɑ
+Yanna	f	3	iɑna
+Yarno	m	3	ijarno
+Yash	m	3	jash
+Yorian	m	3	jɔrijɑn
+Yorinde	f	3	ijorɪndə
+Yorn	m	3	jɔrn
+Youness	m	3	junəs
+Yaela	f	3	jaəlɑ
+Xena	f	3	ksena
+Zwier	m	3	zwir
+Yvar	m	3	ivɑr
+Ytje	f	3	icə
+Yuki	f	3	jukɪ
+Zenab	f	3	zenab
+Zenna	f	3	zəna
+Zep	m	3	zɛp
+Zander	m	3	zɑndər
+Zhen	m	3	zhɛn
+Zhi	m	3	zhɪ
+Zinzi	f	3	zɪnzɪ
+Zohra	f	3	zohra
+Zowie	m	3	zɔwi
+Tymo	m	3	timo
+Tymon	m	3	timon
+Tyra	f	3	tirɑ
+Tyrza	f	3	tirzɑ
+Tooske	f	3	toskə
+Tos	m	3	tos
+Tuur	m	3	tyr
+Tromp	m	3	trɔmp
+Tryntsje	f	3	trɪŋtʃə
+Viresh	m	3	vjrəsh
+Vishnu	m	3	vɪshnu
+Varisha	f	3	varishɑ
+Varsha	f	3	vɑrshɑ
+Vasiliki	f	3	vazijlɑjkɪ
+Viggo	m	3	vəχxo
+Vere	f	3	vərə
+Vernon	m	3	vərnɔn
+Vianne	f	3	vijɑnə
+Wiek	m	3	ʋik
+Wieske	f	3	wiskə
+Wijtze	m	3	wɛitsɛ
+Wimke	f	3	wɪmkə
+Xanne	f	3	ksɑnə
+Wannes	m	3	wɑnəs
+Waseem	m	3	wɑsem
+Wafa	f	3	wafa
+Wafae	f	3	wafe
+Ting	f	3	tɪŋ
+Tisha	f	3	tishɑ
+Tjerry	m	3	cəri
+Tjomme	m	3	cɔmə
+Tijana	f	3	tɛiana
+Tijani	m	3	tɛiani
+Tijm	m	3	tɛɪm
+Tika	f	3	tikɑ
+Thaísa	f	3	thɑsa
+Thari	f	3	tharɪ
+Tomer	m	3	tomər
+Tialda	f	3	tsijalda
+Tiede	m	3	tidə
+Theodor	m	3	tejodɔr
+Theodora	f	3	tejodora
+Thibaud	m	3	thɑjbɑut
+Thijme	m	3	thɛimə
+Thobias	m	3	tobɑjəs
+Erben	m	3	ərbən
+Eske	f	3	ɛskə
+Esri	f	3	eɛsɛri
+Emmanuelle	f	3	ɛmanywɛlə
+Ena	f	3	əna
+Endy	m	3	əndi
+Enya	f	3	əniɑ
+Estrella	f	3	əstrəla
+Emerson	m	3	emərsɔn
+Emina	f	3	emina
+Eros	m	3	erɔs
+Gaya	f	3	xaja
+Gayle	f	3	xailə
+Geertrui	f	3	ɣəərtrœy
+Geeta	f	3	ɣəəta
+Gelske	f	3	ɣəlskə
+Gerbrig	f	3	ɣərbrəx
+Faouzi	m	3	faɑuzij
+Fabianne	f	3	fabijɑnə
+Fabrício	m	3	fabeɛrsio
+Fadoua	f	3	faduɑ
+Fahad	m	3	fahɑt
+Evianne	f	3	əvianə
+Feije	m	3	fɛi̯jə
+Feija	f	3	fɛidʒa
+Frens	m	3	frəns
+Florentijn	m	3	florɛntɛin
+Florianne	f	3	florijɑnə
+Florieke	f	3	florikə
+Florijn	m	3	florɛin
+Flory	f	3	florɑj
+Fem	f	3	fem
+Femme	f	3	femmə
+Fimke	f	3	fimkə
+Fiene	f	3	fiənə
+Diemer	m	3	dimər
+Dila	f	3	dijla
+Dilano	m	3	dijlano
+Dillen	m	3	dɪlən
+Ditta	f	3	dɪta
+Djamilla	f	3	tjɑmɪla
+Djarno	m	3	tjarno
+Djayden	m	3	ddʒedən
+Djura	f	3	tjyra
+Devika	f	3	devijkɑ
+Deni	m	3	dənɪ
+Deniece	f	3	dənisɛ
+Dervisj	m	3	dərvɪʃ
+Din	m	3	dɪn
+Diona	f	3	dijona
+Elisah	f	3	əlɪsah
+Elizabet	f	3	elizabɛt
+Elyas	m	3	əlijas
+Elanur	f	3	əlanywr
+Elfie	f	3	ɛlfi
+Edwina	f	3	ədwɪna
+Domenica	f	3	dɔmənika
+Domingo	m	3	dɔmɪŋɡo
+Edison	m	3	edisɔn
+Ediz	m	3	edɪz
+Edna	f	3	ɛtna
+Duuk	m	3	dyk
+Duy	m	3	dywi
+Dyanne	f	3	diɑnə
+Dudu	f	3	dywdʏ
+Dunia	f	3	dʏnija
+Dorenda	f	3	dorənda
+Sangeeta	f	3	sɑ̃ʒəta
+Salsabil	f	3	sɑlsabɪl
+Sarinah	f	3	sarinah
+Samora	f	3	samora
+Samsam	f	3	sɑmsɑm
+Sancho	m	3	sɑ̃ʃo
+Saphira	f	3	sɑpehaira
+Sarah-Jane	f	3	sɑrahjanə
+Salima	f	3	salima
+Saverio	m	3	saverijo
+Soufian	m	3	sɑufijɑ̃
+Sinne	f	3	sɪnə
+Sion	m	3	ʃɔn
+Simcha	m	3	simxa
+Solmaz	f	3	sɔlmaz
+Sonali	f	3	sonalɪ
+Sonay	f	3	sonai
+Sivan	m	3	sivɑn
+Sjimmie	m	3	ʃɪmi
+Sjoerdje	f	3	ʃurcə
+Skander	m	3	skɑndər
+Sofian	m	3	sofijɑn
+Sofieke	f	3	sofikə
+Souhail	m	3	suhɑjl
+Souraya	f	3	sɔːraja
+Spike	m	3	spɑjk
+Rowina	f	3	rowɪna
+Roya	f	3	roja
+Saffira	f	3	sɑfira
+Safiye	f	3	safɑjiə
+Ryon	m	3	riɔn
+Saapke	f	3	sapkə
+Saartje	f	3	sarcə
+Ruard	m	3	ryward
+Rudger	m	3	rʏdʒər
+Sahra	f	3	sahrɑ
+Suraya	f	3	syraja
+Steije	m	3	steɛijə
+Süeda	f	3	swʏəda
+Sefer	m	3	sfər
+Scotty	m	3	skɔti
+Shade	f	3	ʃadə
+Shahid	m	3	shɑhid
+Senanur	f	3	sənanyr
+Sevcan	f	3	səvkan
+Sevde	f	3	sevdə
+Seyda	f	3	sidɑ
+Seyma	f	3	simɑ
+Shirly	f	3	ʃʏːrlɑj
+Shona	f	3	ʃona
+Sidra	f	3	sidra
+Siegrid	f	3	siχrɪd
+Sigourney	f	3	sɪxurneji
+Siard	m	3	sijɑrt
+Sharina	f	3	shɑrina
+Sharinda	f	3	ʃɑrinda
+Sharmarke	m	3	shɑrmɑrkə
+Sharron	f	3	ʃɑrɔn
+Sherin	f	3	shɛrɪn
+Sherman	m	3	shɛrmɑn
+Rosalina	f	3	rosalina
+Roelfien	f	3	rulfin
+Romijn	m	3	romɛɪn
+Romkje	f	3	rɔmkjə
+Rimmer	m	3	rɪmər
+Robrecht	m	3	robrɛxt
+Rochella	f	3	roʃɛla
+Rosaly	f	3	rosalɑj
+Roshnie	f	3	roʃni
+Ambra	f	3	ɑmbra
+Amé	f	3	ame
+Ananda	f	3	ɑnɑnda
+Anastasija	f	3	anastasɛijɑ
+Amon	m	3	amɔn
+Amrish	m	3	amrijsh
+Andro	m	3	ɑntro
+Alara	f	3	alara
+Alban	m	3	ɑɫban
+Alberdina	f	3	albərtɪnʔɑ
+Admir	m	3	ɑtmir
+Aisling	f	3	eslɪŋ
+Ahsen	f	3	ahsən
+Ainhoa	f	3	enhoɑ
+Agathe	f	3	ɑxɑtej
+Abdirizak	m	3	ɑbdijrijzɑk
+Abir	f	3	abɪr
+Aaliyah	f	3	alɑjijah
+Aartie	f	3	arsi
+Aartje	f	3	arcə
+Abdifatah	m	3	ɑbdijfatah
+Achmed	m	3	ɑxmɛt
+Aria	u	3	arija
+Arief	m	3	arif
+Arnoldus	m	3	ɑrᵊnɔldyws
+Arsalan	m	3	ɑrsalan
+Asif	m	3	ɑsif
+Asja	f	3	ɑʃa
+Asude	f	3	ɑsydə
+Artie	f	3	ɑrtsi
+Alide	f	3	alidə
+Alysia	f	3	alizija
+Alyssia	f	3	alizsija
+Anne-Loes	f	3	ɑnəʔlus
+Anne-Louise	f	3	ɑnəʔluwisə
+Annebelle	f	3	ɑnəbɛlə
+Annelinde	f	3	ɑnəlɪndə
+Annelore	f	3	ɑnələrə
+Annely	f	3	ɑnəlɑj
+Anish	m	3	anish
+Anjali	f	3	ɑɲali
+Anjana	f	3	ɑɲana
+Annabella	f	3	ɑnabɛla
+Anouchka	f	3	anuʃkɑ
+Angenita	f	3	ɑŋɛnita
+Apollonia	f	3	apɔlonija
+Ara	m	3	ara
+Ayah	f	3	ajah
+Azzeddine	m	3	ɑzəddinə
+Aysha	f	3	eshɑ
+Ayub	m	3	ajub
+Azize	f	3	azitsə
+Gioia	f	3	ɣɪjoija
+Gies	m	3	ɣis
+Graciella	f	3	xrɑsɪəla
+Hila	f	3	hila
+Hedde	m	3	hɛitdə
+Hediye	f	3	hədijjɛ
+Husein	m	3	hʏsɛin
+Ibe	m	3	jbə
+Ilone	f	3	ɑjlənə
+Ilvy	f	3	ɪlvi
+Imani	f	3	imani
+Imar	m	3	jmɑr
+Idske	f	3	ɪtskə
+Iefke	f	3	ifkə
+Inas	f	3	ɪnɑs
+Hubrecht	m	3	hʏprɛxt
+Gwendolyne	f	3	xʋɛndolijnə
+Hanad	m	3	hɑnad
+Harley	m	3	hɑrli
+Harwin	m	3	hɑrwɪn
+Güllü	f	3	xwʏllwʏ
+Hafize	f	3	hɑfɑjs
+Hailey	f	3	hɑjləi
+Izak	m	3	izak
+Jaafar	m	3	jafɑr
+Iona	f	3	ʃona
+Iqra	f	3	ɪkyra
+Isadora	f	3	ɪsadora
+Ishara	f	3	iʃara
+Irini	f	3	irɪnij
+Isabeau	f	3	ɪsabeɑuw
+Jaclyn	f	3	rtəxfrlin
+Jady	f	3	əxjadi
+Jafeth	m	3	jafəth
+Jits	m	3	dʒɪts
+Jeanice	f	3	dʒinikə
+Jedidja	f	3	jədijtja
+Jeffery	m	3	dʒɛferi
+Jibbe	m	3	dʒɪbə
+Ji	f	3	dʒi
+Jil	f	3	jɪl
+Jeron	m	3	jerɔn
+Jesca	f	3	jəska
+Janinka	f	3	əxjanɪŋka
+Jannah	f	3	jɑnah
+Jannetta	f	3	jɑnəta
+Janniek	u	3	jannik
+Jannita	f	3	jɑnɪtɑ
+Janouk	f	3	januk
+Jany	f	3	janaj
+Jayne	f	3	dʒenə
+Jarik	m	3	əxjarɪk
+Jarnick	m	3	jarnɪk
+Jarod	m	3	jarod
+Jaromír	m	3	əxjaroʊ̯mr
+Jamey	u	3	əxjameɪ̯i
+Jayant	m	3	dʒeɑnt
+Mehmed	m	3	mɛmɛt
+Mei	f	3	mɛi
+Meinke	f	3	mɛɪnkə
+Mellany	f	3	məllɑnaj
+Michou	f	3	miʃu
+Méri	f	3	meri
+Merian	f	3	mɛrijɑn
+Luut	m	3	lyt
+Lyke	f	3	likə
+Lyndsey	f	3	lɑjntsi
+Macha	f	3	mɑxa
+Lucretia	f	3	lywkrətija
+Luite	m	3	lœytə
+Lusanne	f	3	lʏsɑnə
+Luan	m	3	lywɑn
+Mayron	m	3	merɔn
+Maryan	f	3	mɑrɑjɑn
+Marylou	f	3	mɑrɑjlɑu
+Maryn	m	3	mɑrɪŋ
+Maury	f	3	mɑurɑj
+Martika	f	3	mɑrtikɑ
+Marline	f	3	mɑrlinə
+Marlise	f	3	mɑrlɪsə
+Marlotte	f	3	mɑrlɔtə
+Marouan	m	3	mɑruɑn
+Marrigje	f	3	mɑrɪxjə
+Matthijn	m	3	matthɛin
+Matz	m	3	matz
+Mauri	f	3	mʌʊ̯ri
+Mounia	f	3	mɑunija
+Mylo	m	3	mijlo
+Musab	m	3	mʏsabe
+Miloe	f	3	milu
+Mohamud	m	3	mohamjuːt
+Margareta	f	3	mɑrɣarəta
+Margarethe	f	3	mɑrɣarətej
+Margrietha	f	3	mɑrᵊxrihɑ
+Marenthe	f	3	mɑrəntej
+Marieta	f	3	marijəta
+Marietje	f	3	mɑricə
+Mariko	f	3	marijko
+Marileen	f	3	marɪlen
+Marisha	f	3	marɪshɑ
+Marisja	f	3	mariʃa
+Maritha	f	3	maritha
+Marjella	f	3	mɑrdʒɛla
+Marlein	f	3	mɑrlɛɪn
+Malena	f	3	maləna
+Maloe	f	3	malu
+Manus	m	3	mɑnʏs
+Marcelina	f	3	mɑrsɛlina
+Manpreet	f	3	mɑnpret
+Manel	f	3	mɑnɛl
+Maichel	m	3	mɑjxəl
+Maika	f	3	mɑjka
+Mahsa	f	2	mahsa
+Manuella	f	2	mɑnywɛla
+Makbule	f	2	makbʏlə
+Manassé	m	2	mənɑse
+Manna	f	2	mɑna
+Mannus	m	2	mənnʏs
+Manoek	f	2	manuk
+Manolito	m	2	mɑnolito
+Mattis	m	2	mɑtɪs
+Maurien	f	2	mʌʊ̯riən
+Mauritz	m	2	mʌʊ̯ritsz
+Matea	f	2	matiː
+Mathys	m	2	matis
+Matijn	m	2	matɛin
+Mayon	f	2	majon
+Mayte	f	2	metə
+Marnik	m	2	mɑrnɪk
+Maroua	f	2	mɑrua
+Marouschka	f	2	mɑruʃka
+Marretje	f	2	mɑrəcə
+Maximus	m	2	mɑksimʏs
+May-Britt	f	2	mebrɪtt
+Marthijs	m	2	mɑrthɛis
+Mercy	f	2	mərki
+Merith	f	2	merith
+Merlyn	f	2	mərlɪŋ
+Mellissa	f	2	mɛlizsa
+Melwin	m	2	məlwɪn
+Meneksje	f	2	menəkʃə
+Meera	f	2	merɑ
+Meis	f	2	mɛis
+Melani	f	2	məlani
+Melati	f	2	melɑti
+Melika	f	2	məljka
+Meryam	f	2	mɛrijam
+Michon	m	2	miʃown
+Lubbertus	m	2	lʏbərtʏs
+Maatje	f	2	macə
+Madelaine	f	2	madəlɛːn
+Madelijn	f	2	madəlɛin
+Madelyn	f	2	madəlɪŋ
+Madiha	f	2	mɑdijha
+Luuke	f	2	lykə
+Luus	f	2	lys
+Luz	f	2	lʏz
+Lyam	m	2	lijam
+Lydian	f	2	lidijən
+Luigino	m	2	lœyxino
+Lucius	m	2	lysijʏs
+Luck	m	2	lykk
+Lummetje	f	2	lʏməcə
+Margien	f	2	mɑrʒiən
+Margrieta	f	2	mɑrxrɪəta
+Mareike	f	2	mɑrɛikə
+Marein	m	2	marɛin
+Mareno	m	2	mɑrənɔ
+Marjolijne	f	2	mɑrʒulɛinə
+Marlijne	f	2	mɑrlɛinə
+Marie-Christine	f	2	mɑrikrɪstinə
+Marijntje	f	2	marɛiɲcə
+Marinthe	f	2	marɪntə
+Myrne	f	2	mɪrnə
+Morsal	f	2	mɔrsɑl
+Mozes	m	2	mozɛs
+Montana	f	2	mɔntana
+Nadien	f	2	nadin
+Nadin	f	2	nadijn
+Nadina	f	2	nadina
+Nadira	f	2	nadijrɑ
+Mirle	f	2	mirlə
+Milla	f	2	mila
+Mingus	m	2	mɪŋɡʏs
+Minouk	f	2	minuk
+Mijs	f	2	mɛɪs
+Mikai	m	2	mjkaj
+Ebe	m	2	əbɛ
+Durkje	f	2	dʏrᵊkjə
+Dyami	m	2	dijami
+Dominggus	m	2	dominɣxʏs
+Domino	f	2	domino
+Donatella	f	2	donatɛla
+Dorcas	f	2	dɔrkas
+Duko	m	2	dywko
+Doutsen	f	2	dutsən
+Fé	f	2	fe
+Farhiya	f	2	fɑrhɑjia
+Evaline	f	2	əvalɑjn
+Evangeline	f	2	evɑŋɣelinə
+Evanne	f	2	əvɑnə
+Farzana	f	2	fɑrzɑna
+Fatimah	f	2	fatimah
+Fausto	m	2	fɑusto
+Fauzia	f	2	fɑuzija
+Faisel	m	2	fɛːzəl
+Fajah	f	2	fajah
+Emmeline	f	2	ɛməlɪnə
+Esengül	f	2	esənɣwʏl
+Esha	f	2	əsha
+Esmaralda	f	2	əsmɑrɑldɑ
+Estée	f	2	əse
+Enola	f	2	ənola
+Ephraim	m	2	epeharem
+Geordy	m	2	χejɔrdi
+Geena	f	2	ɣəəna
+Geertruida	f	2	ɣəərtrœyda
+Gerarda	f	2	ɣərɑrdɑ
+Gerianne	f	2	ɣərijɑnə
+Gerónimo	m	2	xərnɪmoʊ̯
+Gerritje	f	2	ɣərrɪcə
+Gertruda	f	2	ɣərtrywda
+Geziena	f	2	ɣəzina
+Ghizlan	f	2	xhɑjzlɑn
+Friedrich	m	2	fridrɪx
+Frouwke	f	2	frɔukə
+Edvin	m	2	ədvɪn
+Elbrich	f	2	əlbrɪx
+Eleanora	f	2	eləʔɑnora
+Elene	f	2	elənə
+Eleonoor	f	2	elejonor
+Eliz	f	2	elits
+Emanuelle	f	2	əmɑnywɛlə
+Emelia	f	2	əmɛlija
+Emeline	f	2	əmɛlɑjn
+Elnaz	f	2	əlnats
+Elseline	f	2	ɛlsəlɪnə
+Eliene	f	2	əlinə
+Elife	f	2	əlifə
+El-Hassan	m	2	əlbɑhɑsan
+Ferri	m	2	fəri
+Ferris	m	2	fərɪs
+Fiep	f	2	fip
+Figo	m	2	fixo
+Femma	f	2	fɛma
+Ference	m	2	fərɛnsə
+Fredrika	f	2	frədrika
+Freeke	f	2	friːkə
+Freija	f	2	frɛidʒa
+Florance	f	2	florɑns
+Florentien	f	2	florɛntin
+Florentina	f	2	florɛntina
+Florina	f	2	florina
+Fransiscus	m	2	frɑnzɪskʏs
+Firdevs	f	2	fɪrdəvs
+Devante	m	2	dəvɑntə
+Deveney	f	2	dəveɪ̯ni
+Deveny	f	2	dəvɛnaj
+Diena	f	2	dina
+Diesel	m	2	dizəl
+Digna	f	2	dɪxnɑ
+Dilana	f	2	dijlɑna
+Dimara	f	2	djmɑra
+Divano	m	2	dijvɑno
+Diya	f	2	dija
+Djim	m	2	djim
+Djoey	m	2	tjui
+Djuna	f	2	tjynia
+Djustin	m	2	dʒustin
+Desie	f	2	dezi
+Desney	m	2	dɛsni
+Deny	m	2	tɛnaj
+Kaleb	m	2	kaləb
+Josías	m	2	dʒosɑs
+Josip	m	2	dʒosip
+Jovanny	m	2	jovɑni
+Jozefien	f	2	jozəfin
+Jozias	m	2	jozijɑs
+Junaid	m	2	jyniaɪt
+Juulke	f	2	dʒylkə
+Julika	f	2	jylɛika
+Jullian	m	2	jʏliən
+Julot	f	2	jylɔt
+Juda	m	2	jydɑ
+Johnson	m	2	jɔhnsɔn
+Joliene	f	2	joliənə
+Jolina	f	2	jɔlina
+Joëll	m	2	joʔel
+Jora	f	2	jorɑ
+Jorben	m	2	jɔrbən
+Jorren	m	2	dʒɔrən
+Jorrik	m	2	jɔrrɪk
+Joanie	f	2	jɔaniə
+Joaquim	m	2	jɔɑkim
+Jobbe	m	2	dʒɔbə
+Joseline	f	2	dʒosəlɑjn
+Josephien	f	2	dʒosəphin
+Louella	f	2	lɑuɛla
+Louelle	f	2	lɑuɛlə
+Lorain	f	2	loren
+Liron	m	2	lɑjrən
+Lianda	f	2	lijɑnda
+Lianna	f	2	lijɑna
+Libaan	m	2	liban
+Lidwina	f	2	lɪtʋɪnaʔ
+Lieze	f	2	lizə
+Lilli	f	2	lili
+Lima	f	2	lima
+Laurina	f	2	lɑurina
+Lavina	f	2	lavina
+Lázár	m	2	lzr
+Leonarda	f	2	lejonɑrdɑ
+Leonardus	m	2	lejonɑrdʏs
+Leontina	f	2	lejɔntina
+Lesley-Ann	f	2	ləsləiɛŋn
+Leana	f	2	lejana
+Leco	m	2	leko
+Lauranne	f	2	lɑurɑnɛ
+Levina	f	2	ləvina
+Lennox	m	2	lənɔks
+Lente	f	2	lɛntə
+Kardelen	f	2	kɑrdelən
+Keenan	m	2	kenɑn
+Katherina	f	2	katerijna
+Kamile	f	2	kamɑjl
+Kavish	m	2	kavijʃ
+Kawita	f	2	kawitɑ
+Kayne	m	2	kajnə
+Kayra	u	2	kajra
+Khadra	f	2	khadra
+Kenley	m	2	kɛnləi
+Kenn	m	2	kɛn
+Kenney	m	2	kənəi
+Kenza	f	2	kənzɑ
+Kirby	f	2	kaʔirbi
+Kirti	f	2	kirti
+Klaaske	f	2	klaskə
+Kwaku	m	2	kwɑkʏ
+Kyona	f	2	kijona
+Krishan	m	2	krishɑn
+Kristan	m	2	krɪstɑn
+Kyrill	m	2	kijrɪl
+Ladan	f	2	lɑtɑn
+Kommer	m	2	kɔmər
+Kornélia	f	2	kɔrnelija
+Rhandy	m	2	rhɑndi
+Riaz	m	2	rijaz
+Ravenna	f	2	ravena
+Ravian	m	2	ravijɑn
+Richenel	m	2	rɪxənɛl
+Rickey	m	2	rɪki
+Ridwan	m	2	ridwɑn
+Rieuwert	m	2	riwərt
+Renco	m	2	rənkɔ
+Renu	f	2	rəny
+Rewien	m	2	rəwin
+Redwan	m	2	rɛtwɑn
+Razia	f	2	razija
+Reamon	m	2	riːmɔn
+Reinaldo	m	2	rɛinɑldo
+Reintje	f	2	rɛɪncə
+Nouhaila	f	2	nuhɑjlɑ
+Nour-Eddine	m	2	nurntinddinə
+Noury	m	2	nuri
+Odessa	f	2	jodəsaː
+Orpheo	m	2	ɔrᵊphejo
+Orrin	m	2	ɔrrɪn
+Noralie	f	2	nɔrali
+Noraly	f	2	noralɑj
+Nori	f	2	ɛnori
+Querine	f	2	krinə
+Quinton	m	2	kɛ̃tɔn
+Raiza	f	2	reza
+Rajaa	f	2	rajaɑ
+Rani	f	2	rani
+Ranil	m	2	rɑnil
+Radi	m	2	radi
+Raff	m	2	rɑf
+Pui	f	2	pœy
+Puja	f	2	pʏja
+Purdy	f	2	puwrdi
+Pyke	m	2	pɪkə
+Quang	m	2	kwaŋ
+Queeny	f	2	kenaj
+Rafi	m	2	rafɪ
+Nisrine	f	2	nijsrinə
+Nitesh	m	2	nitesh
+Nikolina	f	2	nikɔlɑjnaʔ
+Nilesh	m	2	nijlsh
+Nevil	m	2	nəvil
+Nesibe	f	2	nəsibə
+Nicoliene	f	2	nikolinə
+Nikai	m	2	njkaj
+Najla	f	2	najla
+Nalini	f	2	nalini
+Natan	m	2	natɑn
+Natanja	f	2	natɑnja
+Nargis	f	2	nɑrɣis
+Nawid	m	2	nawid
+Naftali	m	2	nɑftali
+Nahom	m	2	nahom
+Neelam	f	2	nelɑm
+Nehemia	m	2	nehemija
+Pepita	f	2	pəpɪta
+Pernilla	f	2	pɛrnɪla
+Phebe	f	2	phebə
+Phylicia	f	2	filisija
+Pomme	f	2	pɔmə
+Prescilla	f	2	prɛsɪla
+Pippi	f	2	pipɪ
+Pakize	f	2	pɑkɪzə
+Pawan	m	2	pɑwɑn
+Crissy	f	2	krisi
+Dalya	f	2	dɑlija
+Cornelus	m	2	kɔrnelys
+Damini	f	2	damɑjnɪ
+Danee	f	2	dɑne
+Danieke	f	2	danikə
+Carlito	m	2	kɑrlɑjto
+Calista	f	2	kalɪsta
+Btissam	f	2	beteʔsam
+Carissa	f	2	karɪsa
+Daoud	m	2	dɑɑut
+Delany	f	2	dəlɑnaj
+Deliana	f	2	dəlijana
+Danijela	f	2	dɑnɛijəlɑ
+Danisha	f	2	danijʃa
+Danjella	f	2	dɑɲəla
+Deena	f	2	dəəna
+Davida	f	2	davɪtna
+Davie	m	2	davi
+Davin	m	2	davɪn
+Davinia	f	2	davɪnija
+Daron	m	2	dɑrɔn
+Dascha	f	2	dɑsxa
+Christal	f	2	xrɪstɑl
+Christelle	f	2	xrɪstɛlə
+Christiana	f	2	xrɪstijana
+Chung	m	2	ʃyŋ
+Cian	m	2	ʃan
+Cindel	f	2	sindəl
+Clenn	m	2	klən
+Ciske	m	2	siskə
+Chendo	m	2	xɛndo
+Cherida	f	2	xɛrɑjda
+Cherine	f	2	xɛrɪnə
+Cherryl	f	2	xɛril
+Chesney	m	2	xɛsnəi
+Cheverny	f	2	xɛvərnaj
+Chevy	m	2	xɛvi
+Borre	m	2	bɔrə
+Bowen	m	2	boən
+Bowy	m	2	bɔwaj
+Beyoncé	f	2	bijɔnse
+Bibiane	f	2	bɑjbijanə
+Bibianne	f	2	bɑjbijɑnə
+Bijou	f	2	biʒu
+Biko	m	2	bijkɔ
+Boas	m	2	boɑs
+Bódi	m	2	bdi
+Bojoura	f	2	bojɑura
+Bradly	m	2	bratlɑj
+Birkan	m	2	birkɑn
+Brendon	m	2	brɛndon
+Brenna	f	2	brɛna
+Brennan	m	2	brənɑn
+Belia	f	2	belija
+Berkant	m	2	bərkɑnt
+Bernarda	f	2	bɛrnɑrta
+Bernardus	m	2	bɛrnɑrtʏs
+Bernou	f	2	bɛrnu
+Berra	f	2	bərɑ
+Bartholomeus	m	2	bɑrtolomejʏs
+Bartus	m	2	bɑːrtʏs
+Bento	m	2	bento
+Cezanne	f	2	sɛzɑnɛ
+Chahid	m	2	xahid
+Chaira	f	2	xairɑ
+Chana	f	2	xana
+Chanika	f	2	xanikɑ
+Charisa	f	2	xarɪsɑ
+Ceriel	m	2	sɛril
+Charlize	f	2	ʃɑrlɑjs
+Charmain	f	2	ʃɑrmɑjn
+Thekla	f	2	thɛkla
+Theodorus	m	2	tejodɔruws
+Thibaut	m	2	tsibɔut
+Thiemen	m	2	timən
+Thirsa	f	2	tsirsa
+Tetje	f	2	tɛcə
+Thamara	f	2	thamara
+Thara	f	2	thara
+Tinke	f	2	tɪŋkə
+Tjarco	m	2	tjarko
+Tjitse	m	2	cɪtsə
+Tigo	m	2	tɪxo
+Tijme	m	2	tɛimə
+Timber	m	2	timbɛr
+Timoteus	m	2	tɑjmoʊ̯tøs
+Timotheus	m	2	tɑjmoʊ̯tejʏs
+Thyrza	f	2	tirzɑ
+Tiana	f	2	tsijana
+Ticho	m	2	tixo
+Teske	f	2	təskə
+Tomislav	m	2	tomislaːv
+Zoi	f	2	zɔɪ
+Zola	f	2	zola
+Zouhair	m	2	zɑu̯hɛːr
+Zahira	f	2	tsahɑjrɑ
+Zakariya	m	2	zɑkaːrija
+Zakia	f	2	zɑkija
+Yusra	f	2	jusra
+Zacharias	m	2	zɑxarijɑs
+Yuka	f	2	jukɑ
+Yuna	f	2	juna
+Zi	m	2	zɪ
+Zilan	f	2	zilɑn
+Zilla	f	2	zɪla
+Zillah	f	2	zɪlɑ
+Zeyneb	f	2	zəinəb
+Zamira	f	2	tsamira
+Zana	f	2	tsana
+Zarah	f	2	tsarah
+Zarife	f	2	tsarɪfə
+Zeb	m	2	zəb
+Xuan	m	2	ksuwɑn
+Yorben	m	2	iɔrbən
+Yorin	m	2	ijorɪn
+Yoshka	f	2	ijoshka
+Yoshua	m	2	jɔshuwa
+Yosri	m	2	ijosri
+Yousra	f	2	jusra
+Yousri	m	2	jusri
+Youssra	f	2	jusra
+Yaw	m	2	ijawe
+Yelena	f	2	iələna
+Yaniek	u	2	janik
+Yannik	m	2	ijanɪk
+Yaro	m	2	ijaro
+Yoel	m	2	iul
+Yen	f	2	jɛn
+Yin	u	2	jɪn
+Yip	m	2	ijɪp
+Yamila	f	2	ijamila
+Syed	m	2	siɛt
+Sylvan	m	2	sɪlvan
+Teddie	f	2	tɛdi
+Talisha	f	2	tɑlɪzhɑ
+Tatum	f	2	tatʏm
+Wenke	f	2	wɛŋkə
+Wensley	m	2	wənsli
+Vonne	f	2	fɔnə
+Wiepkje	f	2	wipkjə
+Wijnanda	f	2	wɛinɑnda
+Wijntje	f	2	wɛɪncə
+Waqas	m	2	wakɑs
+Warsha	f	2	wɑrshɑ
+Wassim	m	2	wɑsɪm
+Willemke	f	2	wɪləmkə
+Xanthe	f	2	ksɑntə
+Trientje	f	2	trincə
+Toufik	m	2	tufik
+Veroni	f	2	vəroni
+Veronie	f	2	vəroni
+Vandana	f	2	vɑndana
+Vanisha	f	2	vɑniʃa
+Valencia	f	2	valɛnsəa
+Vidya	f	2	vijdija
+Viet	m	2	vit
+Vigo	m	2	vijxo
+Veda	f	2	veda
+Vedran	m	2	vedran
+Veere	f	2	vəərə
+Jaylen	m	2	dʒelən
+Jayme	m	2	dʒemə
+Janienke	f	2	janiŋkə
+Jannetje	f	2	jɑnəcə
+Jannieke	f	2	jannikə
+Jaouad	m	2	əxjauɑd
+Jalil	m	2	əxjalil
+Jarick	m	2	rtəxjarək
+Jasin	m	2	dʒɑsɪn
+Jasmyn	f	2	jasmijn
+Jaike	f	2	jaɪkə
+Ignatius	m	2	ɪɲatijʏs
+Ihsane	f	2	ɪhsane
+Ikra	f	2	jkra
+Ileen	f	2	ilen
+Ilhame	f	2	jhɑmə
+Ilian	m	2	ilijɑn
+Iloy	m	2	ɪlwɑ
+Ilva	f	2	ɪlva
+Hui	f	2	ɦœʏ̯
+Huibrecht	m	2	hœybrɛxt
+Hung	m	2	hʏŋ
+Ibtissam	f	2	ɪbeteʔsam
+Iemke	f	2	imkə
+Indah	f	2	ɪndah
+Indi	f	2	ɪndi
+Indiana	u	2	ɪndijana
+Gooitzen	m	2	xojtzən
+Glynis	f	2	ɣlinɪs
+Giovannie	m	2	xijovɑni
+Gianny	m	2	dʒiɑni
+Giliam	m	2	dʒilijam
+Gilliano	m	2	xɪliʔɑno
+Gilmar	m	2	dʒilmɑr
+Griffin	m	2	ɣrɪffin
+Guinevere	f	2	xœynevərə
+Hebe	f	2	hebə
+Hava	f	2	hava
+Hodan	f	2	odɛn
+Hielkje	f	2	hilkjə
+Hieronymus	m	2	hirɔnimyz
+Hermanus	m	2	ɦɛrmɑnʏs
+Henderikus	m	2	hɛndərɪkʏs
+Hendricus	m	2	hɛndrikʏs
+Hendrike	f	2	hɛndrikə
+Hendrina	f	2	hɛndrina
+Henrica	f	2	hɛnrijka
+Henrika	f	2	hɛnrɪkɑ
+Jevon	m	2	jevon
+Jelt	m	2	jəlt
+Jinte	f	2	dʒɪŋtə
+Jiry	m	2	dʒirɑj
+Jisk	m	2	jisk
+Jitte	f	2	dʒitə
+Jennefer	f	2	dʒɛnəfər
+Jenneken	f	2	dʒɛnəkən
+Jeoffrey	m	2	jəɔfreji
+Jerina	f	2	dʒɛrina
+Jerremy	m	2	dʒɛrəmi
+Jesmer	m	2	cəsmər
+Jessa	f	2	jəsaː
+Jeanique	f	2	dʒinik
+Jia	u	2	dʒia
+Jidde	m	2	jɪdə
+Gwendoline	f	2	xwɛndolinə
+Gwenny	f	2	xwɛni
+Hadia	f	2	hadija
+Hamide	f	2	hamidə
+Hafid	m	2	hɑfɑjt
+Haidar	m	2	hɑjtɑr
+Hajer	f	2	hɑjər
+Haron	m	2	hɑrɔn
+Gülseren	f	2	xwʏlsərɛn
+Jadon	m	2	jadɔn
+Jafar	m	2	jafɑr
+Jaantje	f	2	jancə
+Jace	m	2	dʒɛə
+Isobel	f	2	isobəl
+Isaí	m	2	ɪsa
+Isak	m	2	ɪsak
+Ise	f	2	izə
+Ishaan	m	2	ɪshan
+Ivanna	f	2	ivɑnnɑ
+Roselinde	f	2	rozəlɪndə
+Roselyn	f	2	rozəlɪŋ
+Robbe	m	2	rɔbə
+Rosalía	f	2	rosala
+Rosalin	f	2	rosalin
+Roelinda	f	2	rulɪnda
+Roeline	f	2	rulɑjn
+Rojin	f	2	rojɪn
+Robertino	m	2	robertino
+Robertus	m	2	robertʏs
+Robi	f	2	robɪ
+Robina	f	2	robijna
+Rolinde	f	2	rolɪndə
+Romar	m	2	romɑr
+Romie	f	2	romi
+Romilda	f	2	romɪldɑ
+Rigtje	f	2	xjarəɣcə
+Rikje	f	2	rɪkjə
+Rikst	f	2	rɪkst
+Rins	m	2	rɪns
+Sai	m	2	saj
+Saima	f	2	sɛːma
+Sakina	f	2	sakina
+Sakine	f	2	sakine
+Rover	m	2	rovər
+Rowi	f	2	rowɪ
+Rowy	f	2	rowaj
+Sabrien	f	2	sɑbrin
+Sadhana	f	2	sadehaana
+Sadia	f	2	sadija
+Rozan	f	2	rozɑn
+Rozemarie	f	2	rozəmari
+Ruan	m	2	ruwɑn
+Ruchama	f	2	rʏxama
+Safiera	f	2	safɪərɑ
+Safiya	f	2	safɑjja
+Ruthger	m	2	rʏtɣər
+Ruveyda	f	2	ruwveɪ̯ida
+Rylana	f	2	rilana
+Savanna	f	2	savɑna
+Savanne	f	2	savɑnə
+Savine	f	2	savinə
+Saranda	f	2	sarɑnda
+Sarena	f	2	sɑrena
+Sarra	f	2	sɑra
+Sandhya	f	2	sɑnthija
+Samentha	f	2	samənthɑ
+Salar	m	2	salɑr
+Saloua	f	2	salɔuɑ
+Samina	f	2	samina
+Sammy-Jo	f	2	sɑmintino
+Santino	m	2	sɑntino
+Sarafina	f	2	sɑrafina
+Soukaina	f	2	sukɑjnaʔ
+Soumia	f	2	sumija
+Soscha	f	2	sosxa
+Simran	f	2	sɪmran
+Soeradj	m	2	surɑdʒ
+Soesja	f	2	suʃa
+Sofiane	m	2	sofijanə
+Solveig	f	2	sɔlvɛəx
+Sivar	m	2	sivaːr
+Sjanne	f	2	ʃɑnə
+Sjoerdtje	f	2	sjurdcə
+Shayna	f	2	shɑina
+Sieuwerd	m	2	siwərt
+Sijke	f	2	səkə
+Sijmon	m	2	sɛimɔn
+Sijtske	f	2	sɛɪtskə
+Sijtse	m	2	sɛɪtsə
+Shannah	f	2	shɑna
+Shanne	f	2	shɑnə
+Shara	f	2	shara
+Sherina	f	2	shɛrina
+Sherwin	m	2	shɛrwɪn
+Shreya	f	2	shrejja
+Sharin	f	2	ʃɑrin
+Sharissa	f	2	ʃarɪsa
+Sharleen	f	2	shɑrlen
+Sharlene	f	2	shɑrlənə
+Sharonne	f	2	shɑrɔnə
+Shawny	f	2	ʃawenaj
+Shaya	f	2	shaja
+Sudenaz	f	2	sudənaz
+Sue-Ann	f	2	sywəɛŋn
+Susannah	f	2	sywsɑna
+Suman	f	2	zʏmən
+Sumeya	f	2	sywmia
+Sümeyya	f	2	swʏmeɪ̯ija
+Styn	m	2	stɑjn
+Stephania	f	2	stɛphɑnija
+Suzet	f	2	sywzɛt
+Shalinie	f	2	shɑlini
+Shamara	f	2	shamara
+Serife	f	2	sərɪfə
+Seyyid	m	2	siiɪt
+Selinde	f	2	səlɪndə
+Selwin	m	2	səlwɪn
+Semir	m	2	semir
+Semira	f	2	semira
+Senn	m	2	sɛnn
+Sennah	f	2	səna
+Axl	m	2	ɑksl
+Ayaan	f	2	ean
+Ayan	f	2	eɑn
+Ayleen	f	2	elen
+Aviva	f	2	aviva
+Bader	m	2	badər
+Aysenur	f	2	esənyr
+Adaja	f	2	ɑdajɑ
+Abdoullah	m	2	ɑbdulɑ
+Abigaël	f	2	ɑbijxael
+Aboubakr	m	2	ɑbubɑkr
+Abdelfattah	m	2	ɑbdeɪ̯lᵊfɑtɑh
+Abdelhak	m	2	abedəlhɑk
+Abdelhakim	m	2	abedəlhɑkim
+Abderrahmane	m	2	ɑbdərɑhmənə
+Amadou	m	2	amɑdu
+Amela	f	2	aməla
+Amerik	m	2	amərɪk
+Amier	m	2	amir
+Anabel	f	2	ɑnabəl
+Anemoon	f	2	ɑnəmon
+Anahita	f	2	anahita
+Anam	f	2	anɑm
+Anass	m	2	anazs
+Amna	f	2	ɑmnaʔ
+Amresh	m	2	amrejsh
+Aemilius	m	2	aemilijʏs
+Aïssa	u	2	aisaː
+Aissam	m	2	ɛːsam
+Alannah	f	2	alana
+Adriane	f	2	adrijanə
+Agneta	f	2	ɑɲəta
+Akira	m	2	akira
+Anina	f	2	anina
+Anisha	f	2	anishɑ
+Anne-Britt	f	2	ɑnəʔbrɪtt
+Anne-Jet	f	2	ɑnəʔjət
+Anne-Maria	f	2	ɑnəʔmarija
+Annefloor	f	2	ɑnəflɔːr
+Annelin	f	2	ɑnəlɪn
+Annemay	f	2	ɑnəmai
+Annicka	f	2	ɑnɪka
+Annieck	f	2	ɑnijɛk
+Anniko	f	2	ɑnɪkow
+Annisa	f	2	ɑnɪsa
+Anoeshka	f	2	anushkɑ
+Anuradha	f	2	anywradhɑ
+Anusha	f	2	anyshɑ
+Anushka	f	2	anʏshkɑ
+Anuska	f	2	anyskɑ
+Angelino	m	2	ɑŋɛlino
+Anthonia	f	2	ɑntonija
+Areke	f	2	arəkə
+Arnolda	f	2	ɑrᵊnɔlda
+Asiya	f	2	ɑsɪja
+Assia	f	2	ɑsija
+Arjuna	m	2	ardʒʏŋa
+Ashana	f	2	ɑʃana
+Asher	m	2	ɑʃər
+Ashly	f	2	ɑʃlɑj
+Alysa	f	2	aliza
+Aliya	f	2	alɑjja
+Aliza	f	2	aliza
+Alizé	f	2	alize
+Albín	m	2	albn
+Aliene	f	2	alinə
+Alexandro	m	2	alɛksɑntro
+Alek	m	2	alək
+Allisha	f	1	ɑliʃa
+Allysha	f	1	ɑliʃa
+Almedina	f	1	ɑlmedina
+Alphonsus	m	1	ɑlphoʊ̯nzʏs
+Alinde	f	1	alɪndə
+Alisia	f	1	alizija
+Allal	m	1	ɑlɑl
+Allegonda	f	1	ɑləɣonda
+Aldin	m	1	aldɪn
+Anthe	f	1	ɑntə
+Antoinetta	f	1	ɑntʋɑnətta
+Angelle	f	1	ɑŋɛlə
+Anjani	f	1	ɑɲani
+Anjuli	f	1	ɑɲʏlɪ
+Ankje	f	1	ɑŋkjə
+Anna-Sophie	f	1	ɑnasɔphi
+Anne-Lynn	f	1	ɑnəʔlɪŋn
+Anne-May	f	1	ɑnəʔme
+Annelein	f	1	ɑnəlɛin
+Annemoon	f	1	ɑnemon
+Annoeska	f	1	ɑnnuskɑ
+Adjai	m	1	ɑdjɑɪ
+Adnane	m	1	adejɛnanə
+Adne	m	1	adnə
+Aischa	f	1	eʃa
+Aislinn	f	1	eslinn
+Ajdin	m	1	ajdɪn
+Ajla	f	1	ajlɑ
+Alanis	f	1	alanɪs
+Adib	m	1	adijb
+Adis	m	1	adɪs
+Adisa	f	1	adɪsɑ
+Abdullahi	m	1	ɑpdulɑj
+Abida	f	1	ɑbɑjda
+Aalbert	m	1	albɛr
+Aantje	f	1	ancə
+Aaya	f	1	aaja
+Abdelali	m	1	ɑbdəlali
+Abdelghani	m	1	ɑbdeɪ̯lɣa­nɪ
+Abdelhalim	m	1	ɑbdəlhalɪm
+Abdelilah	m	1	ɑbdeɪ̯lɑjla
+Abdeljalil	m	1	abedəljɑlɑjl
+Abdelkader	m	1	ɑbdəɫkadər
+Abdelkhalek	m	1	ɑbdəɫkhɑlək
+Abdelmajid	m	1	ɑbdəɫmaʒɪd
+Abdelmalek	m	1	ɑbdəɫmalək
+Abdelouahid	m	1	ɑbdəluɑhid
+Abdennour	m	1	ɑbdənnur
+Abderrahim	m	1	ɑbdərɑhɑjm
+Abderrazak	m	1	ɑbdərrazɑk
+Abdeslam	m	1	ɑbdezlɑm
+Abdiaziz	m	1	ɑbdijazɪz
+Ayuub	m	1	eyp
+Azeddine	m	1	jazəddinə
+Awa	f	1	awa
+Axelle	f	1	ɑksɛlə
+Augustijn	m	1	ɑuɣʏstɛin
+Balou	f	1	bɑlɑu
+Athina	f	1	ɑtina
+Atje	f	1	acə
+Badreddine	m	1	badrɛdinə
+Ayana	f	1	eana
+Ashkan	m	1	ɑʃkɑn
+Ashvin	m	1	ɑshvɪn
+Ashwien	m	1	ɑʃwin
+Asmae	f	1	ɑsmɑə
+Astrando	m	1	ɑstrɑndo
+Arnela	f	1	arnejlɑ
+Arsenio	m	1	ɑrsenijo
+Archana	f	1	ɑrxana
+Ardian	m	1	ɑrdijən
+Arendina	f	1	arəndijnaʔ
+Artje	f	1	arcə
+Armaan	m	1	ɑrman
+Aminata	f	1	aminata
+Amisha	f	1	amishɑ
+Amra	f	1	amrɑ
+Amerins	f	1	amerɛ̃s
+Amando	m	1	amɑndo
+Anandi	f	1	anɑndɪ
+Anastacia	f	1	anastasija
+Desteny	f	1	dɛstəni
+Destin	m	1	dɛstin
+Djamel	m	1	tjɑməl
+Djenna	f	1	cəna
+Djesse	m	1	cəsə
+Djimmy	m	1	tjɪmi
+Djonno	m	1	djɔnno
+Djuri	m	1	tjyri
+Devina	f	1	dəvina
+Devlin	m	1	dəvlin
+Dhiradj	m	1	dehairɑdʒ
+Dhiraj	m	1	dehairaj
+Dimphna	f	1	dɪmphnaʔ
+Dingena	f	1	dɪŋəna
+Denian	m	1	denijɑn
+Denisha	f	1	dənɪsha
+Denzell	m	1	tɛnzɛl
+Dijana	f	1	dɛɪana
+Dilay	f	1	dɪle
+Diliana	f	1	dɪlijana
+Dillan	m	1	dijɑn
+Eibertje	f	1	ɛɪbərcə
+Ekram	f	1	əkrɑm
+Elmo	m	1	əlmo
+Elsina	f	1	əlsina
+Elvie	f	1	əlvi
+Elyne	f	1	əlinə
+Eldin	m	1	ɛldɪn
+Eduardus	m	1	ədywardʏs
+Efekan	m	1	efekɑn
+Elissa	f	1	əlɪsa
+Ganesh	m	1	ɣanəsh
+Gertrudis	f	1	ɣərtrywdɪs
+Ghizlane	f	1	xhɑjzlɑnə
+Gerardina	f	1	ɣərɑrdina
+Gerhardus	m	1	ɣərhɑrdʏs
+Gerrieke	f	1	ɣərikə
+Gerrita	f	1	ɣərrɪtɑ
+Galid	m	1	ɣɑlɪt
+Gallyon	f	1	ɣɑliɔn
+Génesis	f	1	xenəzɪs
+Geneva	f	1	ɣəneva
+Geordi	m	1	ɣəɔrdi
+Geessien	f	1	ɣesin
+Fadila	f	1	fɑdijlɑ
+Fadumo	f	1	fɑdywmo
+Everardus	m	1	evərɑrədyws
+Everdina	f	1	əvərdɪnaʔ
+Everhardus	m	1	əvərhardʏs
+Evertine	f	1	evərtinə
+Euphemia	f	1	øphemija
+Faya	f	1	fɑja
+Faycal	m	1	faikɑl
+Fatin	f	1	fatin
+Fatine	f	1	fatinə
+Faouzia	f	1	faɑuzija
+Fardou	f	1	fɑrdu
+Farhana	f	1	farhana
+Farina	f	1	farinaʔ
+Farley	m	1	farli
+Donavan	m	1	donavan
+Edis	m	1	ədɪs
+Dwayn	m	1	dwajn
+Dyantha	f	1	diɑnthɑ
+Dylana	f	1	dilɑnaʔ
+Dyllan	m	1	dilɑn
+Ebba	f	1	ɛba
+Ebenezer	m	1	əbenezər
+Driesje	f	1	driʃə
+Dominica	f	1	dominika
+Fransisca	f	1	frɑnzɪska
+Ferre	m	1	fərə
+Fija	f	1	fɛia
+Fikriye	f	1	fɑjkrijiə
+Fimme	m	1	fɪmə
+Finette	f	1	finətə
+Finley	m	1	fɪnli
+Fredericus	m	1	frədərɪkʏs
+Emese	f	1	əmɛsə
+Emie	f	1	emi
+Emilius	m	1	əmilijʏs
+Emmaly	f	1	ɛmalɑj
+Esper	m	1	ɛspər
+Emmanuela	f	1	ɛmanywela
+Emme	f	1	ɛmə
+Emmily	f	1	ɛmɪlɑj
+Engeltje	f	1	ɛŋəlcə
+Ermin	m	1	ərmɪn
+Mohini	f	1	mohini
+Mitzy	f	1	mijtzi
+Moana	f	1	moana
+Mirne	f	1	mirnə
+Miron	u	1	mirɔn
+Mohcine	m	1	mohsinə
+Milenka	f	1	milənkaʔ
+Maritte	f	1	marijtə
+Marjam	f	1	mɑrjam
+Marchiano	m	1	mɑrʃiano
+Marelle	f	1	mɑrɛlə
+Marenne	f	1	marənə
+Marente	f	1	marɛntə
+Margreta	f	1	mɑrᵊxrəta
+Margretha	f	1	mɑrxrɛthɑ
+Lyndon	m	1	lɪŋdɔn
+M'hamed	m	1	ɛmhɑmed
+Macé	m	1	masee
+Macey	f	1	maseəi
+Louiza	f	1	loœyzɑ
+Loura	f	1	lura
+Lubertus	m	1	lʏpərtʏs
+Lucinde	f	1	lysində
+Madelinde	f	1	madəlində
+Madhavi	f	1	madehaavi
+Madieke	f	1	madikə
+Martijntje	f	1	mɑrtɛɪncə
+Marlissa	f	1	mɑrlɪsa
+Marouscha	f	1	mɑrɑusxa
+Marousha	f	1	mɑrɑushɑ
+Mayla	f	1	mela
+Maylin	f	1	melin
+Meaghan	f	1	miːɡhɑn
+Matthis	m	1	mattsis
+Matts	m	1	mɑts
+Maximiliaan	m	1	mɑksimilijan
+Maximiliano	m	1	mɑksimilijano
+Maximillian	m	1	mɑksimillijɑn
+Maybritt	f	1	mebrɪt
+Mathis	m	1	matsis
+Malaïka	f	1	malaʔika
+Malinda	f	1	malɪnda
+Maide	f	1	mɑjdə
+Manoe	f	1	manu
+Manolya	f	1	mɑnolija
+Manouschka	f	1	mɑnuʃkɑ
+Maissa	f	1	mɑjssa
+Majda	f	1	maʒdɑ
+Naara	f	1	narɑ
+Nadiah	f	1	nadijah
+Naduah	f	1	nadywah
+Munira	f	1	mjuːnɪra
+Muberra	f	1	mjuːbərɑ
+Myke	f	1	mikə
+Monisha	f	1	moʊ̯nɪʃa
+Morena	f	1	morəna
+Morrison	m	1	mɔrisɔn
+Moska	f	1	mɔskɑ
+Mostapha	m	1	mɔstapha
+Mouad	m	1	muad
+Mounaim	m	1	mɑunɛm
+Mellisa	f	1	mɛliza
+Menthe	f	1	mɛntə
+Merlijne	f	1	mərlɛinə
+Mex	u	1	mɛks
+Mexx	u	1	mɛksks
+Medy	f	1	mədi
+Meeke	f	1	mekə
+Ivanildo	m	1	ivanildo
+Izabella	f	1	izabɛla
+Ires	f	1	jrəs
+Ismahan	f	1	ijɛsɛmahɑn
+Inssaf	f	1	ɪnssɑf
+Jacobina	f	1	rtəxfrjobɪnʔɑ
+Jacomina	f	1	rtəxfromina
+Jadey	f	1	əxjadeɪ̯i
+Jaela	f	1	jaəlɑ
+Isaura	f	1	ɪsayra
+Ize	f	1	jze
+Jacklyn	f	1	dʒɛklɪŋ
+Jihan	f	1	dʒihɑn
+Jilly	f	1	dʒili
+Jermy	m	1	jermij
+Jeromy	m	1	jeromij
+Jerrold	m	1	dʒʏrrolt
+Jesaja	m	1	jezaja
+Jennigje	f	1	dʒɛnəxjə
+Jeremey	m	1	jerəmɛi
+Jeremia	m	1	jerəmija
+Jeremías	m	1	dʒɛrᵊəmɑs
+Jeftha	m	1	jəfthɑ
+Jemima	f	1	jəmijmɑ
+Jenita	f	1	jənita
+Jeany	f	1	dʒinaj
+Henderik	m	1	hɛndərɪk
+Henricus	m	1	hɛnrijkʏs
+Henrikus	m	1	hɛnrijkʏs
+Hibo	f	1	haibo
+Hicran	f	1	hɑjkrɛm
+Hillechien	f	1	hɪləxin
+Hina	f	1	hina
+Hinderikus	m	1	hɪndərɪkʏs
+Heiltje	f	1	hɛilcə
+Heavenly	f	1	hɛvənlɑj
+Hermannes	m	1	ɦɛrmɑnəs
+Hermannus	m	1	ɦɛrmɑnnʏs
+Hasibe	f	1	hɑsɪbə
+Hasnae	f	1	hasnaʔə
+Hassana	f	1	hɑsana
+Havin	f	1	havɪn
+Imraan	m	1	imran
+Huberta	f	1	hʏpərtɑ
+Hubertina	f	1	hʏpɛrtina
+Hubertus	m	1	hʏpərtʏs
+Iliass	m	1	ilijɑs
+Ilsa	f	1	ɪlsa
+Ilyasse	m	1	ɪlɑjɑsə
+Imaan	f	1	iman
+Imen	f	1	ɑjmən
+Ilene	f	1	ɪlənə
+Houria	f	1	hurija
+Houssam	m	1	hɔussam
+Hymke	f	1	hɪmkə
+Jaimy-Lee	f	1	dʒemijle
+Jamahl	m	1	jamahl
+Jamairo	m	1	jamɑjro
+Jamel	m	1	jaməl
+Jannigje	f	1	jɑnəxjə
+Jantiena	f	1	jɑntinɑ
+Jantiene	f	1	jɑntinə
+Jayla	f	1	dʒela
+Jaymie	m	1	dʒemi
+Jay-Jay	m	1	dʒejai
+Jaya	f	1	dʒea
+Jayanti	f	1	dʒeɑnti
+Jayce	m	1	dʒesə
+Jasmien	f	1	jasmin
+Guluzar	f	1	ɣy­lywzɑr
+Hafida	f	1	hɑfɑjda
+Hamda	f	1	hɑmdɑ
+Hamida	f	1	hamidɑ
+Hananja	f	1	hɑnɑnja
+Hannan	f	1	hɑnɑn
+Haroun	m	1	hɑrɑun
+Guylian	m	1	ɣy­ɑjlijɑn
+Gwyneth	f	1	xwajnɛth
+Guiliano	m	1	xœylijano
+Guilliano	m	1	xœyllijano
+Guiseppe	m	1	xœysepepeʔe
+Gianne	f	1	dʒiɑnə
+Giannina	f	1	dʒiɑnɪna
+Giano	m	1	xijano
+Gijsbertus	m	1	xɛɪzbɛrtʏs
+Gijsbrecht	m	1	xɛɪzbrɛxt
+Gilano	m	1	dʒilano
+Givano	m	1	dʒivano
+Glenny	m	1	xləni
+Giomar	m	1	ɣɪjomɑr
+Vinesh	m	1	vɑjnʃ
+Vico	m	1	vɪkɔ
+Vidar	m	1	vidar
+Vienne	f	1	vijɛnə
+Valeska	f	1	ɑlɛskɑ
+Vanita	f	1	vanita
+Venice	f	1	vənɪs
+Virgill	m	1	vɑjrxɪl
+Tolunay	m	1	tɔlyne
+Thommy	m	1	tɦɔmi
+Thorben	m	1	thorbən
+Thu	f	1	ty
+Tiamo	m	1	tsijamo
+Tibo	m	1	tjbɔ
+Timmie	m	1	tɪmi
+Thalina	f	1	thɑlina
+Theadora	f	1	thɛːtora
+Thije	m	1	tsijə
+Wishal	m	1	wɪshɑl
+Xam	m	1	ksam
+Xamira	f	1	ksamirɑ
+Whitley	f	1	wehaitli
+Wiggert	m	1	wɪɣərt
+Wijtske	f	1	wɛitskə
+Wikash	m	1	wikɑsh
+Wilhelmine	f	1	wɪlhɛlminə
+Wendelina	f	1	wəndɛlina
+Wai	u	1	we
+Wail	m	1	wel
+Willemina	f	1	wɪləmjna
+Willemine	f	1	wɪləmjnɛ
+Willibrordus	m	1	wɪlibrɔrdʏs
+Winesh	m	1	wɪnəsh
+Zumra	f	1	zumra
+Yade	f	1	ijadə
+Yaelle	f	1	jaələ
+Yalda	f	1	jaldɑ
+Yamilla	f	1	ijamila
+Yamna	f	1	ijamna
+Ynskje	f	1	ɪŋskjə
+Yoell	m	1	ijoəll
+Yoelle	f	1	ijoɛlə
+Yoep	m	1	iup
+Yonah	m	1	ijonah
+Yanou	f	1	ɑjɑnɑu
+Yorik	m	1	ijorik
+Yrsa	f	1	irza
+Xu	m	1	ksu
+Yacintha	f	1	ijaseɪntha
+Yentel	f	1	jɛntəl
+Yenthe	f	1	jɛnte
+Yesse	m	1	ijɛsə
+Yassmine	f	1	ijassmɑjn
+Zayd	m	1	tsait
+Zaynab	f	1	tsainabe
+Zhane	f	1	zhɑnə
+Zinedine	m	1	zinədinə
+Zion	m	1	zijɔn
+Zippora	f	1	tsipepeʔora
+Zaineb	f	1	zɑɪnəb
+Zakariae	m	1	zɑkaʔrije
+Zakiya	f	1	zɑkijija
+Zonne	f	1	zɔnə
+Zosja	f	1	zɔʃa
+Zoubeir	m	1	zɑu̯bɛɪr
+Zoubida	f	1	zɑu̯bɑjda
+Zenzi	f	1	zenzɪ
+Zerina	f	1	zərina
+Zev	m	1	zev
+Zeynab	f	1	zəinabe
+Yvana	f	1	ivɑnɑ
+Yvanca	f	1	ivɑnka
+Tuyet	f	1	tywjɛt
+Ummugulsum	f	1	ʏmmjuːxʏlsywm
+Ubah	f	1	ywbɑ
+Tamika	f	1	tamɪka
+Tahira	f	1	tahɑjra
+Tannetje	f	1	tɑnəcə
+Sybrich	f	1	sibrɪx
+Syenna	f	1	siəna
+Syreeta	f	1	siretɑ
+Taro	m	1	tarɔ
+Tein	m	1	tɛin
+Paschalis	m	1	pɑsxalɪs
+Parel	f	1	parəl
+Otman	m	1	jotmɑn
+Ouafa	f	1	uɑfa
+Ouardia	f	1	uɑrdija
+Ouiam	f	1	uijam
+Ouissam	u	1	uɪsam
+Oumaima	f	1	umɑjmɑ
+Oumnia	f	1	ɑumnija
+Ousama	m	1	ɑusama
+Patricius	m	1	patrisijʏs
+Pavan	m	1	pɑvɑn
+Neele	f	1	nelə
+Neelke	f	1	nelkə
+Nefise	f	1	nəfisə
+Nawien	m	1	nawin
+Nayomi	f	1	naʔijomi
+Nazia	f	1	natsia
+Naouar	f	1	naʔuɑr
+Naoufal	m	1	naɑufɑl
+Narges	f	1	nɑrʒəs
+Nasreddine	m	1	nasrəddinə
+Nassim	m	1	nɑsɪm
+Nassima	f	1	nɑsima
+Natalija	f	1	natalɛɪa
+Nakita	f	1	nakita
+Nandini	f	1	nɑndinij
+Nanet	f	1	nanɛt
+Naime	f	1	nɛmɛ
+Najima	f	1	najima
+Nathanja	f	1	nɑthɑnja
+Nicolay	m	1	nijkɔle
+Nighel	m	1	nəχɦɛl
+Nijs	m	1	nɛis
+Nikee	f	1	nɪke
+Niamh	f	1	nijamh
+Nicci	f	1	niksi
+Nickolai	m	1	nikkolɑj
+Nickolas	m	1	nɪkolɑs
+Neomi	f	1	nejomi
+Nikolaas	m	1	nɪkolas
+Niobe	f	1	nijobə
+Nisrin	f	1	nizrijn
+Nissrine	f	1	nijɛsɛsrinə
+Noell	f	1	nul
+Nevra	f	1	nɛvra
+Nezha	f	1	nezhɑ
+Nouh	m	1	nuh
+Orry	m	1	ɔri
+Nouk	f	1	nuk
+Nouschka	f	1	nuʃka
+Nursel	f	1	nʏːrsəl
+Nyah	f	1	njɑ
+Nygel	m	1	ɲɣəl
+Omaira	f	1	jomɑjra
+Omayma	f	1	jomema
+Omri	m	1	ɔmrɪ
+Reini	f	1	rɛɪni
+Revelino	m	1	rəvɛlino
+Raveena	f	1	raveəna
+Ravish	m	1	ravijʃ
+Rawi	m	1	rawɪ
+Rawien	m	1	rɔːin
+Rayane	m	1	reanə
+Reynaldo	m	1	rejinɑldo
+Rhianne	f	1	riɑnə
+Riad	m	1	rijat
+Rayen	m	1	reən
+Rayn	m	1	ren
+Rayvano	m	1	revano
+Ricco	m	1	risko
+Richmond	m	1	rɪxmɔnt
+Ridge	m	1	rɪdʒ
+Ridouan	m	1	riduwan
+Riemkje	f	1	rimkjə
+Rifka	f	1	rɪfkɑ
+Precilla	f	1	presila
+Pleuntje	f	1	pløncə
+Poonam	f	1	ponɑm
+Pei	f	1	pɛi
+Prisilla	f	1	prizija
+Prya	f	1	prija
+Pietertje	f	1	pitərcə
+Quenten	m	1	kwɛntən
+Radia	f	1	radija
+Radouane	m	1	rɑduwanə
+Radwan	m	1	rɑdwɑn
+Raemon	m	1	raəmon
+Rajae	f	1	rajaə
+Querijn	m	1	kwərɛin
+Quincey	u	1	kinsɛi
+Quirinus	m	1	kirɪnʏs
+Quoc	m	1	kwok
+Rabiya	f	1	rabeija
+Rachell	f	1	raxəll
+Rafiq	m	1	rafɪju
+Rafke	f	1	rɑfkə
+Rahima	f	1	rahɑjma
+Railey	m	1	reli
+Koendert	m	1	kundərt
+Kofi	m	1	kɔfɑj
+Krissie	f	1	krɪsi
+Kristianne	f	1	krɪstijɑnə
+Lakisha	f	1	lakɪshɑ
+Lamberta	f	1	lɑmbɛrta
+Lambertha	f	1	lɑmbɛrthɑ
+Lamyae	f	1	lamijaə
+Lani	f	1	lɑnij
+Kiymet	f	1	kaʔiɑjmt
+Kwint	m	1	kʋɪnt
+Kwinten	m	1	kwɪntən
+Kwok	m	1	kwɔk
+Kyla	f	1	kilɑ
+Kaylin	f	1	kajlin
+Kean	m	1	kəɑn
+Kee	f	1	ke
+Karuna	f	1	kɑruwnaʔ
+Levin	m	1	ləvɪn
+Latifah	f	1	la­tɑjfa
+Laurentius	m	1	lɑurəntijʏs
+Lauretta	f	1	lɑurɛta
+Leora	f	1	lejora
+Laurus	m	1	lɑurʏs
+Lava	f	1	lava
+Leena	f	1	lena
+Leeroy	m	1	lerɔj
+Jonie	f	1	jɔni
+Jordana	f	1	jɔrdɑna
+Jorginho	m	1	jɔrʒinho
+Jorja	f	1	jɔrja
+Jorna	f	1	jɔrna
+Josiah	m	1	dʒosijah
+Justian	m	1	jʏstijɑn
+Jovanni	m	1	jovɑnnij
+Kajol	f	1	kajɔl
+Julianne	f	1	jylijɑnə
+Julisa	f	1	jylɛisa
+Juna	f	1	jyna
+Jozina	f	1	jozina
+Kin	m	1	kɪn
+Kirsi	f	1	kirsɪ
+Kiana	f	1	kiana
+Khadya	f	1	khadja
+Kenrick	m	1	kənrɪk
+Lijntje	f	1	lɛincə
+Lilith	f	1	lilit
+Lisse	f	1	lɪsə
+Lizan	f	1	lizɑn
+Lizelotte	f	1	lɑjslɔtə
+Loeka	f	1	luka
+Loena	f	1	luna
+Lorin	f	1	lorin
+Lidewei	f	1	lɑjtwɛi
+Liduina	f	1	lidœynɑ
+Liefke	f	1	lifkə
+Liese	f	1	lisə
+Lieveke	f	1	livəkə
+Lindey	f	1	lɑjndeɪ̯i
+Linne	f	1	lɪnə
+Liora	f	1	lijora
+Selinay	f	1	selɑjnaʔi
+Senad	m	1	sənad
+Senta	f	1	sɛnta
+Seyed	m	1	sit
+Seyyed	m	1	siied
+Shabana	f	1	shabana
+Serana	f	1	serana
+Serano	m	1	serano
+Seraya	f	1	seraja
+Serginho	m	1	sərɣɪnho
+Shailesh	m	1	shɑjlɛsh
+Shamira	f	1	shamirɑ
+Shahira	f	1	shɑhɑjra
+Seema	f	1	seəma
+Sefanja	f	1	səfɑɲa
+Sjefika	f	1	ʃəfɪkɑ
+Sharmayne	f	1	shɑrmenə
+Sharonna	f	1	shɑrɔnna
+Shauny	f	1	shɑunaj
+Shayenna	f	1	shɑiəna
+Sherena	f	1	sherəna
+Sherilyn	f	1	shɛrɪlijn
+Shiela	f	1	shilᵊa
+Shifra	f	1	ʃɪfra
+Shanaya	f	1	ʃanaja
+Shaniqua	f	1	ʃanika
+Shanita	f	1	ʃanita
+Shantie	f	1	shɑntsi
+Shardé	f	1	shɑrdəʔ
+Shareen	f	1	shɑren
+Sharella	f	1	shɑrəla
+Sharelle	f	1	shɑrɛlə
+Sharen	f	1	sharən
+Sharena	f	1	shɑrəna
+Sharida	f	1	ʃɑrida
+Sidi	m	1	sidij
+Sieuwke	f	1	siwkə
+Sija	f	1	sɛijɑ
+Shayne	m	1	shɑinə
+Shazia	f	1	shazija
+Shemara	f	1	shemara
+Sheng	m	1	shɛŋ
+Shivam	m	1	ʃɑjvəm
+Shivan	m	1	ʃivɑn
+Sjeel	f	1	ʃel
+Sjieuwke	f	1	ʃiwkə
+Sin	f	1	sɪn
+Sira	f	1	sɪrɑ
+Silvian	m	1	silvijɑn
+Silvijn	m	1	zilvɛin
+Souhaïlla	f	1	suhɑjɪla
+Soleil	f	1	solɛil
+Somia	f	1	sɔmija
+Soufyane	m	1	sɑufjanə
+Rutmer	m	1	rytmər
+Ryo	m	1	rijo
+Saadia	f	1	sadija
+Rubina	f	1	rybina
+Rowenna	f	1	rowɛna
+Safae	f	1	sɑfaə
+Safira	f	1	safɪrɑ
+Safwan	m	1	sɑfwɑn
+Sahila	f	1	sahaila
+Sabira	f	1	sabɪrɑ
+Sabriye	f	1	sabeɛriɑj
+Sadie	f	1	sadi
+Rihab	f	1	rijhab
+Rijkje	f	1	rɛikjə
+Rinesh	m	1	rɑjnʃ
+Rishma	f	1	rijshma
+Rochdi	m	1	roxdɪ
+Rochus	m	1	roxʏs
+Rodin	m	1	rodin
+Rodny	m	1	rodnaj
+Roef	m	1	ruf
+Ritchy	m	1	ritʃi
+Ritish	m	1	ritish
+Roanne	f	1	roɑnə
+Roben	m	1	robən
+Roseanne	f	1	rozəɑnə
+Roselien	f	1	rosəlin
+Roshni	f	1	roʃnij
+Romaysa	f	1	roʊ̯mesa
+Romek	m	1	romek
+Romero	m	1	romero
+Ronaldus	m	1	ronaldyws
+Roosmarie	f	1	roːsmɑri
+Rosali	f	1	rosali
+Sweder	m	1	sʋeːdər
+Stach	m	1	stɑx
+Stefanus	m	1	stefanʏs
+Stientje	f	1	stincə
+Suad	f	1	sywat
+Sunniva	f	1	sywniva
+Susette	f	1	sʏsətə
+Sujata	f	1	sywjɑta
+Steffany	f	1	stɛfanaj
+Stephanus	m	1	stɛphɑnʏs
+Stern	m	1	stɛrᵊn
+Sunaina	f	1	sywnɛna
+Sundus	f	1	sywndʏs
+Santana	f	1	sɑntana
+Santusha	f	1	sɑntʏshɑ
+Sanya	f	1	sanja
+Sarella	f	1	sarəla
+Saritha	f	1	sarɪtha
+Saron	f	1	sarɔn
+Saya	f	1	saja
+Sanderijn	f	1	sɑndərɛɪn
+Sanel	m	1	sanel
+Sania	f	1	sɑnija
+Sanjana	f	1	sɑɲana
+Sanjin	m	1	sɑɲɪn
+Charona	f	1	xarona
+Chee	m	1	xe
+Chelly	f	1	xɛli
+Cerise	f	1	serɪsə
+Chanell	f	1	xanɛl
+Chanique	f	1	xanik
+Charella	f	1	xarela
+Charif	m	1	xarɪf
+Charina	f	1	xarina
+Charise	f	1	xarɪsə
+Charisse	f	1	xarɪsə
+Charita	f	1	xarita
+Charlaine	f	1	ʃɑrlɛːn
+Charleen	f	1	ʃɑrlen
+Chadi	m	1	xadi
+Chadia	f	1	xadija
+Chahira	f	1	xahɑjrɑ
+Chakib	m	1	xakib
+Chakir	m	1	xakir
+Chakira	f	1	xakira
+Chama	f	1	xama
+Chandenie	f	1	xɑndɛni
+Cassidy	f	1	kɑsidi
+Cathalina	f	1	kehɑlina
+Brianne	f	1	brijɑnə
+Brayn	m	1	brɑjn
+Bojana	f	1	bojana
+Bibiana	f	1	bɑjbijana
+Bibiche	f	1	bɑjbiɑjə
+Bosse	m	1	bɔsə
+Bote	m	1	bɔtə
+Boutaina	f	1	bɑutenaʔ
+Bowien	f	1	boin
+Bilel	m	1	bilejl
+Bloeme	f	1	blumə
+Chelsy	f	1	xəlsɪ
+Chenna	f	1	xɛna
+Cherilyn	f	1	xɛrijlɪŋ
+Chermaine	f	1	xɛrmenə
+Cheryll	f	1	xɛrill
+Chesron	m	1	xɛsrɔn
+Cheyenna	f	1	ʃɑjna
+Clim	m	1	klim
+Ching	u	1	xɪŋ
+Chrystel	f	1	xriztəl
+Christiano	m	1	xrɪstijano
+Clazina	f	1	klazina
+Caín	m	1	seʔan
+Caithlyn	f	1	kɑjtlɑjn
+Carlyn	f	1	kɑrliːn
+Cacharel	f	1	kɑsjarɛɫ
+Dalal	f	1	dalal
+Crijn	m	1	krɛin
+Cristiaan	m	1	kriztijan
+Cyrina	f	1	sirina
+Dahlia	f	1	dalija
+Barendina	f	1	barəndina
+Benedictus	m	1	benədɪktʏs
+Benice	f	1	benikə
+Beaudine	f	1	bjudinə
+Bedia	f	1	bədija
+Beerd	m	1	bert
+Daryll	m	1	dɑrill
+Danillo	m	1	danijlo
+Danine	f	1	dɑninə
+Danita	f	1	dɑnita
+Danitia	f	1	dɑnitʃa
+Danne	f	1	dɑnə
+Danya	f	1	dɛnija
+Daphna	f	1	dɑfna
+Daphny	f	1	dɑfnaj
+Dardan	m	1	dɑrdɑn
+Dayanara	f	1	deanara
+Davita	f	1	davita
+Davud	m	1	dɑvʏ
+Delana	f	1	dəlɑ̃a
+Delina	f	1	dəlina
+Demelsa	f	1	dəmɛlsa
+Demie	f	1	demi
+Demien	m	1	demin

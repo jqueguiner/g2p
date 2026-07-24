@@ -68,14 +68,14 @@ pub struct AppState {
     pub default_lang: String,
     /// First-name corpus per language: `<lang>.txt`, one `name<TAB>gender` per
     /// line (scanned at boot from the names dir; gender defaults to unisex).
-    names: HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+    names: HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>>,
     /// Per-language name index, built on first use. Each entry's phonetic
     /// structure (segments, syllable count, onset) is precomputed once here,
     /// not per comparison.
     name_index: RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
     /// Surname corpus + lazily-built index (mirrors `names`/`name_index`;
     /// surnames carry no gender, stored as unisex).
-    surnames: HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+    surnames: HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>>,
     surname_index: RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
     /// Per-language similarity calibration, loaded from `<lang>.json`.
     calibrations: HashMap<String, Arc<Calibration>>,
@@ -147,13 +147,13 @@ impl AppState {
     /// Entry list for `lang` from `corpus`; falls back to the union of all lists
     /// when the language has no dedicated file.
     fn entries_for(
-        corpus: &HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+        corpus: &HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>>,
         lang: &str,
-    ) -> Vec<(String, Gender, u32)> {
+    ) -> Vec<(String, Gender, u32, Option<String>)> {
         if let Some(v) = corpus.get(lang) {
             return v.as_ref().clone();
         }
-        let mut all: Vec<(String, Gender, u32)> =
+        let mut all: Vec<(String, Gender, u32, Option<String>)> =
             corpus.values().flat_map(|v| v.iter().cloned()).collect();
         all.sort_by(|a, b| a.0.cmp(&b.0));
         all.dedup_by(|a, b| a.0 == b.0);
@@ -163,7 +163,7 @@ impl AppState {
     /// Phonemize + analyze a corpus into a cached index, keyed by `lang`.
     fn build_index(
         &self,
-        corpus: &HashMap<String, Arc<Vec<(String, Gender, u32)>>>,
+        corpus: &HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>>,
         cache: &RwLock<HashMap<String, Arc<Vec<NameEntry>>>>,
         lang: &str,
         model: &Model,
@@ -176,11 +176,13 @@ impl AppState {
         let diph = self.calibration(lang);
         let index: Vec<NameEntry> = Self::entries_for(corpus, lang)
             .into_iter()
-            .map(|(name, gender, freq)| {
-                let ipa = name
-                    .split_whitespace()
-                    .map(|w| g2p::phonemize(model, w))
-                    .collect::<String>();
+            .map(|(name, gender, freq, ipa)| {
+                // Use the precomputed IPA when present (fast); else phonemize.
+                let ipa = ipa.unwrap_or_else(|| {
+                    name.split_whitespace()
+                        .map(|w| g2p::phonemize(model, w))
+                        .collect::<String>()
+                });
                 NameEntry {
                     name,
                     gender,
@@ -256,7 +258,7 @@ fn scan_models(dir: &Path) -> BTreeSet<String> {
 /// Load `<lang>.txt` name lists from the names dir. Each non-blank, non-`#` line
 /// is `name` optionally followed by TAB `gender` (`m`/`f`/`u`) and TAB
 /// `frequency`; a missing gender means unisex, a missing frequency means 0.
-fn scan_names(dir: &Path) -> HashMap<String, Arc<Vec<(String, Gender, u32)>>> {
+fn scan_names(dir: &Path) -> HashMap<String, Arc<Vec<(String, Gender, u32, Option<String>)>>> {
     let mut map = HashMap::new();
     let Ok(rd) = std::fs::read_dir(dir) else {
         return map;
@@ -271,7 +273,7 @@ fn scan_names(dir: &Path) -> HashMap<String, Arc<Vec<(String, Gender, u32)>>> {
             continue;
         };
         // Each line: `name` [TAB gender] [TAB frequency]; gender/freq optional.
-        let list: Vec<(String, Gender, u32)> = content
+        let list: Vec<(String, Gender, u32, Option<String>)> = content
             .lines()
             .map(str::trim)
             .filter(|l| !l.is_empty() && !l.starts_with('#'))
@@ -280,7 +282,9 @@ fn scan_names(dir: &Path) -> HashMap<String, Arc<Vec<(String, Gender, u32)>>> {
                 let name = it.next().unwrap_or("").trim().to_string();
                 let gender = it.next().map(Gender::parse).unwrap_or(Gender::Unisex);
                 let freq = it.next().and_then(|f| f.trim().parse().ok()).unwrap_or(0);
-                (name, gender, freq)
+                // optional 4th column: precomputed IPA (skips runtime phonemize)
+                let ipa = it.next().map(|s| s.trim().to_string()).filter(|s| !s.is_empty());
+                (name, gender, freq, ipa)
             })
             .collect();
         if !list.is_empty() {

@@ -1,2081 +1,2655 @@
-# pt surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=3, cap=20000).
-Silva	u	26830
-Oliveira	u	21435
-Santos	u	21373
-Rodrigues	u	13571
-Souza	u	12715
-Lima	u	12231
-Ferreira	u	11816
-Alves	u	11416
-Martins	u	9372
-Costa	u	9336
-Gomes	u	8967
-Ribeiro	u	8799
-Pereira	u	8665
-Carvalho	u	7832
-Fernandes	u	7546
-Araújo	u	7361
-Lopes	u	7040
-Almeida	u	6999
-Soares	u	6340
-Dias	u	5798
-Marques	u	5600
-Rocha	u	5576
-Vieira	u	5493
-Andrade	u	5212
-Gonçalves	u	5177
-Sousa	u	5097
-Mendes	u	4655
-Barbosa	u	4576
-Nascimento	u	4516
-Freitas	u	4242
-Nunes	u	4181
-Reis	u	4029
-Moreira	u	4029
-Cardoso	u	3981
-Machado	u	3947
-Santana	u	3848
-Ramos	u	3806
-Castro	u	3574
-Mélo	u	3473
-Monteiro	u	3376
-Henrique	u	3372
-Borges	u	3313
-Teixeira	u	3265
-Duarte	u	3079
-Moura	u	3021
-Moraes	u	2961
-Campos	u	2835
-Miranda	u	2731
-Barros	u	2696
-Medeiros	u	2627
-Guimarães	u	2582
-Tavares	u	2550
-Cruz	u	2267
-Pinheiro	u	2254
-Batista	u	2248
-Azevedo	u	2227
-Brito	u	2170
-Neves	u	2170
-Nogueira	u	2157
-Mello	u	2117
-Cunha	u	2077
-Morais	u	2018
-Fonsêca	u	2016
-Maia	u	1995
-Pires	u	1993
-Neto	u	1986
-Menezes	u	1977
-Coêlho	u	1976
-Rosa	u	1872
-Magalhães	u	1863
-Leite	u	1817
-Amaral	u	1790
-Amorim	u	1771
-Viana	u	1763
-Braga	u	1761
-Matos	u	1757
-Silveira	u	1713
-Queiroz	u	1685
-Farías	u	1680
-Torres	u	1679
-Aguiar	u	1667
-França	u	1640
-Macêdo	u	1639
-Cristina	u	1616
-Dantas	u	1608
-Correia	u	1606
-Sampaio	u	1538
-Pinto	u	1512
-Albuquerque	u	1502
-Figueiredo	u	1497
-Brasil	u	1490
-Luiz	u	1462
-Xavier	u	1462
-Leal	u	1462
-Abreu	u	1413
-Paiva	u	1407
-Camargo	u	1394
-Guedes	u	1373
-Faría	u	1368
-Barreto	u	1364
-Siqueira	u	1353
-Júnior	u	1348
-Vinícius	u	1328
-Lemos	u	1295
-Bastos	u	1282
-Maciel	u	1277
-Mota	u	1275
-Antunes	u	1274
-Cabral	u	1261
-Augusto	u	1249
-Vasconcelos	u	1245
-Lucas	u	1242
-Brandão	u	1222
-Mendonça	u	1208
-Felipe	u	1207
-Diniz	u	1206
-Sales	u	1202
-Pacheco	u	1202
-Marinho	u	1193
-Félix	u	1171
-Bueno	u	1164
-Prado	u	1160
-Ferraz	u	1101
-Cordeiro	u	1079
-Coutinho	u	1078
-Freire	u	1077
-Franco	u	1072
-Chaves	u	1058
-Simões	u	1045
-Gabriel	u	1003
-Vitória	u	985
-Bezerra	u	965
-Lourenço	u	965
-Muniz	u	943
-Lacerda	u	942
-Santiago	u	908
-Carneiro	u	897
-Assis	u	887
-Trindade	u	869
-Alexandre	u	866
-Guilherme	u	865
-Couto	u	854
-Rangel	u	830
-César	u	818
-Mesquita	u	807
-Vaz	u	805
-Alencar	u	804
-Carlos	u	804
-Porto	u	794
-Pontes	u	783
-Caetano	u	783
-Peixoto	u	778
-Guerra	u	772
-Passos	u	767
-Vargas	u	754
-Pimentel	u	751
-Luz	u	747
-Sena	u	740
-Arruda	u	736
-Alcántara	u	728
-María	u	724
-Victor	u	713
-Galvão	u	710
-Fagundes	u	692
-Lisboa	u	681
-Vitor	u	679
-Leão	u	668
-Fernanda	u	663
-Moreno	u	661
-Sá	u	658
-Rodríguez	u	651
-Chagas	u	647
-Bruno	u	639
-Sanches	u	639
-Eduardo	u	635
-Paixão	u	607
-Furtado	u	605
-Peres	u	604
-Gama	u	587
-Pimenta	u	577
-Pessoa	u	570
-Domingues	u	566
-Lobo	u	564
-Bernardo	u	562
-Aquino	u	557
-Ferrari	u	556
-Esteves	u	555
-Mateus	u	546
-Paulo	u	544
-Teles	u	541
-Ramalho	u	536
-Gouveia	u	536
-Ricardo	u	534
-Cândido	u	533
-Martínez	u	533
-Saraiva	u	532
-Vidal	u	531
-Ventura	u	530
-Matías	u	524
-Afonso	u	519
-Braz	u	517
-Resende	u	516
-Valente	u	512
-Flores	u	508
-Roberto	u	500
-Ríos	u	500
-Fontes	u	500
-Vicente	u	500
-Mariano	u	495
-Veiga	u	487
-Cerqueira	u	486
-Nobre	u	485
-Loureiro	u	479
-Jesús	u	473
-Baptista	u	473
-Vilela	u	471
-ávila	u	467
-Bernardes	u	466
-Rafael	u	462
-Falcão	u	459
-Fraga	u	458
-Pedro	u	455
-Veloso	u	450
-López	u	444
-Pinho	u	444
-Anjos	u	441
-Branco	u	439
-André	u	438
-Bandeira	u	436
-Leandro	u	432
-Assunção	u	431
-Meireles	u	430
-Henriques	u	427
-Paes	u	424
-Damasceno	u	418
-José	u	415
-Botelho	u	415
-Fernando	u	413
-Paula	u	412
-Paz	u	412
-Domingos	u	411
-Lucena	u	409
-Bento	u	405
-Bispo	u	404
-Conceição	u	404
-Inácio	u	400
-Jorge	u	400
-Coimbra	u	398
-Portugal	u	396
-Fernández	u	395
-Padilha	u	391
-Aragão	u	390
-Miguel	u	385
-Guerreiro	u	385
-Sánchez	u	382
-Pedroso	u	380
-Luis	u	379
-Nóbrega	u	373
-Caldas	u	370
-Barcelos	u	368
-Beta	u	364
-Borba	u	358
-Francisco	u	358
-Barroso	u	358
-Gonzaga	u	352
-Novais	u	352
-Gaspar	u	352
-Lara	u	348
-Linhares	u	347
-Dourado	u	346
-Paulino	u	343
-Marcos	u	338
-Souto	u	338
-Jardim	u	332
-Portela	u	332
-Ribas	u	328
-Meira	u	327
-Antonio	u	326
-Bessa	u	324
-Medina	u	320
-Holanda	u	319
-Sabino	u	318
-Cámara	u	316
-Carmo	u	313
-Castilho	u	311
-Serra	u	310
-Evangelista	u	307
-Caldeira	u	306
-Noronha	u	305
-Custódio	u	300
-Elías	u	297
-Alvarenga	u	296
-Messias	u	291
-Teodoro	u	291
-Roque	u	290
-Daniel	u	289
-Venâncio	u	286
-Amaro	u	286
-Leonardo	u	285
-Madeira	u	285
-David	u	281
-Sobral	u	281
-Silvestre	u	280
-Lino	u	278
-Gil	u	277
-Marcelo	u	276
-Filipe	u	275
-Meneses	u	273
-Mascarenhas	u	272
-Montenegro	u	272
-Luna	u	270
-Marins	u	269
-Terra	u	268
-Saldanha	u	268
-Viegas	u	268
-Helena	u	267
-Romero	u	266
-Navarro	u	263
-Lobato	u	262
-Veras	u	261
-Valentim	u	261
-Cortez	u	259
-Salgado	u	258
-Magno	u	254
-Adriano	u	253
-Delgado	u	252
-Junqueira	u	249
-Victoria	u	248
-Vale	u	248
-Bolsonaro	u	245
-Veríssimo	u	241
-Camilo	u	240
-Seixas	u	240
-Salvador	u	239
-Marcelino	u	237
-Pedrosa	u	237
-Simão	u	233
-Figueira	u	231
-Fortes	u	230
-Diogo	u	228
-Severo	u	225
-Gusmão	u	223
-Godinho	u	223
-Angelo	u	222
-Mourão	u	221
-Honorato	u	220
-Munhoz	u	220
-Serafim	u	219
-Gabriela	u	217
-Varela	u	216
-Blanco	u	215
-Diego	u	214
-Aires	u	212
-Góis	u	211
-Belo	u	211
-Leitão	u	210
-Luciano	u	206
-Marçal	u	206
-Quadros	u	203
-Lúcio	u	203
-Morgado	u	202
-Hernández	u	201
-Rebelo	u	201
-Germano	u	199
-Romão	u	199
-Firmino	u	197
-Vitorino	u	197
-Prestes	u	195
-Gregório	u	195
-Aleixo	u	194
-Ana	u	193
-Raposo	u	192
-Valle	u	191
-Palma	u	189
-Ferro	u	188
-Faustino	u	188
-Flor	u	187
-Jordão	u	187
-Máximo	u	186
-Lage	u	185
-Vital	u	183
-Valério	u	183
-Rego	u	183
-Russo	u	182
-Uchôa	u	181
-Mafra	u	181
-Malta	u	180
-Proença	u	179
-Fialho	u	179
-Silvério	u	178
-Pina	u	176
-Fortunato	u	175
-álvarez	u	175
-Fontoura	u	173
-Frazão	u	173
-Clemente	u	173
-Seabra	u	173
-Rogério	u	172
-Romano	u	172
-Cintra	u	171
-Martín	u	171
-Sarmento	u	171
-Basilio	u	170
-Lago	u	170
-Neri	u	169
-Pena	u	169
-Patrício	u	169
-Alonso	u	168
-Prata	u	167
-Ambrosio	u	165
-Feliciano	u	165
-Rosário	u	165
-Morales	u	164
-Avelar	u	163
-Avelino	u	162
-Arcanjo	u	162
-Maurício	u	162
-Serrano	u	162
-Campelo	u	161
-Jacob	u	161
-Quaresma	u	161
-Rufino	u	160
-Cavalheiro	u	159
-Condé	u	157
-Justino	u	156
-Gimenes	u	155
-Garcez	u	155
-Benevides	u	154
-Mayer	u	153
-Tiago	u	153
-Bernardino	u	152
-Preto	u	151
-Neres	u	150
-Rolim	u	150
-Gutiérrez	u	150
-Bragança	u	150
-Fragoso	u	150
-Florêncio	u	149
-Balbino	u	148
-Cassiano	u	148
-Bello	u	148
-Valadares	u	147
-Alberto	u	147
-Estevam	u	146
-Sobrinho	u	145
-Cristiano	u	145
-Abrantes	u	145
-Julio	u	144
-Fiuza	u	143
-Amor	u	143
-Bravo	u	143
-João	u	143
-Tadeu	u	142
-Estrela	u	142
-Lá	u	141
-Parente	u	140
-Sérgio	u	138
-Maranhão	u	136
-Quintanilha	u	136
-Maldonado	u	136
-Graça	u	136
-Conrado	u	133
-Valverde	u	133
-Estêvão	u	133
-Calado	u	133
-Quirino	u	132
-Honório	u	132
-Ramires	u	132
-Felicio	u	132
-Garrido	u	132
-Tomé	u	132
-Santo	u	131
-Sequeira	u	130
-Duque	u	130
-Ramírez	u	129
-Madureira	u	129
-Boaventura	u	128
-Osório	u	128
-Serpa	u	127
-Vilar	u	127
-Horta	u	127
-Paim	u	126
-Cipriano	u	126
-Vasques	u	126
-Apolinário	u	125
-Frota	u	124
-Lorena	u	124
-Donato	u	123
-Monte	u	123
-Azeredo	u	122
-Salgueiro	u	122
-Constantino	u	121
-Pessanha	u	121
-Neiva	u	120
-Pestana	u	120
-Alvim	u	119
-Fróes	u	118
-Martinho	u	116
-Bonifácio	u	115
-Sobreira	u	115
-Damásio	u	115
-Agostinho	u	115
-Albino	u	114
-Palmeira	u	114
-Queirós	u	114
-Sacramento	u	113
-Camacho	u	113
-Caires	u	112
-Basso	u	111
-Parreira	u	111
-Ferrer	u	110
-Claudino	u	110
-Iglesias	u	110
-Bárbara	u	109
-Liberato	u	109
-Carreira	u	109
-Torquato	u	108
-Crespo	u	108
-Aguilar	u	107
-Castelo	u	107
-Valença	u	106
-Lévy	u	106
-Crispim	u	105
-Malaquias	u	105
-Claro	u	105
-Taveira	u	105
-Canuto	u	104
-Moro	u	104
-Januário	u	104
-Nicolau	u	104
-Rio	u	104
-Batalha	u	104
-Porfírio	u	103
-Juliá	u	102
-Louzada	u	102
-Vilhena	u	102
-Barata	u	102
-Bia	u	101
-Márquez	u	101
-País	u	101
-Durães	u	101
-Aranha	u	100
-Bianca	u	100
-Eugenio	u	100
-Forte	u	100
-Negrão	u	99
-Penha	u	98
-Parra	u	98
-Castanheira	u	98
-Geraldo	u	97
-Vasco	u	96
-Pascoal	u	96
-Leonel	u	95
-Nazário	u	95
-Alvares	u	95
-Dionisio	u	94
-Negreiros	u	93
-Tinoco	u	93
-Jerónimo	u	93
-Rosado	u	93
-Pádua	u	92
-Longo	u	92
-Sardinha	u	92
-Vilaça	u	91
-Belchior	u	91
-Thomé	u	90
-Velasco	u	90
-Belém	u	90
-Peralta	u	89
-Domínguez	u	89
-Novo	u	89
-Paranhos	u	88
-Ruas	u	88
-Brites	u	88
-Celestino	u	87
-Nolasco	u	87
-Mira	u	87
-Moutinho	u	87
-Travassos	u	86
-Penteado	u	85
-Oliva	u	85
-Bacelar	u	85
-Hilário	u	85
-Anacleto	u	84
-Hipólito	u	84
-Beltrão	u	83
-Faro	u	83
-Dinis	u	83
-Ornelas	u	83
-Rosas	u	83
-Grilo	u	83
-Hugo	u	81
-Vida	u	81
-Mineiro	u	81
-Verde	u	81
-Narciso	u	81
-Catarino	u	81
-Manso	u	81
-Amado	u	81
-Alice	u	80
-Ataide	u	80
-Raimundo	u	80
-Fiel	u	79
-Joaquim	u	79
-Baltazar	u	79
-Ferrão	u	79
-Tomás	u	79
-Bentes	u	78
-Anselmo	u	78
-Doria	u	78
-Mariz	u	78
-Lages	u	78
-Prazeres	u	78
-Louro	u	78
-Aurélio	u	77
-Justo	u	77
-Montes	u	77
-Brás	u	77
-Barreira	u	77
-Pita	u	77
-Palhares	u	76
-Urbano	u	76
-Carreiro	u	76
-Tolentino	u	75
-Frederico	u	75
-Albano	u	75
-Quintino	u	75
-Policarpo	u	75
-Patrocinio	u	75
-Barreiros	u	75
-Jacinto	u	75
-Craveiro	u	75
-Evaristo	u	74
-Simplicio	u	74
-Gato	u	74
-Carmona	u	74
-Fidalgo	u	74
-Camelo	u	73
-Cotrim	u	73
-Serrão	u	73
-Clara	u	72
-Timóteo	u	72
-Canto	u	71
-Marcolino	u	71
-Cosme	u	71
-Ponte	u	71
-Praxedes	u	70
-Sól	u	70
-Florentino	u	70
-Galhardo	u	70
-Lázaro	u	70
-Gonçalo	u	70
-Ruivo	u	70
-Gata	u	69
-Caio	u	69
-Calheiros	u	69
-Gaia	u	68
-Morató	u	68
-Pequeno	u	68
-Toscano	u	68
-Madruga	u	68
-Barradas	u	68
-Gentil	u	67
-Már	u	67
-Lindo	u	67
-Casanova	u	67
-Mata	u	67
-Rei	u	67
-Laurentino	u	66
-Maravilha	u	66
-Pavão	u	66
-Felizardo	u	66
-Carrilho	u	66
-Peçanha	u	65
-Queiroga	u	65
-Cesário	u	65
-Castanho	u	65
-Quintas	u	65
-Macena	u	64
-Roriz	u	64
-Arrais	u	64
-Barra	u	64
-Ivo	u	64
-Ladeira	u	64
-Amador	u	64
-Pompeu	u	63
-Artur	u	63
-Sotero	u	63
-Café	u	63
-Rainha	u	63
-Lobão	u	63
-Perdigão	u	63
-Girão	u	63
-Laranjeira	u	63
-Izidoro	u	62
-Prieto	u	62
-Montalvão	u	61
-Mamede	u	61
-Velho	u	61
-Baía	u	61
-Lamas	u	61
-Granja	u	61
-Locatelli	u	60
-Luisa	u	60
-Tobias	u	60
-Pedreira	u	60
-Azul	u	60
-Moniz	u	60
-Tito	u	59
-Breda	u	59
-Fé	u	58
-Ponciano	u	58
-Primo	u	58
-Julião	u	58
-Pio	u	58
-Damião	u	58
-Farinha	u	58
-Cirino	u	57
-Bom	u	57
-Baeta	u	57
-Moisés	u	56
-Roma	u	56
-Plácido	u	56
-Frade	u	56
-Piloto	u	55
-Quintela	u	55
-Bulhões	u	54
-Ramiro	u	54
-Onofre	u	54
-Alexandrino	u	54
-Soeiro	u	54
-Galante	u	54
-Mestre	u	54
-Sebastião	u	54
-Macario	u	53
-Picanço	u	53
-Pedra	u	53
-Vásquez	u	53
-Severino	u	53
-Otero	u	53
-Cravo	u	53
-Matta	u	52
-Ponce	u	52
-Fortuna	u	52
-Prudencio	u	52
-Crisóstomo	u	52
-Rico	u	52
-Rita	u	52
-Taborda	u	52
-Frías	u	52
-Ester	u	51
-Lê	u	51
-Guterres	u	51
-Brilhante	u	51
-Emidio	u	51
-Quevedo	u	51
-Rosendo	u	51
-Mano	u	51
-Adão	u	51
-Malheiro	u	51
-Baião	u	51
-Colaço	u	51
-Berto	u	50
-Liz	u	50
-Viola	u	50
-Carrasco	u	50
-Mau	u	50
-Damas	u	50
-Barão	u	50
-Teófilo	u	49
-Eloi	u	49
-Faleiro	u	49
-Massa	u	49
-Agra	u	49
-Romeiro	u	49
-Candeias	u	49
-Lapa	u	49
-Barreiro	u	49
-Marco	u	48
-Silvano	u	48
-Valdez	u	48
-Távora	u	48
-Bettencourt	u	48
-Mora	u	48
-São Paulo	u	47
-Rey	u	47
-Peixinho	u	47
-Carriço	u	47
-Pombo	u	47
-Vélez	u	47
-Ruiva	u	46
-Hora	u	46
-Fan	u	46
-Formiga	u	46
-Barbeiro	u	46
-Gandra	u	46
-Senra	u	46
-Gloria	u	46
-Vidigal	u	46
-Heitor	u	46
-Cantanhede	u	45
-Matoso	u	45
-Militão	u	45
-Deus	u	45
-Vitoriano	u	45
-Semedo	u	45
-Homem	u	45
-Soto	u	45
-Trigo	u	45
-Sofía	u	45
-Piedade	u	45
-Egidio	u	44
-Emilio	u	44
-Inocencio	u	44
-Heleno	u	44
-Póvoa	u	44
-Frutuoso	u	44
-Prudente	u	43
-Quintella	u	43
-Laureano	u	43
-Benedito	u	43
-Felisberto	u	43
-Poeta	u	42
-Damazio	u	42
-Murta	u	42
-Granado	u	42
-Cristo	u	42
-Paredes	u	42
-Eloy	u	41
-Marconi	u	41
-Nantes	u	41
-Isaac	u	41
-Malafaia	u	41
-Calisto	u	41
-Garcés	u	41
-Aveiro	u	41
-Jácome	u	40
-Beleza	u	40
-Gameiro	u	40
-Branquinho	u	40
-Casimiro	u	40
-Querido	u	40
-Moita	u	40
-Basto	u	40
-Baldo	u	39
-Eleuterio	u	39
-Libório	u	39
-Nina	u	39
-Aureliano	u	39
-Benjamín	u	39
-Jales	u	39
-Solano	u	39
-Vinhas	u	39
-Durão	u	39
-Marta	u	39
-Norberto	u	38
-Herbert	u	38
-Virgílio	u	38
-Alfredo	u	38
-Trigueiro	u	38
-Cartaxo	u	38
-Doce	u	38
-Dimas	u	38
-Manuel	u	38
-Napoleão	u	37
-Venceslau	u	37
-Príncipe	u	37
-Cavaco	u	37
-Benfica	u	37
-Sancho	u	37
-Alegre	u	37
-Cota	u	36
-Fernades	u	36
-Virginia	u	36
-Nazareth	u	36
-Anunciação	u	36
-Deodato	u	36
-Cecilio	u	36
-Videira	u	36
-Saavedra	u	36
-Marreiros	u	36
-Bicudo	u	35
-Olegario	u	35
-Luzia	u	35
-Branca	u	35
-Salas	u	35
-Paraíso	u	35
-Encarnacao	u	35
-Telo	u	35
-Eiras	u	35
-Peixe	u	35
-Saúde	u	35
-Elisa	u	34
-Firmo	u	34
-Aniceto	u	34
-Natividade	u	34
-Caeiro	u	34
-Pato	u	34
-Viveiros	u	34
-Vinagre	u	34
-Capela	u	34
-Brazão	u	34
-Campanha	u	33
-Gilberto	u	33
-Leocadio	u	33
-Soler	u	33
-Fajardo	u	33
-Roxo	u	33
-Vilá	u	33
-Cabrita	u	33
-Cruzeiro	u	33
-Pêgo	u	33
-Gigante	u	33
-Abade	u	32
-Cândida	u	32
-Gaudêncio	u	32
-Sil	u	32
-Chico	u	32
-Paul	u	32
-Figueiroa	u	32
-Limão	u	32
-Dâmaso	u	32
-Arias	u	32
-Cid	u	32
-Macieira	u	32
-Janeiro	u	32
-Rato	u	32
-Seco	u	32
-Barrios	u	31
-Brígido	u	31
-Curioso	u	31
-Bem	u	31
-Bronze	u	31
-Centeno	u	31
-Nova	u	31
-Estanislau	u	31
-Perfeito	u	31
-Ledo	u	31
-Carolino	u	31
-Areias	u	31
-Sereno	u	31
-Cavaleiro	u	31
-Carvalhal	u	31
-Marinheiro	u	31
-Pardal	u	31
-Gago	u	31
-Antonia	u	30
-Celeste	u	30
-Arouca	u	30
-Francisca	u	30
-Alemão	u	30
-Isaías	u	30
-Grosso	u	30
-Isidoro	u	30
-Caiado	u	30
-Moço	u	30
-Mónica	u	30
-Galego	u	30
-Lança	u	30
-Amora	u	29
-Fioravante	u	29
-Loreto	u	29
-Alecrim	u	29
-Boa	u	29
-Abranches	u	29
-Mendanha	u	29
-Adelino	u	29
-Umbelino	u	29
-Gordo	u	29
-Esperança	u	29
-Montez	u	29
-Canário	u	29
-Rui	u	29
-Cidade	u	28
-Castanha	u	28
-Armando	u	28
-Menino	u	28
-Calvo	u	28
-Parada	u	28
-Sepúlveda	u	28
-Capitão	u	28
-Alegría	u	28
-Curado	u	28
-Pera	u	27
-Xisto	u	27
-Amigo	u	27
-Constante	u	27
-Drago	u	27
-Jaime	u	27
-Nada	u	27
-Geraldes	u	27
-Garrett	u	27
-Penedo	u	27
-Florindo	u	27
-Nuno	u	27
-Lameira	u	27
-Eusébio	u	27
-Cerdeira	u	27
-Palha	u	27
-Português	u	27
-Gaio	u	27
-Infante	u	27
-Baltar	u	26
-Gervásio	u	26
-Libanio	u	26
-Cardeal	u	26
-Fróis	u	26
-Maior	u	26
-Soledade	u	26
-Flora	u	26
-Neta	u	26
-Feijão	u	26
-Roldão	u	26
-Patrão	u	26
-Nora	u	26
-Enes	u	26
-Albergaria	u	26
-Casal	u	26
-Eufrasio	u	25
-Vita	u	25
-Joia	u	25
-Josué	u	25
-Capelo	u	25
-Folha	u	25
-Rúa	u	25
-Cadete	u	25
-Duro	u	25
-Firme	u	24
-Pastor	u	24
-Pepe	u	24
-Santa	u	24
-Cleto	u	24
-Ezequiel	u	24
-Oscar	u	24
-Diegues	u	24
-Laia	u	24
-Maduro	u	24
-Canelas	u	24
-Caramelo	u	24
-Festas	u	24
-Prior	u	24
-Reina	u	24
-Relvas	u	24
-Cirne	u	24
-Padrão	u	24
-Torre	u	24
-Cristino	u	24
-Feio	u	24
-Caseiro	u	24
-Biscaia	u	24
-Camões	u	24
-Margarida	u	24
-Varanda	u	24
-Corte	u	23
-Leonidas	u	23
-Silvio	u	23
-Melchior	u	23
-Pequena	u	23
-Pilar	u	23
-Suzano	u	23
-Testa	u	23
-Verdelho	u	23
-Macías	u	23
-Massena	u	23
-Trovão	u	23
-Verdade	u	23
-Nicola	u	23
-Subtil	u	23
-Teodosio	u	23
-Rolo	u	23
-Cerveira	u	23
-Lopo	u	23
-Aparicio	u	23
-Lousada	u	23
-Rola	u	23
-Blanc	u	22
-Job	u	22
-Malveira	u	22
-Perola	u	22
-Amparo	u	22
-Ernesto	u	22
-Fusco	u	22
-Nazaré	u	22
-Samora	u	22
-Desidério	u	22
-Quinteiro	u	22
-Salomé	u	22
-Arnaud	u	22
-China	u	22
-Pratas	u	22
-Florido	u	22
-Gamboa	u	22
-Borralho	u	22
-Rijo	u	22
-Salvadó	u	22
-Bonito	u	22
-Cancela	u	22
-Folgado	u	22
-Saramago	u	22
-Rainho	u	22
-Caria	u	22
-Norte	u	22
-Nabais	u	21
-Darío	u	21
-Estacio	u	21
-Agapito	u	21
-Amoedo	u	21
-Festa	u	21
-Terrivel	u	21
-Viriato	u	21
-Puga	u	21
-Sal	u	21
-Magro	u	21
-Castelhano	u	21
-Inés	u	21
-Maltez	u	21
-Pinhal	u	21
-Couceiro	u	21
-Isabel	u	20
-Ascensão	u	20
-Estévez	u	20
-Covas	u	20
-Aguas	u	20
-Ruela	u	20
-Vilas	u	20
-Quelhas	u	20
-Pisco	u	20
-Brochado	u	20
-Lagoa	u	20
-Guardado	u	20
-Gutierres	u	19
-Lauro	u	19
-Mega	u	19
-Cancio	u	19
-Lagares	u	19
-Moitinho	u	19
-Petrucci	u	19
-Ré	u	19
-Sobreiro	u	19
-álvaro	u	19
-Cardia	u	19
-Tovar	u	19
-Alcoforado	u	19
-Direito	u	19
-Protasio	u	19
-Grácio	u	19
-Capucho	u	19
-Estima	u	19
-Lamego	u	19
-Lomba	u	19
-Seara	u	19
-Bizarro	u	19
-Redondo	u	19
-Alho	u	19
-Ferreiro	u	19
-Mouta	u	19
-Quitério	u	19
-Boas	u	18
-Coronel	u	18
-Rossa	u	18
-Vergueiro	u	18
-Carías	u	18
-Peniche	u	18
-Gatinho	u	18
-Mergulhão	u	18
-Minas	u	18
-Varejao	u	18
-Azedo	u	18
-Mouzinho	u	18
-Serio	u	18
-Catalão	u	18
-Rito	u	18
-Inglés	u	18
-Freixo	u	18
-Margarido	u	18
-Outeiro	u	18
-Paco	u	18
-Adolfo	u	17
-Aníbal	u	17
-Emilia	u	17
-Epifanio	u	17
-Faleiros	u	17
-Perpetuo	u	17
-Amoroso	u	17
-Certo	u	17
-Magrinho	u	17
-Mena	u	17
-Rumo	u	17
-Té	u	17
-Vermelho	u	17
-Francés	u	17
-Maximino	u	17
-Pegado	u	17
-Barroca	u	17
-Carvalheira	u	17
-Liberal	u	17
-Pedras	u	17
-Varandas	u	17
-Violante	u	17
-Cacador	u	17
-Rente	u	17
-Roda	u	17
-Azenha	u	17
-Carvalhais	u	17
-Curto	u	17
-Gavião	u	16
-Noble	u	16
-Velasques	u	16
-Barral	u	16
-Diéguez	u	16
-Taboada	u	16
-Tubarão	u	16
-Clarinha	u	16
-Milheiro	u	16
-Robalo	u	16
-Adrião	u	16
-Amante	u	16
-Cabanas	u	16
-Cepeda	u	16
-Livramento	u	16
-Dores	u	16
-Felgueiras	u	16
-Mourato	u	16
-Beirão	u	16
-Carvalhosa	u	16
-Gándara	u	16
-Salema	u	16
-Seguro	u	16
-Serodio	u	16
-Martelo	u	16
-Cação	u	16
-Antão	u	16
-Isidro	u	16
-Pascoa	u	16
-Arnaldo	u	15
-Curvelo	u	15
-Dulce	u	15
-Lourdes	u	15
-Porta	u	15
-Aleluia	u	15
-Latino	u	15
-Nossa	u	15
-Viterbo	u	15
-Paulos	u	15
-Cabeça	u	15
-Fulgencio	u	15
-Canas	u	15
-Alfaro	u	15
-Bartolomeu	u	15
-Polido	u	15
-Abrunhosa	u	15
-Faisca	u	15
-Bugalho	u	15
-Bartolo	u	15
-Boto	u	15
-Figueiras	u	15
-Amores	u	15
-Mouro	u	15
-Babo	u	15
-Calçada	u	15
-Carvalheiro	u	15
-Marto	u	15
-Nave	u	15
-Bicho	u	15
-Alcobia	u	14
-Andrada	u	14
-Canova	u	14
-Bexiga	u	14
-Fael	u	14
-Jara	u	14
-Urbana	u	14
-Mourinho	u	14
-Piçarra	u	14
-Valadas	u	14
-Escudeiro	u	14
-Moleiro	u	14
-Fazenda	u	14
-Figo	u	14
-Riscado	u	14
-Canhoto	u	14
-Guia	u	14
-Polonio	u	14
-Vinha	u	14
-Beato	u	14
-Leiria	u	14
-Ligeiro	u	14
-Bacalhau	u	14
-Bebiano	u	14
-Grave	u	14
-çoça	u	13
-Petronilho	u	13
-Pureza	u	13
-Remigio	u	13
-Casaca	u	13
-Amara	u	13
-Atanasio	u	13
-Caroço	u	13
-Corral	u	13
-Milagre	u	13
-Rigueira	u	13
-Boavida	u	13
-Codeço	u	13
-Nieto	u	13
-Cascão	u	13
-Sande	u	13
-Carreiras	u	13
-Igreja	u	13
-Migueis	u	13
-Ramalhete	u	13
-Arsénio	u	13
-Agua	u	12
-Eufrázio	u	12
-Ludgero	u	12
-Miquelino	u	12
-Tunes	u	12
-Goulão	u	12
-Poças	u	12
-Fragata	u	12
-Picão	u	12
-Rial	u	12
-Cabaço	u	12
-Cabo	u	12
-Cardona	u	12
-Cereja	u	12
-Diz	u	12
-Iria	u	12
-Maneira	u	12
-Namorado	u	12
-Pimpão	u	12
-Banha	u	12
-évora	u	12
-Gamito	u	12
-Lampreia	u	12
-Velosa	u	12
-Vigário	u	12
-Alarcão	u	12
-Bertolo	u	12
-Quadrado	u	12
-Sapo	u	12
-Fontao	u	12
-Poço	u	12
-Purificação	u	12
-Uva	u	12
-Ermida	u	12
-Norton	u	12
-Bordalo	u	12
-Marujo	u	12
-Póvoas	u	12
-Quina	u	12
-Corte-real	u	11
-Cantão	u	11
-Corado	u	11
-Ludovico	u	11
-Preguiça	u	11
-Reto	u	11
-Surdo	u	11
-Lameiras	u	11
-Carmelo	u	11
-Casais	u	11
-Cigano	u	11
-Eca	u	11
-Furriel	u	11
-Rosalino	u	11
-Beja	u	11
-Castela	u	11
-Costeira	u	11
-Espada	u	11
-Brigida	u	11
-Carloto	u	11
-Ceu	u	11
-Fati	u	11
-Quintal	u	11
-Salsa	u	11
-Cavadas	u	11
-Lebre	u	11
-Natario	u	11
-Perpetua	u	11
-Torrão	u	11
-Balão	u	11
-Maravalhas	u	11
-Quinta	u	11
-Ascenção	u	11
-Ferrá	u	11
-Quental	u	11
-Bonet	u	10
-Chuteira	u	10
-Gavinho	u	10
-Hasse	u	10
-Jesuino	u	10
-Meirinho	u	10
-Mosqueira	u	10
-Perna	u	10
-Roso	u	10
-Terêncio	u	10
-Verão	u	10
-Caló	u	10
-Camarão	u	10
-Nico	u	10
-Tina	u	10
-Madaleno	u	10
-Sardo	u	10
-Arêde	u	10
-Chuva	u	10
-Leote	u	10
-Morte	u	10
-Panta	u	10
-Praça	u	10
-Primavera	u	10
-Rendeiro	u	10
-Serrado	u	10
-Tojal	u	10
-Camarinha	u	10
-Canha	u	10
-Canteiro	u	10
-Lencastre	u	10
-Namora	u	10
-Agrela	u	10
-Bolas	u	10
-Ceia	u	10
-Cova	u	10
-Ferreirinha	u	10
-Presa	u	10
-Salvaterra	u	10
-Chantre	u	10
-Fevereiro	u	10
-Galhano	u	10
-Manaia	u	10
-Melro	u	10
-Ortigão	u	10
-Barrocas	u	10
-Boavista	u	10
-Condessa	u	10
-Leonor	u	10
-Pesqueira	u	10
-Tenente	u	10
-Vilares	u	10
-Fontinha	u	9
-Manteigas	u	9
-Seica	u	9
-Arcos	u	9
-Barrocal	u	9
-Bertao	u	9
-Bruxo	u	9
-Guarino	u	9
-Noite	u	9
-Pino	u	9
-Massano	u	9
-Candal	u	9
-Chaveiro	u	9
-Gorgulho	u	9
-Jurado	u	9
-Manique	u	9
-Papel	u	9
-Pedreiro	u	9
-Rino	u	9
-Rosinha	u	9
-Silvares	u	9
-Lagarto	u	9
-Laranjo	u	9
-Mimoso	u	9
-Piteira	u	9
-Granada	u	9
-Loio	u	9
-Lourinho	u	9
-Marreco	u	9
-Passarinho	u	9
-Portas	u	9
-Ameixa	u	9
-Aroso	u	9
-Caridade	u	9
-Eira	u	9
-Lavrador	u	9
-Coragem	u	9
-Fino	u	9
-Gerardo	u	9
-Granadeiro	u	9
-Guedelha	u	9
-Valdés	u	9
-Vidinha	u	9
-Bico	u	9
-Tereso	u	8
-Apóstolo	u	8
-Barbearia	u	8
-Berta	u	8
-Católico	u	8
-Contente	u	8
-Fereira	u	8
-Ideias	u	8
-Malato	u	8
-Marca	u	8
-Marroni	u	8
-Mona	u	8
-Regio	u	8
-Riso	u	8
-Secreto	u	8
-Vassalo	u	8
-Vilão	u	8
-Alfaiate	u	8
-Algarvio	u	8
-Barriga	u	8
-Botas	u	8
-Paquete	u	8
-Runa	u	8
-Sapage	u	8
-Tenreiro	u	8
-Venda	u	8
-Adonis	u	8
-Albertino	u	8
-Alipio	u	8
-Barroco	u	8
-Cabeleireiro	u	8
-Cura	u	8
-Gramacho	u	8
-Malva	u	8
-Manço	u	8
-Mareco	u	8
-Muralha	u	8
-Patriarca	u	8
-Rebolo	u	8
-Salva	u	8
-Sebastián	u	8
-Semblano	u	8
-Veigas	u	8
-Coito	u	8
-Espinha	u	8
-Orfão	u	8
-Pombal	u	8
-Regadas	u	8
-Arnaut	u	8
-Baganha	u	8
-Calhau	u	8
-Cerejo	u	8
-Chora	u	8
-Fabiao	u	8
-Grade	u	8
-Guapo	u	8
-Jana	u	8
-Perdiz	u	8
-Ralha	u	8
-Tejo	u	8
-Fazendeiro	u	8
-Granjo	u	8
-Guiomar	u	8
-Luzio	u	8
-Marante	u	8
-Ministro	u	8
-Olival	u	8
-Palmeiro	u	8
-Rouxinol	u	8
-Anes	u	8
-Areia	u	8
-Baldaia	u	8
-Barreiras	u	8
-Borrego	u	8
-Morim	u	8
-Baleizão	u	7
-Carapinha	u	7
-Cadaval	u	7
-Camejo	u	7
-Canato	u	7
-Carreteiro	u	7
-Corsino	u	7
-Dente	u	7
-Deveza	u	7
-Egas	u	7
-Garrote	u	7
-Maricato	u	7
-Mascarenha	u	7
-Moncada	u	7
-Murca	u	7
-Nilza	u	7
-Pragana	u	7
-Reino	u	7
-Tita	u	7
-Varges	u	7
-Balsa	u	7
-Bidarra	u	7
-Carraca	u	7
-Inverno	u	7
-Miguens	u	7
-Olim	u	7
-Rosmaninho	u	7
-Loja	u	7
-Nelo	u	7
-Nini	u	7
-Pipa	u	7
-Polvora	u	7
-Tato	u	7
-Tocha	u	7
-Bandarra	u	7
-Barbas	u	7
-Cebola	u	7
-Fachada	u	7
-Fitas	u	7
-Gião	u	7
-Valongo	u	7
-Bandeiras	u	7
-Cabeleira	u	7
-Carola	u	7
-Coroa	u	7
-Crasto	u	7
-Cuco	u	7
-Landeiro	u	7
-Marção	u	7
-Marmelo	u	7
-Mendo	u	7
-Reizinho	u	7
-Sintra	u	7
-Carapeto	u	7
-Carranca	u	7
-Cupido	u	7
-Elvas	u	7
-Franqueira	u	7
-Gradim	u	7
-Laranjinha	u	7
-Leiras	u	7
-Margato	u	7
-Rolão	u	7
-Susana	u	7
-Alcada	u	6
-Caixinha	u	6
-Cardeira	u	6
-Casaleiro	u	6
-Galveias	u	6
-Letras	u	6
-Mexia	u	6
-Peneda	u	6
-Pombeiro	u	6
-Raminhos	u	6
-Rebocho	u	6
-Ribau	u	6
-Velhinho	u	6
-Balinha	u	6
-Cardos	u	6
-Chapado	u	6
-Giraldo	u	6
-Heliodoro	u	6
-Junca	u	6
-Marinha	u	6
-Moes	u	6
-Palos	u	6
-Pilão	u	6
-Serqueira	u	6
-Time	u	6
-Trinta	u	6
-Varão	u	6
-Agante	u	6
-Coentrao	u	6
-Escada	u	6
-Fale	u	6
-Ganhao	u	6
-Grazina	u	6
-Paisana	u	6
-Viseu	u	6
-Alface	u	6
-Baleiro	u	6
-Barbado	u	6
-Cera	u	6
-Gralha	u	6
-Malhão	u	6
-Mansilha	u	6
-Mártires	u	6
-Requejo	u	6
-Riveiro	u	6
-Santinho	u	6
-Toste	u	6
-Caiano	u	6
-Folhas	u	6
-Geada	u	6
-Padeiro	u	6
-Parracho	u	6
-Pelicano	u	6
-Picado	u	6
-Picó	u	6
-Soutinho	u	6
-Veludo	u	6
-Alpendre	u	6
-Arroz	u	6
-Baltasar	u	6
-Bogas	u	6
-Calé	u	6
-Caracol	u	6
-Castanheiro	u	6
-Estanqueiro	u	6
-Estudante	u	6
-Hermida	u	6
-Janela	u	6
-Lousa	u	6
-Meleiro	u	6
-Nereu	u	6
-Pavía	u	6
-Pignatelli	u	6
-Sargento	u	6
-Semiao	u	6
-Soveral	u	6
-Traça	u	6
-Carrapico	u	5
-Chainho	u	5
-Clérigo	u	5
-Espadinha	u	5
-Gamelas	u	5
-Gordalina	u	5
-Gorjao	u	5
-Ladeiro	u	5
-Lagido	u	5
-Malveiro	u	5
-Marçalo	u	5
-Ramalheira	u	5
-Relvão	u	5
-Seixo	u	5
-Seromenho	u	5
-Serrasqueiro	u	5
-Trigueiros	u	5
-Vala	u	5
-Africano	u	5
-Albertina	u	5
-Anca	u	5
-Brilha	u	5
-Calvete	u	5
-Canavarro	u	5
-Carril	u	5
-Chichorro	u	5
-Delfina	u	5
-Florinda	u	5
-Gaiato	u	5
-Leston	u	5
-Liberado	u	5
-Mayor	u	5
-Moinhos	u	5
-Monico	u	5
-Morado	u	5
-Moto	u	5
-Pintao	u	5
-Ratinho	u	5
-Sampedro	u	5
-Soldado	u	5
-Vela	u	5
-Arriaga	u	5
-Banza	u	5
-Brigas	u	5
-Brizida	u	5
-Cravinho	u	5
-Feiteira	u	5
-Fradinho	u	5
-Lavado	u	5
-Malho	u	5
-Mortagua	u	5
-Pelica	u	5
-Pereirinha	u	5
-Pinhao	u	5
-Ramalhao	u	5
-Rasteiro	u	5
-Rebordao	u	5
-Saleiro	u	5
-Segurado	u	5
-Sequeiros	u	5
-Serralha	u	5
-Tedim	u	5
-Adaes	u	5
-Alpoim	u	5
-Armindo	u	5
-Boia	u	5
-Bota	u	5
-Carolo	u	5
-Carrão	u	5
-Gala	u	5
-Grangeia	u	5
-Hermenegildo	u	5
-Ludovino	u	5
-Melancia	u	5
-Miraldo	u	5
-Pintado	u	5
-Poca	u	5
-Polonia	u	5
-Rovira	u	5
-Sarzedas	u	5
-Verdial	u	5
-Viçoso	u	5
-Abecassis	u	5
-Aldeia	u	5
-Almas	u	5
-Aresta	u	5
-Calvario	u	5
-Carrasqueira	u	5
-Faia	u	5
-Fantasia	u	5
-Fixe	u	5
-Letra	u	5
-Lindeza	u	5
-Magano	u	5
-Maneta	u	5
-Mantas	u	5
-Marchao	u	5
-Marvão	u	5
-Peca	u	5
-Penetra	u	5
-Ribeira	u	5
-Serralheiro	u	5
-Torrado	u	5
-Arraiolos	u	4
-Barosa	u	4
-Barrento	u	4
-Boieiro	u	4
-Catela	u	4
-Centeio	u	4
-Confraria	u	4
-Direitinho	u	4
-Djalo	u	4
-Fagulha	u	4
-Ginja	u	4
-Maganinho	u	4
-Milhinhos	u	4
-Morgadinho	u	4
-Parrinha	u	4
-Poeira	u	4
-Reisinho	u	4
-Remondes	u	4
-Sarabando	u	4
-Serras	u	4
-Sucena	u	4
-Torrinha	u	4
-Amilcar	u	4
-Amoreira	u	4
-Antas	u	4
-Azoia	u	4
-Balsemao	u	4
-Barandas	u	4
-Bastião	u	4
-Campones	u	4
-Caramujo	u	4
-Chao	u	4
-Chorão	u	4
-Crus	u	4
-Custodia	u	4
-Data	u	4
-Engenheiro	u	4
-Felino	u	4
-Frausto	u	4
-Gertrudes	u	4
-Joaquina	u	4
-Lameirinhas	u	4
-Lomelino	u	4
-Magueta	u	4
-Minhoto	u	4
-Monforte	u	4
-Olaio	u	4
-Palmeirao	u	4
-Panão	u	4
-Pereirão	u	4
-Poiares	u	4
-Pomar	u	4
-Rede	u	4
-Relva	u	4
-Resgate	u	4
-Sansana	u	4
-Sela	u	4
-Telmo	u	4
-Valinho	u	4
-Valor	u	4
-Alvito	u	4
-Balseiro	u	4
-Campino	u	4
-Carrapatoso	u	4
-Casquinha	u	4
-Castelão	u	4
-Condeço	u	4
-Cortesao	u	4
-Feteira	u	4
-Galão	u	4
-Grou	u	4
-Honrado	u	4
-Jogo	u	4
-Judas	u	4
-Laginha	u	4
-Lavos	u	4
-Marado	u	4
-Metelo	u	4
-Mourinha	u	4
-Naia	u	4
-Palhais	u	4
-Palminha	u	4
-Pinguinha	u	4
-Piriquito	u	4
-Reboredo	u	4
-Resina	u	4
-Rigor	u	4
-Rochinha	u	4
-Rogado	u	4
-Roseiro	u	4
-Sacadura	u	4
-Sineiro	u	4
-Sismeiro	u	4
-Tapada	u	4
-Terras	u	4
-Torcato	u	4
-Varino	u	4
-Bacelo	u	4
-Bastardo	u	4
-Berardo	u	4
-Besteiro	u	4
-Bilro	u	4
-Bolota	u	4
-Cacho	u	4
-Cadilhe	u	4
-Canada	u	4
-Carita	u	4
-Carrega	u	4
-Carreto	u	4
-Carvalhinho	u	4
-Completo	u	4
-Condesso	u	4
-Cro	u	4
-Feitor	u	4
-Flaminio	u	4
-Fradique	u	4
-Grifo	u	4
-Jaloto	u	4
-Malo	u	4
-Micaelo	u	4
-Miudo	u	4
-Mocho	u	4
-Moreiras	u	4
-Nelas	u	4
-Noivo	u	4
-Oeiras	u	4
-Palhinha	u	4
-Rigueiro	u	4
-Roquete	u	4
-Salgueirinho	u	4
-Salvação	u	4
-Samagaio	u	4
-Silveiro	u	4
-Tropa	u	4
-Arinto	u	3
-Balca	u	3
-Breia	u	3
-Brinca	u	3
-Cacheira	u	3
-Cachola	u	3
-Cachulo	u	3
-Calmeiro	u	3
-Canastra	u	3
-Canastro	u	3
-Canhão	u	3
-Cardigos	u	3
-Carrola	u	3
-Carrolo	u	3
-Cascalheira	u	3
-Cascalho	u	3
-Catarro	u	3
-Cerejeira	u	3
-Conduto	u	3
-Corda	u	3
-Cortico	u	3
-Davim	u	3
-Estevens	u	3
-Faim	u	3
-Fundo	u	3
-Fuzeiro	u	3
-Lambelho	u	3
-Mancelos	u	3
-Marrafa	u	3
-Mateiro	u	3
-Meco	u	3
-Muge	u	3
-Nabeiro	u	3
-Olivenca	u	3
-Pinela	u	3
-Pite	u	3
-Pocinho	u	3
-Quatorze	u	3
-Ravara	u	3
-Revez	u	3
-Rochete	u	3
-Rosete	u	3
-Sepodes	u	3
-Siborro	u	3
-Tabuada	u	3
-Toipa	u	3
-Vestia	u	3
-Alverca	u	3
-Artilheiro	u	3
-Badim	u	3
-Baetas	u	3
-Balau	u	3
-Barge	u	3
-Bentinho	u	3
-Bigas	u	3
-Camaz	u	3
-Camba	u	3
-Canelo	u	3
-Canudo	u	3
-Carrete	u	3
-Casquilho	u	3
-Cavaca	u	3
-Charro	u	3
-Coto	u	3
-Estevinho	u	3
-Faias	u	3
-Fanzeres	u	3
-Gaiao	u	3
-Gandarez	u	3
-Laires	u	3
-Lindinho	u	3
-Liso	u	3
-Macao	u	3
-Megre	u	3
-Menzel	u	3
-Moio	u	3
-Morao	u	3
-Neca	u	3
-Neno	u	3
-Oca	u	3
-Olaia	u	3
-Palheiro	u	3
-Peleja	u	3
-Pierrot	u	3
-Queda	u	3
-Quintaneiro	u	3
-Reimao	u	3
-Rondão	u	3
-Saloio	u	3
-São Pedro	u	3
-Sapateiro	u	3
-Serradas	u	3
-Serta	u	3
-Telhada	u	3
-Toco	u	3
-Tudela	u	3
-Vidas	u	3
-Alago	u	3
-Alcaide	u	3
-Anciaes	u	3
-Balula	u	3
-Barbeira	u	3
-Barrinha	u	3
-Bergano	u	3
-Boal	u	3
-Borga	u	3
-Borrega	u	3
-Carpinteiro	u	3
-Casqueira	u	3
-Chicoria	u	3
-Cigarro	u	3
-Corujo	u	3
-Couteiro	u	3
-Devesa	u	3
-Engracia	u	3
-Espiga	u	3
-Estrelado	u	3
-Fadigas	u	3
-Fardilha	u	3
-Forneas	u	3
-Gadanho	u	3
-Galamba	u	3
-Gualdino	u	3
-Guilhoto	u	3
-Lontro	u	3
-Maceiras	u	3
-Madail	u	3
-Magina	u	3
-Margalho	u	3
-Milhano	u	3
-Moedas	u	3
-Mucha	u	3
-Pata	u	3
-Pedrinho	u	3
-Queta	u	3
-Rasga	u	3
-Rendo	u	3
-Roseta	u	3
-Saltão	u	3
-Serrador	u	3
-Taipina	u	3
-Talina	u	3
-Tarrafa	u	3
-Tojeira	u	3
-Toninho	u	3
-Vareiro	u	3
-Verdasca	u	3
+# pt surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=1, cap=10000000).
+Silva	u	26830	siɫvɐ
+Oliveira	u	21435	ɔlivɐjɾɐ
+Santos	u	21373	sɐ̃tuʃ
+Rodrigues	u	13571	ɾudɾiɡwiʃ
+Souza	u	12715	zowzɐ
+Lima	u	12231	limɐ
+Ferreira	u	11816	fɨʁɐjɾɐ
+Alves	u	11416	aɫvis
+Martins	u	9372	maɾtʃiɲs
+Costa	u	9336	kɔʃtɐ
+Gomes	u	8967	ɡõmis
+Ribeiro	u	8799	ɾibɐjɾu
+Pereira	u	8665	pɨɾɐjɾɐ
+Carvalho	u	7832	kɐɾvaʎu
+Fernandes	u	7546	fɨɾnɐ̃d͡ʒis
+Araújo	u	7361	ɐɾɐuʒu
+Lopes	u	7040	lupɨʃ
+Almeida	u	6999	ɐɫmejdɐ
+Soares	u	6340	swaɾes
+Dias	u	5798	diɐʃ
+Marques	u	5600	mɐɾkez
+Rocha	u	5576	ɾɔʃɐ
+Vieira	u	5493	viɐjɾɐ
+Andrade	u	5212	ɐ̃dɾadɨ
+Gonçalves	u	5177	ɡõsɐlvis
+Sousa	u	5097	zowzɐ
+Mendes	u	4655	mẽⁿʤɪs
+Barbosa	u	4576	bɐɾbɔzə
+Nascimento	u	4516	nɐʃsimẽtu
+Freitas	u	4242	fɾɐjtɐs
+Nunes	u	4181	nunɨʃ
+Reis	u	4029	ɾɐjʃ
+Moreira	u	4029	muɾɐjɾɐ
+Cardoso	u	3981	kɐɾdozu
+Machado	u	3947	mɐʃadu
+Santana	u	3848	sɐ̃tɐnɐ
+Ramos	u	3806	ɾamus
+Castro	u	3574	kastɾu
+Mélo	u	3473	mɛlu
+Monteiro	u	3376	mõtɐjɾu
+Henrique	u	3372	enɾikɨ
+Borges	u	3313	buɾɡiʃ
+Teixeira	u	3265	tɐjʃɐjɾɐ
+Duarte	u	3079	duaɾtɨ
+Moura	u	3021	mowɾɐ
+Moraes	u	2961	muɾɐiʃ
+Campos	u	2835	kɐ̃pus
+Miranda	u	2731	miɾɐ̃dɐ
+Barros	u	2696	bɐʁus
+Medeiros	u	2627	mɨdɐjruʃ
+Guimarães	u	2582	gimɐɾães
+Tavares	u	2550	tavɐɾeʃ
+Cruz	u	2267	kɾuʃ
+Pinheiro	u	2254	piɲɐjɾu
+Batista	u	2248	bɐtiʃtɐ
+Azevedo	u	2227	ɐzɨvɨdu
+Brito	u	2170	bɾitu
+Neves	u	2170	nɨvis
+Nogueira	u	2157	nuɡɐjɾɐ
+Mello	u	2117	mɨllu
+Cunha	u	2077	kuɲɐ
+Morais	u	2018	muɾajs
+Fonsêca	u	2016	fõsekɐ
+Maia	u	1995	majɐ
+Pires	u	1993	piɾɨʃ
+Neto	u	1986	nɛtu
+Menezes	u	1977	mɨnɨzis
+Coêlho	u	1976	kueʎu
+Rosa	u	1872	χɔzə
+Magalhães	u	1863	magɐʎɐ̃j̃ʃ
+Leite	u	1817	lejte
+Amaral	u	1790	ɐmɐɾaɫ
+Amorim	u	1771	ɐmuɾĩ
+Viana	u	1763	viɐ͂nɐ
+Braga	u	1761	bɾagɐ
+Matos	u	1757	mɐtuʃ
+Silveira	u	1713	siɫvɐjɾɐ
+Queiroz	u	1685	kɐjɾɔʃ
+Farías	u	1680	faɾias
+Torres	u	1679	tuɾɾis
+Aguiar	u	1667	ɐɡjaɾ
+França	u	1640	fɾɐ̃sɐ
+Macêdo	u	1639	makedu
+Cristina	u	1616	kɾistʃinɐ
+Dantas	u	1608	dɐ̃tɐs
+Correia	u	1606	koʁɐjɐ
+Sampaio	u	1538	zɐ̃paju
+Pinto	u	1512	pĩtu
+Albuquerque	u	1502	awbukɛɾkɨ
+Figueiredo	u	1497	fiɡɐjɾedu
+Brasil	u	1490	bɾaziw
+Luiz	u	1462	luiʃ
+Xavier	u	1462	ksɐviɛɾ
+Leal	u	1462	ljaɫ
+Abreu	u	1413	ɐbɾeu
+Paiva	u	1407	pajvɐ
+Camargo	u	1394	kɐmaɾɡu
+Guedes	u	1373	ɡedɨʃ
+Faría	u	1368	faɾia
+Barreto	u	1364	bɐʁetu
+Siqueira	u	1353	sikɐjɾɐ
+Júnior	u	1348	ʒunjoɾ
+Vinícius	u	1328	vinisjus
+Lemos	u	1295	lemus
+Bastos	u	1282	bɐʃtus
+Maciel	u	1277	mɐsiɛɫ
+Mota	u	1275	mɔtɐ
+Antunes	u	1274	ɐ̃tũiʃ
+Cabral	u	1261	kabɾaɫ
+Augusto	u	1249	awɡuʃtu
+Vasconcelos	u	1245	vɐʃkõsɨlʊ
+Lucas	u	1242	lukɐs
+Brandão	u	1222	bɾɐ̃dɐ̃w̃
+Mendonça	u	1208	mẽdõsɐ
+Felipe	u	1207	fɨlipɨ
+Diniz	u	1206	d͡ʒiniz
+Sales	u	1202	salis
+Pacheco	u	1202	paʃɨku
+Marinho	u	1193	mɐɾiɲu
+Félix	u	1171	feːlɪks
+Bueno	u	1164	bwenu
+Prado	u	1160	pɾadu
+Ferraz	u	1101	fɨɾɾaʃ
+Cordeiro	u	1079	kuɾdɐjɾu
+Coutinho	u	1078	kowtiɲu
+Freire	u	1077	fɾɐjɾe
+Franco	u	1072	fɾɐ̃ku
+Chaves	u	1058	ʃɐveʃ
+Simões	u	1045	simõjʃ
+Gabriel	u	1003	ɡɐbɾiɛɫ
+Vitória	u	985	vitɔɾjɐ
+Bezerra	u	965	bezeχɐ
+Lourenço	u	965	lowɾẽsu
+Muniz	u	943	muniz
+Lacerda	u	942	lɐsɨɾdɐ
+Santiago	u	908	sɐ̃t͡ʃĩɐɣu
+Carneiro	u	897	kɐɾnɐjɾu
+Assis	u	887	ɐsiʃ
+Trindade	u	869	tɾĩdadɨ
+Alexandre	u	866	ɐleʃɐ̃dɾi
+Guilherme	u	865	ɡiʎɨɾmɛ
+Couto	u	854	kowtu
+Rangel	u	830	ɾɐ̃ʒɛw
+César	u	818	sɛzaɾ
+Mesquita	u	807	mɨʃkitɐ
+Vaz	u	805	vaʃ
+Alencar	u	804	aɫẽkaɾ
+Carlos	u	804	kɐɾlʊ
+Porto	u	794	poɾtu
+Pontes	u	783	põtes
+Caetano	u	783	kaetɐnu
+Peixoto	u	778	pɐjʃotu
+Guerra	u	772	ɡɛɾɾɐ
+Passos	u	767	pɐsus
+Vargas	u	754	vɐɾɡɐs
+Pimentel	u	751	pimẽtɛɫ
+Luz	u	747	luʃ
+Sena	u	740	senɐ
+Arruda	u	736	ɐʁudɐ
+Alcántara	u	728	aɫkantaɾɐ
+María	u	724	maɾia
+Victor	u	713	viktoɾ
+Galvão	u	710	ɡaɫvɐ̃w̃
+Fagundes	u	692	fɐɡũdes
+Lisboa	u	681	lizbuɐ
+Vitor	u	679	vitoɾ
+Leão	u	668	ljɐ̃w̃
+Fernanda	u	663	fɨɾnɐ̃dɐ
+Moreno	u	661	muɾẽu
+Sá	u	658	sa
+Rodríguez	u	651	ɾudɾiɡeʃ
+Chagas	u	647	ʃaɡɐs
+Bruno	u	639	bɾunu
+Sanches	u	639	sɐ̃ʃɨs
+Eduardo	u	635	eðwaɾðu
+Paixão	u	607	pajʃɐ̃w̃
+Furtado	u	605	fuɾtadu
+Peres	u	604	pɨɾis
+Gama	u	587	ɡɐmɐ
+Pimenta	u	577	pimẽtɐ
+Pessoa	u	570	pɨsoɐ
+Domingues	u	566	dumĩɡɨʃ
+Lobo	u	564	lɔbʊ
+Bernardo	u	562	bɨɾnɐɾdu
+Aquino	u	557	ɐkinu
+Ferrari	u	556	fɨʁɐɾi
+Esteves	u	555	iʃtᶴe̝vis
+Mateus	u	546	mɐtews
+Paulo	u	544	pawlu
+Teles	u	541	tɨlɨʃ
+Ramalho	u	536	ɾãmaʎu
+Gouveia	u	536	ɡowvɐjɐ
+Ricardo	u	534	ɾikaɾdu
+Cândido	u	533	kɐ̃didu
+Martínez	u	533	mɐɾtinɨz
+Saraiva	u	532	sɐɾajvɐ
+Vidal	u	531	vidaɫ
+Ventura	u	530	vẽtuɾɐ
+Matías	u	524	maʧiɐs
+Afonso	u	519	afõsu
+Braz	u	517	bɾaʃ
+Resende	u	516	ɾesẽdɨ
+Valente	u	512	vɐlẽtɨ
+Flores	u	508	fluɾɨʃ
+Roberto	u	500	ɾubɨɾtu
+Ríos	u	500	ɾius
+Fontes	u	500	fõtɨʃ
+Vicente	u	500	visẽtɨ
+Mariano	u	495	mɐɾjɐnu
+Veiga	u	487	vɐjɡɐ
+Cerqueira	u	486	sɨɾkɐjɾɐ
+Nobre	u	485	nɔbɾɨ
+Loureiro	u	479	lowɾɐjɾu
+Jesús	u	473	ʒɨzus
+Baptista	u	473	bɐptiʃtɐ
+Vilela	u	471	vilelɐ
+ávila	u	467	avilɐ
+Bernardes	u	466	bɨɾnɐɾdɨʃ
+Rafael	u	462	ɾɐfɐɛɫ
+Falcão	u	459	faɫkɐ̃w̃
+Fraga	u	458	fɾaɡɐ
+Pedro	u	455	pɨdɾu
+Veloso	u	450	vɨluzu
+López	u	444	lɔpɨz
+Pinho	u	444	piɲu
+Anjos	u	441	ɐ̃ʒuʃ
+Branco	u	439	bɾɐ̃ku
+André	u	438	ɐ̃dɾɛ
+Bandeira	u	436	bɐ̃dɐjɾɐ
+Leandro	u	432	ljɐ̃dɾu
+Assunção	u	431	ɐsũsɐ̃w̃
+Meireles	u	430	mɐjɾelis
+Henriques	u	427	enɾikes
+Paes	u	424	pɐiʃ
+Damasceno	u	418	dɐmaʃsɨnu
+José	u	415	ʒusɛ
+Botelho	u	415	butɐjʎu
+Fernando	u	413	fɨɾnɐ̃du
+Paula	u	412	pawlɐ
+Paz	u	412	paʃ
+Domingos	u	411	dumĩɡus
+Lucena	u	409	lusɨnɐ
+Bento	u	405	bẽtu
+Bispo	u	404	biʃpu
+Conceição	u	404	kõsɐjsɐ̃w̃
+Inácio	u	400	ĩasju
+Jorge	u	400	ʒɔɹʒɨ
+Coimbra	u	398	koĩjbɾɐ
+Portugal	u	396	puɾtuɡaɫ
+Fernández	u	395	fɨɾnandeʃ
+Padilha	u	391	pɐdiʎɐ
+Aragão	u	390	ɐɾɐgãw
+Miguel	u	385	miɡwɛl
+Guerreiro	u	385	ɡɛɾɾɐjɾu
+Sánchez	u	382	saanʃez
+Pedroso	u	380	pɨdɾozu
+Luis	u	379	luis
+Nóbrega	u	373	nɔbɾɛɡɐ
+Caldas	u	370	kaɫdɐs
+Barcelos	u	368	bɐɾsɨlʊ
+Beta	u	364	bɛtɐ
+Borba	u	358	buɾbɐ
+Francisco	u	358	fɾɐ̃sisku
+Barroso	u	358	bɐɾɾəsu
+Gonzaga	u	352	ɡõzɐɡɐ
+Novais	u	352	nuvajs
+Gaspar	u	352	gaspaɾ
+Lara	u	348	laɾɐ
+Linhares	u	347	liɲaɾɨʃ
+Dourado	u	346	dowɾadu
+Paulino	u	343	pawlinu
+Marcos	u	338	maɾkus
+Souto	u	338	zowtu
+Jardim	u	332	ʒɐɾdĩ
+Portela	u	332	pɔɾtɨlɐ
+Ribas	u	328	ɾibɐs
+Meira	u	327	mɐjɾɐ
+Antonio	u	326	ɐ̃tunju
+Bessa	u	324	bisɐ
+Medina	u	320	mɨdinɐ
+Holanda	u	319	olãdə
+Sabino	u	318	sɐbinu
+Cámara	u	316	kamɐɾɐ
+Carmo	u	313	kɐɾmu
+Castilho	u	311	kɐʃtiʎu
+Serra	u	310	seχɐ
+Evangelista	u	307	ivɐ̃ʒɨliʃtɐ
+Caldeira	u	306	kaɫdɐjɾɐ
+Noronha	u	305	nɔɾuɲɐ
+Custódio	u	300	kustɔdju
+Elías	u	297	iliɐʃ
+Alvarenga	u	296	aɫvɐɾẽɡɐ
+Messias	u	291	mɛsiaʃ
+Teodoro	u	291	teodɔɾu
+Roque	u	290	ɾɔkɨ
+Daniel	u	289	dɐniɛɫ
+Venâncio	u	286	vẽɐ̃sju
+Amaro	u	286	ɐmɐɾu
+Leonardo	u	285	leõaɾdu
+Madeira	u	285	mɐdɐjɾɐ
+David	u	281	david
+Sobral	u	281	subɾaɫ
+Silvestre	u	280	siwvɛʃtɾɪ
+Lino	u	278	linu
+Gil	u	277	ɡiɫ
+Marcelo	u	276	maχselu
+Filipe	u	275	filipɨ
+Meneses	u	273	mɨnɨzɨʃ
+Mascarenhas	u	272	mɐʃkɐɾɐjɲɐʃ
+Montenegro	u	272	mõtẽeɡɾu
+Luna	u	270	lunɐ
+Marins	u	269	mɐɾĩs
+Terra	u	268	tɛha
+Saldanha	u	268	saɫdɐɲɐ
+Viegas	u	268	viɛgɐʃ
+Helena	u	267	elenɐ
+Romero	u	266	ɾumɛɾu
+Navarro	u	263	navaʁu
+Lobato	u	262	lobatu
+Veras	u	261	vɛɾəs
+Valentim	u	261	vɐlẽtim
+Cortez	u	259	kuɾteʃ
+Salgado	u	258	saɫɡadu
+Magno	u	254	maɡnu
+Adriano	u	253	ɐdɾiɐnu
+Delgado	u	252	dɛɫɡadu
+Junqueira	u	249	ʒũkɐjɾɐ
+Victoria	u	248	viktuɾiɐ
+Vale	u	248	valɨ
+Bolsonaro	u	245	bowsunaɾu
+Veríssimo	u	241	vɨɾisimu
+Camilo	u	240	kɐmilʊ
+Seixas	u	240	sɐjʃɐs
+Salvador	u	239	saɫvɐdoɾ
+Marcelino	u	237	maχselĩnu
+Pedrosa	u	237	pɨdɾɔzɐ
+Simão	u	233	simɐ̃w̃
+Figueira	u	231	fiɡɐjɾɐ
+Fortes	u	230	fɔɾt͡ʃɪs
+Diogo	u	228	ʤiogʊ
+Severo	u	225	sevɛɾu
+Gusmão	u	223	ɡsmɐ̃w̃
+Godinho	u	223	ɡudiɲu
+Angelo	u	222	ɐ̃ʒelu
+Mourão	u	221	muuɾɐ̃w̃
+Honorato	u	220	unoɾatu
+Munhoz	u	220	muɲoz
+Serafim	u	219	seɾafĩ
+Gabriela	u	217	ɡɐbɾjɛlɐ
+Varela	u	216	vɐɾelɐ
+Blanco	u	215	blɐ̃ku
+Diego	u	214	dieɡu
+Aires	u	212	ajɾɨʃ
+Góis	u	211	ɡɔjs
+Belo	u	211	bɛlu
+Leitão	u	210	lɐjtɐ̃w̃
+Luciano	u	206	lusiãnu
+Marçal	u	206	mɐɾsaɫ
+Quadros	u	203	kwɐdɾʊs
+Lúcio	u	203	lusju
+Morgado	u	202	muɾɡadu
+Hernández	u	201	ɛɾnandeʃ
+Rebelo	u	201	ɾebɛlu
+Germano	u	199	geɹmãnu
+Romão	u	199	ɾumɐ̃w̃
+Firmino	u	197	fiɾminu
+Vitorino	u	197	vituɾinu
+Prestes	u	195	pɾɨʃtɨʃ
+Gregório	u	195	ɡɾɨɡɔɾju
+Aleixo	u	194	alejʃu
+Ana	u	193	ɐnɐ
+Raposo	u	192	ɾapozu
+Valle	u	191	vɐllɨ
+Palma	u	189	paɫmɐ
+Ferro	u	188	fɛru
+Faustino	u	188	fawʃtinu
+Flor	u	187	floɾ
+Jordão	u	187	ʒɔɹdʒɐ̃w̃
+Máximo	u	186	masimu
+Lage	u	185	lɐʒɨ
+Vital	u	183	vitaɫ
+Valério	u	183	vɐlɛɾju
+Rego	u	183	ɾeɡu
+Russo	u	182	ɾusu
+Uchôa	u	181	uʃoɐ
+Mafra	u	181	mɐfɾɐ
+Malta	u	180	maɫtɐ
+Proença	u	179	pɾuẽsɐ
+Fialho	u	179	fiaʎu
+Silvério	u	178	siɫvɛɾiu
+Pina	u	176	pinɐ
+Fortunato	u	175	fuɾtunatu
+álvarez	u	175	aɫvɐɾeʃ
+Fontoura	u	173	fõtowɾɐ
+Frazão	u	173	fɾazɐ̃w̃
+Clemente	u	173	klɨmẽtɨ
+Seabra	u	173	sɨɐbɾɐ
+Rogério	u	172	ʁuʒɛɾju
+Romano	u	172	ɾumɐnu
+Cintra	u	171	sĩtɾɐ
+Martín	u	171	mɐɾtin
+Sarmento	u	171	sɐɾmẽtu
+Basilio	u	170	bɐzilju
+Lago	u	170	laɡu
+Neri	u	169	nɨɾi
+Pena	u	169	pɨnɐ
+Patrício	u	169	pɐtɾisju
+Alonso	u	168	ɐlõsu
+Prata	u	167	pɾatɐ
+Ambrosio	u	165	ɐ̃bɾozɪu
+Feliciano	u	165	fɨlisjɐnu
+Rosário	u	165	ɾosaɾju
+Morales	u	164	muɾɐlɨʃ
+Avelar	u	163	ɐvɨlaɾ
+Avelino	u	162	ɐvɨlĩu
+Arcanjo	u	162	aʁkɐ̃ʒu
+Maurício	u	162	mawɾisju
+Serrano	u	162	seχãnu
+Campelo	u	161	kɐ̃pɛlu
+Jacob	u	161	ʒakob
+Quaresma	u	161	kwarɛsmɐ
+Rufino	u	160	ɾufinu
+Cavalheiro	u	159	kavaʎejɾu
+Condé	u	157	kõwdɛ
+Justino	u	156	ʒuʃtinu
+Gimenes	u	155	ʒimẽiʃ
+Garcez	u	155	ɡɐɾsɨz
+Benevides	u	154	bɨnɨvidɨʃ
+Mayer	u	153	mɐajɛɾ
+Tiago	u	153	tjaɡu
+Bernardino	u	152	bɨɾnɐɾdinu
+Preto	u	151	pɾetu
+Neres	u	150	neɾɪs
+Rolim	u	150	ɾulĩ
+Gutiérrez	u	150	ɡtiɛɾɾiz
+Bragança	u	150	bɾaɡɐ̃sɐ
+Fragoso	u	150	fɾaɡusʊ
+Florêncio	u	149	fluɾẽsju
+Balbino	u	148	bawbinu
+Cassiano	u	148	kasiɐnu
+Bello	u	148	bɨllu
+Valadares	u	147	vɐlɐdaɾis
+Alberto	u	147	awbɛɹtʊ
+Estevam	u	146	iʃtᶴe̝vã
+Sobrinho	u	145	subɾiɲu
+Cristiano	u	145	kɾistʃiãnu
+Abrantes	u	145	ɐbɾɐ̃tɨʃ
+Julio	u	144	julju
+Fiuza	u	143	fiuʃɐ
+Amor	u	143	ɐmoɾ
+Bravo	u	143	bɾavu
+João	u	143	ʒʊãw
+Tadeu	u	142	tadew
+Estrela	u	142	iʃtɾelɐ
+Lá	u	141	la
+Parente	u	140	pɐɾẽtɨ
+Sérgio	u	138	sɛɾʒiu
+Maranhão	u	136	mɐɾɐɲɐ̃w̃
+Quintanilha	u	136	kĩjtãniʎɐ
+Maldonado	u	136	maɫdonadu
+Graça	u	136	ɡɾɐsa
+Conrado	u	133	kõɾadu
+Valverde	u	133	vaɫvɨɾdɨ
+Estêvão	u	133	iʃtejvɐ̃w̃
+Calado	u	133	kɐladu
+Quirino	u	132	kiɾinu
+Honório	u	132	õɔɾju
+Ramires	u	132	ɾamiɾes
+Felicio	u	132	fɨlisiu
+Garrido	u	132	ɡɐɾɾidu
+Tomé	u	132	tumɛ
+Santo	u	131	sɐ̃tu
+Sequeira	u	130	sɨkɐjɾɐ
+Duque	u	130	dukɨ
+Ramírez	u	129	ɾɐmiɾɨz
+Madureira	u	129	mɐduɾɐjɾɐ
+Boaventura	u	128	buɐvɨntuɾa
+Osório	u	128	ɔzɔɾju
+Serpa	u	127	seɾpɐ
+Vilar	u	127	vilaɾ
+Horta	u	127	ɔɾtɐ
+Paim	u	126	pɐĩ
+Cipriano	u	126	sipɾiɐnu
+Vasques	u	126	vɐʃkɛs
+Apolinário	u	125	apolĩaɾju
+Frota	u	124	fɾɔtɐ
+Lorena	u	124	luɾenɐ
+Donato	u	123	donɐtu
+Monte	u	123	mõtɨ
+Azeredo	u	122	ɐzeɾɨdu
+Salgueiro	u	122	saɫɡɐjɾu
+Constantino	u	121	kõʃtɐ̃tinu
+Pessanha	u	121	pɨsɐɲɐ
+Neiva	u	120	nɐjvɐ
+Pestana	u	120	pɨʃtɐnɐ
+Alvim	u	119	aɫvĩ
+Fróes	u	118	fɾɔiʃ
+Martinho	u	116	maɾtʃiɲu
+Bonifácio	u	115	bunifasju
+Sobreira	u	115	subɾɐjɾɐ
+Damásio	u	115	dɐmaʃju
+Agostinho	u	115	agoʃtiɲu
+Albino	u	114	awbinu
+Palmeira	u	114	paɫmɐjɾɐ
+Queirós	u	114	kɐjɾɔs
+Sacramento	u	113	sɐkɾɐmẽtu
+Camacho	u	113	kɐmɐʃu
+Caires	u	112	kajɾɨʃ
+Basso	u	111	bɐsu
+Parreira	u	111	pɐɾɾɐjɾɐ
+Ferrer	u	110	fɛrɛɾ
+Claudino	u	110	klawdinu
+Iglesias	u	110	iɡlɨzjɐs
+Bárbara	u	109	baɾbɐɾɐ
+Liberato	u	109	libeɾatu
+Carreira	u	109	kɐɾɾɐjɾɐ
+Torquato	u	108	tuɾkwɐto
+Crespo	u	108	kɾeʃpu
+Aguilar	u	107	ɐɡilaɾ
+Castelo	u	107	kɐʃtɛlu
+Valença	u	106	vɐlẽsɐ
+Lévy	u	106	lɛvaj
+Crispim	u	105	kɾiʃpĩ
+Malaquias	u	105	malakjɐʃ
+Claro	u	105	klaɾu
+Taveira	u	105	tavɐjɾɐ
+Canuto	u	104	kɐnutu
+Moro	u	104	moɾu
+Januário	u	104	ʒɐ̃waɾju
+Nicolau	u	104	nikulaw
+Rio	u	104	ɾju
+Batalha	u	104	bata??
+Porfírio	u	103	puɾfiriu
+Juliá	u	102	ʒulja
+Louzada	u	102	lowzɐda
+Vilhena	u	102	viʎenɐ
+Barata	u	102	bɐɾatɐ
+Bia	u	101	biɐ
+Márquez	u	101	maɾkez
+País	u	101	pɐiʃ
+Durães	u	101	duɾães
+Aranha	u	100	aɾãɲə
+Bianca	u	100	biɐ̃kɐ
+Eugenio	u	100	ewʒɨniu
+Forte	u	100	fɔɾt͡ʃɪ
+Negrão	u	99	neɡɾɐ̃w̃
+Penha	u	98	pɐjɲɐ
+Parra	u	98	pɐɾɾɐ
+Castanheira	u	98	kɐʃtɐɲɐjɾɐ
+Geraldo	u	97	ʒɨɾaɫdu
+Vasco	u	96	vɐʃku
+Pascoal	u	96	pɐʃkułi
+Leonel	u	95	ljɔnɛɫ
+Nazário	u	95	najsaɾju
+Alvares	u	95	aɫvɐɾis
+Dionisio	u	94	djunizju
+Negreiros	u	93	nɨɡɾɨiɾuʃ
+Tinoco	u	93	tʃinuku
+Jerónimo	u	93	ʒɛɾɔnimu
+Rosado	u	93	ɾəsadu
+Pádua	u	92	padwɐ
+Longo	u	92	lõɡu
+Sardinha	u	92	sɐɾdiɲɐ
+Vilaça	u	91	vilɐsa
+Belchior	u	91	bɨlʃjuɾ
+Thomé	u	90	tɔmɛ
+Velasco	u	90	vɛlɐʃku
+Belém	u	90	bilɛm
+Peralta	u	89	pɨɾaɫtɐ
+Domínguez	u	89	duminɡeʃ
+Novo	u	89	novu
+Paranhos	u	88	pɐɾɐɲus
+Ruas	u	88	ɾuɐs
+Brites	u	88	bɾitɨʃ
+Celestino	u	87	selest͡ʃĩnu
+Nolasco	u	87	nulɐʃku
+Mira	u	87	miɾɐ
+Moutinho	u	87	mowtiɲu
+Travassos	u	86	tɾɐvɐsus
+Penteado	u	85	pẽtjadu
+Oliva	u	85	ɔlivɐ
+Bacelar	u	85	baselaɾ
+Hilário	u	85	ilaɾju
+Anacleto	u	84	ɐnɐklɛtu
+Hipólito	u	84	ipɔlitu
+Beltrão	u	83	bɛɫtɾɐ̃w̃
+Faro	u	83	fɐɾu
+Dinis	u	83	d͡ʒiniʃ
+Ornelas	u	83	uɾnɛlɐʃ
+Rosas	u	83	ɾəsɐs
+Grilo	u	83	ɡɾilu
+Hugo	u	81	uɡu
+Vida	u	81	vita
+Mineiro	u	81	minɐjɾu
+Verde	u	81	veɾdɨ
+Narciso	u	81	naɾsizu
+Catarino	u	81	kataɾinu
+Manso	u	81	mɐ̃su
+Amado	u	81	amadu
+Alice	u	80	ɐlisɨ
+Ataide	u	80	ɐtajdɨ
+Raimundo	u	80	ɾajmʊ̃dʊ
+Fiel	u	79	fjɛɫ
+Joaquim	u	79	ʒwɐkim
+Baltazar	u	79	baɫtazãɾ
+Ferrão	u	79	fɨʁɐ̃w̃
+Tomás	u	79	tumaʃ
+Bentes	u	78	bẽt͡ʃis
+Anselmo	u	78	ɐ̃zɛɫmu
+Doria	u	78	duɾiɐ
+Mariz	u	78	mɐɾiʃ
+Lages	u	78	lɐʒɨs
+Prazeres	u	78	pɾɐzeɾes
+Louro	u	78	lowɾu
+Aurélio	u	77	awɾɛlju
+Justo	u	77	ʒuʃtu
+Montes	u	77	mõt͡ʃis
+Brás	u	77	bɾas
+Barreira	u	77	bɐʁɐjɾɐ
+Pita	u	77	pitɐ
+Palhares	u	76	pɐʎɐɾis
+Urbano	u	76	uɾbɐnu
+Carreiro	u	76	kɐɾɾɐjɾu
+Tolentino	u	75	tulẽtinu
+Frederico	u	75	fɾɨdɨɾiku
+Albano	u	75	awbãnu
+Quintino	u	75	kĩjtʃinu
+Policarpo	u	75	polikaɾpu
+Patrocinio	u	75	pɐtɾusinju
+Barreiros	u	75	bɐʁɐjruʃ
+Jacinto	u	75	ʒɐsĩtu
+Craveiro	u	75	kɾɐvɐjɾu
+Evaristo	u	74	ivɐɾiʃtu
+Simplicio	u	74	sĩplisiu
+Gato	u	74	gätʊ
+Carmona	u	74	kɐɾmonɐ
+Fidalgo	u	74	fidaɫɡu
+Camelo	u	73	kɐmelʊ
+Cotrim	u	73	kutɾim
+Serrão	u	73	seχɐ̃w̃
+Clara	u	72	klaɾɐ
+Timóteo	u	72	tʃimɔtju
+Canto	u	71	kɐ̃tu
+Marcolino	u	71	maɾkulinu
+Cosme	u	71	kosmi
+Ponte	u	71	põwtʃi
+Praxedes	u	70	pɾaʃɨdɨʃ
+Sól	u	70	zɔl
+Florentino	u	70	fluɾẽtinu
+Galhardo	u	70	ɡɐʎaɾdu
+Lázaro	u	70	lazaɾu
+Gonçalo	u	70	ɡõsɐlu
+Ruivo	u	70	ɾuivu
+Gata	u	69	ɡɐtɐ
+Caio	u	69	kaju
+Calheiros	u	69	kɐʎejɾuʃ
+Gaia	u	68	gaja
+Morató	u	68	muɾɐtɔ
+Pequeno	u	68	pɨkenu
+Toscano	u	68	toskɐ̃nu
+Madruga	u	68	mɐdɾuga
+Barradas	u	68	baɾɐdɐs
+Gentil	u	67	ʒẽtiɫ
+Már	u	67	maɾ
+Lindo	u	67	lĩdu
+Casanova	u	67	kɐzɐnɔvɐ
+Mata	u	67	matɐ
+Rei	u	67	ɾɐj
+Laurentino	u	66	lawɾẽtinu
+Maravilha	u	66	maɾaviʎɐ
+Pavão	u	66	pɐvɐ̃w̃
+Felizardo	u	66	felisaɾdu
+Carrilho	u	66	kaχiʎu
+Peçanha	u	65	pɨsɐɲɐ
+Queiroga	u	65	kejɾuɡɐ
+Cesário	u	65	sɪsaɾju
+Castanho	u	65	kɐʃtɐɲu
+Quintas	u	65	kĩtɐs
+Macena	u	64	mɐsẽɐ
+Roriz	u	64	ɾuɾiz
+Arrais	u	64	ɐʁajs
+Barra	u	64	bɐʁɐ
+Ivo	u	64	ivu
+Ladeira	u	64	lɐdɐjɾɐ
+Amador	u	64	amadoɾ
+Pompeu	u	63	põpew
+Artur	u	63	aɾtuɾ
+Sotero	u	63	soteɾu
+Café	u	63	kɐfɛ
+Rainha	u	63	ɾɐiɲɐ
+Lobão	u	63	lubɐ̃w̃
+Perdigão	u	63	pɨɾdiɡɐ̃w̃
+Girão	u	63	ʒiɾɐ̃w̃
+Laranjeira	u	63	lɐɾɐ̃ʒɐjɾɐ
+Izidoro	u	62	iziduɾu
+Prieto	u	62	pɾjɛtu
+Montalvão	u	61	mõtaɫvɐ̃w̃
+Mamede	u	61	mɐmɨdi
+Velho	u	61	veʎu
+Baía	u	61	bɐiɐ
+Lamas	u	61	lɐmɐʃ
+Granja	u	61	ɡɐ̃ɾʒɐ
+Locatelli	u	60	lukɐtɨlli
+Luisa	u	60	luizɐ
+Tobias	u	60	tubiɐs
+Pedreira	u	60	pɨdɾɐjɾɐ
+Azul	u	60	ɐzuɫ
+Moniz	u	60	muniz
+Tito	u	59	titu
+Breda	u	59	bɾeda
+Fé	u	58	fɛ
+Ponciano	u	58	põsiãnu
+Primo	u	58	pɾimu
+Julião	u	58	ʒuljɐ̃w̃
+Pio	u	58	piu
+Damião	u	58	dɐmiɐ̃w̃
+Farinha	u	58	fɐɾiɲɐ
+Cirino	u	57	siɾinu
+Bom	u	57	bõ
+Baeta	u	57	bɐetɐ
+Moisés	u	56	mojsɛs
+Roma	u	56	ɾomɐ
+Plácido	u	56	plasidu
+Frade	u	56	fɾadɨ
+Piloto	u	55	pilotu
+Quintela	u	55	kĩtɛlɐ
+Bulhões	u	54	buʎõjs
+Ramiro	u	54	ɾamiɾu
+Onofre	u	54	onɔfɾe
+Alexandrino	u	54	ɐleʃɐ̃dɾinu
+Soeiro	u	54	suɐjɾu
+Galante	u	54	ɡɐlɐ̃tɨ
+Mestre	u	54	mɛʃtɾɨ
+Sebastião	u	54	zɛbɐʃtiɐ̃w̃
+Macario	u	53	mɐkɐɾju
+Picanço	u	53	pikɐ̃su
+Pedra	u	53	pɨdɾɐ
+Vásquez	u	53	vaskɛz
+Severino	u	53	sɨvɨɾinu
+Otero	u	53	oteɾu
+Cravo	u	53	kɾavu
+Matta	u	52	mɐttɐ
+Ponce	u	52	põsɨ
+Fortuna	u	52	fuɾtunɐ
+Prudencio	u	52	pɾudẽsju
+Crisóstomo	u	52	kɾizɔstomu
+Rico	u	52	ɾiku
+Rita	u	52	ɾitɐ
+Taborda	u	52	tɐbuɾda
+Frías	u	52	fɾias
+Ester	u	51	iʃtɛɾ
+Lê	u	51	le
+Guterres	u	51	ɡtɨɾɾɨʃ
+Brilhante	u	51	bɾiʎɐ̃tɨ
+Emidio	u	51	emidju
+Quevedo	u	51	kɛvɨdu
+Rosendo	u	51	ɾuzẽjdu
+Mano	u	51	mãnu
+Adão	u	51	ɐdɐ̃w̃
+Malheiro	u	51	mɐʎɐjɾu
+Baião	u	51	bajɐ̃w̃
+Colaço	u	51	kulasu
+Berto	u	50	bɛɾtu
+Liz	u	50	liʃ
+Viola	u	50	vjɔlɐ
+Carrasco	u	50	kɐɾɾɐʃku
+Mau	u	50	maw
+Damas	u	50	dɐmɐʃ
+Barão	u	50	bɐɾɐ̃w̃
+Teófilo	u	49	tjɔfilu
+Eloi	u	49	ilui
+Faleiro	u	49	fɐlɐjɾu
+Massa	u	49	masɐ
+Agra	u	49	ɐɡɾɐ
+Romeiro	u	49	ɾumɐjɾu
+Candeias	u	49	kɐ̃dɐjɐs
+Lapa	u	49	lapɐ
+Barreiro	u	49	bɐʁɐjɾu
+Marco	u	48	maɾku
+Silvano	u	48	siɫvɐnu
+Valdez	u	48	vaɫdeʃ
+Távora	u	48	tavuɾa
+Bettencourt	u	48	bɨttẽkowɾt
+Mora	u	48	mɔɾɐ
+São Paulo	u	47	sɐ̃w̃pawlu
+Rey	u	47	ɾeaj
+Peixinho	u	47	pɐjʃiɲu
+Carriço	u	47	kaχisu
+Pombo	u	47	põbu
+Vélez	u	47	vɛlɨz
+Ruiva	u	46	ɾuivɜ
+Hora	u	46	ɒrɐ
+Fan	u	46	fɐ̃
+Formiga	u	46	formiɡa
+Barbeiro	u	46	bɐɾbɐjɾu
+Gandra	u	46	ɡɐ̃dɾɐ
+Senra	u	46	zẽɾɐ
+Gloria	u	46	ɡloɾiɐ
+Vidigal	u	46	vidiɡaɫ
+Heitor	u	46	ejtoʁ
+Cantanhede	u	45	kãtãɲedɨ
+Matoso	u	45	mɐtozu
+Militão	u	45	mɨlitɐ̃w̃
+Deus	u	45	deuʃ
+Vitoriano	u	45	vituɾjɐnu
+Semedo	u	45	sɨmjdu
+Homem	u	45	ɔm
+Soto	u	45	zotu
+Trigo	u	45	tɾiɡu
+Sofía	u	45	sɔfiɐ
+Piedade	u	45	pjɛdadɨ
+Egidio	u	44	eʒidju
+Emilio	u	44	emilju
+Inocencio	u	44	inusẽsju
+Heleno	u	44	elenu
+Póvoa	u	44	pɔvwɐ
+Frutuoso	u	44	fɾutwozu
+Prudente	u	43	pɾudẽtɨ
+Quintella	u	43	kĩtellɐ
+Laureano	u	43	lawɾjɐnu
+Benedito	u	43	bɨnɨditu
+Felisberto	u	43	fɨlizbɨɾtu
+Poeta	u	42	pwɛtɐ
+Damazio	u	42	dɐmɐziu
+Murta	u	42	muɾtɐ
+Granado	u	42	ɡɾɐnadu
+Cristo	u	42	kɾiʃtu
+Paredes	u	42	pɐɾɨdɪʃ
+Eloy	u	41	eluaj
+Marconi	u	41	mɐɾkõi
+Nantes	u	41	nɐ̃tɨʃ
+Isaac	u	41	izaɐk
+Malafaia	u	41	maɫafajɐ
+Calisto	u	41	kɐliʃtu
+Garcés	u	41	ɡɐɾkɛʃ
+Aveiro	u	41	ɐveɐjɾu
+Jácome	u	40	ʒakumɨ
+Beleza	u	40	belezɐ
+Gameiro	u	40	ɡɐmɐjɾu
+Branquinho	u	40	bɾɐ̃kiɲu
+Casimiro	u	40	kasĩiɾu
+Querido	u	40	kəɾidu
+Moita	u	40	mojtɐ
+Basto	u	40	bɐʃtu
+Baldo	u	39	baɫdu
+Eleuterio	u	39	elewtɨɾju
+Libório	u	39	libɔrju
+Nina	u	39	ninɐ
+Aureliano	u	39	ɐwɾɛliãnu
+Benjamín	u	39	bẽʒɐmin
+Jales	u	39	ʒalis
+Solano	u	39	soɫɐnu
+Vinhas	u	39	viɲɐʃ
+Durão	u	39	duɾɐ̃w̃
+Marta	u	39	mɐɾtɐ
+Norberto	u	38	norbɛrto
+Herbert	u	38	ɛɾbertʃ
+Virgílio	u	38	viɾɡilju
+Alfredo	u	38	aɫfɾɛdu
+Trigueiro	u	38	tɾiɡwɐjru
+Cartaxo	u	38	kɐɾtaksu
+Doce	u	38	dosɨ
+Dimas	u	38	dimɐʃ
+Manuel	u	38	mɐnuɛɫ
+Napoleão	u	37	napulɨɐ̃w̃
+Venceslau	u	37	vẽseslaw
+Príncipe	u	37	pɾĩsɨpɨ
+Cavaco	u	37	kɐvakʊ
+Benfica	u	37	bẽfikɐ
+Sancho	u	37	sɐ̃ʃu
+Alegre	u	37	ɐlɨɡɾi
+Cota	u	36	kɔtɐ
+Fernades	u	36	fɨɾnɐdɨʃ
+Virginia	u	36	viɾʒiniɐ
+Nazareth	u	36	nazarɛtʃ
+Anunciação	u	36	ɐnũsjɐsɐ̃w̃
+Deodato	u	36	djɔdatu
+Cecilio	u	36	kesilju
+Videira	u	36	vidɐjɾɐ
+Saavedra	u	36	zɐɐvɨdɾɐ
+Marreiros	u	36	mɐɾɾejɾuʃ
+Bicudo	u	35	bikudu
+Olegario	u	35	ulɨɡɐɾju
+Luzia	u	35	luziɐ
+Branca	u	35	bɾɐ̃kɐ
+Salas	u	35	saɫɐs
+Paraíso	u	35	pɐɾɐizu
+Encarnacao	u	35	ẽkaʁnakɐu
+Telo	u	35	tɛlu
+Eiras	u	35	ɐjɾɐʃ
+Peixe	u	35	pɐjʃɨ
+Saúde	u	35	saudʒi
+Elisa	u	34	elisɐ
+Firmo	u	34	fiɾmu
+Aniceto	u	34	ɐnisɨtu
+Natividade	u	34	nɐtividadɨ
+Caeiro	u	34	kɐɐjɾu
+Pato	u	34	patʊ
+Viveiros	u	34	vivɐjruʃ
+Vinagre	u	34	vinɐɡɾi
+Capela	u	34	kɐpɨla
+Brazão	u	34	bɾazɐ̃w̃
+Campanha	u	33	kɐ̃pɐɲɐ
+Gilberto	u	33	ʒiwbeɾtu
+Leocadio	u	33	ljɔkɐdju
+Soler	u	33	sulɨɾ
+Fajardo	u	33	fɐʒaɾdu
+Roxo	u	33	ɾoksu
+Vilá	u	33	vila
+Cabrita	u	33	kɐbɾitɐ
+Cruzeiro	u	33	kɾuzɐjɾu
+Pêgo	u	33	peɡu
+Gigante	u	33	ʒiɡɐ̃tɨ
+Abade	u	32	abadʒi
+Cândida	u	32	kɐ̃didɐ
+Gaudêncio	u	32	ɡawdẽsju
+Sil	u	32	ziw
+Chico	u	32	ʃiku
+Paul	u	32	pɐuɫ
+Figueiroa	u	32	fiɡɐjɾoɐ
+Limão	u	32	limɐ̃w̃
+Dâmaso	u	32	dɐmɐzu
+Arias	u	32	aɾiɐs
+Cid	u	32	sid
+Macieira	u	32	mɐsjɐjɾɐ
+Janeiro	u	32	ʒanejɾu
+Rato	u	32	ɾatu
+Seco	u	32	seku
+Barrios	u	31	baɾjuʃ
+Brígido	u	31	bɾiʒidu
+Curioso	u	31	kuɾjozu
+Bem	u	31	bẽĩ̯
+Bronze	u	31	bɾõzɨ
+Centeno	u	31	sẽtẽu
+Nova	u	31	nɔvɐ
+Estanislau	u	31	iʃtɐ̃islaw
+Perfeito	u	31	pɨɾfɐjtu
+Ledo	u	31	ledu
+Carolino	u	31	kɐɾulinu
+Areias	u	31	ɐɾɛjɐʃ
+Sereno	u	31	sɨɾenu
+Cavaleiro	u	31	kɐvɐlɐjɾu
+Carvalhal	u	31	kɐɾvɐʎajs
+Marinheiro	u	31	mɐɾiɲɐjɾu
+Pardal	u	31	pɐɾdaɫ
+Gago	u	31	ɡɐɡu
+Antonia	u	30	ɐ̃tuniɐ
+Celeste	u	30	selɛst͡ʃi
+Arouca	u	30	ɐɾowkɐ
+Francisca	u	30	fɾɐ̃siska
+Alemão	u	30	alemãw
+Isaías	u	30	izaiɐs
+Grosso	u	30	ɡɾusu
+Isidoro	u	30	izidoɾu
+Caiado	u	30	kajjadu
+Moço	u	30	mosʊ
+Mónica	u	30	mɔnikɐ
+Galego	u	30	galegu
+Lança	u	30	lɐ̃sɐ
+Amora	u	29	ɐmɔɾɐ
+Fioravante	u	29	fiuɾɐvɐ̃tɨ
+Loreto	u	29	luɾetu
+Alecrim	u	29	alekɾĩj
+Boa	u	29	boɐ
+Abranches	u	29	ɐbɾɐ̃ʃis
+Mendanha	u	29	mẽdaɲɐ
+Adelino	u	29	ɐdɨlinu
+Umbelino	u	29	ũbilinu
+Gordo	u	29	ɡuɾdu
+Esperança	u	29	iʃpɨɾɐ̃sɐ
+Montez	u	29	mõteʃ
+Canário	u	29	kɐ̃aɾju
+Rui	u	29	ɾui
+Cidade	u	28	sidadɨ
+Castanha	u	28	kɐʃtɐɲɐ
+Armando	u	28	ɐɾmɐndu
+Menino	u	28	mẽinu
+Calvo	u	28	kaɫvu
+Parada	u	28	paɾadɐ
+Sepúlveda	u	28	sɨpuɫvɨda
+Capitão	u	28	kɐpitɐ̃w̃
+Alegría	u	28	ɐlɨɡɾiɐ
+Curado	u	28	kuɾado
+Pera	u	27	pɨɾɐ
+Xisto	u	27	ʃiʃtu
+Amigo	u	27	amiɡu
+Constante	u	27	kõʃtɐ̃tɨ
+Drago	u	27	dɾaɡu
+Jaime	u	27	ʒajmɨ
+Nada	u	27	nadə
+Geraldes	u	27	ʒɨɾaɫdɨʃ
+Garrett	u	27	ɡɐɾɾɨtt
+Penedo	u	27	pɨnedu
+Florindo	u	27	floɾĩdu
+Nuno	u	27	nunu
+Lameira	u	27	lɐmɐjɾɐ
+Eusébio	u	27	eusɛbju
+Cerdeira	u	27	serdɑɐjɾɐ
+Palha	u	27	paʎɐ
+Português	u	27	puɾtuɡeʃ
+Gaio	u	27	ɡaju
+Infante	u	27	ĩfɐ̃tɨ
+Baltar	u	26	baɫtaɾ
+Gervásio	u	26	ʒɨɾvazju
+Libanio	u	26	libɐ̃ju
+Cardeal	u	26	kɐɾdjaɫ
+Fróis	u	26	fɾɔjs
+Maior	u	26	mɐjɔɾ
+Soledade	u	26	soɫedadɨ
+Flora	u	26	flɔɾɐ
+Neta	u	26	nɛtɐ
+Feijão	u	26	fɐjʒɐ̃w̃
+Roldão	u	26	ɾoɫdɐ̃w̃
+Patrão	u	26	pɐtɾɐ̃w̃
+Nora	u	26	nɔɾɐ
+Enes	u	26	ẽiʃ
+Albergaria	u	26	aɫβɨɾɣɐɾiɐ
+Casal	u	26	kɐzaɫ
+Eufrasio	u	25	ewfɾɐzju
+Vita	u	25	vitə
+Joia	u	25	ʒɔjɐ
+Josué	u	25	ʒusɯᵝɛ
+Capelo	u	25	kɐpelu
+Folha	u	25	foʎɐ
+Rúa	u	25	ɾuɐ
+Cadete	u	25	kɐdetɨ
+Duro	u	25	duɾu
+Firme	u	24	fiɾmɨ
+Pastor	u	24	pastoɹ
+Pepe	u	24	pɨpɨ
+Santa	u	24	sɐ̃tɐ
+Cleto	u	24	klɛtu
+Ezequiel	u	24	ezikiɛl
+Oscar	u	24	uskaɾ
+Diegues	u	24	dʒieɡez
+Laia	u	24	lajɐ
+Maduro	u	24	mɐduɾu
+Canelas	u	24	kɐnɛlɐʃ
+Caramelo	u	24	kɐɾɐmɛlu
+Festas	u	24	fɨʃtɐs
+Prior	u	24	pɾjoɾ
+Reina	u	24	χejnɐ
+Relvas	u	24	ɾɨlvɐs
+Cirne	u	24	siɾnɨ
+Padrão	u	24	pɐdɾɐ̃w̃
+Torre	u	24	tuɾɾi
+Cristino	u	24	kɾistʃinu
+Feio	u	24	fɐju
+Caseiro	u	24	kɐzɐjɾu
+Biscaia	u	24	biʃkajɐ
+Camões	u	24	kamõjʃ
+Margarida	u	24	mɐɾɡɐɾidɐ
+Varanda	u	24	vɐɾɐ̃dɐ
+Corte	u	23	kuɾtɨ
+Leonidas	u	23	leonidɐs
+Silvio	u	23	siɫvju
+Melchior	u	23	mɨlʃioɾ
+Pequena	u	23	pɨkenɐ
+Pilar	u	23	pilaɾ
+Suzano	u	23	suzɐnɔ
+Testa	u	23	tɛʃtɐ
+Verdelho	u	23	vɨɾdɨʎu
+Macías	u	23	mejsiɐs
+Massena	u	23	masenɐ
+Trovão	u	23	tɾuvɐ̃w̃
+Verdade	u	23	veɾdadʒ͡i
+Nicola	u	23	nikulɐ
+Subtil	u	23	subtiɫ
+Teodosio	u	23	teodɔzju
+Rolo	u	23	ɾolu
+Cerveira	u	23	sɨɾvɐjiɾɐ
+Lopo	u	23	lopo
+Aparicio	u	23	ɐpɐɾisju
+Lousada	u	23	lowzadɐ
+Rola	u	23	ɾolɐ
+Blanc	u	22	blɐ̃k
+Job	u	22	ʒub
+Malveira	u	22	maɫvɐjɾɐ
+Perola	u	22	pɛɾɔlɐ
+Amparo	u	22	ɐ̃paɾu
+Ernesto	u	22	ɛɾnɨʃtu
+Fusco	u	22	fuʃku
+Nazaré	u	22	nazaɾɛ
+Samora	u	22	sɐmɔɾɐ
+Desidério	u	22	dɨzidɛɾiu
+Quinteiro	u	22	kĩtɐjɾu
+Salomé	u	22	sɐlumɛ
+Arnaud	u	22	aɾnawd
+China	u	22	ʃinɐ
+Pratas	u	22	pɾatɐs
+Florido	u	22	fluɾidu
+Gamboa	u	22	ɡɐ̃boɐ
+Borralho	u	22	bor̄aʎu
+Rijo	u	22	ɾiʒu
+Salvadó	u	22	saɫvɐdɔ
+Bonito	u	22	bunitu
+Cancela	u	22	kɐ̃sɛlɐ
+Folgado	u	22	foɫɡadu
+Saramago	u	22	saɾamɐɡu
+Rainho	u	22	ɾɐiɲu
+Caria	u	22	kɐɾiɐ
+Norte	u	22	nɔχʧi
+Nabais	u	21	nɐbajs
+Darío	u	21	dɐɾiu
+Estacio	u	21	iʃtɐsju
+Agapito	u	21	ɐʒapitu
+Amoedo	u	21	ɐmuedo
+Festa	u	21	fɛʃtɐ
+Terrivel	u	21	tɨɾɾivɛɫ
+Viriato	u	21	viɾjatu
+Puga	u	21	puɡɐ
+Sal	u	21	saw
+Magro	u	21	mɐɡɾu
+Castelhano	u	21	kɐʃtɨʎɐnu
+Inés	u	21	ĩɛʃ
+Maltez	u	21	maɫteʃ
+Pinhal	u	21	piɲaɫ
+Couceiro	u	21	kowsɐjɾu
+Isabel	u	20	izabɛw
+Ascensão	u	20	ɐʃsẽsɐ̃w̃
+Estévez	u	20	iʃtɛveʃ
+Covas	u	20	kuvɐs
+Aguas	u	20	ɐgwɐs
+Ruela	u	20	ɾuɛɫɐ
+Vilas	u	20	vilɐʃ
+Quelhas	u	20	keʎaʃ
+Pisco	u	20	piʃku
+Brochado	u	20	bɾuʃadu
+Lagoa	u	20	lɐɡuɐ
+Guardado	u	20	ɡwɐɾdadu
+Gutierres	u	19	ɡtieɾɾis
+Lauro	u	19	lawɾu
+Mega	u	19	mɨɡɐ
+Cancio	u	19	kɐ̃sju
+Lagares	u	19	lagaɾis
+Moitinho	u	19	mojtiɲu
+Petrucci	u	19	pɨtɾuksi
+Ré	u	19	ɾɛ
+Sobreiro	u	19	subɾɐjɾu
+álvaro	u	19	aɫvaɾu
+Cardia	u	19	kɐɾdiɐ
+Tovar	u	19	tuvaɾ
+Alcoforado	u	19	aɫkofoɾadu
+Direito	u	19	diɾɐjtu
+Protasio	u	19	pɾutɐsju
+Grácio	u	19	ɡɾasju
+Capucho	u	19	kɐpuʃu
+Estima	u	19	iʃtimɐ
+Lamego	u	19	lɐ̃eɡu
+Lomba	u	19	lõbɐ
+Seara	u	19	sjaɾɐ
+Bizarro	u	19	bizaχo
+Redondo	u	19	ɾɨdõdu
+Alho	u	19	aʎu
+Ferreiro	u	19	fexeːɾu]pluralː[fexeːɾuʃ
+Mouta	u	19	mowtɐ
+Quitério	u	19	kitɛɾju
+Boas	u	18	buɐs
+Coronel	u	18	kuɾunɛɫ
+Rossa	u	18	ɾɔsɐ
+Vergueiro	u	18	vɨɾɡɐjɾu
+Carías	u	18	kaɾias
+Peniche	u	18	pɨniʃɨ
+Gatinho	u	18	ɡɐtiɲu
+Mergulhão	u	18	mɨɾɡuʎɐ̃w̃
+Minas	u	18	minɐs
+Varejao	u	18	vɐɾɐjʒɐu
+Azedo	u	18	ɐzɨdu
+Mouzinho	u	18	mowziɲu
+Serio	u	18	seɾju
+Catalão	u	18	katalãw
+Rito	u	18	ɾitu
+Inglés	u	18	ĩɡlɛʃ
+Freixo	u	18	fɾɐjʃu
+Margarido	u	18	mɐɾɡɐɾidu
+Outeiro	u	18	owtɐjɾu
+Paco	u	18	pɐku
+Adolfo	u	17	adolfu
+Aníbal	u	17	anibaɫ
+Emilia	u	17	emiliɐ
+Epifanio	u	17	epifɐnju
+Faleiros	u	17	fɐlɐjruʃ
+Perpetuo	u	17	pɨɾpɛtwu
+Amoroso	u	17	ɐmuɾozu
+Certo	u	17	sɛɹtʊ
+Magrinho	u	17	mɐɡɾiɲu
+Mena	u	17	mɨnɐ
+Rumo	u	17	ɾumu
+Té	u	17	tɛ
+Vermelho	u	17	vɨɾmɐjʎu
+Francés	u	17	fɾãseɛʃ
+Maximino	u	17	maksiminu
+Pegado	u	17	pɛɡadu
+Barroca	u	17	bɐʁukɐ
+Carvalheira	u	17	kɐɾvɐʎɐjɾɐ
+Liberal	u	17	libɨɾaɫ
+Pedras	u	17	pɨdɾas
+Varandas	u	17	vɐɾɐ̃dɐs
+Violante	u	17	vjulɐ̃tɨ
+Cacador	u	17	kɐkɐdoɾ
+Rente	u	17	ɾẽtɨ
+Roda	u	17	ɾudɐ
+Azenha	u	17	ɐzɐjɲɐ
+Carvalhais	u	17	kɐɾvɐʎais
+Curto	u	17	kuɾtu
+Gavião	u	16	ɡɐvjɐ̃w̃
+Noble	u	16	nɔblɨ
+Velasques	u	16	vɨlaskɛs
+Barral	u	16	baɾaɫ
+Diéguez	u	16	dʒiɛgwɛz
+Taboada	u	16	tɐbuɐdɐ
+Tubarão	u	16	tubɐɾɐ̃w̃
+Clarinha	u	16	klɐɾiɲɐ
+Milheiro	u	16	miʎɐjɾu
+Robalo	u	16	ɾubɐlo
+Adrião	u	16	ɐdɾiɐ̃w̃
+Amante	u	16	amɐ̃ʧi
+Cabanas	u	16	kɐbɐnɐs
+Cepeda	u	16	sɨpɨdɐ
+Livramento	u	16	livɾɐmẽtu
+Dores	u	16	doɾɪs
+Felgueiras	u	16	fɛɫɡɐjɾɐʃ
+Mourato	u	16	mowɾatu
+Beirão	u	16	bɐjɾɐ̃w̃
+Carvalhosa	u	16	kɐɾvɐʎusɐ
+Gándara	u	16	ɡandaɾɐ
+Salema	u	16	sɐlemɐ
+Seguro	u	16	sɨɡuɾu
+Serodio	u	16	zɛɾɔdju
+Martelo	u	16	mɐɾtɛlu
+Cação	u	16	kɐsɐ̃w̃
+Antão	u	16	ɐ̃tɐ̃w̃
+Isidro	u	16	izidɾu
+Pascoa	u	16	pɐʃkuɐ
+Arnaldo	u	15	ɐɾnaɫdu
+Curvelo	u	15	kuɾvelu
+Dulce	u	15	duwsi
+Lourdes	u	15	lowɾʤis
+Porta	u	15	pɔɾtɐ
+Aleluia	u	15	alelujɐ
+Latino	u	15	latʃinu
+Nossa	u	15	nɔsɐ
+Viterbo	u	15	vitɨɾbu
+Paulos	u	15	pawlus
+Cabeça	u	15	kɐbesɐ
+Fulgencio	u	15	fuɫʒẽsju
+Canas	u	15	kɐnɐs
+Alfaro	u	15	aɫfɐɾu
+Bartolomeu	u	15	bɐɾtɔlomew
+Polido	u	15	pulidu
+Abrunhosa	u	15	abruɲusɐ
+Faisca	u	15	fajzkɐ
+Bugalho	u	15	buɡaʎu
+Bartolo	u	15	bɐɾtulu
+Boto	u	15	butu
+Figueiras	u	15	fiɡɐjɾɐʃ
+Amores	u	15	ɐmɔɾɪʃ
+Mouro	u	15	mowɾu
+Babo	u	15	bɐbu
+Calçada	u	15	kaɫsadɐ
+Carvalheiro	u	15	kɐɾvaʎejɾu
+Marto	u	15	mɐɾtu
+Nave	u	15	navɨ
+Bicho	u	15	biʃu
+Alcobia	u	14	aɫkobiɐ
+Andrada	u	14	ɐ̃dɾadɐ
+Canova	u	14	kɐ̃ɔvɐ
+Bexiga	u	14	beʃiga
+Fael	u	14	fɐɛɫ
+Jara	u	14	ʒaɾa
+Urbana	u	14	uɾbɐnɐ
+Mourinho	u	14	mowɾiɲu
+Piçarra	u	14	pisaʁɐ
+Valadas	u	14	vɐladɐs
+Escudeiro	u	14	iʃkudɐjɾu
+Moleiro	u	14	mulɐjɾu
+Fazenda	u	14	fazẽdɐ
+Figo	u	14	fiɡu
+Riscado	u	14	ɾiskadu
+Canhoto	u	14	kɐɲotu
+Guia	u	14	ɡiɐ
+Polonio	u	14	polonju
+Vinha	u	14	viɲɐ
+Beato	u	14	bjatu
+Leiria	u	14	lɐjɾiɐ
+Ligeiro	u	14	liʒɐjɾu
+Bacalhau	u	14	bɐkɐʎaw
+Bebiano	u	14	bɨbjɐnu
+Grave	u	14	ɡɾavɨ
+çoça	u	13	sɔsɐ
+Petronilho	u	13	pɨtɾoniʎu
+Pureza	u	13	puɾezɐ
+Remigio	u	13	ɾɨmiʒiu
+Casaca	u	13	kɐzakɐ
+Amara	u	13	ɐmɐɾɐ
+Atanasio	u	13	ɐtɐnasju
+Caroço	u	13	kɐɾosu
+Corral	u	13	kuɾɾaɫ
+Milagre	u	13	milaɡɾɨ
+Rigueira	u	13	ɾiɡɐjɾɐ
+Boavida	u	13	buɐvidɐ
+Codeço	u	13	kodʒisu
+Nieto	u	13	nietu
+Cascão	u	13	kɐʃkɐ̃w̃
+Sande	u	13	sɐ̃dɨ
+Carreiras	u	13	kɐɾɾɐjɾɐʃ
+Igreja	u	13	iɡɾɐjʒɐ
+Migueis	u	13	miɡɐjʃ
+Ramalhete	u	13	ɾãmaʎetɨ
+Arsénio	u	13	ɐɾsɛnju
+Agua	u	12	ɐɡwɐ
+Eufrázio	u	12	ewfɾazju
+Ludgero	u	12	ludʒeɾʊ
+Miquelino	u	12	mikɛlinu
+Tunes	u	12	tunɨʃ
+Goulão	u	12	ɡuuɫɐ̃w̃
+Poças	u	12	posɐʃ
+Fragata	u	12	fɾɐɡatɐ
+Picão	u	12	pikɐ̃w̃
+Rial	u	12	ɾjaɫ
+Cabaço	u	12	kabasu
+Cabo	u	12	kabu
+Cardona	u	12	kɐɾdonɐ
+Cereja	u	12	sɨɾɐjʒɐ
+Diz	u	12	ʤis
+Iria	u	12	iɾiɐ
+Maneira	u	12	mɐnɐjɾɐ
+Namorado	u	12	nɐmuɾadu
+Pimpão	u	12	pĩpɐ̃w̃
+Banha	u	12	bãɲa
+évora	u	12	ɛvuɾɐ
+Gamito	u	12	ɡɐmitu
+Lampreia	u	12	lɐ̃pɾɐjɐ
+Velosa	u	12	vɨluzɐ
+Vigário	u	12	viɡaɾju
+Alarcão	u	12	ɐlɐɾkɐ̃w̃
+Bertolo	u	12	bɨɾtolʊ
+Quadrado	u	12	kwɐdɾadu
+Sapo	u	12	sapu
+Fontao	u	12	fõtɐu
+Poço	u	12	posu
+Purificação	u	12	puɾifikɐsɐ̃w̃
+Uva	u	12	uvɐ
+Ermida	u	12	iɾmidɐ
+Norton	u	12	nuɾtun
+Bordalo	u	12	buɾdalu
+Marujo	u	12	maɾuʒu
+Póvoas	u	12	pɔvoas
+Quina	u	12	kinɐ
+Corte-real	u	11	kuɾtɐjɾjaɫ
+Cantão	u	11	kɐ̃tɐ̃w̃
+Corado	u	11	kɔɾadu
+Ludovico	u	11	ludɔviku
+Preguiça	u	11	pɾɨɡisɐ
+Reto	u	11	ɾɛtu
+Surdo	u	11	suɾdu
+Lameiras	u	11	lɐmɐjɾɐʃ
+Carmelo	u	11	kaχmɛlu
+Casais	u	11	kasajʃ
+Cigano	u	11	siɡɐnu
+Eca	u	11	ɛkɐ
+Furriel	u	11	fuɾɾiɛɫ
+Rosalino	u	11	ɾəsɐlinu
+Beja	u	11	bɐjʒɐ
+Castela	u	11	kɐʃtɛla
+Costeira	u	11	kuʃtɐjɾɐ
+Espada	u	11	iʃpɐdɐ
+Brigida	u	11	bɾiʒidɐ
+Carloto	u	11	kɐɾlotu
+Ceu	u	11	sew
+Fati	u	11	fɐti
+Quintal	u	11	kĩtaɫ
+Salsa	u	11	sawsa
+Cavadas	u	11	kɐvadɐs
+Lebre	u	11	lɛbɾi
+Natario	u	11	natɐɾju
+Perpetua	u	11	pɨɾpɛtwɐ
+Torrão	u	11	tuɾɾɐ̃w̃
+Balão	u	11	baloŋ
+Maravalhas	u	11	mɐɾɐvɐʎas
+Quinta	u	11	kĩtɐ
+Ascenção	u	11	ɐʃsẽsɐ̃w̃
+Ferrá	u	11	fɨɾɾa
+Quental	u	11	kẽtaɫ
+Bonet	u	10	bunet
+Chuteira	u	10	ʃutɐjɾɐ
+Gavinho	u	10	ɡɐviɲu
+Hasse	u	10	ɐsɨ
+Jesuino	u	10	ʒɨzuinu
+Meirinho	u	10	mɐjɾiɲu
+Mosqueira	u	10	muʃkɐjɾɐ
+Perna	u	10	pɛrnɜ
+Roso	u	10	ɾozu
+Terêncio	u	10	tɨɾẽsju
+Verão	u	10	vɨɾɐ̃w̃
+Caló	u	10	kɐlɔ
+Camarão	u	10	kɐmɐɾɐ̃w̃
+Nico	u	10	niku
+Tina	u	10	tinɐ
+Madaleno	u	10	mɐdɐlɨnu
+Sardo	u	10	saɾdu
+Arêde	u	10	aɾejdɨ
+Chuva	u	10	ʃuvɐ
+Leote	u	10	ljɔtɨ
+Morte	u	10	muɾtɨ
+Panta	u	10	pɐ̃tɐ
+Praça	u	10	pɾasɐ
+Primavera	u	10	pɾimɐvɨɾɐ
+Rendeiro	u	10	ɾẽdɐjɾu
+Serrado	u	10	seχadʊ
+Tojal	u	10	tuʒaw
+Camarinha	u	10	kɐmɐɾiɲɐ
+Canha	u	10	kɐɲɐ
+Canteiro	u	10	kɐ̃tɐjɾu
+Lencastre	u	10	lẽkɐʃtɾɨ
+Namora	u	10	nɐmuɾɐ
+Agrela	u	10	ɐɡɾɛla
+Bolas	u	10	bɔlɐʃ
+Ceia	u	10	sɐjɐ
+Cova	u	10	kɔvɐ
+Ferreirinha	u	10	fɨʁɐjɾiɲɐ
+Presa	u	10	pɾezɐ
+Salvaterra	u	10	saɫvɐtɨɾɾɐ
+Chantre	u	10	ʃɐ̃tɾɨ
+Fevereiro	u	10	feveɾejɾu
+Galhano	u	10	ɡɐʎɐnu
+Manaia	u	10	mɐ̃ajja
+Melro	u	10	mɨlɾu
+Ortigão	u	10	uɾtiɡɐ̃w̃
+Barrocas	u	10	bɐʁukɐs
+Boavista	u	10	buɐviʃtɐ
+Condessa	u	10	kõdesɐ
+Leonor	u	10	leonoɾ
+Pesqueira	u	10	pɨʃkɐjɾɐ
+Tenente	u	10	tẽẽtɨ
+Vilares	u	10	vilɐɾis
+Fontinha	u	9	fõtiɲɐ
+Manteigas	u	9	mɐ̃tɐjɡɐs
+Seica	u	9	sɨikɐ
+Arcos	u	9	aɾkus
+Barrocal	u	9	bɐʁukaɫ
+Bertao	u	9	bɛɾtɐu
+Bruxo	u	9	bɾuksu
+Guarino	u	9	ɡwɐrinu
+Noite	u	9	nojtɨ
+Pino	u	9	pinu
+Massano	u	9	mɐsɐnu
+Candal	u	9	kɐ̃daɫ
+Chaveiro	u	9	ʃɐvɐjɾu
+Gorgulho	u	9	ɡuɾɡuʎu
+Jurado	u	9	ʒuɾadu
+Manique	u	9	manikɨ
+Papel	u	9	päpɛw
+Pedreiro	u	9	pɨdɾɐjɾu
+Rino	u	9	ɾinu
+Rosinha	u	9	ɾuziɲɐ
+Silvares	u	9	siɫvaɾis
+Lagarto	u	9	lagaɾtu
+Laranjo	u	9	lɐɾɐ̃ʒu
+Mimoso	u	9	mimozu
+Piteira	u	9	pitɐjɾɐ
+Granada	u	9	ɡɾɐnadɐ
+Loio	u	9	luju
+Lourinho	u	9	lowɾiɲu
+Marreco	u	9	mɐɾɾɨku
+Passarinho	u	9	pɐsɐriɲu
+Portas	u	9	pɔɾtɐs
+Ameixa	u	9	amejʃɐ
+Aroso	u	9	aɾozu
+Caridade	u	9	kɐɾidadɨ
+Eira	u	9	ɐjɾɐ
+Lavrador	u	9	lavɾɐdoɾ
+Coragem	u	9	kuɾaʒɐ̃j̃
+Fino	u	9	finu
+Gerardo	u	9	ʒɨɾaɾdu
+Granadeiro	u	9	ɡɾɐnadɐjɾu
+Guedelha	u	9	ɡedɐjʎɐ
+Valdés	u	9	vaɫdɛʃ
+Vidinha	u	9	vidʒiɲɐ
+Bico	u	9	biku
+Tereso	u	8	tɛriʃu
+Apóstolo	u	8	ɐpɔʃtulu
+Barbearia	u	8	bɐɾbɛɐɾiɐ
+Berta	u	8	bɛɾtɐ
+Católico	u	8	kɐtɔliku
+Contente	u	8	kõtẽtɨ
+Fereira	u	8	fɨɾɐjɾɐ
+Ideias	u	8	idejɐʃ
+Malato	u	8	malatu
+Marca	u	8	maɾkɐ
+Marroni	u	8	maχoni
+Mona	u	8	monɐ
+Regio	u	8	ɾɨʒiu
+Riso	u	8	ɾizu
+Secreto	u	8	sɨkɾɛtu
+Vassalo	u	8	vɐsɐlu
+Vilão	u	8	vilɐ̃w̃
+Alfaiate	u	8	aɫfɐjatɨ
+Algarvio	u	8	aɫɡɐɾviu
+Barriga	u	8	bɐɾɾiɡɐ
+Botas	u	8	butɐs
+Paquete	u	8	pɐketɨ
+Runa	u	8	ɾuna
+Sapage	u	8	sɐpɐɡi
+Tenreiro	u	8	tẽɾɐjɾu
+Venda	u	8	vẽdɐ
+Adonis	u	8	ɐdɔniʃ
+Albertino	u	8	awbertʃinu
+Alipio	u	8	ɐlipju
+Barroco	u	8	bɐɾɾuku
+Cabeleireiro	u	8	kɐbɨlɐjɾɐjɾu
+Cura	u	8	kuɾɐ
+Gramacho	u	8	ɡɾamaʃu
+Malva	u	8	maɫvɐ
+Manço	u	8	mɐ̃su
+Mareco	u	8	mɐɾɨku
+Muralha	u	8	muɾɐʎɐ
+Patriarca	u	8	pɐtɾiɐɾka
+Rebolo	u	8	ɾɨbulu
+Salva	u	8	saɫvɐ
+Sebastián	u	8	zɛbɐʃtian
+Semblano	u	8	sẽblɐ̃u
+Veigas	u	8	vɐjɡɐs
+Coito	u	8	kojtu
+Espinha	u	8	iʃpiɲɐ
+Orfão	u	8	ɔɾfɐ̃w̃
+Pombal	u	8	põbaɫ
+Regadas	u	8	ɾɨɡɐdas
+Arnaut	u	8	aɾnawt
+Baganha	u	8	baɡɐɲɐ
+Calhau	u	8	kɐʎaw
+Cerejo	u	8	sɨɾɐjʒu
+Chora	u	8	ʃoɾɐ
+Fabiao	u	8	fɐbiau
+Grade	u	8	ɡɾadɨ
+Guapo	u	8	ɡwɐpu
+Jana	u	8	ʒanɐ
+Perdiz	u	8	peɾʤɪz
+Ralha	u	8	ɾɐʎɐ
+Tejo	u	8	tɐjʒu
+Fazendeiro	u	8	fɐzendɐjɾu
+Granjo	u	8	ɡɾɐ̃ʒu
+Guiomar	u	8	ɡiumaɾ
+Luzio	u	8	luziu
+Marante	u	8	mɐɾɐ̃tɨ
+Ministro	u	8	mɨniʃtɾu
+Olival	u	8	ɔlivaɫ
+Palmeiro	u	8	paɫmɐjɾu
+Rouxinol	u	8	ɾowksinul
+Anes	u	8	ɐnɨʃ
+Areia	u	8	ɐɾɐjɐ
+Baldaia	u	8	baɫdajɐ
+Barreiras	u	8	bɐʁɐjɾɐʃ
+Borrego	u	8	borɛɡu
+Morim	u	8	muɾĩ
+Baleizão	u	7	bɐlɐjzɐ̃w̃
+Carapinha	u	7	kɐɾɐpiɲɐ
+Cadaval	u	7	kɐdɐvaɫ
+Camejo	u	7	kɐ̃ɐjʒu
+Canato	u	7	kɐnatu
+Carreteiro	u	7	kɐɾɾɨtɐjɾu
+Corsino	u	7	kuɾsinu
+Dente	u	7	dẽtɨ
+Deveza	u	7	dɨvezɐ
+Egas	u	7	ɨɡas
+Garrote	u	7	ɡaʁotɨ
+Maricato	u	7	mɐɾikatu
+Mascarenha	u	7	mɐʃkɐɾɐjɲɐ
+Moncada	u	7	mõkadɐ
+Murca	u	7	muɾkɐ
+Nilza	u	7	nilzɐ
+Pragana	u	7	pɾaɡɐnɐ
+Reino	u	7	ɾɐjnu
+Tita	u	7	t͡ʃitɐ
+Varges	u	7	vɐɾɡiʃ
+Balsa	u	7	bałsɜ
+Bidarra	u	7	bidɐɾɾɐ
+Carraca	u	7	kaχakɐ
+Inverno	u	7	ĩvɛɾnu
+Miguens	u	7	miɡwẽs
+Olim	u	7	ulĩ
+Rosmaninho	u	7	ɾuzmɐniɲu
+Loja	u	7	lɔʒɐ
+Nelo	u	7	nɛlʊ
+Nini	u	7	nini
+Pipa	u	7	pipɐ
+Polvora	u	7	powvoɾɐ
+Tato	u	7	tatu
+Tocha	u	7	toʃɐ
+Bandarra	u	7	bɐ̃daɾɾɐ
+Barbas	u	7	baɾbɐs
+Cebola	u	7	sɨbolɐ
+Fachada	u	7	fɐʃadɐ
+Fitas	u	7	fitɐs
+Gião	u	7	ʒiãw
+Valongo	u	7	vɐlõɡu
+Bandeiras	u	7	bɐ̃dɐjɾɐʃ
+Cabeleira	u	7	kɐbɨlɐjɾɐ
+Carola	u	7	kɐɾulɐ
+Coroa	u	7	koɾoa
+Crasto	u	7	kɾaʃtu
+Cuco	u	7	kuku
+Landeiro	u	7	lɐ̃dɐjru
+Marção	u	7	mɐɾsɐ̃w̃
+Marmelo	u	7	maχmɛlu
+Mendo	u	7	mẽⁿdʊ
+Reizinho	u	7	ɾɐjziɲu
+Sintra	u	7	sĩtɾɐ
+Carapeto	u	7	kaɾapitu
+Carranca	u	7	kɐɾɾɐ̃kɐ
+Cupido	u	7	kupidu
+Elvas	u	7	ɛɫvɐs
+Franqueira	u	7	fɾɐ̃kɐjɾɐ
+Gradim	u	7	ɡɾɐdĩ
+Laranjinha	u	7	lɐɾɐ̃ʒiɲɐ
+Leiras	u	7	lɐjɾɐʃ
+Margato	u	7	mɐɾɡɐtu
+Rolão	u	7	ɾulɐ̃w̃
+Susana	u	7	suʃɐnɐ
+Alcada	u	6	aɫkɐdɐ
+Caixinha	u	6	kajʃiɲɐ
+Cardeira	u	6	kaɾdɐjɾɐ
+Casaleiro	u	6	kɐzɐlɐjɾu
+Galveias	u	6	ɡaɫveɐs
+Letras	u	6	letɾas
+Mexia	u	6	mɨʃiɐ
+Peneda	u	6	pinɨdɐ
+Pombeiro	u	6	põbɐjɾu
+Raminhos	u	6	ɾɐmĩj̃us
+Rebocho	u	6	ɾeboʃu
+Ribau	u	6	ɾibaw
+Velhinho	u	6	vɛʎiɲu
+Balinha	u	6	bɐliɲɐ
+Cardos	u	6	kaɾduʃ
+Chapado	u	6	ʃɐpadu
+Giraldo	u	6	ʒiɾaɫdu
+Heliodoro	u	6	ɛliodɔɾu
+Junca	u	6	ʒũkɐ
+Marinha	u	6	mɐɾiɲɐ
+Moes	u	6	mwɛʃ
+Palos	u	6	pɐlus
+Pilão	u	6	pilɐ̃w̃
+Serqueira	u	6	seɾkɐjɾɐ
+Time	u	6	t͡ʃime
+Trinta	u	6	tɾĩtɐ
+Varão	u	6	vɐɾɐ̃w̃
+Agante	u	6	ɐɡɐ̃tɨ
+Coentrao	u	6	kuẽtɾau
+Escada	u	6	iʃkɐdɐ
+Fale	u	6	fɐlɨ
+Ganhao	u	6	ɡɐɲau
+Grazina	u	6	ɡɾɐzinɐ
+Paisana	u	6	pajzɐnɐ
+Viseu	u	6	vizew
+Alface	u	6	aɫfasɨ
+Baleiro	u	6	bɐlɐjɾu
+Barbado	u	6	bɐɾbadu
+Cera	u	6	seɾɐ
+Gralha	u	6	ɡɾaʎɐ
+Malhão	u	6	mɐʎɐ̃w̃
+Mansilha	u	6	mɐ̃ziʎɐ
+Mártires	u	6	maɾtiɾis
+Requejo	u	6	ɾɛkeʒu
+Riveiro	u	6	ɾivɐjɾu
+Santinho	u	6	sɐ̃t͡ʃĩɲu
+Toste	u	6	tuʃtɨ
+Caiano	u	6	kajjãnu
+Folhas	u	6	foʎɐz
+Geada	u	6	ʒɨadə
+Padeiro	u	6	pɐdɐjɾu
+Parracho	u	6	pɑrɑrrɾaʃu
+Pelicano	u	6	pɨlikɐnu
+Picado	u	6	pikadu
+Picó	u	6	pikɔ
+Soutinho	u	6	zowtiɲu
+Veludo	u	6	vɨludu
+Alpendre	u	6	aɫpẽdɾɨ
+Arroz	u	6	aʁojs
+Baltasar	u	6	baɫtɐsaɾ
+Bogas	u	6	bɔɡɐs
+Calé	u	6	kalɛ
+Caracol	u	6	kɐɾɐkoɫ
+Castanheiro	u	6	kɐʃtɐɲɐjɾu
+Estanqueiro	u	6	iʃtɐ̃kejɾu
+Estudante	u	6	iʃtudɐ̃tɨ
+Hermida	u	6	ɛɾmida
+Janela	u	6	ʒɐnɛlɐ
+Lousa	u	6	lowzɐ
+Meleiro	u	6	mɨlɐjɾu
+Nereu	u	6	nɨɾew
+Pavía	u	6	paviɐ
+Pignatelli	u	6	piɡnatɨlli
+Sargento	u	6	sɐɾʒẽtu
+Semiao	u	6	sɨmjau
+Soveral	u	6	suvɨɾaɫ
+Traça	u	6	tɾasɐ
+Carrapico	u	5	kɐɾɾɐpiku
+Chainho	u	5	ʃɐiɲu
+Clérigo	u	5	klɛɾiɡu
+Espadinha	u	5	iʃpɐdiɲɐ
+Gamelas	u	5	gamɛlas
+Gordalina	u	5	ɡuɾdɐlinɐ
+Gorjao	u	5	goɾʃɐu
+Ladeiro	u	5	lɐdɐjɾu
+Lagido	u	5	lɐʒidu
+Malveiro	u	5	maɫvɐjɾu
+Marçalo	u	5	mɐɾsalu
+Ramalheira	u	5	ɾãmaʎejra
+Relvão	u	5	ɾɨlvɐ̃w̃
+Seixo	u	5	sɐjʃu
+Seromenho	u	5	zɛɾɔmẽɲu
+Serrasqueiro	u	5	seχaskɐjɾu
+Trigueiros	u	5	tɾiɡwɐjruʃ
+Vala	u	5	valɐ
+Africano	u	5	afɾikãnu
+Albertina	u	5	awbertʃinɐ
+Anca	u	5	ɐ̃kɐ
+Brilha	u	5	bɾiʎɐ
+Calvete	u	5	kaɫvɨtɨ
+Canavarro	u	5	kɐ̃avaʁu
+Carril	u	5	kɐɾɾiɫ
+Chichorro	u	5	ʃiʃoʁu
+Delfina	u	5	dɨlfinɐ
+Florinda	u	5	fluɾĩdɐ
+Gaiato	u	5	gajatu
+Leston	u	5	lestõ
+Liberado	u	5	libeɾadu
+Mayor	u	5	mɐajoɾ
+Moinhos	u	5	muiɲos
+Monico	u	5	muniku
+Morado	u	5	muɾadu
+Moto	u	5	mɔtu
+Pintao	u	5	pĩtɐu
+Ratinho	u	5	ɾatʃiɲu
+Sampedro	u	5	zɐ̃pɛdɾu
+Soldado	u	5	soɫdadu
+Vela	u	5	vɛlɐ
+Arriaga	u	5	ɐɾɾiaɡɐ
+Banza	u	5	bɐ̃zɐ
+Brigas	u	5	bɾiɡɐs
+Brizida	u	5	bɾizidɐ
+Cravinho	u	5	kɾɐviɲu
+Feiteira	u	5	fɐjtɐjɾɐ
+Fradinho	u	5	fɾɐdiɲu
+Lavado	u	5	lɐvadu
+Malho	u	5	mɐʎu
+Mortagua	u	5	muɾtɐɡwɐ
+Pelica	u	5	pɨlikɐ
+Pereirinha	u	5	pɨɾɐjɾiɲɐ
+Pinhao	u	5	piɲau
+Ramalhao	u	5	ɾɐmɐʎau
+Rasteiro	u	5	ɾɐʃtɐjɾu
+Rebordao	u	5	ɾɨbuɾdau
+Saleiro	u	5	salɐjɾu
+Segurado	u	5	sɨɡuɾadu
+Sequeiros	u	5	sɨkɐjruʃ
+Serralha	u	5	seχaʎɐ
+Tedim	u	5	tɨdĩ
+Adaes	u	5	ɐdaiʃ
+Alpoim	u	5	aɫpuim
+Armindo	u	5	ɐɾmindu
+Boia	u	5	bɔjɐ
+Bota	u	5	bɔtə
+Carolo	u	5	kɐɾolu
+Carrão	u	5	kaχɐ̃w̃
+Gala	u	5	ɡalɐ
+Grangeia	u	5	ɡɾɐ̃ʒɐjɐ
+Hermenegildo	u	5	iɾmɨnegiɫdu
+Ludovino	u	5	ludɔvinu
+Melancia	u	5	mɨlɐ̃siɐ
+Miraldo	u	5	miɾaɫdu
+Pintado	u	5	pĩtadu
+Poca	u	5	pɔkɐ
+Polonia	u	5	pulunjɐ
+Rovira	u	5	ɾuviɾɐ
+Sarzedas	u	5	sɐɾzɨdɐs
+Verdial	u	5	vɨɾdjaɫ
+Viçoso	u	5	visozu
+Abecassis	u	5	ɐbɛkɪɐsiʃ
+Aldeia	u	5	aɫdɐjɐ
+Almas	u	5	aɫmɐʃ
+Aresta	u	5	ɐɾɨʃtɐ
+Calvario	u	5	kaɫvɐɾju
+Carrasqueira	u	5	kɐɾɾɐʃkɐjɾɐ
+Faia	u	5	fajɐ
+Fantasia	u	5	fɐ̃tɐziɐ
+Fixe	u	5	fiʃɨ
+Letra	u	5	letɾɐ
+Lindeza	u	5	lĩdɛʃɐ
+Magano	u	5	mɐɡɐ̃nu
+Maneta	u	5	mɐnetɐ
+Mantas	u	5	mɐ̃tɐs
+Marchao	u	5	maɾʃɐu
+Marvão	u	5	mɐɾvɐ̃w̃
+Peca	u	5	pɨkɐ
+Penetra	u	5	pɨnɨtɾɐ
+Ribeira	u	5	ɾibɐjɾɐ
+Serralheiro	u	5	seχɐʎɐjɾu
+Torrado	u	5	tuɾɾadu
+Arraiolos	u	4	ɐʁɐjɔluʃ
+Barosa	u	4	bɐɾɔzɐ
+Barrento	u	4	baɾẽtu
+Boieiro	u	4	bojɐjɾu
+Catela	u	4	kɐtɛlɐ
+Centeio	u	4	sẽtɐju
+Confraria	u	4	kõfɾɐɾiɐ
+Direitinho	u	4	diɾɐjtiɲu
+Djalo	u	4	ʤɐlu
+Fagulha	u	4	fɐɡuʎɐ
+Ginja	u	4	ʒĩʒɐ
+Maganinho	u	4	mɐɡɐ̃iɲu
+Milhinhos	u	4	miʎiɲos
+Morgadinho	u	4	muɾɡɐdiɲu
+Parrinha	u	4	pɐɾɾiɲɐ
+Poeira	u	4	pwɐjɾɐ
+Reisinho	u	4	ɾejsĩɲu
+Remondes	u	4	ɾɨmõdɨʃ
+Sarabando	u	4	saɾabɐ̃du
+Serras	u	4	seχɐs
+Sucena	u	4	susɨnɐ
+Torrinha	u	4	tuɾɾiɲɐ
+Amilcar	u	4	ɐmilkaɾ
+Amoreira	u	4	ɐmuɾɐjɾɐ
+Antas	u	4	ɐ̃tɐs
+Azoia	u	4	ɐzojɐ
+Balsemao	u	4	baɫsẽjɐu
+Barandas	u	4	baɾɐ̃dɐs
+Bastião	u	4	bɐʃtjɐ̃w̃
+Campones	u	4	kɐ̃põiʃ
+Caramujo	u	4	kɐɾɐmuʒu
+Chao	u	4	ʃau
+Chorão	u	4	ʃoɾɐ̃w̃
+Crus	u	4	kɾus
+Custodia	u	4	kuʃtudjɐ
+Data	u	4	datə
+Engenheiro	u	4	ẽʒɨɲɐjɾu
+Felino	u	4	fɨlinu
+Frausto	u	4	fɾawʃtu
+Gertrudes	u	4	ʒɨɾtɾudes
+Joaquina	u	4	ʒwɐkinɐ
+Lameirinhas	u	4	lɐmɐjɾiɲɐʃ
+Lomelino	u	4	lumɨlinu
+Magueta	u	4	mɐɡetɐ
+Minhoto	u	4	miɲotu
+Monforte	u	4	mõfɔɾt͡ʃɪ
+Olaio	u	4	ulajju
+Palmeirao	u	4	pɐɫmejɾau
+Panão	u	4	pɐ̃ɐ̃w̃
+Pereirão	u	4	pɨɾɐjɾɐ̃w̃
+Poiares	u	4	pojaɾis
+Pomar	u	4	pumaɾ
+Rede	u	4	χeʤi
+Relva	u	4	ɾɨlvɐ
+Resgate	u	4	ɾɨʃɡɐtɨ
+Sansana	u	4	sɐ̃zɐnɐ
+Sela	u	4	sɛlə
+Telmo	u	4	tɨlmu
+Valinho	u	4	vɐliɲu
+Valor	u	4	vɐloɾ
+Alvito	u	4	aɫvitu
+Balseiro	u	4	baɫsɐjɾu
+Campino	u	4	kɐ̃pinu
+Carrapatoso	u	4	kɐɾɾɐpɐtuʃu
+Casquinha	u	4	kaskĩɲɐ
+Castelão	u	4	kɐʃtɨlɐ̃w̃
+Condeço	u	4	kõdesu
+Cortesao	u	4	kuɾtɨzɐu
+Feteira	u	4	fɨtɐjɾɐ
+Galão	u	4	ɡɐlɐ̃w̃
+Grou	u	4	ɡɾow
+Honrado	u	4	õɾɐdo
+Jogo	u	4	ʒoɡu
+Judas	u	4	ʒudɐʃ
+Laginha	u	4	laɡiɲɐ
+Lavos	u	4	lavus
+Marado	u	4	mɐɾadu
+Metelo	u	4	mɨtelu
+Mourinha	u	4	mowɾiɲɐ
+Naia	u	4	nɐjɐ
+Palhais	u	4	pɐʎais
+Palminha	u	4	paɫmiɲɐ
+Pinguinha	u	4	pĩɡiɲɐ
+Piriquito	u	4	piɾikitu
+Reboredo	u	4	ɾeboɾedu
+Resina	u	4	ɾɨzinɐ
+Rigor	u	4	ɾiɡoɾ
+Rochinha	u	4	ɾɔʃiɲɐ
+Rogado	u	4	ɾuɡɐdu
+Roseiro	u	4	ɾuzɐjɾu
+Sacadura	u	4	sɐkɐduɾɐ
+Sineiro	u	4	sinɐjɾu
+Sismeiro	u	4	zismɐjɾu
+Tapada	u	4	tɐpadɐ
+Terras	u	4	teχɐs
+Torcato	u	4	tuɾkatu
+Varino	u	4	vɐɾinu
+Bacelo	u	4	baselu
+Bastardo	u	4	bastaɾdu
+Berardo	u	4	bɨɾaɾdu
+Besteiro	u	4	bɛʃtɐjɾu
+Bilro	u	4	biwχu
+Bolota	u	4	bulotɐ
+Cacho	u	4	kaʃu
+Cadilhe	u	4	kad͡ʒiʎɨ
+Canada	u	4	kɐnadɐ
+Carita	u	4	kɐɾitɐ
+Carrega	u	4	kɐxɛgɐ
+Carreto	u	4	kaχetu
+Carvalhinho	u	4	kɐɾvɐʎiɲu
+Completo	u	4	kõplɛtu
+Condesso	u	4	kõdesu
+Cro	u	4	kɾu
+Feitor	u	4	fɐjtoɾ
+Flaminio	u	4	flaminiu
+Fradique	u	4	fɾad͡ʒikɨ
+Grifo	u	4	gɾɪfu
+Jaloto	u	4	ʒɐlotu
+Malo	u	4	mɐlu
+Micaelo	u	4	mikaelu
+Miudo	u	4	miwdu
+Mocho	u	4	muʃu
+Moreiras	u	4	muɾɐjɾɐʃ
+Nelas	u	4	nɛlɐʃ
+Noivo	u	4	nuivu
+Oeiras	u	4	wɐjɾɐʃ
+Palhinha	u	4	pɐʎiɲɐ
+Rigueiro	u	4	ɾiɡwɐjru
+Roquete	u	4	ɾɔkɛtɨ
+Salgueirinho	u	4	saɫɡɐjɾiɲu
+Salvação	u	4	saɫvɐsɐ̃w̃
+Samagaio	u	4	sɐmɐɡaju
+Silveiro	u	4	siɫvɐjɾu
+Tropa	u	4	tɾɔpɐ
+Arinto	u	3	ɐɾĩtu
+Balca	u	3	baɫkɐ
+Breia	u	3	bɾɐjɐ
+Brinca	u	3	bɾĩkɐ
+Cacheira	u	3	kɐʃɐjɾɐ
+Cachola	u	3	kɐʃɔlɐ
+Cachulo	u	3	kɐʃulu
+Calmeiro	u	3	kaɫmɐjɾu
+Canastra	u	3	kɐnaʃtɾɐ
+Canastro	u	3	kɐnaʃtɾu
+Canhão	u	3	kɐɲɐ̃w̃
+Cardigos	u	3	kɐɾdiɡus
+Carrola	u	3	kaχulɐ
+Carrolo	u	3	kaχulu
+Cascalheira	u	3	kɐʃkaʎɐjɾɐ
+Cascalho	u	3	kɐʃkaʎu
+Catarro	u	3	kɐtaχo
+Cerejeira	u	3	seɾeʒejɾɐ
+Conduto	u	3	kõdutu
+Corda	u	3	kɔɾdɐ
+Cortico	u	3	kuɾtiku
+Davim	u	3	dɐvĩ
+Estevens	u	3	iʃtᶴe̝vẽs
+Faim	u	3	fɐĩ
+Fundo	u	3	fũdu
+Fuzeiro	u	3	fuzɐjɾu
+Lambelho	u	3	lɐ̃beʎu
+Mancelos	u	3	mɐ̃selʊ
+Marrafa	u	3	mɐɾɾɐfɐ
+Mateiro	u	3	mɐtɐjɾu
+Meco	u	3	mɨku
+Muge	u	3	muʒɨ
+Nabeiro	u	3	nɐbɐjɾu
+Olivenca	u	3	ɔlivẽkɐ
+Pinela	u	3	pinɛlɐ
+Pite	u	3	pitʃi
+Pocinho	u	3	posiɲu
+Quatorze	u	3	kwɐtoɾzɨ
+Ravara	u	3	ɾɐvaɾɐ
+Revez	u	3	ɾɨveɪs
+Rochete	u	3	ɾɔʃetɨ
+Rosete	u	3	ɾɔzɨtɨ
+Sepodes	u	3	zajpudes
+Siborro	u	3	sibuɾɾu
+Tabuada	u	3	tɐbuadə
+Toipa	u	3	twipɐ
+Vestia	u	3	vestʃiə
+Alverca	u	3	aɫvɨɾkɐ
+Artilheiro	u	3	ɐɾtiʎɐjɾu
+Badim	u	3	bɐdim
+Baetas	u	3	bɐetɐs
+Balau	u	3	bɐlaw
+Barge	u	3	bɐɾʒɨ
+Bentinho	u	3	bẽtiɲu
+Bigas	u	3	bigas
+Camaz	u	3	kɐ̃az
+Camba	u	3	kɐ̃bɐ
+Canelo	u	3	kɐnɛlʊ
+Canudo	u	3	kɐnudu
+Carrete	u	3	kaχetɨ
+Casquilho	u	3	kaskiʎu
+Cavaca	u	3	kɐvasɐ
+Charro	u	3	ʃaχu
+Coto	u	3	kotʊ
+Estevinho	u	3	iʃtiviɲu
+Faias	u	3	fajəs
+Fanzeres	u	3	fɐ̃zeɾes
+Gaiao	u	3	gajau
+Gandarez	u	3	ɡɐ̃dɐɾeʃ
+Laires	u	3	lajɾɨʃ
+Lindinho	u	3	lĩdiɲu
+Liso	u	3	lizu
+Macao	u	3	mɐkɐu
+Megre	u	3	mɨɡɾɨ
+Menzel	u	3	mẽzɛɫ
+Moio	u	3	muju
+Morao	u	3	muɾau
+Neca	u	3	nɛkɐ
+Neno	u	3	nɨnu
+Oca	u	3	ɔkɐ
+Olaia	u	3	ɔlajɐ
+Palheiro	u	3	pɐʎɐjɾu
+Peleja	u	3	pɨlɐjʒɐ
+Pierrot	u	3	pjɛɾɾut
+Queda	u	3	kɛdɐ
+Quintaneiro	u	3	kĩtɐnɐjɾu
+Reimao	u	3	ɾɐjmau
+Rondão	u	3	ɾõdɐ̃w̃
+Saloio	u	3	sɐloju
+São Pedro	u	3	sɐ̃w̃pɨdɾu
+Sapateiro	u	3	sɐpɐtɐjɾu
+Serradas	u	3	seχɐdɐs
+Serta	u	3	zɛɾtɐ
+Telhada	u	3	tɨʎadɐ
+Toco	u	3	tuku
+Tudela	u	3	tudɨla
+Vidas	u	3	vidɐs
+Alago	u	3	ɐlɐɡu
+Alcaide	u	3	aɫkajdɨ
+Anciaes	u	3	ɐ̃sjɐiʃ
+Balula	u	3	bɐlulɐ
+Barbeira	u	3	bɐɾbɐjɾɐ
+Barrinha	u	3	bɐɾɾiɲɐ
+Bergano	u	3	bɨɾɡɐnu
+Boal	u	3	buaɫ
+Borga	u	3	boɹgɐ
+Borrega	u	3	borɛɡɐ
+Carpinteiro	u	3	kɐɾpĩtɐjɾu
+Casqueira	u	3	kɐʃkɐjɾɐ
+Chicoria	u	3	ʃikɔɾiɐ
+Cigarro	u	3	siɡɐɾɾu
+Corujo	u	3	kuɾuʒu
+Couteiro	u	3	kowtɐjɾu
+Devesa	u	3	dɨvesɐ
+Engracia	u	3	ẽɡɾɐsjɐ
+Espiga	u	3	iʃpiɡɐ
+Estrelado	u	3	iʃtɾɨladu
+Fadigas	u	3	fɐdiɡɐs
+Fardilha	u	3	fɐɾdiʎɐ
+Forneas	u	3	fuɾnɨɐs
+Gadanho	u	3	ɡadɐɲu
+Galamba	u	3	ɡɐlɐ̃bɐ
+Gualdino	u	3	ɡwaɫdinu
+Guilhoto	u	3	ɡiʎotu
+Lontro	u	3	lõtɾu
+Maceiras	u	3	mɐsɐjɾɐʃ
+Madail	u	3	mɐdajl
+Magina	u	3	mɐʒinɐ
+Margalho	u	3	mɐɾgaʎu
+Milhano	u	3	miʎɐnu
+Moedas	u	3	mwɛdɐs
+Mucha	u	3	muʃɐ
+Pata	u	3	patɐ
+Pedrinho	u	3	pɨdɾiɲu
+Queta	u	3	ketɐ
+Rasga	u	3	ɾɐʃɡɐ
+Rendo	u	3	ɾẽⁿdʊ
+Roseta	u	3	ɾɔzɨtɐ
+Saltão	u	3	saɫtɐ̃w̃
+Serrador	u	3	seχɐdoɾ
+Taipina	u	3	tajpinɐ
+Talina	u	3	tɐlinɐ
+Tarrafa	u	3	tɐɾɾɐfɐ
+Tojeira	u	3	tuʒɐjɾɐ
+Toninho	u	3	tuniɲu
+Vareiro	u	3	vɐɾɐjɾu
+Verdasca	u	3	vɨɾdɐska
+Acurcio	u	2	ɐkuɾsju
+Adrega	u	2	ɐdɾɨɡɐ
+Afecto	u	2	ɐfɛktu
+Agostinha	u	2	agoʃtiɲɐ
+Ala	u	2	alɐ
+Alvoeiro	u	2	aɫvuɐjɾu
+Arezes	u	2	ɐɾɨzis
+Arraiano	u	2	ɐʁajãnu
+Azinheira	u	2	ɐziɲɐjɾɐ
+Bacão	u	2	bɐkɐ̃w̃
+Bagulho	u	2	bɐɡuʎu
+Balsas	u	2	baɫsɐʃ
+Barroqueiro	u	2	bɐɾɾɔkɐjɾu
+Bonacho	u	2	bonaʃu
+Bordonhos	u	2	buɾdoɲus
+Bouca	u	2	bowkɐ
+Boura	u	2	bowɾɐ
+Brazuna	u	2	bɾɐzunɐ
+Brioso	u	2	bɾiozu
+Bumba	u	2	bũbɐ
+Cabecinhas	u	2	kɐbɨsiɲɐʃ
+Cachapa	u	2	kɐʃapɐ
+Cachide	u	2	kɐʃidɨ
+Caldeirinha	u	2	kaɫdɐjɾiɲɐ
+Cameirao	u	2	kɐmɐjɾɐu
+Canilho	u	2	kɐniʎu
+Capinha	u	2	kɐpiɲɐ
+Capote	u	2	kɐpɔtɨ
+Carqueja	u	2	kɐɾkɐjʒɐ
+Cartucho	u	2	kɐɾtuʃu
+Carvalhas	u	2	kɐɾvɐʎas
+Casalta	u	2	kɐzaɫtɐ
+Cassapo	u	2	kasapu
+Castel-branco	u	2	kɐʃtɨlbɾɐ̃ku
+Castelejo	u	2	kɐʃtɨleʒu
+Cautela	u	2	kawtɛlɐ
+Chamica	u	2	ʃɐmikɐ
+Cintrão	u	2	sĩtɾɐ̃w̃
+Cotovio	u	2	kutuviu
+Couchinho	u	2	kowʃiɲu
+Esgaio	u	2	iʃɡaju
+Espinho	u	2	iʃpiɲu
+Faneca	u	2	fɐnɛkɐ
+Fatia	u	2	fɐtiɐ
+Favas	u	2	fɐvɐs
+Felgar	u	2	fɛɫɡaɾ
+Fouto	u	2	fowtu
+Franquinho	u	2	fɾɐ̃kiɲu
+Freches	u	2	fɾɛʃes
+Fresco	u	2	fɾeʃku
+Galrito	u	2	ɡaɫɾitu
+Gambóias	u	2	ɡɐ̃bɔjɐs
+Gamela	u	2	gamɛla
+Gandum	u	2	ɡɐ̃dũ
+Gavancha	u	2	gavɐ̃ʃɐ
+Gavinhos	u	2	ɡɐviɲos
+Geadas	u	2	ʒɨɐdɐs
+Giestas	u	2	ʒjɛʃtɐs
+Gordino	u	2	ɡuɾdinu
+Granjal	u	2	ɡɾɐ̃ʒaw
+Grenha	u	2	ɡɾɐjɲɐ
+Hortelão	u	2	ɔɾtɨlɐ̃u
+Janeira	u	2	ʒanejɾa
+Janelas	u	2	ʒɐnɛlɐʃ
+Janicas	u	2	ʒanikɐs
+Laborinho	u	2	lɐbuɾĩɲu
+Lacueva	u	2	lakwɛvɐ
+Ladeiras	u	2	lɐdɐjɾɐʃ
+Lajoso	u	2	lɐʒwzu
+Lalanda	u	2	lɐlɐ̃dɐ
+Lascas	u	2	lɐʃkaʃ
+Leigo	u	2	leiɣu
+Loios	u	2	lujuʃ
+Louros	u	2	lowɾʊs
+Malaca	u	2	malakɐ
+Maneca	u	2	mɐnɐjkɐ
+Marteleira	u	2	mɐɾtɨlɐjɾɐ
+Meirinhos	u	2	mɐjɾiɲos
+Melicias	u	2	melisjɐs
+Meruje	u	2	mɨɾuʒɛ
+Milagaia	u	2	milaɡajɐ
+Moisão	u	2	muizɐ̃w̃
+Morna	u	2	muɾnɐ
+Nisa	u	2	nizɐ
+Noval	u	2	nuvaɫ
+Orvalho	u	2	ɔɾvaʎu
+Pagaimo	u	2	pɐɡajmu
+Palaio	u	2	palajju
+Paquim	u	2	pɐkĩ
+Passadouro	u	2	pɐsɐdowɾu
+Passinhas	u	2	pɐsiɲɐʃ
+Pataca	u	2	pɐtɐkɐ
+Patuleia	u	2	pɐtulɐjɐ
+Pedroto	u	2	pɨdɾɔtu
+Penicheiro	u	2	pɨniʃɐjɾu
+Piao	u	2	piau
+Pinão	u	2	pĩɐ̃w̃
+Ponces	u	2	põsɨs
+Portulez	u	2	puɾtulɨz
+Pucarinho	u	2	pukɐɾiɲu
+Quadrada	u	2	kwɐdɾadɐ
+Rabaca	u	2	ɾabaka
+Realinho	u	2	ɾɨɐliɲu
+Regala	u	2	ɾɨɡɐlɐ
+Reixa	u	2	ɾɐjʃɐ
+Rodeia	u	2	ɾudɐjɐ
+Rogeiro	u	2	ɾuɡɐjɾu
+Rossas	u	2	ɾɔsɐs
+Sabido	u	2	sɐbidu
+Salcedas	u	2	saɫsɨdɐs
+Sapinho	u	2	zɐpĩɲu
+Senica	u	2	zajnikɐ
+Serdoura	u	2	seɾdowɾɐ
+Sevivas	u	2	sɨvivɐs
+Siopa	u	2	ziopɐ
+Sirgado	u	2	siɾɡɐdu
+Susano	u	2	suʃɐnu
+Talhadas	u	2	tɐʎadɐs
+Tomasio	u	2	tumasju
+Tondela	u	2	tõdɨla
+Trabulo	u	2	tɾabulu
+Tracana	u	2	tɾɐkɐnɐ
+Travessa	u	2	tɾɐvɨsɐ
+Trigueira	u	2	tɾiɡɐjɾɐ
+Trilho	u	2	tɾiʎu
+Truta	u	2	tɾutɐ
+Valbom	u	2	vawbõ
+Valentão	u	2	vɐlẽtɐ̃w̃
+Valido	u	2	vɐlidu
+Varatojo	u	2	vɐɾɐtoʒu
+Vardasca	u	2	vɐɾdɐska
+Varelas	u	2	vɐɾelɐʃ
+Vilan	u	2	vilɐ̃
+Ajuda	u	2	aʒudɐ
+Alvelos	u	2	aɫvɨlus
+Andorinha	u	2	ɐ̃duriɲɐ
+Andrino	u	2	ɐ̃dɾinu
+Areosa	u	2	ɐɾjuzɐ
+Arrojado	u	2	ɐʁuʒadu
+Azeitona	u	2	ɐzɐjtonɐ
+Balreira	u	2	baɫɾɐjɾɐ
+Barraca	u	2	bɐʁakɐ
+Becho	u	2	bɛʃu
+Bicheiro	u	2	biʃɐjɾu
+Bita	u	2	bitɐ
+Bogalho	u	2	bɔɡɐʎu
+Bombas	u	2	bõbɐʃ
+Brazinha	u	2	bɾɐziɲɐ
+Bule	u	2	bule
+Cabecas	u	2	kɐbekɐs
+Cabete	u	2	kɐbetɨ
+Cadima	u	2	kɐdimɐ
+Caleiro	u	2	kɐlɐjɾu
+Calista	u	2	kɐlistɐ
+Calix	u	2	kɐliks
+Camarada	u	2	kɐmɐɾadɐ
+Camarneiro	u	2	kɐ̃ɐɾnɛiɾu
+Canoso	u	2	kɐ̃ozu
+Carapuça	u	2	kɐɾɐpusɐ
+Cardao	u	2	kaɾdɐu
+Carinhas	u	2	kɐɾiɲɐʃ
+Carqueijeiro	u	2	kɐɾkɐjʒɐjɾu
+Carraco	u	2	kaχɐku
+Carrazedo	u	2	kɐɾɾɐzɨdu
+Carrinho	u	2	kaχiɲu
+Carvalhão	u	2	kɐɾvɐʎɐ̃w̃
+Carvao	u	2	kɐɾvɐu
+Casalinho	u	2	kɐzɐliɲu
+Catana	u	2	kɐtɐnɐ
+Catulo	u	2	kɐtulu
+Caveiro	u	2	kɐvɐjɾu
+Chula	u	2	ʃulɐ
+Cordas	u	2	kuɾdɐs
+Corga	u	2	kɔɹgɐ
+Cotas	u	2	kutɐs
+Delgadinho	u	2	dɛɫɡadiɲu
+Domigos	u	2	dumiɡus
+Escadas	u	2	iʃkɐdɐs
+Escapes	u	2	iʃkapɨʃ
+Esperto	u	2	iʃpɛɾtu
+Estanque	u	2	iʃtɐ̃kɨ
+Facão	u	2	fɐkɐ̃w̃
+Farelo	u	2	farɛlu
+Farto	u	2	fɐɾtu
+Fartura	u	2	fɐɾtuɾɐ
+Ferrinho	u	2	fɨɾɾiɲu
+Ferros	u	2	fɛrus
+Fontainhas	u	2	fõtɐiɲɐʃ
+Fuzeta	u	2	fuzetɐ
+Gante	u	2	ɡɐ̃tɨ
+Gavino	u	2	ɡɐvinu
+Guimas	u	2	gimɐs
+Hortas	u	2	ɔɾtɐs
+Ianhes	u	2	iaɲiʃ
+Ilhéu	u	2	iʎɛw
+Laranjeiro	u	2	lɐɾɐ̃ʒɐjɾu
+Lebres	u	2	lɨbɾez
+Lerias	u	2	lɨɾiɐs
+Loreiro	u	2	luɾɐjɾu
+Luzeiro	u	2	luzɐjɾu
+Macatrão	u	2	mɐkɐtɾɐ̃w̃
+Males	u	2	malis
+Maligno	u	2	mɐliɡnu
+Manarte	u	2	mɐ̃aɾtɨ
+Manata	u	2	mɐnatɐ
+Marrucho	u	2	mɐɾɾuʃu
+Meixedo	u	2	mɐjʃɨdu
+Melanda	u	2	mɨlɐ̃dɐ
+Mingatos	u	2	mĩɡɐtuʃ
+Minhos	u	2	miɲos
+Moiteiro	u	2	mojtɐjɾu
+Montinho	u	2	mõtiɲu
+Nel	u	2	nɛɫ
+Palrilha	u	2	paɫɾiʎɐ
+Paulette	u	2	pawlɨttɨ
+Pelagio	u	2	pɨlɐʒiu
+Pito	u	2	pitu
+Pragosa	u	2	pɾaɡusɐ
+Primitivo	u	2	pɾimitivu
+Quintais	u	2	kĩtajs
+Rachinhas	u	2	ɾaʃiɲɐʃ
+Rebola	u	2	ɾɨbula
+Redes	u	2	χeʤis
+Reigoto	u	2	ɾɐjɡutu
+Reitor	u	2	ɾɐjtoɾ
+Repolho	u	2	ɾipuʎu
+Ribeirete	u	2	ɾibɐjɾetɨ
+Rodeiro	u	2	ɾudɐjɾu
+Rojão	u	2	ɾuʒɐ̃w̃
+Ruano	u	2	ɾuɐ͂nu
+Samelo	u	2	sɐmɛlu
+Saro	u	2	saɾu
+Secio	u	2	sɨsju
+Seoane	u	2	zjuɐnɨ
+Seves	u	2	sevɛʃ
+Silveirinha	u	2	siɫvɐjɾiɲɐ
+Sousinha	u	2	zowsĩɲɐ
+Tao	u	2	tɐu
+Tendeiro	u	2	tẽdɐjɾu
+Tralhão	u	2	tɾɐʎɐ̃w̃
+Travanca	u	2	tɾɐvɐ̃kɐ
+Vences	u	2	vẽses
+Vendeira	u	2	vɛndɐjɾɐ
+Abraul	u	1	ɐbɾauɫ
+Adro	u	1	adɾu
+Agonia	u	1	ɐɡunjɐ
+Alegrete	u	1	ɐlɨɡɾɛtɨ
+Alendouro	u	1	aɫẽdowɾu
+Alfar	u	1	aɫfaɾ
+Alfarela	u	1	aɫfaɾɛlɐ
+Alvadia	u	1	awvadjɐ
+Anceriz	u	1	ɐ̃sɨɾiʃ
+Antoninho	u	1	ɐ̃toniɲu
+Arelo	u	1	ɐɾɛlu
+Arribanca	u	1	ɐɾɾibɐ̃kɐ
+Azeiteiro	u	1	ɐzɐjtɐjɾu
+Azinhais	u	1	ɐziɲajs
+Bacharel	u	1	bɐʃɐɾɛɫ
+Bagagem	u	1	bɐɡaʒɐ̃j̃
+Bairrão	u	1	bɐiʁɐ̃w̃
+Bajanca	u	1	bɐʒɐ̃kɐ
+Bajouca	u	1	bɐʒokɐ
+Bajouco	u	1	bɐʒoku
+Balhau	u	1	bɐʎaw
+Balonas	u	1	bɐlonaʃ
+Balsinha	u	1	baɫsĩɲɐ
+Bandeirinha	u	1	bɐ̃dɐjɾiɲɐ
+Banhudo	u	1	bɐɲwdu
+Barjona	u	1	bɐɾʒõɐ
+Barneto	u	1	bɐɾnetu
+Barqueiro	u	1	baɾkɐjɾu
+Barreirinhas	u	1	bɐʁɐjɾiɲɐʃ
+Barreleiro	u	1	bɐʀəlɐjru
+Barrosa	u	1	bɐɾɾəsɐ
+Batoca	u	1	bɐtɔkɐ
+Batuca	u	1	bɐtukɐ
+Beites	u	1	bejtes
+Belindro	u	1	bɨlĩdɾu
+Bem-haja	u	1	bẽĩ̯ɐʒɐ
+Benzinho	u	1	bẽziɲu
+Beringuilho	u	1	bɨɾĩɡiʎu
+Bigotte	u	1	biɡɔttɨ
+Birra	u	1	biʁɐ
+Boino	u	1	buinu
+Boleo	u	1	boleu
+Borbinhas	u	1	buɾbiɲɐʃ
+Bordadágua	u	1	bɔɾdɐdagwɐ
+Botica	u	1	butikɐ
+Botinas	u	1	butinɐs
+Botte	u	1	buttɨ
+Braguez	u	1	bɾɐɡeʃ
+Braizinha	u	1	bɾaiziɲɐ
+Brancal	u	1	bɾɐ̃kaɫ
+Brazia	u	1	bɾɐziɐ
+Bregas	u	1	bɾɛɡɐs
+Brisido	u	1	bɾizidu
+Brizido	u	1	bɾizidu
+Broegas	u	1	bɾɔiɡɐs
+Brogueira	u	1	bɾoɡɐjɾɐ
+Brosque	u	1	bruʃkɨ
+Bucha	u	1	buʃɐ
+Buco	u	1	buku
+Bujaca	u	1	buʒaka
+Buraca	u	1	buɾakɐ
+Cabaca	u	1	kɐbɐkɐ
+Cabecinha	u	1	kɐbɨsiɲɐ
+Cabugueira	u	1	kabugejɾə
+Caceiro	u	1	kasejɾu
+Cachopo	u	1	kɐʃopu
+Caçoete	u	1	kasɔetɨ
+Cadavez	u	1	kɐdɐveɪs
+Calaxa	u	1	kaɫaʃɐ
+Calcao	u	1	kaɫkɐu
+Calha	u	1	kaʎɐ
+Calhaço	u	1	kɐʎasu
+Calhanas	u	1	kɐʎɐnɐs
+Calhegas	u	1	kɐʎeɡɐs
+Calrão	u	1	kaɫɾɐ̃w̃
+Calvinho	u	1	kaɫviɲu
+Camarinho	u	1	kɐmɐɾiɲu
+Camboa	u	1	kɐ̃boɐ
+Cameira	u	1	kɐmɐjɾɐ
+Camoesas	u	1	kɐmwɛʃɐs
+Campanario	u	1	kɐ̃panarju
+Campia	u	1	kɐ̃piɐ
+Canais	u	1	kɐnajʃ
+Canatario	u	1	kɐnatɐɾju
+Canaveira	u	1	kɐ̃ɐveɐjɾɐ
+Canavilhas	u	1	kɐnɐvjʎaʃ
+Canotilho	u	1	kɐnutiʎu
+Cantante	u	1	kɐ̃tɐ̃tɨ
+Carapau	u	1	kɐɾɐpaw
+Carapeta	u	1	kɐɾɐpɨtɐ
+Carapito	u	1	kɐɾɐpitu
+Cardal	u	1	kɐɾdaɫ
+Cardetas	u	1	kɐɾdjtɐs
+Cardiga	u	1	kɐɾdiɡɐ
+Cardina	u	1	kɐɾdinɐ
+Carioto	u	1	kaɾiɔtu
+Carnide	u	1	kɐɾnidɨ
+Carracha	u	1	kaχaʃɐ
+Carramate	u	1	kaχɐmɐtɨ
+Carregoso	u	1	kaχeɡozu
+Carronda	u	1	kɐɾɾõdɐ
+Carrondo	u	1	kɐɾɾõdu
+Cartas	u	1	kaɾtɐs
+Carvalha	u	1	kɐɾvɐʎɐ
+Castelo-branco	u	1	kɐʃtɛlubɾɐ̃ku
+Castico	u	1	kɐʃtiku
+Catalino	u	1	katalĩu
+Cerca	u	1	seɾkɐ
+Chamico	u	1	ʃɐmiku
+Charana	u	1	ʃɐɾãna
+Chasqueira	u	1	ʃaʃkɐjɾɐ
+Chavinha	u	1	ʃɐviɲɐ
+Chicharo	u	1	ʃiʃɐɾu
+Chilro	u	1	ʃilɾu
+Chorincas	u	1	ʃuɾĩkɐs
+Cioga	u	1	sjoɡɐ
+Clamote	u	1	klɐmotɨ
+Cochofel	u	1	kuʃufɛɫ
+Coelhinho	u	1	kweʎiɲu
+Colela	u	1	kolelɐ
+Comba	u	1	kõbɐ
+Condinho	u	1	kõdiɲu
+Cozinheiro	u	1	kuziɲɐjɾu
+Cravid	u	1	kɾɐvid
+Cruchinho	u	1	kɾuʃiɲu
+Dao	u	1	dau
+Deira	u	1	dɐjɾɐ
+Delille	u	1	dʒilillɨ
+Dixe	u	1	dʒiʃɪ
+Donas	u	1	donɐs
+Durana	u	1	duɾãna
+Edra	u	1	idɾɐ
+Eirinha	u	1	ɐjɾiɲɐ
+Ermitão	u	1	iɾmitɐ̃w̃
+Ervideira	u	1	eɾvidɐjɾɐ
+Escalda	u	1	iʃkaɫdɐ
+Esculcas	u	1	eskuwkɐs
+Fachadas	u	1	fɐʃadɐs
+Falhas	u	1	faʎas
+Faneco	u	1	fɐnɛku
+Farfalha	u	1	fɐɾfɐʎɐ
+Farreca	u	1	fɐɾɾɨkɐ
+Farrolas	u	1	faʁolɐʃ
+Farromba	u	1	fɐɾɾõba
+Fartaria	u	1	fɐɾtɐɾiɐ
+Faveiro	u	1	fɐvɐjɾu
+Feiteiro	u	1	fɐjtɐjɾu
+Felgueira	u	1	fɛɫɡɐjɾɐ
+Ferraria	u	1	fɨʁɐɾiɐ
+Figueirinhas	u	1	fiɡɐjɾiɲɐʃ
+Florista	u	1	fluɾiʃtɐ
+Fojo	u	1	fuʒu
+Fontinhas	u	1	fõtiɲɐʃ
+Formigo	u	1	fuɾmiɡo̝
+Fragueiro	u	1	fɾɐɡɐjɾu
+Freixinho	u	1	fɾɐjʃiɲu
+Furet	u	1	fuɾɨt
+Gaiola	u	1	ɡajɔlɐ
+Gaitas	u	1	ɡajtɐs
+Gaivao	u	1	ɡajvɐu
+Gaivoto	u	1	ɡajvɔtu
+Ganchas	u	1	ɡɐ̃ʃɐs
+Ganho	u	1	ɡɐɲu
+Ganilho	u	1	ɡɐniʎu
+Ganito	u	1	ɡɐnitu
+Garção	u	1	ɡɐɾsɐ̃w̃
+Gardete	u	1	ɡɐɾdɨtɨ
+Geirinhas	u	1	ʒɐjɾiɲɐʃ
+Geria	u	1	ʒɨɾiɐ
+Gestosa	u	1	ʒɛʃtusɐ
+Giesteira	u	1	ʒiiʃtɐjɾɐ
+Gonilho	u	1	ɡuniʎu
+Grancho	u	1	ɡɾɐ̃ʃu
+Granjeia	u	1	ɡɾɐ̃ʒjjɐ
+Grencho	u	1	ɡɾɨnʃu
+Guarniero	u	1	ɡwɐɾniɛɾu
+Hinga	u	1	ĩɡɐ
+Hormigo	u	1	ɔɾmiɡo̝
+Ilharco	u	1	iʎaɹku
+Jaleco	u	1	ʒaleku
+Jalo	u	1	ʒalu
+Junceiro	u	1	ʒũsɐjɾu
+Lagarelhos	u	1	lagaɾɐjʎʊs
+Lagiosa	u	1	lɐʒiɔzə
+Laiginhas	u	1	lajʒiɲɐʃ
+Lavinha	u	1	lɐviɲɐ
+Lebreiro	u	1	lɨbɾɐjɾu
+Lobito	u	1	lubitu
+Logarinho	u	1	luɡɐɾiɲu
+Lote	u	1	lɔtɨ
+Loucano	u	1	lowkɐnu
+Louceiro	u	1	lowsɐjɾu
+Lousado	u	1	lowzadu
+Louzao	u	1	lowzɐu
+Lusitana	u	1	luzitɐnɐ
+Madanelo	u	1	mɐdɐnɛlʊ
+Malaguerra	u	1	mɐlɐɡeɾɾɐ
+Malcata	u	1	maɫkɐtɐ
+Malos	u	1	mɐlus
+Malvas	u	1	maɫvɐs
+Manquinho	u	1	mɐ̃kiɲu
+Manteigueiro	u	1	mɐ̃tɐjɡɐjɾu
+Marrão	u	1	mɐɾɾɐ̃w̃
+Medinas	u	1	mɨdinɐs
+Melaneo	u	1	mɨlɐ̃ju
+Melgueira	u	1	mɨlɡɐjɾɐ
+Melúria	u	1	mɨlurjɐ
+Menano	u	1	mẽɐnu
+Midões	u	1	midõjs
+Mingacho	u	1	mĩɡaʃu
+Miquelina	u	1	mikɛlinɐ
+Moacho	u	1	muaʃu
+Moas	u	1	muɐs
+Mogas	u	1	muɡɐs
+Mogo	u	1	muɡu
+Mogofores	u	1	mɔgofoɾes
+Moleirinho	u	1	mulɐjɾiɲu
+Monteirinho	u	1	mõtɐjɾiɲu
+Morganho	u	1	muɾɡɐɲu
+Mourisca	u	1	mowɾiʃkɐ
+Muchata	u	1	muʃatɐ
+Nabo	u	1	nabu
+Nogueirinha	u	1	nuɡɐjɾiɲɐ
+Olas	u	1	ɔlɐʃ
+Olazabal	u	1	ɔlɐzabal
+Oliveirinha	u	1	ɔlivɐjɾiɲɐ
+Ortigoso	u	1	uɾtiɡuzu
+Padez	u	1	pɐdeʃ
+Palhavã	u	1	pɐʎavɐ̃
+Palhota	u	1	pɐʎɔtɐ
+Palinhos	u	1	pɐliɲos
+Palmela	u	1	paɫmɨlɐ
+Palmira	u	1	paɫmiɾɐ
+Panarra	u	1	panarɾɐ
+Paour	u	1	pɐowɾ
+Paralta	u	1	pɐɾaɫtɐ
+Pardinha	u	1	pɐɾdiɲɐ
+Passeira	u	1	pɐsɐjɾɐ
+Pastilha	u	1	pɐʃtiʎɐ
+Patarata	u	1	pɐtɐɾɐta
+Patarra	u	1	pɐtɐɾɾɐ
+Patinho	u	1	patʃiɲu
+Paulouro	u	1	pawlowɾu
+Pedruco	u	1	pɨdɾuku
+Peixeiro	u	1	pɐjʃɐjɾu
+Pequito	u	1	pɨkitu
+Percheiro	u	1	pɨɾʃɐjɾu
+Perneta	u	1	pɨɾnetɐ
+Petisca	u	1	pɨtiʃkɐ
+Pincha	u	1	pĩʃɐ
+Pinheira	u	1	piɲɐjɾɐ
+Pirona	u	1	piɾɔnɐ
+Polho	u	1	puʎu
+Porelo	u	1	puɾilu
+Poupino	u	1	powpinu
+Pracana	u	1	pɾɐkɐnɐ
+Prelhaz	u	1	pɾɨʎaʃ
+Prola	u	1	pɾɔlɐ
+Quartilho	u	1	kwɐɾtiʎu
+Quiaios	u	1	kiajuʃ
+Quinas	u	1	kinɐs
+Quinaz	u	1	kinaʃ
+Ramalhal	u	1	ɾɐmɐʎajs
+Ramalheiro	u	1	ɾãmaʎejɾu
+Ramalhinho	u	1	ɾãmaʎiɲu
+Ranito	u	1	ɾɐnitu
+Rapoula	u	1	ɾɐpowlɐ
+Rascão	u	1	ɾɐskãw
+Rebimbas	u	1	ɾɨbĩbɐs
+Rentão	u	1	ɾẽtɐ̃w̃
+Retre	u	1	ɾɨtɾɨ
+Revés	u	1	ɾevɛʃ
+Rilho	u	1	ɾiʎu
+Riquito	u	1	ɾikitu
+Roçadas	u	1	ɾusɐdɐs
+Roleto	u	1	ɾoletu
+Roliz	u	1	ɾuliʃ
+Romãozinho	u	1	ɾumɐ̃w̃ziɲu
+Rovisco	u	1	ɾuviʃku
+Ruaz	u	1	ɾuaz
+Saiago	u	1	sajaɡu
+Salteiro	u	1	saɫtɐjɾu
+Sampainho	u	1	zɐ̃paiɲu
+Sandinha	u	1	sãdʒiɲɐ
+Santareno	u	1	sɐ̃tarɛnu
+São João	u	1	sɐ̃w̃ʒʊãw
+Sario	u	1	sɐɾiu
+Sayal	u	1	sɐajaɫ
+Seborro	u	1	sebuɾɾu
+Seiceira	u	1	sɐjkɐjɾɐ
+Seita	u	1	sɐjtɐ
+Selada	u	1	sɨladɐ
+Semanas	u	1	sɨmɐnɐs
+Sendas	u	1	sẽdɐs
+Soeima	u	1	suɐjmɐ
+Solipa	u	1	sulipɐ
+Sopas	u	1	sopɐʃ
+Tabuas	u	1	tɐbuɐs
+Tagaio	u	1	tɐɡaju
+Tanganho	u	1	tɐ̃ɡɐɲu
+Tanoeiro	u	1	tɐnoejɾu
+Tapadas	u	1	tɐpadɐs
+Tareco	u	1	taɾɛku
+Tarouca	u	1	tɐɾowkɐ
+Tavira	u	1	tɐviɾɐ
+Tejana	u	1	tɨʒɐ̃ɐ
+Tempero	u	1	tẽpɨɾu
+Tente	u	1	tẽtɨ
+Terenas	u	1	tɨɾẽɐs
+Terreiro	u	1	tɨɾɾɐjɾu
+Terreiros	u	1	tɨɾɾejɾuʃ
+Torgal	u	1	tuɾɡaɫ
+Torgo	u	1	tuɾɡu
+Torneiro	u	1	tuɾnɐjɾu
+Traquete	u	1	tɾɐkɛtɨ
+Trepado	u	1	tɾɨpɐdu
+Trezentos	u	1	tɾɨzẽtuʃ
+Trincão	u	1	tɾĩkɐ̃w̃
+Trota	u	1	tɾɔtɐ
+Valdrez	u	1	vaɫdɾes
+Varalonga	u	1	vɐɾɐloŋgɐ
+Vazao	u	1	vɐzɐu
+Vedes	u	1	vɨdes
+Ventosa	u	1	vẽtɔzɐ
+Véstias	u	1	vɛstiɐʃ
+Vicetro	u	1	visɨtɾu
+Vide	u	1	vidɨ
+Vindeirinho	u	1	vĩdɐjɾiɲu
+Vinheiras	u	1	viɲɐjɾɐʃ
+Vintém	u	1	vĩtɐ̃j̃
+Vizo	u	1	vizu

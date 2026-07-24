@@ -1,1355 +1,1433 @@
-# tr surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=3, cap=20000).
-Yılmaz	u	14239
-Kaya	u	9836
-Demir	u	9075
-Yıldız	u	7593
-şahin	u	7537
-Aydın	u	7302
-Yıldırım	u	7260
-öztürk	u	6976
-çelik	u	6814
-özdemir	u	5884
-Arslan	u	5448
-Can	u	5384
-Doğan	u	5223
-Aslan	u	4557
-Kılıç	u	4408
-Kara	u	3817
-çetin	u	3516
-Kurt	u	3155
-Koç	u	3122
-özkan	u	2832
-Polat	u	2750
-çakır	u	2724
-Korkmaz	u	2721
-Erdoğan	u	2719
-özcan	u	2635
-Acar	u	2575
-şimşek	u	2552
-Güneş	u	2464
-Gül	u	2452
-Deniz	u	2410
-Yavuz	u	2367
-Ateş	u	2316
-Aktaş	u	2312
-Güler	u	2311
-ünal	u	2289
-Yalçın	u	2276
-Bulut	u	2272
-Turan	u	2252
-şen	u	2155
-Bozkurt	u	2120
-Keskin	u	2113
-özer	u	2084
-Yüksel	u	2016
-Tekin	u	2010
-Avcı	u	2000
-Aksoy	u	1971
-Coşkun	u	1958
-Sarı	u	1951
-Kaplan	u	1867
-Uzun	u	1837
-Köse	u	1825
-Taş	u	1790
-Yiğit	u	1790
-Genç	u	1773
-Karaca	u	1755
-Erdem	u	1744
-Işık	u	1690
-Akın	u	1621
-Ceylan	u	1589
-Sönmez	u	1556
-Güngör	u	1521
-çiçek	u	1496
-Yaman	u	1489
-Karataş	u	1470
-Eren	u	1468
-Kahraman	u	1451
-Yaşar	u	1445
-öz	u	1442
-Güven	u	1437
-Kartal	u	1426
-çınar	u	1422
-Duman	u	1397
-Uçar	u	1389
-Bayram	u	1368
-Demirel	u	1338
-Mutlu	u	1336
-çakmak	u	1325
-Aksu	u	1315
-Gümüş	u	1291
-Uysal	u	1291
-çiftçi	u	1259
-Mert	u	1258
-Küçük	u	1255
-Güzel	u	1230
-çolak	u	1228
-çetinkaya	u	1218
-Gündüz	u	1215
-çoban	u	1201
-Altun	u	1198
-Kılınç	u	1166
-Tunç	u	1165
-Yazıcı	u	1144
-Sağlam	u	1141
-Karaman	u	1132
-Gök	u	1107
-Erol	u	1088
-özen	u	1088
-Sert	u	1086
-Eroğlu	u	1084
-Yücel	u	1084
-Ak	u	1077
-Balcı	u	1075
-Aydemir	u	1059
-Toprak	u	1049
-Karakaya	u	1025
-çevik	u	1013
-Sezer	u	1008
-Durmuş	u	1006
-Cengiz	u	1005
-Akbulut	u	996
-Aydoğan	u	996
-Akgün	u	991
-Akkaya	u	977
-Dönmez	u	972
-Bayraktar	u	969
-Keleş	u	968
-Duran	u	962
-Ince	u	959
-çelebi	u	954
-özçelik	u	954
-Albayrak	u	946
-Akar	u	938
-şentürk	u	936
-Bilgin	u	935
-Uslu	u	935
-Zengin	u	931
-Akgül	u	930
-Karabulut	u	912
-Durmaz	u	911
-Oğuz	u	903
-Demirtaş	u	902
-ünlü	u	899
-Karakuş	u	896
-Gündoğdu	u	895
-Baş	u	891
-Efe	u	885
-Gürbüz	u	885
-Akyol	u	870
-Vural	u	869
-Gökçe	u	868
-Bal	u	857
-Akbaş	u	855
-Bektaş	u	854
-Karakaş	u	845
-Karagöz	u	841
-Ergün	u	839
-Akçay	u	836
-Bayrak	u	832
-Karadağ	u	831
-özmen	u	826
-Taşkın	u	814
-Koca	u	813
-şener	u	813
-özel	u	802
-Dursun	u	800
-Ekinci	u	791
-Fırat	u	791
-Gültekin	u	789
-Inan	u	789
-Ipek	u	775
-Topçu	u	771
-Orhan	u	769
-Topal	u	767
-Sever	u	758
-Aras	u	757
-Tan	u	756
-Ersoy	u	756
-Dağ	u	753
-Ilhan	u	748
-çağlar	u	745
-Turgut	u	742
-Baran	u	738
-Akyüz	u	734
-özbek	u	729
-Karadeniz	u	727
-Karahan	u	725
-Ayaz	u	716
-Günay	u	716
-Emre	u	711
-Alp	u	706
-Sezgin	u	705
-Fidan	u	696
-öner	u	696
-Akdeniz	u	692
-Sarıkaya	u	689
-Esen	u	684
-Ercan	u	679
-Ayhan	u	673
-Akpınar	u	666
-Başaran	u	666
-Kalkan	u	665
-Türkoğlu	u	664
-Ertürk	u	658
-Atalay	u	650
-Kandemir	u	624
-Temel	u	617
-Altın	u	616
-Tuncer	u	611
-Sevinç	u	609
-Erkan	u	607
-Su	u	603
-Akman	u	602
-Savaş	u	596
-Dinçer	u	591
-Varol	u	589
-şengül	u	585
-özgür	u	581
-Açıkgöz	u	577
-Yüce	u	562
-Ulusoy	u	558
-önder	u	555
-çimen	u	554
-özden	u	554
-Arıkan	u	553
-Güçlü	u	549
-Ari	u	546
-Altuntaş	u	545
-Eser	u	544
-Uyar	u	542
-Taşcı	u	540
-Dündar	u	538
-Biçer	u	536
-Ertaş	u	525
-Akdemir	u	524
-Gürsoy	u	524
-önal	u	524
-Yeşil	u	523
-Berk	u	515
-ünsal	u	514
-Yalçınkaya	u	513
-Akay	u	508
-Parlak	u	508
-Köroğlu	u	502
-Seven	u	499
-Koyuncu	u	495
-özkaya	u	493
-Eker	u	491
-Bülbül	u	490
-Akdoğan	u	489
-Akıncı	u	489
-Pehlivan	u	479
-özsoy	u	472
-Bolat	u	470
-Köksal	u	470
-Ayyıldız	u	468
-Uğurlu	u	465
-Demircan	u	464
-Kuş	u	464
-Saraç	u	461
-Ekici	u	453
-Mercan	u	452
-Selçuk	u	452
-üstün	u	448
-Kaan	u	443
-Adigüzel	u	433
-şirin	u	431
-Candan	u	430
-Demirbaş	u	430
-Göktaş	u	430
-Değirmenci	u	426
-Okur	u	423
-Başar	u	421
-Atay	u	419
-Günaydın	u	419
-Aytekin	u	418
-Erden	u	414
-Oral	u	414
-Bilgiç	u	413
-Kuru	u	409
-Burak	u	405
-Güleç	u	403
-Aktürk	u	401
-Mete	u	401
-Sayın	u	398
-Dağlı	u	397
-Baysal	u	389
-Keser	u	388
-Tanrıverdi	u	383
-Baba	u	382
-Eraslan	u	382
-öcal	u	381
-Ocak	u	380
-Alan	u	379
-Peker	u	376
-Oktay	u	375
-Uygun	u	375
-Köseoğlu	u	371
-Gürel	u	365
-Bayar	u	361
-Kocaman	u	360
-Temiz	u	360
-şahan	u	359
-Gülen	u	358
-Atasoy	u	356
-Karaaslan	u	353
-Yağcı	u	350
-Dal	u	349
-Kurtuluş	u	349
-Büyük	u	348
-Bağcı	u	346
-Tatar	u	345
-çalık	u	344
-özdoğan	u	343
-Uyanık	u	343
-Avşar	u	342
-Dede	u	342
-Gençer	u	340
-Akan	u	334
-çift	u	334
-Başkan	u	333
-Demirhan	u	332
-Karaduman	u	330
-Atik	u	329
-Eryılmaz	u	323
-Sakarya	u	320
-Deveci	u	319
-Başak	u	318
-Topaloğlu	u	316
-Arici	u	315
-ünver	u	314
-Arik	u	313
-Karademir	u	310
-Soydan	u	310
-Bahadır	u	309
-çavdar	u	308
-Memiş	u	308
-Tepe	u	307
-Aşık	u	306
-Tatlı	u	305
-Ulu	u	305
-Bilge	u	304
-Dilek	u	302
-Taşkıran	u	302
-Arda	u	300
-Filiz	u	299
-Karakurt	u	298
-Yanık	u	296
-Atak	u	294
-Koçyiğit	u	293
-Tunçel	u	291
-Başer	u	287
-Balaban	u	282
-Cebeci	u	280
-Söylemez	u	279
-Yakar	u	275
-Apaydın	u	274
-çetiner	u	273
-Kan	u	272
-Erdal	u	270
-Tunçay	u	270
-Yurt	u	270
-çankaya	u	268
-özbey	u	268
-Saka	u	268
-Karasu	u	266
-Berber	u	263
-Korkut	u	263
-Ayvaz	u	262
-çay	u	262
-Erbaş	u	262
-Ulutaş	u	261
-Güvenç	u	260
-Kayhan	u	260
-Karaoğlu	u	259
-Koçer	u	259
-özalp	u	259
-Topuz	u	259
-Gökalp	u	258
-Kıran	u	258
-Uygur	u	258
-Barut	u	257
-Düzgün	u	254
-Türkyılmaz	u	254
-Zeybek	u	254
-Tüfekçi	u	251
-Dağdelen	u	249
-Kaynak	u	249
-Canpolat	u	248
-Sağır	u	247
-Serin	u	247
-Balta	u	246
-Ersöz	u	246
-Ural	u	245
-Kocabaş	u	244
-Baltaci	u	243
-Kır	u	242
-Ozan	u	242
-Seçkin	u	242
-Demirkol	u	241
-Hatipoğlu	u	241
-Sümer	u	239
-Dere	u	237
-Ulaş	u	235
-Yardımcı	u	235
-Yakut	u	233
-Kiraz	u	231
-Yörük	u	231
-Ertekin	u	230
-Kanat	u	230
-Seyhan	u	230
-Cömert	u	228
-Demiray	u	226
-Ertan	u	226
-Vatansever	u	226
-Bilici	u	224
-Babacan	u	223
-öztaş	u	221
-Aşan	u	217
-Coşar	u	217
-Pektaş	u	217
-Akyürek	u	216
-Kasap	u	216
-Gülşen	u	215
-Göktürk	u	213
-Cantürk	u	212
-Tanrikulu	u	210
-Sezen	u	208
-üstündağ	u	208
-Aşkın	u	206
-Ekiz	u	206
-Toker	u	206
-Eken	u	205
-Saraçoğlu	u	204
-örnek	u	202
-Atar	u	201
-çobanoğlu	u	201
-Selvi	u	201
-Selim	u	198
-Ardıç	u	197
-Altaş	u	196
-Aytaç	u	196
-Uz	u	196
-Sancar	u	194
-Al	u	193
-Kaba	u	193
-Karacan	u	193
-Alıcı	u	190
-Saygın	u	189
-Adalı	u	188
-Atılgan	u	187
-öncel	u	187
-Kütük	u	186
-Onat	u	185
-Aktan	u	184
-Karadaş	u	184
-Levent	u	184
-Balli	u	183
-Elçi	u	182
-Sözen	u	182
-Alparslan	u	181
-Yasa	u	181
-Bilgi	u	178
-öcalan	u	178
-özkurt	u	177
-Ertem	u	176
-özlü	u	176
-Mavi	u	174
-Onay	u	174
-Taşdelen	u	173
-Kahya	u	172
-çelen	u	171
-Kisa	u	171
-şaşmaz	u	171
-Evren	u	170
-Kazan	u	169
-Kivrak	u	169
-çetintaş	u	168
-Karaağaç	u	168
-Sarigül	u	168
-Güllü	u	166
-Aksakal	u	165
-Karaarslan	u	165
-Kayacan	u	163
-Kıraç	u	163
-Agca	u	162
-Akkaş	u	162
-Dinler	u	162
-Bicakci	u	160
-Ileri	u	160
-Yerlikaya	u	160
-Bozan	u	159
-Saral	u	158
-Sürücü	u	158
-Bayhan	u	157
-Bekar	u	157
-ören	u	157
-Karan	u	156
-Karslı	u	154
-Inanç	u	153
-Geyik	u	152
-Sak	u	152
-Bakar	u	151
-Tutar	u	150
-Kazancı	u	149
-Akkoyun	u	148
-Bayramoğlu	u	148
-Uguz	u	148
-Bakan	u	147
-özaydin	u	147
-Gazi	u	146
-Konuk	u	146
-Bakirci	u	145
-Gökçen	u	145
-Sargın	u	145
-Sertkaya	u	145
-üzer	u	145
-çeçen	u	144
-özhan	u	144
-şahiner	u	144
-Yarar	u	144
-Kardaş	u	143
-Keçeci	u	143
-Yürek	u	142
-Dedeoğlu	u	141
-Doruk	u	141
-ülger	u	141
-Koçoğlu	u	140
-Teker	u	140
-Demiröz	u	139
-Orak	u	139
-Mersin	u	138
-Kalem	u	137
-Yeter	u	137
-Demirer	u	136
-Sevimli	u	136
-Armağan	u	135
-Gürdal	u	135
-Canbaz	u	134
-şahbaz	u	134
-Yenigün	u	134
-Aladağ	u	133
-özdil	u	132
-Tokmak	u	132
-Dikici	u	131
-Akkan	u	129
-Tezel	u	129
-Semerci	u	127
-Taniş	u	127
-Imamoğlu	u	126
-Kula	u	126
-Serbest	u	126
-Cekic	u	125
-Toptaş	u	125
-Aycan	u	124
-Köylü	u	124
-Orman	u	124
-Alkış	u	123
-Coşgun	u	123
-Karabağ	u	122
-Yel	u	122
-Sözer	u	121
-Yaprak	u	121
-çeliker	u	120
-Kol	u	120
-öktem	u	120
-Bozkuş	u	119
-Düz	u	119
-özdamar	u	119
-şencan	u	119
-Topcuoğlu	u	119
-Türe	u	119
-Arkan	u	118
-Baloğlu	u	117
-Bayrakci	u	117
-Kişi	u	117
-Altınsoy	u	116
-Göktepe	u	116
-Nalbant	u	116
-Algan	u	115
-Kiyak	u	115
-Yapar	u	115
-Gökçek	u	114
-Avcu	u	113
-Oflaz	u	113
-özaslan	u	113
-Sivri	u	113
-Gezici	u	112
-Paksoy	u	112
-Izgi	u	111
-Karlı	u	111
-Ezer	u	109
-Kuyucu	u	109
-ülgen	u	109
-Ayik	u	108
-Giray	u	108
-Gürer	u	108
-Sarp	u	108
-Toy	u	108
-Okcu	u	107
-Söyler	u	107
-Atabay	u	106
-Biri	u	106
-Boluk	u	105
-Gider	u	105
-Göksel	u	105
-Kayaoglu	u	105
-Sipahi	u	105
-Kocabiyik	u	104
-Kulaksiz	u	104
-Taşar	u	104
-Gülcan	u	103
-Menteş	u	103
-Kaşikçi	u	102
-Menekşe	u	102
-Atilla	u	101
-Canbolat	u	101
-Erken	u	101
-Karakoyun	u	101
-Onuk	u	101
-çatak	u	100
-özata	u	100
-Akduman	u	99
-çopur	u	99
-Nacar	u	99
-Yalniz	u	99
-Ayas	u	98
-Candemir	u	98
-Dumlu	u	98
-Yenilmez	u	98
-Afşar	u	97
-Batmaz	u	97
-Beyoğlu	u	97
-Camci	u	97
-Ceran	u	97
-Erel	u	97
-Gedikli	u	97
-Gülsoy	u	97
-Tokat	u	97
-Halici	u	96
-Kör	u	96
-Yegin	u	96
-Babayiğit	u	95
-Erdoğmuş	u	95
-Kilicoglu	u	95
-Avcioğlu	u	94
-Aydıner	u	94
-Kızıltepe	u	94
-Nar	u	94
-Kasapoğlu	u	93
-Sökmen	u	93
-Atila	u	92
-Adanır	u	91
-Baz	u	91
-Seyrek	u	91
-Alay	u	90
-Gürpinar	u	90
-öztoprak	u	90
-Türkay	u	90
-Asil	u	89
-Azak	u	89
-Bahçeci	u	89
-Izci	u	89
-Kumral	u	89
-Sağ	u	89
-ünalan	u	89
-Yeşilkaya	u	89
-Aksel	u	88
-Ilgin	u	88
-Kayaalp	u	88
-Kiriş	u	88
-Köşker	u	88
-Sakalli	u	88
-Tayfun	u	88
-Aykan	u	87
-Bardakci	u	87
-Bozoğlu	u	87
-Kesgin	u	87
-Tarakci	u	87
-üzüm	u	87
-Arslanoğlu	u	86
-Cildir	u	86
-Karalar	u	86
-Kesim	u	86
-Bağ	u	85
-Soyer	u	85
-Ilgün	u	84
-Kızmaz	u	84
-Camur	u	83
-Demirdağ	u	83
-Karaköse	u	83
-Gençtürk	u	82
-Savran	u	82
-Barbaros	u	81
-Kulac	u	81
-Taştekin	u	81
-Tavşan	u	81
-ürün	u	81
-Bereket	u	80
-Cerit	u	80
-Kirbaş	u	80
-Tiraş	u	80
-Hancioglu	u	79
-Pekel	u	79
-Talas	u	79
-Bilal	u	78
-Kızıldağ	u	78
-Cansever	u	77
-Inceoglu	u	77
-Işikli	u	77
-Kerimoğlu	u	77
-Ozek	u	77
-Yamak	u	77
-Duysak	u	76
-Güvercin	u	76
-Badem	u	74
-Gülbahar	u	74
-Kınık	u	74
-Gümüşay	u	73
-Karaalp	u	73
-ökmen	u	73
-Toktaş	u	73
-Mirza	u	73
-Atci	u	72
-Cayli	u	72
-Kilavuz	u	72
-Aköz	u	71
-Asena	u	71
-Koksoy	u	71
-Korucu	u	71
-Alim	u	70
-Develi	u	70
-Erşen	u	70
-Berkay	u	69
-Görkem	u	69
-Bölükbaş	u	68
-Kirli	u	68
-Dilmen	u	67
-şatiroğlu	u	67
-Tayfur	u	67
-Başyiğit	u	66
-Coşkuner	u	66
-Kuşku	u	66
-Yanmaz	u	66
-Ilker	u	65
-Karamanli	u	65
-Olgaç	u	65
-Saricicek	u	65
-Tahtaci	u	65
-Yenidoğan	u	65
-Büyüktaş	u	64
-Yagli	u	64
-Kubat	u	63
-öden	u	63
-Turkdogan	u	63
-Kansu	u	62
-Aktuğ	u	61
-Görmüş	u	61
-Rençber	u	61
-Tozlu	u	61
-ürkmez	u	61
-Beder	u	60
-Pekgöz	u	60
-Talan	u	60
-Tay	u	60
-Bükülmez	u	59
-Ilik	u	59
-Manav	u	59
-Pulat	u	59
-Topak	u	59
-Yanardag	u	59
-Yeniçeri	u	59
-Akaslan	u	58
-Akmeşe	u	58
-Ayranci	u	58
-çelikten	u	58
-Erat	u	58
-Gocen	u	58
-Göncü	u	58
-Olpak	u	58
-Sandal	u	58
-Taşli	u	58
-Evci	u	57
-Karpuz	u	57
-Tezer	u	57
-ünüvar	u	57
-Erge	u	56
-Gözcü	u	56
-Molla	u	56
-Tarkan	u	56
-Bacak	u	55
-Bulur	u	55
-çirakoğlu	u	55
-öter	u	55
-Pirim	u	55
-Türksoy	u	55
-Anik	u	54
-Kayra	u	53
-Orhon	u	53
-Yağan	u	53
-Yeniay	u	53
-Yüzer	u	53
-Akel	u	52
-Başci	u	52
-Cindemir	u	52
-Demirelli	u	52
-Evran	u	52
-Guneysu	u	52
-Söker	u	52
-Urfali	u	52
-Yüzbaşıoğlu	u	52
-Bak	u	51
-çeviker	u	51
-Kala	u	51
-Yurtlu	u	51
-Abacioglu	u	50
-Araci	u	50
-Canik	u	50
-Hassan	u	50
-Ilkay	u	50
-Nasiroglu	u	50
-şeyhanli	u	50
-Akiş	u	49
-Binboga	u	49
-Duger	u	49
-Erzurum	u	49
-Karakan	u	49
-Sertel	u	49
-Boduroğlu	u	48
-Elik	u	48
-Kesik	u	48
-Tüten	u	48
-Ahiskali	u	47
-Celiloglu	u	47
-Ellialti	u	47
-Kadak	u	47
-Kamaci	u	47
-Akcali	u	46
-Akşahin	u	46
-Albay	u	46
-Arga	u	46
-Başman	u	46
-çete	u	46
-Müftüoğlu	u	46
-Yeral	u	46
-Akbudak	u	45
-Gencdal	u	45
-Karadavut	u	45
-Saçli	u	45
-Ucer	u	45
-Büyükcam	u	44
-Siga	u	44
-Tutaş	u	44
-Alimli	u	43
-Daglioglu	u	43
-Dirican	u	43
-Erkuran	u	43
-Kireççi	u	43
-Mutluer	u	43
-Nizam	u	43
-şeliman	u	43
-Süner	u	43
-Susam	u	43
-Aksöz	u	42
-Büber	u	42
-Cepni	u	42
-Erginel	u	42
-Kadi	u	42
-Kocarslan	u	42
-Tombul	u	42
-Tuğcugil	u	42
-Karakulak	u	41
-Kayabaş	u	41
-özcanli	u	41
-şerbetçi	u	41
-Bugrul	u	40
-Düzce	u	40
-Eryavuz	u	40
-Kanyilmaz	u	40
-Kayayurt	u	40
-Merhametsiz	u	40
-Tülüce	u	40
-Yadigaroglu	u	40
-Yıldızoğlu	u	40
-Acarbulut	u	39
-Aluçlu	u	39
-Dilli	u	39
-Okudan	u	39
-Pişirgen	u	39
-Tarlan	u	39
-Yarbil	u	39
-Yeşilova	u	39
-Canacankatan	u	38
-Karakılıç	u	38
-Karameşe	u	38
-Kazbek	u	38
-Yaşan	u	38
-Akova	u	37
-Alpinar	u	37
-Bacaksiz	u	37
-Cipe	u	37
-Gülşan	u	37
-Havas	u	37
-şair	u	37
-Topkara	u	37
-Aslaner	u	36
-Baymak	u	36
-Dil	u	36
-Duyan	u	36
-Gözkaya	u	36
-Karakum	u	36
-Kilaç	u	36
-Memetoglu	u	36
-Suvari	u	36
-Akkoyunlu	u	35
-Aldinç	u	35
-Batçik	u	35
-Duruk	u	35
-Hepkaya	u	35
-Kabacaoglu	u	35
-Karatoprak	u	35
-Khalil	u	35
-Kurul	u	35
-Kütükcü	u	35
-Onan	u	35
-Tulpar	u	35
-Asoğlu	u	34
-Aydos	u	34
-Bekler	u	34
-çöl	u	34
-Engiz	u	34
-Gerilmez	u	34
-Karpuzoglu	u	34
-Kiziltoprak	u	34
-ördek	u	34
-Sulhan	u	34
-Sürüm	u	34
-Uluoz	u	34
-Albaş	u	33
-Alkaç	u	33
-Bozarslan	u	33
-Bozoglan	u	33
-Ertürkler	u	33
-Kozanoğlu	u	33
-Küfeciler	u	33
-Saf	u	33
-Secir	u	33
-Suluk	u	33
-Tayyar	u	33
-Tekir	u	33
-Yücetürk	u	33
-Abseyi	u	32
-Amirova Uçan	u	32
-Aslanalp	u	32
-Belgemen	u	32
-Demirtürk	u	32
-Erdağ	u	32
-Halhalli	u	32
-Iris	u	32
-Isen	u	32
-Istek	u	32
-Karçin	u	32
-Orta	u	32
-Ozudogru	u	32
-Alkurt Kayikçi	u	31
-Aslankara	u	31
-Bayraktaroğlu	u	31
-çağil	u	31
-Elverdi	u	31
-Eyüp	u	31
-Kolsuz	u	31
-Murt	u	31
-Sadic	u	31
-Yanni	u	31
-Yavaşi	u	31
-Yumak	u	31
-Ayman	u	30
-Barcak	u	30
-çalişkantürk	u	30
-Canatan	u	30
-Citil	u	30
-Evik	u	30
-Gazeteci Tekin	u	30
-Hicyilmaz	u	30
-Kapar	u	30
-Nart	u	30
-Olmaz	u	30
-özekli Misirlioğlu	u	30
-Uruc	u	30
-Babuş	u	29
-Bağcik	u	29
-Başdaş	u	29
-Bican	u	29
-Kendirli	u	29
-Kocakaya Altundal	u	29
-Tantekin	u	29
-Yalinkilic	u	29
-Yorganci	u	29
-Yurdakök	u	29
-Bahçebaşi	u	28
-Baygeldi	u	28
-Baysoy	u	28
-Cavli	u	28
-Destegül	u	28
-Halis	u	28
-Iplikçi	u	28
-Kocar	u	28
-Koycu	u	28
-Mendeş	u	28
-özçay	u	28
-öziş	u	28
-Sertoglu	u	28
-Soykamer	u	28
-Uluba	u	28
-Yenin	u	28
-Aktemur	u	27
-Atbaş	u	27
-Cilesiz	u	27
-Düzel	u	27
-Esmeray	u	27
-Gayretli Aydin	u	27
-Gençpinar	u	27
-Göksoy	u	27
-Güngörmez	u	27
-Ilgen	u	27
-öğütmen Koç	u	27
-Onde	u	27
-Ozkanli	u	27
-Sağdik	u	27
-Bukum	u	26
-Buluc	u	26
-Coker	u	26
-Ergintürk Acar	u	26
-Karkin	u	26
-Kutlar	u	26
-Nurçin	u	26
-Sonay	u	26
-Sul	u	26
-Turaç	u	26
-Turmuş	u	26
-Zaim	u	26
-Ararat	u	25
-Azar	u	25
-Bakay	u	25
-Bayam	u	25
-Camgöz	u	25
-Eldem	u	25
-Ilbay	u	25
-Kirlangic	u	25
-Kulak Gedik	u	25
-Kuserli	u	25
-özgüner	u	25
-Sekin	u	25
-Tolu	u	25
-Uzen	u	25
-Almacioğlu	u	24
-Altunöz	u	24
-Bagli	u	24
-Bolac	u	24
-Gözaçan	u	24
-Kapcak	u	24
-Kuday	u	24
-Kutluyurdu	u	24
-Nuhveren	u	24
-Sakallioglu	u	24
-Tohumoğlu	u	24
-Aksac	u	23
-Artuc	u	23
-Bertan	u	23
-Dam	u	23
-Demirgan	u	23
-Durman	u	23
-Elçiçek	u	23
-Emlakçioğlu	u	23
-Genel	u	23
-Gölemez	u	23
-Kircali	u	23
-Toyran	u	23
-Yeşildağer	u	23
-Yonet	u	23
-Celtemen	u	22
-Eşme	u	22
-Haşimoğlu	u	22
-Hüseyinoğlu	u	22
-Işgören	u	22
-Kirişci	u	22
-önvermez	u	22
-şanlikan	u	22
-Sayiner	u	22
-şirzai	u	22
-Tonge	u	22
-Utlu	u	22
-Bozkurter	u	21
-Budunoğlu	u	21
-çetinkor	u	21
-Düzkalir	u	21
-Giniş	u	21
-Kizmazoğlu	u	21
-Kopan	u	21
-Malçok	u	21
-Metineren	u	21
-Muezzinoglu	u	21
-Tenekeci	u	21
-Alpayci	u	20
-Aykol	u	20
-Baklaci	u	20
-çetemen	u	20
-Hodjaoglu	u	20
-Içbay	u	20
-Konuralp	u	20
-Lağarli	u	20
-özateş	u	20
-Teoman	u	20
-Cimbek	u	19
-Dönertaş	u	19
-Fakioğlu	u	19
-Gerger	u	19
-Olker	u	19
-Tilbe	u	19
-Turanoğlu	u	19
-Uykur	u	19
-Boyuk	u	18
-Corut	u	18
-Seğmen	u	18
-Temli	u	18
-üçgül	u	18
-Yenidunya	u	18
-Ibişoğlu	u	17
-Kayihan	u	17
-Mart	u	17
-Okulu	u	17
-Omay	u	17
-şenöz	u	17
-Tekinsoy	u	17
-Ten	u	17
-Usul	u	17
-Yakişan	u	17
-Yurtdaş	u	17
-Aksun	u	16
-Azrak	u	16
-Demirkapı	u	16
-Dokmeci	u	16
-Emlek	u	16
-Gümüşçü	u	16
-Karaismailoglu	u	16
-Kemik	u	16
-Nurlu	u	16
-Olcar	u	16
-Peynirci	u	16
-şanlier	u	16
-Sansarci	u	16
-Savga	u	16
-Sevingil	u	16
-Sonmezer	u	16
-Bolkan	u	15
-Budun	u	15
-Cinpolat	u	15
-Divarci	u	15
-Gode	u	15
-Kankiliç	u	15
-Korkmazoğlu	u	15
-Köylüoğlu	u	15
-Kutan	u	15
-Nacaroglu	u	15
-Sevuk	u	15
-Toper	u	15
-Alişik	u	14
-Başyurt	u	14
-Binnetoğlu	u	14
-çangal	u	14
-Duyu	u	14
-Emet	u	14
-Güleşen	u	14
-Hidiroğlu	u	14
-Karcioğlu	u	14
-Kucukyildiz	u	14
-Kuralay	u	14
-Kutukoglu	u	14
-Moran	u	14
-Sagcan	u	14
-şarlak	u	14
-Sultanoğlu	u	14
-Tegin	u	14
-çevirgen	u	13
-çinkir	u	13
-Gökten	u	13
-Gunebakan	u	13
-Karakoyunlu	u	13
-Karamahmutoğlu	u	13
-Kisaoglu	u	13
-Mumcuoglu	u	13
-Oğuzsoy	u	13
-Piri	u	13
-Sarayli	u	13
-Tokatlioğlu	u	13
-Yildirimcakar	u	13
-Abat	u	12
-Atceken	u	12
-Ayduğan	u	12
-Bogan	u	12
-Gerdan	u	12
-Gökgül	u	12
-Melekoğlu	u	12
-Oflazoglu	u	12
-Soytaş	u	12
-Alabalik	u	11
-Arifoğlu	u	11
-Arikboğa	u	11
-Arpat	u	11
-Azap	u	11
-Bürkük	u	11
-Karapiçak	u	11
-Para	u	11
-Temurtaş	u	11
-Tüfenk	u	11
-Varici	u	11
-Akansel	u	10
-Ergöz	u	10
-Issi	u	10
-Kacira	u	10
-Katran	u	10
-Kaylan	u	10
-Kirhan	u	10
-Mertol	u	10
-Postalli	u	10
-Saatcioglu	u	10
-Sabaz	u	10
-Tanin	u	10
-Tekiş	u	10
-Uzunca	u	10
-Akyilmaz	u	9
-Avseren	u	9
-Barça	u	9
-Barişan	u	9
-Görünmez	u	9
-Gürakan	u	9
-Hüseyni	u	9
-Imali	u	9
-Kitay	u	9
-Pekdoğan	u	9
-Servet	u	9
-Tacir	u	9
-Yaşit	u	9
-Alaybeyoglu	u	8
-Alboğa	u	8
-Burulday	u	8
-Doğangüzel	u	8
-Eskimez	u	8
-Kumbul	u	8
-Ozyoruk	u	8
-Suzan	u	8
-Tazeoğlu	u	8
-Tokar	u	8
-Atmiş	u	7
-Balsak	u	7
-Dayangaç	u	7
-Elbuken	u	7
-Evmez	u	7
-Gencan	u	7
-Genez	u	7
-Gördük	u	7
-Günbey	u	7
-Heybet	u	7
-Hoke	u	7
-Kayki	u	7
-örenç	u	7
-özkiriş	u	7
-Sariekiz	u	7
-Ufacik	u	7
-Yetiz	u	7
-Yükselmiş	u	7
-Aykuş	u	6
-Başkak	u	6
-çiçekbilek	u	6
-Güveren	u	6
-Hamdemirci	u	6
-Hiçdurmaz	u	6
-Kahreman	u	6
-Karaoglanoglu	u	6
-Koluş	u	6
-Merden	u	6
-özüak	u	6
-Selvan	u	6
-Somay	u	6
-Tola	u	6
-Uslubaş	u	6
-Uslusoy	u	6
-Yeşilfidan	u	6
-Yilanli	u	6
-Akçayir	u	5
-Alben	u	5
-Buyukkal	u	5
-Caf	u	5
-çatuk	u	5
-çerik	u	5
-Elgörmüş	u	5
-Eşkazan	u	5
-Gedük	u	5
-Gunyel	u	5
-Hoşer	u	5
-Iştar	u	5
-Kacer	u	5
-Karadurak	u	5
-Nozoğlu	u	5
-Olgen	u	5
-Paköz	u	5
-Soluk	u	5
-Suluova	u	5
-Sungar	u	5
-üreyen	u	5
-Uzuncan	u	5
-Yetkinşekerci	u	5
-Asig	u	4
-Baglars	u	4
-Balal	u	4
-Başargan	u	4
-Baytan	u	4
-Bocu	u	4
-Buyukdogan	u	4
-Cantay	u	4
-çinarlik	u	4
-Daylak	u	4
-Gelegen	u	4
-Kabakuş	u	4
-Kalyenci	u	4
-Kanneci	u	4
-Kaykisiz	u	4
-Kocayiğit	u	4
-Küçüközkan	u	4
-Kunak	u	4
-Saldiray	u	4
-Saltürk	u	4
-Sil	u	4
-Sobay	u	4
-Suman	u	4
-Toşur	u	4
-Ungur	u	4
-Yancar	u	4
-Yayikçi	u	4
-Ahçi	u	3
-Argon	u	3
-Babadaği	u	3
-Borta	u	3
-çomut	u	3
-Eylen	u	3
-Fişekci	u	3
-Gürdemir	u	3
-Inanmaz	u	3
-Kacemer	u	3
-Kalipci	u	3
-Kaplankiran	u	3
-Kavukoglu	u	3
-Keşkek	u	3
-Kinalioğlu	u	3
-Kindir	u	3
-Kuşakçi	u	3
-Nasuhbeyoğlu	u	3
-özdenoğlu	u	3
-özsaygili	u	3
-şekerler	u	3
-Seyrekoğlu	u	3
-Sinici	u	3
-Tikici	u	3
-Yabul	u	3
-Zubaroğlu	u	3
+# tr surnames from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=1, cap=10000000).
+Yılmaz	u	14239	jɯlmaz
+Kaya	u	9836	caja
+Demir	u	9075	demiɾ
+Yıldız	u	7593	jɯldɯz
+şahin	u	7537	ʃaːhin
+Aydın	u	7302	ajdɯn
+Yıldırım	u	7260	jɯldɯɾɯm
+öztürk	u	6976	øztyɾc
+çelik	u	6814	tʃelic
+özdemir	u	5884	øzdemiɾ
+Arslan	u	5448	aɾslan
+Can	u	5384	d͡ʒan
+Doğan	u	5223	d̪o̞ɑn̪
+Aslan	u	4557	aslan
+Kılıç	u	4408	kɯɫɯt͡ʃ
+Kara	u	3817	kɑɾɑ
+çetin	u	3516	t͡ʃetin
+Kurt	u	3155	kuɾt
+Koç	u	3122	kot͡ʃ
+özkan	u	2832	øzcan
+Polat	u	2750	poɫat
+çakır	u	2724	t͡ʃakɯɾ
+Korkmaz	u	2721	coɾcmaz
+Erdoğan	u	2719	eɾdo‿an
+özcan	u	2635	øzd͡ʒan
+Acar	u	2575	ad͡ʒaɾ
+şimşek	u	2552	ʃimʃec
+Güneş	u	2464	ɡyneʃ
+Gül	u	2452	ɟyɫ
+Deniz	u	2410	deniz
+Yavuz	u	2367	jɑvuz
+Ateş	u	2316	ɑtɛʃ
+Aktaş	u	2312	aktɑʃ
+Güler	u	2311	ɡyɫeɾ
+ünal	u	2289	ʃynal
+Yalçın	u	2276	jalt͡ʃɯn
+Bulut	u	2272	bulut
+Turan	u	2252	tuɾan
+şen	u	2155	ʃen
+Bozkurt	u	2120	bozkuɾt
+Keskin	u	2113	kescin
+özer	u	2084	øzeɾ
+Yüksel	u	2016	jycseɫ
+Tekin	u	2010	tekin
+Avcı	u	2000	ɑvd͡ʒɯ
+Aksoy	u	1971	acsoj
+Coşkun	u	1958	d͡ʒoʃkun
+Sarı	u	1951	saɾɯ
+Kaplan	u	1867	kɑplɑn
+Uzun	u	1837	uzun
+Köse	u	1825	cøse
+Taş	u	1790	dɑʃ
+Yiğit	u	1790	ji‿it
+Genç	u	1773	ɡent͡ʃ
+Karaca	u	1755	kaɾad͡ʒa
+Erdem	u	1744	erdem
+Işık	u	1690	ɯʃɯc
+Akın	u	1621	akɯn
+Ceylan	u	1589	d͡ʒejlan
+Sönmez	u	1556	sønmez
+Güngör	u	1521	ɡynɡøɾ
+çiçek	u	1496	ʧɪʧɛc
+Yaman	u	1489	jaman
+Karataş	u	1470	kɑɾɑtaʃ
+Eren	u	1468	eɾen
+Kahraman	u	1451	kɑhɾɑmɑn
+Yaşar	u	1445	jaʃaɾ
+öz	u	1442	øz
+Güven	u	1437	ɡyven
+Kartal	u	1426	caɾtal
+çınar	u	1422	t͡ʃɯnaɾ
+Duman	u	1397	duman
+Uçar	u	1389	ʊtʃɑɾ
+Bayram	u	1368	bajɾam
+Demirel	u	1338	demiɾel
+Mutlu	u	1336	mutlu
+çakmak	u	1325	t͡ʃacmac
+Aksu	u	1315	aksu
+Gümüş	u	1291	ɡymyʃ
+Uysal	u	1291	ujsal
+çiftçi	u	1259	t͡ʃiftt͡ʃi
+Mert	u	1258	meɾt
+Küçük	u	1255	kyt͡ʃyc
+Güzel	u	1230	ɟyzɛl
+çolak	u	1228	t͡ʃolac
+çetinkaya	u	1218	t͡ʃetincaja
+Gündüz	u	1215	ɡyndyz
+çoban	u	1201	t͡ʃoban
+Altun	u	1198	altu
+Kılınç	u	1166	kɯɫɯnt͡ʃ
+Tunç	u	1165	tunt͡ʃ
+Yazıcı	u	1144	jɑʐɯd͡ʒɯ
+Sağlam	u	1141	saːlam
+Karaman	u	1132	kɑɾɑmɑn
+Gök	u	1107	ɟøc
+Erol	u	1088	eɾol
+özen	u	1088	øzen
+Sert	u	1086	seɾt
+Eroğlu	u	1084	eɾo‿lu
+Yücel	u	1084	jyd͡ʒel
+Ak	u	1077	ɑk
+Balcı	u	1075	bald͡ʒɯ
+Aydemir	u	1059	ajdemiɾ
+Toprak	u	1049	topɾac
+Karakaya	u	1025	kaɾakaja
+çevik	u	1013	t͡ʃevic
+Sezer	u	1008	sezeɾ
+Durmuş	u	1006	duɾmuʃ
+Cengiz	u	1005	d͡ʒengiz
+Akbulut	u	996	acbulut
+Aydoğan	u	996	ajdo‿an
+Akgün	u	991	acɡyn
+Akkaya	u	977	accaja
+Dönmez	u	972	dønmez
+Bayraktar	u	969	bɑjrɑktaɾ
+Keleş	u	968	keɫeʃ
+Duran	u	962	duɾan
+Ince	u	959	ind͡ʒe
+çelebi	u	954	t͡ʃeʃeɫebi
+özçelik	u	954	øztʃelic
+Albayrak	u	946	albajɾac
+Akar	u	938	acaɾ
+şentürk	u	936	ʃentyɾc
+Bilgin	u	935	bilgin
+Uslu	u	935	uslu
+Zengin	u	931	zeŋɟin
+Akgül	u	930	acɡyɫ
+Karabulut	u	912	kɑɾɑbulut
+Durmaz	u	911	duɾmɑz
+Oğuz	u	903	o‿uz
+Demirtaş	u	902	demiɾtaʃ
+ünlü	u	899	ynly
+Karakuş	u	896	kaɾakuʃ
+Gündoğdu	u	895	ɡyndo‿du
+Baş	u	891	bɑʃ
+Efe	u	885	efe
+Gürbüz	u	885	ɟyɾbyz
+Akyol	u	870	ɑkjol
+Vural	u	869	vuɾaɫ
+Gökçe	u	868	gøct͡ʃe
+Bal	u	857	bäɫ̪
+Akbaş	u	855	acbaʃ
+Bektaş	u	854	bectaʃ
+Karakaş	u	845	kaɾakaʃ
+Karagöz	u	841	kɑɾɑɡøz
+Ergün	u	839	eɾɡyn
+Akçay	u	836	act͡ʃaj
+Bayrak	u	832	bɑjrɑk
+Karadağ	u	831	karadɑː
+özmen	u	826	øzmen
+Taşkın	u	814	tɑʃcɯn
+Koca	u	813	cod͡ʒa
+şener	u	813	ʃeneɾ
+özel	u	802	øzel
+Dursun	u	800	duɾsun
+Ekinci	u	791	ecind͡ʒi
+Fırat	u	791	fɯɾat
+Gültekin	u	789	gyltekin
+Inan	u	789	inan
+Ipek	u	775	ipec
+Topçu	u	771	toptʃu
+Orhan	u	769	oɾhan
+Topal	u	767	topaɫ
+Sever	u	758	seveɾ
+Aras	u	757	aɾas
+Tan	u	756	tan
+Ersoy	u	756	eɾsoj
+Dağ	u	753	da‿
+Ilhan	u	748	ilhan
+çağlar	u	745	t͡ʃa‿laɾ
+Turgut	u	742	tuɾɡut
+Baran	u	738	baɾan
+Akyüz	u	734	acjyz
+özbek	u	729	øzbec
+Karadeniz	u	727	caɾadeniz
+Karahan	u	725	kɑɾɑhan
+Ayaz	u	716	ɑjɑz
+Günay	u	716	gynaj
+Emre	u	711	emɾe
+Alp	u	706	alp
+Sezgin	u	705	sezgin
+Fidan	u	696	fidan
+öner	u	696	øneɾ
+Akdeniz	u	692	acdeniz
+Sarıkaya	u	689	saɾɯkaja
+Esen	u	684	esen
+Ercan	u	679	eɾd͡ʒan
+Ayhan	u	673	ajhan
+Akpınar	u	666	acpɯnaɾ
+Başaran	u	666	baʃaɾan
+Kalkan	u	665	calcan
+Türkoğlu	u	664	tyɾko‿lu
+Ertürk	u	658	æɾtyɾc
+Atalay	u	650	atalaj
+Kandemir	u	624	candemiɾ
+Temel	u	617	temeɫ
+Altın	u	616	altɯn
+Tuncer	u	611	tund͡ʒeɾ
+Sevinç	u	609	sevint͡ʃ
+Erkan	u	607	eɾcan
+Su	u	603	su
+Akman	u	602	akman
+Savaş	u	596	savaʃ
+Dinçer	u	591	dintʃæɾ
+Varol	u	589	vaɾoɫ
+şengül	u	585	ʃenɡyɫ
+özgür	u	581	øzɟyɾ
+Açıkgöz	u	577	atʃɯkɟœz
+Yüce	u	562	jyd͡ʒe
+Ulusoy	u	558	ulusoj
+önder	u	555	øndeɾ
+çimen	u	554	t͡ʃimen
+özden	u	554	øzden
+Arıkan	u	553	aɾɯkan
+Güçlü	u	549	ɡyt͡ʃly
+Ari	u	546	aɾi
+Altuntaş	u	545	altutɑʃ
+Eser	u	544	esæɾ
+Uyar	u	542	ujaɾ
+Taşcı	u	540	tɑʃd͡ʒɯ
+Dündar	u	538	dyndaɾ
+Biçer	u	536	bitʃæɾ
+Ertaş	u	525	eɾtɑʃ
+Akdemir	u	524	acdemiɾ
+Gürsoy	u	524	ɟyɾsoj
+önal	u	524	ønal
+Yeşil	u	523	jeʃil
+Berk	u	515	beɾc
+ünsal	u	514	ynsal
+Yalçınkaya	u	513	jalt͡ʃɯncaja
+Akay	u	508	akaj
+Parlak	u	508	paɾɫak
+Köroğlu	u	502	cøɾoːɫu
+Seven	u	499	seven
+Koyuncu	u	495	kojund͡ʒu
+özkaya	u	493	øzcaja
+Eker	u	491	ɛcɛɾ
+Bülbül	u	490	bylbyl
+Akdoğan	u	489	acdo‿an
+Akıncı	u	489	acɯnd͡ʒɯ
+Pehlivan	u	479	pehlivan
+özsoy	u	472	øzsoj
+Bolat	u	470	boɫat
+Köksal	u	470	cœcsal
+Ayyıldız	u	468	ajjɯldɯz
+Uğurlu	u	465	u‿uɾlu
+Demircan	u	464	demiɾd͡ʒan
+Kuş	u	464	kuʃ
+Saraç	u	461	saɾat͡ʃ
+Ekici	u	453	ecid͡ʒi
+Mercan	u	452	meɾd͡ʒan
+Selçuk	u	452	seɫt͡ʃuc
+üstün	u	448	ystyn
+Kaan	u	443	kaan
+Adigüzel	u	433	aːdiːgyzel
+şirin	u	431	ʃiɾin
+Candan	u	430	d͡ʒandan
+Demirbaş	u	430	demiɾbɑʃ
+Göktaş	u	430	gøctaʃ
+Değirmenci	u	426	de‿iɾmend͡ʒi
+Okur	u	423	ocuɾ
+Başar	u	421	baʃaɾ
+Atay	u	419	ataj
+Günaydın	u	419	gynajdɯn
+Aytekin	u	418	ajtekin
+Erden	u	414	eɾden
+Oral	u	414	oɾaɫ
+Bilgiç	u	413	bilgit͡ʃ
+Kuru	u	409	kuɾu
+Burak	u	405	buɾɑk
+Güleç	u	403	gylēmt͡ʃ
+Aktürk	u	401	actyɾc
+Mete	u	401	mete
+Sayın	u	398	sajɯn
+Dağlı	u	397	da‿lɯ
+Baysal	u	389	bajsal
+Keser	u	388	ceseɾ
+Tanrıverdi	u	383	tɑnɾɯveɾdi
+Baba	u	382	baba
+Eraslan	u	382	eɾaslan
+öcal	u	381	ød͡ʒal
+Ocak	u	380	od͡ʒac
+Alan	u	379	alan
+Peker	u	376	pecæɾ
+Oktay	u	375	oktaj
+Uygun	u	375	ujɡun
+Köseoğlu	u	371	cøseo‿lu
+Gürel	u	365	ɡyɾel
+Bayar	u	361	bajaɾ
+Kocaman	u	360	kod͡ʒaman
+Temiz	u	360	temiz
+şahan	u	359	ʃahan
+Gülen	u	358	ɡylen
+Atasoy	u	356	atasoj
+Karaaslan	u	353	kɑɾɑaslan
+Yağcı	u	350	j‿ad͡ʒɯ
+Dal	u	349	daɫ
+Kurtuluş	u	349	kuɾtuɫuʃ
+Büyük	u	348	byjyc
+Bağcı	u	346	bɑ‿d͡ʒɯ
+Tatar	u	345	tataɾ
+çalık	u	344	t͡ʃalɯc
+özdoğan	u	343	øzdo‿an
+Uyanık	u	343	ujanɯc
+Avşar	u	342	avʃaɾ
+Dede	u	342	dede
+Gençer	u	340	ɡentʃæɾ
+Akan	u	334	akan
+çift	u	334	t͡ʃift
+Başkan	u	333	baʃcan
+Demirhan	u	332	demiɾhan
+Karaduman	u	330	kɑɾɑduman
+Atik	u	329	atic
+Eryılmaz	u	323	eɾjɯlmaz
+Sakarya	u	320	sakaɾja
+Deveci	u	319	deved͡ʒi
+Başak	u	318	baʃac
+Topaloğlu	u	316	topʔaɫo‿lu
+Arici	u	315	aɾid͡ʒi
+ünver	u	314	ynveɾ
+Arik	u	313	aɾic
+Karademir	u	310	caɾademiɾ
+Soydan	u	310	sojdan
+Bahadır	u	309	bahadɯɾ̥
+çavdar	u	308	t͡ʃavdaɾ
+Memiş	u	308	memiʃ
+Tepe	u	307	tepe
+Aşık	u	306	aʃɯc
+Tatlı	u	305	tatlɯ
+Ulu	u	305	ulu
+Bilge	u	304	biɫɡe
+Dilek	u	302	dilec
+Taşkıran	u	302	tɑʃkɯɾan
+Arda	u	300	aɾda
+Filiz	u	299	filiz
+Karakurt	u	298	kaɾakuɾt
+Yanık	u	296	janɯc
+Atak	u	294	atak
+Koçyiğit	u	293	kot͡ʃji‿it
+Tunçel	u	291	tut͡ʃel
+Başer	u	287	baʃeɾ
+Balaban	u	282	balaban
+Cebeci	u	280	dʒebed͡ʒi
+Söylemez	u	279	søjlɛmɛz
+Yakar	u	275	jacaɾ
+Apaydın	u	274	apajdɯn
+çetiner	u	273	t͡ʃetineɾ
+Kan	u	272	can
+Erdal	u	270	eɾdaɫ
+Tunçay	u	270	tut͡ʃaj
+Yurt	u	270	juɾt
+çankaya	u	268	t͡ʃaŋkaja
+özbey	u	268	øzbej
+Saka	u	268	saka
+Karasu	u	266	kɑɾɑsu
+Berber	u	263	beɾbeɾ
+Korkut	u	263	coɾcut
+Ayvaz	u	262	ajvaz
+çay	u	262	t͡ʃaj
+Erbaş	u	262	eɾbaʃ
+Ulutaş	u	261	ulutɑʃ
+Güvenç	u	260	ɡyvent͡ʃ
+Kayhan	u	260	cajhan
+Karaoğlu	u	259	kɑɾɑo‿lu
+Koçer	u	259	kotʃæɾ
+özalp	u	259	øzalp
+Topuz	u	259	topuz
+Gökalp	u	258	ɡøkaɫp
+Kıran	u	258	kɯɾan
+Uygur	u	258	ujɡuɾ
+Barut	u	257	baɾut
+Düzgün	u	254	dyzɡyn
+Türkyılmaz	u	254	tyɾkjɯlmaz
+Zeybek	u	254	zejbɛk̚
+Tüfekçi	u	251	tyfɛct͡ʃi
+Dağdelen	u	249	da‿delɛn
+Kaynak	u	249	kajnac
+Canpolat	u	248	d͡ʒanpolat
+Sağır	u	247	sɑɯɾ
+Serin	u	247	seɾin
+Balta	u	246	baɫta
+Ersöz	u	246	eɾsøz
+Ural	u	245	uɾaɫ
+Kocabaş	u	244	kod͡ʒabaʃ
+Baltaci	u	243	baɫtad͡ʒi
+Kır	u	242	kɯɾ
+Ozan	u	242	ozan
+Seçkin	u	242	set͡ʃcin
+Demirkol	u	241	demiɾcoɫ
+Hatipoğlu	u	241	hatipo‿lu
+Sümer	u	239	symeɾ
+Dere	u	237	deɾe
+Ulaş	u	235	ulaʃ
+Yardımcı	u	235	jɑɾdɯmd͡ʒɯ
+Yakut	u	233	jaːcut
+Kiraz	u	231	ciraːz
+Yörük	u	231	jøɾyc
+Ertekin	u	230	eɾtekin
+Kanat	u	230	kanat
+Seyhan	u	230	sejhan
+Cömert	u	228	dʒø̞mæɾt
+Demiray	u	226	demiɾaj
+Ertan	u	226	eɾtan
+Vatansever	u	226	vatanseveɾ
+Bilici	u	224	bilid͡ʒi
+Babacan	u	223	babad͡ʒan
+öztaş	u	221	øztaʃ
+Aşan	u	217	aʃan
+Coşar	u	217	d͡ʒoʃaɾ
+Pektaş	u	217	pectaʃ
+Akyürek	u	216	acjyɾɛc
+Kasap	u	216	casap
+Gülşen	u	215	gylʃen
+Göktürk	u	213	ɡøctyɾc
+Cantürk	u	212	d͡ʒantyɾc
+Tanrikulu	u	210	tʔaːnɾɾiculu
+Sezen	u	208	sezen
+üstündağ	u	208	ystynda‿
+Aşkın	u	206	aʃcɯn
+Ekiz	u	206	eciz
+Toker	u	206	tocæɾ
+Eken	u	205	eken
+Saraçoğlu	u	204	sallɾatʃo‿lu
+örnek	u	202	øɾnec
+Atar	u	201	ataɾ
+çobanoğlu	u	201	t͡ʃobano‿lu
+Selvi	u	201	seɫvi
+Selim	u	198	selim
+Ardıç	u	197	aɾdɯt͡ʃ
+Altaş	u	196	altɑʃ
+Aytaç	u	196	ajtatʃ
+Uz	u	196	uz
+Sancar	u	194	sand͡ʒaɾ
+Al	u	193	al
+Kaba	u	193	kɑbɑ
+Karacan	u	193	kaɾad͡ʒan
+Alıcı	u	190	ʔaɫɯd͡ʒɯ
+Saygın	u	189	sɑjɡɯn
+Adalı	u	188	adalɯ
+Atılgan	u	187	aːtɯlɡan
+öncel	u	187	ønd͡ʒel
+Kütük	u	186	kytyk
+Onat	u	185	onɑt
+Aktan	u	184	actan
+Karadaş	u	184	kaɾadaʃ
+Levent	u	184	ɫevent
+Balli	u	183	balli
+Elçi	u	182	eɫt͡ʃi
+Sözen	u	182	sø̞zæn
+Alparslan	u	181	ʔaɫpaɾslan
+Yasa	u	181	jasa
+Bilgi	u	178	bilɡi
+öcalan	u	178	ød͡ʒalan
+özkurt	u	177	øzkuɾt
+Ertem	u	176	eɾtem
+özlü	u	176	øzly
+Mavi	u	174	maːvi
+Onay	u	174	onaj
+Taşdelen	u	173	tɑʃdelɛn
+Kahya	u	172	kɑhja
+çelen	u	171	t͡ʃelen
+Kisa	u	171	cisa
+şaşmaz	u	171	ʃaʃmaz
+Evren	u	170	evɾen
+Kazan	u	169	cazan
+Kivrak	u	169	civɾac
+çetintaş	u	168	t͡ʃetintaʃ
+Karaağaç	u	168	kɑɾɑa‿at͡ʃ
+Sarigül	u	168	saɾɾiɡyɫ
+Güllü	u	166	ɡyɫɫy
+Aksakal	u	165	acsakaɫ
+Karaarslan	u	165	kɑɾɑaɾslan
+Kayacan	u	163	cajad͡ʒan
+Kıraç	u	163	kɯɾat͡ʃ
+Agca	u	162	aɡd͡ʒa
+Akkaş	u	162	accaːʃ
+Dinler	u	162	dinleɾ
+Bicakci	u	160	bidʒakd͡ʒi
+Ileri	u	160	iɫeɾi
+Yerlikaya	u	160	jeɾɫicaja
+Bozan	u	159	bozan
+Saral	u	158	saɾaɫ
+Sürücü	u	158	syryd͡ʒy
+Bayhan	u	157	bajhan
+Bekar	u	157	be̞kɑːɾ
+ören	u	157	øɾen
+Karan	u	156	kaɾan
+Karslı	u	154	kɑɾslɯ
+Inanç	u	153	inant͡ʃ
+Geyik	u	152	ɡejic
+Sak	u	152	sak
+Bakar	u	151	bakaɾ
+Tutar	u	150	tutaɾ
+Kazancı	u	149	cazand͡ʒɯ
+Akkoyun	u	148	accojʊn
+Bayramoğlu	u	148	bajɾamo‿lu
+Uguz	u	148	aɡuz
+Bakan	u	147	bakan
+özaydin	u	147	øzajdin
+Gazi	u	146	ɡaːzi
+Konuk	u	146	conuc
+Bakirci	u	145	baciɾd͡ʒi
+Gökçen	u	145	gøct͡ʃen
+Sargın	u	145	saɾɡɯn
+Sertkaya	u	145	seɾtcaja
+üzer	u	145	yzeɾ
+çeçen	u	144	t͡ʃet͡ʃen
+özhan	u	144	øzhan
+şahiner	u	144	ʃaːhineɾ
+Yarar	u	144	jaɾaɾ
+Kardaş	u	143	caɾdaʃ
+Keçeci	u	143	cɛt͡ʃɛd͡ʒi
+Yürek	u	142	jyɾɛc
+Dedeoğlu	u	141	dedeo‿lu
+Doruk	u	141	doɾuk
+ülger	u	141	yɫɡeɾ
+Koçoğlu	u	140	kot͡ʃo‿lu
+Teker	u	140	tekeɾ
+Demiröz	u	139	demiɾøz
+Orak	u	139	oɾac
+Mersin	u	138	mæɾsin
+Kalem	u	137	kalem
+Yeter	u	137	jeteɾ
+Demirer	u	136	demiɾeɾ
+Sevimli	u	136	sevimli
+Armağan	u	135	aɾma‿an
+Gürdal	u	135	ɟyɾdɑl
+Canbaz	u	134	d͡ʒanbaz
+şahbaz	u	134	ʃahbaz
+Yenigün	u	134	jeniɡyn
+Aladağ	u	133	alada‿
+özdil	u	132	øzdiɫ
+Tokmak	u	132	tocmac
+Dikici	u	131	dicid͡ʒi
+Akkan	u	129	accan
+Tezel	u	129	tezɛl
+Semerci	u	127	semeɾd͡ʒiː
+Taniş	u	127	taːniʃ
+Imamoğlu	u	126	imamo‿lu
+Kula	u	126	kuɫɑ
+Serbest	u	126	seɾbest
+Cekic	u	125	dʒecidʒ
+Toptaş	u	125	toptaʃ
+Aycan	u	124	ɑjd͡ʒɑn
+Köylü	u	124	cøjly
+Orman	u	124	oɾman
+Alkış	u	123	alcɯʃ
+Coşgun	u	123	d͡ʒoʃɡun
+Karabağ	u	122	kaɾaba‿
+Yel	u	122	jɛl
+Sözer	u	121	søzeɾ
+Yaprak	u	121	japɾak
+çeliker	u	120	tʃelicæɾ
+Kol	u	120	kol
+öktem	u	120	øctem
+Bozkuş	u	119	bozkuʃ
+Düz	u	119	dyz
+özdamar	u	119	øzdamaɾ
+şencan	u	119	ʃend͡ʒan
+Topcuoğlu	u	119	topd͡ʒuo‿lu
+Türe	u	119	tyɾe
+Arkan	u	118	aɾcan
+Baloğlu	u	117	bäɫ̪o‿lu
+Bayrakci	u	117	bɑjrɑkd͡ʒi
+Kişi	u	117	ciʃi
+Altınsoy	u	116	altɯnsoj
+Göktepe	u	116	gøctepe
+Nalbant	u	116	nalbant
+Algan	u	115	alɡan
+Kiyak	u	115	cijɑc
+Yapar	u	115	japaɾ
+Gökçek	u	114	gøct͡ʃec
+Avcu	u	113	avd͡ʒu
+Oflaz	u	113	oflaz
+özaslan	u	113	øzaslan
+Sivri	u	113	sivɾi
+Gezici	u	112	ɡezid͡ʒi
+Paksoy	u	112	pacsoj
+Izgi	u	111	izɡi
+Karlı	u	111	caɾlɯ
+Ezer	u	109	ezeɾ
+Kuyucu	u	109	kujud͡ʒu
+ülgen	u	109	yɫɡen
+Ayik	u	108	ajic
+Giray	u	108	ɡiɾaj
+Gürer	u	108	ɡyɾeɾ
+Sarp	u	108	saɾp
+Toy	u	108	toj
+Okcu	u	107	ocd͡ʒu
+Söyler	u	107	søjlɛɾ
+Atabay	u	106	ɑt̪ɑbɑj
+Biri	u	106	biɾi
+Boluk	u	105	boɫuk
+Gider	u	105	ɡideɾ
+Göksel	u	105	gøcseɫ
+Kayaoglu	u	105	cajaoɡlu
+Sipahi	u	105	sipaːhi
+Kocabiyik	u	104	kod͡ʒabijiːc
+Kulaksiz	u	104	kuɫɑksiz
+Taşar	u	104	taʃaɾ
+Gülcan	u	103	ɡyɫdʒan
+Menteş	u	103	menteʃ
+Kaşikçi	u	102	kaʃict͡ʃi
+Menekşe	u	102	meʃhnnecʃe
+Atilla	u	101	atilla
+Canbolat	u	101	d͡ʒanbolat
+Erken	u	101	eɾcen
+Karakoyun	u	101	caɾacojun
+Onuk	u	101	onʊc
+çatak	u	100	t͡ʃatac
+özata	u	100	øzata
+Akduman	u	99	acduman
+çopur	u	99	t͡ʃopuɾ
+Nacar	u	99	nad͡ʒaɾ
+Yalniz	u	99	jalniz
+Ayas	u	98	ajas
+Candemir	u	98	d͡ʒandemiɾ
+Dumlu	u	98	dumlu
+Yenilmez	u	98	jenilmez
+Afşar	u	97	afʃaɾ
+Batmaz	u	97	bɑtmɑz
+Beyoğlu	u	97	bejo‿lu
+Camci	u	97	d͡ʒamd͡ʒi
+Ceran	u	97	d͡ʒeɾan
+Erel	u	97	eɾeɫ
+Gedikli	u	97	ɡedicɫi
+Gülsoy	u	97	gylsoj
+Tokat	u	97	tocat
+Halici	u	96	haɫiːd͡ʒi
+Kör	u	96	cøɾ
+Yegin	u	96	jegin
+Babayiğit	u	95	babajiː‿it
+Erdoğmuş	u	95	eɾdo‿muʃ
+Kilicoglu	u	95	cilidʒoɡlu
+Avcioğlu	u	94	avdʒio‿lu
+Aydıner	u	94	ajdɯneɾ
+Kızıltepe	u	94	kɯzɯltepe
+Nar	u	94	naɾ
+Kasapoğlu	u	93	ccɑsapo‿lu
+Sökmen	u	93	søcmen
+Atila	u	92	atila
+Adanır	u	91	adanɯɾ
+Baz	u	91	baz
+Seyrek	u	91	sejɾec
+Alay	u	90	alaj
+Gürpinar	u	90	ɟyɾpʰɪnaɾ
+öztoprak	u	90	øztopɾac
+Türkay	u	90	tyɾkaj
+Asil	u	89	asiɫ
+Azak	u	89	azaːc
+Bahçeci	u	89	baht͡ʃed͡ʒi
+Izci	u	89	izd͡ʒi
+Kumral	u	89	kumɾaɫ
+Sağ	u	89	s̪ɑ̝̂ː
+ünalan	u	89	ynalan
+Yeşilkaya	u	89	jeʃilcaja
+Aksel	u	88	acseɫ
+Ilgin	u	88	ʔiłgin
+Kayaalp	u	88	cajaalp
+Kiriş	u	88	ciɾiʃ
+Köşker	u	88	cøʃkeɾ
+Sakalli	u	88	sakalli
+Tayfun	u	88	tajfun
+Aykan	u	87	ajcan
+Bardakci	u	87	baɾdacd͡ʒi
+Bozoğlu	u	87	bozo‿lu
+Kesgin	u	87	kesgin
+Tarakci	u	87	taɾakd͡ʒi
+üzüm	u	87	yzym
+Arslanoğlu	u	86	aɾslano‿lu
+Cildir	u	86	dʒildiɾ
+Karalar	u	86	kɑɾɑsɯ
+Kesim	u	86	cesim
+Bağ	u	85	bɑ‿
+Soyer	u	85	sojæɾ
+Ilgün	u	84	ʔiłɡyn
+Kızmaz	u	84	kɯzmaz
+Camur	u	83	d͡ʒamuɾ
+Demirdağ	u	83	demiɾda‿
+Karaköse	u	83	kaɾakøse
+Gençtürk	u	82	ɡent͡ʃtyɾc
+Savran	u	82	savɾan
+Barbaros	u	81	bɑɾbɑɾos
+Kulac	u	81	kuɫɑdʒ
+Taştekin	u	81	taʃteciːn
+Tavşan	u	81	tavʃan
+ürün	u	81	yɾyn
+Bereket	u	80	beɾecet
+Cerit	u	80	d͡ʒerit
+Kirbaş	u	80	ciɾbɑʃ
+Tiraş	u	80	tiɾɑʃ
+Hancioglu	u	79	handʒioɡlu
+Pekel	u	79	peceɫ
+Talas	u	79	taɫas
+Bilal	u	78	biɫaɫ
+Kızıldağ	u	78	kɯzɯlda‿
+Cansever	u	77	d͡ʒanseveɾ
+Inceoglu	u	77	indʒeoɡlu
+Işikli	u	77	iʃicɫi
+Kerimoğlu	u	77	ceɾio‿lu
+Ozek	u	77	ozec
+Yamak	u	77	jamac
+Duysak	u	76	dujsak
+Güvercin	u	76	ɟyvɛɾdʒin
+Badem	u	74	baːdem
+Gülbahar	u	74	gylbahar
+Kınık	u	74	cɯnɯc
+Gümüşay	u	73	ɡymyʃaj
+Karaalp	u	73	kɑɾɑalp
+ökmen	u	73	œcmen
+Toktaş	u	73	toctaʃ
+Mirza	u	73	miɾza
+Atci	u	72	atd͡ʒi
+Cayli	u	72	d͡ʒajli
+Kilavuz	u	72	cilavuz
+Aköz	u	71	acøz
+Asena	u	71	asena
+Koksoy	u	71	kocsoj
+Korucu	u	71	koɾud͡ʒu
+Alim	u	70	alim
+Develi	u	70	develi
+Erşen	u	70	eɾʃen
+Berkay	u	69	beɾkaj
+Görkem	u	69	ɡøɾcem
+Bölükbaş	u	68	bøɫycbaʃ
+Kirli	u	68	ciɾli
+Dilmen	u	67	dilmen
+şatiroğlu	u	67	ʃatiɾoːɫu
+Tayfur	u	67	tajfuɾ
+Başyiğit	u	66	baʃji‿it
+Coşkuner	u	66	d͡ʒoʃkuneɾ
+Kuşku	u	66	kuʃku
+Yanmaz	u	66	janmaz
+Ilker	u	65	iɫkeɾ
+Karamanli	u	65	kɑɾɑmɑnɫi
+Olgaç	u	65	olɡat͡ʃ
+Saricicek	u	65	saɾid͡ʒid͡ʒec
+Tahtaci	u	65	tahtad͡ʒi
+Yenidoğan	u	65	jenido‿an
+Büyüktaş	u	64	byjyctaʃ
+Yagli	u	64	jaɡɫɪ
+Kubat	u	63	kubat
+öden	u	63	øden
+Turkdogan	u	63	tuɾcdoɡan
+Kansu	u	62	cansu
+Aktuğ	u	61	aktu‿
+Görmüş	u	61	ɡøɾmyʃ
+Rençber	u	61	ɾent͡ʃbeɾ
+Tozlu	u	61	tuzlu
+ürkmez	u	61	yɾcmez
+Beder	u	60	bedeɾ
+Pekgöz	u	60	pekɡøz
+Talan	u	60	taɫan
+Tay	u	60	taj
+Bükülmez	u	59	bycylmez
+Ilik	u	59	iːlic
+Manav	u	59	manav
+Pulat	u	59	puɫat
+Topak	u	59	topac
+Yanardag	u	59	jɑnɑɾdɑːɡ
+Yeniçeri	u	59	jenit͡ʃeɾi
+Akaslan	u	58	akaslan
+Akmeşe	u	58	akmeʃe
+Ayranci	u	58	ajɾand͡ʒi
+çelikten	u	58	t͡ʃɛlicten
+Erat	u	58	eɾat
+Gocen	u	58	ɡod͡ʒen
+Göncü	u	58	ɡøndʒy
+Olpak	u	58	olpac
+Sandal	u	58	sandal
+Taşli	u	58	taʃli
+Evci	u	57	evd͡ʒi
+Karpuz	u	57	caɾpuz
+Tezer	u	57	tezeɾ
+ünüvar	u	57	ynyvaɾ
+Erge	u	56	æɾɟe
+Gözcü	u	56	ɡøzd͡ʒy
+Molla	u	56	molla
+Tarkan	u	56	taɾcɑn
+Bacak	u	55	badʒak
+Bulur	u	55	buluɾ
+çirakoğlu	u	55	tʃiraːco‿lu
+öter	u	55	øteɾ
+Pirim	u	55	piɾim
+Türksoy	u	55	tyɾksoj
+Anik	u	54	anic
+Kayra	u	53	cajɾa
+Orhon	u	53	oɾhon
+Yağan	u	53	ja‿an
+Yeniay	u	53	jeniaj
+Yüzer	u	53	jyzeɾ
+Akel	u	52	aceɫ
+Başci	u	52	baʃd͡ʒi
+Cindemir	u	52	d͡ʒindemiɾ
+Demirelli	u	52	demiɾelli
+Evran	u	52	evɾan
+Guneysu	u	52	ɡunejsu
+Söker	u	52	søkeɾ
+Urfali	u	52	uɾfäɫi
+Yüzbaşıoğlu	u	52	jyzbaʃɯo‿lu
+Bak	u	51	bac
+çeviker	u	51	t͡ʃevicæɾ
+Kala	u	51	cala
+Yurtlu	u	51	juɾtlu
+Abacioglu	u	50	abadʒioɡlu
+Araci	u	50	aɾad͡ʒi
+Canik	u	50	d͡ʒanic
+Hassan	u	50	hassaːn
+Ilkay	u	50	ilcaj
+Nasiroglu	u	50	nasiɾoɡlu
+şeyhanli	u	50	ʃejhanɫi
+Akiş	u	49	aːciʃ
+Binboga	u	49	binnboɡa
+Duger	u	49	duɡeɾ
+Erzurum	u	49	eɾzuɾum
+Karakan	u	49	kaɾakan
+Sertel	u	49	seɾtæl
+Boduroğlu	u	48	boduɾoːɫu
+Elik	u	48	elic
+Kesik	u	48	cesic
+Tüten	u	48	tyten
+Ahiskali	u	47	ahiːskali
+Celiloglu	u	47	dʒeliloglu
+Ellialti	u	47	ellialti
+Kadak	u	47	kadac
+Kamaci	u	47	ccɑmad͡ʒi
+Akcali	u	46	acd͡ʒaɫi
+Akşahin	u	46	acʃaːhin
+Albay	u	46	albaj
+Arga	u	46	aɾɡa
+Başman	u	46	baʃman
+çete	u	46	t͡ʃete
+Müftüoğlu	u	46	myftyo‿lu
+Yeral	u	46	jeɾɑl
+Akbudak	u	45	akbadak
+Gencdal	u	45	ɡend͡ʒdaɫ
+Karadavut	u	45	kaɾadavut
+Saçli	u	45	sat͡ʃli
+Ucer	u	45	udʒeɾ
+Büyükcam	u	44	byjycd͡ʒam
+Siga	u	44	siɡa
+Tutaş	u	44	tutaʃ
+Alimli	u	43	alimli
+Daglioglu	u	43	daɡɫɪoɡlu
+Dirican	u	43	diɾɾid͡ʒan
+Erkuran	u	43	eɾkuɾan
+Kireççi	u	43	ciɾet͡ʃt͡ʃi
+Mutluer	u	43	mutlueɾ
+Nizam	u	43	nizam
+şeliman	u	43	ʃelimɑn
+Süner	u	43	syneɾ
+Susam	u	43	susam
+Aksöz	u	42	aksøz
+Büber	u	42	bybeɾ
+Cepni	u	42	d͡ʒepni
+Erginel	u	42	eɾɡinel
+Kadi	u	42	kadi
+Kocarslan	u	42	kod͡ʒaɾslan
+Tombul	u	42	tombul
+Tuğcugil	u	42	tuːdʒuɡil
+Karakulak	u	41	kaɾakulac
+Kayabaş	u	41	cajabaʃ
+özcanli	u	41	øzd͡ʒanɫi
+şerbetçi	u	41	ʃeɾbett͡ʃi
+Bugrul	u	40	buɡɾul
+Düzce	u	40	dyzd͡ʒe
+Eryavuz	u	40	erjɑvuz
+Kanyilmaz	u	40	cɑnjilmaz
+Kayayurt	u	40	cajajuɾt
+Merhametsiz	u	40	meɾhametsiz
+Tülüce	u	40	tyɫyd͡ʒe
+Yadigaroglu	u	40	jadigaɾoɡlu
+Yıldızoğlu	u	40	jɯldɯzo‿lu
+Acarbulut	u	39	ad͡ʒaɾbulut
+Aluçlu	u	39	alut͡ʃlu
+Dilli	u	39	dilli
+Okudan	u	39	ocudan
+Pişirgen	u	39	piʃiɾgen
+Tarlan	u	39	taɾɫan
+Yarbil	u	39	jaɾbil
+Yeşilova	u	39	jeʃilova
+Canacankatan	u	38	dʒanadʒancatan
+Karakılıç	u	38	kaɾakɯɫɯt͡ʃ
+Karameşe	u	38	kɑɾɑmeʃe
+Kazbek	u	38	cazbɛk̚
+Yaşan	u	38	jaʃan
+Akova	u	37	akovɑ
+Alpinar	u	37	ʔaɫpinaɾ
+Bacaksiz	u	37	bad͡ʒacsiz
+Cipe	u	37	d͡ʒipe
+Gülşan	u	37	gylʃan
+Havas	u	37	havas
+şair	u	37	ʃaːˤiɾ
+Topkara	u	37	topkaɾa
+Aslaner	u	36	asɫaneɾ
+Baymak	u	36	bajmak
+Dil	u	36	diɫ
+Duyan	u	36	dujan
+Gözkaya	u	36	ɡøzcaja
+Karakum	u	36	kaɾakum
+Kilaç	u	36	cilat͡ʃ
+Memetoglu	u	36	meʃhmetoglu
+Suvari	u	36	suvaɾi
+Akkoyunlu	u	35	accojʊnlu
+Aldinç	u	35	ʔaɫdint͡ʃ
+Batçik	u	35	batt͡ʃic
+Duruk	u	35	duɾuk
+Hepkaya	u	35	hepcaja
+Kabacaoglu	u	35	cabadʒaːoɡlu
+Karatoprak	u	35	karatopɾac
+Khalil	u	35	chaːɫiɫ
+Kurul	u	35	kuɾul
+Kütükcü	u	35	kytymcd͡ʒy
+Onan	u	35	onɑn
+Tulpar	u	35	tulpaɾ
+Asoğlu	u	34	aso‿lu
+Aydos	u	34	ajdos
+Bekler	u	34	becleɾ
+çöl	u	34	t͡ʃøl
+Engiz	u	34	engiz
+Gerilmez	u	34	ɟeɾilmez
+Karpuzoglu	u	34	caɾpuzɔɡlu
+Kiziltoprak	u	34	kiziltopɾac
+ördek	u	34	ørdec
+Sulhan	u	34	sʊɫhɑn
+Sürüm	u	34	syɾym
+Uluoz	u	34	uluːo̞z̪
+Albaş	u	33	albaʃ
+Alkaç	u	33	ʔaɫkɑt͡ʃ
+Bozarslan	u	33	bozaɾslan
+Bozoglan	u	33	bozoglan
+Ertürkler	u	33	æɾtyɾkleɾ
+Kozanoğlu	u	33	kozano‿lu
+Küfeciler	u	33	kyfed͡ʒileɾ
+Saf	u	33	saf
+Secir	u	33	sed͡ʒiɾ
+Suluk	u	33	suluc
+Tayyar	u	33	tajjaɾ
+Tekir	u	33	teciɾ
+Yücetürk	u	33	jyd͡ʒetyɾc
+Abseyi	u	32	abseji
+Amirova Uçan	u	32	amiɾovaʊtʃɑn
+Aslanalp	u	32	asɫanalp
+Belgemen	u	32	belgemen
+Demirtürk	u	32	demiɾtyɾc
+Erdağ	u	32	eɾda‿
+Halhalli	u	32	halhalli
+Iris	u	32	iɾis
+Isen	u	32	isen
+Istek	u	32	istec
+Karçin	u	32	caɾt͡ʃin
+Orta	u	32	oɾta
+Ozudogru	u	32	ozudoɡɾu
+Alkurt Kayikçi	u	31	ʔaɫkuɾtcajict͡ʃi
+Aslankara	u	31	asɫancaɾa
+Bayraktaroğlu	u	31	bajɾactaɾoːɫu
+çağil	u	31	t͡ʃa‿il
+Elverdi	u	31	eɫveɾdi
+Eyüp	u	31	ejyp
+Kolsuz	u	31	kolsuz
+Murt	u	31	muɾt
+Sadic	u	31	salldidʒ
+Yanni	u	31	janni
+Yavaşi	u	31	javaʃi
+Yumak	u	31	jumac
+Ayman	u	30	ajman
+Barcak	u	30	baɾd͡ʒac
+çalişkantürk	u	30	tʃaliʃcantyɾc
+Canatan	u	30	d͡ʒanatan
+Citil	u	30	d͡ʒitil
+Evik	u	30	evic
+Gazeteci Tekin	u	30	ɡazeted͡ʒitekin
+Hicyilmaz	u	30	hid͡ʒjilmaz
+Kapar	u	30	kapaɾ
+Nart	u	30	nɑɾt
+Olmaz	u	30	olmaz
+özekli Misirlioğlu	u	30	øzecɫimnisiɾɫio‿lu
+Uruc	u	30	uɾudʒ
+Babuş	u	29	babuʃ
+Bağcik	u	29	bɑ‿d͡ʒic
+Başdaş	u	29	baʃdaʃ
+Bican	u	29	bid͡ʒan
+Kendirli	u	29	kɛndirli
+Kocakaya Altundal	u	29	cod͡ʒacajaaltudaɫ
+Tantekin	u	29	tɑntekin
+Yalinkilic	u	29	jalincilidʒ
+Yorganci	u	29	joɾɡand͡ʒi
+Yurdakök	u	29	juɾdacœc
+Bahçebaşi	u	28	baht͡ʃebaʃi
+Baygeldi	u	28	bajgeldi
+Baysoy	u	28	bajsoj
+Cavli	u	28	d͡ʒɑvɫi
+Destegül	u	28	dɛsteɡyɫ
+Halis	u	28	haːɫis
+Iplikçi	u	28	iplict͡ʃi
+Kocar	u	28	kod͡ʒaɾ
+Koycu	u	28	kojdʒu
+Mendeş	u	28	mendeʃ
+özçay	u	28	øzt͡ʃaj
+öziş	u	28	øziʃ
+Sertoglu	u	28	seɾtoglu
+Soykamer	u	28	sojkameɾ
+Uluba	u	28	uluːba
+Yenin	u	28	jɛnɪn
+Aktemur	u	27	actemuɾ
+Atbaş	u	27	atbaʃ
+Cilesiz	u	27	d͡ʒiɫesiz
+Düzel	u	27	dyzeɫ
+Esmeray	u	27	esmeɾaj
+Gayretli Aydin	u	27	ɡajɾetɫiajdin
+Gençpinar	u	27	ɡent͡ʃpinaɾ
+Göksoy	u	27	gøcsoj
+Güngörmez	u	27	ɡyngøɾmez
+Ilgen	u	27	iɫgen
+öğütmen Koç	u	27	ø̞‿ytmenkot͡ʃ
+Onde	u	27	onde
+Ozkanli	u	27	uzcɑnɫi
+Sağdik	u	27	saːdic
+Bukum	u	26	bucum
+Buluc	u	26	buludʒ
+Coker	u	26	d͡ʒokeɾ
+Ergintürk Acar	u	26	eɾɡintyɾcad͡ʒaɾ
+Karkin	u	26	caɾcin
+Kutlar	u	26	kutlaɾ
+Nurçin	u	26	nuːrt͡ʃin
+Sonay	u	26	sonaj
+Sul	u	26	sʊɫ
+Turaç	u	26	tuɾat͡ʃ
+Turmuş	u	26	tuɾmuʃ
+Zaim	u	26	zaim
+Ararat	u	25	aɾaɾat
+Azar	u	25	azaɾ
+Bakay	u	25	bakaj
+Bayam	u	25	bajam
+Camgöz	u	25	d͡ʒamɟøz
+Eldem	u	25	eɫdem
+Ilbay	u	25	iɫbaj
+Kirlangic	u	25	ciɾɫɑŋɡidʒ
+Kulak Gedik	u	25	kʰuɫ̪äkʰɡedic
+Kuserli	u	25	kuseɾɫi
+özgüner	u	25	øzɡyneɾ
+Sekin	u	25	secin
+Tolu	u	25	tolu
+Uzen	u	25	uzen
+Almacioğlu	u	24	ʔaɫmadʒio‿lu
+Altunöz	u	24	ʔaɫtuøz
+Bagli	u	24	baɡɫɪ
+Bolac	u	24	boɫadʒ
+Gözaçan	u	24	ɡøzatʃɑŋ
+Kapcak	u	24	kɑpd͡ʒac
+Kuday	u	24	kudaj
+Kutluyurdu	u	24	cutlujuɾdu
+Nuhveren	u	24	nuhveɾen
+Sakallioglu	u	24	sallcallioɡlu
+Tohumoğlu	u	24	tohadmo‿lu
+Aksac	u	23	acsadʒ
+Artuc	u	23	aɾtudʒ
+Bertan	u	23	beɾtan
+Dam	u	23	dam
+Demirgan	u	23	demiɾɡan
+Durman	u	23	duɾmɑn
+Elçiçek	u	23	eɫt͡ʃit͡ʃec
+Emlakçioğlu	u	23	emɫaktʃio‿lu
+Genel	u	23	genel
+Gölemez	u	23	ɡøɫemez
+Kircali	u	23	ciɾd͡ʒaɫi
+Toyran	u	23	tojɾan
+Yeşildağer	u	23	jeʃilda‿eɾ
+Yonet	u	23	jonet
+Celtemen	u	22	d͡ʒeltemen
+Eşme	u	22	eʃme
+Haşimoğlu	u	22	haʃimo‿lu
+Hüseyinoğlu	u	22	hysejino‿lu
+Işgören	u	22	iʃɡøɾen
+Kirişci	u	22	ciɾiʃd͡ʒi
+önvermez	u	22	ønveɾmez
+şanlikan	u	22	ʃanɫican
+Sayiner	u	22	sajineɾ
+şirzai	u	22	ʃiɾzai
+Tonge	u	22	tonge
+Utlu	u	22	utlu
+Bozkurter	u	21	bozkuɾteɾ
+Budunoğlu	u	21	buduno‿lu
+çetinkor	u	21	t͡ʃetincoɾ
+Düzkalir	u	21	dyzcaːliɾ
+Giniş	u	21	giniʃ
+Kizmazoğlu	u	21	kizmazo‿lu
+Kopan	u	21	kopan
+Malçok	u	21	malt͡ʃoc
+Metineren	u	21	metineɾen
+Muezzinoglu	u	21	muezzinoglu
+Tenekeci	u	21	teneced͡ʒi
+Alpayci	u	20	ʔaɫpajd͡ʒi
+Aykol	u	20	ajkol
+Baklaci	u	20	baklad͡ʒi
+çetemen	u	20	t͡ʃetemen
+Hodjaoglu	u	20	hodʒaoɡlu
+Içbay	u	20	it͡ʃbɑj
+Konuralp	u	20	conuɾaɫp
+Lağarli	u	20	lɑ‿ɑɾli
+özateş	u	20	øzɑtɛʃ
+Teoman	u	20	teoman
+Cimbek	u	19	d͡ʒimbec
+Dönertaş	u	19	dœneɾtaʃ
+Fakioğlu	u	19	fakio‿lu
+Gerger	u	19	ɡeɾɟeɾ
+Olker	u	19	olcæɾ
+Tilbe	u	19	tiɫbe
+Turanoğlu	u	19	tuɾano‿lu
+Uykur	u	19	ujcuɾ
+Boyuk	u	18	bojuk
+Corut	u	18	d͡ʒoɾut
+Seğmen	u	18	se‿men
+Temli	u	18	temli
+üçgül	u	18	yt͡ʃɡyɫ
+Yenidunya	u	18	jenidunja
+Ibişoğlu	u	17	ibiʃo‿lu
+Kayihan	u	17	cajihan
+Mart	u	17	maɾt
+Okulu	u	17	okulu
+Omay	u	17	omaj
+şenöz	u	17	ʃenøz
+Tekinsoy	u	17	tecinsoj
+Ten	u	17	ten
+Usul	u	17	usʊɫ
+Yakişan	u	17	jaciʃan
+Yurtdaş	u	17	juɾtdaʃ
+Aksun	u	16	aksun
+Azrak	u	16	azɾak
+Demirkapı	u	16	demiɾkɑpɯ
+Dokmeci	u	16	dokmed͡ʒi
+Emlek	u	16	emlec
+Gümüşçü	u	16	ɡymyʃt͡ʃy
+Karaismailoglu	u	16	kɑɾɑismailoglu
+Kemik	u	16	cemic
+Nurlu	u	16	nuːrlu
+Olcar	u	16	old͡ʒaɾ
+Peynirci	u	16	pejniɾd͡ʒi
+şanlier	u	16	ʃanl̩ieɾ
+Sansarci	u	16	sansaɾd͡ʒi
+Savga	u	16	savɡa
+Sevingil	u	16	sevinɡil
+Sonmezer	u	16	sonmezeɾ
+Bolkan	u	15	bolcan
+Budun	u	15	budun
+Cinpolat	u	15	d͡ʒinpolat
+Divarci	u	15	divaɾd͡ʒi
+Gode	u	15	ɡode
+Kankiliç	u	15	cɑncilitʃ
+Korkmazoğlu	u	15	coɾcmazo‿lu
+Köylüoğlu	u	15	cøjɫyo‿lu
+Kutan	u	15	kutan
+Nacaroglu	u	15	nadʒaːɾoɡlu
+Sevuk	u	15	sevuc
+Toper	u	15	topæɾ
+Alişik	u	14	aliʃic
+Başyurt	u	14	baʃjuɾt
+Binnetoğlu	u	14	binnɛto‿lu
+çangal	u	14	t͡ʃanɡal
+Duyu	u	14	duju
+Emet	u	14	ɛmɛt
+Güleşen	u	14	gylēmʃen
+Hidiroğlu	u	14	hidiɾoːɫu
+Karcioğlu	u	14	ccɑɾd͡ʒiːo‿lu
+Kucukyildiz	u	14	cud͡ʒukjiːldiz
+Kuralay	u	14	kuɾalaj
+Kutukoglu	u	14	cutucoɡlu
+Moran	u	14	moɾan
+Sagcan	u	14	saɡd͡ʒan
+şarlak	u	14	ʃaɾɫak
+Sultanoğlu	u	14	sultano‿lu
+Tegin	u	14	tegin
+çevirgen	u	13	t͡ʃeviɾgen
+çinkir	u	13	t͡ʃinciɾ
+Gökten	u	13	gøcten
+Gunebakan	u	13	ɡunebakan
+Karakoyunlu	u	13	caɾacojunlu
+Karamahmutoğlu	u	13	kɑɾɑmɑhmuto‿lu
+Kisaoglu	u	13	cisaoɡlu
+Mumcuoglu	u	13	mumd͡ʒɯoɡlu
+Oğuzsoy	u	13	ouzsoj
+Piri	u	13	piɾi
+Sarayli	u	13	saɾajɫi
+Tokatlioğlu	u	13	tocatlio‿lu
+Yildirimcakar	u	13	jinlɫdɛɪɾimdʒacaːɾ
+Abat	u	12	ɑːbɑːt̪
+Atceken	u	12	atd͡ʒecen
+Ayduğan	u	12	ajdu‿an
+Bogan	u	12	boɡan
+Gerdan	u	12	ɡeɾdan
+Gökgül	u	12	gøcɡyɫ
+Melekoğlu	u	12	meɫeko‿lu
+Oflazoglu	u	12	oflazoɡlu
+Soytaş	u	12	sojtaʃ
+Alabalik	u	11	alabalic
+Arifoğlu	u	11	aɾifo‿lu
+Arikboğa	u	11	aɾɾicboɰɑ
+Arpat	u	11	aɾpat
+Azap	u	11	azap
+Bürkük	u	11	byɾkyc
+Karapiçak	u	11	kaɾapit͡ʃak
+Para	u	11	pɑɾɑ
+Temurtaş	u	11	temuɾtaʃ
+Tüfenk	u	11	tyfɛnc
+Varici	u	11	vaɾid͡ʒi
+Akansel	u	10	acanseɫ
+Ergöz	u	10	eɾɡøz
+Issi	u	10	issi
+Kacira	u	10	cadʒiraː
+Katran	u	10	catɾan
+Kaylan	u	10	cajlan
+Kirhan	u	10	ciɾhan
+Mertol	u	10	meɾtoł
+Postalli	u	10	postalli
+Saatcioglu	u	10	saaːtdʒioɡlu
+Sabaz	u	10	sabaz
+Tanin	u	10	tanin
+Tekiş	u	10	teciʃ
+Uzunca	u	10	uzund͡ʒa
+Akyilmaz	u	9	akjiːlmaz
+Avseren	u	9	avseɾen
+Barça	u	9	baɾt͡ʃa
+Barişan	u	9	baɾiʃaːn
+Görünmez	u	9	ɟøɾynmez
+Gürakan	u	9	ɟyɾakan
+Hüseyni	u	9	hysejini
+Imali	u	9	imaɫi
+Kitay	u	9	citaj
+Pekdoğan	u	9	pekdo‿an
+Servet	u	9	seɾvet
+Tacir	u	9	taːd͡ʒɪr
+Yaşit	u	9	jaʃit
+Alaybeyoglu	u	8	alajbejoɡlu
+Alboğa	u	8	ʔaɫboɰɑ
+Burulday	u	8	buɾuldaj
+Doğangüzel	u	8	d̪o̞ɑn̪gyzel
+Eskimez	u	8	esk̟ʰimez
+Kumbul	u	8	kumbul
+Ozyoruk	u	8	o̞z̪joɾuk
+Suzan	u	8	suzan
+Tazeoğlu	u	8	tʔaːzeo‿lu
+Tokar	u	8	tokaɾ
+Atmiş	u	7	atmiʃ
+Balsak	u	7	bäɫ̪sak
+Dayangaç	u	7	dajanɡat͡ʃ
+Elbuken	u	7	elbuken
+Evmez	u	7	evmez
+Gencan	u	7	ɡend͡ʒan
+Genez	u	7	ɟenez
+Gördük	u	7	ɡøɾdyk
+Günbey	u	7	ɡynbɛj
+Heybet	u	7	hejbet
+Hoke	u	7	hoce
+Kayki	u	7	cajci
+örenç	u	7	øɾent͡ʃ
+özkiriş	u	7	øzciɾiʃ
+Sariekiz	u	7	saɾɾiekiz
+Ufacik	u	7	ufad͡ʒic
+Yetiz	u	7	jetiz
+Yükselmiş	u	7	jycseɫmiʃ
+Aykuş	u	6	ajkuʃ
+Başkak	u	6	bɑʃkɑk
+çiçekbilek	u	6	t͡ʃit͡ʃecbilec
+Güveren	u	6	ɟyvɛɾen
+Hamdemirci	u	6	hamdemiɾd͡ʒi
+Hiçdurmaz	u	6	hit͡ʃduɾmɑz
+Kahreman	u	6	kɑhɾeman
+Karaoglanoglu	u	6	kɑɾɑoɡlanoglu
+Koluş	u	6	koluʃ
+Merden	u	6	meɾden
+özüak	u	6	øzyak
+Selvan	u	6	seɫvan
+Somay	u	6	somaj
+Tola	u	6	tola
+Uslubaş	u	6	uslubaʃ
+Uslusoy	u	6	uslusoj
+Yeşilfidan	u	6	jeʃilfidan
+Yilanli	u	6	jilanɫi
+Akçayir	u	5	act͡ʃajiɾ
+Alben	u	5	alben
+Buyukkal	u	5	bujuccal
+Caf	u	5	d͡ʒaf
+çatuk	u	5	t͡ʃatuc
+çerik	u	5	t͡cheiɾc
+Elgörmüş	u	5	eɫɡøɾmyʃ
+Eşkazan	u	5	eʃcazan
+Gedük	u	5	ɡedyk
+Gunyel	u	5	ɡunjɛl
+Hoşer	u	5	hoʃeɾ
+Iştar	u	5	iʃtaɾ
+Kacer	u	5	kad͡ʒeɾ
+Karadurak	u	5	kɑɾɑduɾac
+Nozoğlu	u	5	nozo‿lu
+Olgen	u	5	olɡen
+Paköz	u	5	pacøz
+Soluk	u	5	sɔɫuk
+Suluova	u	5	suluːova
+Sungar	u	5	sunɡaɾ
+üreyen	u	5	yɾɛjen
+Uzuncan	u	5	uzund͡ʒan
+Yetkinşekerci	u	5	jetkinʃeceɾd͡ʒi
+Asig	u	4	asiɡ
+Baglars	u	4	baɡlaɾs
+Balal	u	4	bɑlɑl
+Başargan	u	4	baʃaɾɡan
+Baytan	u	4	bajtan
+Bocu	u	4	bod͡ʒu
+Buyukdogan	u	4	bujucdoɡan
+Cantay	u	4	dʒantaj
+çinarlik	u	4	t͡ʃinaɾɫic
+Daylak	u	4	dajɫɑk
+Gelegen	u	4	ɡeɫeɡen
+Kabakuş	u	4	cabakuʃ
+Kalyenci	u	4	kaɫjend͡ʒi
+Kanneci	u	4	cɑnnɛd͡ʒi
+Kaykisiz	u	4	cajcisiz
+Kocayiğit	u	4	kod͡ʒajiː‿it
+Küçüközkan	u	4	kyt͡ʃycøzcan
+Kunak	u	4	cunac
+Saldiray	u	4	sallaɾdiɾaj
+Saltürk	u	4	saltyɾc
+Sil	u	4	siɫ
+Sobay	u	4	sobaj
+Suman	u	4	suman
+Toşur	u	4	toʃʊɾ
+Ungur	u	4	unɡuɾ
+Yancar	u	4	jand͡ʒaɾ
+Yayikçi	u	4	jajiːct͡ʃi
+Ahçi	u	3	aht͡ʃi
+Argon	u	3	aɾgon
+Babadaği	u	3	bɑbɑdɑ‿i
+Borta	u	3	boɾta
+çomut	u	3	t͡ʃomut
+Eylen	u	3	ejlen
+Fişekci	u	3	fiʃecd͡ʒi
+Gürdemir	u	3	ɟyɾdemiɾ
+Inanmaz	u	3	inanmaz
+Kacemer	u	3	kad͡ʒemeɾ
+Kalipci	u	3	caːlipd͡ʒi
+Kaplankiran	u	3	kɑplɑnciɾan
+Kavukoglu	u	3	cavucoɡlu
+Keşkek	u	3	ceʃcec
+Kinalioğlu	u	3	cinalio‿lu
+Kindir	u	3	cindiɾ
+Kuşakçi	u	3	kuʃact͡ʃi
+Nasuhbeyoğlu	u	3	nasuhbejo‿lu
+özdenoğlu	u	3	øzdeno‿lu
+özsaygili	u	3	øzsajgiɫi
+şekerler	u	3	ʃekeɾleɾ
+Seyrekoğlu	u	3	sejɾesco‿lu
+Sinici	u	3	sinid͡ʒi
+Tikici	u	3	ticid͡ʒi
+Yabul	u	3	jabul
+Zubaroğlu	u	3	zuːbaɾoːɫu
+Adisanli	u	2	aːdiːsanɫi
+Akhun	u	2	achun
+Altinboğa	u	2	ʔaɫtinboɰɑ
+Atbinici	u	2	atbinid͡ʒi
+Bayana	u	2	bajɑnɑ
+Bobuşoğlu	u	2	bobuʃo‿lu
+Bolattürk	u	2	boɫattyɾc
+Bolsoy	u	2	bolsoj
+Bozpolat	u	2	bozpoɫat
+Candaner	u	2	d͡ʒandɑneɾ
+Dadali	u	2	dadaɫi
+Dadli	u	2	dadɫi
+Dikoğlu	u	2	dɛɪco‿lu
+Dumludağ	u	2	dumluda‿
+Etleç	u	2	etlet͡ʃ
+Eyisoy	u	2	ejiːsoj
+Feyzullahoğlu	u	2	fejzullaho‿lu
+Filizay	u	2	fʔiłizaj
+Güzelküçük	u	2	ɡyzeɫcyt͡ʃyc
+Hakyol	u	2	hacjol
+Karnas	u	2	kaɾnas
+Kiliçcioğlu	u	2	kilitʃdʒio‿lu
+Kiraslan	u	2	ciɾaːlan
+Kottaş	u	2	kottaʃ
+Monur	u	2	monuɾ
+özcanoğlu	u	2	øzd͡ʒano‿lu
+özkaynar	u	2	øzcajnaɾ
+Pirdoğan	u	2	piɾdo‿an
+Pirti	u	2	piɾti
+Topalkara	u	2	topaɫkɑɾɑ
+ünüş	u	2	ynyʃ
+Yaci	u	2	jad͡ʒi
+Yurdam	u	2	juɾdam
+Yurdseven	u	2	juɾdseven
+Zeyli	u	2	zejɫi
+Baziki	u	1	bazici
+Berent	u	1	beɾent
+Bolatkale	u	1	boɫatcaɫe
+Bulakçi	u	1	buɫact͡ʃi
+Büyükceran	u	1	byjycd͡ʒeɾan
+Büyükkalayci	u	1	byjyccalajd͡ʒi
+Danişoğlu	u	1	danniʃo‿lu
+Dokumacioğlu	u	1	dokumadʒio‿lu
+Emeli	u	1	ɛmɛli
+Evrenos	u	1	evɾenos
+Gokkoca	u	1	ɡockod͡ʒa
+Gökmeydan	u	1	gøcmejdan
+Görmeli	u	1	gøɾmełi
+Güldamla	u	1	gyldamla
+Işikalan	u	1	iʃikaːlan
+Ivacik	u	1	ivad͡ʒic
+Kavmaz	u	1	kavmaz
+Kavurgaci	u	1	kɑʋuɾɡad͡ʒi
+Keklikçioğlu	u	1	cecɫict͡chio‿lu
+Kevkir	u	1	cevciɾ
+Kizanoğlu	u	1	cizano‿lu
+Kocasaraç	u	1	kod͡ʒasaɾat͡ʃ
+Koptur	u	1	kɔptuɾ
+Kurtpinar	u	1	kuɾtpinaɾ
+Leymunçiçeği	u	1	ɫejmuntʃit͡ʃe‿i
+Onrat	u	1	onɾat
+Osmanca	u	1	osmand͡ʒa
+Oynak	u	1	ojnak
+özanlağan	u	1	øzanla‿an
+özbeyler	u	1	øzbejɫeɾ
+özmuk	u	1	øzmuc
+özsayim	u	1	øzsajim
+Ozturkeri	u	1	oztuɾkeɾi
+Sadunoğlu	u	1	saduno‿lu
+şengüleroğlu	u	1	ʃengyo‿lu
+Subari	u	1	subaɾi
+Sucak	u	1	sudʒak
+Türemenoğullari	u	1	tyɾemenoullari
+Ulubaşoğlu	u	1	uluːbaʃo‿lu
+Yağcizeybek	u	1	j‿ad͡ʒizejbec
+Yaradilmiş	u	1	jaɾadiɫmiʃ
+Yilmabaşar	u	1	jilmabaʃaɾ
+Yumurtaş	u	1	jumuɾtaʃ
