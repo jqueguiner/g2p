@@ -30,6 +30,11 @@ pub fn build_router(state: Arc<AppState>) -> Router {
         .route("/similarity", post(handlers::similarity))
         .route("/alternatives", post(handlers::alternatives))
         .route(
+            "/similar-first-names",
+            get(handlers::similar_names_get).post(handlers::similar_names_post),
+        )
+        // Backward-compatible alias for the original name.
+        .route(
             "/similar-names",
             get(handlers::similar_names_get).post(handlers::similar_names_post),
         )

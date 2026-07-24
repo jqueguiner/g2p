@@ -104,12 +104,12 @@ curl -s localhost:8080/alternatives -H 'content-type: application/json' -d '{
 }
 ```
 
-### `POST /similar-names` (or `GET /similar-names?name=...&lang=...&top_k=...`)
+### `POST /similar-first-names` (or `GET /similar-first-names?name=...&lang=...&top_k=...`)
 Given **one** first name, return the phonetically closest first names from the
 server's built-in corpus — no candidate list required (unlike `/alternatives`).
 Omit `lang` to auto-detect.
 ```bash
-curl -s localhost:8080/similar-names -H 'content-type: application/json' \
+curl -s localhost:8080/similar-first-names -H 'content-type: application/json' \
   -d '{"name":"Caitlin","lang":"en","top_k":5}'
 ```
 ```json
@@ -122,6 +122,8 @@ curl -s localhost:8080/similar-names -H 'content-type: application/json' \
   ]
 }
 ```
+*(alias: `/similar-names` — the original path, kept for backward compatibility.)*
+
 Fields: `method` (default **`calibrated`** — see below; or `weighted` / `levenshtein`),
 `top_k` (default 10), `min_similarity` (default 0), `exclude_exact` (default true —
 drops the query name itself), `gender` (see below), `calibration` (per-request
@@ -134,7 +136,7 @@ override, see below). Each result carries its `gender` (`m`/`f`/`u`).
 
 Pass the query's own gender to get same-gender alternatives:
 ```bash
-curl -s "localhost:8080/similar-names?name=Jean&lang=fr&gender=m"   # Jacques, Gilles… (no Jeanne)
+curl -s "localhost:8080/similar-first-names?name=Jean&lang=fr&gender=m"   # Jacques, Gilles… (no Jeanne)
 ```
 
 **Popularity** — `popularity` (0..1, default 0) adds a name-frequency prior to
@@ -150,7 +152,7 @@ gender + frequency aggregated per language. Add or edit any `<lang>.txt` and
 restart (`G2P_NAMES_DIR`, default `./names`).
 
 ### `POST /similar-surnames` (or `GET /similar-surnames?name=...&lang=...`)
-Same as `/similar-names` but over a **surname** corpus and with **no gender**
+Same as `/similar-first-names` but over a **surname** corpus and with **no gender**
 (surnames aren't gendered — results omit `gender`). Supports `method`, `top_k`,
 `min_similarity`, `popularity`, `calibration`.
 ```bash
@@ -162,7 +164,7 @@ surname census by `scripts/build-names-from-census.py <surnames.tsv> --surname
 
 ## Similarity calibration
 
-Every similarity endpoint (`/similar-names`, `/similarity`, `/alternatives`)
+Every similarity endpoint (`/similar-first-names`, `/similarity`, `/alternatives`)
 defaults to `method: "calibrated"` — a **per-language** metric that blends the two
 core signals and adds **per-phoneme-class** penalties. It fixes cases the fixed
 core metrics get wrong: `weighted` over-scores coincidental feature overlap
@@ -232,7 +234,7 @@ cargo test          # unit + end-to-end
   fixture — a toy in-memory `.g2p` model, a small gendered corpus, a calibration
   profile — and drives every endpoint over HTTP (`tower::ServiceExt::oneshot`):
   `/health`, `/languages`, `/g2p` (+404/+400), `/detect`, `/similarity`,
-  `/alternatives`, `/similar-names` (+ gender filter m/f/neutral), `/calibration`.
+  `/alternatives`, `/similar-first-names` (+ gender filter m/f/neutral), `/calibration`.
 
 The crate is split lib (`g2p2_server`, all logic + `build_router`) + a thin bin,
 so tests exercise the exact router the binary serves.

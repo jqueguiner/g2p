@@ -77,7 +77,7 @@
   <div class="sub">Grapheme→phoneme + phonetic name similarity for the 100 Whisper languages.</div>
 
   <div class="tabs" id="tabs">
-    <div class="tab active" data-t="sim">Similar names</div>
+    <div class="tab active" data-t="sim">Names</div>
     <div class="tab" data-t="g2p">Phonemize</div>
     <div class="tab" data-t="detect">Detect</div>
     <div class="tab" data-t="pair">Compare two</div>
@@ -85,8 +85,9 @@
 
   <!-- SIMILAR NAMES -->
   <section class="panel" id="p-sim">
+    <div class="row"><div class="field"><label>Kind</label><div class="chips" id="s-kind"></div></div></div>
     <div class="row">
-      <div class="field" style="flex:2"><label>First name</label>
+      <div class="field" style="flex:2"><label id="s-namelabel">First name</label>
         <input id="s-name" placeholder="Jean" value="Jean" autocomplete="off"></div>
       <div class="field"><label>Top</label>
         <input id="s-k" type="number" min="1" max="30" value="8"></div>
@@ -94,7 +95,7 @@
     </div>
     <div class="row">
       <div class="field"><label>Language</label><div class="chips" id="s-lang"></div></div>
-      <div class="field"><label>Gender</label><div class="chips" id="s-gender"></div></div>
+      <div class="field" id="s-gender-field"><label>Gender</label><div class="chips" id="s-gender"></div></div>
       <div class="field"><label>Popularity <span id="s-popv" class="kv">0.0</span></label>
         <input id="s-pop" type="range" min="0" max="1" step="0.1" value="0"
           oninput="document.getElementById('s-popv').textContent=(+this.value).toFixed(1);runSim()"></div>
@@ -151,8 +152,8 @@
 </div>
 
 <script>
-const LANGS = ["fr","en","es","zh"];
-const state = { simLang:"fr", g2pLang:"fr", pairLang:"en", gender:"" };
+const LANGS = ["fr","en","es","de","it","pt","nl","ru","pl","sv","tr","ro","cs","zh"];
+const state = { simLang:"fr", g2pLang:"fr", pairLang:"en", gender:"", kind:"first" };
 
 // build chip groups
 function chips(el, values, sel, onpick){
@@ -171,6 +172,16 @@ chips(document.getElementById("g-lang"), langAuto, "fr", v=>state.g2pLang=v);
 chips(document.getElementById("c-lang"), langOpts, "en", v=>state.pairLang=v);
 chips(document.getElementById("s-gender"),
   [{val:"",label:"Neutral"},{val:"m",label:"♂ Male"},{val:"f",label:"♀ Female"}], "", v=>state.gender=v);
+function applyKind(){
+  const sur = state.kind==="sur";
+  document.getElementById("s-gender-field").style.display = sur ? "none" : "";
+  document.getElementById("s-namelabel").textContent = sur ? "Surname" : "First name";
+  document.getElementById("s-name").placeholder = sur ? "Martin" : "Jean";
+}
+chips(document.getElementById("s-kind"),
+  [{val:"first",label:"First names"},{val:"sur",label:"Surnames"}], "first",
+  v=>{ state.kind=v; applyKind(); runSim(); });
+applyKind();
 
 // tabs
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
@@ -195,8 +206,9 @@ async function runSim(){
   const k=document.getElementById("s-k").value||8;
   if(!name){out.innerHTML="";return;}
   const pop=document.getElementById("s-pop").value||0;
-  let url=`/similar-names?name=${q(name)}&lang=${state.simLang}&top_k=${k}&popularity=${pop}`;
-  if(state.gender) url+=`&gender=${state.gender}`;
+  const ep=state.kind==="sur"?"/similar-surnames":"/similar-first-names";
+  let url=`${ep}?name=${q(name)}&lang=${state.simLang}&top_k=${k}&popularity=${pop}`;
+  if(state.kind!=="sur" && state.gender) url+=`&gender=${state.gender}`;
   try{
     const d=await api(url);
     let h=`<div class="qhead"><b>${name}</b> → <span class="ipa">/${d.query_ipa}/</span> · ${d.lang} · ${d.method}</div>`;
@@ -204,7 +216,7 @@ async function runSim(){
     d.results.forEach((r,i)=>{
       const pc=Math.round(r.similarity*100);
       h+=`<div class="item"><div class="rank">${i+1}</div>
-        <div class="nm">${r.name} ${gbadge(r.gender||'u')}<span class="pi ipa">/${r.ipa}/</span>${r.frequency?`<span class="pi">· ${r.frequency.toLocaleString()}</span>`:''}</div>
+        <div class="nm">${r.name} ${r.gender?gbadge(r.gender):''}<span class="pi ipa">/${r.ipa}/</span>${r.frequency?`<span class="pi">· ${r.frequency.toLocaleString()}</span>`:''}</div>
         <div class="scorewrap"><div class="barbg"><div class="barfg" style="width:${pc}%"></div></div>
         <span class="pct">${pc}%</span></div></div>`;
     });
