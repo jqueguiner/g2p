@@ -24,8 +24,10 @@ import sys
 import unicodedata
 from collections import defaultdict
 
-MIN_FREQ = 40
-CAP = 6000
+# Keep the long tail: frequency is NOT a junk signal (rare real names like
+# "Quéguiner" have low counts). Junk is filtered by `official` + is_namelike.
+MIN_FREQ = 1
+CAP = 10_000_000
 UNISEX_SHARE = 0.20
 
 STOPWORDS = {

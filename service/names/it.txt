@@ -1,820 +1,4619 @@
-# it first names from the first_names census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
-Andrea	m	11522
-Marco	m	10693
-Francesco	m	9708
-Alessandro	m	7957
-Luca	m	7936
-Giuseppe	m	6771
-António	m	6421
-Matteo	m	5845
-Stefano	m	5750
-Paolo	m	4925
-Davide	m	4891
-Francesca	f	4846
-Roberto	m	4562
-Giovanni	m	4533
-Simone	m	4325
-Michèle	m	4303
-Fabio	m	4234
-Giulia	f	3894
-Lorenzo	m	3873
-Danièle	m	3821
-Chiara	f	3717
-Federico	m	3376
-Sara	f	3343
-Massimo	m	3140
-Riccardo	m	3117
-Nicola	m	3023
-Valentina	f	2979
-Alberto	m	2968
-Federica	f	2852
-Martina	f	2802
-Vincenzo	m	2795
-Luigi	m	2778
-Laura	f	2689
-Sílvia	f	2623
-Alessio	m	2576
-Gabriele	m	2572
-Gianluca	m	2571
-Anna	f	2557
-Salvatore	m	2504
-Mario	m	2443
-Elena	f	2418
-Claudio	m	2407
-Enrico	m	2261
-Aléssia	f	2231
-Mattia	m	2204
-Filippo	m	2155
-Alessandra	f	2153
-Carlo	m	2124
-Maurizio	m	2102
-Fabrizio	m	2085
-Angelo	m	2006
-Elisa	f	2002
-Emanuele	m	1972
-Giacomo	m	1901
-Giorgio	m	1859
-Domenico	m	1831
-Pietro	m	1792
-Mauro	m	1791
-Roberta	f	1774
-Paola	f	1767
-María	f	1746
-Cristina	f	1737
-Claudia	f	1700
-Ilaria	f	1615
-Leonardo	m	1580
-Daniela	f	1577
-Simona	f	1525
-Stefanía	f	1515
-Giorgia	f	1468
-Barbara	f	1415
-Darío	m	1390
-Raffaele	m	1370
-Tommaso	m	1370
-Eleonora	f	1352
-Valéria	f	1339
-Antonella	f	1336
-Angéla	f	1277
-Sérgio	m	1275
-Diego	m	1256
-Mónica	f	1233
-Alex	m	1221
-Alice	f	1214
-Marta	f	1184
-Lucía	f	1154
-Michela	f	1144
-Massimiliano	m	1134
-Pasquale	m	1124
-Christian	m	1123
-Edoardo	m	1118
-Gianni	m	1107
-Franco	m	1069
-Serena	f	1043
-Verónica	f	1025
-Manuel	m	1012
-Mirko	m	1011
-Valerio	m	976
-Giulio	m	963
-Ivan	m	954
-Cristian	m	944
-Béatrice	f	919
-Arianna	f	905
-Jacopo	m	898
-Marcello	m	878
-Giovanna	f	876
-Irène	f	849
-Sabrina	f	841
-Giada	f	841
-Jéssica	f	839
-Elisabetta	f	830
-Patrizia	f	825
-Danilo	m	816
-Gaetano	m	803
-Caterina	f	779
-David	m	760
-Luciano	m	755
-Sofía	f	753
-Vittorio	m	750
-Bruno	m	750
-Enzo	m	734
-Marina	f	718
-Manuela	f	683
-Camilla	f	673
-Emanuela	f	673
-Guido	m	672
-Daniel	m	671
-Max	m	662
-Piero	m	655
-Samuele	m	655
-Annalisa	f	644
-Giancarlo	m	644
-Umberto	m	636
-Michael	m	634
-Vito	m	621
-Carmine	m	618
-Gaia	f	616
-Erika	f	615
-Tiziana	f	595
-Cristiano	m	595
-Cinzia	f	595
-Rossella	f	589
-Rita	f	575
-Sonia	f	557
-Carla	f	555
-Ciro	m	551
-Aurora	f	550
-Gianfranco	m	543
-Benedetta	f	538
-Sandro	m	538
-Thomas	m	537
-Vanessa	f	535
-Gennaro	m	534
-Rocco	m	526
-Salvo	m	522
-Luísa	f	514
-Lisa	f	513
-Antonino	m	511
-Aldo	m	508
-Giusy	f	506
-Flavio	m	503
-Marianna	f	503
-Margherita	f	503
-Rosario	m	503
-Gabriella	f	496
-Raffaella	f	495
-Alfredo	m	494
-Carmen	f	482
-Walter	m	479
-Noemí	f	474
-Nicole	f	472
-Renato	m	469
-Rosa	f	469
-Teresa	f	467
-Isabella	f	467
-Carlotta	f	458
-Alé	m	455
-Alfonso	m	455
-Carmelo	m	442
-Gianmarco	m	437
-Mary	f	437
-Silvio	m	431
-Damiano	m	427
-Glória	f	426
-Cecília	f	424
-Giuliano	m	422
-Emilio	m	418
-Letizia	f	415
-Nadia	f	412
-Pierluigi	m	411
-Débora	f	404
-Gréta	f	403
-Sebastiano	m	403
-Adriano	m	403
-Érica	f	398
-Antonello	m	398
-Emiliano	m	396
-Cesare	m	395
-Linda	f	394
-Corrado	m	391
-Katia	f	376
-Eugenio	m	374
-Marika	f	363
-Rebecca	f	350
-Nicoletta	f	348
-Virgínia	f	347
-Cosimo	m	344
-Nico	m	342
-Armando	m	342
-Lara	f	340
-Sandra	f	340
-Ludovica	f	339
-Miriam	f	335
-Angélica	f	331
-Vittoria	f	331
-Tiziano	m	329
-Annamaria	f	328
-Mirco	m	328
-Sarah	f	327
-Lúcio	m	324
-Nino	u	322
-Carolina	f	319
-Fabiana	f	318
-Anna-Maria	f	318
-Saverio	m	316
-Mara	f	315
-Donato	m	314
-Tony	m	312
-Lucrezia	f	309
-Grazia	f	307
-Mimmo	m	306
-Adriana	f	305
-Déborah	f	304
-Flavia	f	303
-Emma	f	298
-Pierpaolo	m	293
-Omar	m	293
-Valentino	m	291
-Elia	m	291
-Loredana	f	291
-Donatella	f	289
-Melissa	f	288
-Fulvio	m	287
-Denise	f	286
-Ilenia	f	284
-Pino	m	283
-Viviana	f	281
-Kevin	m	279
-John	m	276
-Marzia	f	276
-Gerardo	m	275
-Susanna	f	273
-Giuliana	f	262
-Nicholas	m	261
-Dino	m	257
-Rosaria	f	255
-Rosanna	f	254
-Pamela	f	253
-Lorena	f	250
-Denis	m	249
-Eva	f	247
-Diana	f	247
-Gino	m	247
-Biagio	m	246
-Ernesto	m	245
-Bianca	f	244
-Ugo	m	242
-Gianluigi	m	241
-Igor	m	241
-Loris	m	238
-Matilde	f	237
-Asia	f	235
-Ivana	f	234
-Agostino	m	233
-Felice	m	231
-Luana	f	230
-Clara	f	229
-Mariano	m	229
-Ettore	m	229
-Léo	m	228
-Enrica	f	226
-Agnese	f	226
-Fernando	m	225
-Fausto	m	224
-Maddalena	f	223
-Samantha	f	223
-Rossana	f	221
-Cristiana	f	220
-Tania	f	219
-Óscar	m	215
-Milena	f	214
-William	m	213
-Rachele	f	212
-Patrick	m	211
-Fabíola	f	210
-Jennifer	f	209
-Carlos	m	208
-Ana	f	207
-Martín	m	205
-Elio	m	204
-Silvana	f	203
-Ezio	m	202
-Carmela	f	202
-Ylenia	f	201
-Peter	m	200
-Ferdinando	m	199
-Samuel	m	199
-Ivano	m	199
-Giampaolo	m	197
-Mariangela	f	194
-Mohamed	m	194
-Gigi	m	192
-Gabriel	m	192
-Marcella	f	192
-Emília	f	191
-Luciana	f	191
-Nicolas	m	190
-Martino	m	189
-Giampiero	m	188
-Stella	f	185
-Michelle	f	185
-Mark	m	185
-Jonathan	m	184
-Anita	f	184
-Alexander	m	184
-Paul	m	184
-Melania	f	183
-Marko	m	181
-Lino	m	180
-Graziano	m	179
-Alexandra	f	179
-Guglielmo	m	178
-Anthony	m	177
-Attilio	m	177
-Nunzio	m	175
-James	m	175
-Giusi	f	174
-Lorenza	f	174
-Amedeo	m	174
-Patrizio	m	174
-Sharon	f	172
-Arturo	m	172
-Ornella	f	171
-Alí	m	171
-Giordano	m	171
-Frank	m	170
-Nikola	u	170
-Ignazio	m	170
-Stefan	m	170
-Rosy	f	169
-Rino	m	168
-Romina	f	167
-Ahmed	m	167
-Marilena	f	167
-Costanza	f	166
-Pablo	m	166
-Olga	f	166
-Tina	f	165
-Moreno	m	164
-Robert	m	163
-Lídia	f	162
-Viola	f	160
-José	u	160
-Maria-Grazia	f	160
-Nick	m	159
-Yuri	m	157
-Sebastian	m	154
-Mariella	f	152
-Ambra	f	151
-Sabina	f	151
-Silvano	m	151
-Tatiana	f	151
-Gianpaolo	m	150
-Antónia	f	149
-Víctor	m	149
-Antonietta	f	148
-Adèle	f	148
-Natalia	f	148
-Rosalba	f	147
-Michelangelo	m	147
-Renzo	m	146
-Augusto	m	146
-Mike	m	145
-Nello	m	144
-Marisa	f	143
-Franca	f	142
-Ruggero	m	141
-Alan	m	141
-María-Teresa	f	140
-Désirée	f	140
-Diletta	f	138
-Ester	f	137
-Eduardo	m	136
-Nunzia	f	135
-Luís	m	135
-Tamara	f	134
-Ginevra	f	133
-Gregorio	m	133
-Enza	f	132
-Liliana	f	132
-Andrew	m	132
-André	m	132
-Micaela	f	132
-Marino	m	132
-Ida	f	131
-Eliana	f	131
-Júlia	f	130
-Graziella	f	130
-Mariagrazia	f	130
-Orazio	m	130
-Renata	f	129
-Miriana	f	128
-Annarita	f	128
-Benedetto	m	127
-Fiorella	f	127
-Alba	f	126
-Amanda	f	126
-Ludovico	m	126
-Simón	m	125
-Simonetta	f	125
-Livio	m	125
-Adrian	m	125
-Marica	f	124
-Toni	m	123
-Pina	f	122
-Bruna	f	120
-Valter	m	120
-Calogero	m	119
-Lívia	f	119
-Azzurra	f	119
-Rubén	m	118
-Manuele	m	118
-Eric	m	117
-Emily	f	116
-Tonino	m	116
-Giuseppina	f	116
-Santo	m	116
-Rodolfo	m	116
-Erik	m	115
-Iacopo	m	115
-Gioia	f	115
-Elvira	f	114
-Dennis	m	114
-Leandro	m	114
-Andy	m	114
-Alejandro	m	114
-Lucas	m	114
-Mirella	f	114
-Nina	f	114
-Fede	f	113
-Romano	m	112
-Daria	f	111
-Dalila	f	111
-Gianpiero	m	111
-Luna	f	110
-Lina	f	110
-Lavínia	f	109
-Concetta	f	108
-Maura	f	108
-Monia	f	108
-Ítalo	m	107
-Richard	m	107
-Eugénia	f	106
-Morena	f	106
-Patrícia	f	106
-Milos	m	105
-Anastasia	f	104
-Alina	f	103
-Carola	f	103
-Gian-Luca	m	103
-Piera	f	103
-Piergiorgio	m	103
-Victória	f	103
-Gianna	f	103
-Fabiano	m	102
-Gaspare	m	102
-Ennio	m	102
-Agata	f	102
-Roméo	m	102
-Selene	f	102
-Danté	m	101
-Lía	f	101
-Joseph	m	101
-Jenny	f	101
-Aurélio	m	101
-Eros	m	100
-Vera	f	99
-Steve	m	99
-Paula	f	98
-Jelena	f	98
-Gianmaria	m	98
-Dan	m	97
-Nancy	f	97
-Ivo	m	97
-Gilberto	m	97
-Floriana	f	96
-Angel	f	96
-Vladimír	m	96
-Costantino	m	95
-Catia	f	95
-Filomena	f	95
-Ramona	f	93
-Marija	f	93
-María-Luisa	f	92
-Méry	f	92
-Raúl	m	92
-Ermanno	m	91
-Pierangelo	m	91
-Gemma	f	89
-Clarissa	f	88
-Jasmine	f	88
-Pier-Paolo	m	88
-Emanuel	m	87
-Alfio	m	87
-Ilario	m	87
-Isabel	f	87
-María-Pía	f	86
-Justin	m	85
-Gian-Marco	m	85
-Gabriela	f	84
-Adam	m	84
-Camillo	m	84
-Bernardo	m	84
-Michel	m	84
-Remo	m	84
-Celeste	f	83
-Inés	f	83
-Giuditta	f	83
-Achille	m	83
-Maria-Chiara	f	83
-George	m	82
-Lorella	f	82
-Steven	m	82
-Gioacchino	m	82
-Micol	f	82
-Ada	f	82
-Niko	m	82
-Pedro	m	82
-Orlando	m	80
-Aniello	m	80
-Albert	m	79
-Dani	m	79
-Marinella	f	79
-Mariana	f	79
-Raimondo	m	79
-Natale	m	79
-Irina	f	78
-Mariateresa	f	78
-Oriana	f	78
-Rudy	m	77
-Christopher	m	77
-Genny	f	77
-Mino	m	77
-Elizabeth	f	76
-Dóra	f	76
-Consuelo	f	76
-Danila	f	76
-Marcus	m	76
-Milica	f	76
-Matthew	m	76
-Rodrigo	m	75
-Gina	f	75
-Egidio	m	74
-Julian	m	74
-Loretta	f	74
-Dany	m	74
-Assunta	f	74
-Andrés	m	74
-Germano	m	73
-Oliver	m	73
-Natascia	f	73
-Danny	m	72
-Mariapia	f	72
-Vincent	m	72
-Sasa	m	72
-Ryan	m	71
-Rossano	m	71
-Adolfo	m	71
-María-Elena	f	71
-Tommy	m	70
-Fulvia	f	70
-Karen	f	70
-Pier-Luigi	m	70
-Brian	m	69
-Johnny	m	69
-Elsa	f	69
-Gioele	m	69
-Luka	m	68
-Muhammad	m	68
-Licia	f	68
-Rafael	m	68
-Iris	f	68
-Samanta	f	68
-Amy	f	68
-Julius	m	67
-Marc	m	67
-Duccio	m	67
-Olivia	f	67
-Natasha	f	67
-Susy	f	67
-Tomas	m	67
-Gustavo	m	67
-Fiorenzo	m	66
-Juri	m	66
-Dejan	m	66
-Mia	f	66
-Nando	m	66
-Léa	f	65
-Karim	m	65
-Domenica	f	65
-Dylan	m	65
-Andrei	m	65
-Dusan	m	64
-Carol	f	64
-Luke	m	64
-Ottavio	m	64
-Emmanuel	m	63
-Gian-Paolo	m	63
-Arcangelo	m	63
-Marcos	m	63
-Mariachiara	f	63
-María-Cristina	f	63
-Miki	m	62
-Lucy	f	62
-Doriana	f	62
-Pía	f	62
-Osvaldo	m	62
-Naomi	f	62
-Stéphanie	f	62
-Sophia	f	62
-Ketty	f	61
-Kristina	f	61
-Manfredi	m	61
-Eli	m	61
-Vania	f	61
-Vanni	m	61
-Tonia	f	61
-Jan	m	61
-Fortunato	m	60
-Antony	m	60
-Alvaro	m	60
-Bryan	m	60
-Clélia	f	60
-Marzio	m	60
-Terry	m	60
-Vincenza	f	60
-Santi	m	59
-Boris	m	59
-Flora	f	59
-Félix	m	59
-Arnaldo	m	59
-Manlio	m	59
-Maicol	m	59
-Zoran	m	58
-Fabrizia	f	58
-Rosita	f	58
-Bella	f	58
-Graziana	f	58
-Marie	f	58
-Paride	m	58
-Ricardo	m	57
-Tullio	m	57
-Dimitri	m	57
-Fatima	f	57
-Amélia	f	57
-Iolanda	f	57
-Maria-Rita	f	56
-Mina	f	56
-Myriam	f	56
-Fernanda	f	56
-Raffaello	m	56
-Oreste	m	56
-Ileana	f	56
-Alexis	f	56
-Aleksandra	f	55
-Anna-Rita	f	55
-Amalia	f	55
-Delia	f	55
-Demetrio	m	55
-Christina	f	55
-Lodovica	f	55
-Rachel	f	55
-Henry	m	54
-Goran	m	54
-Gessica	f	54
-Felipe	m	54
-Esther	f	54
-Evelyn	f	54
-Sasha	m	53
-Brunella	f	53
-Kiara	f	53
-Regina	f	53
-Ottavia	f	53
-Mónika	f	53
-Luisella	f	53
-Tito	m	52
-Ferruccio	m	52
-Kim	f	52
-Benjamín	m	52
-Gisella	f	52
-Italia	f	52
-Pierfrancesco	m	52
-Caroline	f	51
-Florian	m	51
-Rosalía	f	51
-Roman	m	51
-Andreea	f	51
-Helena	f	51
-Magda	f	51
-Lucilla	f	51
-Mariarosaria	f	51
-María-Laura	f	50
-Charles	m	50
-Virgílio	m	50
-Gilda	f	50
-Betty	f	49
-Kate	f	49
-Louis	m	49
-Jordan	m	49
-Fiorenza	f	49
-Selena	f	49
-Girolamo	m	49
-Jerry	m	48
-Jason	m	48
-Gianmario	m	48
-Francis	m	48
-Filip	m	48
-Jovan	m	48
-Benito	m	48
-Tanja	f	48
-Pasqualino	m	48
-Savino	m	48
-Elettra	f	47
-Felicia	f	47
-Alexandre	m	47
-Alexia	f	47
-Alvise	m	47
-Priscilla	f	47
-Maria-Rosaria	f	47
-Mahmoud	m	47
-Fran	m	46
-Giammarco	m	46
-Elvis	m	46
-Leila	f	46
-Kristian	m	46
-Sophie	f	46
-Christine	f	46
-Claire	f	46
-Jane	f	46
-Aaron	m	46
-Annachiara	f	46
-Olimpia	f	46
-Onofrio	m	45
-René	m	45
-Brenda	f	45
-Lillo	m	45
-Léna	f	45
-Leopoldo	m	45
-Tonio	m	45
-Dina	f	45
-Anton	m	45
-Ibrahim	m	45
-Mihaela	f	45
-Marcelo	m	45
-María-Paola	f	44
-Moira	f	44
-Emmanuele	m	44
-Jean	m	44
-Rolando	m	44
-Allegra	f	43
-Alicia	f	43
-Bob	m	43
-Karina	f	43
-Mohammed	m	43
-Matías	m	43
-Maya	f	43
-Fabian	m	43
-Giacinto	m	43
-Edward	m	43
-Sauro	m	43
-Santiago	m	43
-Santino	m	43
-Isa	f	43
-Enea	m	42
-Katiuscia	f	42
-Anja	f	42
-Charlotte	f	42
-Chantal	f	42
-Marialuisa	f	42
-Marian	m	42
-Mila	f	42
-Sandy	f	42
-Santé	m	42
-Sabino	m	42
-Kelly	u	41
-Joshua	m	41
-Grace	f	41
-Fiammetta	f	41
-Gerry	m	41
-Aida	f	41
-Petra	f	41
-Morgan	m	41
-Marius	m	41
-Manolo	m	41
-Matthias	m	41
-Tanya	f	41
-Wanda	f	40
-Tobia	m	40
-Emidio	m	40
-Joel	m	40
-Rosella	f	40
-Helen	f	40
-Ingrid	f	40
-Michaela	f	40
-Axel	m	40
-Adelaide	f	40
-Nazzareno	m	40
-Pío	m	40
-Paulo	m	40
-Ramón	m	40
-Raffaela	f	40
+# it first names from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=1, cap=10000000).
+Andrea	m	11522	andrɛːa
+Marco	m	10693	marko
+Francesco	m	9708	frant͡ʃesko
+Alessandro	m	7957	alessandro
+Luca	m	7936	luːka
+Giuseppe	m	6771	d͡ʒuzeppe
+António	m	6421	anthnjo
+Matteo	m	5845	mattɛːo
+Stefano	m	5750	stefano
+Paolo	m	4925	paolo
+Davide	m	4891	davide
+Francesca	f	4846	frant͡ʃeska
+Roberto	m	4562	roberto
+Giovanni	m	4533	d͡ʒovanni
+Simone	m	4325	simɔne
+Michèle	m	4303	,mitʃɛle
+Fabio	m	4234	fabjo
+Giulia	f	3894	d͡ʒulja
+Lorenzo	m	3873	lorentso
+Danièle	m	3821	dainiɛle
+Chiara	f	3717	kjara
+Federico	m	3376	federiko
+Sara	f	3343	sara
+Massimo	m	3140	massimo
+Riccardo	m	3117	rikkardo
+Nicola	m	3023	nikola
+Valentina	f	2979	valentina
+Alberto	m	2968	albɛrto
+Federica	f	2852	federika
+Martina	f	2802	martina
+Vincenzo	m	2795	vint͡ʃɛntso
+Luigi	m	2778	luid͡ʒ
+Laura	f	2689	laura
+Sílvia	f	2623	zlvia
+Alessio	m	2576	alessjo
+Gabriele	m	2572	ɡabriɛle
+Gianluca	m	2571	d͡ʒanluka
+Anna	f	2557	anna
+Salvatore	m	2504	salvatore
+Mario	m	2443	marjo
+Elena	f	2418	elɛna
+Claudio	m	2407	klawdjo
+Enrico	m	2261	enriko
+Aléssia	f	2231	a,lessia
+Mattia	m	2204	mattia
+Filippo	m	2155	filippo
+Alessandra	f	2153	alessandra
+Carlo	m	2124	karlo
+Maurizio	m	2102	mawritt͡sjo
+Fabrizio	m	2085	fabrittsjo
+Angelo	m	2006	and͡ʒelo
+Elisa	f	2002	eliza
+Emanuele	m	1972	emanuɛle
+Giacomo	m	1901	d͡ʒakɔmo
+Giorgio	m	1859	dʒordʒo
+Domenico	m	1831	domeniko
+Pietro	m	1792	pjetro
+Mauro	m	1791	mawro
+Roberta	f	1774	roberta
+Paola	f	1767	paola
+María	f	1746	,mara
+Cristina	f	1737	krɪstiːnə
+Claudia	f	1700	klawdja
+Ilaria	f	1615	ilarja
+Leonardo	m	1580	leonardo
+Daniela	f	1577	daniɛla
+Simona	f	1525	simona
+Stefanía	f	1515	stiefana
+Giorgia	f	1468	d͡ʒorʤia
+Barbara	f	1415	barbara
+Darío	m	1390	dairo
+Raffaele	m	1370	raffaele
+Tommaso	m	1370	tommazo
+Eleonora	f	1352	eleonora
+Valéria	f	1339	valeria
+Antonella	f	1336	antonɛlla
+Angéla	f	1277	andʒela
+Sérgio	m	1275	serd͡ʒo
+Diego	m	1256	djɛɡo
+Mónica	f	1233	mnika
+Alex	m	1221	aleks
+Alice	f	1214	alit͡ʃe
+Marta	f	1184	marta
+Lucía	f	1154	,lu,ka
+Michela	f	1144	mikɛla
+Massimiliano	m	1134	massimiljano
+Pasquale	m	1124	paskwale
+Christian	m	1123	kristjan
+Edoardo	m	1118	edoardo
+Gianni	m	1107	d͡ʒanni
+Franco	m	1069	franko
+Serena	f	1043	serena
+Verónica	f	1025	,vɛrnika
+Manuel	m	1012	manuɛl
+Mirko	m	1011	mirko
+Valerio	m	976	valerjo
+Giulio	m	963	d͡ʒuljo
+Ivan	m	954	ivan
+Cristian	m	944	kristjan
+Béatrice	f	919	beatrit͡ʃe
+Arianna	f	905	arjanna
+Jacopo	m	898	jakopo
+Marcello	m	878	mart͡ʃello
+Giovanna	f	876	d͡ʒovanna
+Irène	f	849	irɛne
+Sabrina	f	841	sabrina
+Giada	f	841	d͡ʒada
+Jéssica	f	839	dʒessika
+Elisabetta	f	830	elizabetta
+Patrizia	f	825	patrittsja
+Danilo	m	816	danilo
+Gaetano	m	803	ɡaetano
+Caterina	f	779	katerina
+David	m	760	david
+Luciano	m	755	lut͡ʃano
+Sofía	f	753	sofa
+Vittorio	m	750	vittɔrjo
+Bruno	m	750	bruno
+Enzo	m	734	ɛndzo
+Marina	f	718	marina
+Manuela	f	683	manuɛla
+Camilla	f	673	kamilla
+Emanuela	f	673	emanuɛla
+Guido	m	672	ɡwido
+Daniel	m	671	daniɛl
+Max	m	662	maks
+Piero	m	655	pjɛro
+Samuele	m	655	zamuɛle
+Annalisa	f	644	annalisa
+Giancarlo	m	644	d͡ʒankarlo
+Umberto	m	636	umberto
+Michael	m	634	mikael
+Vito	m	621	vito
+Carmine	m	618	karmine
+Gaia	f	616	ɡaja
+Erika	f	615	erika
+Tiziana	f	595	tittsjana
+Cristiano	m	595	kristjano
+Cinzia	f	595	t͡ʃintsia
+Rossella	f	589	rossɛlla
+Rita	f	575	rita
+Sonia	f	557	sonia
+Carla	f	555	karla
+Ciro	m	551	t͡ʃiro
+Aurora	f	550	aurɔra
+Gianfranco	m	543	d͡ʒanfranko
+Benedetta	f	538	benedetta
+Sandro	m	538	sandro
+Thomas	m	537	tɔmas
+Vanessa	f	535	vanessa
+Gennaro	m	534	d͡ʒennaro
+Rocco	m	526	rɔkko
+Salvo	m	522	salvo
+Luísa	f	514	,lusa
+Lisa	f	513	liza
+Antonino	m	511	antonino
+Aldo	m	508	aldo
+Giusy	f	506	ɡiusj
+Flavio	m	503	flavio
+Marianna	f	503	marjanna
+Margherita	f	503	marɡerite
+Rosario	m	503	rozarjo]
+Gabriella	f	496	ɡabriɛlla
+Raffaella	f	495	raffaella
+Alfredo	m	494	alfredo
+Carmen	f	482	karmen
+Walter	m	479	valter
+Noemí	f	474	,nɔem
+Nicole	f	472	nikole
+Renato	m	469	renato
+Rosa	f	469	rɔza
+Teresa	f	467	tereza
+Isabella	f	467	izabella
+Carlotta	f	458	karlotta
+Alé	m	455	a,le
+Alfonso	m	455	alfonso
+Carmelo	m	442	karmelo
+Gianmarco	m	437	d͡ʒammarko
+Mary	f	437	mari]
+Silvio	m	431	silvjo
+Damiano	m	427	damjano
+Glória	f	426	ɡlria
+Cecília	f	424	tʃeklia
+Giuliano	m	422	d͡ʒuljano
+Emilio	m	418	emiljo
+Letizia	f	415	letittsja
+Nadia	f	412	nadia
+Pierluigi	m	411	pirluid͡ʒ
+Débora	f	404	debora
+Gréta	f	403	ɡreta
+Sebastiano	m	403	sebastjano
+Adriano	m	403	adriano
+Érica	f	398	erika
+Antonello	m	398	antonɛllo
+Emiliano	m	396	emiljano
+Cesare	m	395	tʃeːzare
+Linda	f	394	linda
+Corrado	m	391	korrado
+Katia	f	376	katia
+Eugenio	m	374	ewd͡ʒɛnjo
+Marika	f	363	marika
+Rebecca	f	350	rebekka
+Nicoletta	f	348	nikoletta
+Virgínia	f	347	,virɡnia
+Cosimo	m	344	kozimo
+Nico	m	342	niko
+Armando	m	342	armando
+Lara	f	340	lara
+Sandra	f	340	sandra
+Ludovica	f	339	ludovika
+Miriam	f	335	,mirjam
+Angélica	f	331	andʒelika
+Vittoria	f	331	vittɔrja
+Tiziano	m	329	tittsjano
+Annamaria	f	328	annamaria
+Mirco	m	328	mirko
+Sarah	f	327	sara
+Lúcio	m	324	lt͡ʃo
+Nino	u	322	nino
+Carolina	f	319	karolina
+Fabiana	f	318	fabjana
+Anna-Maria	f	318	annamaria
+Saverio	m	316	savɛrjo
+Mara	f	315	mara
+Donato	m	314	donato
+Tony	m	312	tonaj
+Lucrezia	f	309	lukrettsja
+Grazia	f	307	ɡratsja
+Mimmo	m	306	mimmo
+Adriana	f	305	adrjana
+Déborah	f	304	debora
+Flavia	f	303	flavia
+Emma	f	298	ɛmma
+Pierpaolo	m	293	pirpaolo
+Omar	m	293	ɔmar
+Valentino	m	291	valentini
+Elia	m	291	elia
+Loredana	f	291	loredana
+Donatella	f	289	donatella
+Melissa	f	288	melissa
+Fulvio	m	287	fulvio
+Denise	f	286	denize
+Ilenia	f	284	ilɛnja
+Pino	m	283	pino
+Viviana	f	281	viviana
+Kevin	m	279	kevin
+John	m	276	d͡ʒɔn
+Marzia	f	276	mart͡sja
+Gerardo	m	275	d͡ʒerardo
+Susanna	f	273	suzanna
+Giuliana	f	262	d͡ʒuljana
+Nicholas	m	261	nikolas
+Dino	m	257	dino
+Rosaria	f	255	rozarja
+Rosanna	f	254	rozanna
+Pamela	f	253	pamela
+Lorena	f	250	lorɛːna
+Denis	m	249	denis
+Eva	f	247	eva
+Diana	f	247	djana
+Gino	m	247	d͡ʒino
+Biagio	m	246	biad͡ʒo
+Ernesto	m	245	ernesto
+Bianca	f	244	bjanka
+Ugo	m	242	uɡo
+Gianluigi	m	241	d͡ʒanluid͡ʒ
+Igor	m	241	iɡor
+Loris	m	238	loris
+Matilde	f	237	matilde
+Asia	f	235	azja
+Ivana	f	234	ivana
+Agostino	m	233	aɡostino
+Felice	m	231	felit͡ʃe
+Luana	f	230	luana
+Clara	f	229	klara
+Mariano	m	229	marjano
+Ettore	m	229	ɛttore
+Léo	m	228	leo
+Enrica	f	226	enrika
+Agnese	f	226	aɲɲese
+Fernando	m	225	fernando
+Fausto	m	224	fausto
+Maddalena	f	223	maddalena
+Samantha	f	223	samanta
+Rossana	f	221	rossana
+Cristiana	f	220	kristjana
+Tania	f	219	tania
+Óscar	m	215	skar
+Milena	f	214	milɛna
+William	m	213	william
+Rachele	f	212	rakɛle
+Patrick	m	211	patrik
+Fabíola	f	210	fabaola
+Jennifer	f	209	jɛnnifer
+Carlos	m	208	karlos
+Ana	f	207	ana
+Martín	m	205	,martn
+Elio	m	204	ɛljo
+Silvana	f	203	silvana
+Ezio	m	202	ettsjo
+Carmela	f	202	karmela
+Ylenia	f	201	ajlenia
+Peter	m	200	pɛter
+Ferdinando	m	199	ferdinando
+Samuel	m	199	zamuɛl
+Ivano	m	199	ivano
+Giampaolo	m	197	d͡ʒampaolo
+Mariangela	f	194	marjand͡ʒela
+Mohamed	m	194	,mɔamed
+Gigi	m	192	ʤiʤ
+Gabriel	m	192	ɡabriɛl
+Marcella	f	192	mart͡ʃɛlla
+Emília	f	191	emlia
+Luciana	f	191	lut͡ʃiana
+Nicolas	m	190	nikolas
+Martino	m	189	martino
+Giampiero	m	188	d͡ʒampjero
+Stella	f	185	stella
+Michelle	f	185	mikɛlːe
+Mark	m	185	,mark
+Jonathan	m	184	dʒɔnatan
+Anita	f	184	anita
+Alexander	m	184	alɛksander
+Paul	m	184	paul
+Melania	f	183	melania
+Marko	m	181	marko
+Lino	m	180	lino
+Graziano	m	179	ɡrattsjano
+Alexandra	f	179	alɛksandra
+Guglielmo	m	178	ɡuʎʎɛlmo
+Anthony	m	177	antonaj
+Attilio	m	177	attiljo
+Nunzio	m	175	nunt͡sjo
+James	m	175	d͡ʒɛmes
+Giusi	f	174	d͡ʒuzi
+Lorenza	f	174	lorɛntsa
+Amedeo	m	174	amedɛo
+Patrizio	m	174	patrittsjo
+Sharon	f	172	ʃeron
+Arturo	m	172	arturo
+Ornella	f	171	ɔrnɛlla
+Alí	m	171	al
+Giordano	m	171	d͡ʒordano
+Frank	m	170	frank
+Nikola	u	170	,nikola
+Ignazio	m	170	iɲɲatt͡sjo
+Stefan	m	170	stefan
+Rosy	f	169	rosɔj
+Rino	m	168	rino
+Romina	f	167	romina
+Ahmed	m	167	amed
+Marilena	f	167	marilɛna
+Costanza	f	166	kostantsa
+Pablo	m	166	pablo
+Olga	f	166	ɔlɡa
+Tina	f	165	tina
+Moreno	m	164	morɛno
+Robert	m	163	robert
+Lídia	f	162	ldia
+Viola	f	160	viɔla
+José	u	160	dʒoze
+Maria-Grazia	f	160	mariaɡratsja
+Nick	m	159	nik
+Yuri	m	157	juːri
+Sebastian	m	154	sebastjan
+Mariella	f	152	marjɛlla
+Ambra	f	151	ambra
+Sabina	f	151	sabina
+Silvano	m	151	silvano
+Tatiana	f	151	tatjana
+Gianpaolo	m	150	d͡ʒanpaolo
+Antónia	f	149	anthnia
+Víctor	m	149	vktor
+Antonietta	f	148	antonjɛtta
+Adèle	f	148	a,dɛle
+Natalia	f	148	natalia
+Rosalba	f	147	rosalba
+Michelangelo	m	147	mikeland͡ʒɛlo
+Renzo	m	146	rentso
+Augusto	m	146	awɡusto
+Mike	m	145	,mike
+Nello	m	144	nɛllo
+Marisa	f	143	marisa
+Franca	f	142	franka
+Ruggero	m	141	rudd͡ʒɛro
+Alan	m	141	alan
+María-Teresa	f	140	,maratereza
+Désirée	f	140	de,sire
+Diletta	f	138	diletta
+Ester	f	137	ɛster
+Eduardo	m	136	eduardo
+Nunzia	f	135	nunt͡sja
+Luís	m	135	,lus
+Tamara	f	134	tamara
+Ginevra	f	133	d͡ʒinevra
+Gregorio	m	133	ɡreɡorjo
+Enza	f	132	ɛntsa
+Liliana	f	132	liljana
+Andrew	m	132	andrutveː
+André	m	132	andre
+Micaela	f	132	mikaela
+Marino	m	132	marino
+Ida	f	131	ida
+Eliana	f	131	eljana
+Júlia	f	130	dʒlia
+Graziella	f	130	ɡrattsjɛlːa
+Mariagrazia	f	130	marjaɡratsja
+Orazio	m	130	orattsjo
+Renata	f	129	renata
+Miriana	f	128	mirjana
+Annarita	f	128	annarita
+Benedetto	m	127	benedetto
+Fiorella	f	127	fjorella
+Alba	f	126	alba
+Amanda	f	126	amanda
+Ludovico	m	126	ludoviko
+Simón	m	125	,si,mn
+Simonetta	f	125	simɔnetta
+Livio	m	125	livjo
+Adrian	m	125	adrian
+Marica	f	124	maɾika
+Toni	m	123	tɔni
+Pina	f	122	pina
+Bruna	f	120	bruna
+Valter	m	120	valter
+Calogero	m	119	kalɔd͡ʒero
+Lívia	f	119	lvia
+Azzurra	f	119	addzurra
+Rubén	m	118	ruben
+Manuele	m	118	manuɛle
+Eric	m	117	erik
+Emily	f	116	emilj
+Tonino	m	116	tonino
+Giuseppina	f	116	d͡ʒuzeppina
+Santo	m	116	santo
+Rodolfo	m	116	rodɔlfo
+Erik	m	115	eraik
+Iacopo	m	115	iakopo
+Gioia	f	115	d͡ʒɔja
+Elvira	f	114	ɛlvira
+Dennis	m	114	dennis
+Leandro	m	114	leandro
+Andy	m	114	andi
+Alejandro	m	114	a,ledʒandro
+Lucas	m	114	lukas
+Mirella	f	114	mirɛlla
+Nina	f	114	nina
+Fede	f	113	fede
+Romano	m	112	romano
+Daria	f	111	daria
+Dalila	f	111	dalila
+Gianpiero	m	111	d͡ʒanpjɛro
+Luna	f	110	luna
+Lina	f	110	lina
+Lavínia	f	109	l,avnia
+Concetta	f	108	kont͡ʃetta
+Maura	f	108	maura
+Monia	f	108	mɔnja
+Ítalo	m	107	talo
+Richard	m	107	rikard
+Eugénia	f	106	euɡenia
+Morena	f	106	morɛna
+Patrícia	f	106	,pa,trt͡ʃa
+Milos	m	105	milɔs
+Anastasia	f	104	anastazia
+Alina	f	103	alina
+Carola	f	103	karɔla
+Gian-Luca	m	103	d͡ʒanluka
+Piera	f	103	pjɛra
+Piergiorgio	m	103	pird͡ʒordʒo
+Victória	f	103	,vitʃtria
+Gianna	f	103	d͡ʒanna
+Fabiano	m	102	fabjano
+Gaspare	m	102	ɡaspare
+Ennio	m	102	ɛnnjo
+Agata	f	102	agata
+Roméo	m	102	rodmeo
+Selene	f	102	selɛne
+Danté	m	101	danthe
+Lía	f	101	la
+Joseph	m	101	dʒɔsiep
+Jenny	f	101	jɛnnaj
+Aurélio	m	101	aurelio
+Eros	m	100	eros
+Vera	f	99	vera
+Steve	m	99	steve
+Paula	f	98	paula
+Jelena	f	98	jɛlena
+Gianmaria	m	98	d͡ʒammarja
+Dan	m	97	dan
+Nancy	f	97	nankj
+Ivo	m	97	ivo
+Gilberto	m	97	d͡ʒilbɛrto
+Floriana	f	96	floriana
+Angel	f	96	and͡ʒɛl
+Vladimír	m	96	vla,di,mr
+Costantino	m	95	kostantino
+Catia	f	95	katja
+Filomena	f	95	filomɛna
+Ramona	f	93	ramona
+Marija	f	93	maraid͡ʒɛ
+María-Luisa	f	92	,maraluisa
+Méry	f	92	merj
+Raúl	m	92	ral
+Ermanno	m	91	ermanno
+Pierangelo	m	91	pjerand͡ʒɛlo
+Gemma	f	89	d͡ʒɛmma
+Clarissa	f	88	klarjssa
+Jasmine	f	88	d͡ʒɛzmine
+Pier-Paolo	m	88	pirpaolo
+Emanuel	m	87	emanuɛl
+Alfio	m	87	alfjo
+Ilario	m	87	ilarjo
+Isabel	f	87	izabel
+María-Pía	f	86	,marapa
+Justin	m	85	d͡ʒustin
+Gian-Marco	m	85	d͡ʒanmarko
+Gabriela	f	84	ɡabriɛla
+Adam	m	84	adam
+Camillo	m	84	kamillo
+Bernardo	m	84	bernardo
+Michel	m	84	mikel
+Remo	m	84	rɛmo
+Celeste	f	83	t͡ʃelɛste
+Inés	f	83	ines
+Giuditta	f	83	d͡ʒuditta
+Achille	m	83	akille
+Maria-Chiara	f	83	mariakjara
+George	m	82	d͡ʒeɔrd͡ʒe
+Lorella	f	82	lorɛlla
+Steven	m	82	steven
+Gioacchino	m	82	d͡ʒoakkino
+Micol	f	82	mikol
+Ada	f	82	ada
+Niko	m	82	,niko
+Pedro	m	82	pedro
+Orlando	m	80	orlando
+Aniello	m	80	anjɛllo
+Albert	m	79	albert
+Dani	m	79	dani
+Marinella	f	79	marinɛlla
+Mariana	f	79	marjana
+Raimondo	m	79	rajmondo
+Natale	m	79	natale
+Irina	f	78	irina
+Mariateresa	f	78	marjatereza
+Oriana	f	78	orjana
+Rudy	m	77	rudi
+Christopher	m	77	krɪstopher
+Genny	f	77	d͡ʒennaj
+Mino	m	77	mino
+Elizabeth	f	76	elitsa,bɛt
+Dóra	f	76	dra
+Consuelo	f	76	konsuelo
+Danila	f	76	danila
+Marcus	m	76	markus
+Milica	f	76	milika
+Matthew	m	76	mattaveː
+Rodrigo	m	75	rɔdriɡo
+Gina	f	75	d͡ʒina
+Egidio	m	74	ed͡ʒidjɔ
+Julian	m	74	d͡ʒuljan
+Loretta	f	74	loretta
+Dany	m	74	danaj
+Assunta	f	74	assunta
+Andrés	m	74	andres
+Germano	m	73	d͡ʒermano
+Oliver	m	73	oliver
+Natascia	f	73	nataʃʃa
+Danny	m	72	dannaj
+Mariapia	f	72	mariapia
+Vincent	m	72	vint͡ʃɛnt
+Sasa	m	72	sasa
+Ryan	m	71	rian
+Rossano	m	71	rossano
+Adolfo	m	71	adɔlfo
+María-Elena	f	71	,maraelɛŋa
+Tommy	m	70	toimmj
+Fulvia	f	70	fulvia
+Karen	f	70	karɛn
+Pier-Luigi	m	70	pirluid͡ʒ
+Brian	m	69	brian
+Johnny	m	69	d͡ʒɔnnaj
+Elsa	f	69	elsa
+Gioele	m	69	dʒioɛle
+Luka	m	68	luka
+Muhammad	m	68	muammad
+Licia	f	68	lit͡ʃa
+Rafael	m	68	rafaɛl
+Iris	f	68	iris
+Samanta	f	68	samanta
+Amy	f	68	a,mj
+Julius	m	67	d͡ʒulius
+Marc	m	67	mar,k
+Duccio	m	67	dutʧo
+Olivia	f	67	olivja
+Natasha	f	67	natasa
+Susy	f	67	swsj
+Tomas	m	67	tomas
+Gustavo	m	67	ɡustavo
+Fiorenzo	m	66	fjorentso
+Juri	m	66	d͡ʒuri
+Dejan	m	66	ded͡ʒɛn
+Mia	f	66	mia
+Nando	m	66	nando
+Léa	f	65	lea
+Karim	m	65	karim
+Domenica	f	65	domenika
+Dylan	m	65	dilan
+Andrei	m	65	andrɛːi
+Dusan	m	64	duzan
+Carol	f	64	karɔl
+Luke	m	64	luke
+Ottavio	m	64	ottavio
+Emmanuel	m	63	ɛmmanuɛl
+Gian-Paolo	m	63	d͡ʒanpaolo
+Arcangelo	m	63	arkaŋd͡ʒelo
+Marcos	m	63	markɔs
+Mariachiara	f	63	marjakjara
+María-Cristina	f	63	,marakris,tina
+Miki	m	62	miki
+Lucy	f	62	,lukj
+Doriana	f	62	dorjana
+Pía	f	62	,pa
+Osvaldo	m	62	ozvaldo
+Naomi	f	62	naɔmi
+Stéphanie	f	62	stefianie
+Sophia	f	62	sopja
+Ketty	f	61	kettai
+Kristina	f	61	kristina
+Manfredi	m	61	manfredi
+Eli	m	61	eli
+Vania	f	61	vanja
+Vanni	m	61	vanni
+Tonia	f	61	tonia
+Jan	m	61	d͡ʒɛn
+Fortunato	m	60	fortunato
+Antony	m	60	antonaj
+Alvaro	m	60	alvaro
+Bryan	m	60	brjan
+Clélia	f	60	klelia
+Marzio	m	60	martsjo
+Terry	m	60	terrj
+Vincenza	f	60	vint͡ʃɛntsa
+Santi	m	59	santi
+Boris	m	59	boris
+Flora	f	59	flɔra
+Félix	m	59	feliks
+Arnaldo	m	59	arnaldo
+Manlio	m	59	manljo
+Maicol	m	59	maikol
+Zoran	m	58	dzoran
+Fabrizia	f	58	fabrittsja
+Rosita	f	58	rozita
+Bella	f	58	bɛlla
+Graziana	f	58	ɡrattsjana
+Marie	f	58	marje
+Paride	m	58	paride
+Ricardo	m	57	rikardo
+Tullio	m	57	tulljo
+Dimitri	m	57	dimitri
+Fatima	f	57	fatima
+Amélia	f	57	a,melia
+Iolanda	f	57	olanda
+Maria-Rita	f	56	mariarita
+Mina	f	56	mina
+Myriam	f	56	majrjam
+Fernanda	f	56	fernanda
+Raffaello	m	56	raffaello
+Oreste	m	56	oreste
+Ileana	f	56	ileana
+Alexis	f	56	alɛksis
+Aleksandra	f	55	a,leksandra
+Anna-Rita	f	55	annarita
+Amalia	f	55	amalia
+Delia	f	55	delia
+Demetrio	m	55	demɛtrio
+Christina	f	55	krɪstiːnə
+Lodovica	f	55	lodovika
+Rachel	f	55	rakel
+Henry	m	54	enrj
+Goran	m	54	ɡoran
+Gessica	f	54	d͡ʒɛssika
+Felipe	m	54	felipe
+Esther	f	54	estar
+Evelyn	f	54	evelajn
+Sasha	m	53	sasa
+Brunella	f	53	brunɛlla
+Kiara	f	53	kjara
+Regina	f	53	red͡ʒina
+Ottavia	f	53	ottavia
+Mónika	f	53	mnika
+Luisella	f	53	luisɛlla
+Tito	m	52	tito
+Ferruccio	m	52	ferrutt͡ʃo
+Kim	f	52	kim
+Benjamín	m	52	,bɛndʒa,mn
+Gisella	f	52	d͡ʒisɛlla
+Italia	f	52	italja
+Pierfrancesco	m	52	pirfrant͡ʃesko
+Caroline	f	51	karoline
+Florian	m	51	florian
+Rosalía	f	51	rosa,la
+Roman	m	51	roman
+Andreea	f	51	andrɛːɛa
+Helena	f	51	elena
+Magda	f	51	maɡda
+Lucilla	f	51	lut͡ʃilla
+Mariarosaria	f	51	marjarosarja
+María-Laura	f	50	,maralaura
+Charles	m	50	t͡ʃaːrls
+Virgílio	m	50	,virɡlio
+Gilda	f	50	d͡ʒilda
+Betty	f	49	bettai
+Kate	f	49	keit
+Louis	m	49	luiz
+Jordan	m	49	d͡ʒɔrdan
+Fiorenza	f	49	fjorɛntsa
+Selena	f	49	selɛna
+Girolamo	m	49	d͡ʒirolamo
+Jerry	m	48	d͡ʒirri]
+Jason	m	48	d͡ʒɛson
+Gianmario	m	48	d͡ʒammarjo
+Francis	m	48	frantʃis
+Filip	m	48	filip
+Jovan	m	48	d͡ʒɔvan
+Benito	m	48	bɛnito
+Tanja	f	48	tandʒa
+Pasqualino	m	48	paskwalino
+Savino	m	48	savino
+Elettra	f	47	elettra
+Felicia	f	47	felit͡ʃia
+Alexandre	m	47	alɛksandrɛː
+Alexia	f	47	alɛksja
+Alvise	m	47	alvize
+Priscilla	f	47	priʃʃilla
+Maria-Rosaria	f	47	mariarozarja
+Mahmoud	m	47	,mamau̯d
+Fran	m	46	fran
+Giammarco	m	46	d͡ʒammarko
+Elvis	m	46	ɛlvis
+Leila	f	46	leila
+Kristian	m	46	kristjan
+Sophie	f	46	sopie
+Christine	f	46	krɪstiːne
+Claire	f	46	klɛjre
+Jane	f	46	d͡ʒɛne
+Aaron	m	46	aaron
+Annachiara	f	46	annakjara
+Olimpia	f	46	olimpia
+Onofrio	m	45	onofrio
+René	m	45	rutne
+Brenda	f	45	brenda
+Lillo	m	45	lillo
+Léna	f	45	lena
+Leopoldo	m	45	leopɔldo
+Tonio	m	45	tɔnjo
+Dina	f	45	dina
+Anton	m	45	anton
+Ibrahim	m	45	ibraim
+Mihaela	f	45	miaɛla
+Marcelo	m	45	mart͡ʃelo
+María-Paola	f	44	,marapaola
+Moira	f	44	moira
+Emmanuele	m	44	ɛmmanuɛle
+Jean	m	44	d͡ʒin
+Rolando	m	44	rolando
+Allegra	f	43	alleɡra
+Alicia	f	43	alit͡ʃa
+Bob	m	43	bɔb
+Karina	f	43	karina
+Mohammed	m	43	,mɔammɛd
+Matías	m	43	,ma,tas
+Maya	f	43	maja
+Fabian	m	43	fabjan
+Giacinto	m	43	d͡ʒat͡ʃinto
+Edward	m	43	ed,ward
+Sauro	m	43	sawro
+Santiago	m	43	santiaɡo
+Santino	m	43	santino
+Isa	f	43	iza
+Enea	m	42	enea
+Katiuscia	f	42	katiuʃʃa
+Anja	f	42	andʒa
+Charlotte	f	42	t͡ʃaːrlɔt
+Chantal	f	42	ʃantal
+Marialuisa	f	42	marjaluisa
+Marian	m	42	marjan
+Mila	f	42	mila
+Sandy	f	42	sandi
+Santé	m	42	santhe
+Sabino	m	42	sabino
+Kelly	u	41	kelli
+Joshua	m	41	dʒɔʃwa
+Grace	f	41	ɡrat͡ʃe
+Fiammetta	f	41	fjammetta
+Gerry	m	41	d͡ʒerraj
+Aida	f	41	ajda
+Petra	f	41	petra
+Morgan	m	41	morɡan
+Marius	m	41	marjus
+Manolo	m	41	manɔlo
+Matthias	m	41	mattojas
+Tanya	f	41	tanja
+Wanda	f	40	vanda
+Tobia	m	40	tobja
+Emidio	m	40	emidio
+Joel	m	40	d͡ʒɔɛl
+Rosella	f	40	rosɛlla
+Helen	f	40	elen
+Ingrid	f	40	inɡri,d
+Michaela	f	40	mikaela
+Axel	m	40	aksle
+Adelaide	f	40	adelajde
+Nazzareno	m	40	nattsarɛno
+Pío	m	40	,pɔ
+Paulo	m	40	paulo
+Ramón	m	40	ra,mn
+Raffaela	f	40	raffaela
+Philip	m	39	pilip
+Nicolo'	m	39	,nikolo
+César	m	39	kesar
+Kimberly	f	39	kimbɛrlj
+Katarína	f	39	katarna
+Juliana	f	39	d͡ʒuljana
+Lamberto	m	39	lambɛrto
+Evelina	f	39	evelina
+Emiliana	f	39	emiljana
+Susan	f	39	suzan
+Serafino	m	39	serafino
+Artur	m	39	artur
+Antimo	m	39	antimo
+Glauco	m	39	ɡlauko
+María-Rosa	f	39	,mararosa
+Mamadou	m	39	mamadou
+Mohammad	m	39	,mɔammad
+Mimma	f	38	mimma
+Donatello	m	38	donatɛllo
+Lory	f	38	loraj
+Norma	f	38	nɔrma
+Clemente	m	38	klemɛnte
+Vinicio	m	38	vinit͡ʃo
+Vita	f	38	vita
+Valérie	f	38	valerje
+Ubaldo	m	38	ubaldo
+Grégory	m	38	ɡreɡorj
+Glenda	f	38	ɡlenda
+Savio	m	38	savjo
+Sabatino	m	38	sabatino
+Rosangela	f	38	rozaŋd͡ʒela
+Rose	f	38	rose
+Roma	f	38	roma
+Alberta	f	38	albɛrta
+Ariel	f	38	arjel
+Andreína	f	37	an,drɛna
+Ariana	f	37	arjana
+Alma	f	37	alma
+Daiana	f	37	dajana
+Bogdan	m	37	boɡdan
+Bartolo	m	37	bartolo
+Lella	f	37	lella
+Edo	m	37	ɛdo
+Elisabeth	f	37	elisabet
+Sanja	f	37	zandʒa
+Ian	m	37	jan
+Denny	m	36	dennaj
+Giampietro	m	36	d͡ʒampjetro
+Karin	f	36	karin
+Amir	m	36	amir
+Marcel	m	36	mart͡ʃel
+Lú	f	36	l
+Youssef	m	36	joussef
+Tobías	m	36	tobas
+Santa	f	36	santa
+Roland	m	36	rolant
+Rinaldo	m	36	rinaldo
+Roxana	f	36	roksana
+Stephen	m	36	stepen
+Santina	f	35	santina
+Camila	f	35	kamila
+Carlo-Alberto	m	35	karloalbɛrto
+Beniamino	m	35	benjamino
+Libero	m	35	libero
+Iole	f	35	ole
+Hassan	m	35	assan
+Elías	m	35	elas
+Donata	f	35	donata
+Devis	m	35	devis
+Erminia	f	35	erminja
+Gian-Piero	m	35	d͡ʒanpjɛro
+Angelina	f	35	and͡ʒelina
+Lukas	m	35	lukas
+Taylor	f	35	tikoajlor
+Tyler	m	35	tiler
+Zaira	f	34	saira
+Tatjana	f	34	tikotdʒana
+Fiore	m	34	fjoːre
+Florence	f	34	flɔrent͡ʃe
+Germana	f	34	d͡ʒermana
+José-Luis	m	34	dʒozeluis
+Libera	f	34	libera
+Leone	m	34	leone
+Hamza	m	34	amtsa
+Giandomenico	m	34	d͡ʒandomeniko
+Milo	m	34	milo
+Mariarita	f	34	marjarita
+Mar	m	34	mar
+Ombretta	f	34	ombretta
+Raoul	m	34	raɔul
+Nicol	f	34	nikol
+Bartolomeo	m	33	batsjotolomɛo
+Daisy	f	33	daiisj
+Teodoro	m	33	teodoro
+Thiago	m	33	tjaɡo
+Erminio	m	33	erminjo
+Sheila	f	33	ʃeila
+Aurélia	f	33	aurelia
+Miranda	f	32	miranda
+Megan	f	32	meɡan
+Piotr	m	32	pjɔtr
+Sylvia	f	32	silvia
+Isidoro	m	32	izidoro
+Giordana	f	32	d͡ʒordana
+Guendalina	f	32	ɡwendalina
+Svetlana	f	32	zvetlana
+Silvestro	m	32	silvɛstro
+Alain	m	31	alain
+Alexa	f	31	alɛksa
+Dana	f	31	dana
+Léonard	m	31	leonar
+Douglas	m	31	douʎʎas
+Nóra	f	31	nra
+Peppino	m	31	peppino
+Pascal	m	31	paskal
+Natasa	f	31	natasa
+Romolo	m	31	romɔlo
+Úrsula	f	31	rsula
+Vanna	f	31	vanna
+Vesna	f	31	vesna
+Vivi	m	31	vivi
+Wendy	f	31	,wendi
+Zoé	f	31	ddzoe
+Jacqueline	f	31	dʒakkweline
+Gionata	m	30	d͡ʒonata
+Edgar	m	30	ɛdɡar
+Ercole	m	30	ɛrkole
+Georgia	f	30	d͡ʒeɔrd͡ʒa
+Fred	m	30	fred
+Josephine	f	30	dʒɔsiepine
+Katie	f	30	katie
+Adamo	m	30	adamo
+Oliviero	m	30	olivjɛro
+Nathan	m	30	natan
+Philippe	m	30	pilippe
+Sonja	f	30	sondʒa
+Siria	f	30	siːrja
+Samuela	f	29	zamuɛla
+Cataldo	m	29	kataldo
+Judith	f	29	dʒudit
+Gualtiero	m	29	ɡwaltjero
+Gavino	m	29	ɡavino
+Gian-Maria	m	29	d͡ʒanmaria
+Alida	f	29	alida
+Adelina	f	29	adelina
+Nathalie	f	29	natalje
+Natalie	f	29	natalie
+Martha	f	29	marta
+Morris	m	29	morris
+Zeno	m	29	dzɛno
+Vlad	m	28	vlad
+Violetta	f	28	vjoletta
+Dominique	u	28	do,minikwe
+Juan-Carlos	m	28	d͡ʒuankarlos
+Rosa-María	f	28	rosamara
+Serenella	f	28	serenɛlla
+Sacha	m	28	saʃʃa
+Crescenzo	m	28	kreʃʃɛndzo
+Dea	f	28	dɛa
+Ismail	m	28	izmail
+Giulietta	f	28	ʤuljetta
+Maria-Vittoria	f	28	mariavittɔrja
+Luigia	f	28	luid͡ʒa
+Ana-María	f	28	a,namara
+Ahmad	m	28	amad
+Palma	f	27	palma
+Nelson	m	27	nɛlson
+Cassandra	f	27	kassandra
+Dania	f	27	dania
+Klaus	m	27	klaws
+Larissa	f	27	larissa
+Yvonne	f	27	ajvonne
+Verónika	f	27	,vɛrnjka
+Teodora	f	27	teodora
+Théo	m	27	teo
+Tiffany	f	27	tiffanaj
+Edmondo	m	27	ɛdmondo
+Rosi	f	27	rosi
+Samir	m	27	samir
+Sami	m	27	sami
+Nada	f	27	nada
+Mustafa	m	27	mustafa
+Maristella	f	27	maristella
+Mariarosa	f	26	marjarosa
+Giambattista	m	26	d͡ʒambattista
+Devid	m	26	devid
+Ermes	m	26	ermɛs
+Dolores	f	26	dolores
+Louise	f	26	luize
+Joy	f	26	dʒɔj
+Pierluca	m	26	pirluka
+Paolino	m	26	paolino
+Orsola	f	26	orsola
+Cindy	f	26	t͡ʃindi
+Dayana	f	26	dajana
+Corinna	f	26	koɾinna
+Tea	f	26	tea
+Jana	f	26	d͡ʒɛna
+Rosamaria	f	26	rosamaria
+Ruth	f	26	ru
+Agnès	f	26	aɲɲɛs
+Astrid	f	26	astrid
+Albino	m	26	albino
+Andi	m	26	andi
+Adnan	m	25	adnan
+Dafne	f	25	dafne
+Catello	m	25	katɛllo
+Katerina	f	25	katerina
+Marlène	f	25	marlɛne
+Marialaura	f	25	marjalawra
+Marisol	f	25	marisɔl
+Mercedes	f	25	mert͡ʃedɛs
+Méri	f	25	meri
+Francesco-Paolo	m	25	frant͡ʃeskopaolo
+Gérard	m	25	ɡerard
+Gian-Carlo	m	25	d͡ʒankarlo
+Eloísa	f	25	elosa
+Erasmo	m	25	erazmo
+Primo	m	25	primo
+Natalino	m	25	natalino
+Raymond	m	25	rejmond
+Happy	f	25	appj
+Jeremy	m	25	dʒeremj
+Irma	f	24	irma
+Gian-Luigi	m	24	d͡ʒanluid͡ʒ
+Gian-Mario	m	24	d͡ʒanmarjo
+Florin	m	24	florin
+Elda	f	24	elda
+Doris	f	24	doris
+León	m	24	len
+Ambrogio	m	24	ambrɔʤo
+Amira	f	24	amira
+Allison	f	24	allison
+Biljana	f	24	bild͡ʒɛna
+Maurizia	f	24	mawritt͡sia
+Mirela	f	24	mirela
+Marilisa	f	24	mariliza
+Marilú	f	24	marail
+Magdalena	f	24	maɡdalena
+Valeriano	m	24	valerjano
+Valéry	f	24	valeri
+Verdiana	f	24	verdjana
+Nikita	m	24	,nikita
+Norman	m	24	norman
+Perla	f	24	pɛrla
+Pavel	m	24	pavel
+Nana	u	24	nana
+Sirio	m	24	sirjo
+Said	m	23	sajd
+Susana	f	23	suzana
+Chloé	f	23	kloe
+Battista	m	23	battista
+Jolanda	f	23	d͡ʒɔlanda
+Katya	f	23	kataia
+Gordana	f	23	ɡordana
+Gonzalo	m	23	ɡondzalo
+Jessé	m	23	dʒesse
+Isaac	m	23	izaat,
+Isabelle	f	23	izabelle
+Eduard	m	23	eduard
+Duilio	m	23	duiljo
+Emil	m	23	emil
+Edy	f	23	edi
+Austin	m	23	awstin
+Aly	m	23	a,lj
+Alyssa	f	23	a,ljssa
+Alison	f	23	alison
+Alfred	m	23	alfred
+Oana	f	23	oana
+Nella	f	23	nɛlla
+Manila	f	23	manila
+Maximiliano	m	23	maksimiljano
+Mihai	m	23	miai
+Luigina	f	23	luid͡ʒina
+Lucky	m	23	,lukkj
+Maria-Giulia	f	23	mariad͡ʒulja
+Nadir	m	23	nadir
+Miryam	f	23	,mirjam
+Tiago	m	23	tiaɡo
+Yassine	m	22	ajas,sine
+Fiona	f	22	fjona
+Joyce	f	22	dʒɔite
+Joanna	f	22	d͡ʒɔanna
+Karol	u	22	karol
+Sally	f	22	salli
+Sveva	f	22	zveva
+Silver	f	22	silvɛr
+Catalina	f	22	katalina
+Dean	m	22	dean
+Dalia	f	22	dalja
+Cosmin	m	22	kozmin
+Jasmin	u	22	d͡ʒɛzmin
+Jeffrey	m	22	dʒeffrutj
+Mira	f	22	mira
+Marcela	f	22	mart͡ʃela
+Morgana	f	22	morɡana
+Madalina	f	22	madalina
+Luigino	m	22	luid͡ʒino
+Marin	m	22	marin
+Amós	m	22	a,ms
+Amber	f	22	amber
+Amin	m	22	amin
+Anna-Lisa	f	22	annaliza
+Patrik	m	22	patrik
+Remigio	m	22	remid͡ʒo
+Novella	f	22	novɛlla]
+Oronzo	m	22	orontso
+Pier-Giorgio	m	21	pird͡ʒordʒo
+Damian	m	21	damian
+Juliet	f	21	d͡ʒuljɛt
+Lília	f	21	llia
+Yasmine	f	21	ajazmine
+Virna	f	21	virna
+Ella	f	21	ella
+Ethan	m	21	e,than
+Enrico-Maria	m	21	enrikomaria
+Furio	m	21	furjo
+Fedele	m	21	fedele
+Fiamma	f	21	fjamma
+Rosetta	f	21	rosɛtta
+Susi	f	21	suzi
+Iuri	m	21	uri
+Gianandrea	m	21	d͡ʒanandrɛːa
+Gigliola	f	21	d͡ʒiʎʎola
+Ilir	m	21	ilir
+Idea	f	21	idɛa
+Maria-Antonietta	f	21	mariaantonjɛtta
+Melinda	f	21	melinda
+Maurício	m	21	,maurt͡ʃo
+Monique	f	20	,mɔnikwe
+Mariacristina	f	20	marjakrɪstiːnə
+Mehdi	m	20	,mɛdi
+Fortuna	f	20	fortuna
+Ekaterina	f	20	ekaterina
+Dominic	m	20	dominik
+Evelin	f	20	evelin
+Gaetana	f	20	ɡaetana
+Khaled	m	20	kaled
+Jurgen	m	20	d͡ʒurd͡ʒen
+Liana	f	20	liana
+Piercarlo	m	20	pirkarlo
+Nazario	m	20	naddzarjo
+Célia	f	20	kelia
+Cynthia	f	20	kajntja
+Candida	f	20	kandida
+Usman	m	20	usmen
+Gianpietro	m	20	d͡ʒanpjɛtro
+Heidi	f	20	eidi
+Severino	m	20	severino
+Samira	f	20	samira
+Alexandru	m	20	alɛksandru
+Anna-Laura	f	20	annalaura
+Aziz	m	20	adzidd
+Abdullah	m	20	abdulla
+Aia	f	20	aja
+Agustín	m	19	aɡustin
+Anna-Chiara	f	19	annakjara
+Anna-Paola	f	19	annapaola
+Anselmo	m	19	anselmo
+Asya	f	19	azia
+Amina	f	19	amina
+Abel	m	19	abel
+Brandon	m	19	brandon
+Celestino	m	19	t͡ʃelestino
+Constantin	m	19	konstantin
+Leda	f	19	leda
+Lauro	m	19	lauro
+Lalla	f	19	lalla
+Liam	m	19	liam
+Lulú	f	19	,lul
+Marilina	f	19	marilina
+Maria-Stella	f	19	mariastɛlla
+Mostafa	m	19	mostafa
+Mehmet	m	19	,mɛmet
+Manola	f	19	manɔla
+Maurilio	m	19	mawriljo
+Mascia	f	19	maʃʃa
+Elvio	m	19	ɛlvio
+Florinda	f	19	florinda
+Francesco-Maria	m	19	frant͡ʃeskomaria
+Franci	m	19	frant͡ʃ
+Frida	f	19	friːdə
+Denisa	f	19	deniza
+Eraldo	m	19	eraldo
+Errico	m	19	erriko
+Dominik	m	19	do,mi,nik
+Niccolo'	m	19	nj,ʧkolo
+Pilar	f	19	pilar
+Orietta	f	19	orjetta
+Selma	f	19	selma
+Romana	f	19	romana
+Rina	f	19	rina
+Rosalinda	f	19	rosalinda
+Sabato	m	19	sabato
+Viktor	m	19	vajktɔr
+Vivian	f	19	vivian
+Hilary	f	19	ilarj
+Ioana	f	19	joana
+Gilbert	m	19	d͡ʒilbɛrt
+Imran	m	19	imran
+Immacolata	f	18	immakolata
+Ismael	m	18	izmael
+Irena	f	18	irɛna
+Iva	f	18	iva
+Faisal	m	18	faisal
+Gastone	m	18	ɡastone
+Edwin	m	18	edwin
+Egle	f	18	eɡle
+Eliseo	m	18	eliseo
+Dorian	m	18	dorjan
+Dorina	f	18	dorina
+Jole	f	18	d͡ʒɔle
+Kenneth	m	18	kennɛt
+Justine	f	18	d͡ʒustine
+Lodovico	m	18	lodoviko
+Logan	m	18	logan
+Arrigo	m	18	arriɡo
+Agnieszka	f	18	aɲɲiestska
+Albano	m	18	albano
+Ania	f	18	anja
+Alisia	f	18	alizia
+Alla	f	18	alla
+Amerigo	m	18	ameriɡo
+Brigida	f	18	brid͡ʒida
+Bernardino	m	18	bernardino
+Belinda	f	18	belinda
+Basilio	m	18	baziljo
+Clotilde	f	18	klotilde
+Maxim	m	18	maksim
+Matilda	f	18	matilda
+Mariagiovanna	f	18	mariad͡ʒovanna
+Mariapaola	f	18	mariapaola
+Maggie	f	18	madd͡ʒɛ
+Zakaria	m	18	ddzakaria
+Wilson	m	18	wilson
+Tracy	f	18	tra,kj
+Vasile	m	18	vazile
+Pierantonio	m	18	pjerantɔnjo
+Pierino	m	18	pjerino
+Neri	m	18	neri
+Neil	m	18	neil
+Quirino	m	18	kwirino
+Raniero	m	18	ranjɛro
+Stanislao	m	18	stanizlao
+Snezana	f	18	znetsana
+Smart	m	17	zmart
+Sabry	m	17	sabarj
+Clementina	f	17	klementina
+Clizia	f	17	klitsja
+Bojana	f	17	bod͡ʒɛna
+Brando	m	17	brando
+Consiglia	f	17	konsiʎʎa
+Damiana	f	17	damiana
+Liborio	m	17	liborjo
+Lanfranco	m	17	lanfranko
+Karolína	f	17	karolna
+Janet	f	17	d͡ʒɛnet
+Esmeralda	f	17	ezmeralda
+Ernest	m	17	ernest
+Euro	m	17	ɛwro
+Florencia	f	17	flɔrent͡ʃa
+Dorotea	f	17	dorotɛa
+Doriano	m	17	dorjano
+Adél	m	17	adel
+Alen	m	17	alɛn
+Noah	m	17	noa
+Noelia	f	17	noelia
+Nives	f	17	nivɛs
+Paulína	f	17	,paulna
+Otello	m	17	otɛllo
+Lovely	f	17	lovɛlaj
+Maureen	f	17	,maurin
+Mirjana	f	17	mird͡ʒɛna
+Mariaelena	f	17	marjaelena
+Vilma	f	17	vilma
+Tomaso	m	17	tomazo
+Turi	m	17	turi
+Vladimiro	m	17	vladimiro
+Vasco	m	16	vasko
+Valentín	m	16	valenthn
+Faith	f	16	fait
+Gian-Franco	m	16	d͡ʒanfranko
+Elide	f	16	ɛlide
+Floriano	m	16	floriano
+Joey	f	16	dʒɔej
+Joana	f	16	d͡ʒɔana
+Josef	m	16	dʒɔsef
+Lilian	u	16	liljan
+Lilla	f	16	lila
+Lélio	m	16	leljo
+Kelvin	m	16	kelvin
+Krizia	f	16	kritsja
+Lamin	m	16	lamin
+Saad	m	16	saːd
+Salvio	m	16	salvio
+Solange	f	16	soland͡ʒe
+Seth	m	16	siet
+Cornelia	f	16	kɔrnelja
+Costanzo	m	16	kostantso
+Carmelina	f	16	karmelina
+Hanna	f	16	hanna
+Hajar	f	16	ad͡ʒɛr
+Ion	m	16	jon
+Ionut	m	16	jonut
+Ismaele	m	16	izmaele
+Isotta	f	16	izɔtta
+Masha	f	16	mɛʃe
+Mateusz	m	16	matɛwsts
+Mayra	f	16	,maajra
+Melany	f	16	melanaj
+Lukasz	m	16	lukasts
+Maria-Giovanna	f	16	mariad͡ʒovanna
+Margaret	f	16	marɡaret
+Mirna	f	16	mirna
+Ayoub	m	16	ajoub
+Anderson	m	16	anderson
+Amr	m	16	amr
+Asad	m	16	asad
+Alda	f	16	alda
+Aline	f	16	aline
+Réda	m	16	reda
+Oleg	m	16	oleɡ
+Norberto	m	16	norbɛrto
+Nicoleta	f	16	nikoleta
+Pompeo	m	16	pompeo
+Paloma	f	16	palɔma
+Pasqualina	f	16	paskwalina
+Radu	m	15	radu
+Pellegrino	m	15	pelleɡrino
+Nikolas	m	15	,nikolas
+Catalin	m	15	katalin
+Davi	u	15	davi
+Bettina	f	15	bettina
+Bilal	m	15	bilal
+Laila	f	15	lajla
+Liviana	f	15	livjana
+Juan-Pablo	m	15	jwanpablo
+Jody	m	15	dʒɔdi
+Larisa	f	15	larisa
+Vanda	f	15	vanda
+Theresa	f	15	tareza
+Walid	m	15	,walid
+Wilma	f	15	wilma
+Yasmin	f	15	ajazmin
+Domiziana	f	15	domittsjana
+Edda	f	15	ɛdda
+Edi	f	15	edi
+Edmond	m	15	ɛdmond
+Fausta	f	15	fausta
+Georgiana	f	15	d͡ʒeɔrd͡ʒana
+Gaby	f	15	ɡaba
+Efrem	m	15	efrem
+Selenia	f	15	selenia
+Serafina	f	15	serafina
+Riky	m	15	raiki
+Summer	f	15	summer
+Susanne	f	15	suzanne
+Sonny	m	15	sɔnnaj
+Alena	f	15	alɛna
+Altin	m	15	altin
+Anca	f	15	anka
+Audrey	f	15	audrɛaj
+Abramo	m	15	abramo
+Annika	f	15	annika
+Antonina	f	15	antonina
+Iulian	m	15	juljan
+Giona	m	15	d͡ʒona
+Giovanni-Battista	m	15	d͡ʒovannibattista
+Gilles	m	15	d͡ʒilles
+Jasmína	f	15	dʒasmna
+Jlenia	f	15	dʒlenia
+Maksim	m	15	mejksim
+Mathias	m	15	,matjas
+Mati	m	15	mati
+Nabil	m	15	nabil
+Moussa	m	15	mau̯ssa
+Luiz	m	15	luitts
+Marion	m	15	marion
+Maria-Angela	f	15	mariaand͡ʒela
+Mariam	f	15	marjam
+Mariasole	f	15	marjasole
+Mariela	f	15	mariela
+Marcia	f	15	mart͡ʃa
+Maria-Concetta	f	14	mariakont͡ʃetta
+Maikol	m	14	,maikɔl
+Mirka	f	14	mirka
+Mirta	f	14	mirta
+Luan	m	14	luan
+Moris	m	14	moris
+Ersilia	f	14	ersilia
+Gherardo	m	14	gerardo
+Gerlando	m	14	d͡ʒɛrlando
+Fosca	f	14	foska
+Flaviano	m	14	flavjano
+Karima	f	14	karima
+Kurt	m	14	kurt
+Lili	f	14	lili
+Liza	f	14	litsa
+Liberato	m	14	liberato
+Lidija	f	14	li,dija
+Joaquín	m	14	dʒɔakwn
+Nasir	m	14	nazir
+Rachid	m	14	rakid
+Noel	m	14	noɛl
+Oksana	f	14	oksana
+Príncipe	m	14	,prɔnt͡ʃipe
+Pietro-Paolo	m	14	pjɛtropaolo
+Cristoforo	m	14	kristɔforo
+Corina	f	14	korina
+Dalibor	m	14	dalibor
+Deanna	f	14	deanna
+Delfina	f	14	delfina
+Carlo-Maria	m	14	karlomaria
+Vinícius	m	14	vajnt͡ʃus
+Vitaliano	m	14	vitaljano
+Tullia	f	14	tullia
+Tudor	m	14	tudor
+Umar	m	14	umar
+Tecla	f	14	tekla
+Yana	f	14	jana
+Jenni	f	14	jɛnni
+Greg	m	14	ɡreɡ
+Guerino	m	14	ɡwerino
+Giovanni-Maria	m	14	d͡ʒovannimaria
+Giangiacomo	m	14	d͡ʒand͡ʒakɔmo
+Goffredo	m	14	ɡoffredo
+Gladys	f	14	ɡla,djs
+Hana	f	14	ana
+Shahid	m	14	ʃaid
+Salman	m	14	salman
+Sinisa	m	14	siniza
+Annibale	m	14	annibale
+Alban	m	14	alban
+Alaa	m	14	alaa
+Aron	m	14	aron
+Arif	m	13	arif
+Alexandro	m	13	alɛksandro
+Alisa	f	13	aliza
+Aleandro	m	13	aleandro
+Anisa	f	13	aniza
+Ayman	m	13	aajman
+Adalberto	m	13	adalbɛrto
+Abigail	f	13	abiɡail
+Andrey	m	13	andrutj
+Adri	f	13	adri
+Bo	m	13	bo
+Cristopher	m	13	kristopher
+Cosetta	f	13	kosetta
+Brigitte	f	13	brid͡ʒitte
+Davis	m	13	davis
+Ciprian	m	13	t͡ʃiprjan
+Khalid	m	13	kalid
+Lionel	m	13	ljonel
+Lela	f	13	lela
+Lazzaro	m	13	laddzaro
+Mikel	m	13	,mikel
+Marjan	m	13	mard͡ʒɛn
+Maria-Letizia	f	13	marialetittsja
+Margarita	f	13	marɡarita
+Maria-Carla	f	13	mariakarla
+Maryam	f	13	marjam
+Mateo	m	13	matɛo
+Mabel	f	13	mabel
+Mafalda	f	13	mafalda
+Dmitry	m	13	dmitri
+Eligio	m	13	elid͡ʒo
+Elton	m	13	elton
+Efisio	m	13	efizjo
+Edén	m	13	eden
+Edgardo	m	13	ɛdɡardo
+Fabia	f	13	fabja
+Ermal	m	13	ermal
+Ermelinda	f	13	ermɛlinda
+Eren	m	13	erɛn
+Penélope	f	13	penelope
+Piergiuseppe	m	13	pird͡ʒuzeppe
+Osman	m	13	osmen
+Noemy	f	13	,nɔemj
+Selvaggia	f	13	selvadd͡ʒa
+Romualdo	m	13	romualdo
+Salah	m	13	sala
+Salvina	f	13	salvina
+Spartaco	m	13	spartako
+Yasir	m	13	ajazir
+Ulderico	m	13	ulderiko
+Ulisse	m	13	ulisse
+Vlada	f	13	vlada
+Velia	f	13	velja
+Vitale	m	13	vitale
+Tancredi	m	13	tankrɛdi
+Yulia	f	13	juːlia
+Islam	m	13	izlam
+Ivonne	f	13	ivonne
+Israel	m	13	izrael
+Issa	m	13	issa
+Jean-Pierre	m	13	d͡ʒinpirre
+Giusto	m	13	d͡ʒusto
+Gianfilippo	m	13	d͡ʒanfilippo
+Hermès	m	13	her,mɛs
+Hicham	m	13	ikam
+Hélène	f	12	elene
+Ionela	f	12	jonɛla
+Giancarla	f	12	d͡ʒankarla
+Gian-Pietro	m	12	d͡ʒanpjɛtro
+Giulia-Maria	f	12	ɡiuliamaria
+Giustino	m	12	d͡ʒustino
+Ibrahima	m	12	ibraima
+Ina	f	12	ina
+Hope	f	12	ɔpe
+Gero	m	12	d͡ʒero
+Gabi	u	12	ɡabi
+Galileo	m	12	ɡalileo
+Eliza	f	12	elitsa
+Francesca-Romana	f	12	frant͡ʃeskaromana
+Ervin	m	12	ervin
+Farid	m	12	farid
+Fabio-Massimo	m	12	fabjomassimo
+Leandra	f	12	leandra
+Layla	f	12	lɛjla
+Katja	f	12	ka,tja
+Jude	m	12	d͡ʒude
+Agron	m	12	aɡron
+Ahmet	m	12	amet
+Anna-Lucia	f	12	annalut͡ʃia
+Annarosa	f	12	annarosa
+Asja	f	12	asja
+Ashraf	m	12	asraf
+Arcangela	f	12	arkaŋd͡ʒela
+Arduino	m	12	arduino
+Albi	m	12	albi
+Altea	f	12	altɛa
+Alvin	m	12	alvin
+Ana-Paula	f	12	anapawla
+Amélie	f	12	a,melie
+Aura	f	12	aura
+Aya	f	12	aja
+Claudiu	m	12	klawdiu
+Bibi	f	12	bibi
+Cheikh	m	12	keik
+Cosmo	m	12	kɔzmo
+Canio	m	12	kanjo
+Brigitta	f	12	brid͡ʒitta
+Lydia	f	12	lidia
+Lucian	m	12	lut͡ʃian
+Marijana	f	12	maraid͡ʒɛna
+Mariolina	f	12	marjolina
+Maria-Francesca	f	12	mariafrant͡ʃeska
+María-Lucía	f	12	,maraluka
+Maria-Sole	f	12	mariasole
+Muhammed	m	12	muammed
+Modou	m	12	modɔu
+Mattias	m	12	mattjas
+Zeeshan	m	12	ddzeesan
+Yusuf	m	12	juːswf
+Urbano	m	12	urbano
+Williams	m	12	williams
+Virginio	m	12	vird͡ʒinio
+Tarcísio	m	12	tikor,ksjo
+Tarek	m	12	tare]k
+Nicodemo	m	12	nikodemo
+Nicolino	m	12	nikolino
+Nevio	m	12	nevjo
+Natalina	f	12	natalina
+Polina	f	12	polina
+Pierangela	f	12	pjerand͡ʒela
+Pierfranco	m	12	pirfranko
+Oussama	m	12	ussama
+Rafaela	f	12	rafaɛla
+Reza	m	12	retsa
+Nour	f	12	nour
+Sonya	f	12	sonja
+Speranza	f	12	sperantsa
+Stanley	m	12	stanlei]
+Stefany	f	12	stefanaj
+Robertino	m	12	robertino
+Rubens	m	12	rubens
+Sajjad	m	11	sadʒd͡ʒɛd
+Sabri	m	11	sabri
+Stéphane	m	11	stefiane
+Siro	m	11	siro
+Sergiu	m	11	serd͡ʒu
+Sana	f	11	sana
+Brunello	m	11	brunɛllo
+Carina	f	11	karina
+Bernard	m	11	bernar
+Beauty	f	11	beautai
+Bledar	m	11	blɛdar
+Croce	f	11	krot͡ʃe
+Chanel	f	11	ʃanɛl
+Delfino	m	11	delfino
+Kamila	f	11	kamila
+Klaudia	f	11	klawdia
+Ilary	f	11	ilarj
+Ilda	f	11	ilda
+Ilona	f	11	ilona
+Iman	f	11	iman
+Hussein	m	11	ussejn
+Hasan	m	11	asan
+Hamid	m	11	amid
+Inna	f	11	inna
+Isacco	m	11	isakko
+Giuseppa	f	11	d͡ʒuzeppa
+Ewa	f	11	ewaː
+Farhan	m	11	faran
+Florentina	f	11	flɔrentina
+Gentian	m	11	d͡ʒentiːan
+Elen	f	11	elɛŋ
+Elis	u	11	elis
+Doina	f	11	doina
+Dési	f	11	desi
+Emmanuela	f	11	ɛmmanuɛla
+Estela	f	11	estɛla
+Abu	m	11	abu
+Adil	m	11	adil
+Abdoulaye	m	11	abdoulɛje
+Arsenio	m	11	arsenio
+Artemisia	f	11	artemizja
+Asma	f	11	azma
+Assia	f	11	assja
+Aristide	m	11	aristide
+Annita	f	11	annita
+Augusta	f	11	auɡusta
+Awa	f	11	awaː
+Alfonsina	f	11	alfonsina
+Aleksander	m	11	a,leksander
+Amine	m	11	amine
+Oriano	m	11	orjano
+Omero	m	11	ɔmero
+Pieter	m	11	pjɛter
+Placido	m	11	plat͡ʃido
+Pier-Carlo	m	11	pirkarlo
+Ottorino	m	11	ottorino
+Raja	f	11	raja
+Mauri	m	11	mawri
+Marwa	f	11	marva
+Moustafa	m	11	mau̯stafa
+Ludmila	f	11	ludmila
+Luce	f	11	luːt͡ʃe
+María-Elisa	f	11	,maraeliza
+Marco-Antonio	m	11	markoantonjo
+Mariavittoria	f	11	marjavittɔrja
+Maribel	f	11	maribel
+Maia	f	11	maja
+Miria	f	11	miria
+Miro	m	11	miro
+Modestino	m	11	modɛstino
+Melisa	f	11	meliza
+Tahir	m	11	tikohir
+Yara	f	11	jara
+Venera	f	11	venera
+Violet	f	11	viole
+Violeta	f	11	vjoleta
+Vitalba	f	11	vitalba
+Tanveer	m	10	tan,vɛer
+Sylvie	f	10	silvie
+Syria	f	10	siria
+Vladislav	m	10	vladizlav
+Vadim	m	10	vadim
+Vanesa	f	10	vanɛːza
+Veruska	f	10	veruska
+Ervis	m	10	ervis
+Gelsomina	f	10	d͡ʒelsomina
+Georgina	f	10	d͡ʒeɔrd͡ʒna
+Géraldine	f	10	ɡeraldine
+Genni	f	10	d͡ʒenni
+Fatma	f	10	fatma
+Evil	m	10	evil
+Ferdinand	m	10	ferdinand
+Francesco-Pio	m	10	frant͡ʃeskopio
+Franklin	m	10	franklin
+Demis	m	10	demis
+Domitilla	f	10	domitilla
+Lionello	m	10	ljonɛllo
+Li	f	10	li
+Khadija	f	10	ka,dija
+Lamine	m	10	lamine
+Klara	f	10	klara
+Klaudio	m	10	klawdio
+Jury	m	10	d͡ʒurj
+Sandrina	f	10	sandrina
+Silverio	m	10	silvɛrjo
+Saba	f	10	saba
+Stelvio	m	10	stɛlvio
+Clio	f	10	klio
+Beata	f	10	beata
+Blerim	m	10	blɛrim
+Brayan	m	10	brejan
+Gimmi	m	10	d͡ʒimmi
+Gianbattista	m	10	d͡ʒanbattista
+Gianclaudio	m	10	d͡ʒanklawdjo
+Gianrico	m	10	d͡ʒanriko
+Guenda	f	10	ɡwɛnda
+Guida	f	10	ɡwida
+Helga	f	10	elɡa
+Jackson	m	10	d͡ʒɛkson
+Iulia	f	10	julia
+Jessika	f	10	jɛs,sika
+Jari	m	10	d͡ʒɛri
+Luiza	f	10	luittsa
+Mbaye	m	10	mbaje
+Mona	f	10	mona
+Mirca	f	10	mirka
+Amilcare	m	10	amilkare
+Anamaría	f	10	a,namara
+Amleto	m	10	amlɛto
+Andrzej	m	10	andrdzedʒ
+Aicha	f	10	aiʃa
+Adama	m	10	adama
+Ardit	m	10	ardit
+Ascanio	m	10	askanjo
+Alfa	f	10	alfa
+Annina	f	10	annina
+Annunziata	f	10	annuntsjata
+Anwar	m	10	anvar
+Anna-Rosa	f	10	annarosa
+Nica	f	10	nika
+Pier-Giuseppe	m	10	pird͡ʒuzeppe
+Pier-Francesco	m	10	pirfrant͡ʃesko
+Paola-Maria	f	10	paolamaria
+Paolina	f	10	paolina
+Ovidiu	m	10	ovidju
+Palmiro	m	10	paːlmiro
+Rashid	m	10	rɛʃi,d
+Rico	m	9	riko
+Nuccia	f	9	nutʧa
+Ornela	f	9	ɔrnɛla
+Quintino	m	9	kwintino
+Nerea	f	9	nɛrea
+Nataliya	f	9	natalisja
+Prisca	f	9	priska
+Precious	f	9	pret͡ʃious
+Pinuccia	f	9	pinutt͡ʃa
+Oumar	m	9	umar
+Ousmane	m	9	uzmane
+Pancrazio	m	9	pankratt͡sjo
+Paolo-Maria	m	9	paolɔmaria
+Osama	m	9	ozama
+Darius	m	9	darjus
+Cipriano	m	9	t͡ʃiprjano
+Clarice	f	9	klarit͡ʃe
+Berardino	m	9	berardino
+Carole	f	9	karɔle
+Lauretta	f	9	lawretta
+Katarzyna	f	9	katardzajna
+Kamal	m	9	kamal
+Khalil	m	9	kalil
+Ksenia	f	9	ksenia
+Lali	f	9	lali
+Taha	m	9	taa
+Toma	m	9	tɔma
+Younes	m	9	jounes
+Uberto	m	9	uberto
+Wilmer	m	9	wilmer
+Dritan	m	9	dritan
+Dunia	f	9	dunia
+Fabrício	m	9	fabart͡ʃo
+Evan	m	9	evan
+Fatmir	m	9	fatmir
+Fatou	f	9	fatu
+Erion	m	9	erjon
+Emir	m	9	emir
+Gaya	f	9	ɡɛia
+Futura	f	9	futura
+Gandolfo	m	9	ɡandɔlfo
+Elena-Maria	f	9	elɛŋamaria
+Eleni	f	9	eleni
+Flaviana	f	9	flaviana
+Rosina	f	9	rozina
+Ronaldo	m	9	ronaldo
+Saimon	m	9	zajmon
+Sorin	m	9	soriŋ
+Stanislav	m	9	stanislav
+Stela	f	9	stɛla
+Secondo	m	9	sekondo
+Scilla	f	9	ʃʃilla
+Aymen	m	9	aajmen
+Baba	m	9	baba
+Babar	m	9	babar
+Abdou	m	9	abdou
+Adélia	f	9	adelia
+Amadou	m	9	amadu
+Andreana	f	9	andrɛːana
+Anis	m	9	aniz
+Antonio-Maria	m	9	antɔnjomaria
+Ariane	f	9	arjane
+Armand	m	9	armand
+Asif	m	9	asif
+Jayson	m	9	dʒaajson
+Ilija	m	9	ilisja
+Imane	f	9	imane
+Ibra	m	9	ibra
+Indrit	m	9	indrit
+Graciela	f	9	ɡrat͡ʃiela
+Giorgina	f	9	ʤorʤina
+Gianmichele	m	9	d͡ʒammikɛle
+Giglio	m	9	d͡ʒiʎʎo
+Gjovalin	m	9	ɡd͡ʒɔvalin
+Jean-Paul	m	9	d͡ʒinpawl
+Jacek	m	9	dʒat͡ʃek
+Marcantonio	m	9	markantɔnjo
+Mariagiulia	f	9	mariad͡ʒulja
+Mariarca	f	9	mariarka
+Marida	f	9	mariːdə
+Mariuccia	f	9	mariutt͡ʃa
+Mounir	m	9	mounir
+Muriel	f	9	murjel
+Mor	m	9	mor
+Milla	f	8	milla
+Modesto	m	8	modɛsto
+Mohamed-Ali	m	8	,mɔamedali
+Mikela	f	8	,mikela
+Miguel-Angel	m	8	miɡland͡ʒɛl
+Michelina	f	8	mikelina
+Malena	f	8	malɛna
+Martine	f	8	martine
+Nader	m	8	nader
+Mouhamed	m	8	,mɔuamed
+Monja	f	8	mondʒa
+Luminita	f	8	luminita
+Luca-Maria	m	8	lukamaria
+Marine	f	8	marine
+Marita	f	8	marita
+Mariafrancesca	f	8	mariafrant͡ʃeska
+Maria-Pina	f	8	mariapina
+Marco-Valerio	m	8	markovalerjo
+Denni	m	8	denni
+Erich	m	8	erik
+Erjon	m	8	erd͡ʒɔn
+Emerson	m	8	emɛrson
+Emina	f	8	emina
+Edison	m	8	edison
+Fallou	m	8	fallou
+Fedora	f	8	fedora
+Ezia	f	8	ettsja
+Fortunata	f	8	fortunata
+Fouad	m	8	,fɔwad
+Francesco-Saverio	m	8	frant͡ʃeskosavɛrjo
+Fredi	m	8	frɛdi
+Filippo-Maria	m	8	filippomaria
+Fiorello	m	8	fjorello
+Fiorentino	m	8	fjorentino
+Francoise	f	8	frankɔise
+Gege	m	8	d͡ʒed͡ʒe
+Gabrio	m	8	ɡabrio
+Gaja	f	8	ɡaja
+Gerardina	f	8	d͡ʒerardina
+Giacomino	m	8	d͡ʒakɔmino
+Giammaria	m	8	d͡ʒammarja
+Elenia	f	8	elenia
+Elif	f	8	ɛlif
+Elina	f	8	elina
+Kristine	f	8	kristine
+Klevis	m	8	kleviz
+Kristi	f	8	kristi
+Loreto	m	8	loreto
+Juli	f	8	d͡ʒuli
+Juan-Luis	m	8	jwanluis
+Justyna	f	8	d͡ʒustaina
+Kastriot	m	8	kastriɔt
+Pasqua	f	8	paskwa
+Ramazan	m	8	ramatsan
+Rami	m	8	rami
+Omer	m	8	omer
+Olena	f	8	olɛna
+Petru	m	8	petru
+Pierandrea	m	8	pjerandrɛːa
+Nicolai	m	8	nikolaj
+Natali	f	8	natali
+Natalya	f	8	natalja
+Natan	m	8	natan
+Delio	m	8	dɛljo
+Daniella	f	8	daniɛlla
+Collins	m	8	kollins
+Cono	m	8	kɔno
+Bright	m	8	briɡt
+Carlo-Andrea	m	8	karloandrɛːa
+Benvenuto	m	8	bɛnvenuto
+Clément	m	8	klement
+Cira	f	8	t͡ʃira
+Biancamaria	f	8	bjankamaria
+Bianca-Maria	f	8	,bjankamaria
+Brahim	m	8	braim
+Winston	m	8	winston
+Wally	f	8	valli
+Tomislav	m	8	tomizlav
+Terenzio	m	8	terɛntsjo
+Viktoria	f	8	vajktɔrja
+Vitantonio	m	8	vitantɔnjo
+Zineb	f	8	tsineb
+Isabela	f	8	izabela
+Iryna	f	8	irajna
+Giovanni-Luca	m	8	d͡ʒovanniluka
+Giustina	f	8	d͡ʒustina
+Jawad	m	8	d͡ʒɛvad
+Jamal	m	8	d͡ʒɛmal
+India	f	8	indja
+Iliana	f	8	iljana
+Hanane	f	8	hanane
+Hermann	m	8	herman
+Shahin	m	8	ʃain
+Sesto	m	8	sɛsto
+Settimo	m	8	sɛttimo
+Savina	f	8	savina
+Salvino	m	8	salvino
+Salim	m	8	salim
+Saiful	m	8	saiful
+Silvi	m	8	silvi
+Alessandro-Maria	m	8	alessandromaria
+Althea	f	8	altaa
+Alisea	f	8	alizea
+Allé	m	8	alle
+Amor	m	8	amɔr
+Amato	m	8	amato
+Amel	f	8	amel
+Ami	f	8	ami
+Athéna	f	8	atena
+Atif	m	8	atif
+Attila	m	8	attila
+Badr	m	8	badr
+Adelmo	m	8	adelmo
+Adina	f	8	adina
+Achraf	m	8	aʃʃraf
+Arben	m	8	arben
+Arlene	f	8	arlɛne
+Arslan	m	8	arzlan
+Akram	m	8	akram
+Ala	f	8	ala
+Agostina	f	8	aɡostina
+Antonela	f	8	antonɛla
+Ani	m	8	ani
+Angelino	m	8	and͡ʒelino
+Angela-Maria	f	7	and͡ʒelamaria
+Angiola	f	7	and͡ʒola
+Aurel	m	7	aurɛl
+Allyson	f	7	,allison
+Aleks	m	7	a,leks
+Albina	f	7	albina
+Aneta	f	7	aneta
+Anacleto	m	7	anakleto
+Andrea-María	m	7	andrɛːamara
+Analía	f	7	a,na,la
+Albachiara	f	7	albakjara
+Adrien	m	7	adrien
+Adalgisa	f	7	adald͡ʒisa
+Adelio	m	7	adeljo
+Assane	m	7	assane
+Aris	m	7	aris
+Ares	m	7	ares
+Arlind	m	7	arlind
+Braian	m	7	brajan
+Curzio	m	7	kurtsjo
+Dajana	f	7	daid͡ʒɛna
+Colomba	f	7	kolomba
+Celina	f	7	t͡ʃelina
+Clorinda	f	7	klorinda
+Christiane	f	7	kristjane
+Chiaretta	f	7	kjaretta
+Candido	m	7	kandido
+Brunilda	f	7	brunilda
+Justice	m	7	d͡ʒustit͡ʃe
+Konrad	m	7	konrad
+Laurentiu	m	7	lawrentiu
+Josefina	f	7	dʒɔsefina
+Kennedy	m	7	kennɛdi]
+Kirsten	f	7	kirsten
+Marialetizia	f	7	marjaletittsja
+Marianne	f	7	marjanne
+Mariantonietta	f	7	marjantonjɛtta
+Marissa	f	7	marissa
+Maria-Anna	f	7	mariaanna
+Maria-Assunta	f	7	mariaassunta
+Maria-Carmela	f	7	mariakarmela
+Maria-Gabriella	f	7	mariaɡabriɛlla
+Maria-Luigia	f	7	marialuid͡ʒa
+Mihail	m	7	miail
+Melody	f	7	,melodj
+Matteo-Maria	m	7	mattɛːomaria
+Marusca	f	7	maruska
+Matia	m	7	matia
+Mustapha	m	7	mustapa
+Moustapha	m	7	mau̯stapa
+Ebrima	m	7	ebrima
+Dorin	m	7	dorin
+Edna	f	7	ɛdna
+Desmond	m	7	dezmond
+Dijana	f	7	,did͡ʒɛna
+Estella	f	7	estɛlla
+Endri	m	7	ɛndri
+Enes	m	7	enes
+Enis	m	7	eniz
+Gesualdo	m	7	d͡ʒezualdo
+Gheorghe	m	7	ɡeorɡe
+Genesio	m	7	d͡ʒɛnezio
+Felicita	f	7	felit͡ʃita
+Eunice	f	7	eunit͡ʃe
+Evaristo	m	7	evaristo
+Fatjon	m	7	fa,td͡ʒɔn
+Franck	m	7	frantʃk
+Ferrante	m	7	ferrante
+Filippa	f	7	filippa
+Naike	f	7	naike
+Riccarda	f	7	rikkardo
+Renza	f	7	rɛntsa
+Rayan	m	7	rejan
+Ousman	m	7	usmen
+Qasim	m	7	,kasim
+Raimonda	f	7	rajmonda
+Nicolae	m	7	nikolae
+Niké	f	7	,nike
+Neva	f	7	neva
+Oliva	f	7	oliva
+Onorio	m	7	onorjo
+Orfeo	m	7	orfɛo
+Prima	f	7	prima
+Primiano	m	7	primjano
+Pierina	f	7	piɛrina
+Pierpaola	f	7	pirpaola
+Sherif	m	7	ʃerif
+Seydou	m	7	sieajdou
+Shaban	m	7	ʃaban
+Sebastiana	f	7	sebastjana
+Serghei	m	7	serɡei
+Saliou	m	7	zaljɔu
+Sofi	f	7	sofi
+Soukaina	f	7	sukaina
+Sonila	f	7	sonila
+Silla	u	7	silla
+Silva	f	7	silva
+Solomon	m	7	solomon
+Ruslan	m	7	ruzlan
+Suzana	f	7	sutsana
+Tosca	f	7	toska
+Viorel	m	7	vjorel
+Vito-Antonio	m	7	vitoantonjo
+Venanzio	m	7	venantsjo
+Waqar	m	7	va,kar
+Tarik	m	7	taraik
+Yannick	m	7	jannik
+Yu	f	7	juː
+Zeynep	f	7	ddzeajnep
+Jesica	f	7	d͡ʒizika
+Jeannette	f	7	jɛannɛtte
+Ivica	m	7	ivika
+Izabela	f	7	idzabela
+Iuliana	f	7	juljana
+Ionel	m	7	sjɔnel
+Guerrino	m	7	ɡwerrino
+Giorgi	m	7	d͡ʒorʤi
+Giovan-Battista	m	7	d͡ʒovanbattista
+Gildo	m	7	d͡ʒildo
+Hiba	f	7	iba
+Hillary	f	7	illari
+Huseyin	m	7	usiejɪn
+Ilia	f	7	ilja
+Ilias	m	7	iljas
+Igino	m	7	id͡ʒino
+Ikram	f	7	ikram
+Ilde	f	7	ilde
+Ile	m	7	ile
+Hany	m	7	hanaj
+Harold	m	7	arold
+Harrison	m	6	arrison
+Hagar	f	6	aɡar
+Isis	f	6	izis
+Innocenzo	m	6	innot͡ʃɛntso
+Ioan	m	6	joan
+Ilirjan	m	6	ilird͡ʒɛn
+Imad	m	6	imad
+Grazia-Maria	f	6	ɡrattsjamaria
+Gora	m	6	ɡɔːra
+Glory	u	6	ɡlorj
+Gisela	f	6	d͡ʒizɛla
+Hilda	f	6	ilda
+Fiorentina	f	6	fjorentina
+Fosco	m	6	fosko
+Francesca-Maria	f	6	frant͡ʃeskamaria
+Florio	m	6	florjo
+Desideria	f	6	dezidɛrja
+Diva	f	6	diva
+Eliano	m	6	eljano
+Élodie	f	6	elodie
+Elona	f	6	elona
+Eduart	m	6	eduart
+Elga	f	6	elga
+Emad	m	6	emad
+Dumitru	m	6	dumitru
+Farah	f	6	fara
+Eni	f	6	ɛni
+Enio	m	6	ɛnjo
+Eris	m	6	eriz
+Ermete	m	6	ermɛte
+Gezim	m	6	dʒettsim
+Gian-Andrea	m	6	d͡ʒanandrɛːa
+Geneviève	f	6	dʒenevajɛve
+Galina	f	6	ɡalina
+Keita	m	6	keita
+Khadim	m	6	kadim
+Laerte	m	6	laɛrte
+Kristel	f	6	kristɛl
+Kamel	m	6	kamel
+Kawtar	f	6	ka,wtar
+Jonida	f	6	d͡ʒɔnida
+Joele	m	6	d͡ʒɔele
+Lorenzo-Maria	m	6	lorɛndzomaria
+Leonida	f	6	leɔnida
+Lei	u	6	lɛi
+Arjan	m	6	ard͡ʒɛn
+Asmaa	f	6	azmaa
+Astrit	m	6	astrit
+Arian	m	6	arjan
+Artan	m	6	artan
+Aliona	f	6	aljona
+Alis	f	6	alis
+Anna-Sofia	f	6	annasofia
+Abdallah	m	6	abadalla
+Abdelaziz	m	6	abdelatsidd
+Anas	m	6	anas
+Anass	m	6	anasː
+Amabile	f	6	amabile
+Alberto-Maria	m	6	albɛrtomaria
+Beverly	f	6	beverlj
+Cesira	f	6	t͡ʃɛzira
+Bice	f	6	biʧe
+Dalton	m	6	dalton
+Damaris	f	6	damaris
+Camélia	f	6	kamelia
+Carmelita	f	6	karmelita
+Dédé	m	6	dede
+Daouda	m	6	daouda
+Chen	m	6	kɛn
+Clayton	m	6	klɛjton
+Montserrat	f	6	montsɛrrat
+Murad	m	6	murad
+Mir	m	6	mir
+Mircea	m	6	mirʧea
+Moha	m	6	,mɔa
+Mírian	f	6	mrjan
+Milva	f	6	milva
+Mariem	f	6	marjem
+Mariya	f	6	maraija
+Maria-Livia	f	6	marialivja
+Maria-Adele	f	6	mariaadele
+Marco-Maria	m	6	markomaria
+Maha	f	6	ma
+Malick	m	6	malik
+Mavis	f	6	mavis
+Mateus	m	6	matɛws
+Meryem	f	6	,mɛrjɛm
+Michelino	m	6	mikelino
+Vittorino	m	6	vittorino
+Violante	f	6	vjolante
+Vally	f	6	valli
+Tori	m	6	tori
+Tristan	m	6	tristan
+Thierno	m	6	tjerno
+Zamir	m	6	tsamir
+Zina	f	6	ddzina
+Zaheer	m	6	ddzaeer
+Zaccaria	m	6	tsakkaria
+Yuliya	f	6	ajulija
+Tariq	m	6	tarai,k
+Taulant	m	6	taulant
+Talal	m	6	talal
+Ylli	m	6	lli
+Yaw	m	6	ajaveː
+Petrit	m	6	petrit
+Prisco	m	6	prisko
+Pier-Luca	m	6	pirluka
+Piermario	m	6	pirmarjo
+Patrycja	f	6	,pa,traikja
+Ortensia	f	6	ortɛnsja
+Ottaviano	m	6	ottaviano
+Naim	m	6	naim
+Neda	f	6	neda
+Nela	f	6	nela
+Nazar	m	6	naddzar
+Nani	f	6	nani
+Narciso	m	6	nart͡ʃizo
+Riccardo-Maria	m	6	rikkardomaria
+Odette	f	6	odɛt
+Quinto	m	6	kwinto
+Ninfa	f	6	niŋfa
+Nirvana	f	6	nirvana
+Nikol	f	6	,nikɔl
+Nikolay	m	6	,nikɔlɛj
+Nilde	f	6	nilde
+Stiven	m	6	stiven
+Senad	m	6	senad
+Shana	f	6	ʃana
+Sidy	m	6	,si,dj
+Siham	f	6	skiam
+Rosemary	f	6	rosemarj
+Rodica	f	6	rodika
+Ruzica	f	6	rutsika
+Saimir	m	6	zajmir
+Samia	f	6	samia
+Sirya	f	5	,sirja
+Sokol	m	5	sokɔl
+Sisto	m	5	sisto
+Soufiane	m	5	sufjane
+Souleymane	m	5	sulei]mane
+Simion	m	5	simjon
+Shpetim	m	5	ʃpe,tim
+Shkelzen	m	5	ʃkeldzɛn
+Sila	f	5	sila
+Suamy	f	5	swa,mj
+Stelio	m	5	stɛljo
+Sunday	m	5	swn,daj
+Shady	m	5	ʃa,dj
+Selim	m	5	zelim
+Semir	m	5	semir
+Sekou	m	5	siekou
+Shakira	f	5	ʃekira
+Salvatrice	f	5	salvatrit͡ʃe
+Sameh	m	5	samɛ
+Sandrino	m	5	sandrino
+Sangue	m	5	saŋɡwe
+Rocchina	f	5	rokkina
+Rigers	m	5	rid͡ʒers
+Rim	f	5	rim
+Rosalina	f	5	rosalina
+Rosarita	f	5	rozarjta
+Cloé	f	5	kloe
+Chiara-Maria	f	5	kjaramaria
+Brendon	m	5	brendon
+Brenno	m	5	brenno
+Beppino	m	5	beppino
+Besmir	m	5	bezmir
+Bekim	m	5	,bɛkim
+Celestina	f	5	t͡ʃelestina
+Celso	m	5	t͡ʃelso
+Carmina	f	5	karmina
+Casimiro	m	5	kasimiro
+Cosima	f	5	kosima
+Cosmina	f	5	kozmina
+Cristofaro	m	5	kristofaro
+Bujar	m	5	,bud͡ʒɛr
+Carlo-Antonio	m	5	karloantɔnjo
+Laura-María	f	5	lauramara
+Leonilde	f	5	leɔnilde
+Leonora	f	5	leonora
+Kemal	m	5	kemal
+Kujtim	m	5	kudʒtrim
+Klea	f	5	klea
+Liuba	f	5	liuba
+London	m	5	londɔn
+Jutta	f	5	d͡ʒutta
+Juljan	m	5	d͡ʒuld͡ʒɛn
+Jun	m	5	jun
+Juana	f	5	jwana
+Hind	f	5	in,d
+Henri	m	5	enri
+Hamed	m	5	amed
+Hakim	m	5	akim
+Guya	f	5	ɡuja
+Hani	m	5	ani
+Ismaila	m	5	izmaila
+Iside	f	5	izide
+Giannantonio	m	5	d͡ʒannantɔnjo
+Giannina	f	5	d͡ʒannina
+Giulio-Cesare	m	5	d͡ʒuljot͡ʃɛzare
+Giuseppe-Pio	m	5	d͡ʒuzeppepjo
+Giovanna-Maria	f	5	d͡ʒovannamaria
+Giovannino	m	5	d͡ʒovannino
+Gisèle	f	5	dʒisɛle
+Gloriana	f	5	ɡlorjana
+Jamila	f	5	d͡ʒɛmila
+Janette	f	5	d͡ʒɛnette
+Ilyas	m	5	iljas
+Incoronata	f	5	iŋkoronata
+Inga	f	5	inɡa
+Ghita	f	5	ɡita
+Giacinta	f	5	d͡ʒat͡ʃinta
+Giacomina	f	5	d͡ʒakɔmina
+Gian-Battista	m	5	d͡ʒanbattista
+Gennarino	m	5	d͡ʒennarino
+Georgeta	f	5	d͡ʒeɔrd͡ʒeta
+Elvi	m	5	ɛlvi
+Elvia	f	5	ɛlvia
+Ellis	m	5	ellis
+Eloise	f	5	elɔise
+Elisabet	f	5	elizabet
+Edvige	f	5	ɛdvid͡ʒɛ
+Elba	f	5	elba
+Flori	m	5	flori
+Florida	f	5	florida
+Florindo	m	5	florindo
+Fiorina	f	5	fjorina
+Fiorino	m	5	fjorino
+Flaminio	m	5	flaminjo
+Franc	m	5	frantʃ
+Franceska	f	5	frant͡ʃeska
+Divine	f	5	divine
+Djibril	m	5	dʒibril
+Destiny	u	5	destinaj
+Dilva	f	5	dilva
+Enos	m	5	enos
+Enrichetta	f	5	enriketta
+Enver	m	5	enver
+Era	f	5	ɛːra
+Eugen	m	5	ewd͡ʒɛn
+Ermenegildo	m	5	ermenɛd͡ʒildo
+Ernestina	f	5	ernestina
+Emo	m	5	ɛmo
+Doha	f	5	doa
+Edera	f	5	edera
+Eva-María	f	5	e,vamara
+Faustina	f	5	faustina
+Agazio	m	5	aɡatt͡sjo
+Ahsan	m	5	asan
+Aimone	m	5	ajmone
+Albana	f	5	albana
+Anna-Elisa	f	5	annaeliza
+Anna-Grazia	f	5	annaɡratsja
+Anna-Pia	f	5	annapia
+Anne-Marie	f	5	annemarje
+Anila	f	5	anila
+Arno	m	5	arno
+Asha	f	5	asa
+Alieu	m	5	alieu
+Alesandro	m	5	alezandro
+Alesia	f	5	alezia
+Andrea-Carlo	m	5	andrɛːakarlo
+Amar	m	5	amar
+Amela	f	5	amela
+Athos	m	5	atos
+Attilia	f	5	attilia
+Bakary	m	5	bakarj
+Aboubacar	m	5	aboubakar
+Abderrahim	m	5	abaderraim
+Adela	f	5	adɛla
+Nermin	f	5	nermin
+Noa	f	5	nɔa
+Naima	f	5	naima
+Nathalia	f	5	natalja
+Pietra	f	5	pjɛtra
+Perparim	m	5	perparim
+Próspero	m	5	prspero
+Paoletta	f	5	paoletta
+Paolo-Roberto	m	5	paolɔroberto
+Pablito	m	5	pablito
+Oxana	f	5	oksana
+Rabia	f	5	rabia
+Raísa	f	5	raza
+Oleh	m	5	ole
+Olindo	m	5	olindo
+Olsi	m	5	ɔlsi
+Nona	f	5	nɔna
+Luis-Fernando	m	5	luisfernando
+Marietta	f	5	marjetta
+Mariglen	m	5	mariɡlɛn
+María-Cecilia	f	5	,marat͡ʃɛt͡ʃilja
+Mariassunta	f	5	marjassunta
+Mariastella	f	5	mariastella
+Maricel	f	5	mariːt͡ʃel
+María-Eugenia	f	5	,maraeud͡ʒenia
+Maria-Serena	f	5	mariaserena
+María-Sofía	f	5	,marasofa
+Moses	m	5	moses
+Mohsen	m	5	,mɔsen
+Moise	m	5	moise
+Milvia	f	5	milvia
+Mirjam	f	5	mird͡ʒɛm
+Meris	f	5	meris
+Malek	f	5	,malek
+Yasin	m	5	jasin
+Yasser	m	5	ajasser
+Yassin	m	5	jassin
+Yosef	m	5	ajosef
+Trentino	m	5	trentino
+Wainer	m	5	vainer
+Werther	m	5	wertar
+Valdo	m	5	valdo
+Visnja	f	5	vizndʒa
+Vitalie	m	5	vitalie
+Tatyana	f	5	tataiana
+Tihomir	m	5	triɔmir
+Zana	f	5	tsana
+Zahra	f	5	ddzara
+Zahira	f	4	tsaira
+Umberta	f	4	umberta
+Xhulio	m	4	ksuljo
+Yan	u	4	jan
+Wanna	f	4	vanna
+Wassim	m	4	,wassim
+Wael	m	4	,wael
+Vittore	m	4	vittore
+Vittorina	f	4	vittorina
+Vivien	f	4	viviɛn
+Teresio	m	4	terezjo
+Tonin	m	4	tonin
+Valbona	f	4	valbona
+Victory	f	4	viktori
+Verusca	f	4	veruska
+Vincenzina	f	4	vint͡ʃɛndzina
+Vitangelo	m	4	vitand͡ʒɛlo
+Taoufik	m	4	tikooufik
+Talía	f	4	ta,la
+Tamar	f	4	tamar
+Tamer	m	4	tamer
+Evans	m	4	evans
+Everton	m	4	everton
+Federico-Maria	m	4	federikomaria
+Fedra	f	4	fedra
+Fadil	m	4	fadil
+Fioravante	m	4	fjoravante
+Florina	f	4	florina
+Francesca-Pia	f	4	frant͡ʃeskapia
+Francesco-Antonio	m	4	frant͡ʃeskoantɔnjo
+Gamal	m	4	ɡamal
+Geraldina	f	4	d͡ʒeraldina
+Gerarda	f	4	d͡ʒerarda
+Giacoma	f	4	d͡ʒakɔma
+Gian-Michele	m	4	d͡ʒanmikɛle
+Genti	m	4	dʒɛnti
+Gentjan	m	4	d͡ʒenthd͡ʒɛn
+Gazmir	m	4	ɡaddmir
+Elsayed	m	4	elsajɛd
+Elizabeta	f	4	elitsabɛta
+Edin	m	4	ɛdin
+Edith	f	4	edit
+Edoardo-Maria	m	4	edoardomaria
+Dragica	f	4	drad͡ʒika
+Denyse	f	4	denajse
+Endrit	m	4	ɛndrit
+Entela	f	4	entɛla
+Erald	m	4	erald
+Esperanza	f	4	esperantsa
+Erio	m	4	ɛrjo
+Erjona	f	4	erd͡ʒɔna
+Eufemia	f	4	ewfemia
+Khurram	m	4	karram
+Kejsi	f	4	kedʒsi
+Kilian	m	4	kɪljan
+Leonarda	f	4	leonarda
+Laureta	f	4	laureta
+Letterio	m	4	lettɛrjo
+Kaoutar	f	4	kaoutar
+Kateryna	f	4	katɛrajna
+Kathia	f	4	katja
+Klodian	m	4	klodian
+Kofi	m	4	kofi
+Lorela	f	4	lorela
+Ljuba	f	4	ld͡ʒuba
+Lisetta	f	4	lisetta
+Liviu	m	4	livaju
+Loreta	f	4	loreta
+Rosolino	m	4	rozolino
+Safa	f	4	safa
+Sahar	f	4	saar
+Rudolf	m	4	rudolf
+Saida	f	4	saida
+Sajmir	m	4	sadʒmir
+Saber	m	4	saber
+Stojan	m	4	stiod͡ʒɛn
+Stefano-Maria	m	4	stefanomaria
+Subhash	m	4	subas
+Svitlana	f	4	zvitlana
+Sulaiman	m	4	sulajman
+Sulayman	m	4	sulɛjmen
+Silvia-Maria	f	4	silvjamaria
+Sofiane	m	4	zofiane
+Sofiya	f	4	sofija
+Sidiki	m	4	sidiki
+Rosalino	m	4	rosalino
+Rosa-Anna	f	4	rosaanna
+Seconda	f	4	sekonda
+Sander	m	4	sander
+Salem	m	4	salem
+Salih	m	4	sali
+Salma	f	4	salma
+Saveria	f	4	savɛrja
+Carla-María	f	4	karlamara
+Brikena	f	4	brikena
+Besnik	m	4	besnik
+Cirino	m	4	t͡ʃirino
+Blessing	f	4	blessing
+Dalí	f	4	dail
+Dalida	f	4	dalida
+Cornelio	m	4	kɔrnɛljo
+Costantina	f	4	kostantina
+Costel	m	4	kostel
+Cuono	m	4	kwɔno
+Cristel	f	4	kris,tɛl
+Davide-Maria	m	4	davidemaria
+Darya	f	4	darja
+Demba	m	4	demba
+Ignazia	f	4	iɲɲattsia
+Ilie	m	4	ilie
+Imam	m	4	imam
+Hossam	m	4	ossam
+Inas	f	4	inas
+Iana	f	4	jana
+Harouna	m	4	aruna
+Harun	m	4	aruːn
+Halil	m	4	alil
+Hamdi	m	4	amdi
+Haris	m	4	aris
+Heba	f	4	eba
+Hassen	m	4	assen
+Ireneo	m	4	irenɛo
+Ivanna	f	4	ivanna
+Ivette	f	4	ivette
+Iza	f	4	itsa
+Giusj	f	4	ɡiusdʒ
+Gianfranca	f	4	d͡ʒanfranka
+Gianguido	m	4	d͡ʒanɡwido
+Giliana	f	4	d͡ʒiljana
+Greis	u	4	ɡreis
+Gionatan	m	4	d͡ʒonatan
+Giovannella	f	4	d͡ʒovannɛlla
+Giovanni-Paolo	m	4	d͡ʒovannipaolo
+Marouane	m	4	maruane
+Marsela	f	4	marsela
+Marte	f	4	marte
+Marwan	m	4	marvan
+Massimiliana	f	4	massimiljana
+Monir	m	4	monir
+Mouna	f	4	mouna
+Luis-Miguel	m	4	luismiɡl
+Luisanna	f	4	luisanna
+Luca-Giuseppe	m	4	lukad͡ʒuzeppe
+Lulzim	m	4	lultsim
+María-Fernanda	f	4	,marafernanda
+Maria-Michela	f	4	mariamikɛla
+María-Silvia	f	4	,marasilvja
+Marjana	f	4	mard͡ʒɛna
+Maria-Valentina	f	4	mariavalentina
+Mariacarla	f	4	mariakarla
+Mariacarmela	f	4	mariakarmela
+Mariaclara	f	4	marjaklara
+Maricela	f	4	mariʧela
+Marinela	f	4	marinela
+Margareta	f	4	marɡareta
+Maria-Ausilia	f	4	mariaauzilja
+Maria-Beatrice	f	4	mariabeatrit͡ʃe
+Maria-Clara	f	4	mariaklara
+Malcolm	m	4	malkolm
+Malgorzata	f	4	malɡortsata
+Malvina	f	4	malvina
+Manal	f	4	manal
+Miljana	f	4	mild͡ʒɛna
+Mentor	m	4	mentɔr
+Medea	f	4	medɛa
+Meghan	f	4	,mɛɡan
+Mehmood	m	4	,mɛmood
+Adelino	m	4	adelino
+Arash	m	4	araz
+Ardian	m	4	ardjan
+Argia	f	4	ard͡ʒia
+Arjola	f	4	ard͡ʒɔla
+Armanda	f	4	armanda
+Arta	f	4	arta
+Artemio	m	4	artemio
+Ado	m	4	ado
+Adriatik	m	4	adrjatik
+Albertina	f	4	albertina
+Anna-Luisa	f	4	annaluisa
+Antioco	m	4	antioko
+Annetta	f	4	annɛtta
+Annunziato	m	4	annuntsjato
+Augustin	m	4	awɡustin
+Atef	m	4	atef
+Azem	m	4	addzem
+Aliou	m	4	aliou
+Alioune	m	4	alioune
+Alissa	f	4	alissa
+Alfieri	m	4	alfjɛri
+Albín	m	4	,albn
+Alcide	m	4	alt͡ʃide
+Amal	f	4	amal
+Amaranta	f	4	amaranta
+Amarildo	m	4	amarildo
+Orges	m	4	ord͡ʒɛs
+Oriella	f	4	oriɛlla
+Onda	f	4	onda
+Piervincenzo	m	4	pirvint͡ʃɛntso
+Porzia	f	4	portsja
+Petre	m	4	petre
+Pier-Franco	m	4	pirfranko
+Piergiovanni	m	4	pird͡ʒovanni
+Nikoleta	f	4	,nikoleta
+Nilda	f	4	nilda
+Nilo	m	4	nilo
+Nicolina	f	4	nikolina
+Nicu	m	4	niku
+Nesrine	f	4	nɛːzrine
+Nedda	f	4	nedda
+Nawal	f	4	naval
+Rayane	m	4	rejane
+Rea	f	4	rɛa
+Redi	m	4	redi
+Ridha	m	4	rida
+Ovidio	m	4	ovidjo
+Paulin	m	4	pawlin
+Pantaleo	m	4	pantalɛo
+Palmira	f	4	paːlmira
+Rahman	m	4	raman
+Ramiz	m	4	ramidz
+Rania	f	4	ranja
+Rasel	m	3	razɛl
+Raffael	m	3	raffael
+Rajae	f	3	rad͡ʒɛe
+Rahma	f	3	rama
+Raimond	m	3	rajmond
+Quinta	f	3	kwinta
+Nerina	f	3	nerina
+Nertila	f	3	nertila
+Nikole	f	3	,nikole
+Nila	f	3	nila
+Nizar	m	3	niddzar
+Nisar	m	3	nisar
+Olympia	f	3	olajmpja
+Onorina	f	3	onorina
+Ofelia	f	3	ofelia
+Oberto	m	3	obɛrto
+Octavian	m	3	oktavian
+Norah	f	3	nɔra
+Norina	f	3	norina
+Olesea	f	3	olezea
+Olta	f	3	ɔlta
+Olti	m	3	ɔlti
+Oltion	m	3	oltjon
+Noura	f	3	noura
+Noureddine	m	3	noureddine
+Novello	m	3	novɛllo
+Pier-Giulio	m	3	pird͡ʒulio
+Pier-Maria	m	3	pirmaria
+Piermarco	m	3	pirmarko
+Piermatteo	m	3	pirmattɛːo
+Pietro-Maria	m	3	pjetromaria
+Petronela	f	3	petronela
+Provvidenza	f	3	provvidɛntsa
+Paoletto	m	3	paoletto
+Paolo-Emilio	m	3	paolɔemiljo
+Paolo-Luca	m	3	paolɔluka
+Otília	f	3	otlia
+Oumy	f	3	oumj
+Ossama	m	3	ɔssama
+Patience	f	3	patjɛnt͡ʃe
+Palmina	f	3	palmina
+Palmo	m	3	palmo
+Nara	f	3	nara
+Narcisa	f	3	nart͡ʃiza
+Nardi	m	3	nardi
+Najib	m	3	nad͡ʒab
+Nanda	f	3	nanda
+Rida	m	3	rida
+Reem	f	3	rim
+Rezart	m	3	reddzart
+Riad	m	3	ria,d
+Rica	f	3	rika
+Danish	m	3	dainjs
+Danut	m	3	danut
+Davide-Giovanni	m	3	davided͡ʒovanni
+Decimo	m	3	dɛt͡ʃimo
+Claudia-María	f	3	klaudiamara
+Cleopatra	f	3	kleopatra
+Chiara-Anna	f	3	kjaraanna
+Bushra	f	3	buʃra
+Basma	f	3	bazma
+Bertin	m	3	bertin
+Besim	m	3	besim
+Bessi	m	3	bessi
+Bardhok	m	3	batsjodɔk
+Célio	m	3	kelio
+Cesarina	f	3	t͡ʃezarina
+Chaimae	f	3	kaimae
+Blerina	f	3	blerina
+Boniface	m	3	bonifat͡ʃe
+Bibiana	f	3	bibjana
+Bouchra	f	3	buʃra
+Costin	m	3	kostin
+Consolata	f	3	konsolata
+Loran	m	3	loran
+Liberata	f	3	liberata
+Liliya	f	3	lislisja
+Liubov	f	3	liubov
+Loriano	m	3	lorjano
+Learco	m	3	learko
+Latifa	f	3	latifa
+Leontina	f	3	lentina
+Laszlo	m	3	lastslo
+José-Angel	m	3	dʒozeand͡ʒel
+Jonni	m	3	d͡ʒɔnni
+Kingsley	m	3	kingzlei]
+Khuram	m	3	kuram
+Kleant	m	3	klean
+Kledi	m	3	kledi
+Kosta	m	3	kosta
+Kristijan	m	3	kris,tid͡ʒɛn
+Kristofer	m	3	kristofɛr
+Karola	f	3	karola
+Karamoko	m	3	karamoko
+Kamilla	f	3	kamilla
+Katrine	f	3	katrine
+Kassandra	f	3	kassandra
+Juan-Antonio	m	3	d͡ʒuanantonjo
+Junia	f	3	junja
+Junio	m	3	junjo
+Jurgita	f	3	d͡ʒurd͡ʒita
+Sylwia	f	3	sajlwia
+Youness	m	3	jouness
+Yahya	m	3	ajaja
+Xhino	m	3	ksino
+Yuriy	m	3	ajuraij
+Zane	f	3	dzane
+Zhanna	f	3	tshanna
+Ziad	m	3	ddziad
+Zouhair	m	3	ddzouaiːr
+Uber	m	3	uber
+Uche	m	3	uke
+Uliana	f	3	uljana
+Tristano	m	3	tristano
+Viorica	f	3	vjorika
+Vira	f	3	vira
+Valeriana	f	3	valerjana
+Valeriu	m	3	valerju
+Vasilica	f	3	vazilika
+Viktoriya	f	3	vajktɔraija
+Vicki	f	3	,viki
+Vida	f	3	vida
+Vienna	f	3	vjenna
+Vittorio-Emanuele	m	3	vittorjoemanuɛle
+Wafa	f	3	vafa
+Wafaa	f	3	vafaa
+Tilde	f	3	tilde
+Teodor	m	3	teodor
+Teodosio	m	3	teodozjo
+Teresita	f	3	terezita
+Tommasina	f	3	tommazina
+Tonina	f	3	tonina
+Esma	f	3	esma
+Eneida	f	3	eneida
+Emiddio	m	3	emiddio
+Emilian	m	3	emiljan
+Emiljan	m	3	emild͡ʒɛn
+Ermir	m	3	ermir
+Ernesta	f	3	ernesta
+Ero	m	3	ero
+Ersi	m	3	ersi
+Gazmend	m	3	ɡadzmen,d
+Gena	f	3	d͡ʒena
+Genc	m	3	d͡ʒenk
+Giampaola	f	3	d͡ʒampaola
+Gian-Antonio	m	3	d͡ʒanantonjo
+Fanta	f	3	fanta
+Fabienne	f	3	fabienne
+Fabio-Maria	m	3	fabjomaria
+Fabrice	m	3	fabrit͡ʃe
+Fatiha	f	3	fatria
+Faustino	m	3	faustino
+Favour	f	3	favour
+Fahd	m	3	fad
+Fahim	m	3	faim
+Friday	m	3	friːdəaj
+Feng	m	3	fendʒ
+Fiorela	f	3	fjorela
+Firas	m	3	firas
+Fitore	f	3	fitore
+Franca-Maria	f	3	frantʃamaria
+Francesca-Anna	f	3	frant͡ʃeskaanna
+Francesca-Paola	f	3	frant͡ʃeskapaola
+Francesco-Giuseppe	m	3	frant͡ʃeskod͡ʒuzeppe
+Francesko	m	3	frantʃezko
+Deva	f	3	deva
+Dhurata	f	3	durata
+Dior	m	3	djor
+Elizaveta	f	3	elitsaveta
+Elzbieta	f	3	eldzbieta
+Emer	m	3	emer
+Elektra	f	3	elektra
+Elham	f	3	elam
+Elisabeta	f	3	elizabɛta
+Elmo	m	3	elmo
+Elva	f	3	elva
+Dolly	f	3	dolli
+Edilio	m	3	edilio
+Edlira	f	3	ɛdlira
+Durim	m	3	durim
+Dounia	f	3	dounia
+Dramane	m	3	dramane
+Salwa	f	3	salva
+Samson	m	3	zamson
+Sanaa	f	3	sanaa
+Salif	m	3	salif
+Soufian	m	3	sufian
+Sirin	u	3	sirin
+Skender	m	3	skɛnder
+Ruslana	f	3	ruzlana
+Safia	f	3	safia
+Rubin	m	3	rubin
+Stellina	f	3	stellina
+Shakeel	m	3	ʃekeel
+Shkelqim	m	3	ʃkel,kim
+Sidonia	f	3	sidonja
+Sidorela	f	3	sidorɛla
+Rodolf	m	3	rodɔlf
+Risto	m	3	risto
+Romilda	f	3	romilda
+Roberto-Tommaso	m	3	robertoitoimmaso
+Ana-Laura	f	3	analaura
+Andrea-Giuseppe	m	3	andrɛːad͡ʒuzeppe
+Andrea-Luigi	m	3	andrɛːaluid͡ʒ
+Anastasiya	f	3	anastaskija
+Aminata	f	3	aminata
+Ammar	m	3	ammar
+Amro	m	3	amro
+Andriy	m	3	andraii]
+Adonella	f	3	adonɛlla
+Adrienne	f	3	adriɛnne
+Agim	m	3	ad͡ʒim
+Abdoul-Karim	m	3	abdoulkarim
+Abdel	m	3	abdel
+Abdi	m	3	abdi
+Ariadna	f	3	aria,dna
+Arbi	m	3	arbi
+Armida	f	3	armida
+Asta	f	3	asta
+Alfeo	m	3	alfɛo
+Alfia	f	3	alfia
+Alfonsa	f	3	alfonsa
+Alesio	m	3	alezjo
+Alexandr	m	3	alɛksandr
+Alois	m	3	alojs
+Alviero	m	3	alvjero
+Annuccia	f	3	annutʧa
+Antonio-Luigi	m	3	antɔnjoluid͡ʒ
+Anxhela	f	3	anksela
+Anica	f	3	anika
+Anteo	m	3	anteo
+Angela-Rita	f	3	and͡ʒelarita
+Angi	f	3	and͡ʒ
+Apollonia	f	3	apollonia
+Aqeel	m	3	a,keel
+Auro	m	3	awro
+Babacar	m	3	babakar
+Ave	f	3	ave
+Gioachino	m	3	d͡ʒoakino
+Giorgio-Carlo	m	3	dʒiord͡ʒokarlo
+Giorgio-Maria	m	3	dʒiord͡ʒomaria
+Giosue'	m	3	dʒiosɔue
+Giovanni-Andrea	m	3	d͡ʒovanniandrɛːa
+Giovanni-Antonio	m	3	d͡ʒovanniantɔnjo
+Gisberto	m	3	d͡ʒizbɛrto
+Gianmauro	m	3	d͡ʒammawro
+Godfred	m	3	ɡo,dfred
+Godstime	m	3	ɡo,dstime
+Giuseppe-Andrea	m	3	d͡ʒuzeppeandrɛːa
+Giuseppe-Maria	m	3	d͡ʒuzeppemaria
+Giuseppe-Antonio	m	3	d͡ʒuzeppeantɔnjo
+Guglielmina	f	3	ɡuʎʎɛlmina
+Guido-Maria	m	3	ɡwidomaria
+Griselda	f	3	ɡriselda
+Hasnaa	f	3	asnaa
+Homer	m	3	ɔmer
+Ilva	f	3	ilva
+Imelda	f	3	imɛlda
+Imen	f	3	imen
+Ilari	f	3	ilari
+Idrissa	m	3	idrissa
+Indira	f	3	indira
+Issam	m	3	issam
+Iwona	f	3	iwona
+Iride	f	3	iride
+Irini	f	3	irini
+Jeison	m	3	jɛison
+Jgor	m	3	dʒɡor
+Jamshaid	m	3	dʒa,mʃei,d
+Jani	m	3	d͡ʒɛni
+Jamel	m	3	d͡ʒɛmel
+Mei	f	3	mei
+Melek	f	3	,melek
+Migena	f	3	mid͡ʒena
+Mihael	m	3	miael
+Meriem	f	3	merjem
+Merima	f	3	merima
+Maelle	f	3	maɛlle
+Lyubov	f	3	lajubov
+Madalena	f	3	madalena
+Lush	m	3	,luʃ
+Luigi-Antonio	m	3	,luid͡ʒantɔnjo
+Lubna	f	3	lubna
+Mazhar	m	3	,maddar
+Maryna	f	3	marajna
+Maryrose	f	3	marajrose
+Masino	m	3	masino
+Maroua	f	3	marua
+Marsida	f	3	marsida
+Maty	f	3	matai
+Mouad	m	3	mau̯ad
+Mourad	m	3	murad
+Mya	f	3	mja
+Nadejda	f	3	nadedʒda
+Mimoza	f	3	mimotsa
+Min	f	3	min
+Mirjan	m	3	mird͡ʒɛn
+Mirsad	m	3	mirsad
+Milco	m	3	milko
+Mioara	f	3	mjɔara
+Mirabella	f	3	mirabɛlla
+Maria-Carmen	f	3	mariakarmen
+Marco-Andrea	m	3	markoandrɛːa
+Marco-Pio	m	3	markopio
+María-Daniela	f	3	,maradaniɛla
+María-Dolores	f	3	,maradolores
+Maria-Enrica	f	3	mariaenrika
+Maria-Ester	f	3	mariaester
+Marilda	f	3	marilda
+Mario-Antonio	m	3	marjoantɔnjo
+Maris	f	3	maris
+Mariza	f	3	maritsa
+Mariantonia	f	3	marjantonia
+Maricica	f	3	marit͡ʃika
+Majlinda	f	3	,madʒlinda
+Maka	f	3	maka
+Malak	f	3	malak
+Manuella	f	3	manuɛlla
+Marcelle	f	3	mart͡ʃelle
+Manjola	f	3	mandʒɔla
+Maikon	m	3	,maikon
+Marcellina	f	2	mart͡ʃellina
+Malika	f	2	maliska
+Mamady	m	2	,mamadj
+Mame-Diarra	f	2	mamediarra
+Maggiorino	m	2	madd͡ʒorino
+Matteo-Andrea	m	2	mattɛːoandrɛːa
+Matteo-Luca	m	2	mattɛːoluka
+Masimo	m	2	mazimo
+Massimino	m	2	massimino
+Massimo-Francesco	m	2	,mas,simofrant͡ʃesko
+Matea	f	2	matɛa
+Mayssa	f	2	,majssa
+Mbark	m	2	mbark
+Marta-Anna	f	2	martaanna
+Marta-María	f	2	marta,mara
+Memet	m	2	memet
+Medina	f	2	medina
+Megi	f	2	med͡ʒi
+Mehrdad	m	2	,mɛrdad
+Melika	f	2	meliska
+Mhamed	m	2	mamed
+Maela	f	2	maɛla
+Luz-María	f	2	,luddmara
+Luigi-Carlo	m	2	,luid͡ʒkarlo
+Luigi-Francesco	m	2	,luid͡ʒfrant͡ʃesko
+Luigi-Emanuele	m	2	,luid͡ʒemanuɛle
+Luigi-Giuseppe	m	2	,luid͡ʒd͡ʒuzeppe
+Lucia-Anna	f	2	lut͡ʃiaanna
+Lucille	f	2	lut͡ʃille
+Lucina	f	2	lut͡ʃina
+Lucretia	f	2	lukretia
+Lutfi	m	2	lutsfi
+Maria-Tiziana	f	2	mariatittsjana
+Maria-Valeria	f	2	mariavalerja
+Mariabeatrice	f	2	marjabeatrit͡ʃe
+Mariaclaudia	f	2	marjaklawdja
+Mariaelisa	f	2	marjaeliza
+Maria-Felicita	f	2	mariafelit͡ʃita
+Maria-Franca	f	2	mariafranka
+Maria-Gioia	f	2	mariad͡ʒɔja
+Maria-Gloria	f	2	mariaɡloria
+Maria-Ida	f	2	mariaida
+María-Isabel	f	2	,maraizabel
+Maria-Linda	f	2	marialinda
+Maria-Lorena	f	2	marialorena
+Maria-Luiza	f	2	marialuittsa
+Maria-Maddalena	f	2	mariamaddalena
+Maria-Silvana	f	2	mariasilvana
+Maria-Adelaide	f	2	mariaadelajde
+Maria-Antonella	f	2	mariaantonɛlla
+María-Antonia	f	2	,maraantonia
+Maria-Caterina	f	2	mariakaterina
+Marco-Luigi	m	2	markoluid͡ʒ
+Marco-Pietro	m	2	markopjɛtro
+Marco-Stefano	m	2	markostefano
+Marjo	m	2	mard͡ʒɔ
+Marie-Louise	f	2	,marieluize
+Marieta	f	2	marjeta
+Marilinda	f	2	marilinda
+Marilu'	f	2	marailu
+Mario-Alberto	m	2	marjoalbɛrto
+Mario-Giuseppe	m	2	marjod͡ʒuzeppe
+Mario-Luca	m	2	marjoluka
+Muhammad-Imran	m	2	,muammadimran
+Mose'	m	2	,mɔsei
+Mouhamadou	m	2	,mɔuamadɔu
+Muhamet	m	2	muamet
+Murielle	f	2	murie
+Monica-Maria	f	2	,mɔnikamaria
+Nabila	f	2	nabila
+Mite	f	2	mite
+Mine	f	2	mine
+Miracle	u	2	mirakle
+Miré	f	2	mire
+Mikica	m	2	mikika
+Monday	m	2	,mɔn,daj
+Ebe	f	2	ebe
+Doinita	f	2	doinita
+Domenic	m	2	domenik
+Dominick	m	2	dominik
+Doretta	f	2	dorɛtta
+Drilon	m	2	drilon
+Driss	m	2	driss
+Drita	f	2	drita
+Duilia	f	2	duilja
+Dulce-María	f	2	dulkemara
+Dragi	m	2	draʤi
+Felicina	f	2	felit͡ʃina
+Fabio-Antonio	m	2	fabjoantɔnjo
+Fabio-Paolo	m	2	fabjopaolo
+Fabriano	m	2	fabrjano
+Fanica	f	2	fanika
+Eugeniu	m	2	ewd͡ʒɛniu
+Evangelina	f	2	evand͡ʒelina
+Everest	m	2	everest
+Evgenia	f	2	evd͡ʒenia
+Fathi	m	2	fati
+Fatos	m	2	fatos
+Fatoumata	f	2	fatumata
+Fadwa	f	2	fa,dwaː
+Fady	m	2	fa,dj
+Faiza	f	2	faitsa
+Fama	f	2	fama
+Eriselda	f	2	eriselda
+Erjola	f	2	erd͡ʒɔla
+Ermira	f	2	ermira
+Ernestine	f	2	ernestine
+Ersida	f	2	ersida
+Endi	m	2	endi
+Endurance	u	2	ɛndurant͡ʃe
+Érico	m	2	eriko
+Erind	m	2	erind
+Ese	f	2	ese
+Enisa	f	2	eniza
+Enrico-Carlo	m	2	enrikokarlo
+Enxhi	f	2	enksi
+Esterina	f	2	esterina
+Gennarina	f	2	d͡ʒennarina
+Gentiana	f	2	d͡ʒentiana
+Geanina	f	2	d͡ʒeanina
+Gelu	m	2	d͡ʒelu
+Gerina	f	2	d͡ʒerina
+Giacomo-Luigi	m	2	d͡ʒakɔmoluid͡ʒ
+Giada-Maria	f	2	d͡ʒadamaria
+Gaber	m	2	ɡabɛr
+Gani	m	2	ɡani
+Efisia	f	2	efizia
+Eglantina	f	2	eʎːantina
+Eldina	f	2	eldina
+Elena-Francesca	f	2	elɛŋafrant͡ʃeska
+Elenio	m	2	elɛnjo
+Elissa	f	2	elissa
+Ellida	f	2	ellida
+Elidia	f	2	elidja
+Elion	m	2	eljon
+Elios	m	2	eljɔs
+Ehis	m	2	ejs
+El-Mehdi	m	2	elmɛdi
+Fethi	m	2	feti
+Ferhat	m	2	ferat
+Ferit	m	2	ferit
+Fermo	m	2	fermo
+Fredrick	m	2	fredrik
+Florent	m	2	flɔrent
+Francisc	m	2	frantʃiʃ
+Francisca	f	2	frantʃska
+Franco-Antonio	m	2	frankoantonjo
+Fioravanti	m	2	fjoravanti
+Fitim	m	2	fitrim
+Foca	m	2	fɔka
+Diomira	f	2	diomira
+Dionigi	m	2	dionid͡ʒi
+Devin	m	2	devin
+Devon	m	2	devon
+Diego-Alberto	m	2	djeɡoalbɛrto
+Diego-Antonio	m	2	djeɡoantonjo
+Dile	f	2	dile
+Desiree'	f	2	dezioree
+Denada	f	2	denada
+Denia	f	2	denia
+Kadir	m	2	kadir
+Juventina	f	2	juventina
+Juna	f	2	d͡ʒuna
+Jugerta	f	2	d͡ʒud͡ʒerta
+Jorge-Luis	m	2	dʒɔrɡeluiz
+Jonah	m	2	dʒɔna
+Lorenzina	f	2	lorɛntsjna
+Loubna	f	2	loubna
+Lorenc	m	2	lorenk
+Lindita	f	2	lindita
+Liudmila	f	2	liudmila
+Lidio	m	2	lidio
+Lilliana	f	2	lilljana
+Lavina	f	2	lavina
+Leoluca	m	2	leɔluka
+Leonid	m	2	leɔnid
+Leonzio	m	2	leontsjo
+Ledio	m	2	ledjo
+Laura-Anna	f	2	lawraanna
+Lelia	f	2	lelia
+Lene	f	2	lɛne
+Lenuta	f	2	lenutsa
+Karlos	m	2	karlos
+Katuscia	f	2	katust͡ʃa
+Ketrin	f	2	ketrin
+Kseniya	f	2	ksɛnija
+Klarisa	f	2	klarisa
+Klevi	f	2	klevi
+Klodjana	f	2	klodd͡ʒɛna
+Kwabena	m	2	kvabena
+Kwadwo	m	2	k,wadwo
+Kwame	m	2	kvame
+Lamar	f	2	lamar
+Krenar	m	2	krenar
+Kristaq	m	2	kris,ta,k
+Kol	m	2	kɔl
+Rezaul	m	2	reddzaul
+Rawan	f	2	ravan
+Renesmee	f	2	renɛsmi
+Redenta	f	2	redenta
+Reald	m	2	reald
+Rej	m	2	rutdʒ
+Remus	m	2	remus
+Nunziata	f	2	nunt͡sjata
+Odilia	f	2	odilia
+Odion	m	2	ɔdjon
+Ona	f	2	ona
+Onorato	m	2	onorato
+Onorino	m	2	onorino
+Orio	m	2	ɔrjo
+Orlandina	f	2	orlandina
+Oleksandr	m	2	oleksandr
+Olha	f	2	ola
+Rajaa	f	2	rad͡ʒɛa
+Rajan	m	2	rad͡ʒɛn
+Radouane	m	2	raduane
+Rafah	m	2	rafa
+Ramzi	m	2	rammtsi
+Nilla	f	2	nilla
+Nevzat	m	2	nevtsat
+Neymar	m	2	,nɛajmar
+Nera	f	2	nera
+Nereida	f	2	nɛreida
+Nerino	m	2	nerino
+Nicoleta-Maria	f	2	,nikoletamaria
+Nicolle	f	2	nikɔlle]
+Nídia	f	2	nìdia
+Najwa	f	2	nadʒwaː
+Naveen	m	2	na,vɛen
+Narinder	m	2	narinder
+Nazmi	m	2	nat͡st͡smi
+Ndiaga	m	2	ndiaga
+Ndoc	m	2	ndok
+Naide	f	2	najde
+Neki	m	2	,nɛki
+Neli	f	2	neli
+Pellumb	m	2	pellumb
+Pier-Angela	f	2	pirand͡ʒela
+Pier-Antonio	m	2	pirantonjo
+Pier-Gianni	m	2	pird͡ʒanni
+Pier-Vittorio	m	2	pirvittɔrjo
+Pieraldo	m	2	pjeraldo
+Pieranna	f	2	pjeranna
+Piergianni	m	2	pird͡ʒanni
+Piermichele	m	2	pirmikɛle
+Pjeter	m	2	pjɛter
+Pietro-Luigi	m	2	pjɛtroluid͡ʒ
+Petro	m	2	petro
+Palmerino	m	2	palmerino
+Ousama	m	2	usama
+Pandi	m	2	pandi
+Paolo-Antonio	m	2	paolɔantonjo
+Paolo-Angelo	m	2	paolɔand͡ʒelo
+Paolo-Carlo	m	2	paolɔkarlo
+Paolo-Giulio	m	2	paolɔd͡ʒuljo
+Pape-Demba	m	2	papedemba
+Paso	m	2	paso
+Pasquina	f	2	paskwina
+Oscar-Luigi	m	2	oskarluid͡ʒ
+Othman	m	2	otkman
+Corazón	f	2	korattsn
+Cornel	m	2	kɔrnel
+Cristina-Maria	f	2	krɪstiːnəmaria
+Crocetta	f	2	krot͡ʃetta
+Colombina	f	2	kolombina
+Conchita	f	2	koŋkita
+Damaso	m	2	damazo
+Carlo-Angelo	m	2	karloand͡ʒelo
+Bronson	m	2	bronson
+Danuta	f	2	danuta
+Dara	m	2	dara
+Delfio	m	2	delfjo
+Decima	f	2	dɛt͡ʃima
+Deisy	f	2	dɛjsi]
+Davide-Mario	m	2	davidemarjo
+Cihan	m	2	tʃihan
+Claudio-Maria	m	2	klawdjomaria
+Cinthya	f	2	tʃintja
+Cirillo	m	2	t͡ʃirillo
+Cheren	f	2	kerɛn
+Borislav	m	2	borislav
+Bianca-Elena	f	2	,bjankaelena
+Blagica	f	2	blad͡ʒika
+Blerta	f	2	blerta
+Bin	m	2	bin
+Binta	f	2	binta
+Behar	m	2	,bɛar
+Bernardetta	f	2	bernardetta
+Bashkim	m	2	baskim
+Bathie	m	2	batje
+Benita	f	2	bɛnita
+Bertilla	f	2	bertilla
+Chadia	f	2	kadja
+Cesarino	m	2	t͡ʃezarino
+Thérèse	f	2	terɛse
+Tibor	m	2	tibor
+Teresina	f	2	terɛzina
+Tolu	m	2	tolu
+Zohra	f	2	ddzora
+Zoya	f	2	ddzoja
+Zubair	m	2	ttsubair
+Zahir	m	2	ddzahir
+Zaid	m	2	tsajd
+Zaida	f	2	saida
+Zacaria	m	2	sakarja
+Yunus	m	2	juːnus
+Zheng	m	2	tsendʒ
+Zita	f	2	tsita
+Zef	m	2	ddzef
+Xhaferr	m	2	ksaferr
+Xhevahir	m	2	ksevair
+Xhuljan	m	2	ksuld͡ʒɛn
+Xue	f	2	kswe
+Yacine	m	2	jat͡ʃine
+Yassir	m	2	jassir
+Ymer	m	2	ajmer
+Yacouba	m	2	jakuba
+Taisia	f	2	taizia
+Talha	m	2	tala
+Zuleika	f	2	dzulɛika
+Zuzana	f	2	zutsana
+Wahib	m	2	vaib
+Wahid	m	2	vaid
+Waleed	m	2	valid
+Vjollca	f	2	vjɔllka
+Vladyslav	m	2	vladajzlav
+Waseem	m	2	vasieem
+Treasure	f	2	treaswre
+Trifan	m	2	trifan
+Ugur	m	2	uɡur
+Vainer	m	2	vainer
+Torquato	m	2	torkwato
+Toty	f	2	totai
+Vasil	m	2	vazil
+Valentina-Elena	f	2	valentinoelɛŋa
+Vasko	m	2	,vasko
+Veaceslav	m	2	veat͡ʃɛzlav
+Veli	m	2	veli
+Veneranda	f	2	veneranda
+Viktorija	f	2	vajktɔraija
+Vilson	m	2	vilson
+Jarno	m	2	d͡ʒɛrno
+Jak	m	2	d͡ʒɛk
+Houda	f	2	ɔuda
+Hristina	f	2	rɪstiːnə
+Iftikhar	m	2	iftikar
+Igli	m	2	iʎʎi
+Ia	f	2	ja
+Ilham	f	2	ilam
+Imerio	m	2	imɛrjo
+Idriss	m	2	idriss
+Ginetta	f	2	d͡ʒinetta
+Gioconda	f	2	d͡ʒokonda
+Gioietta	f	2	d͡ʒojetta
+Giorgino	m	2	d͡ʒorʤino
+Giovanni-Luigi	m	2	d͡ʒovanniluid͡ʒ
+Giovanni-Salvatore	m	2	d͡ʒovannisalvatore
+Gianina	f	2	d͡ʒanina
+Giannino	m	2	d͡ʒannino
+Gift	u	2	d͡ʒift
+Giliola	f	2	d͡ʒiljɔla
+Grazio	m	2	ɡratsjo
+Greca	f	2	ɡrɛːka
+Giuseppe-Carlo	m	2	d͡ʒuzeppekarlo
+Giuseppe-Luigi	m	2	d͡ʒuzeppeluid͡ʒ
+Giuseppino	m	2	d͡ʒuzeppino
+Gizem	f	2	dʒiddzem
+Gjergj	m	2	ɡjɛrɡdʒ
+Hazal	f	2	atsal
+Hektor	m	2	ektɔr
+Hasna	f	2	asna
+Hatem	m	2	atem
+Hatim	m	2	atrim
+Have	f	2	ave
+Hoda	f	2	ɔda
+Hena	f	2	ena
+Jinane	f	2	dʒinane
+Jing	f	2	dʒing
+Jeremiah	m	2	dʒeremia
+Jerri	m	2	jɛrri
+Jhonatan	m	2	dʒɔnatan
+Hao	m	2	ao
+Hamit	m	2	amit
+Hanaa	f	2	anaa
+Hanan	f	2	anan
+Hanife	f	2	anife
+Habib	m	2	habib
+Habiba	f	2	habiba
+Halima	f	2	alima
+Halina	f	2	alina
+Halyna	f	2	alajna
+Hakija	m	2	akija
+Gurpreet	m	2	ɡurpreet
+Jacopo-Andrea	m	2	jakopoandrɛːa
+Jacquelin	f	2	dʒakkwelin
+Ione	f	2	jone
+Ionica	f	2	jonika
+Izmir	m	2	idzmir
+Isra	f	2	izra
+Irvana	f	2	irvana
+Rosaura	f	2	rosawra
+Roseanna	f	2	rozeanna
+Rita-Maria	f	2	ritamaria
+Rosa-Alba	f	2	rosaalba
+Rosa-Angela	f	2	rosaand͡ʒela
+Rosa-Emilia	f	2	rosaemilja
+Rosabel	f	2	rosabel
+Robertina	f	2	robertina
+Roberto-Carlos	m	2	robertoikarlos
+Roberto-Francesco	m	2	robertoifrant͡ʃesko
+Roberto-Luigi	m	2	robertoiluid͡ʒ
+Roberto-Maria	m	2	robertoimaria
+Roberto-Paolo	m	2	robertoipaolo
+Rochdi	m	2	rot͡ʃdi
+Romario	m	2	romarjo
+Rima	f	2	rima
+Sakib	m	2	sakib
+Roza	f	2	rotsa
+Sacko	m	2	sat,ko
+Sadia	f	2	sadia
+Sadio	m	2	sadjo
+Rustem	m	2	rustɛm
+Rudina	f	2	rudina
+Saulo	m	2	sawlo
+Saura	f	2	saura
+Sane	m	2	sane
+Samah	f	2	sama
+Samanda	f	2	samanda
+Samar	f	2	samar
+Sali	m	2	sali
+Salla	m	2	salla
+Sara-Giulia	f	2	sarad͡ʒulja
+Soumia	f	2	sumia
+Silviya	f	2	silvija
+Simon-Pietro	m	2	simonpjɛtro
+Sory	m	2	sɔraj
+Sindi	f	2	sindi
+Soave	f	2	soave
+Skerdi	m	2	skɛrdi
+Sidi	m	2	sidi
+Shohag	m	2	ʃɔaɡ
+Shoukat	m	2	ʃɔukat
+Shpendi	m	2	ʃpendi
+Shpresa	f	2	ʃpreza
+Suela	f	2	suɛla
+Suraj	m	2	swradʒ
+Surinder	m	2	surinder
+Sulema	f	2	sulema
+Stiv	m	2	stif
+Stefana	f	2	stefana
+Stefanina	f	2	stefanina
+Stefano-Francesco	m	2	stefanofrant͡ʃesko
+Stepan	m	2	stɛpan
+Sereno	m	2	sereno
+Sergiy	m	2	sɛrɡij
+Severa	f	2	severa
+Atos	m	2	atos
+Bajram	m	2	,bɛdʒram
+Baldassare	m	2	baldassare
+Aylan	m	2	aajlan
+Augustina	f	2	awɡustina
+Augustine	m	2	awɡustine
+Ausilia	f	2	awzilja
+Bader	m	2	bader
+Baha	m	2	,bɛa
+Ayse	f	2	ajse
+Aziza	f	2	addzjtsa
+Addolorata	f	2	addolorata
+Abiodun	m	2	abiodun
+Abram	m	2	abaram
+Abdullahi	m	2	abdullai
+Abele	m	2	abɛle
+Abdelali	m	2	abdelali
+Abdelhamid	m	2	abadelamid
+Abdellah	m	2	abadella
+Abdellatif	m	2	abdellatif
+Abdessamad	m	2	abdessamad
+Adelchi	m	2	adelki
+Adem	m	2	adem
+Amadeo	m	2	amadɛo
+Amarilda	f	2	amarilda
+Ana-Isabel	f	2	anaizabel
+Andrea-Michele	m	2	andrɛːamikɛle
+Andrea-Paolo	m	2	andrɛːapaolo
+Andrea-Roberto	m	2	andrɛːaroberto
+Andreea-Elena	f	2	andrɛːeaelɛŋa
+Andreino	m	2	andrɛːino
+Anett	f	2	anett
+Amra	f	2	amra
+Adua	f	2	adua
+Aferdita	f	2	afɛrdita
+Afra	f	2	afra
+Afrim	m	2	,afrim
+Afro	m	2	afro
+Agar	f	2	aɡar
+Aisa	f	2	aiza
+Ajla	f	2	adʒla
+Alberica	f	2	alberika
+Albertino	m	2	albertino
+Alberto-Carlo	m	2	albɛrtokarlo
+Alberto-Luigi	m	2	albɛrtoluid͡ʒ
+Alberto-Mario	m	2	albɛrtomarjo
+Admir	m	2	admir
+Age	f	2	aʒ
+Agnesa	f	2	aɲɲɛza
+Alagie	m	2	alaɡie
+Angiolino	m	2	and͡ʒolino
+Anika	f	2	anika
+Antonino-Francesco	m	2	antoninofrant͡ʃesko
+Angela-Pia	f	2	and͡ʒelapia
+Angelo-Andrea	m	2	and͡ʒeloandrɛːa
+Angelo-Maria	m	2	and͡ʒelomaria
+Anna-Carla	f	2	annakarla
+Anna-Caterina	f	2	annakaterina
+Anna-Teresa	f	2	annatereza
+Ansumana	m	2	anzumana
+Anta	f	2	anta
+Antenore	m	2	antenore
+Anti	m	2	anti
+Antinea	f	2	antinea
+Artiom	m	2	,artjom
+Archimede	m	2	arkimedɛ
+Ariella	f	2	arjɛlla
+Aronne	m	2	aronne
+Arsen	m	2	arsen
+Arsida	f	2	arsida
+Asllan	m	2	asllan
+Arlinda	f	2	arlinda
+Alketa	f	2	a,lketa
+Aldina	f	2	aldina
+Alehandro	m	2	a,leandro
+Almerico	m	2	almɛriko
+Alexei	m	2	alɛksei
+Alfina	f	2	alfina
+Alfons	m	2	alfons
+Alfonsino	m	2	alfonsino
+Alfreda	f	2	alfrɛda
+Alessandrina	f	2	alessandrina
+Alessandro-Luigi	m	2	alessandroluid͡ʒ
+Alex-Anthony	m	2	a,leksantonaj
+Alessander	m	1	alessander
+Alessandra-Maria	f	1	alessandramaria
+Alessandro-Cesare	m	1	alessandrot͡ʃezare
+Alessandro-Francesco	m	1	alessandrofrant͡ʃesko
+Alessandro-Luca	m	1	alessandroluka
+Alessandro-Massimo	m	1	alessandromassimo
+Alessandro-Nicola	m	1	alessandronikola
+Alona	f	1	alona
+Alice-Maria	f	1	alit͡ʃemaria
+Alin-Constantin	m	1	alinkonstantin
+Allal	m	1	allal
+Altina	f	1	altina
+Alvi	m	1	alvi
+Alfonc	m	1	alfonk
+Alga	f	1	alɡa
+Albiona	f	1	albiona
+Albulena	f	1	albulɛna
+Aldi	m	1	aldi
+Aleardo	m	1	aleardo
+Anouar	m	1	anouar
+Ansou	m	1	ansu
+Anthony-Sebastiano	m	1	antonajsebastjano
+Antonella-Giulia	f	1	antonellad͡ʒulja
+Antonella-Francesca	f	1	antonellafrant͡ʃeska
+Antonella-Maria	f	1	antonellamaria
+Antonello-Giuseppe	m	1	antonellod͡ʒuzeppe
+Antonetta	f	1	antonetta
+Angel-Michael	m	1	and͡ʒɛlmikael
+Angela-Rosa	f	1	and͡ʒelarosa
+Angelico	m	1	aŋd͡ʒɛliko
+Angelo-Giuseppe	m	1	and͡ʒelod͡ʒuzeppe
+Angelo-Giorgio	m	1	and͡ʒelod͡ʒordʒo
+Angelomaria	m	1	and͡ʒelomaria
+Anghel	m	1	aŋɡhel
+Antonio-Andrea	m	1	antɔnjoandrɛːa
+Antonio-Carlo	m	1	antɔnjokarlo
+Antonio-David	m	1	antɔnjodavid
+Antonio-Francesco	m	1	antɔnjofrant͡ʃesko
+Antonio-Giovanni	m	1	antɔnjod͡ʒovanni
+Antonio-Mario	m	1	antɔnjomarjo
+Antonio-Salvatore	m	1	antɔnjosalvatore
+Antonio-Vito	m	1	antɔnjovito
+Anuta	f	1	anuta
+Angioletta	f	1	and͡ʒoletta
+Angje	f	1	andʒjɛ
+Anisoara	f	1	anizoara
+Arancia	f	1	arantʃa
+Anli	f	1	anli
+Anna-Cristina	f	1	annakrɪstiːnə
+Anna-Elisabetta	f	1	annaelizabetta
+Anna-Federica	f	1	annafederika
+Anna-Francesca	f	1	annafrant͡ʃeska
+Anna-Ida	f	1	annaida
+Anna-Palma	f	1	annapalma
+Anna-Piera	f	1	annapjɛra
+Anna-Rachele	f	1	annarakɛle
+Annabelle	f	1	annabɛlle
+Aidé	f	1	aide
+Aiden	m	1	ajdɛn
+Aila	f	1	ajla
+Ailen	f	1	ailɛn
+Agathe	f	1	aɡatiːe
+Adonai	m	1	adonaj
+Adriane	f	1	adrjane
+Aita	f	1	aita
+Afaf	f	1	afaf
+Akwasi	m	1	akvasi
+Alassan	m	1	alassan
+Alassane	m	1	alassane
+Alba-Lucia	f	1	albalutia
+Alberto-Giuseppe	m	1	albɛrtod͡ʒuzeppe
+Adelajda	f	1	adeladʒda
+Adelma	f	1	adelma
+Adérito	m	1	aderito
+Adhurim	m	1	a,darim
+Abdulmalik	m	1	abadulmalisk
+Abou	m	1	abu
+Abas	m	1	abas
+Abdelfattah	m	1	abadelfatt
+Abdelghani	m	1	abadelɡani
+Abdelhadi	m	1	abadeladi
+Abdelhak	m	1	abadelak
+Abdelhalim	m	1	abadelalim
+Abdelkarim	m	1	abadelkarim
+Abdelkrim	m	1	abadelkrim
+Abdelouahed	m	1	abadeluaed
+Abderaouf	m	1	abaderaouf
+Abderrahmane	m	1	abaderramane
+Abderrazak	m	1	abderratsak
+Abdessalem	m	1	abdessalem
+Abdourahmane	m	1	abdouramane
+Abdul-Rahman	m	1	abadulraman
+Ayuba	m	1	ajuːba
+Azeddine	m	1	addzeddine
+Azio	m	1	attsjo
+Avio	m	1	avjo
+Awatif	f	1	avatif
+Aurela	f	1	awrɛla
+Aurelian	m	1	aurɛljan
+Aurora-Maria	f	1	aurɔramaria
+Bajro	m	1	,bɛdʒro
+Atilla	m	1	atilla
+Babucarr	m	1	babukarr
+Bahri	m	1	,bɛri
+Axl	m	1	aksl
+Ayaan	m	1	ajaan
+Ayan	f	1	ajan
+Aylin	f	1	alin
+Aymane	m	1	aajmane
+Asmae	f	1	azmae
+Asti	m	1	asti
+Arnoldo	m	1	arnoldo
+Arona	m	1	arona
+Arbian	m	1	arbian
+Ardis	m	1	ardis
+Ardjana	f	1	ardd͡ʒɛna
+Argentina	f	1	ard͡ʒentiːna
+Argo	m	1	arɡo
+Artor	m	1	artor
+Armanno	m	1	armanno
+Armend	m	1	armen,d
+Armido	m	1	armido
+Arminda	f	1	arminda
+Arnalda	f	1	arnalda
+Ariele	m	1	arjele
+Ariola	f	1	ariola
+Amorino	m	1	amorino
+Andrews	m	1	andrut,ws
+Andrian	m	1	andrjan
+Andriana	f	1	andrjana
+Andriani	f	1	andrjani
+Anduena	f	1	anduɛna
+Ane	f	1	ane
+Andra-Maria	f	1	andramaria
+Andrea-Angelo	m	1	andrɛːaand͡ʒelo
+Andrea-Antonino	m	1	andrɛːaantonino
+Andrea-Bruno	m	1	andrɛːabruno
+Andrea-Benito	m	1	andrɛːabɛnito
+Andrea-Francesco	m	1	andrɛːafrant͡ʃesko
+Andrea-Gianluca	m	1	andrɛːad͡ʒanluka
+Andrea-Salvatore	m	1	andrɛːasalvatore
+Ambeta	f	1	ambeta
+Amedea	f	1	amedɛa
+Amelio	m	1	amɛljo
+Ameris	f	1	ameris
+Amadeus	m	1	amadɛws
+Amami	m	1	amami
+Amath	m	1	a,mat
+Anastasja	f	1	anastasja
+Anatolie	m	1	anatɔlie
+Anatoliy	m	1	anatɔlisj
+Anca-Maria	f	1	antʃamaria
+Dhurim	m	1	darim
+Diamanta	f	1	diamanta
+Diega	f	1	djɛɡa
+Desara	f	1	desara
+Desire'	f	1	deziore]
+Djoko	m	1	dʒoko
+Dmitrii	m	1	dmitrii
+Dmytro	m	1	dmajtro
+Devine	f	1	devine
+Dhimiter	m	1	dimiter
+Dhimitri	m	1	dimitri
+Dion	m	1	djon
+Dionis	m	1	dionis
+Dirce	f	1	dirt͡ʃe
+Demos	m	1	demos
+Denajda	f	1	denadʒda
+Deniel	m	1	denjel
+Diego-Armando	m	1	djeɡoarmando
+Diego-Carlo	m	1	djeɡokarlo
+Diego-Martin	m	1	djeɡomartin
+Diego-Paul	m	1	djeɡopawl
+Dije	f	1	,dijɛ
+Ekrem	m	1	ekrem
+El-Hadji	m	1	eladʒi
+El-Hassan	m	1	elassan
+Elmira	f	1	elmira
+Elodia	f	1	elodia
+Elvezio	m	1	elvettsjo
+Elwira	f	1	elwira
+Elza	f	1	eltsa
+Emanuel-Cosmin	m	1	emanuɛlkɔzmin
+Eleanna	f	1	eleanna
+Elena-Alessandra	f	1	elɛŋaalessandra
+Elena-Lucia	f	1	elɛŋalut͡ʃia
+Eleny	f	1	elenaj
+Eleonor	f	1	eleɔnor
+Eles	f	1	ɛles
+Eletta	f	1	eletta
+Efosa	m	1	ɛfosa
+Egi	f	1	ed͡ʒi
+Elida	f	1	elida
+Elinor	f	1	elinɔr
+Elisa-Anna	f	1	elizaanna
+Elisa-Carla	f	1	elizakarla
+Elisa-Maria	f	1	elizamaria
+Elisa-Viola	f	1	elizavjɔla
+Eljana	f	1	eldʒana
+Ganna	f	1	ɡanna
+Gerta	f	1	d͡ʒerta
+Gerti	m	1	d͡ʒerti
+Gesuina	f	1	d͡ʒezuina
+Ghazal	f	1	ɡaddzal
+Ghazanfar	m	1	ɡaddzanfar
+Ghena	f	1	ɡɛna
+Ghenadie	m	1	ɡenadjɛ
+Ghizlane	f	1	gidzlane
+Ghofran	f	1	ɡofran
+Giacomo-Maria	m	1	d͡ʒakɔmomaria
+Giada-Nicole	f	1	d͡ʒadanikole
+Gian-Domenico	m	1	d͡ʒandomeniko
+Gian-Cesare	m	1	d͡ʒant͡ʃezare
+Gian-Emilio	m	1	d͡ʒanemiljo
+Gian-Giuseppe	m	1	d͡ʒand͡ʒuzeppe
+Gian-Mauro	m	1	d͡ʒanmawro
+Georgios	m	1	d͡ʒeɔrd͡ʒos
+Gerold	m	1	d͡ʒerold
+Galliano	m	1	ɡalljano
+Galyna	f	1	ɡa,lajna
+Gentjana	f	1	d͡ʒenthd͡ʒɛna
+George-Marian	m	1	dʒeord͡ʒemarjan
+Fuat	m	1	fuat
+Funke	f	1	fanke
+Gabriela-Ioana	f	1	ɡabriɛlajoana
+Gazment	m	1	ɡadzment
+Geminiano	m	1	d͡ʒɛminjano
+Fadila	f	1	fadila
+Fadime	f	1	fadime
+Fadoua	f	1	fadua
+Faical	m	1	faikal
+Famous	m	1	famau̯s
+Evisa	f	1	eviza
+Eusebiu	m	1	ɛuzebiu
+Eva-Luna	f	1	evaluna
+Evangelos	m	1	evand͡ʒɛlos
+Evasio	m	1	evazio
+Fabbio	m	1	fabbjo
+Fabbrizio	m	1	fabbrittsjo
+Fabjana	f	1	fabadʒana
+Fabrizio-Angelo	m	1	fabrittsjɔand͡ʒelo
+Faycel	m	1	faaikel
+Federica-Anna	f	1	federikaanna
+Federica-Francesca	f	1	federikafrant͡ʃeska
+Federico-Filippo	m	1	federikofilippo
+Federico-Pietro	m	1	federikopjetro
+Felicetta	f	1	felit͡ʃetta
+Farrukh	m	1	farruk
+Fartun	f	1	fartun
+Fatima-Ezzahra	f	1	fatimaettsara
+Fatime	f	1	fatime
+Fatjona	f	1	fa,tdʒɔna
+Fatna	f	1	fatna
+Fausto-Mario	m	1	faustomarjo
+Fang	f	1	fanɡ
+Faouzi	m	1	faoutsi
+Farhat	u	1	farat
+Dorisa	f	1	dorisa
+Dounya	f	1	dounja
+Donalda	f	1	donalda
+Donatantonio	m	1	donatantɔnjo
+Donatina	f	1	donatina
+Dorando	m	1	dorando
+Doride	f	1	doride
+Edis	m	1	edis
+Editta	f	1	editta
+Edmilson	m	1	ɛdmilson
+Edra	f	1	ɛdra
+Ecaterina	f	1	ekaterina
+Ede	f	1	ede
+Drissa	m	1	drissa
+Domenico-Antonio	m	1	domenikoantɔnjo
+Domenico-Luca	m	1	domenikoluka
+Domenico-Luigi	m	1	domenikoluid͡ʒ
+Domínio	m	1	,domnjo
+Fortura	f	1	fortura
+Francesca-Augusta	f	1	frant͡ʃeskaauɡusta
+Francesca-Chiara	f	1	frant͡ʃeskakjara
+Francesca-Giulia	f	1	frant͡ʃeskad͡ʒulja
+Francesca-Lucia	f	1	frant͡ʃeskalut͡ʃa
+Francesca-Valeria	f	1	frant͡ʃeskavalerja
+Francescantonio	m	1	frant͡ʃeskantɔnjo
+Franceschina	f	1	frant͡ʃeskina
+Francesco-Alberto	m	1	frant͡ʃeskoalbɛrto
+Francesco-Angelo	m	1	frant͡ʃeskoand͡ʒelo
+Francesco-Emanuele	m	1	frant͡ʃeskoemanuɛle
+Francesco-Giovanni	m	1	frant͡ʃeskod͡ʒovanni
+Franceskina	f	1	frant͡ʃeskina
+Franchina	f	1	fraŋkina
+Francina	f	1	frant͡ʃina
+Franco-Angelo	m	1	frankoand͡ʒɛlo
+Franco-Maria	m	1	frankomaria
+Franco-Mario	m	1	frankomarjo
+Franco-Sergio	m	1	frankosɛrd͡ʒio
+Flavia-Maria	f	1	flaviamaria
+Flavio-Maria	m	1	flaviomaria
+Florenc	m	1	flɔrenk
+Florenzo	m	1	flɔrentso
+Florica	f	1	florika
+Florinel	m	1	florinel
+Florjan	m	1	flord͡ʒɛn
+Ferdinanda	f	1	ferdinanda
+Ferdinant	m	1	ferdinant
+Festim	m	1	festim
+Fibi	f	1	fibi
+Fiero	m	1	fjɛro
+Fikret	m	1	,fikret
+Filippo-Giacomo	m	1	filippod͡ʒakɔmo
+Fiorenza-Maria	f	1	fjorendzamaria
+Fiorinda	f	1	fjorinda
+Fiorito	m	1	fjorito
+Fjorela	f	1	fd͡ʒɔrela
+Fjori	m	1	fd͡ʒɔri
+Frensi	m	1	frɛnsi
+Ester-Anna	f	1	esteranna
+Emili	f	1	emile
+Emilio-Paolo	m	1	emiljopaolo
+Essa	m	1	essa
+Essam	m	1	essam
+Endrius	m	1	endrjus
+Enedina	f	1	enedina
+Enerjeta	f	1	enerjɛta
+Eriona	f	1	erjona
+Erisa	f	1	eriza
+Erlind	m	1	erlind
+Ermanna	f	1	ermanna
+Ersa	f	1	ersa
+Erta	f	1	erta
+Ervina	f	1	ervina
+Erwan	m	1	ervan
+Enkeleda	f	1	enkeledai
+Eno	m	1	ɛno
+Enola	f	1	ɛnola
+Enrica-Maria	f	1	enrikamaria
+Enrico-Antonio	m	1	enrikoantonjo
+Enrico-Fabio	m	1	enrikofabjo
+Enrico-Giuseppe	m	1	enrikod͡ʒuzeppe
+Entoni	m	1	ɛntoni
+Entony	m	1	ɛntonaj
+Enza-Maria	f	1	ɛntsa]maria
+Enzo-Luciano	m	1	ɛndzolut͡ʃiano
+Epifanía	f	1	epifana
+Ercolina	f	1	ɛrkolina
+Ergi	m	1	erd͡ʒi
+Erina	f	1	erina
+Moncef	m	1	mont͡ʃɛf
+Monda	f	1	monda
+Mongi	m	1	mond͡ʒi
+Mirele	f	1	mirɛle
+Mirjeta	f	1	mird͡ʒita
+Mirna-Angela	f	1	mirnaand͡ʒela
+Mirsada	f	1	mirsada
+Milene	f	1	milɛne
+Miller	m	1	miller
+Millicent	f	1	millit͡ʃent
+Marina-Rosa	f	1	marinarosa
+Maringlen	m	1	marinɡlen
+Mario-Angelo	m	1	marjoand͡ʒelo
+Mario-Carlo	m	1	marjokarlo
+Mario-Enrico	m	1	marjoenriko
+Mario-Francesco	m	1	marjofrant͡ʃesko
+Mario-Luciano	m	1	marjolut͡ʃano
+Mario-Roberto	m	1	marjoroberto
+Marioara	f	1	marjoara
+Marirosa	f	1	marirosa
+Marisella	f	1	marisɛlla
+Marius-Marian	m	1	marjusmarjan
+Marjela	f	1	marjɛla
+Marjeta	f	1	marjɛta
+Marleny	f	1	marlɛnaj
+Marco-Alfredo	m	1	markoalfredo
+Marco-Francesco	m	1	markofrant͡ʃesko
+Marco-Giacomo	m	1	markod͡ʒakɔmo
+Marco-Giuseppe	m	1	markod͡ʒuzeppe
+Marco-Milo	m	1	markomilɔ
+Marco-Roberto	m	1	markoroberto
+Marco-Savino	m	1	markosavino
+Marco-Vincenzo	m	1	markovint͡ʃɛntso
+Marco-Vittorio	m	1	markovittɔrjo
+Marcus-Vinicius	m	1	markusvinit͡ʃus
+Marem	f	1	marem
+Maria-De-Lourdes	f	1	mariadelurdes
+Maria-Domenica	f	1	mariadomenika
+Maria-Donata	f	1	mariadonata
+Maria-Elisabetta	f	1	mariaelizabetta
+María-Esther	f	1	,maraestar
+Maria-Federica	f	1	mariafederika
+Maria-Filomena	f	1	mariafilomɛna
+Maria-Fiorella	f	1	mariafjorella
+Maria-Gemma	f	1	mariad͡ʒɛmma
+Maria-Gerarda	f	1	mariad͡ʒerarda
+Maria-Gisella	f	1	mariad͡ʒisɛlla
+Maria-Giuseppina	f	1	mariad͡ʒuzeppina
+Maria-Immacolata	f	1	mariaimmakolata
+María-Inés	f	1	,maraines
+Maria-Iole	f	1	mariajole
+Maria-Irene	f	1	mariairɛne
+María-Josefina	f	1	,maradʒɔsiefina
+Maria-Leonarda	f	1	marialeonarda
+Maria-Libera	f	1	marialibera
+Maria-Lisa	f	1	marializa
+Maria-Luana	f	1	marialuana
+Maria-Luciana	f	1	marialut͡ʃiana
+María-Luz	f	1	,maraluts
+Maria-Margherita	f	1	mariamarɡerite
+María-Mercedes	f	1	,maramɛrt͡ʃedɛs
+Maria-Norma	f	1	marianɔrma
+Maria-Olga	f	1	mariaolɡa
+Maria-Palma	f	1	mariapalma
+Maria-Piera	f	1	mariapjɛra
+Maria-Renata	f	1	mariarenata
+Maria-Sabrina	f	1	mariasa,brina
+Maria-Speranza	f	1	mariasperantsa
+Maria-Stefania	f	1	mariastefania
+Maria-Tina	f	1	mariatina
+Maria-Vincenza	f	1	mariavint͡ʃɛntsa
+Maria-Virginia	f	1	mariavird͡ʒinia
+Mariabruna	f	1	marjabruna
+Mariaconsiglia	f	1	mariakonsiʎʎa
+Mariaenrica	f	1	marjaɛnrika
+Mariagabriella	f	1	mariaɡabriɛlla
+Marialuigia	f	1	marjaluid͡ʒa
+Mariama	f	1	marjama
+Mariandrea	m	1	mariandrɛːa
+Mariannina	f	1	marjannina
+Mariantonella	f	1	marjantonɛlla
+Mariia	f	1	marija
+Marije	f	1	maraijɛ
+Marijke	f	1	maraidʒke
+Margarida	f	1	marɡarida
+Margherita-Isabella	f	1	marɡeriteizabella
+Margherita-Maria	f	1	marɡeritemaria
+Margoth	f	1	marɡɔt
+Maria-Alessandra	f	1	mariaalessandra
+Maria-Aurora	f	1	mariaaurɔra
+Maria-Barbara	f	1	mariabarbara
+Maria-Bruna	f	1	mariabruna
+Maria-Carlotta	f	1	mariakarlotta
+María-Carolina	f	1	,marakarolina
+Maria-Cinzia	f	1	mariat͡ʃintsia
+María-Claudia	f	1	,maraklawdja
+Maria-Consiglia	f	1	mariakonsiʎʎa
+Lule	f	1	lule
+Luqman	m	1	lu,kman
+Luigi-Amedeo	m	1	,luid͡ʒamedɛo
+Luigi-Mario	m	1	,luid͡ʒmarjo
+Luigi-Michele	m	1	,luid͡ʒmikɛle
+Luigi-Pasquale	m	1	,luid͡ʒpaskwale
+Luigi-Vincenzo	m	1	,luid͡ʒvint͡ʃɛntso
+Luis-Martín	m	1	,luismartn
+Lyudmyla	f	1	lajudmla
+Mabrouk	m	1	,mabaruk
+Macrina	f	1	makrina
+Mactar	m	1	maktar
+Loveth	f	1	lovet
+Lubiana	f	1	lubjana
+Luca-Alberto	m	1	lukaalbɛrto
+Luca-Daniele	m	1	lukadaniɛle
+Luca-Domenico	m	1	lukadomeniko
+Luca-Francesco	m	1	lukafrant͡ʃesko
+Luca-Mario	m	1	lukamarjo
+Luca-Matteo	m	1	lukamattɛːo
+Luca-Raffaele	m	1	lukaraffaele
+Lucia-Delia	f	1	lut͡ʃiadelia
+Lucica	f	1	lut͡ʃika
+Lucido	m	1	lut͡ʃido
+Lucienne	f	1	lut͡ʃɛnne
+Lucio-Antonio	m	1	,lut͡ʃioantonjo
+Mael	u	1	mael
+Martina-Anna	f	1	martinaanna
+Marsel	m	1	marsɛl
+Marselo	m	1	marsɛlo
+Marsilda	f	1	marsilda
+Maylin	f	1	,malin
+Maryem	f	1	marjɛm
+Marylin	f	1	marajlan
+Marziano	m	1	martsjano
+Matteo-Giovanni	m	1	mattɛːod͡ʒovanni
+Mattia-Antonio	m	1	mattiaantonjo
+Mauretta	f	1	maurɛtta
+Maurizio-Adamo	m	1	mawritt͡sjoadamo
+Maurizio-Maria	m	1	mawritt͡sjomaria
+Mauro-Cesare	m	1	mawrot͡ʃɛzare
+Mauro-Maurizio	m	1	mawromawritt͡sjo
+Maverick	m	1	maverik
+Maverik	m	1	,maveraik
+Mayar	f	1	majar
+Mass	m	1	mass
+Masse	m	1	masse
+Massimo-Stefano	m	1	massimostefano
+Massyla	m	1	,mas,sla
+Mathia	m	1	,matja
+Mathyas	m	1	,matjas
+Matika	f	1	matika
+Mahamadou	m	1	mamadɔu
+Malvino	m	1	malvino
+Mame-Gor	m	1	mameɡor
+Mamoudou	m	1	mamau̯dou
+Manana	f	1	manana
+Mandeep	f	1	mandeep
+Malang	m	1	malaŋɡ
+Malcom	m	1	malkom
+Manuela-Maria	f	1	manuɛlamaria
+Marcela-Alejandra	f	1	mart͡ʃelaaled͡ʒɛndra
+Manjit	f	1	mandʒit
+Mansour	m	1	mansur
+Maimouna	f	1	majmouna
+Majda	f	1	,madʒda
+Nadezda	f	1	nadetsda
+Nadia-Maria	f	1	nadiamaria
+Nadiya	f	1	nadija
+Myftar	m	1	majftar
+Mzia	f	1	mtsia
+Monica-Laura	f	1	,mɔnikalaura
+Monica-Teresa	f	1	,mɔnikatereza
+Moriba	m	1	moriba
+Mounia	f	1	mounia
+Mihaela-Cristina	f	1	,miaɛlakrɪstiːnə
+Michelangela	f	1	mikeland͡ʒela
+Michele-Angelo	m	1	mikeleand͡ʒɛlo
+Michele-Marco	m	1	mikelemarko
+Mentore	m	1	mɛntore
+Meriam	f	1	meria,m
+Merico	m	1	mɛriko
+Medardo	m	1	medardo
+Meghi	f	1	meɡi
+Iurie	m	1	jurje
+Ivaldo	m	1	ivaldo
+Ivelise	f	1	ivelise
+Ives	m	1	ives
+Irene-Anna	f	1	irɛneanna
+Irene-Maria	f	1	irɛnemaria
+Israa	f	1	izraa
+Itala	f	1	itala
+Insaf	u	1	insaf
+Intissar	f	1	intissar
+Intizar	m	1	intitsar
+Iose	f	1	joze
+Jacopo-Mattia	m	1	jakopomattia
+Jadranka	f	1	dʒa,dranka
+Isabel-María	f	1	izabelmara
+Jaafar	m	1	d͡ʒɛafar
+Jeson	m	1	jɛson
+Jessica-Grace	f	1	jɛssicaɡrat͡ʃe
+Jetnor	m	1	dʒetnor
+Jine	f	1	d͡ʒane
+Hichem	m	1	ikem
+Hike	f	1	ike
+Helbert	m	1	elbert
+Hesham	m	1	eʃam
+Haseeb	m	1	asieeb
+Hassina	f	1	assina
+Hatice	f	1	atit͡ʃe
+Hayat	f	1	ajat
+Hua	f	1	ua
+Iliano	m	1	iljano
+Ilie-Ovidiu	m	1	ilieovidju
+Ilinca	f	1	ilinka
+Ilirjana	f	1	ilird͡ʒɛna
+Illia	m	1	illia
+Ilyass	m	1	ilajass
+Imed	m	1	i,mɛd
+Imelde	f	1	imɛlde
+Imer	m	1	imer
+Iheb	m	1	ieb
+Ileana-Maria	f	1	ileanamaria
+Houssam	m	1	hauzzam
+Ibro	m	1	ibro
+Ida-Laura	f	1	idalaura
+Idalia	f	1	idalja
+Idelma	f	1	idelma
+Ido	m	1	ido
+Idria	f	1	idria
+Hyacinthe	m	1	ajat͡ʃinte
+Iames	m	1	amɛs
+Jaime-Enrique	m	1	d͡ʒɛi,mɛenrikwe
+Janja	f	1	d͡ʒɛndʒa
+Jannat	f	1	d͡ʒɛnnat
+Janaína	f	1	dʒa,nana
+Hafid	m	1	afid
+Haiyan	f	1	aiːjan
+Hajdar	m	1	adʒdar
+Hamady	m	1	amadi
+Hane	f	1	ane
+Hacer	f	1	at͡ʃer
+Hadil	f	1	adil
+Guglielmo-Giuseppe	m	1	ɡuʎʎɛlmod͡ʒuzeppe
+Guillermina	f	1	ɡwillermina
+Grazyna	f	1	ɡratsajna
+Gresilda	f	1	ɡresilda
+Grethel	f	1	ɡretal
+Grigore	m	1	,ɡriɡore
+Giana	f	1	d͡ʒana
+Giangiuseppe	m	1	d͡ʒand͡ʒuzeppe
+Giannetto	m	1	d͡ʒannɛtto
+Gianni-Maria	m	1	d͡ʒannimaria
+Gianni-Piero	m	1	d͡ʒannipjɛro
+Giastin	m	1	d͡ʒastin
+Gilfredo	m	1	d͡ʒilfredo
+Gloria-María	f	1	ɡloriamara
+Godday	m	1	ɡo,ddaij
+Giulia-Rita	f	1	ɡiuliarita
+Giulio-Carlo	m	1	d͡ʒuljokarlo
+Giuseppantonio	m	1	d͡ʒuzeppantɔnjo
+Giuseppe-Antonino	m	1	d͡ʒuzeppeantonino
+Giuseppe-Daniele	m	1	d͡ʒuzeppedaniɛle
+Giuseppe-Davide	m	1	d͡ʒuzeppedavide
+Giuseppe-Innocenzo	m	1	d͡ʒuzeppeinnot͡ʃɛntso
+Giuseppe-Luca	m	1	d͡ʒuzeppeluka
+Giuseppe-Mario	m	1	d͡ʒuzeppemarjo
+Giuseppe-Rino	m	1	d͡ʒuzepperino
+Giuseppe-Umberto	m	1	d͡ʒuzeppeumberto
+Gjin	m	1	ɡd͡ʒan
+Gjinovefa	f	1	ɡdʒinovefa
+Gjon	m	1	ɡd͡ʒɔn
+Gledis	m	1	ɡlɛdis
+Gleison	m	1	ɡleison
+Gleni	m	1	ɡlɛni
+Gleris	u	1	ɡleris
+Gioachina	f	1	d͡ʒoakina
+Giorgio-Andrea	m	1	dʒiord͡ʒoandrɛːa
+Giorgio-Francesco	m	1	dʒiord͡ʒofrant͡ʃesko
+Giovanna-Carla	f	1	d͡ʒovannakarla
+Giovanni-Agostino	m	1	d͡ʒovanniaɡostino
+Giovanni-Carlo	m	1	d͡ʒovannikarlo
+Giovanni-Nicola	m	1	d͡ʒovanninikola
+Giovanni-Vincenzo	m	1	d͡ʒovannivint͡ʃɛntso
+Giovina	f	1	d͡ʒovina
+Viktoryia	f	1	vajktorija
+Viler	m	1	viler
+Vincenzo-Antonio	m	1	vint͡ʃɛndzɔantonjo
+Victorino	m	1	viktɔrino
+Valda	f	1	valda
+Valentina-Maria	f	1	valentinomaria
+Valeria-Vittoria	f	1	valerjavittɔrja
+Vanessa-Maria	f	1	vanessamaria
+Vaniglia	f	1	vaniʎʎa
+Vasif	m	1	vasif
+Vera-Maria	f	1	veramaria
+Verginia	f	1	verd͡ʒinia
+Viacheslav	m	1	,viakezlav
+Vasilika	f	1	,vaziliska
+Veniero	m	1	venjɛro
+Vissia	f	1	vissia
+Vita-Maria	f	1	vitamaria
+Vitalii	m	1	vitalii
+Vitaliy	m	1	,vitalisj
+Vito-Gerardo	m	1	vitod͡ʒɛrardo
+Vito-Nicola	m	1	,vitonikola
+Vitore	f	1	vitore
+Tomasino	m	1	tomasino
+Thomas-Maria	m	1	tɔmasmaria
+Tessy	f	1	tes,sj
+Testimony	f	1	testimɔnaj
+Tetyana	f	1	tetaiana
+Teuta	f	1	tɛwta
+Teobaldo	m	1	teɔbaldo
+Teresa-Maria	f	1	terezamaria
+Tingting	f	1	tinɡtinɡ
+Wisdom	m	1	wizdo,m
+Wissam	m	1	,wissam
+Whitney	f	1	witnej
+Wiam	f	1	wiam
+Wijdane	f	1	,widʒdane
+Wei	m	1	wei
+Weiwei	f	1	,weiwei
+Wendi	f	1	wendi
+Wafae	f	1	vafae
+Wahiba	f	1	vaiba
+Vivaldo	m	1	vivaldo
+Vjola	f	1	vd͡ʒɔla
+Volodymyr	m	1	,vɔlo,dajmajr
+Zvezdan	m	1	tsvɛtt͡sdan
+Zyad	m	1	tsjad
+Yago	m	1	jaɡo
+Yakubu	m	1	jakubu
+Yamilet	f	1	ajamilet
+Yanis	m	1	janiz
+Yarno	m	1	jarno
+Yosra	f	1	josra
+Yousaf	m	1	jousaf
+Youssou	m	1	joussou
+Xhavit	m	1	ksavit
+Xhemile	f	1	ksemjle
+Xheni	f	1	kseni
+Xhesika	f	1	ksezika
+Xhoi	m	1	ksɔi
+Xhuliano	m	1	ksuljano
+Xhuljana	f	1	ksuld͡ʒɛna
+Xhuljeta	f	1	ksuljɛta
+Xiaofeng	m	1	k,siaofendʒ
+Xiaoyu	f	1	k,siaojuː
+Yevgeniya	f	1	ajevd͡ʒenija
+Yevheniya	f	1	ajevenija
+Yi	m	1	jɪ
+Yassmine	f	1	ajassmine
+Yazid	m	1	ajatsjd
+Zamira	f	1	tsamira
+Zaynab	f	1	ddzaajnab
+Zea	f	1	sea
+Zhe	f	1	tshe
+Zaim	m	1	ddzaim
+Zaineb	f	1	tsaineb
+Zakir	m	1	ddzakir
+Zoryana	f	1	ddzorjana
+Zehra	f	1	ddzera
+Zelena	f	1	tselena
+Touria	f	1	turja
+Ulrica	f	1	ulrika
+Umberto-Luca	m	1	umbertoluka
+Umberto-Maria	m	1	umbertomaria
+Triestina	f	1	triestina
+Ugne	f	1	uɲɲe
+Uliano	m	1	uljano
+Tatsiana	f	1	tatsjana
+Tauland	m	1	tauland
+Talla	m	1	talla
+Taly	m	1	tikolj
+Taher	m	1	tikoher
+Tabatha	f	1	tabatsta
+Telémaco	m	1	telemako
+Osanna	f	1	ozanna
+Othmane	m	1	otkmane
+Pasquino	m	1	paskwino
+Panaiotis	m	1	panajɔtis
+Paola-Francesca	f	1	paolafrant͡ʃeska
+Paola-Luisa	f	1	paolaluisa
+Paola-Rosella	f	1	paolarosɛlla
+Paola-Silvia	f	1	paolasilvja
+Paolo-Alberto	m	1	paolɔalbɛrto
+Paolo-Alessandro	m	1	paolɔalessandro
+Paolo-Cesare	m	1	paolɔt͡ʃezare
+Paolo-Enrico	m	1	paolɔenriko
+Paolo-Giuseppe	m	1	paolɔd͡ʒuzeppe
+Paolo-Luigi	m	1	paolɔluid͡ʒ
+Paolo-Mario	m	1	paolɔmarjo
+Paolo-Matteo	m	1	paolɔmattɛːo
+Paolo-Pietro	m	1	paolɔpjɛtro
+Paolo-Secondo	m	1	paolɔsekondo
+Parid	m	1	parid
+Otman	m	1	ɔtman
+Ottava	f	1	ottava
+Oualid	m	1	oualid
+Oumaima	f	1	oumaima
+Pablo-Daniel	m	1	pablodaniɛl
+Palaghia	f	1	palaɡja
+Palo	m	1	palo
+Paulo-César	m	1	,paulokesar
+Pavlin	m	1	pavlin
+Nektar	m	1	,nɛktar
+Ndrec	m	1	ndrɛːk
+Ndricim	m	1	ndrit͡ʃim
+Naseeb	m	1	naseeb
+Nataliia	f	1	natalija
+Natalizia	f	1	natalitsja
+Natela	f	1	natɛla
+Najma	f	1	nadʒma
+Namik	m	1	namik
+Nafiseh	f	1	nafisie
+Najada	f	1	nad͡ʒɛda
+Natia	f	1	natia
+Nato	f	1	nato
+Nicusor	m	1	nikusɔr
+Nihad	f	1	,niad
+Nichita	m	1	nikita
+Nelso	m	1	nɛlso
+Nermina	f	1	nermina
+Nertil	m	1	nertil
+Nikolin	m	1	,nikɔliŋ
+Nirmala	f	1	nirmala
+Noela	f	1	noɛla
+Nexhip	m	1	,nɛksip
+Nexhmedin	m	1	,nɛksmedjn
+Nezha	f	1	,nɛtsa
+Nfally	m	1	nfalli
+Norelhouda	f	1	nɔrelɔuda
+Nosha	f	1	,nɔsa
+Nouhaila	f	1	,nɔuaila
+Olesia	f	1	olezia
+Olgert	m	1	ɔld͡ʒert
+Olímpio	m	1	olmpjo
+Olinetto	m	1	olinetto
+Orelia	f	1	orɛlia
+Oretta	f	1	oretta
+Orianna	f	1	orjanna
+Orsolina	f	1	orsolina
+Nunziato	m	1	nuntsjato
+Nunziatina	f	1	nunt͡siatina
+Nush	m	1	nus
+Nusrat	f	1	nuzrat
+Omaima	f	1	omaima
+Reis	m	1	reis
+Redis	m	1	redis
+Redouane	m	1	redouane
+Reena	f	1	rina
+Regan	m	1	reɡan
+Rei	m	1	rei
+Rendy	m	1	rendi
+Resmi	m	1	resmi
+Rexhep	m	1	rɛksep
+Rhizlane	f	1	ritslane
+Rayen	m	1	rejen
+Razak	m	1	ratsak
+Riccardo-Giuseppe	m	1	rikkardod͡ʒuzeppe
+Ridvan	m	1	ridvan
+Perseo	m	1	pɛrseo,persɛo
+Petronilla	f	1	petronilla
+Petruta	f	1	petruta
+Pranvera	f	1	pranvɛra
+Prassede	f	1	prassede
+Prenda	f	1	prɛnda
+Pius	m	1	pjus
+Prosper	m	1	prospɛr
+Prospera	f	1	prospera
+Psiche	f	1	psike
+Piero-Domenico	m	1	pjɛrodomeniko
+Piervittorio	m	1	pirvittɔrjo
+Pietrina	f	1	pjetrina
+Pietro-Angelo	m	1	pjɛtroand͡ʒelo
+Pietro-Antonio	m	1	pjɛtroantonjo
+Pietro-Francesco	m	1	pjɛtrofrant͡ʃesko
+Pietro-Giovanni	m	1	pjɛtrod͡ʒovanni
+Pietro-Salvatore	m	1	pjetrosalvatore
+Ping	u	1	ping
+Pia-Maria	f	1	pjamaria
+Pier-Angelo	m	1	pirand͡ʒelo
+Pier-Giovanni	m	1	pird͡ʒovanni
+Pier-Michele	m	1	pirmikɛle
+Piera-Anna	f	1	pjeraanna
+Pierangiola	f	1	pjerand͡ʒola
+Piercarla	f	1	pirkarla
+Pierfranca	f	1	pirfranka
+Ran	f	1	ran
+Qamil	m	1	,kamil
+Qianqian	f	1	,kian,kjan
+Raffaele-Mario	m	1	raffaelemarjo
+Raffaella-Maria	f	1	raffaellamaria
+Raiza	f	1	rejtsa
+Rajmonda	f	1	radʒmonda
+Ramadan	m	1	ramadan
+Rabah	m	1	rabats
+Rachela	f	1	rakɛla
+Rachida	f	1	rakida
+Rahima	f	1	raima
+Raiden	m	1	rajdɛn
+Raimon	m	1	rajmon
+Kozeta	f	1	kotseta
+Kreshnik	m	1	kreʃ,nik
+Kristal	f	1	kristal
+Kjara	f	1	kd͡ʒɛra
+Klajdi	m	1	kladʒdi
+Klaus-Dieter	m	1	klawsdjɛter
+Klejdi	m	1	kledʒdi
+Klement	m	1	klement
+Klevisa	f	1	kleviza
+Klodiana	f	1	klodiana
+Klodjan	m	1	klodd͡ʒɛn
+Klotilda	f	1	klotilda
+Kristjan	m	1	kris,td͡ʒɛn
+Kseniia	f	1	ksenija
+Lada	f	1	lada
+Kwasi	m	1	kvasi
+Katsiaryna	f	1	katsjarajna
+Kart	f	1	kart
+Katalin	f	1	katalin
+Kamar	f	1	kamar
+Larbi	m	1	larbi
+Larysa	f	1	larajsa
+Lassaad	m	1	lassaa,d
+Lassana	m	1	lassana
+Lesya	f	1	lesja
+Letizia-Gaia	f	1	letittsjaɡaja
+Leze	f	1	letse
+Laura-Bruna	f	1	lawrabruna
+Laura-Elsa	f	1	lawraelsa
+Laurenc	m	1	laurɛnk
+Leonardo-Maria	m	1	leonardomaria
+Leopolda	f	1	leopolda
+Leotrim	m	1	leotkrim
+Leron	m	1	lerɔn
+Lejla	f	1	ledʒla
+Lek	m	1	lek
+Leana	f	1	leana
+Ledia	f	1	ledia
+Ledion	m	1	ledjon
+Ledjon	m	1	ledd͡ʒɔn
+Lefter	m	1	lefter
+Leide	f	1	lɛjde
+Jone	f	1	d͡ʒɔne
+Johnpaul	m	1	dʒɔnpawl
+Jolanta	f	1	d͡ʒɔlanta
+Juena	f	1	d͡ʒuɛna
+Junyi	f	1	junaji
+Justina	f	1	d͡ʒustina
+Juxhin	m	1	d͡ʒuksin
+Kadri	m	1	kadri
+Kaies	m	1	kajes
+Julinda	f	1	d͡ʒulinda
+Jozefina	f	1	dʒɔdzɛfina
+Juan-Diego	m	1	d͡ʒuandjɛɡo
+Kerolay	f	1	kerolɛj
+Kesi	f	1	kesi
+Kine	f	1	kine
+Khaoula	f	1	kaoula
+Khloé	f	1	kloe
+Khady	f	1	ka,dj
+Khalifa	m	1	kalifa
+Kejda	f	1	kedʒda
+Kejdi	m	1	kedʒdi
+Kel	m	1	kel
+Liliane	f	1	liljane
+Liljana	f	1	lisldʒana
+Lillia	f	1	lillia
+Lisander	m	1	lisander
+Lito	m	1	lito
+Loana	f	1	loana
+Lokman	m	1	lokman
+Loreana	f	1	loreana
+Loredana-Maria	f	1	loredanamaria
+Lorens	m	1	lorens
+Lorenza-Maria	f	1	lorɛntsa]maria
+Lorenzino	m	1	lorɛntsjno
+Lorenzo-Giovanni	m	1	lorɛndzod͡ʒovanni
+Lorenzo-Marco	m	1	lorɛndzomarko
+Loris-Mattia	m	1	lorismattia
+Loro	m	1	lɔro
+Liboria	f	1	liboria
+Lina-María	f	1	lisnamara
+Liri	f	1	liri
+Servete	f	1	sɛrvɛte
+Sestino	m	1	sestino
+Settimia	f	1	settimia
+Severina	f	1	sevɛrina
+Serena-Maria	f	1	serenamaria
+Sergia	f	1	serd͡ʒia
+Sergio-Antonio	m	1	serd͡ʒoantonjo
+Sergio-Luigi	m	1	sɛrɡioluid͡ʒ
+Serhiy	m	1	sɛrij
+Shamim	m	1	ʃamim
+Shaila	f	1	ʃeila
+Secondino	m	1	sekondino
+Sefer	m	1	sefer
+Seif-Eddine	m	1	seifɛddine
+Selamawit	f	1	selamawi
+Selami	m	1	selami
+Shariful	m	1	ʃeriful
+Sheriff	m	1	ʃerif
+Sihame	f	1	skiame
+Sibora	f	1	,sibora
+Skander	m	1	skander
+Soad	f	1	soa,d
+Sofia-Maria	f	1	zofiamaria
+Sohaib	m	1	,sɔaib
+Silvan	m	1	silvan
+Silvia-Angela	f	1	silvjaand͡ʒela
+Silvia-Erika	f	1	silvjaerika
+Silvia-Lucia	f	1	silvjalut͡ʃia
+Silvia-Rita	f	1	silvjarita
+Silvija	f	1	silvija
+Silvja	f	1	sajlvja
+Simba	f	1	simba
+Simone-Carlo	m	1	simonekarlo
+Simone-Giuseppe	m	1	simoned͡ʒuzeppe
+Souhaila	f	1	suaila
+Soleil	f	1	solɛjl
+Soni	m	1	soni
+Sonita	f	1	sonita
+Souad	f	1	suad
+Sabah	f	1	sabats
+Sabatina	f	1	sabatina
+Rudin	m	1	rudin
+Rushit	m	1	rusit
+Rosolina	f	1	rozolina
+Rovena	f	1	rovena
+Saimira	f	1	saimira
+Sainey	m	1	sai,nɛj
+Sadiq	m	1	sadi,k
+Safaa	f	1	safaa
+Safae	f	1	safae
+Safwan	m	1	safvan
+Sabir	m	1	sabir
+Sabrin	f	1	sabrin
+Sadik	m	1	sadik
+Rihab	f	1	riab
+Rime	f	1	rime
+Rinalda	f	1	rinalda
+Ripalta	f	1	ripalta
+Robert-Gabriel	m	1	robertɡabriɛl
+Robert-George	m	1	robertd͡ʒeɔrd͡ʒe
+Roberta-Maria	f	1	robertamaria
+Roberta-Teresa	f	1	robertatereza
+Roberto-Dino	m	1	robertoidino
+Roberto-Nicola	m	1	robertoinikola
+Rocchino	m	1	rokkino
+Rocco-Andrea	m	1	rokkoandrɛːa
+Roel	m	1	ro,ɛl
+Rogert	m	1	rod͡ʒert
+Rokaya	f	1	rokaja
+Riyad	m	1	raijad
+Roan	m	1	roan
+Rosario-Antonino	m	1	rozarjo]antonino
+Rosario-Antonio	m	1	rozarjo]antɔnjo
+Rosellina	f	1	rozellina
+Rosilde	f	1	rozilde
+Romanus	m	1	romanus
+Romarjo	m	1	rɔmard͡ʒɔ
+Rosa-Lucia	f	1	rosalut͡ʃia
+Rosa-Pia	f	1	rosapia
+Rosa-Rita	f	1	rosarita
+Rosalda	f	1	rosalda
+Stefanija	f	1	stiefanija
+Stefanino	m	1	stefanino
+Stefano-Carlo	m	1	stefanokarlo
+Stefano-Giorgio	m	1	stefanod͡ʒordʒo
+Stevin	m	1	stevin
+Suad	f	1	suad
+Success	f	1	sutt͡ʃess
+Sukhwinder	f	1	swkwinder
+Steluta	f	1	steluta
+Sundus	f	1	sundus
+Sara-María	f	1	saramara
+Salah-Eddine	m	1	salaɛddine
+Salam	m	1	salam
+Salima	f	1	salima
+Salvatore-Giuseppe	m	1	salvatored͡ʒuzeppe
+Salvatore-Antonio	m	1	salvatoreantonjo
+Salvatore-Daniele	m	1	salvatoredaniɛle
+Salvatore-Roberto	m	1	salvatoreroberto
+Samad	m	1	samad
+Sarina	f	1	sarina
+Saviour	m	1	savjour
+Samoel	m	1	samoel
+Sandokan	m	1	sandɔkan
+Carmen-Lucía	f	1	kar,mɛnlu,ka
+Carmen-María	f	1	kar,mɛnmara
+Carolina-Maddalena	f	1	karolinamaddalena
+Cesare-Augusto	m	1	t͡ʃezareauɡusto
+Cesare-Maria	m	1	t͡ʃezaremaria
+Chao	m	1	kao
+Cesk	m	1	t͡ʃesk
+Chada	f	1	kada
+Chakib	m	1	kakib
+Catalina-Elena	f	1	katalinaelena
+Catena	f	1	katena
+Caterina-Maria	f	1	katerinamaria
+Catrin	f	1	katrin
+Catterina	f	1	katterina
+Caue	m	1	kawe
+Cé	m	1	ke
+Bohdan	m	1	bodan
+Bonaria	f	1	bonarja
+Bonfiglio	m	1	bonfiʎʎo
+Biagia	f	1	biad͡ʒia
+Biagina	f	1	biad͡ʒina
+Bourama	m	1	burama
+Bilbil	m	1	bilbil
+Bing	m	1	,bing
+Bintou	f	1	bintou
+Chiaffredo	m	1	kjaffredo
+Chiara-Lucia	f	1	kjaralut͡ʃia
+Chidi	m	1	kidi
+Churchil	m	1	ʃurkil
+Cile	f	1	t͡ʃile
+Christiana	f	1	kristjana
+Cinzia-Maria	f	1	t͡ʃintsjamaria
+Clara-María	f	1	klaramara
+Claretta	f	1	klarɛtta
+Claudia-Angela	f	1	klawdjaand͡ʒela
+Claudio-Antonio	m	1	klawdjoantɔnjo
+Claudio-Giuseppe	m	1	klawdjod͡ʒuzeppe
+Claudio-Mario	m	1	klawdjomarjo
+Claudio-Vittorio	m	1	klawdjovittɔrjo
+Cléa	f	1	klea
+Cleide	f	1	klɛjde
+Clelia-Maria	f	1	kleliamaria
+Clemente-Elis	m	1	klemɛnteelis
+Cleonice	f	1	kleɔnit͡ʃe
+Carla-Ines	f	1	karlaines
+Camilla-Carla	f	1	kamillakarla
+Camilla-Maria	f	1	kamillamaria
+Brunetta	f	1	brunetta
+Brunilde	f	1	brunilde
+Bruno-Luigi	m	1	brunoluid͡ʒ
+Bubacarr	m	1	bubakarr
+Calista	f	1	kalista
+Calogera	f	1	kalɔd͡ʒera
+Carlo-Ernesto	m	1	karloernesto
+Carlo-Giuseppe	m	1	karlod͡ʒuzeppe
+Carlo-Luigi	m	1	karloluid͡ʒ
+Carlo-Vittorio	m	1	karlovittɔrjo
+Carlos-Alberto	m	1	karlosalbɛrto
+Carluccio	m	1	karlutt͡ʃo
+Carmelino	m	1	karmelino
+Carmelo-Luca	m	1	karmeloluka
+Carmen-Elena	f	1	karmenelena
+Burim	m	1	burim
+Brigita	f	1	brid͡ʒita
+Brisilda	f	1	brizilda
+Brixhilda	f	1	briksilda
+Cristina-Teresa	f	1	krɪstiːnətereza
+Cristinel	m	1	krɪstiːnel
+Corneliu	m	1	kɔrnɛliu
+Corradino	m	1	korradino
+Cosimo-Damiano	m	1	kosimodamiano
+Crescenza	f	1	kreʃʃɛntsa
+Cristian-Daniel	m	1	kristjandaniɛl
+Comfort	f	1	komfort
+Concettina	f	1	kont͡ʃettina
+Cynzia	f	1	kajntsia
+Dafina	f	1	dafina
+Bardhi	m	1	batsjodi
+Beniamina	f	1	benjamina
+Benigna	f	1	beniɲɲa
+Benvenuta	f	1	bɛnvenuta
+Beatrice-Maria	f	1	beatrit͡ʃɛmaria
+Bernardette	f	1	bernardette
+Bernardina	f	1	bernardina
+Belisario	m	1	belisarjo
+Besjan	m	1	,bɛsd͡ʒɛn
+Basilia	f	1	bazilia
+Bassirou	m	1	bassiru
+Bassma	f	1	bas,sma
+Darlington	m	1	darliŋton
+Darma	f	1	darma
+Dashnor	m	1	daisnɔr
+Deivis	m	1	dɛivis
+Daniela-Angela	f	1	daniɛlaand͡ʒela
+Daniela-Maria	f	1	daniɛlamaria
+Daniela-Rita	f	1	daniɛlarita
+Daniele-Roberto	m	1	daniɛleroberto
+Danjel	m	1	dandʒel
+Daoud	m	1	daoud
+Dariya	f	1	daraija
+Davide-Eugenio	m	1	davideewd͡ʒɛnjo
+Davide-Giuseppe	m	1	davided͡ʒuzeppe
+Davide-Lorenzo	m	1	davidelorentso
+Davide-Luigi	m	1	davideluid͡ʒ
+Delma	f	1	delma

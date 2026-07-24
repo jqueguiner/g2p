@@ -1,253 +1,2089 @@
-# cs first names from the first_names census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=40, cap=6000).
-Michal	m	4906
-Jan	m	2792
-Martín	m	2471
-Petr	m	2290
-Tomás	m	2269
-Jakub	m	1868
-Jiří	m	1460
-Lukáš	m	1353
-David	m	1347
-Pavel	m	1323
-Marek	m	1075
-Ondřej	m	1049
-Pawel	m	1018
-Adam	m	880
-Lukasz	m	860
-Daniel	m	843
-Filip	m	744
-Piotr	m	673
-Anna	f	642
-Tereza	f	573
-Radek	m	563
-Marcin	m	552
-Kateřina	f	544
-Lucie	f	518
-Román	m	493
-Jaroslav	m	485
-Josef	m	484
-Jana	f	483
-Václav	m	481
-Miroslav	m	473
-Dominik	m	457
-Karolína	f	457
-Robert	m	454
-Zdeněk	m	453
-Verónika	f	448
-Kamil	m	445
-Mateusz	m	441
-Vojtěch	m	436
-Milán	m	434
-Tomasz	m	433
-Petra	f	426
-Michaela	f	411
-Karel	m	392
-Matěj	m	373
-Krzysztof	m	362
-Lenka	f	347
-Maciej	m	346
-Mónika	f	342
-Vladimír	m	342
-Patrik	m	338
-Martina	f	325
-Barbora	f	325
-Eva	f	295
-Kristýna	f	291
-Aleš	m	277
-Michael	m	265
-Zuzana	f	260
-Klára	f	256
-Andrzej	m	254
-Markéta	f	248
-Rafal	m	248
-František	m	235
-Nikola	f	234
-Štěpán	m	233
-Marta	f	233
-Katarzyna	f	224
-Agnieszka	f	224
-Magdalena	f	223
-Jirka	u	221
-Grzegorz	m	218
-Eliška	f	217
-Peter	m	215
-Richard	m	206
-Dominika	f	204
-Malgorzata	f	204
-Natália	f	203
-Hana	f	202
-Radim	m	199
-Dawid	m	197
-Karol	m	197
-Adela	f	197
-Patryk	m	195
-Artur	m	189
-Andrea	f	188
-Mariusz	m	187
-Júlia	f	185
-Jacek	m	184
-Aneta	f	184
-Ondra	m	184
-Sebastián	m	181
-Ladislav	m	180
-Aleksandra	f	175
-Damián	m	175
-Libor	m	175
-Adrián	m	174
-Tom	m	173
-Szymon	m	169
-Joanna	f	167
-Vít	m	166
-Iván	m	165
-Wojciech	m	160
-Paulína	f	159
-Stanislav	m	157
-Gabriela	f	147
-Vojta	m	143
-Ewa	f	141
-Lubos	m	141
-Kamila	f	138
-Natalie	f	138
-Simón	m	138
-Miloš	m	135
-Igor	m	131
-Dariusz	m	130
-Marie	f	130
-Alena	f	130
-Konrád	m	125
-Viktor	m	123
-Ivo	m	122
-Mirek	m	120
-Alex	m	119
-Dan	m	117
-Šárka	f	116
-Simona	f	116
-Denisa	f	115
-Antonín	m	114
-Pavlína	f	114
-Klaudia	f	113
-María	f	111
-Jaromír	m	108
-Daniela	f	108
-Jitka	f	107
-Jindřich	m	106
-Zbyněk	m	105
-Sára	f	100
-Patrycja	f	100
-Przemyslaw	m	99
-Pavla	f	99
-Nikol	f	99
-Marcel	m	99
-Marián	m	98
-Magda	f	98
-Bára	f	98
-Stanislaw	m	98
-Justyna	f	97
-Ivana	f	96
-Beáta	f	96
-Weronika	f	96
-Renata	f	96
-Ágata	f	94
-Mikolaj	m	93
-Kryštof	m	92
-Bárbara	f	92
-Hubert	m	92
-Helena	f	91
-Olga	f	88
-John	m	87
-Jaroslaw	m	85
-Jarek	m	84
-Dušan	m	84
-Mátyás	m	80
-Kinga	f	80
-Radka	f	80
-Luděk	m	79
-Denis	m	78
-Jozef	m	77
-Vlastimil	m	75
-Iva	f	75
-Lubomir	m	75
-Maja	f	73
-Sabina	f	73
-Vendula	f	73
-Iveta	f	73
-Katka	f	72
-Alicja	f	71
-Sylwia	f	71
-Štefan	m	70
-Dalibor	m	70
-Dorota	f	69
-René	m	67
-Erik	m	66
-Kristina	f	65
-Oskar	m	65
-Miša	u	65
-Zbigniew	m	65
-Sandra	f	64
-Robin	m	64
-Zuzanna	f	62
-Arkadiusz	m	61
-Alexandra	f	61
-Thomas	m	60
-Mark	m	59
-Rudolf	m	58
-Irena	f	58
-Izabela	f	58
-Marcela	f	58
-Adriana	f	58
-Darek	m	57
-Mike	m	56
-Krystian	m	56
-Tadeáš	m	56
-Vera	f	56
-Miloslav	m	55
-Mira	f	55
-Jerzy	m	55
-Janusz	m	55
-Linda	f	54
-Dana	f	54
-Matouš	m	53
-Norbert	m	52
-Gabriel	m	51
-Dagmar	f	49
-Kate	f	49
-Laura	f	49
-Lucas	m	49
-Max	m	49
-Emil	m	49
-Samuel	m	49
-James	m	49
-Iwona	f	49
-Diana	f	48
-Aleksander	m	48
-Alexander	m	48
-Andrej	m	48
-Vladislav	m	48
-Zdeňka	f	48
-Paul	m	48
-Rostislav	m	47
-Daria	f	47
-Oldřich	m	47
-Romana	f	46
-Blanka	f	46
-Hynek	m	46
-Nina	f	46
-Radovan	m	46
-Juraj	m	45
-George	m	45
-Alžbeta	f	45
-Nela	f	44
-Vitezslav	m	44
-Albert	m	43
-Milena	f	43
-Nicole	f	43
-Hanka	f	42
-Emília	f	42
-Premysl	m	42
-Lada	f	41
-Kája	u	41
-Jonáš	m	41
-Ilona	f	41
-Andrew	m	41
-Julie	f	40
-Soňa	f	40
+# cs first names from the census, re-accentuated per language (name<TAB>gender<TAB>frequency; freq-sorted; min=1, cap=10000000).
+Michal	m	4906	mɪxal
+Jan	m	2792	jan
+Martín	m	2471	marciːn
+Petr	m	2290	pɛtr̩
+Tomás	m	2269	tɔmaːs
+Jakub	m	1868	jakʊp
+Jiří	m	1460	jɪr̝iː
+Lukáš	m	1353	lʊkaːʃ
+David	m	1347	davɪt
+Pavel	m	1323	pavɛl
+Marek	m	1075	marɛk
+Ondřej	m	1049	ʔɔndr̝ɛj
+Pawel	m	1018	pavɛl
+Adam	m	880	ʔadam
+Lukasz	m	860	lʊkass
+Daniel	m	843	danɪɛl
+Filip	m	744	fɪlɪp
+Piotr	m	673	pɪɔtr
+Anna	f	642	ana
+Tereza	f	573	tɛrɛza
+Radek	m	563	radɛk
+Marcin	m	552	mart͡sɪn
+Kateřina	f	544	katɛr̝ɪna
+Lucie	f	518	lʊt͡sɪjɛ
+Román	m	493	rɔmaːn
+Jaroslav	m	485	jarɔslaf
+Josef	m	484	jɔzɛf
+Jana	f	483	jana
+Václav	m	481	vaːt͡slaf
+Miroslav	m	473	mɪrɔslaf
+Dominik	m	457	dɔmɪnɪk
+Karolína	f	457	karɔliːna
+Robert	m	454	rɔbɛrt
+Zdeněk	m	453	zdɛɲɛk
+Verónika	f	448	vɛrɔːnɪka
+Kamil	m	445	kamɪl
+Mateusz	m	441	matɛʊsz
+Vojtěch	m	436	vɔɪ̯cɛx
+Milán	m	434	mɪlaːn
+Tomasz	m	433	tɔmass
+Petra	f	426	pɛtra
+Michaela	f	411	mɪxaɛla
+Karel	m	392	karɛl
+Matěj	m	373	macɛj
+Krzysztof	m	362	krt͡sˀɪsstɔf
+Lenka	f	347	lɛŋka
+Maciej	m	346	mat͡sɪɛj
+Mónika	f	342	mɔːnɪka
+Vladimír	m	342	vlaɟɪmiːr
+Patrik	m	338	patrɪk
+Martina	f	325	marcɪna
+Barbora	f	325	barbɔra
+Eva	f	295	ɛva
+Kristýna	f	291	krɪstiːna
+Aleš	m	277	alɛʃ
+Michael	m	265	mɪxaɛl
+Zuzana	f	260	zʊzana
+Klára	f	256	klaːra
+Andrzej	m	254	andrzɛj
+Markéta	f	248	markɛːta
+Rafal	m	248	rafal
+František	m	235	francɪʃɛk
+Nikola	f	234	nɪkɔla
+Štěpán	m	233	ʃcɛpaːn
+Marta	f	233	marta
+Katarzyna	f	224	katarzɪna
+Agnieszka	f	224	ʔagnɪɛsska
+Magdalena	f	223	magdalɛna
+Jirka	u	221	jɪrka
+Grzegorz	m	218	grsʔɛgɔrs
+Eliška	f	217	ɛlɪʃka
+Peter	m	215	pɛtɛɾ
+Richard	m	206	rɪxart
+Dominika	f	204	dɔmɪnɪka
+Malgorzata	f	204	malgɔrzata
+Natália	f	203	nataːlɪja
+Hana	f	202	ɦana
+Radim	m	199	raɟɪm
+Dawid	m	197	dɛːaːvɪt
+Karol	m	197	karɔl
+Adela	f	197	adɛla
+Patryk	m	195	patrɪk
+Artur	m	189	artʊr
+Andrea	f	188	andrɛa
+Mariusz	m	187	marɪʊss
+Júlia	f	185	jʔuːlɪja
+Jacek	m	184	jat͡sɛk
+Aneta	f	184	anɛta
+Ondra	m	184	ɔndra
+Sebastián	m	181	sɛbastɪjaːn
+Ladislav	m	180	laɟislaf
+Aleksandra	f	175	jalɛksandra
+Damián	m	175	damɪaːn
+Libor	m	175	lɪbɔr
+Adrián	m	174	adrɪaːn
+Tom	m	173	tɔm
+Szymon	m	169	szɪmɔn
+Joanna	f	167	jɔana
+Vít	m	166	viːt
+Iván	m	165	ɪvaːn
+Wojciech	m	160	vɔjt͡sɪɛx
+Paulína	f	159	paʊ̯liːna
+Stanislav	m	157	staɲɪslaf
+Gabriela	f	147	gabrɪjɛla
+Vojta	m	143	vɔjta
+Ewa	f	141	ɛva
+Lubos	m	141	lʊbɔs
+Kamila	f	138	kamɪla
+Natalie	f	138	natalɪjɛ
+Simón	m	138	sɪmɔːn
+Miloš	m	135	mɪlɔʃ
+Igor	m	131	ɪgɔr
+Dariusz	m	130	darɪjʊsz
+Marie	f	130	marɪjɛ
+Alena	f	130	alɛna
+Konrád	m	125	kɔnraːt
+Viktor	m	123	vɪktɔr
+Ivo	m	122	ɪvɔ
+Mirek	m	120	mɪrɛk
+Alex	m	119	alɛks
+Dan	m	117	dan
+Šárka	f	116	ʃaːrka
+Simona	f	116	sɪmɔna
+Denisa	f	115	dɛnɪsa
+Antonín	m	114	antɔɲiːn
+Pavlína	f	114	pavliːna
+Klaudia	f	113	klaʊ̯dɪja
+María	f	111	mariːa
+Jaromír	m	108	jarɔmiːr
+Daniela	f	108	danɪɛla
+Jitka	f	107	jɪtka
+Jindřich	m	106	jɪndr̝ɪx
+Zbyněk	m	105	zbɪɲɛk
+Sára	f	100	saːra
+Patrycja	f	100	patrɪt͡sja
+Przemyslaw	m	99	prsʔɛmɪslɔː
+Pavla	f	99	pavla
+Nikol	f	99	ɲɪkɔl
+Marcel	m	99	mart͡sɛl
+Marián	m	98	marɪjaːn
+Magda	f	98	magda
+Bára	f	98	baːra
+Stanislaw	m	98	staɲɪslɔː
+Justyna	f	97	jʊstɪna
+Ivana	f	96	ɪvana
+Beáta	f	96	bɛaːta
+Weronika	f	96	vɛrɔnɪka
+Renata	f	96	rɛnata
+Ágata	f	94	aːgata
+Mikolaj	m	93	mɪkɔlaj
+Kryštof	m	92	krɪʃtɔf
+Bárbara	f	92	baːrbara
+Hubert	m	92	ɦʊbɛrt
+Helena	f	91	ɦɛlɛna
+Olga	f	88	ɔlga
+John	m	87	jɔːn
+Jaroslaw	m	85	jarɔslɔː
+Jarek	m	84	jarɛk
+Dušan	m	84	dʊʃan
+Mátyás	m	80	maːtɪjaːs
+Kinga	f	80	kɪŋka
+Radka	f	80	ratka
+Luděk	m	79	lʊɟɛk
+Denis	m	78	dɛnɪs
+Jozef	m	77	jɔzɛf
+Vlastimil	m	75	vlascɪmɪl
+Iva	f	75	ɪva
+Lubomir	m	75	lʊbɔmɪr
+Maja	f	73	maja
+Sabina	f	73	sabɪna
+Vendula	f	73	vɛndʊla
+Iveta	f	73	ɪvɛta
+Katka	f	72	katka
+Alicja	f	71	alɪt͡sja
+Sylwia	f	71	sɪlvɪa
+Štefan	m	70	ʃtɛfan
+Dalibor	m	70	dalɪbɔr
+Dorota	f	69	dɔrɔta
+René	m	67	rɛnɛː
+Erik	m	66	ɛrɪk
+Kristina	f	65	krɪscɪna
+Oskar	m	65	ʔɔskar
+Miša	u	65	mɪʃa
+Zbigniew	m	65	zbɪgnɪjev
+Sandra	f	64	sandra
+Robin	m	64	rɔbɪn
+Zuzanna	f	62	zʊzanna
+Arkadiusz	m	61	arkadɪjʊss
+Alexandra	f	61	alɛksandra
+Thomas	m	60	tɔmas
+Mark	m	59	mark
+Rudolf	m	58	rʊdɔlf
+Irena	f	58	ʔɪrɛna
+Izabela	f	58	ɪzabɛla
+Marcela	f	58	mart͡sɛla
+Adriana	f	58	ʔadrɪjana
+Darek	m	57	darɛk
+Mike	m	56	majk
+Krystian	m	56	krɪstɪjan
+Tadeáš	m	56	tadɛaːʃ
+Vera	f	56	vɛra
+Miloslav	m	55	mɪlɔslaf
+Mira	f	55	mɪra
+Jerzy	m	55	jʔɛrt͡sˀɪ
+Janusz	m	55	janʊss
+Linda	f	54	lɪnda
+Dana	f	54	dana
+Matouš	m	53	matɔʊ̯ʃ
+Norbert	m	52	nɔrbɛrt
+Gabriel	m	51	gabrɪɛl
+Dagmar	f	49	dagmar
+Kate	f	49	katɛ
+Laura	f	49	laʊ̯ra
+Lucas	m	49	lʊt͡sas
+Max	m	49	maks
+Emil	m	49	ɛmɪl
+Samuel	m	49	samuɛl
+James	m	49	d͡ʒɛjms
+Iwona	f	49	ɪvɔna
+Diana	f	48	dɪjana
+Aleksander	m	48	jalɛksandɛr
+Alexander	m	48	alɛksandr
+Andrej	m	48	andrɛj
+Vladislav	m	48	vlaɟislaf
+Zdeňka	f	48	zdɛɲka
+Paul	m	48	pɔl
+Rostislav	m	47	rɔscɪslaf
+Daria	f	47	darɪja
+Oldřich	m	47	ʔɔldr̝ɪx
+Romana	f	46	rɔmana
+Blanka	f	46	blaŋka
+Hynek	m	46	ɦɪnɛk
+Nina	f	46	ɲɪna
+Radovan	m	46	radɔvan
+Juraj	m	45	jʊraj
+George	m	45	d͡ʒɔrt͡ʃ
+Alžbeta	f	45	alʒbɛta
+Nela	f	44	nɛla
+Vitezslav	m	44	vɪtɛsslaf
+Albert	m	43	ʔalbɛrt
+Milena	f	43	mɪlɛna
+Nicole	f	43	ɲɪt͡sɔlɛ
+Hanka	f	42	ɦaŋka
+Emília	f	42	emiːlɪja
+Premysl	m	42	prɛmɪsl̩
+Lada	f	41	lada
+Kája	u	41	kaːja
+Jonáš	m	41	jɔnaːʃ
+Ilona	f	41	ɪlɔna
+Andrew	m	41	andrɛv
+Julie	f	40	juːlɪjɛ
+Soňa	f	40	sɔɲa
+Patrick	m	39	patrɪk
+Katarína	f	39	katariːna
+Vítek	m	39	viːtɛk
+Lucy	f	39	lʊt͡sɪ
+Boris	m	38	bɔrɪs
+Zuzka	f	38	zʊska
+Ryszard	m	38	rɪszart
+Anezka	f	38	anɛska
+Anita	f	38	anɪta
+Bruno	m	37	brʊnɔ
+Elzbieta	f	37	ɛlzbɪjɛta
+Radomír	m	37	radɔmiːr
+Alexandr	m	36	alɛksandr̩
+Lucía	f	36	lʊt͡siːa
+Silvie	f	35	sɪlvɪjɛ
+Štěpánka	f	35	ʃcɛpaːŋka
+Anton	m	35	antɔn
+Mirka	f	34	mɪrka
+Miroslaw	m	34	mɪrɔslav
+Leszek	m	33	lɛszɛk
+Jolanta	f	33	jɔlanta
+Edyta	f	33	ɛdɪta
+Sarah	f	33	sarax
+Alan	m	33	alan
+André	m	33	andrɛː
+Matúš	m	32	matuːʃ
+Mário	m	32	maːrɪjɔ
+Hanna	f	32	ɦana
+Janek	m	32	janɛk
+Wieslaw	m	32	vɪjeslɔː
+Alice	f	31	alɪt͡sɛ
+Antoni	m	31	antɔnɪ
+Luke	m	31	lʊkɛ
+Leoš	m	30	lɛɔʃ
+Amanda	f	30	amanda
+Danny	m	30	dannɪ
+Leonardo	m	29	lɛɔnardɔ
+Léna	f	29	lɛːna
+Jáchym	m	29	jaːxɪm
+Eduard	m	29	ɛdʊart
+Ada	f	29	ada
+Angelika	f	29	aŋgɛlɪka
+Paula	f	29	paʊ̯la
+Rafael	m	29	rafaɛl
+Oliver	m	29	ɔlɪvr̩
+Vlada	f	29	vlada
+Víctor	m	29	viːt͡stɔr
+Bogdan	m	28	bɔgdan
+Ben	m	28	bɛn
+Pedro	m	27	pɛdrɔ
+Kristián	m	27	krɪstɪjaːn
+Tadeusz	m	27	tadɛʊ̯ss
+Žaneta	f	27	ʒanɛta
+Ela	f	27	ɛla
+Jéssica	f	27	jɛːsɪtsa
+Mila	f	26	mɪla
+Michelle	f	26	mɪʃl
+Christian	m	26	xrɪstɪjan
+Vratislav	m	26	vracɪslaf
+Verónica	f	26	vɛrɔːnɪt͡sa
+Jindra	f	26	jɪndra
+Sam	m	26	sam
+Ana	f	26	ana
+Alexandre	m	25	alɛksandrɛ
+Benjamín	m	25	bɛnjamɪn
+Kata	f	25	kata
+Marina	f	25	marɪna
+Frank	m	25	fraŋk
+Elena	f	25	ɛlɛna
+Patrícia	f	25	patriːt͡sɪja
+Teresa	f	25	tɛrɛsa
+Jirina	f	24	jɪrɪna
+Léa	f	24	lɛːa
+Johnny	m	24	jɔːnnɪ
+Krystyna	f	24	krɪstɪna
+Caroline	f	24	t͡sarɔlɪŋjɛ
+Bohumil	m	24	bɔɦʊmɪl
+Tobías	m	24	tɔbiːas
+Terezie	f	24	tɛrɛzɪjɛ
+Tibor	m	24	cɪbɔr
+Vilém	m	24	vɪlɛːm
+Nick	m	24	nɪk
+Oleg	m	24	ɔlɛg
+Pavol	m	24	pavɔl
+Pablo	m	24	pablɔ
+Rodrigo	m	24	rɔdrɪgɔ
+Czeslaw	m	24	t͡ssʔɛslɔː
+Lídia	f	23	liːdɪja
+Karina	f	23	karɪna
+Jane	u	23	janɛ
+Jacob	m	23	jʔakɔb
+Erika	f	23	ɛrɪka
+Anet	f	23	anɛt
+Nicolás	m	23	ɲɪt͡sɔlaːs
+Ludmila	f	23	lʊdmɪla
+Mikuláš	m	23	mɪkʊlaːʃ
+Urszula	f	23	ʔʊrszʊla
+Witold	m	23	vɪtɔlt
+Victória	f	22	vɪt͡stɔːrɪja
+Zofia	f	22	zɔfɪja
+Eric	m	22	ɛrɪt͡s
+Roberto	m	22	rɔbɛrtɔ
+Blažej	m	21	blaʒɛj
+Julián	m	21	jʊlɪaːn
+Kevin	m	21	kɛvɪn
+Ema	f	21	ɛma
+Eryk	m	21	ɛrɪk
+Aleksandr	m	21	jalɛksandr̩
+Adél	m	21	adɛːl
+Marco	m	21	mart͡sɔ
+Matthew	m	21	mɛjttɦɛv
+Fernando	m	20	fɛrnandɔ
+Eliza	f	20	ɛlɪza
+Eduardo	m	20	ɛdʊardɔ
+Karin	f	20	karɪn
+Juliana	f	20	jʊlɪjana
+Radoslav	m	20	radɔslaf
+Nicol	f	20	ɲɪt͡sɔl
+Tina	f	20	cɪna
+Hans	m	20	ɦans
+Jarka	f	20	jarka
+Hugo	m	20	ɦʊgɔ
+Grazyna	f	20	grazɪna
+Alina	f	20	alɪna
+Zdzislaw	m	20	zdzɪslɔː
+Ann	f	19	ann
+Alí	m	19	aliː
+Carlos	m	19	t͡sarlɔs
+Léo	m	19	lɛːɔ
+Mónica	f	19	mɔːɲɪt͡sa
+Dita	f	19	dɪta
+Evzen	m	19	ʔɛvzɛn
+Tatiana	f	19	tatɪana
+Tony	m	19	tɔnɪ
+Vita	f	19	vɪta
+Vanessa	f	19	vanɛsa
+William	m	19	vɪlɪjam
+Tommy	m	19	tɔmmɪ
+Henryk	m	19	ɦɛnrɪk
+Jenda	m	19	jɛnda
+Jack	m	19	d͡ʒɛk
+Jarmila	f	19	jarmɪla
+Johana	f	18	jɔɦana
+Annie	f	18	annɪjɛ
+Dagmara	f	18	dagmara
+Marcelo	m	18	mart͡sɛlɔ
+Marlena	f	18	marlɛna
+Viktorie	f	18	vɪktɔrɪjɛ
+Philip	m	18	pɛːɦaːɪlɪp
+Nikolas	m	18	nɪkɔlas
+Ricardo	m	18	rɪt͡sardɔ
+Steve	m	18	stɛvɛ
+Sílvia	f	18	siːlvɪja
+Bohuslav	m	17	bɔɦʊslaf
+Justin	m	17	jʊscɪn
+Jerry	m	17	jɛrrɪ
+Emma	f	17	ɛmma
+Nicola	f	17	ɲɪt͡sɔla
+Michala	f	17	mɪxala
+Lubor	m	17	lʊbɔr
+Marika	f	17	marɪka
+Mariana	f	17	marɪjana
+Marc	m	17	mart͡s
+Zuza	f	17	zʊza
+Edita	f	16	ɛdɪta
+Edward	m	16	ɛdvart
+Franciszek	m	16	frant͡sɪjszɛk
+Diego	m	16	dɪɛgɔ
+Joao	m	16	jɔaɔ
+Leona	f	16	lɛɔna
+Roland	m	16	rɔland
+Christine	f	16	xrɪscɪnɛ
+Božena	f	16	bɔʒɛna
+Boguslaw	m	16	bɔgʊslɔː
+Ireneusz	m	16	ɪrɛnɛʊ̯ss
+Mary	f	16	marɪ
+Miro	m	16	mɪrɔ
+Olivia	f	15	ɔlɪvɪja
+Přemek	m	15	pr̝̊ɛmɛk
+Nikita	u	15	ɲɪkɪta
+Darina	f	15	darɪna
+Bronislav	m	15	brɔɲɪslaf
+Christopher	m	15	xrɪstɔpɦɛr
+Břetislav	m	15	br̝ɛcɪslaf
+Brian	m	15	brɪan
+Jolana	f	15	jɔlana
+José	m	15	xɔsɛː
+Katy	f	15	katɪ
+Kazimierz	m	15	kazɪmɪjers
+Vladka	f	15	vlatka
+Waldemar	m	15	valdɛmar
+Ernest	m	15	ɛrnɛst
+Fábio	m	15	faːbɪjɔ
+Elizabeth	f	15	ɛlɪzabɛtx
+Stanley	m	15	stanlɛɪ
+Adelka	f	15	adɛlka
+Adrianna	f	15	adrɪanna
+Anka	f	15	aŋka
+António	m	15	antɔːɪjɔ
+Jason	m	15	jasɔn
+Michalina	f	15	mɪxalɪna
+Luís	m	15	lʊiːs
+Mariola	f	15	marɪjɔla
+Marko	m	15	markɔ
+Marcus	m	14	markʊs
+Mara	f	14	mara
+Mieczyslaw	m	14	mɪjet͡szɪslɔː
+Nada	f	14	nada
+Nadia	f	14	nadɪja
+Joseph	m	14	jɔzɛpɦ
+Patricie	f	14	patrɪt͡sɪjɛ
+Otakar	m	14	ɔtakar
+Nika	f	14	nɪka
+Cristina	f	14	t͡srɪscɪna
+Catherine	f	14	tsatɛrɪnɛ
+Viliam	m	14	vɪlɪjam
+Tamara	f	14	tamara
+Jara	f	14	jara
+Ian	m	14	ɪjan
+Sabrina	f	14	sabrɪna
+Alois	m	14	alɔjs
+Alexis	m	14	alɛksɪs
+Anthony	m	13	ʔantɔnɪ
+Anička	f	13	aɲɪt͡ʃka
+Anne	f	13	annɛ
+Anastasia	f	13	anastasɪa
+Daša	f	13	daʃa
+Juan	m	13	jʊan
+Miriam	f	13	mɪrɪjam
+Miroslava	f	13	mɪrɔslava
+Mia	f	13	mɪja̯
+Luca	m	13	lʊt͡sa
+Ester	f	13	ɛstɛr
+Niki	f	13	ɲɪkɪ
+Slávek	m	13	slaːvɛk
+Wendy	f	13	vɛndɪ
+Tana	f	13	tana
+Irina	f	13	ɪrɪna
+Jadwiga	f	13	jadvɪga
+Henry	m	12	ɦɛnrɪ
+Halina	f	12	ɦalɪna
+Gustavo	m	12	gʊstavɔ
+Izabella	f	12	ɪzabɛla
+Jaroslava	f	12	jarɔslava
+Eli	f	12	ɛlɪ
+Flávia	f	12	flaːvɪja
+Florian	m	12	flɔrɪjan
+Karl	m	12	karl
+Květa	f	12	kvjɛta
+Adele	f	12	adɛlɛ
+Cláudia	f	12	t͡slaːʊdɪja
+Christina	f	12	xrɪscɪna
+Bedrich	m	12	bɛdrɪx
+Danuta	f	12	danʊta
+Lumír	m	12	lʊmiːr
+Marianna	f	12	marɪjanna
+Zbyszek	m	12	zbɪszɛk
+Vlasta	f	12	vlasta
+Terezka	f	12	tɛrɛska
+Valérie	f	12	valɛːrɪjɛ
+Verunka	f	12	vɛrʊŋka
+Vanesa	f	12	vanɛsa
+Prokop	m	12	prɔkɔp
+Paulo	m	12	paʊ̯lɔ
+Óscar	m	12	oːst͡sar
+Ota	m	12	ɔta
+Svatopluk	m	12	svatɔplʊk
+Simone	u	11	sɪjmɔnɛ
+Sonia	f	11	sɔnɪja
+Saša	u	11	saʃa
+Claire	f	11	t͡slaɪrɛ
+Bohdan	m	11	bɔɦdan
+Čestmír	m	11	tʃɛstmiːr
+Jorge	m	11	jɔrt͡ʃ
+Jonathan	m	11	jɔnatɦan
+Johan	m	11	jɔɦan
+Kirill	m	11	kɪrɪll
+León	m	11	lɛɔːn
+Larissa	f	11	larɪssa
+Katherine	f	11	katɛrɪnɛ
+Karla	f	11	karla
+Julius	m	11	juːlɪjʊs
+Klárka	f	11	klaːrka
+Hedvika	f	11	ɦɛdvɪka
+Helen	f	11	ɦɛlɛn
+Jean	m	11	jɛan
+Janina	f	11	jaɲɪna
+Ivona	f	11	ɪvɔna
+Fabián	m	11	fabɪaːn
+Félix	m	11	fɛːlɪks
+Dominic	m	11	dɔmɪnɪt͡s
+Dmitrij	m	11	dmɪstr̩ɪj
+Ángel	m	11	aːŋgl̩
+Andreas	m	11	andrɛas
+Pierre	m	11	pjɛːr
+Rastislav	m	11	rascɪslaf
+Maxim	m	11	maksɪm
+Luiza	f	11	lʊɪsa
+Marcelina	f	11	mart͡sɛlɪna
+Mojmír	m	11	mɔjmiːr
+Michel	m	11	mɪxɛl
+Valentina	f	11	valɛntɪna
+Vincent	m	11	vɪnt͡sɛnt
+Vladan	m	11	vladan
+Vladimira	f	11	vlaɟimɪra
+Tim	m	11	tɪm
+Vlado	m	10	vladɔ
+Walter	m	10	valtɛr
+Vadim	m	10	vaɟɪm
+Valentín	m	10	valɛnciːn
+Vanda	f	10	vanda
+Francisco	m	10	frant͡sɪskɔ
+Libuse	f	10	lɪbʊsɛ
+Lida	f	10	lɪda
+Lily	f	10	lɪlɪ
+Lech	m	10	lɛx
+Joel	m	10	jɔɛl
+Karen	f	10	karɛn
+Svetlana	f	10	svɛtlana
+Sergej	m	10	sɛrgɛj
+Débora	f	10	dɛːbɔra
+Bruna	f	10	brʊna
+Jeremy	m	10	jɛrɛmɪ
+Javier	m	10	javjr
+Luísa	f	10	lʊiːsa
+Arthur	m	10	ʔartuːr
+Angéla	f	10	aŋgjɛːla
+Omar	m	10	ɔmar
+Oksana	f	10	ɔksana
+Philippe	m	10	pɛːɦaːɪlɪppjɛ
+Regina	f	9	rɛɡiːna
+Ráchel	f	9	raːxɛl
+Nelly	f	9	nɛliː
+Nik	m	9	nɪk
+Nathália	f	9	natɦaːlɪja
+Nathan	m	9	natɦan
+Oto	m	9	ɔtɔ
+Pauline	f	9	pɔliːnɛ
+Cristián	m	9	t͡srɪstɪjaːn
+Borek	m	9	bɔrɛk
+Barunka	f	9	barʊŋka
+Lara	f	9	lara
+Kornélia	f	9	kɔrnɛːlɪja
+Valéria	f	9	valɛːrɪja
+Zdena	f	9	zdɛna
+Vlastik	m	9	vlastɪk
+Denise	f	9	dɛnɪsjɛ
+Dennis	m	9	dɛnɪs
+Denny	m	9	dɛnnɪ
+Roger	m	9	rɔgɛr
+Roberta	f	9	rɔbɛrta
+Ruda	m	9	rʊda
+Sofía	f	9	sɔfiːa
+Sofie	f	9	sɔfɪɛ
+Amir	m	9	amɪr
+Alberto	m	9	albɛrtɔ
+Ariel	m	9	arɪjɛl
+Artem	m	9	artɛm
+Alessandro	m	9	ʔalɛssandrɔ
+Gregor	m	9	grɛgɔr
+Herbert	m	9	ɦɛrbɛrt
+Jenny	f	9	jɛnnɪ
+Hannah	f	9	ɦanax
+Ingrid	f	9	ɪŋgrɪt
+Maroš	m	9	marɔʃ
+Maya	f	9	maːja
+Ludvik	m	9	lʊdvɪk
+Luka	m	9	lʊka
+Mohamed	m	8	mɔɦamɛt
+Milana	f	8	mɪlana
+Mélanie	f	8	mɛːlanɪjɛ
+Mustafa	m	8	mʊstafa
+Luciana	f	8	lʊt͡sɪjana
+Luciano	m	8	lʊt͡sɪjanɔ
+Lucyna	f	8	lʊt͡sɪna
+Esther	f	8	ɛstɦɛr
+Emily	f	8	ɛmɪlɪ
+Drahomira	f	8	draɦɔmɪra
+Franz	m	8	frans
+Ellen	f	8	ɛllɛn
+Kornél	m	8	kɔrnɛːl
+Ladislava	f	8	laɟɪslava
+Kajetan	m	8	kajɛtan
+Josefina	f	8	jɔzɛfɪna
+Kim	u	8	kɪm
+Pamela	f	8	pamɛla
+Raphael	m	8	rapɛːɦaːaːɛl
+Raquel	f	8	rakɛl
+Rebecca	f	8	rɛbɛt͡st͡sa
+Rebeka	f	8	rɛbɛka
+Polina	f	8	pɔlɪna
+Nikodem	m	8	ɲɪkɔdɛm
+Natali	f	8	natalɪ
+Carol	f	8	t͡sarɔl
+Carolina	f	8	t͡sarɔlɪna
+Danilo	m	8	daɲɪlɔ
+Berenika	f	8	bɛrɛnɪka
+Bianca	f	8	bɪjant͡sa
+Branislav	m	8	braɲɪslaf
+Wieslawa	f	8	vɪʔɛslavɛː
+Yana	f	8	jaːna
+Inna	f	8	ɪnna
+Janka	f	8	jaŋka
+Guy	m	8	gʊɪ
+Jenik	m	8	jɛnɪk
+Jennifer	f	8	jɛnnɪfɛr
+Sérgio	m	8	sɛːrgɪjɔ
+Rita	f	8	rɪta
+Ryan	m	8	rɪan
+Sven	m	8	svɛn
+Stéphanie	f	8	stɛːpɦanɪjɛ
+Steven	m	8	stɛvɛn
+Anette	f	8	anɛttɛ
+Agnes	f	8	agnɛs
+Anna-Marie	f	8	anamarɪjɛ
+Angelina	f	8	aŋgɛlɪna
+Angélica	f	7	aŋgjɛːlɪt͡sa
+Allan	m	7	allan
+Amalie	f	7	amalɪjɛ
+Andrei	m	7	andrɛjɪ
+Anastasija	f	7	anastasɪja
+Adriano	m	7	adrɪjanɔ
+Brenda	f	7	brɛnda
+Bohumir	m	7	bɔɦʊmɪr
+Bianka	f	7	bɪanka
+Charles	m	7	xarlɛs
+Dara	f	7	dara
+Davide	m	7	davɪdɛ
+Carla	f	7	t͡sarla
+Bernard	m	7	bɛrnard
+Katia	f	7	katɪa
+Karola	f	7	karɔla
+Jura	m	7	jʊra
+Konstantin	m	7	kɔnstantɪn
+Liliana	f	7	lɪlɪjana
+Leandro	m	7	lɛandrɔ
+Marius	m	7	marɪʊs
+Markétka	f	7	markɛːtka
+Margarita	f	7	margarɪta
+Marija	f	7	marɪja
+Manuel	m	7	manʊɛl
+Elisabeth	f	7	ɛlɪsabɛtx
+Dorian	m	7	dɔrɪjan
+Eda	f	7	ɛda
+Derek	m	7	dɛrɛk
+Dina	f	7	ɟɪna
+Evelina	f	7	ʔɛvɛlɪna
+Natalka	f	7	natalka
+Renato	m	7	rɛnatɔ
+Nell	f	7	nɛl
+Olaf	m	7	ɔlaf
+Seán	m	7	sɛaːn
+Santiago	m	7	santɪagɔ
+Slavomír	m	7	slavɔmiːr
+Stefano	m	7	stɛfanɔ
+Viktoria	f	7	vɪktɔrɪja
+Vasil	m	7	vasɪl
+Tea	f	7	tɛa
+Tanya	f	7	tanɪa
+Taras	m	7	taras
+Zbyšek	m	7	zbɪʃɛk
+Jindřiška	f	7	jɪndr̝ɪʃka
+Janko	m	7	jaŋkɔ
+Jasmína	f	7	jasmiːna
+Goran	m	7	gɔran
+Ilja	u	7	ɪlja
+Gustav	m	7	gʊstaf
+Harry	m	6	ɦɛrɪ
+Jelena	f	6	jɛlɛna
+Jim	m	6	d͡ʒɪm
+Jimmy	m	6	jɪmmɪ
+Jaro	m	6	jarɔ
+Giorgio	m	6	gɪjɔrgɪjɔ
+Francis	m	6	frant͡sɪs
+Ekaterina	f	6	ɛkatɛrɪna
+Emanuel	m	6	ɛmanʊɛl
+Dominica	f	6	dɔmɪnɪtsa
+Gérard	m	6	gɛːrard
+Katrin	f	6	katrɪn
+Jordan	m	6	jɔrdan
+Liam	m	6	lɪjam
+Lisa	f	6	lɪsa
+Lívia	f	6	liːvɪja
+Lina	f	6	lɪna
+Liza	f	6	lɪza
+Leni	f	6	lɛɲɪ
+Lee	m	6	lɛjɛ
+Arnost	m	6	arnɔst
+Alenka	f	6	alɛŋka
+Angelo	m	6	aŋgɛlɔ
+Anja	f	6	anja
+Andrés	m	6	andrɛːs
+Ahmed	m	6	aɦmɛt
+Betty	f	6	bɛttɪ
+Bogumila	f	6	bɔgʊmɪla
+Bohdana	f	6	bɔɦdana
+Danek	m	6	danɛk
+Dany	m	6	danɪ
+Mikolas	m	6	mɪkɔlas
+Milada	f	6	mɪlada
+Mirko	m	6	mɪrkɔ
+Markus	m	6	markʊs
+Margareta	f	6	margarɛta
+May	f	6	maːj
+Matthias	m	6	mattɪjas
+Michele	u	6	mɪxɛlɛ
+Lucjan	m	6	lʊt͡sjan
+Wolfgang	m	6	vɔlfgɛŋk
+Wanda	f	6	vanda
+Vlastislav	m	6	vlascɪslaf
+Venda	f	6	vɛnda
+Violetta	f	6	vɪjɔlɛta
+Theresa	f	6	tɦɛrɛsa
+Zenón	m	6	zɛnɔːn
+Žanet	f	6	ʒanɛt
+Zlata	f	6	zlata
+Sylvie	f	6	sɪlvɪjɛ
+Tania	f	6	tanɪja
+Priscila	f	6	prɪst͡sɪla
+Nathalie	f	6	natɦalɪjɛ
+Nóra	f	6	nɔːra
+Radan	m	6	radan
+Radmila	f	6	radmɪla
+Susan	f	6	sʊsan
+Ronald	m	6	rɔnalt
+Rubén	m	6	rʊbɛːn
+Roza	f	6	rɔza
+Ruslan	m	6	rʊslan
+Sasha	f	6	sasɦa
+Samantha	f	6	samanta
+Sophia	f	6	sopɦɪja
+Wladyslaw	m	6	vladɪslɔː
+Stella	f	5	stɛlla
+Suzanne	f	5	sʊzannɛ
+Sally	f	5	sallɪ
+Risa	m	5	rɪsa
+Roy	m	5	rɔɪ
+Cláudio	m	5	t͡slaːʊdɪjɔ
+Celina	f	5	t͡sɛlɪna
+Čeněk	m	5	t͡ʃɛɲɛk
+César	m	5	t͡sɛːsar
+Daniele	m	5	danɪɛlɛ
+Dean	m	5	dɛan
+Darío	m	5	dariːɔ
+Ctirad	m	5	t͡scɪrat
+Cyril	m	5	t͡sɪrɪl
+Brona	f	5	brɔna
+Carlo	m	5	t͡sarlɔ
+Léopold	m	5	lɛːɔpɔlt
+Kelly	f	5	kɛllɪ
+Ken	m	5	kɛn
+Laco	m	5	lat͡sɔ
+Kvetoslav	m	5	kvɛtɔslaf
+Klaudie	f	5	klaʊ̯dɪjɛ
+Louis	m	5	lɔʊ̯ɪs
+Lola	f	5	lɔla
+Júlio	m	5	jʔuːlɪjɔ
+Judita	f	5	jʊdɪta
+Joyce	f	5	jɔɪt͡sɛ
+Joan	f	5	jɔan
+Joana	f	5	jɔana
+Johanna	f	5	jɔɦana
+Jeanne	f	5	jɛanɛ
+Hai	m	5	ɦajɪ
+Irene	f	5	ɪrɛnɛ
+Isabela	f	5	ɪsabɛla
+Ivanka	f	5	ɪvaŋka
+Ivos	m	5	ɪvɔs
+Jacqueline	f	5	jatskɛlɪnɛ
+Ira	f	5	ɪra
+Giulia	f	5	gɪʊlɪja
+Giuseppe	m	5	gɪjʊsɛppɛ
+Giovanna	f	5	gɪjɔvanna
+Ida	f	5	ɪda
+Gabriella	f	5	gabr̩ɪɛlla
+Galina	f	5	ɡalɪna
+Elisa	f	5	ɛlɪsa
+Francesco	m	5	frant͡sɛskɔ
+Denys	m	5	dɛnɪs
+Dóra	f	5	dɔːra
+Evgenij	m	5	ʔɛvgɛnɪj
+Fedor	m	5	fɛdɔr
+Ahmad	m	5	aɦmat
+Aja	f	5	aja
+Arnold	m	5	arnɔlt
+Alexa	u	5	alɛksa
+Alisa	f	5	alɪsa
+Átila	m	5	aːcɪla
+Abraham	m	5	abraɦam
+Abel	m	5	abɛl
+Nelson	m	5	nɛlsɔn
+Niko	m	5	nɪkɔ
+Nancy	f	5	nantsɪ
+Petar	m	5	pɛtar
+Rada	f	5	rada
+Radko	m	5	ratkɔ
+Radomil	m	5	radɔmɪl
+Rafaela	f	5	rafaɛla
+Ramón	m	5	ramɔːn
+Raymond	m	5	raɪmɔnd
+Ricky	m	5	rɪt͡skɪ
+Norman	m	5	nɔrman
+Luda	u	5	lʊda
+Lubica	f	5	lʊbɪt͡sa
+Nadezda	f	5	nadɛzda
+Miluse	f	5	mɪlʊsɛ
+Mohammed	m	5	mɔɦammɛd
+Maximilian	m	5	maksɪmɪlɪjan
+Marvin	m	5	marvɪn
+Mateo	m	5	matɛɔ
+Matteo	m	5	mattɛɔ
+Yan	m	5	ɪan
+Václava	f	5	vaːt͡slava
+Zygmunt	m	5	zɪgmʊnt
+Valentyna	f	5	valɛntɪna
+Vilma	f	5	vɪlma
+Verka	f	5	vɛrka
+Tatana	f	5	tatana
+Sylva	f	5	sɪlva
+Zora	f	4	zɔra
+Zdenko	m	4	zdɛŋkɔ
+Yvonne	f	4	ɪvɔnɛ
+Zuzanka	f	4	zʊzaŋka
+Tracy	f	4	trat͡sɪ
+Yasmin	f	4	ɪasmɪn
+Willy	m	4	vɪliː
+Vladislava	f	4	vlaɟɪslava
+Theodor	m	4	tɛɔdɔr
+Tomi	m	4	tɔmɪ
+Toni	m	4	tɔnɪ
+Vavrinec	m	4	vavrɪnɛt͡s
+Viola	f	4	vɪɔla
+Vitalij	m	4	vɪtalɪj
+Tanja	f	4	tanja
+Tatjana	f	4	tatjana
+Fabiana	f	4	fabɪjana
+Eugenio	m	4	ʔɛʊ̯gɛnɪjɔ
+Eugeniusz	m	4	ʔɛʊ̯gɛnɪjʊss
+Farid	m	4	farɪt
+Ferdinand	m	4	fɛrdɪnant
+Fred	m	4	frɛt
+Gabrielle	f	4	gabr̩ɪɛllɛ
+Georg	m	4	gɛɔrk
+Gary	m	4	gɛrɪ
+Edvard	m	4	ɛdvart
+Edwin	m	4	ɛdvɪn
+Elka	f	4	ɛlka
+Dylan	m	4	dɪlan
+Donald	m	4	dɔnalt
+Edgar	m	4	ɛdgar
+Doris	f	4	dɔrɪs
+Drahoslav	m	4	draɦɔslaf
+Dino	m	4	ɟɪnɔ
+Emila	f	4	ɛmɪla
+Joshua	m	4	jʔɔsɦʊa
+Johanka	f	4	jɔɦaŋka
+Khalid	m	4	kɦalɪt
+Leila	f	4	lɛɪla
+Kamilla	f	4	kamɪlla
+Julieta	f	4	juːlɪjɛta
+Kalina	f	4	kalɪna
+Judith	f	4	d͡ʒʊdɪtx
+Klaus	m	4	klaʊs
+Krištof	m	4	krɪʃtɔf
+Ksenia	f	4	ksɛnɪja
+Kvetoslava	f	4	kvɛtɔslava
+Lorenzo	m	4	lɔrɛnzɔ
+Ruzena	f	4	rʊzɛna
+Sabine	f	4	sabɪnɛ
+Susana	f	4	sʊsana
+Stana	f	4	stana
+Stanislava	f	4	staɲɪslava
+Stefanie	f	4	stɛfanɪjɛ
+Svata	f	4	svata
+Silva	f	4	sɪlva
+Silver	m	4	sɪlvɛr
+Slavka	f	4	slafka
+Sophie	f	4	sopɦɪjɛ
+Šarlota	f	4	ʃarlɔta
+Samir	m	4	samɪr
+Samer	m	4	samɛr
+Sami	m	4	samɪ
+Camilla	f	4	t͡samɪlla
+Camille	f	4	t͡samɪl
+Bert	m	4	bɛrt
+Beatriz	f	4	biːtrɪs
+Baruška	f	4	barʊʃka
+Clara	f	4	t͡slara
+Bibiana	f	4	bɪbɪjana
+Boleslaw	m	4	bɔlɛslɔː
+Branko	m	4	braŋkɔ
+Borivoj	m	4	bɔrɪvɔj
+Dalimil	m	4	dalɪmɪl
+Damien	m	4	damɪjɛn
+Cyprian	m	4	t͡sɪpr̩ɪan
+Casey	m	4	tsasɛɪ
+Darja	f	4	darja
+Daniella	f	4	danɪɛlla
+Ibrahim	m	4	ɪbraɦaːiːm
+Honorata	f	4	ɦɔnɔrata
+Ina	f	4	ɪna
+Inés	f	4	ɪnɛːs
+Inga	f	4	ɪŋga
+Hasan	m	4	ɦasan
+Jens	m	4	jɛns
+Jeronym	m	4	jɛrɔnɪm
+Janicka	f	4	jaɲɪt͡ska
+Janis	m	4	jaɲɪs
+Isabella	f	4	ɪzabɛla
+Ismail	m	4	ɪsmɛjl
+Iryna	f	4	ɪrɪna
+Jacques	m	4	ʒak
+Gina	f	4	d͡ʒɪna
+Giovanni	m	4	gɪjɔvanɲɪ
+Maxmilian	m	4	maksmɪlɪjan
+Martha	f	4	martɦa
+Maruška	f	4	marʊʃka
+Mathias	m	4	matɪjas
+Ludovit	m	4	lʊdɔvɪt
+Luigi	m	4	lʊjɪgɪ
+Luan	m	4	lʊan
+Luba	f	4	lʊba
+Marilyn	f	4	marɪjlɪn
+Margaret	f	4	margarɛt
+Milda	f	4	mɪlda
+Monia	f	4	mɔnɪja
+Milo	m	4	mɪlɔ
+Miloslava	f	4	mɪlɔslava
+Melissa	f	4	mɛlɪssa
+Melánia	f	4	mɛlaːnɪja
+Miguel	m	4	mɪgʊɛl
+Adil	m	4	aɟɪl
+Adina	f	4	aɟɪna
+Alain	m	4	alajɪn
+Adolf	m	4	adɔlf
+Antonina	f	4	antɔnɪna
+Antónia	f	4	antɔːɪja
+Alla	f	4	alla
+Alexandru	m	4	alɛksandrʊ
+Alexej	m	4	ʔalɛksɛj
+Aleksandar	m	4	jalɛksandar
+Aleksej	m	4	jalɛksɛj
+Amélie	f	4	amɛːlɪjɛ
+Anatolij	m	4	anatɔlɪj
+Andrejka	f	4	andrɛjka
+Norma	f	4	nɔrma
+Peggy	f	4	pɛkgɪ
+Philipp	m	4	pɛːɦaːɪlɪpp
+Nikolaj	m	4	nɪkɔlaj
+Noemí	f	4	nɔɛmiː
+Nicholas	m	4	ɲɪxɔlas
+Nino	m	4	ɲɪnɔ
+Nguyen	m	4	ŋgʊajɛn
+Natalja	f	4	natalja
+Nataly	f	4	natalɪ
+Natan	m	4	natan
+Raúl	m	4	rauːl
+Renia	f	4	rɛnɪja
+Radana	f	3	radana
+Raduš	m	3	radʊʃ
+Raja	f	3	raja
+Ralf	m	3	ralf
+Nella	f	3	nɛla
+Nelli	f	3	nɛllɪ
+Nikos	m	3	ɲɪkɔs
+Nico	m	3	ɲɪt͡sɔ
+Ornella	f	3	ʔɔrnɛlla
+Olena	f	3	ɔlɛna
+Paola	f	3	paɔla
+Otto	m	3	ɔtɔ
+Paloma	f	3	palɔma
+Natalija	f	3	natalɪja
+Nataša	f	3	nataʃa
+Neil	m	3	nɛɪl
+Nam	m	3	nam
+Renée	f	3	rɛnɛːjɛ
+Řehoř	m	3	r̝ɛɦɔr̝̊
+Danielle	f	3	danɪɛllɛ
+Danijel	m	3	danɪjjɛl
+Danka	f	3	daŋka
+Darko	m	3	darkɔ
+Cindy	f	3	t͡sɪndɪ
+Bartolomej	m	3	bartɔlɔmɛj
+Béatrice	f	3	bɛːʔatrɪt͡sɛ
+Benedikt	m	3	bɛnɛdɪkt
+Béla	f	3	bɛːla
+Charlotte	f	3	xarlɔttɛ
+Boguslawa	f	3	bɔgʊslavɛː
+Cynthia	f	3	t͡sɪntɪja
+Daisy	f	3	dajsɪ
+Damir	m	3	damɪr
+Linh	f	3	lɪnx
+Lía	f	3	liːa
+Liba	f	3	lɪba
+Lília	f	3	liːlɪja
+Lilian	f	3	lɪlɪjan
+Louise	f	3	lɔʊ̯ɪsɛ
+Leonid	m	3	lɛɔnɪt
+Lars	m	3	lars
+Josefa	f	3	jɔzɛfa
+Jonatan	m	3	jɔnatan
+Kostas	m	3	kɔstas
+Krista	f	3	krɪsta
+Kay	f	3	kaɪ
+Katja	f	3	katja
+Jovana	f	3	jɔvana
+Julianna	f	3	juːlɪjanna
+Jurgen	m	3	jʊrgɛn
+Zdislava	f	3	zɟɪslava
+Zoé	f	3	sʔɔjɛː
+Zoltán	m	3	zɔltaːn
+Zoran	m	3	zɔran
+Torsten	m	3	tɔrstɛn
+Tristan	m	3	trɪstan
+Vena	f	3	vɛna
+Vendulka	f	3	vɛndʊlka
+Viktorija	f	3	vɪktɔrɪjja
+Viet	m	3	vjɛt
+Viviana	f	3	vɪvɪjana
+Vjačeslav	m	3	vjat͡ʃɛslaf
+Timothy	m	3	tɪmɔtɦɪ
+Timur	m	3	tɪmʊr
+Theodora	f	3	tɛɔdɔra
+Erich	m	3	ɛrɪx
+Enrique	m	3	jɛnrɪjkjɛ
+Eugen	m	3	ʔɛʊ̯gɛn
+Emilian	m	3	ɛmɪlɪjan
+Émilie	f	3	ɛːmɪjlɪjɛ
+Ernesto	m	3	ɛrnɛstɔ
+Gaby	f	3	gabɪ
+Gaja	f	3	gaja
+Gábor	m	3	gaːbɔr
+Georgi	m	3	d͡ʒɔːrd͡ʒɪ
+Fadi	m	3	faɟɪ
+Fady	m	3	fadɪ
+Evelyn	f	3	ʔɛvɛlɪn
+Evicka	f	3	ɛvɪt͡ska
+Františka	f	3	francɪʃka
+Dobra	f	3	dɔbra
+Deniz	u	3	dɛnɪs
+Ella	f	3	ɛlla
+Elvira	f	3	ɛlvɪra
+Eleonora	f	3	ɛlɛɔnɔra
+Egon	m	3	ɛgɔn
+Eduarda	f	3	ɛdʊarda
+Dragana	f	3	dragana
+Drahomir	m	3	draɦɔmɪr
+Sandro	m	3	sandrɔ
+Salvatore	m	3	salvatɔrɛ
+Sonja	f	3	sɔnja
+Silvio	m	3	sɪlvɪjɔ
+Slavo	m	3	slavɔ
+Rupert	m	3	rʊpɛrt
+Roxana	f	3	rɔksana
+Rozália	f	3	rɔzaːlɪja
+Said	m	3	sajt
+Susanna	f	3	sʊsanna
+Stela	f	3	stɛla
+Suzan	f	3	sʊzan
+Svatava	f	3	svatava
+Svitlana	f	3	svɪtlana
+Scarlett	f	3	st͡sarlɛtt
+Sébastien	m	3	sɛːbastɪjɛn
+Sharon	f	3	ʃejrɔn
+Sheila	f	3	sɦajla
+Rosa	f	3	rɔsa
+Rosalía	f	3	rɔːzaliːa
+Roméo	m	3	rɔmɛːɔ
+Ron	m	3	rɔn
+Ammar	m	3	ammar
+Anetta	f	3	anɛtta
+Adrien	m	3	adrɪjɛn
+Adriena	f	3	adrɪjɛna
+Áron	m	3	jaːrɔn
+Armen	m	3	armɛn
+Astrid	f	3	astrɪt
+Alfred	m	3	alfrɛt
+Annette	f	3	annɛttɛ
+Anny	f	3	annɪ
+Antonie	f	3	antɔnɪjɛ
+Augustin	m	3	ʔaʊ̯gʊstɪn
+Attila	m	3	aːtɛːcɪla
+Gita	f	3	gɪta
+Gleb	m	3	glɛp
+Glória	f	3	glɔːrɪja
+Guillermo	m	3	gʊɪllɛrmɔ
+Grant	m	3	grant
+Holger	m	3	ɦɔlgɛr
+Helga	f	3	ɦɛlga
+Herman	m	3	ɦɛrman
+Héctor	m	3	ɦɛːt͡stɔr
+Ilse	f	3	ɪlsɛ
+Ignác	m	3	ɪgnaːt͡s
+Hanan	f	3	ɦanan
+Hanicka	f	3	ɦaɲɪt͡ska
+Gustaw	m	3	gʊstav
+Hanus	m	3	ɦanʊs
+Inka	f	3	ɪŋka
+Iris	f	3	ɪrɪs
+Irma	f	3	ɪrma
+Isabel	f	3	ɪzabɛl
+Jiřík	m	3	jɪr̝iːk
+Jita	f	3	jɪta
+Joachim	m	3	jɔaxɪm
+Jessika	f	3	jɛssɪka
+Jaqueline	f	3	jakɛlɪnɛ
+Melina	f	3	mɛlɪna
+Mihai	m	3	mɪɦajɪ
+Lýdia	f	3	liːdɪja
+Lucja	f	3	lʊt͡sja
+Lubo	m	3	lʊbɔ
+Lubomira	f	3	lʊbɔmɪra
+Massimo	m	3	masɪmɔ
+Maša	f	3	maʃa
+Matylda	f	3	matɪlda
+Mykola	m	3	mɪkɔla
+Nadine	f	3	naɟɪnɛ
+Mina	f	3	mɪna
+Mona	f	3	mɔna
+Mari	f	3	marɪ
+Marietta	f	3	marɪɛtta
+Marion	u	3	marɪjɔn
+Mariam	f	3	marɪjam
+Manuela	f	3	manʊɛla
+Marcelka	f	3	mart͡sɛlka
+Marcella	f	3	mart͡sɛlla
+Mandy	f	3	mandɪ
+Manfred	m	3	manfrɛt
+Mahmoud	m	2	maɦmɔʊ̯t
+Maik	m	2	mɛjk
+Marcello	m	2	mart͡sɛllɔ
+Matti	m	2	matcɪ
+Maurice	m	2	maʊ̯rɪt͡sɛ
+Maurizio	m	2	maʊ̯rɪzɪjɔ
+Maryla	f	2	mɛrɪlɛ
+Maryna	f	2	marɪna
+Matías	m	2	maciːas
+Mercedes	f	2	mɛrt͡sɛdɛs
+Méri	f	2	mɛːrɪ
+Médard	m	2	mɛːdart
+Michail	m	2	mɪxajɪl
+Michalis	m	2	mɪxalɪs
+Metoděj	m	2	mɛtɔɟɛj
+Lubov	f	2	lʊbɔf
+Mabel	f	2	mabɛl
+Madeleine	f	2	madɛlɛɪnɛ
+Lutz	m	2	luːts
+Lydie	f	2	lɪdɪjɛ
+Lucián	m	2	lʊt͡sɪaːn
+Lucien	m	2	lʊt͡sɪjɛn
+Luďka	f	2	lʊcka
+Margit	f	2	margɪt
+Marjan	m	2	marjan
+Marlene	f	2	marlɛnɛ
+Marieta	f	2	marɪjɛta
+Mariette	f	2	marɪɛttɛ
+Marijan	m	2	marɪjan
+Marin	m	2	marɪn
+Myra	f	2	mɪra
+Miron	m	2	mɪrɔn
+Mladen	m	2	mladɛn
+Mikola	m	2	mɪkɔla
+Milca	f	2	mɪlt͡sa
+Domenico	m	2	dɔmɛɲɪt͡sɔ
+Dominique	u	2	dɔmɪnɪjkjɛ
+Dona	f	2	dɔna
+Edith	f	2	ɛdɪtx
+Edmond	m	2	ɛdmɔnd
+Duong	m	2	dʊɔng
+Federico	m	2	fɛdɛriːt͡sɔ
+Fabien	m	2	fabiːn
+Fabrizio	m	2	fabrɪzɪjɔ
+Eugénia	f	2	ʔɛʊ̯gjɛːnajɛj
+Eveline	f	2	ʔɛvɛlɪnɛ
+Evgenia	f	2	ʔɛvgɛnɪja
+Evgenija	f	2	ʔɛvgɛnɪjja
+Faruk	m	2	farʊk
+Erol	m	2	ɛrɔl
+Ervin	m	2	ɛrvɪn
+Érica	f	2	ɛːrɪtsa
+Émile	f	2	ɛːmɪjlɛ
+Emilio	m	2	ɛmɪlɪjɔ
+Emilka	f	2	ɛmɪlka
+Georges	m	2	d͡ʒɔrt͡ʃs
+Georgij	m	2	gɛɔrgɪj
+Gerda	f	2	gɛrda
+Gergely	m	2	gɛrgɛlɪ
+Gerhard	m	2	gɛrɦart
+Elizaveta	f	2	ɛlɪzavɛta
+Elke	f	2	ɛlkɛ
+Elli	f	2	ɛllɪ
+Elza	f	2	ɛlza
+Elly	f	2	ɛllɪ
+Eliana	f	2	ɛlɪjana
+Frédéric	m	2	frɛːdɛːrɪt͡s
+Friederike	f	2	frɪjɛdɛrɪkɛ
+Franco	m	2	frant͡sɔ
+Francois	m	2	frant͡soɪs
+Dimitri	m	2	dɪmɪstr̩ɪ
+Dimitrios	m	2	dɪmɪstr̩ɪɔs
+Dieter	m	2	dɪjɛtr̩
+Jovan	m	2	jɔvan
+Kai	m	2	kaj
+Jurij	m	2	jʊrɪjj
+Justina	f	2	jʊscɪna
+Julien	m	2	juːlɪjɛn
+Johannes	m	2	jɔɦanɛs
+Joaquín	m	2	jɔakiːn
+Long	m	2	lɔŋk
+Lora	f	2	lɔːra
+Liane	f	2	lɪjanɛ
+Libuška	f	2	lɪbʊʃka
+Lidka	f	2	lɪtka
+Lili	f	2	lɪlɪ
+Liliane	f	2	lɪlɪjanɛ
+Lilija	f	2	lɪlɪja
+Lilly	f	2	lɪliː
+Léonard	m	2	lɛːɔnard
+Lev	m	2	lɛf
+Larisa	f	2	larɪsa
+Karim	m	2	karɪm
+Karoline	f	2	karɔlɪŋjɛ
+Katharina	f	2	katɦarɪna
+Katherina	f	2	katɛrɪna
+Kiril	m	2	kɪrɪl
+Kimberly	f	2	kɪmbɛrlɪ
+Kristijan	m	2	krɪstɪjjan
+Kristine	f	2	krɪscɪnɛ
+Kristinka	f	2	krɪstɪŋka
+Kryspin	m	2	krɪspɪn
+Kitty	f	2	kɪttɪ
+Kurt	m	2	kʊrt
+Lan	f	2	lan
+Laila	f	2	laɪla
+Kole	m	2	kɔlɛ
+Koloman	m	2	kɔlɔman
+Kora	f	2	kɔra
+Riad	m	2	rɪjat
+Riccardo	m	2	rɪjt͡st͡sardɔ
+Renek	m	2	rɛnɛk
+Renné	m	2	rɛnɛː
+Renat	m	2	rɛnat
+Odetta	f	2	ɔdɛtta
+Olympia	f	2	ɔlɪmpɪja
+Ondráš	m	2	ɔndraːʃ
+Olin	m	2	jɔlin
+Olina	f	2	ɔlɪna
+Olivier	m	2	ɔlɪvɪɛr
+Rainer	m	2	raɪnɛr
+Raísa	f	2	raiːsa
+Ralph	m	2	ralpɛːɦaː
+Rania	f	2	ranɪja
+Ragnar	m	2	ragnar
+Rana	f	2	rana
+Nga	f	2	ŋga
+Noah	m	2	nɔaɦ
+Nicolette	f	2	ɲɪt͡sɔlɛttɛ
+Nicolle	f	2	ɲɪt͡sɔl
+Nasta	f	2	nasta
+Nathaly	f	2	natɦalɪ
+Naomi	f	2	naɔmɪ
+Neha	f	2	nɛɦa
+Predrag	m	2	prɛdra
+Petro	m	2	pɛtrɔ
+Petros	m	2	pɛtrɔs
+Oxana	f	2	ɔksana
+Pavlinka	f	2	[pavlɪŋka
+Pascal	m	2	paskal
+Patrício	m	2	patriːt͡sɪjɔ
+Patrizia	f	2	patrɪzɪja
+Daja	f	2	daja
+Dag	m	2	dag
+Corinne	f	2	tsɔrɪnɛ
+Ctibor	m	2	t͡scɪbɔr
+Constantin	m	2	kɔnztancɪn
+Brigita	f	2	brɪgɪta
+Bronislava	f	2	brɔɲɪslava
+Camilo	m	2	t͡samɪlɔ
+Bystrík	m	2	bɪstriːk
+Déborah	f	2	dɛːbɔrax
+Danuse	f	2	danʊsɛ
+Delia	f	2	dɛlɪja
+Dejan	m	2	dɛjan
+Dášenka	f	2	daːʃɛŋka
+Christoph	m	2	xrɪstɔpɛːɦaː
+Christos	m	2	xrɪstɔs
+Borislav	m	2	bɔrɪslaf
+Blahoslav	m	2	blaɦɔslaf
+Bohouš	m	2	bɔɦɔʊ̯ʃ
+Bohumila	f	2	bɔɦʊmɪla
+Bohunka	f	2	bɔɦʊŋka
+Bohuslava	f	2	bɔɦʊslava
+Boleslav	m	2	bɔlɛslaf
+Bekim	m	2	bɛkɪm
+Bernhard	m	2	bɛrnɦart
+Berta	f	2	bɛrta
+Benny	m	2	bɛnnɪ
+Chantal	f	2	xantal
+Cecylia	f	2	t͡sɛtsɪlɪja
+Thea	f	2	tɛa
+Therese	f	2	tɦɛrɛsɛ
+Theresia	f	2	tɦɛrɛsɪa
+Tinka	f	2	cɪŋka
+Tino	m	2	cɪnɔ
+Tímea	f	2	ciːmɛa
+Teodor	m	2	tɛɔdɔr
+Tomy	m	2	tɔmɪ
+Zofie	f	2	zɔfɪjɛ
+Yvona	f	2	ɪvɔna
+Zina	f	2	zɪna
+Zdenička	f	2	zdɛɲɪt͡ʃka
+Zdeno	m	2	zdɛnɔ
+Xena	f	2	ksɛna
+Xénia	f	2	ksjɛːnɪja
+Xenie	f	2	ksɛnɪjɛ
+Yann	m	2	ɪann
+Sylvia	f	2	sɪlvɪja
+Tara	f	2	tara
+Werner	m	2	vɛrnɛr
+Vivian	f	2	vɪvɪjan
+Vsevolod	m	2	fsɛvɔlɔt
+Walther	m	2	valtɛr
+Trung	m	2	trʊŋg
+Uljana	f	2	ʊljana
+Ulla	f	2	ʊlla
+Urban	m	2	ʊrban
+Verona	f	2	vɛrɔna
+Veroslav	m	2	vɛrɔslaf
+Valentino	m	2	valɛntɪnɔ
+Viera	f	2	vjra
+Vasilij	m	2	vasɪlɪjj
+Veda	f	2	vɛda
+Janet	f	2	janɛt
+Janetta	f	2	janɛtta
+Jano	m	2	janɔ
+Jakob	m	2	jakɔp
+Jamal	m	2	jamal
+Jasmine	f	2	jasmɪnɛ
+Huy	m	2	ɦʊɪ
+Ilija	m	2	ɪlɪja
+Humberto	m	2	ɦʊmbɛrtɔ
+Inez	f	2	ɪnɛs
+Gisela	f	2	gɪsɛla
+Gréta	f	2	grɛːta
+Heidi	f	2	ɦajdɪ
+Hela	f	2	ɦɛla
+Hoang	m	2	ɦɔaŋg
+Hermina	f	2	ɦɛrmɪna
+Helmut	m	2	ɦɛlmʊt
+Henri	m	2	ɦɛnr̩ɪ
+Jevgenij	m	2	jɛvgɛnɪj
+Jena	f	2	jɛna
+Jirinka	f	2	jɪrɪŋka
+Jerguš	m	2	jɛrgʊʃ
+Ha	u	2	ɦa
+Iren	m	2	ɪrɛn
+Irenka	f	2	ʔɪrɛnka
+Isabelle	f	2	ɪzabɛl
+Ivetka	f	2	ɪvɛtka
+Ivica	u	2	ɪvɪtsa
+Rosana	f	2	rɔsana
+Rosalie	f	2	rɔsalɪjɛ
+Romanka	f	2	rɔmanka
+Romuald	m	2	rɔmʊalt
+Rona	f	2	rɔna
+Rozalie	f	2	rɔzalɪjɛ
+Ruslana	f	2	rʊslana
+Rudi	m	2	rʊɟɪ
+Sascha	m	2	sasxa
+Saskia	f	2	saskɪa
+Sandy	f	2	sandɪ
+Samanta	f	2	samanta
+Saleh	m	2	salɛx
+Salim	m	2	salɪm
+Salomé	f	2	sʔalɔmɛː
+Silvana	f	2	sɪlvana
+Siméon	m	2	sɪjmɛːjɔn
+Sorin	m	2	sɔrɪn
+Solange	f	2	sɔlaŋgɛ
+Son	m	2	sɔn
+Sláva	u	2	slaːva
+Slavoj	m	2	slavɔj
+Sigmund	m	2	sɪgmʊnd
+Steffen	m	2	stɛffɛn
+Suzana	f	2	sʊzana
+Svatoslav	m	2	svatɔslaf
+Svetoslav	m	2	svɛtɔslaf
+Serena	f	2	sɛrɛna
+Serge	m	2	sɛrgɛ
+Selma	f	2	sɛlma
+Senta	f	2	sɛnta
+Augusto	m	2	aʊ̯gʊstɔ
+Abdul	m	2	ʔabdʊl
+Adham	m	2	adɦam
+Amal	f	2	amal
+Amar	m	2	amar
+Andrée	f	2	andrɛːjɛ
+Anastazie	f	2	anastazɪjɛ
+Adnan	m	2	adnan
+Adriane	f	2	adrɪanjɛ
+Adrienne	f	2	adrɪjɛnnɛ
+Apolena	f	2	apɔlɛna
+Anh	u	2	anɦ
+Anika	f	2	anɪka
+Anni	f	2	anɲɪ
+Antony	m	2	antɔnɪ
+Annaliese	f	2	analɪɛsɛ
+Asen	m	2	asɛn
+Ardian	m	2	ardɪjan
+Ariana	f	2	ʔarijana
+Arina	f	2	arɪna
+Arlena	f	2	arlɛna
+Arleta	f	2	arlɛta
+Arlette	f	2	ʔarlɛttɛ
+Armand	m	2	armand
+Arne	m	2	arnɛ
+Albín	m	2	albiːn
+Alda	f	2	alda
+Alia	f	2	alɪja
+Alojz	m	2	alɔjz
+Alessandra	f	2	ʔalɛssandra
+Alessio	m	2	ʔalɛssɪɔ
+Stanislawa	f	2	staɲɪslavɛː
+Bronislaw	m	2	brɔɲɪslɔː
+Alen	m	1	alɛn
+Alevtina	f	1	alɛvcɪna
+Alexandar	m	1	alɛksandar
+Alma	f	1	alma
+Aloisia	f	1	ʔalɔɪ̯zɪja
+Alphonse	m	1	alpɦɔnzɛ
+Alica	f	1	alɪka
+Alida	f	1	alɪda
+Allen	m	1	allɛn
+Alva	f	1	alva
+Alvin	m	1	alvɪn
+Alexandros	m	1	alɛksandrɔs
+Alexia	f	1	alɛksɪja
+Alfonz	m	1	alfɔns
+Albrecht	m	1	albrɛxt
+Anselma	f	1	ansɛlma
+Antoaneta	f	1	antɔanɛta
+Antonis	m	1	antɔnɪs
+Ani	f	1	ʔaɲɪ
+Anica	f	1	aɲɪtsa
+Aniela	f	1	anɪɛla
+Anina	f	1	aɲɪna
+Anis	m	1	anɪz
+Anisa	f	1	anɪza
+Apolonia	f	1	ʔapɔlɔnɪa
+Aram	m	1	aram
+Annamária	f	1	anamaːrɪja
+Anneliese	f	1	annɛlɪjɛsɛ
+Annemarie	f	1	annɛmarɪjɛ
+Aida	f	1	aɪda
+Agnesa	f	1	ʔagnɛsa
+Agneta	f	1	agnɛta
+Agustín	m	1	agʊ̯sciːn
+Adléta	f	1	adlɛːta
+Adolfo	m	1	adɔlfɔ
+Adria	f	1	adrɪja
+Adrienna	f	1	adrɪjɛnna
+Aisha	f	1	ajɪsɦa
+Afrim	m	1	afrɪm
+Agatha	f	1	agatɦa
+Akim	m	1	akɪm
+Akram	m	1	akram
+Adelheid	f	1	adɛlɦajt
+Adelina	f	1	adɛlɪna
+Abigail	f	1	abɪgajl̩
+Adalbert	m	1	adalbɛrt
+Ayse	f	1	ɛjsɛ
+Azra	f	1	azra
+Axel	m	1	aksl̩
+August	m	1	aʊ̯gʊst
+Augusta	f	1	aʊ̯gʊsta
+Augustyn	m	1	aʊ̯gʊstɪn
+Aurélia	f	1	ʔaʊ̯rɛːlɪja
+Aurora	f	1	ʔaʊ̯rɔra
+Atanas	m	1	atanas
+Aylin	f	1	ɛjlɪn
+Asja	f	1	asja
+Assem	m	1	assɛm
+Árpád	m	1	aːrpaːt
+Artemis	f	1	ʔartɛmɪs
+Artus	m	1	artʊs
+Arlen	f	1	arlɛn
+Arletta	f	1	ʔarlɛta
+Armando	m	1	armandɔ
+Armin	m	1	armɪn
+Ariadna	f	1	ʔarijadna
+Arif	m	1	arɪf
+Amós	m	1	amɔːs
+András	m	1	andraːs
+Amela	f	1	amɛla
+Amin	m	1	amɪn
+Amina	f	1	amɪna
+Amália	f	1	amaːlɪja
+Anas	m	1	anas
+Anatolie	f	1	anatɔlɪjɛ
+Andela	f	1	andɛla
+Dirk	m	1	dɪrk
+Ditta	f	1	dɪtta
+Dimitre	m	1	dɪmɪstrɛ
+Dimitris	m	1	dɪmɪstr̩ɪs
+Dinah	f	1	dɪnax
+Dine	m	1	ɟɪnɛ
+Dietmar	m	1	dɪjɛtmar
+Elmer	m	1	ɛlmɛr
+Elmira	f	1	ɛlmɪra
+Elsa	f	1	ɛlsa
+Else	f	1	ɛlsɛ
+Elvis	m	1	ɛlvɪs
+Eman	m	1	ɛman
+Elen	f	1	ɛlɛn
+Eleni	f	1	ɛlɛɲɪ
+Elfi	f	1	ɛlfɪ
+Eliane	f	1	ɛlɪjanɛ
+Elías	m	1	ɛliːas
+Elida	f	1	ɛlɪda
+Eligia	f	1	ɛlɪgɪja
+Elina	f	1	ɛlɪna
+Elinor	f	1	ɛlɪnɔr
+Elisabet	f	1	ɛlɪsabɛt
+Elisabetta	f	1	ɛlɪsabɛtta
+Elizabet	f	1	ɛlɪzabɛt
+Gastón	m	1	gastɔːn
+Gerta	f	1	gɛrta
+Gerti	f	1	gɛrcɪ
+Gertruda	f	1	gɛrtrʊda
+Gertrude	f	1	gɛrtrʊdɛ
+Georgina	f	1	d͡ʒɔːrd͡ʒɪna
+Georgios	m	1	d͡ʒɔːrd͡ʒɪɔs
+Gérald	m	1	gɛːralt
+Gerd	m	1	gɛrt
+Gaia	f	1	gaɪja
+Georgia	f	1	d͡ʒɔrd͡ʒa
+Friedrich	m	1	frɪjɛdrɪx
+Fritz	m	1	frɪts
+Fryderyk	m	1	frɪdɛrɪk
+Gabriele	u	1	gabr̩ɪɛljɛ
+Gejza	m	1	gɛjza
+Fana	f	1	fana
+Evelyna	f	1	ʔɛvɛlɪna
+Evelyne	f	1	ʔɛvɛlɪnɛ
+Evza	f	1	ɛvza
+Evženie	f	1	ɛvʒɛnɪɛ
+Federica	f	1	fɛdɛrɪt͡sa
+Fanny	f	1	fannɪ
+Dorothea	f	1	dɔrɔtɛa
+Dorotka	f	1	dɔrɔtka
+Doubravka	f	1	dɔʊ̯brafka
+Dragan	m	1	draan
+Drahuš	m	1	draɦʊʃ
+Donát	m	1	dɔnaːt
+Donata	f	1	dɔnata
+Donna	f	1	dɔna
+Edit	f	1	ɛɟɪt
+Edmund	m	1	ɛdmʊnd
+Edon	m	1	ɛdɔn
+Džamila	f	1	d͡ʒamɪla
+Duc	m	1	dʊt͡s
+Dobromir	m	1	dɔbrɔmɪr
+Dobroslav	m	1	dɔbrɔslaf
+Dolores	f	1	dɔlɔrɛs
+Dominick	m	1	dɔmɪnɪk
+Frances	f	1	frant͡sɛs
+Francesca	f	1	frant͡sɛːztsa
+Franciska	f	1	frant͡sɪska
+Franjo	m	1	franjɔ
+Frans	m	1	frans
+Florence	f	1	flɔrɛnt͡sɛ
+Ferko	m	1	fɛrkɔ
+Fernand	m	1	fɛrnant
+Filippo	m	1	fɪlɪppɔ
+Franziska	f	1	franzɪska
+Frederik	m	1	frɛdɛrɪk
+Frederika	f	1	frɛdɛrɪka
+Fredy	m	1	frɛdɪ
+Fridolin	m	1	fr̩ɪdɔlɪn
+Estela	f	1	ɛstɛla
+Estera	f	1	ɛstɛra
+Emiliana	f	1	ɛmɪlɪjana
+Emine	f	1	ɛmɪnɛ
+Emir	m	1	ɛmɪr
+Eryka	f	1	ɛrɪka
+Esmeralda	f	1	ʔɛsmɛralda
+Emmy	f	1	ɛmmɪ
+Ena	f	1	jɛna
+Erna	f	1	ɛrna
+Ernestina	f	1	ɛrnɛscɪna
+Ernst	m	1	ɛrnst
+Erwin	m	1	ɛrvɪn
+Enrico	m	1	jɛnriːt͡sɔ
+Minh	m	1	mɪnx
+Mircea	m	1	mɪrt͡sɛa
+Mitko	m	1	mɪtkɔ
+Mlada	f	1	mlada
+Mirela	f	1	mɪrɛla
+Miriama	f	1	mɪrɪjama
+Mirjana	f	1	mɪrjana
+Miklós	m	1	mɪklɔːs
+Milica	f	1	mɪlɪtsa
+Milka	f	1	mɪlka
+Milon	m	1	mɪlɔn
+Milous	m	1	mɪlɔʊ̯s
+Milton	m	1	mɪltɔn
+Marino	m	1	marɪnɔ
+Mariska	f	1	marɪska
+Marita	f	1	marɪta
+Marka	f	1	marka
+Marla	f	1	marla
+Marlen	f	1	marlɛn
+Mariane	f	1	marɪjanɛ
+Marianne	f	1	marɪjannɛ
+Marica	f	1	marɪt͡sa
+Mariela	f	1	marɪjɛla
+Margaretta	f	1	margarɛtta
+Marguerite	f	1	margʊɛrɪtɛ
+Lujza	f	1	lʊjza
+Lukac	m	1	lʊkat͡s
+Lucius	m	1	lʊt͡sɪʊs
+Lucrezia	f	1	lʊt͡srɛzɪja
+Ludovika	f	1	lʊdɔvɪka
+Ludwig	m	1	lʊdvɪg
+Madla	f	1	madla
+Martine	f	1	marcɪnɛ
+Marus	f	1	marʊs
+Mazen	m	1	mazɛn
+Maryam	f	1	marɪjam
+Mattia	m	1	mattɪa
+Malvina	f	1	malvɪna
+Mai	f	1	mɛj
+Majed	m	1	majɛt
+Nabil	m	1	nabɪl
+Nadeje	f	1	nadɛjɛ
+Nadja	f	1	nadja
+Myriam	f	1	mɪrɪjam
+Myron	m	1	mɪrɔn
+Moris	m	1	mɔrɪs
+Mihailo	m	1	m̩ɪɦajlɔ
+Michela	f	1	mɪxɛla
+Melinda	f	1	mɛlɪnda
+Melisa	f	1	mɛlɪsa
+Melitta	f	1	mɛlɪtta
+Merlin	m	1	mɛrlɪn
+Meda	f	1	mɛda
+Ivar	m	1	ɪvar
+Ivor	m	1	ɪvɔr
+Irmina	f	1	ɛːrm̩ɪna
+Ismael	m	1	jɪzmaɛl
+Issam	m	1	ɪsam
+Jesica	f	1	jɛsɪkaː
+Jesika	f	1	jɛsɪka
+Jeny	f	1	jɛnɪ
+Jeremías	m	1	jɛrɛmiːas
+Jekaterina	f	1	jɛkatɛrɪna
+Jelizaveta	f	1	jɛlɪzavɛta
+Jessie	f	1	jɛsɪjɛ
+Jevgenija	f	1	jɛvgɛnɪjja
+Jeana	f	1	jɛana
+Jeanetta	f	1	jɛanɛtta
+Jeanette	f	1	jɛanɛttɛ
+Jitřenka	f	1	jɪtr̝̊ɛŋka
+Jituška	f	1	jɪtʊʃka
+Henrich	m	1	ɦɛnrɪx
+Henrietta	f	1	ɦɛrɪjetta
+Henriette	f	1	ɦɛrɪjettɛ
+Henrik	m	1	ɦɛrɪk
+Henryka	f	1	ɦɛnrɪka
+Hicham	m	1	ɦɪxam
+Hiep	m	1	ɦɪjɛp
+Hilda	f	1	ɦɪlda
+Hilde	f	1	ɦɪldɛ
+Hildegarde	f	1	ɦaːiːldɛgardɛ
+Hedwig	f	1	ɦɛdvɪg
+Heidrun	f	1	ɦajdrʊn
+Heinz	m	1	ɦajns
+Helene	f	1	ɦɛlɛnɛ
+Hassan	m	1	hasan
+Immanuel	m	1	ʔɪmmanʊɛl
+Imre	m	1	ɪmrɛ
+Imrich	m	1	ʔɪmrɪx
+Inessa	f	1	ɪnɛsa
+Hung	m	1	ɦʊŋg
+Huong	f	1	ɦʊjɔng
+Iliana	f	1	ɪlɪjana
+Ilir	m	1	ɪlɪr
+Ilka	f	1	ɪlka
+Ilza	f	1	ɪlza
+Imelda	f	1	ɪmɛlda
+Ignat	m	1	ɪgnat
+Horác	m	1	ɦɔraːt͡s
+Horst	m	1	ɦɔrst
+Houssam	m	1	ɦɔʊ̯ssam
+Iboja	f	1	ɪbɔja
+Jamil	m	1	jamɪl
+Janine	f	1	jaɲɪnɛ
+Janna	f	1	janna
+Jannis	m	1	jannɪs
+Januš	m	1	janʊʃ
+Jarmil	m	1	jarmɪl
+Jarmilka	f	1	jarmɪlka
+Jaros	m	1	jarɔs
+Jaruska	f	1	jarʊska
+Jasmin	u	1	jasmɪn
+Janette	f	1	janɛttɛ
+Gusta	f	1	gʊsta
+Halka	f	1	ɦalka
+Hamid	m	1	ɦamɪt
+Hani	m	1	ɦaɲɪ
+Harold	m	1	ɦarɔlt
+Guido	m	1	gʊɪdɔ
+Gregorij	m	1	grɛgɔrɪʲj
+Griselda	f	1	grɪzɛlda
+Gianluca	m	1	gɪjanlʊt͡sa
+Gilbert	m	1	gɪlbɛrt
+Gordana	f	1	gɔrdana
+Gottfried	m	1	gɔtfrɪjɛt
+Gracian	m	1	grat͡sɪan
+Gino	m	1	gɪnɔ
+Giorgia	f	1	gɪjɔrd͡ʒa
+Viktora	f	1	vɪktɔra
+Vilko	m	1	vɪlkɔ
+Vincenc	m	1	vɪnt͡sɛnt͡s
+Valdemar	m	1	valdɛmar
+Valeri	m	1	valɛrɪ
+Valerij	m	1	valɛrɪj
+Valeska	f	1	valɛska
+Valika	f	1	valɪka
+Valina	f	1	valɪna
+Vally	f	1	valiː
+Varvara	f	1	varvara
+Vasile	m	1	vasɪlɛ
+Verena	f	1	vɛrɛna
+Veruska	f	1	vɛrʊska
+Veselin	m	1	vɛsɛlɪn
+Veslav	m	1	vɛslaf
+Vesna	f	1	vɛsna
+Vasilina	f	1	vasɪlɪna
+Vasilis	m	1	vasɪlɪs
+Velička	f	1	vɛlɪt͡ʃka
+Velimir	m	1	vɛlɪmɪr
+Věnek	m	1	vjɛnɛk
+Violeta	f	1	vɪɔlɛta
+Violka	f	1	vɪjɔlka
+Vira	f	1	vɪra
+Virgil	m	1	vɪrd͡ʒiːl
+Virgínia	f	1	vɪjrgiːnajɛj
+Toma	m	1	tɔma
+Tomes	m	1	tɔmɛs
+Tomislav	m	1	tɔmɪslaf
+Thuy	m	1	tuːɪ
+Timoteus	m	1	tɪmɔtɛʊs
+Thanh	m	1	tɦanɦ
+Theodoros	m	1	tɛɔdɔrɔs
+Todor	m	1	tɔdɔr
+Wladyslawa	f	1	vladɪslavɛː
+Wieslav	m	1	vɪʔɛslaf
+Wilhelmine	f	1	vɪlɦɛlmɪnɛ
+Wiliam	m	1	vɪlɪjam
+Wilibald	m	1	vɪlɪbalt
+Wael	m	1	vaɛl
+Waleska	f	1	vɛlska
+Wally	f	1	valiː
+Willi	m	1	vɪlɪ
+Viviane	f	1	vɪvɪjanɛ
+Vivien	f	1	vɪvɪjɛn
+Vladana	f	1	vladana
+Vladěnka	f	1	vlaɟɛŋka
+Vladko	m	1	vlatkɔ
+Vojmír	m	1	vɔjmiːr
+Volker	m	1	vɔlkr̩
+Volkmar	m	1	vɔlkmar
+Vuk	m	1	vʊk
+Zvonimir	m	1	zvɔɲɪmɪr
+Zyta	f	1	zɪta
+Yasmine	f	1	ɪasmɪnɛ
+Yassine	m	1	ɪassɪnɛ
+Zara	f	1	zara
+Zavis	m	1	zavɪs
+Zdirad	m	1	zɟɪrat
+Ziad	m	1	zɪjat
+Zivan	m	1	zɪvan
+Zlatan	m	1	zlatan
+Zlatko	m	1	zlatkɔ
+Zlatuše	f	1	zlatʊʃɛ
+Zlatuška	f	1	zlatʊʃka
+Zoi	f	1	zɔɪ
+Zoja	f	1	zɔja
+Zorana	f	1	zɔrana
+Zorka	f	1	zɔrka
+Zsolt	m	1	ssɔlt
+Željko	m	1	ʒɛljkɔ
+Zelmira	f	1	zɛlmɪra
+Zena	f	1	zɛna
+Yveta	f	1	ɪvɛta
+Yvetta	f	1	ɪvɛtta
+Tung	m	1	tʊŋg
+Ulrika	f	1	ʊlrɪka
+Trang	f	1	traŋg
+Ute	f	1	ʔʊtɛ
+Uwe	m	1	ʊvɛ
+Udo	m	1	ʊdɔ
+Tamar	f	1	tamar
+Tamer	m	1	tamɛr
+Tanasis	m	1	tanazɪs
+Tarek	m	1	tarɛk
+Teddy	m	1	tɛdɪ
+Osman	m	1	ɔsman
+Patrice	m	1	patrɪt͡sɛ
+Pantelis	m	1	pantɛlɪs
+Paolo	m	1	paɔlɔ
+Otta	m	1	ɔtta
+Pavlos	m	1	pavlɔs
+Narek	m	1	narɛk
+Nicoletta	f	1	ɲɪt͡sɔlɛtta
+Niké	f	1	ɲɪkɛː
+Nhung	f	1	nɦʊŋg
+Nicolae	m	1	ɲɪtsɔlajɛ
+Nikolaos	m	1	nɪkɔlaɔs
+Nikoleta	f	1	ɲɪkɔlɛta
+Nikoletta	f	1	ɲɪkɔlɛta
+Nizar	m	1	nɪzar
+Nevena	f	1	nɛvɛna
+Ngoc	f	1	ŋgɔt͡s
+Nona	f	1	nɔna
+Nonna	f	1	nɔna
+Olav	m	1	ɔlaf
+Oldřiška	f	1	ʔɔldr̝ɪʃka
+Olimpia	f	1	ɔlɪmpɪja
+Olinka	f	1	ɔlɪŋka
+Oliva	f	1	ɔlɪva
+Olivera	f	1	ɔlɪvɛra
+Olivie	f	1	ɔlɪvɪjɛ
+Ornela	f	1	ɔrnɛla
+Renny	m	1	rɛnnɪ
+Ria	f	1	rɪja
+Rea	f	1	rɛa
+Rebeca	f	1	rɛbɛt͡sa
+Petrik	m	1	pɛtrɪk
+Petrina	f	1	pɛtr̩ɪna
+Petronela	f	1	pɛtrɔnɛla
+Petronella	f	1	pɛtrɔnɛlla
+Petruska	f	1	pɛtrʊska
+Pelagia	f	1	pɛlagɪja
+Penka	f	1	pɛŋka
+Perla	f	1	pɛrla
+Pietro	m	1	pɪɛtrɔ
+Pista	m	1	pɪsta
+Pía	f	1	piːa
+Piero	m	1	pɪjɛrɔ
+Rami	m	1	ramɪ
+Quan	m	1	kan
+Raduan	m	1	radʊan
+Raduska	f	1	radʊska
+Raduz	m	1	radʊs
+Rajko	m	1	rajkɔ
+Rajmund	m	1	rajmʊnd
+Quido	m	1	kɪdɔ
+Rachid	m	1	raxiːd
+Rafik	m	1	rafɪk
+Kolja	m	1	kɔlja
+Kosta	m	1	kɔsta
+Lam	m	1	lam
+Lambert	m	1	lambɛrt
+Klarisa	f	1	klarɪsa
+Klement	m	1	klɛmɛnt
+Klementyna	f	1	klɛmɛntɪna
+Kliment	m	1	klɪmɛnt
+Krisztina	f	1	krɪszcɪna
+Laetitia	f	1	laɛtɪtɪja
+Květuš	f	1	kvjɛtʊʃ
+Květuše	f	1	kvjɛtʊʃɛ
+Kvido	m	1	kvɪdɔ
+Kathe	f	1	katɛ
+Kathy	f	1	katɦɪ
+Katina	f	1	kacɪna
+Katrina	f	1	katrɪna
+Kazimír	m	1	kazɪmiːr
+Kaspar	m	1	kaspar
+Katalina	f	1	katalɪna
+Kamel	m	1	kamɛl
+Kamilo	m	1	kamɪlɔ
+Karima	f	1	karɪma
+Karlička	f	1	karl̩ɪt͡ʃka
+Karlo	m	1	karlɔ
+Karmen	f	1	karmɛn
+Larysa	f	1	larɪsa
+László	m	1	laːszlʔɔː
+Leonka	f	1	lɛɔnka
+Leonora	f	1	lɛɔnɔra
+Leontij	m	1	lɛɔntɪj
+Leontýna	f	1	lɛɔntiːna
+Lázaro	m	1	laːzarɔ
+Lazo	m	1	lazɔ
+Lenny	m	1	lɛnnɪ
+Jolanka	f	1	jɔlaŋka
+Juda	m	1	jʊda
+Juditha	f	1	d͡ʒʊdɪtɦa
+Julek	m	1	jʊlɛk
+Jutta	f	1	jʊtta
+Juliane	f	1	juːlɪjanjɛ
+Juliet	f	1	juːlɪjɛt
+Julietta	f	1	juːlɪjɛtta
+Julina	f	1	jʊlɪna
+Jozefa	f	1	jɔzɛfa
+Kerstin	f	1	kɛrscɪn
+Kilián	m	1	kɪlɪjaːn
+Kira	f	1	kɪra
+Kiro	m	1	kɪrɔ
+Khánh	m	1	kɦaːnx
+Khaled	m	1	kɦalɛt
+Lígia	f	1	liːgɪja
+Lilie	f	1	lɪlɪjɛ
+Ljiljana	f	1	ljɪljana
+Ljubo	m	1	ljʊbɔ
+Ljubomir	m	1	ljʊbɔmɪr
+Lóránt	m	1	lɔːraːŋt
+Lothar	m	1	lɔtɦar
+Louisa	f	1	lɔʊ̯ɪza
+Liběna	f	1	lɪbjɛna
+Lidija	f	1	lɪɟɪja
+Lidmila	f	1	lɪdmɪla
+Lieselotte	f	1	lɪjɛsɛlɔttɛ
+Lionel	m	1	lɪjɔnɛl
+Semir	m	1	sɛmɪr
+Senad	m	1	sɛnat
+Scarlet	f	1	st͡sarlɛt
+Shelley	f	1	sɦɛlɪ
+Sibel	f	1	sɪbɛl
+Slavomil	m	1	slavɔmɪl
+Slobodan	m	1	slɔbɔdan
+Sofija	f	1	sɔfɪja
+Silvan	m	1	sɪlvan
+Silvester	m	1	sɪlvɛstɛr
+Silvestr	m	1	sɪlvɛstr̩
+Silvina	f	1	sɪlvɪna
+Růženka	f	1	ruːʒɛŋka
+Rozina	f	1	rɔzɪna
+Rut	f	1	rʊt
+Ruth	f	1	rʊt
+Safet	m	1	safɛt
+Sabin	m	1	sabɪn
+Sadi	m	1	saɟɪ
+Rimma	f	1	rɪmma
+Rio	m	1	rɪjɔ
+Robina	f	1	rɔbɪna
+Roderik	m	1	rɔdɛrɪk
+Rosalinde	f	1	rɔsalɪndɛ
+Rosanna	f	1	rɔːzana
+Rosen	m	1	rɔzɛn
+Rolf	m	1	rɔlf
+Romy	f	1	rɔmɪ
+Ronnie	m	1	rɔnɪjɛ
+Rony	m	1	rɔnɪ
+Svatobor	m	1	svatɔbɔr
+Svetla	f	1	svɛtla
+Světluše	f	1	svjɛtlʊʃɛ
+Stanka	f	1	staŋka
+Stanko	m	1	staŋkɔ
+Stáza	f	1	staːza
+Stefana	f	1	stɛfana
+Stefanía	f	1	stɛfaɲiːa
+Susanne	f	1	sʊsannɛ
+Stephan	m	1	stɛpɦan
+Santa	f	1	santa
+Salma	f	1	salma
+Savina	f	1	savɪna
+Samira	f	1	samɪra
+Samson	m	1	samsɔn
+Samuela	f	1	samuɛla
+Samy	m	1	samɪ
+Sana	f	1	sana
+Sanda	f	1	sanda
+Sándor	m	1	saːndɔr
+Sanela	f	1	sanɛla
+Sanja	f	1	sanja
+Carola	f	1	t͡sarɔla
+Carolin	f	1	t͡sarɔlɪŋ
+Cedrik	m	1	t͡sɛdrɪk
+Brandon	m	1	brandɔn
+Branimir	m	1	braɲɪmɪr
+Bratislav	m	1	bracɪslaf
+Bohuš	m	1	bɔɦʊʃ
+Bojan	m	1	bɔjan
+Bolek	m	1	bɔlɛk
+Borislava	f	1	bɔrɪslava
+Bozenka	f	1	bɔzɛŋka
+Blahoš	m	1	blaɦɔʃ
+Blanca	f	1	blaŋka
+Blazena	f	1	blazɛna
+Chrudoš	m	1	xrʊdɔʃ
+Christa	f	1	xrɪsta
+Christiaan	m	1	xrɪstɪaan
+Christiane	f	1	xrɪstɪanɛ
+Christoffer	m	1	xrɪstɔffɛr
+Claudie	f	1	t͡slaʊ̯dɪjɛ
+Candida	f	1	kandɪda
+Brunon	m	1	brʊnɔn
+Bryan	m	1	brɪan
+Brigitta	f	1	brɪgɪtta
+Brigitte	f	1	brɪgɪttɛ
+Bronek	m	1	brɔnɛk
+Damjan	m	1	damjan
+Damon	m	1	damɔn
+Dane	m	1	danɛ
+Cvetan	m	1	t͡svɛtan
+Corina	f	1	tsɔrɪna
+Dalila	f	1	dalɪla
+Constance	f	1	t͡sɔnstant͡sɛ
+Czeslawa	f	1	t͡szɛslavɛː
+Barborka	f	1	barbɔrka
+Benedikta	f	1	bɛnɛdɪkta
+Benes	m	1	bɛnɛs
+Benito	m	1	bɛnɪtɔ
+Beatrix	f	1	biːtrɪks
+Beda	m	1	bɛda
+Bedřiška	f	1	bɛdr̝ɪʃka
+Bernadetta	f	1	bɛrnadɛtta
+Bernd	m	1	bɛrn̩t
+Belinda	f	1	bɛlɪnda
+Bertina	f	1	bɛrcɪna
+Berty	m	1	bɛrtɪ
+Beta	f	1	bɛta
+Bettina	f	1	bɛtcɪna
+Bětuška	f	1	bjɛtʊʃka
+Basil	m	1	basɪl
+Bassam	m	1	bassam
+Danila	f	1	daɲɪla
+Danko	m	1	daŋkɔ
+Darie	f	1	darɪjɛ
+Darija	f	1	darɪja
+Darin	f	1	darɪn
+Darius	m	1	darɪʊs
+Davor	m	1	davɔr
+Demi	f	1	dɛmɪ

@@ -46,6 +46,13 @@ async fn main() {
     let default_lang = std::env::var("G2P_DEFAULT_LANG").unwrap_or_else(|_| "en".into());
     let bind = std::env::var("G2P_BIND").unwrap_or_else(|_| "0.0.0.0:8080".into());
 
+    // Offline: rewrite corpus files with a precomputed IPA column so the server
+    // never phonemizes large corpora at request time. Usage: `g2p2-server dump-ipa`.
+    if std::env::args().nth(1).as_deref() == Some("dump-ipa") {
+        dump_ipa(&models_dir, &[names_dir, surnames_dir]);
+        return;
+    }
+
     let state = Arc::new(AppState::new(
         models_dir.clone(),
         names_dir.clone(),
@@ -97,4 +104,45 @@ async fn main() {
 async fn shutdown_signal() {
     let _ = tokio::signal::ctrl_c().await;
     tracing::info!("shutdown");
+}
+
+/// Rewrite each `<lang>.txt` in `dirs` with a 4th column of precomputed IPA,
+/// for languages whose `.g2p` model is present (skips others). Header/comment
+/// lines are preserved.
+fn dump_ipa(models_dir: &std::path::Path, dirs: &[PathBuf]) {
+    for dir in dirs {
+        let Ok(rd) = std::fs::read_dir(dir) else { continue };
+        for entry in rd.flatten() {
+            let fname = entry.file_name();
+            let fname = fname.to_string_lossy();
+            let Some(code) = fname.strip_suffix(".txt") else { continue };
+            let Ok(bytes) = std::fs::read(models_dir.join(format!("{code}.g2p"))) else {
+                continue; // no model for this language → leave corpus unchanged
+            };
+            let model = g2p::Model::from_bytes(&bytes);
+            let Ok(content) = std::fs::read_to_string(entry.path()) else { continue };
+            let mut out = String::new();
+            let mut n = 0;
+            for line in content.lines() {
+                let t = line.trim();
+                if t.is_empty() || t.starts_with('#') {
+                    out.push_str(line);
+                    out.push('\n');
+                    continue;
+                }
+                let mut it = t.split('\t');
+                let name = it.next().unwrap_or("");
+                let gender = it.next().unwrap_or("u");
+                let freq = it.next().unwrap_or("0");
+                let ipa: String = name
+                    .split_whitespace()
+                    .map(|w| g2p::phonemize(&model, w))
+                    .collect();
+                out.push_str(&format!("{name}\t{gender}\t{freq}\t{ipa}\n"));
+                n += 1;
+            }
+            std::fs::write(entry.path(), out).unwrap();
+            eprintln!("dump-ipa: {} ({n} names)", entry.path().display());
+        }
+    }
 }
